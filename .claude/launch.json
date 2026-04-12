@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "wiki",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["--hot", "server.ts"],
+      "port": 3000
+    }
+  ]
+}
