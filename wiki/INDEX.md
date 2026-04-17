@@ -1,8 +1,8 @@
-# INDEX
-
 ---
 title: Wiki Index
 type: index
+domain: personal
+tags: [index, navigation]
 updated: 2026-04-12
 ---
 

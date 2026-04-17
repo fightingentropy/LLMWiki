@@ -5,16 +5,21 @@ This is a personal knowledge wiki maintained by an LLM. The human curates source
 ## Directory Structure
 
 ```
-raw/           # Immutable source documents. LLM reads, never modifies.
-  misc/        # Personal notes, bookmarks, takes, observations
-  markets/     # Trading, macro, crypto, finance
-  electrics/   # Electrical safety, building regs, study notes
-  clippings/   # Web clips (articles, transcripts, videos)
-  assets/      # Images referenced by sources
-wiki/          # LLM-generated pages. LLM owns this entirely.
-index.md       # Content catalog — every wiki page listed with summary
-log.md         # Chronological record of operations
-CLAUDE.md      # This file — schema and conventions
+raw/                   # Immutable source documents. LLM reads, never modifies.
+  misc/                # Personal notes, bookmarks, takes, observations
+  markets/             # Trading, macro, crypto, finance
+  electrics/           # Electrical safety, building regs, study notes
+  clippings/           # Web clips (articles, transcripts, videos)
+  assets/              # Images referenced by sources
+wiki/                  # LLM-generated pages. LLM owns this entirely.
+  INDEX.md             # Content catalog — every wiki page listed with summary
+  log.md               # Chronological record of operations (parsed by the UI timeline)
+  overview.md          # High-level summary of the wiki, its themes and gaps
+  sources/             # One summary page per ingested raw source
+  entities/            # Pages about specific people, tools, accounts, resources
+  topics/              # Pages about broader subjects
+  analyses/            # Synthesised answers to queries (comparisons, frameworks)
+CLAUDE.md              # This file — schema and conventions
 ```
 
 ## Page Types
@@ -67,7 +72,7 @@ When the human adds a new source to `raw/`:
 4. Create or update entity pages for any people, tools, or resources mentioned.
 5. Create or update topic pages for concepts and themes.
 6. Update cross-links across all touched pages.
-7. Update `index.md` with new/changed pages.
+7. Update `wiki/INDEX.md` with new/changed pages.
 8. Append an entry to `log.md`.
 
 A single source may touch 5–15 wiki pages. Be thorough.
@@ -76,21 +81,27 @@ A single source may touch 5–15 wiki pages. Be thorough.
 
 When the human asks a question:
 
-1. Read `index.md` to find relevant pages.
+1. Read `wiki/INDEX.md` to find relevant pages.
 2. Read those pages.
 3. Synthesize an answer with `[[wikilinks]]` as citations.
 4. If the answer is substantial or reusable, file it as a new page in `wiki/analyses/`.
-5. Update `index.md` and `log.md`.
+5. Update `wiki/INDEX.md` and `log.md`.
 
 ### Lint
 
-Periodic health check. Look for:
+Periodic health check. The UI's `/lint` view automatically surfaces:
+
+- Orphan pages (no inbound wikilinks)
+- Broken wikilinks (pointing at non-existent pages)
+- Pages with missing `type`, `domain`, or `tags` in frontmatter
+- Stale pages (`updated` more than 90 days old)
+- Duplicate titles (where wikilinks may resolve ambiguously)
+
+These can be resolved automatically; the LLM should additionally watch for issues the UI can't detect:
 
 - Contradictions between pages
 - Stale claims superseded by newer sources
-- Orphan pages (no inbound links)
 - Concepts mentioned but lacking their own page
-- Missing cross-references
 - Duplicate content across pages
 - Data gaps worth investigating (suggest sources to find)
 

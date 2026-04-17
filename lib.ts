@@ -1,9 +1,10 @@
-import { readdir, readFile } from "fs/promises";
+import { readdir, readFile, stat } from "fs/promises";
 import { join, relative, basename } from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 
 const WIKI_DIR = join(import.meta.dir, "wiki");
+const ASSETS_URL_PREFIX = "/assets/";
 
 // --- Types ---
 
@@ -22,43 +23,163 @@ export interface WikiPage {
   links: string[];
   category: string;
   path: string;
+  wordCount: number;
+  readingTime: number; // minutes
+  headings: { level: number; text: string; id: string }[];
+  mtime: number; // ms since epoch — filesystem modification time, used as fallback for updated
+}
+
+export interface LintIssue {
+  kind: "orphan" | "broken-link" | "missing-type" | "missing-tags" | "missing-domain" | "stale" | "untyped-link" | "duplicate-title";
+  slug: string;
+  title: string;
+  detail?: string;
 }
 
 // --- Helpers ---
 
 export function extractWikilinks(content: string): string[] {
-  const matches = content.match(/\[\[([^\]]+)\]\]/g) || [];
-  return [...new Set(matches.map((m) => m.slice(2, -2)))];
+  // Strip image wikilinks (![[...]]) first so they don't count as wikilinks
+  const withoutImages = content.replace(/!\[\[[^\]]+\]\]/g, "");
+  const matches = withoutImages.match(/\[\[([^\]]+)\]\]/g) || [];
+  // Support [[Page|alias]] syntax — keep the page, drop the alias
+  return [...new Set(matches.map((m) => m.slice(2, -2).split("|")[0].trim()))];
 }
 
 export function slugify(name: string): string {
   return name
     .replace(/[^a-zA-Z0-9\s_-]/g, "")
-    .replace(/\s+/g, "-")
+    .replace(/[\s_]+/g, "-") // normalise whitespace AND underscores to hyphens
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "")
     .toLowerCase();
 }
 
+// Turn a heading text into a stable id (for TOC anchors)
+export function slugifyHeading(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 export function wikilinksToHtml(content: string, pages: Map<string, WikiPage>): string {
-  return content.replace(/\[\[([^\]]+)\]\]/g, (_, name) => {
+  return content.replace(/\[\[([^\]]+)\]\]/g, (_, raw) => {
+    const [name, alias] = raw.split("|").map((s: string) => s.trim());
+    const display = alias || name;
     const slug = slugify(name);
     const page = pages.get(slug);
     if (page) {
-      return `<a href="/page/${page.slug}" class="wikilink" data-slug="${page.slug}">${name}</a>`;
+      return `<a href="/page/${page.slug}" class="wikilink" data-slug="${page.slug}">${display}</a>`;
     }
-    return `<span class="wikilink broken">${name}</span>`;
+    return `<span class="wikilink broken" title="No page: ${name}">${display}</span>`;
   });
 }
 
-export function markdownToHtml(md: string): string {
-  // Handle image wikilinks before marked processes them
-  const preprocessed = md.replace(/!\[\[([^\]]+)\]\]/g, '<span class="image-ref">📷 $1</span>');
-  return marked.parse(preprocessed, { async: false }) as string;
+// Resolve image wikilinks (![[foo.png]]) to real <img> tags pointing at /assets/
+export function imageWikilinksToHtml(md: string, assetSet: Set<string>): string {
+  return md.replace(/!\[\[([^\]]+)\]\]/g, (_, raw) => {
+    const name = raw.split("|")[0].trim();
+    const filename = name.split("/").pop() || name;
+    const exists = assetSet.has(filename);
+    const href = `${ASSETS_URL_PREFIX}${encodeURIComponent(filename)}`;
+    if (exists) {
+      return `<img class="wiki-image" src="${href}" alt="${filename}" loading="lazy" />`;
+    }
+    return `<span class="image-ref image-missing" title="Asset not found">${filename}</span>`;
+  });
+}
+
+export function markdownToHtml(md: string, assetSet: Set<string>): string {
+  const withImages = imageWikilinksToHtml(md, assetSet);
+  return marked.parse(withImages, { async: false }) as string;
+}
+
+// Extract headings (h1..h4) from raw markdown, for the page TOC.
+// We parse the raw markdown rather than the HTML so we can keep original ordering
+// cheaply. Fenced code blocks are skipped so "# foo" inside ``` isn't picked up.
+export function extractHeadings(md: string): { level: number; text: string; id: string }[] {
+  const headings: { level: number; text: string; id: string }[] = [];
+  const seenIds = new Map<string, number>();
+  let inFence = false;
+  for (const line of md.split("\n")) {
+    if (/^```/.test(line.trim())) {
+      inFence = !inFence;
+      continue;
+    }
+    if (inFence) continue;
+    const m = /^(#{1,4})\s+(.+?)\s*#*\s*$/.exec(line);
+    if (!m) continue;
+    const level = m[1].length;
+    // Strip markdown-ish inline syntax for display
+    const text = m[2]
+      .replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_, a, b) => b || a)
+      .replace(/`([^`]+)`/g, "$1")
+      .replace(/\*\*([^*]+)\*\*/g, "$1")
+      .replace(/\*([^*]+)\*/g, "$1");
+    let id = slugifyHeading(text);
+    if (!id) continue;
+    const count = seenIds.get(id) || 0;
+    if (count > 0) id = `${id}-${count}`;
+    seenIds.set(slugifyHeading(text), count + 1);
+    headings.push({ level, text, id });
+  }
+  return headings;
+}
+
+// Inject heading ids into the rendered HTML so anchors work
+export function injectHeadingIds(html: string, headings: { level: number; text: string; id: string }[]): string {
+  const queue = [...headings];
+  return html.replace(/<h([1-4])>([\s\S]*?)<\/h\1>/g, (match, lvl, inner) => {
+    const h = queue.shift();
+    if (!h) return match;
+    return `<h${lvl} id="${h.id}">${inner}</h${lvl}>`;
+  });
+}
+
+function wordCount(md: string): number {
+  // Cheap word count: strip code fences + markdown punctuation then split on whitespace
+  const cleaned = md
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/`[^`]*`/g, " ")
+    .replace(/[#*_>\[\]()~`|!-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!cleaned) return 0;
+  return cleaned.split(" ").length;
+}
+
+function normalizeDate(v: any): string {
+  if (!v) return "";
+  if (typeof v === "string") return v.slice(0, 10);
+  if (v instanceof Date) return v.toISOString().slice(0, 10);
+  return String(v).slice(0, 10);
+}
+
+// Coerce a frontmatter value into a string[]. gray-matter happily returns
+// scalars or null if the YAML isn't a list.
+function toStringArray(v: any): string[] {
+  if (Array.isArray(v)) return v.map(String).filter((s) => s.length > 0);
+  if (v == null || v === "") return [];
+  if (typeof v === "string") return v.split(",").map((s) => s.trim()).filter(Boolean);
+  return [String(v)];
 }
 
 // --- Load Wiki ---
 
 export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
   const pages = new Map<string, WikiPage>();
+
+  // Build the asset set so image wikilinks can be resolved
+  const assetSet = new Set<string>();
+  try {
+    const assets = await readdir(join(import.meta.dir, "raw", "assets"));
+    assets.forEach((a) => assetSet.add(a));
+  } catch {
+    // No assets dir — fine
+  }
 
   async function walkDir(dir: string) {
     const entries = await readdir(dir, { withFileTypes: true });
@@ -79,22 +200,29 @@ export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
           const relPath = relative(WIKI_DIR, fullPath);
           const category = relPath.includes("/") ? relPath.split("/")[0] : "root";
           const slug = slugify(data.title || basename(entry.name, ".md"));
+          const st = await stat(fullPath);
 
+          const headings = extractHeadings(content);
+          const wc = wordCount(content);
           pages.set(slug, {
             slug,
             title: data.title || basename(entry.name, ".md"),
             type: data.type || "unknown",
             domain: Array.isArray(data.domain) ? data.domain.join(", ") : data.domain || "unknown",
-            tags: data.tags || [],
-            sources: data.sources || [],
-            related: data.related || [],
-            created: data.created || "",
-            updated: data.updated || "",
+            tags: toStringArray(data.tags),
+            sources: toStringArray(data.sources),
+            related: toStringArray(data.related),
+            created: normalizeDate(data.created),
+            updated: normalizeDate(data.updated),
             content,
             html: "",
             links: extractWikilinks(content),
             category,
             path: relPath,
+            wordCount: wc,
+            readingTime: Math.max(1, Math.round(wc / 225)),
+            headings,
+            mtime: st.mtimeMs,
           });
         } catch (e) {
           console.error(`Error parsing ${fullPath}:`, e);
@@ -106,9 +234,10 @@ export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
   await walkDir(WIKI_DIR);
 
   // Second pass: convert wikilinks to HTML links, then render markdown
-  for (const [slug, page] of pages) {
+  for (const [, page] of pages) {
     const withLinks = wikilinksToHtml(page.content, pages);
-    page.html = markdownToHtml(withLinks);
+    const html = markdownToHtml(withLinks, assetSet);
+    page.html = injectHeadingIds(html, page.headings);
   }
 
   return pages;
@@ -148,8 +277,10 @@ export function buildGraphData(pages: Map<string, WikiPage>) {
 
 // --- Backlinks ---
 
-export function computeBacklinks(pages: Map<string, WikiPage>): Map<string, { slug: string; title: string }[]> {
-  const backlinks = new Map<string, { slug: string; title: string }[]>();
+export function computeBacklinks(
+  pages: Map<string, WikiPage>
+): Map<string, { slug: string; title: string; type: string }[]> {
+  const backlinks = new Map<string, { slug: string; title: string; type: string }[]>();
 
   for (const [slug, page] of pages) {
     for (const link of page.links) {
@@ -157,8 +288,8 @@ export function computeBacklinks(pages: Map<string, WikiPage>): Map<string, { sl
       if (pages.has(targetSlug) && targetSlug !== slug) {
         if (!backlinks.has(targetSlug)) backlinks.set(targetSlug, []);
         const list = backlinks.get(targetSlug)!;
-        if (!list.some(b => b.slug === slug)) {
-          list.push({ slug, title: page.title });
+        if (!list.some((b) => b.slug === slug)) {
+          list.push({ slug, title: page.title, type: page.type });
         }
       }
     }
@@ -167,11 +298,216 @@ export function computeBacklinks(pages: Map<string, WikiPage>): Map<string, { sl
   return backlinks;
 }
 
+// Resolve `related:` frontmatter entries to { slug, title, resolved } so the
+// UI can show type badges and mark broken ones.
+export function resolveRelatedList(
+  names: any,
+  pages: Map<string, WikiPage>
+): { name: string; slug: string | null; title: string; type: string; resolved: boolean }[] {
+  // Defensively coerce frontmatter into a string[]. gray-matter can return a
+  // scalar when the YAML is `related: Foo` instead of `related: [Foo]`.
+  let list: string[];
+  if (Array.isArray(names)) list = names.map(String);
+  else if (names == null || names === "") list = [];
+  else if (typeof names === "string") list = names.split(",").map((s) => s.trim()).filter(Boolean);
+  else list = [String(names)];
+
+  return list.map((name) => {
+    const slug = slugify(name);
+    const page = pages.get(slug);
+    if (page) {
+      return { name, slug: page.slug, title: page.title, type: page.type, resolved: true };
+    }
+    return { name, slug: null, title: name, type: "unknown", resolved: false };
+  });
+}
+
+// --- Tags ---
+
+export function computeTagIndex(
+  pages: Map<string, WikiPage>
+): { tag: string; count: number; pages: { slug: string; title: string; type: string }[] }[] {
+  const tagMap = new Map<string, { slug: string; title: string; type: string }[]>();
+  for (const [slug, page] of pages) {
+    for (const tag of page.tags || []) {
+      const key = String(tag).toLowerCase();
+      if (!tagMap.has(key)) tagMap.set(key, []);
+      tagMap.get(key)!.push({ slug, title: page.title, type: page.type });
+    }
+  }
+  return [...tagMap.entries()]
+    .map(([tag, pages]) => ({
+      tag,
+      count: pages.length,
+      pages: pages.sort((a, b) => a.title.localeCompare(b.title)),
+    }))
+    .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag));
+}
+
+// --- Lint ---
+
+const STALE_DAYS = 90;
+
+export function computeLint(
+  pages: Map<string, WikiPage>,
+  backlinks: Map<string, { slug: string; title: string; type: string }[]>
+): LintIssue[] {
+  const issues: LintIssue[] = [];
+  const now = Date.now();
+
+  // Collect titles (case-folded) to detect duplicates
+  const titleMap = new Map<string, string[]>();
+  for (const [slug, page] of pages) {
+    const key = page.title.toLowerCase();
+    if (!titleMap.has(key)) titleMap.set(key, []);
+    titleMap.get(key)!.push(slug);
+  }
+
+  for (const [slug, page] of pages) {
+    // Skip indices and logs from orphan checks — they're meta-pages
+    const isMeta = page.type === "index" || page.type === "log" || page.type === "overview";
+
+    // Orphan: no inbound links
+    if (!isMeta && (backlinks.get(slug)?.length ?? 0) === 0) {
+      issues.push({ kind: "orphan", slug, title: page.title });
+    }
+
+    // Broken wikilinks
+    for (const link of page.links) {
+      if (!pages.has(slugify(link))) {
+        issues.push({ kind: "broken-link", slug, title: page.title, detail: link });
+      }
+    }
+
+    if (!page.type || page.type === "unknown") {
+      issues.push({ kind: "missing-type", slug, title: page.title });
+    }
+
+    if (!isMeta && (!page.tags || page.tags.length === 0)) {
+      issues.push({ kind: "missing-tags", slug, title: page.title });
+    }
+
+    if (!isMeta && (!page.domain || page.domain === "unknown")) {
+      issues.push({ kind: "missing-domain", slug, title: page.title });
+    }
+
+    // Stale (based on frontmatter `updated` if present, else mtime)
+    const u = page.updated ? new Date(page.updated).getTime() : page.mtime;
+    if (!isMeta && !Number.isNaN(u) && now - u > STALE_DAYS * 86400 * 1000) {
+      const days = Math.floor((now - u) / (86400 * 1000));
+      issues.push({ kind: "stale", slug, title: page.title, detail: `${days}d` });
+    }
+  }
+
+  // Duplicate titles
+  for (const [title, slugs] of titleMap) {
+    if (slugs.length > 1) {
+      for (const s of slugs) {
+        const p = pages.get(s)!;
+        issues.push({
+          kind: "duplicate-title",
+          slug: s,
+          title: p.title,
+          detail: slugs.filter((x) => x !== s).join(", "),
+        });
+      }
+    }
+  }
+
+  return issues;
+}
+
+// --- Timeline (parsed from wiki/log.md) ---
+
+export interface TimelineEntry {
+  date: string;
+  op: string;
+  detail: string;
+  body: string;
+}
+
+export function parseLog(logContent: string): TimelineEntry[] {
+  // Matches: ## [YYYY-MM-DD] operation | details
+  const regex = /^##\s+\[(\d{4}-\d{2}-\d{2})\]\s+([^|\n]+?)\s*\|\s*(.+?)\s*$/gm;
+  const entries: TimelineEntry[] = [];
+  const matches = [...logContent.matchAll(regex)];
+  for (let i = 0; i < matches.length; i++) {
+    const m = matches[i];
+    const start = m.index! + m[0].length;
+    const end = i + 1 < matches.length ? matches[i + 1].index! : logContent.length;
+    const body = logContent.slice(start, end).trim();
+    entries.push({
+      date: m[1],
+      op: m[2].trim(),
+      detail: m[3].trim(),
+      body,
+    });
+  }
+  return entries.reverse(); // newest first
+}
+
+export async function loadTimeline(): Promise<TimelineEntry[]> {
+  try {
+    const path = join(WIKI_DIR, "log.md");
+    const raw = await readFile(path, "utf-8");
+    const { content } = matter(raw);
+    return parseLog(content);
+  } catch {
+    return [];
+  }
+}
+
+// --- Meta ---
+
+export interface WikiMeta {
+  builtAt: string;
+  pageCount: number;
+  sourceCount: number;
+  entityCount: number;
+  topicCount: number;
+  analysisCount: number;
+  totalWords: number;
+  domains: { name: string; count: number }[];
+}
+
+export function buildMeta(pages: Map<string, WikiPage>): WikiMeta {
+  let totalWords = 0;
+  const byType: Record<string, number> = {};
+  const byDomain: Record<string, number> = {};
+  for (const p of pages.values()) {
+    totalWords += p.wordCount;
+    byType[p.type] = (byType[p.type] || 0) + 1;
+    const d = (p.domain || "unknown").split(",")[0].trim();
+    byDomain[d] = (byDomain[d] || 0) + 1;
+  }
+  const domains = Object.entries(byDomain)
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => b.count - a.count);
+  return {
+    builtAt: new Date().toISOString(),
+    pageCount: pages.size,
+    sourceCount: byType.source || 0,
+    entityCount: byType.entity || 0,
+    topicCount: byType.topic || 0,
+    analysisCount: byType.analysis || 0,
+    totalWords,
+    domains,
+  };
+}
+
 // --- Search ---
 
 export function searchPages(pages: Map<string, WikiPage>, query: string) {
   const q = query.toLowerCase();
-  const results: { slug: string; title: string; type: string; domain: string; category: string; snippet: string; score: number }[] = [];
+  const results: {
+    slug: string;
+    title: string;
+    type: string;
+    domain: string;
+    category: string;
+    snippet: string;
+    score: number;
+  }[] = [];
 
   for (const [slug, page] of pages) {
     let score = 0;
