@@ -2,7 +2,7 @@
 title: Philosophy & Meaning
 type: topic
 domain: culture
-sources: [Culture.md, Thoughts.md, Psychology.md, X takes.md, Youtube.md]
+sources: [Culture.md, Thoughts.md, Psychology.md, X takes.md, Youtube.md, Quotes.md]
 related: [Political Philosophy, Psychology, Self-Improvement]
 created: 2026-04-12
 updated: 2026-04-18
@@ -80,5 +80,39 @@ Pragmatism as working epistemology. Echoes the [[Mental_Health]] argument that p
 
 **Freedom reveals what you actually want.** Constraints mask desires.
 
+## Notable Quotes
+
+A thematic selection from the human's [[Quotes]] archive. Full attributions and context preserved there.
+
+### Mortality as orienting device
+
+> "Remembering that I'll be dead soon is the most important tool I've ever encountered to help me make the big choices in life." — [[Steve_Jobs]] (from [[Quotes]])
+
+> "The trouble is that you think you have time." — Kornfield (from [[Quotes]])
+
+> "Soon you will have forgotten all and all will have forgotten you." — [[Marcus_Aurelius]] (from [[Quotes]])
+
+Sam Altman's subjective-time compression — "life is half over by 23 or 24" — sits in the same cluster. See [[Quotes]] for the full passage on why childhood summers felt endless.
+
+### Perception, interpretation, truth
+
+> "Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth." — [[Marcus_Aurelius]] (from [[Quotes]])
+
+> "All things are subject to interpretation. Whichever interpretation prevails at a given time is a function of power and not truth." — [[Nietzsche]] (from [[Quotes]])
+
+### Meaning through obsession
+
+> "The soul is oriented towards obsession: it wants to be possessed by something greater, consummated in a quest, absorbed into a vortex of devotion, and eaten by the feeling of passion. The soul wants to fall in love hard." (from [[Quotes]])
+
+> "All addictions are a low level search for God." — [[Carl_Jung]] (from [[Quotes]])
+
+### Antifragility and option-value of becoming
+
+> "Nietzsche says humans have no intrinsic value. But they do have the optionality/potential of becoming something." (from [[Quotes]], extending [[Nassim_Taleb]] — see his entity page)
+
+### Cardinal sin: impatience
+
+> "Perhaps there is only one cardinal sin: impatience. Because of impatience we were driven out of Paradise; because of impatience we cannot return." — Kafka (from [[Quotes]])
+
 ---
-Related: [[Political_Philosophy]], [[Psychology]], [[Culture_and_Environment]]
+Related: [[Political_Philosophy]], [[Psychology]], [[Culture_and_Environment]], [[Quotes]], [[Nietzsche]], [[Dostoevsky]], [[Marcus_Aurelius]], [[Seneca]], [[Carl_Jung]], [[Steve_Jobs]]

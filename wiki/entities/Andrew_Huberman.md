@@ -2,10 +2,10 @@
 title: Andrew Huberman
 type: entity
 domain: culture
-sources: [Body.md, X takes.md]
-related: [Tim Ferriss, Lex Fridman, Self-Improvement Culture]
+sources: [Body.md, X takes.md, Top Pods.md]
+related: [Tim Ferriss, Lex Fridman, Self-Improvement Culture, Masculinity_and_Men, Top-Pods]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-18
 tags: [huberman, podcaster, neuroscience, optimization, criticism]
 ---
 
@@ -36,5 +36,11 @@ Simultaneously:
 
 Also notable: Reported to date multiple women simultaneously at age 48, with optimization-enabled lifestyle enabling this.
 
+## Bookmarked Clips
+
+From [[Top-Pods]]:
+
+- **[How to reclaim your brain in 2026](https://youtu.be/YvWU4Zd-IMc)** — Huberman on attention and neuroplasticity. Bookmarked despite the [[Masculinity_and_Men]] critique above; the human treats Huberman as "useful for brain protocols, contested as cultural figure."
+
 ---
-Related: [[Tim_Ferriss]], [[Lex_Fridman]], [[Self_Improvement_Culture_Critique]]
+Related: [[Tim_Ferriss]], [[Lex_Fridman]], [[Self_Improvement_Culture_Critique]], [[Masculinity_and_Men]], [[Top-Pods]]

@@ -2,7 +2,7 @@
 title: Nassim Taleb
 type: entity
 domain: culture
-sources: [Thoughts.md, Stories.md, Youtube.md]
+sources: [Thoughts.md, Stories.md, Youtube.md, Quotes.md]
 related: [Philosophy, Risk Management]
 created: 2026-04-12
 updated: 2026-04-18
@@ -35,6 +35,21 @@ From Thoughts:
 
 ## Skin in the Game → Soul in the Game
 Bookmarked via [[Youtube]]: the "Soul in the Game" framing extends Taleb's skin-in-the-game beyond risk exposure to *caring about the output* beyond personal stake. See [[Trading_Psychology]] — operators who care outperform operators who are merely paid.
+
+## Quotes cited (from [[Quotes]])
+
+- "Academia is to knowledge what prostitution is to love."
+- "Decline starts with the replacement of dreams with memories and ends with the replacement of memories with other memories."
+
+## Antifragility / Option-Value Extension (from [[Quotes]])
+
+The human synthesised Nietzsche's intrinsic-value argument with Taleb's antifragility:
+
+> "Nietzsche says humans have no intrinsic value. But they do have the optionality/potential of becoming something. So if you kill a baby you are killing an option that has a big premium but if you kill an old bum the option premium has diminished and his potential is far less so people tend to care less."
+
+And the core antifragility summary as it appears in [[Quotes]]:
+
+> "Fragile systems: get destroyed by shocks. Robust systems: survive shocks. Antifragile systems: *need* shocks to improve. So if you are antifragile to a particular input, don't seek comfort or stability — seek variability. Creativity thrives in chaotic environments. Growth (personal, economic, biological) often accelerates under stress, not peace. Relationships that survive tension tend to deepen."
 
 ## Legacy
 Influential in risk management, optionality thinking, and dignity/honor philosophy.

@@ -2,8 +2,8 @@
 title: Self-Improvement
 type: topic
 domain: culture
-sources: [Body.md, Psychology.md, Thoughts.md, Youtube.md]
-related: [Body Optimization, Mental Health, Philosophy]
+sources: [Body.md, Psychology.md, Thoughts.md, Youtube.md, Go Do.md, Quotes.md]
+related: [Body Optimization, Mental Health, Philosophy, Japanese_Philosophy, Alex_Hormozi]
 created: 2026-04-12
 updated: 2026-04-18
 tags: [self-improvement, growth, discipline, agency, delusion, motivation]
@@ -24,6 +24,10 @@ Example: Basketball—miss wide-open layup, get frustrated, give up open 3. Scor
 System: **Aim, fire, correct later.** Imperfect action >> perfect planning.
 
 Preparatory state (research, optimization, system-design) is comfortable procrastination. Execution is where reality hits.
+
+**Source flagged for study** (via [[Go Do]]): [[Alex_Hormozi]] on [[Chris_Williamson]]'s podcast, [timestamp](https://youtu.be/Gk8EGWoGnEQ?t=3590) — same video that produced the "do epic shit" / "only way is through" bookmarks in [[Youtube]]. Hormozi's version: perfect plans are procrastination; the plan corrects against contact with reality, not against more planning.
+
+Compounds with **kaizen** ([[Japanese_Philosophy]]): continuous small corrections in flight, not a single perfect launch.
 
 ## One Thing Per Day
 "After accounting for work, relationships, obligations, I have capacity for one optional thing daily. I'm at peace with that. Better than burning out trying to do 3-4 things."
@@ -89,5 +93,49 @@ Delusion is not the opposite of realism here. It's realism about what belief doe
 
 Humans need genuine autonomy, purpose, agency. Systems can provide comfort, not meaning.
 
+## Notable Quotes
+
+Thematic selection from the human's [[Quotes]] archive. Full context and attributions preserved there.
+
+### Action, courage, agency
+
+> "Man has it all in his hands and it slips away out of sheer cowardice." — [[Dostoevsky]] (from [[Quotes]])
+
+> "Anxiety is what happens when your brains are bigger than your balls... The only way to demolish anxiety is to choke it out with ruthless action." (from [[Quotes]])
+
+> "Brilliant thinking is rare, but courage is in even shorter supply than genius." — [[Peter_Thiel]] (from [[Quotes]])
+
+> "You are getting lapped by people 50% dumber than you because they don't overthink shit." (from [[Quotes]] — appears twice in source)
+
+> "Action produces information. If you're unsure of what to do, just do anything, even if it's the wrong thing." (from [[Quotes]])
+
+### Habit as character
+
+> "The history of every day... are they the product of innumerable little cowardices and lazinesses or of your courage and inventive reason?" — [[Nietzsche]] (from [[Quotes]])
+
+> "He who cannot obey himself will be commanded." — [[Nietzsche]] (from [[Quotes]], appears twice)
+
+### Self-betrayal and self-talk
+
+> "Your worst sin is that you betrayed yourself for nothing." — [[Dostoevsky]] (from [[Quotes]])
+
+> "Don't speak negatively about yourself, even as a joke. Your body doesn't know the difference. Words are energy and cast spells, that's why it's called spelling." — [[Bruce_Lee]] (from [[Quotes]])
+
+> "The only real measure of intelligence is if you can get what you want from life." — [[Naval_Ravikant]] (from [[Quotes]])
+
+### Creating, not consuming
+
+> "Die empty. Get every idea out of your head and into reality... Make finishing your top priority." — Derek Sivers, *Here's How To Live: Create* (from [[Quotes]])
+
+> "To practice any art, no matter how well or badly, is a way to make your soul grow. So do it." — Kurt Vonnegut (from [[Quotes]])
+
+> "Man's greatest burden is unfulfilled potential." (from [[Quotes]])
+
+### Discomfort and growth
+
+> "You are in danger of living a life so comfortable and soft, that you will die without even realizing your true potential." — [[David_Goggins]] (from [[Quotes]])
+
+> "Comfort is a drug. It's addictive... The comfort zone is where dreams go to die." (from [[Quotes]])
+
 ---
-Related: [[Body_Optimization]], [[Mental_Health]], [[Philosophy_and_Meaning]]
+Related: [[Body_Optimization]], [[Mental_Health]], [[Philosophy_and_Meaning]], [[Japanese_Philosophy]], [[Alex_Hormozi]], [[Chris_Williamson]], [[Quotes]], [[Nietzsche]], [[Dostoevsky]], [[Bruce_Lee]], [[Naval_Ravikant]], [[Carl_Jung]]

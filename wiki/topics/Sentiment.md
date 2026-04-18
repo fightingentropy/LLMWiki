@@ -2,11 +2,11 @@
 title: Sentiment
 type: topic
 domain: markets
-sources: [Trading.md]
-related: [[Crypto Trading]], [[Market Drivers]], [[Positioning]]
+sources: [Trading.md, CT.md]
+related: [[Crypto Trading]], [[Market Drivers]], [[Positioning]], [[CT]]
 created: 2026-04-12
-updated: 2026-04-12
-tags: [sentiment, psychology, extremes, reversal]
+updated: 2026-04-18
+tags: [sentiment, psychology, extremes, reversal, narrative]
 ---
 
 ## Overview
@@ -50,3 +50,22 @@ Sentiment is subjective and hard to quantify, but proxies include:
 - [[Market Drivers]] - Sentiment as a driver
 - [[Trading Philosophy]] - Perception matters more than truth
 - [[Traders Directory]] - Key sentiment makers and influencers
+
+## Narrative Dynamics (from [[CT]])
+
+### Post-hoc hallucination
+@CL207: "anytime price moves 10% we will literally hallucinate a story up for it" (from [[CT]]). Narratives are backfit.
+
+### Schelling-point narratives
+@lightcrypto: "The market now lacks a viable schelling point narrative. Yet its desire for one is palpable … In the wreckage are nascent roots." Narratives can also be *required* coordination mechanisms for a rally.
+
+Both can be true: markets hallucinate short-term stories ex post *and* require a dominant narrative to sustain a cycle.
+
+### Normies as top signal (inverted)
+@0xSisyphus: "Normies showing up isn't a top signal. When they start quitting their IRL jobs for crypto or starting funds that's when we need to worry" (from [[CT]]).
+
+### Tide-out / augur framing
+[[GCRClassic]]: when macro unwinds, latent frauds reveal themselves. See [[Liquidations]].
+
+### Flex-culture as contra-indicator
+[[CryptoCred]]: public PnL flexing attracts jealousy that corrodes projects. [[trading_axe]]: "NEVER FLEX. EVER." See [[Trading_Psychology]].

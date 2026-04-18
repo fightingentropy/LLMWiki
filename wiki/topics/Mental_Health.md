@@ -2,7 +2,7 @@
 title: Mental Health
 type: topic
 domain: psychology
-sources: [Psychology.md, Body.md, Medical.md, Youtube.md]
+sources: [Psychology.md, Body.md, Medical.md, Youtube.md, Top Pods.md]
 related: [Self-Improvement, ADHD, Stress Management]
 created: 2026-04-12
 updated: 2026-04-18
@@ -79,5 +79,9 @@ Walking, dancing, cold exposure, sun, movement = all proven neurological interve
 
 Autists have high correlation with honor, integrity, and honest thinking. Their presence rewires your truth-seeking baseline.
 
+## Reclaiming Attention
+
+Bookmarked via [[Top-Pods]]: [[Andrew_Huberman]]'s "How to reclaim your brain in 2026." Sits alongside the dopamine-baseline and overthinking sections above — attention is upstream of most of the symptoms this page is trying to treat.
+
 ---
-Related: [[Self-Improvement]], [[ADHD]], [[Body_Optimization]], [[Psychology]]
+Related: [[Self-Improvement]], [[ADHD]], [[Body_Optimization]], [[Psychology]], [[Top-Pods]]

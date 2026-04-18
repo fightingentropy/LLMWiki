@@ -2,10 +2,10 @@
 title: Developer Resources
 type: topic
 domain: dev
-sources: [Dev.md, Setup.md]
-related: [Design Tools, Tools]
+sources: [Dev.md, Setup.md, X-Bookmarks.md]
+related: [Design Tools, Tools, X-Bookmarks]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-18
 tags: [development, tools, learning, infrastructure]
 ---
 
@@ -58,6 +58,14 @@ tags: [development, tools, learning, infrastructure]
 - Toolfolio.io - Design tools aggregator - https://toolfolio.io/
 - Ben Kuhn Blog - https://www.benkuhn.net/
 - OpenFang.sh - https://www.openfang.sh/
+
+## From [[X-Bookmarks]] (2026 feed)
+
+- **Codex-for-backend, Claude-Code-for-frontend meta.** @KingBootoshi #244: Codex does TDD feedback loops well for backend; Claude Code (with `/frontend-design` skill) generates design variations. Use them together.
+- **Local models on Apple Silicon are viable.** Qwopus 27B (Qwen3.5 distill on Claude 4.6 Opus reasoning traces) beats Sonnet 4.5 on SWE-bench while keeping 96.9% HumanEval, runs in 4-bit on a $600 Mac Mini (from [[X-Bookmarks]] #1011). Related: TurboQuant + MLX on M5 Max enables full-PDF KV-cache preloading in 23ms (#1000).
+- **agent-browser, openclaw, Paperclip, Molty — the autonomous-agent stack.** @ctatedev's agent-browser went native Rust with 18x less memory (#116). @steipete documents openclaw workflows (#746 "personality prompt", #140 Chrome MCP). @dotta open-sourced Paperclip, an org-chart/budget/goal-alignment framework for "zero-human companies" (#491).
+- **Open-source SaaS alternatives are a full discipline.** 180K-star directory at @xoaanya #488 covers Slack/Notion/Shopify analogues. Relevant for [[Setup]] minimization.
+- **EU Inc.** proposal: 48hrs / €100 to incorporate, common portal, digital-only, stock options taxed only at sale, simplified insolvency — @initjean #9. Relevant if ever considering EU entity structure.
 
 ## Development Environment
 - [[Setup]] - Dev tools and environment setup

@@ -2,10 +2,10 @@
 title: Trading Philosophy
 type: topic
 domain: markets
-sources: [Articles.md, Trading.md, Brief.md]
-related: [[Macro Trading]], [[Crypto Trading]], [[Market Drivers]], [[Risk Analysis]], [[Stanley Druckenmiller]]
+sources: [Articles.md, Trading.md, Brief.md, CT.md]
+related: [[Macro Trading]], [[Crypto Trading]], [[Market Drivers]], [[Risk Analysis]], [[Stanley Druckenmiller]], [[CT]]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-18
 tags: [philosophy, mindset, principles, framework]
 ---
 
@@ -57,3 +57,21 @@ See [[Traders Directory]] for examples of different trading approaches and what 
 - [[Market Regime]] - Regime assessment methodology
 - [[Cross-Asset Analysis]] - Seeing hidden relationships
 - [[Risk Analysis]] - Managing downside
+
+## Capital Allocation Asymmetry (from [[CT]])
+Attributed to cobie's coach: "you act too quickly when you are trying to grow capital, and act too slowly when you are trying to protect capital." Most account destruction comes from this asymmetry — eager to size up, hesitant to cut.
+
+## Sit on Your Ass (from [[CT]])
+Lord Ashdrake / [[cobie]]:
+> "What Traders should be like: 'Sit on my ass, then a few times a year make massive bank then sit on my ass again'"
+
+Directly contradicts [[GiganticRebirth]]'s "sacrifice your weekends" framing — both are in [[CT]]; which applies depends on regime richness.
+
+## Decouple Process from Outcome (from [[CT]])
+[[0xaporia]] on variance: losing streaks of 7+ happen 32-69% of the time in 50-40% win-rate strategies over 100 trades. Traders who flee the nonlinear grind for new strategies are interpreting noise as signal.
+
+## Orderflow vs Newsflow (from [[CT]])
+[[HsakaTrades]]: "The orderflow frontruns the newsflow." Price moves first; the narrative comes to justify it. See also [[Trading_Psychology]] on post-hoc narratives.
+
+## Poker Discipline (from [[CT]])
+[[0xaporia]]: poker players know variance is the game; novice traders conflate constant activity with progress. Restraint — not playing every hand — is a structural edge.

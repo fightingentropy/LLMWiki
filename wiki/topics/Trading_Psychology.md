@@ -2,11 +2,11 @@
 title: Trading Psychology
 type: topic
 domain: markets
-sources: [Bizz & Finance.md, Psychology.md, Youtube.md]
+sources: [Bizz & Finance.md, Psychology.md, Youtube.md, CT.md, Quotes.md]
 related: [Markets, Psychology, Decision-Making]
 created: 2026-04-12
 updated: 2026-04-18
-tags: [trading, psychology, decision-making, behavioral-finance, delusion, skin-in-the-game]
+tags: [trading, psychology, decision-making, behavioral-finance, delusion, skin-in-the-game, bag-holding, variance]
 ---
 
 # Trading Psychology
@@ -70,5 +70,83 @@ Two bookmarks from [[Youtube]] sit next to each other in trader mindset:
 ## Decision vs. Outcome
 Market outcome ≠ quality of decision. Randomness masks poor reasoning; luck masks bad strategy. Long-term separates signal from noise.
 
+## Bag-Holding Test
+[[CryptoCred]] in [[CT]]:
+> "'If I didn't have a position, would I want the exposure I have now?' Yes → Cool, you're fine. No → Do something about it. Active positions cost mental capital, which is a scarce resource."
+
+Corollary: the sunk-cost of an underwater bag consumes mental bandwidth you need for the next good trade.
+
+## Take Money Off the Table
+[[Pentosh1]] in [[CT]]: if you make life-changing money, withdraw it. "The only money that is yours is what you take out into the real world." [[LomahCrypto]]'s rule (from @SalsaTekila): money withdrawn from exchanges never goes back.
+
+## Variance & Strategy Hopping
+[[0xaporia]] in [[CT]]: even a 40% win-rate strategy has a ~49% probability of an 8+ losing streak over 100 trades. Most traders interpret streaks as strategy failure rather than inherent noise. Principle: **decouple process from outcome**.
+
+## First-Cycle Psychology
+[[CryptoCred]] in [[CT]]: "First cycle participants make money because they're open-minded, optimistic, and think 'What if I'm right?' instead of 'What if I'm wrong?' They lose most of their gains for the same reasons." Cycles reward alternation between childlike idealism and sagely cynicism.
+
+## Bear-Market PTSD
+[[CryptoCred]] in [[CT]]: habits learned in sucky markets — fading breakouts, rotating too quickly, cynicism — are hard to unlearn when conditions improve.
+
+## Back-Half of Bull = Fear
+[[Pentosh1]] in [[CT]]: greed peaks in back half of bull runs. "Be fearful when others are greedy." Dilution from infinite new supply eventually overwhelms capital inflows — "The end simply comes when the dilution exceeds the amount of capital inflows."
+
+## Never Flex
+[[trading_axe]] in [[CT]]: "NEVER FLEX. EVER." [[CryptoCred]] framed FTX as an "evil-eye" casualty — its most visible loudmouths attracted the jealousy that contributed to collapse. Corollary: don't talk crypto IRL ([[trading_axe]], @coinfessions).
+
+## PvP vs PvE
+[[Rewkang]] in [[CT]]: heuristics that work in PvP (fading high funding, mean reversion) break in PvE where new retail money sends paychecks in on schedule without schizo trading. "To outperform like retail you need to think like retail."
+
+## Narrative Post-Hoc
+@CL207 in [[CT]]: "my trader in christ anytime price moves 10% we will literally hallucinate a story up for it." Narrative follows price, not the other way around. Compare with @lightcrypto on schelling-point narratives as pre-conditions for rallies — both can be true in different regimes.
+
+## Notable Quotes
+
+Trading-flavoured selections from the human's [[Quotes]] archive. Full attributions preserved there.
+
+### Concentration and attention
+
+> "I like putting all my eggs in one basket and then watching the basket very carefully." — [[Stanley Druckenmiller]] (from [[Quotes]])
+
+### Right vs rich
+
+> "Do you wanna be right? Or do you wanna make money?" (from [[Quotes]])
+
+> "The cynics get to be right and the optimists get to be rich." (from [[Quotes]])
+
+### Tide framing
+
+> "When the tide goes out, you see who is swimming naked." (from [[Quotes]])
+
+### Opportunity windows
+
+> "You need to take advantage an opportunity of a lifetime in the lifetime of the opportunity." — Thomson (from [[Quotes]])
+
+### Positioning over effort
+
+> "Effort doesn't guarantee outcomes — positioning does." (from [[Quotes]])
+
+> "Privatise gains, socialise losses." (from [[Quotes]])
+
+### Risk as conserved quantity
+
+> "Risk is like energy, it cannot be destroyed, it can only be transferred." (from [[Quotes]])
+
+### Wealth vs. money
+
+> "Rich people buy time. Poor people buy stuff. Ambitious people buy skills. Lazy people buy distraction." — [[Alex_Hormozi]] (from [[Quotes]])
+
+> "Wealth is the slave of a wise man and a master of a fool." — [[Seneca]] (from [[Quotes]])
+
+### Acting the part
+
+> "Act like you've made money before." (from [[Quotes]])
+
+> "There's a billion $ inside your computer, your job is to take it out." (from [[Quotes]])
+
+### Holding on vs cashing in
+
+> "People that mourn mistakes simply don't believe in themselves. Everyone that wants to make it in 1 month is really saying 'I need to get very lucky because I do not believe I am equipped to make it in a sustainable way over the next 5-10 years'." — [[cobie]] (from [[Quotes]])
+
 ---
-Related: [[Markets]], [[Psychology]], [[Decision-Making]], [[Behavioral_Finance]]
+Related: [[Markets]], [[Psychology]], [[Decision-Making]], [[Behavioral_Finance]], [[CT]], [[CryptoCred]], [[Pentosh1]], [[0xaporia]], [[cobie]], [[trading_axe]], [[Rewkang]], [[Quotes]], [[Stanley Druckenmiller]], [[Alex_Hormozi]], [[Seneca]], [[Naval_Ravikant]]

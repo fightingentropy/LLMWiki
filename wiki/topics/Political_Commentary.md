@@ -2,11 +2,11 @@
 title: Political Commentary
 type: topic
 domain: culture
-sources: [Politics.md, Culture.md]
-related: [Philosophy and Meaning, Social Commentary]
+sources: [Politics.md, Culture.md, Top Pods.md]
+related: [Philosophy and Meaning, Social Commentary, Masculinity_and_Men]
 created: 2026-04-12
-updated: 2026-04-12
-tags: [politics, media-critique, ideology, governance]
+updated: 2026-04-18
+tags: [politics, media-critique, ideology, governance, decline]
 ---
 
 # Political Commentary
@@ -65,5 +65,9 @@ System labels ≠ actual function. Follow the incentives and outcomes, not the r
 ## Sovereignty as Distressed Asset
 When governments cannot maintain basic property rights, wage justice, or economic coherence—sovereignty itself becomes distressed. Potential for capital flight, brain drain, institutional capture.
 
+## Fall of Empire (Tate)
+
+Bookmarked via [[Top-Pods]]: [[Andrew_Tate]]'s "Fall of Empire (Second Half)" clip. Late-Rome framing applied to the contemporary West. Pairs with the [[Curtis_Yarvin]] entropy-vs-extropy frame above — the institutions dissolve first, the roles they held in place dissolve second, and the men who filled those roles get blamed for the dissolution. See [[Masculinity_and_Men]].
+
 ---
-Related: [[Philosophy_and_Meaning]], [[Social_Commentary]], [[Media_Critique]]
+Related: [[Philosophy_and_Meaning]], [[Social_Commentary]], [[Media_Critique]], [[Masculinity_and_Men]], [[Top-Pods]]

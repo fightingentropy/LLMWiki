@@ -2,7 +2,7 @@
 title: Charles Bukowski
 type: entity
 domain: culture
-sources: [Youtube.md]
+sources: [Youtube.md, Quotes.md]
 related: [Philosophy_and_Meaning, Self_Improvement]
 created: 2026-04-18
 updated: 2026-04-18
@@ -22,5 +22,13 @@ A bookmarked YouTube clip (see [[Youtube]]) frames his advice as "funny but migh
 - **Action over overthinking** — fits the [[Self_Improvement]] frame of imperfect action > perfect planning.
 - **Find what you love and let it kill you** — the commonly attributed Bukowski posture lines up with the [[Philosophy_and_Meaning]] "do epic shit" framing: life organized around doing the thing, not optimizing around it.
 
+## Quotes cited (from [[Quotes]])
+
+- "We're all going to die, all of us, what a circus! That alone should make us love each other but it doesn't. We are terrorized and flattened by trivialities, we are eaten up by nothing." (commonly attributed)
+- "Find what you love and let it kill you." (commonly attributed)
+- "I wanted the whole world or nothing."
+
+All three fit the same register: mortality pressure as the argument for caring, and caring as the argument for going all-in on the thing. See [[Philosophy_and_Meaning]] "Do Epic Shit" for the downstream framing.
+
 ---
-Related: [[Youtube]], [[Self_Improvement]], [[Philosophy_and_Meaning]]
+Related: [[Quotes]], [[Youtube]], [[Self_Improvement]], [[Philosophy_and_Meaning]]

@@ -2,8 +2,8 @@
 title: Design & Aesthetics
 type: topic
 domain: dev
-sources: [Design.md, Thoughts.md, Youtube.md]
-related: [Developer Resources, Design Tools, Philosophy]
+sources: [Design.md, Thoughts.md, Youtube.md, X-Bookmarks.md]
+related: [Developer Resources, Design Tools, Philosophy, X-Bookmarks]
 created: 2026-04-12
 updated: 2026-04-18
 tags: [design, aesthetics, ui-ux, taste, tools]
@@ -88,6 +88,13 @@ Design taste = character revelation. What you build reveals who you are.
 **Interactive design:** Movement, animation, micro-interactions should feel intentional, not decorative. Study GSAP and motion principles.
 
 **Component thinking:** Break designs into smallest reusable units. Scalable systems > one-off designs.
+
+## From [[X-Bookmarks]] (2026 feed)
+
+- **Design engineering ≠ animations.** Recurring current-feed position from @bossadizenith — craft of the medium beats motion flourish (from [[X-Bookmarks]] #130). Complemented by a design-engineer-tools list curated by @jmswrnr (#126).
+- **Soft-UI / squircle wave.** CSS squircles are the dominant 2026 UI micro-trend — sharp corners out, soft continuous curvature in, via @AliGrids and others (from [[X-Bookmarks]] #243).
+- **AI-generated design consistency via spec files.** Firebase's Stitch ships a `DESIGN.md` markdown spec alongside generated design systems so downstream agents can reproduce the aesthetic (from [[X-Bookmarks]] #2, @_davideast).
+- **Framer + unicornstudio** is the dominant stack for scroll-driven "AI doomsday" style landing pages in the current feed (Fred Moon, @fw3d #387).
 
 ## Tools for Quick Iteration
 - **Defuddle.md** - Convert pages to markdown

@@ -2,10 +2,10 @@
 title: Leverage
 type: topic
 domain: markets
-sources: [Trading.md, Brief.md]
-related: [[Risk Analysis]], [[Liquidations]], [[Positioning]], [[Funding Rates]]
+sources: [Trading.md, Brief.md, CT.md]
+related: [[Risk Analysis]], [[Liquidations]], [[Positioning]], [[Funding Rates]], [[CT]]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-18
 tags: [leverage, margin, funding-rates, risk, amplification]
 ---
 
@@ -106,3 +106,11 @@ Leverage amplifies returns and risks. Understanding leverage levels is critical 
 
 ## See Also
 [[Liquidations]] for forced selling mechanics, [[Positioning]] for crowding analysis, [[Funding Rates]] for crypto-specific indicator.
+
+## Collateral Composition Risk (from [[CT]])
+CT archive flags a Hyperliquid-specific concern: HYPE-margined positions are more fragile than USDC-margined ones because HYPE's FDV is not backed 1:1. If positions over-collateralize in HYPE, a cascade can drive HYPE low enough that slippage/spread leave the protocol insolvent. See [[Hyperliquid]], [[Liquidations]].
+
+## Rewkang: funding extremes in bulls (from [[CT]])
+> "In bull markets funding can stay higher than shorts can remain solvent."
+
+Fading high funding works in PvP regimes but breaks in PvE regimes where retail DCA overrides mean reversion.

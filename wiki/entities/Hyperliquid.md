@@ -26,3 +26,11 @@ Decentralized exchange and derivatives platform focused on perpetual futures tra
 
 ## Tracked Wallets
 - [[Robinhood HYPE]] - Robinhood's crypto operations wallet on Hyperliquid
+
+## Commentary (from [[CT]])
+
+### Bandwidth / latency improvements
+CT archive notes that Hyperliquid "increased bandwidth and reduced latency so much that solana folks started talking about decentralization" (refs @kunalgoel, @TheSlurper_ on cross-exchange dislocation). See [[CT]], [[Exchange Microstructure]].
+
+### HYPE-margined collateral risk
+Preserved in [[CT]]: concern that over-collateralizing positions in HYPE (vs. USDC at 1:1) creates cascade risk where slippage and spread could leave positions under-collateralized and the protocol insolvent.

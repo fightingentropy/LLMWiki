@@ -16,11 +16,15 @@ Reference collections and curated resource lists that form the foundation of the
 
 - [[Bizz_and_Finance]] — Consumer spending patterns, market psychology, and economic insights
 - [[Body]] — Core body optimization philosophy, supplements, and training protocols
+- [[CT]] — Crypto Takes: verbatim archive of crypto-twitter trader quotes on price discovery, psychology, macro, microstructure
 - [[Culture]] — Geography, environment, business strategy, and cultural observations
 - [[Design]] — Design tools, systems, and aesthetic frameworks
 - [[Dev]] — Developer resources, tools, and infrastructure references
 - [[Electrics - Resources]] — Electrical formulas, protection devices, and building regulations reference
+- [[Funny]] — Largest humor archive: link-heavy shitpost/crypto-twitter/hospitality-worker voice, tweets, YouTube timestamps, multilingual fragments
+- [[Go Do]] — Bucket list: experiences, travel (Chile/Tanzania/Japan), Japanese cultural concepts, imperfect-action study
 - [[Inspection and Testing Fundamentals]] — Webinar on inspection, testing, and safe isolation procedures
+- [[Jokes]] — Larger humor archive: Greek wordplay, name-puns, element-table set piece, long-form shaggy-dog jokes, English absurd one-liners
 - [[Markets - Articles]] — Curated articles on macro trading, crypto, and market philosophy
 - [[Markets - Brief]] — Daily market analysis template in Druckenmiller style
 - [[Markets - Handbook]] — Exchange hours, commodities data, and trading reference
@@ -28,36 +32,69 @@ Reference collections and curated resource lists that form the foundation of the
 - [[Markets - Trading]] — Core trading principles, market drivers, and trader directories
 - [[Medical]] — ADHD, circadian rhythms, thyroid health, and medical insights
 - [[PAT Testing]] — Portable appliance testing guide covering inspection, testing, and safety
+- [[Pick-up-limes]] — Personal archive of crude one-liners, pickup lines, Greek phrases, and dating banter
 - [[Politics]] — Media critique, elite control, and political analysis
 - [[Psychology]] — Psychology of behavior, trauma, decision-making, and relationships
+- [[Quotes]] — Cross-domain curated quote archive: philosophy, action, trading, love, self, time, art, craft
 - [[Setup]] — Development tools and productivity setup inventory
 - [[Thoughts]] — Personal observations, wealth dynamics, and acceptance principles
+- [[Top-Pods]] — Podcast/video bookmarks on masculinity, Huberman, Tate, and JRE
+- [[Women]] — Personal archive on women, dating, gender dynamics, and "game"; Heartiste-heavy, DrDynamis-heavy, internally contradictory
+- [[X-Bookmarks]] — 1,091-item X/Twitter bookmarks export (2026-03-19), thematic index across dev/design/AI/markets/culture
 - [[Youtube]] — Curated YouTube bookmarks on meaning, delusion, motivation, intimacy, inflation
 
 ## Entities
 
 Key figures, organizations, standards, and platforms referenced throughout the wiki.
 
+- [[Alex_Hormozi]] — Entrepreneur; imperfect-action framing on Chris Williamson podcast
 - [[Andrew_Huberman]] — Neuroscientist and podcaster known for dopamine and sleep optimization
+- [[Andrew_Tate]] — Manosphere commentator; bookmarked for fame and fall-of-empire takes
+- [[Bruce_Lee]] — Martial artist and philosopher; self-talk and "be like water" adaptation
+- [[Carl_Jung]] — Analytical psychologist; shadow work, addiction as search for God
 - [[Charles_Bukowski]] — American poet; terse working-class life advice
+- [[Chris_Williamson]] — Modern Wisdom podcast host; long-form interview format
 - [[BS 7671]] — British Standard for electrical installations and wiring regulations
 - [[Citrini Research]] — Macro research and analysis on global markets and trading
 - [[Citadel Securities]] — Market maker and trading infrastructure
-- [[cobie]] — Crypto market analyst and commentator
+- [[cobie]] — Crypto market analyst and commentator; supercycle framing
+- [[CryptoCred]] — Crypto trader/educator; bag-holder test, FTX "evil eye"
 - [[Curtis_Yarvin]] — Political philosopher; entropy vs. extropy framework
-- [[fejau_inc]] — Organization reference
+- [[DegenSpartan]] — Bearish crypto philosopher; degradation thesis
+- [[Dostoevsky]] — Russian novelist; self-betrayal, overthinking-as-disease, lying-to-oneself
+- [[DrDynamis]] — Mediterranean-stoic moralist voice (@DrDynamis/@ArcadianRythms cluster); lifting, prayer, anti-fetish, fear-of-confrontation thesis
+- [[fejau_inc]] — Crypto trader; M2 overlay framing
+- [[GCRClassic]] — Legendary crypto macro trader; "long degeneracy", inverse supercycle
+- [[GiganticRebirth]] — Crypto trader; sacrifice-weekends, Hoskinson
+- [[goodalexander]] — Macro commentator; crypto as silent debt default, Bessent
+- [[Heartiste]] — Pseudonymous game/red-pill writer (Roissy); author of the Sixteen Commandments
+- [[HsakaTrades]] — Crypto trader; orderflow and leverage one-liners
+- [[ImperatorXBT]] — Crypto trader; cope/medical-singularity voice
+- [[insiliconot]] — Crypto trader; dry absurdist voice
+- [[Javier_Milei]] — Argentine President and libertarian economist; polemical compression
+- [[jimtalbot]] — Crypto trader; range expansion mechanics, Straussian takes
+- [[0xaporia]] — Crypto trader; variance, strategy hopping, systems
+- [[Pentosh1]] — Long-tenure crypto trader; take-money-off-table
 - [[GN3 Guidance Note 3]] — Electrical standards guidance documentation
 - [[Hyperliquid]] — Decentralized derivatives platform and exchange
 - [[Jeff_Bezos]] — Entrepreneur; distinctiveness and entropy resistance philosophy
+- [[Joe_Rogan]] — JRE host; dominant long-form podcast format
 - [[Lee_Kuan_Yew]] — Political leader and strategic governance
 - [[Lex_Fridman]] — Podcast host and AI researcher
+- [[Marcus_Aurelius]] — Roman emperor and Stoic philosopher; perception and mortality
 - [[Nassim_Taleb]] — Philosopher of antifragility and black swan theory
+- [[Naval_Ravikant]] — AngelList founder and aphorist; agency, freedom, intention
+- [[Nietzsche]] — German philosopher; habit-as-character, self-command, interpretation-as-power
 - [[RCD Protection]] — Residual current devices and electrical safety
+- [[Rewkang]] — Crypto trader/essayist; PvP vs PvE heuristics
 - [[Robinhood HYPE]] — Retail trading platform
+- [[Satoshi_Nakamoto]] — Pseudonymous Bitcoin creator; 2010 production-cost/price passage
+- [[Seneca]] — Roman Stoic; imagined suffering, wealth as slave vs master
 - [[Stanley Druckenmiller]] — Legendary macro investor and market methodology
 - [[TheFlowHorse]] — Trader and market analyst
 - [[Tim_Ferriss]] — Productivity hacker and life optimization author
 - [[Toto Wolff]] — Mercedes Formula 1 team principal
+- [[trading_axe]] — Crypto trader; Remilio voice, never-flex, IRL opsec
 
 ## Topics
 
@@ -67,6 +104,8 @@ Organized by domain. Each page provides deep dives into specific subjects.
 
 - [[ADHD]] — Circadian rhythm disorder reconceptualization and treatment
 - [[Dating_and_Relationships]] — Dating culture, attraction, and relationship dynamics
+- [[Gender_Dynamics]] — Masculine/feminine polarity, cognitive asymmetry, attraction structure, breakup asymmetry
+- [[Japanese_Philosophy]] — Ikigai, wabi-sabi, kaizen, kintsugi, omotenashi, and the coherent cultural package
 - [[Mental_Health]] — Depression causes, therapy, and wellness strategies
 - [[Philosophy_and_Meaning]] — Entropy vs. extropy, identity, and purpose
 - [[Self_Improvement]] — Compounding deltas, discipline, and personal growth
@@ -130,6 +169,8 @@ Organized by domain. Each page provides deep dives into specific subjects.
 ### Culture & Politics
 
 - [[Design_and_Aesthetics]] — Design taste, aesthetics, and UI/UX principles
+- [[Humor]] — Humor archives landing page: registers, tones, and taxonomy across Jokes and Pick-up-limes
+- [[Masculinity_and_Men]] — Performative male epidemic, war on men, and sterile optimization
 - [[Political_Commentary]] — Media capture, elite control, and governance
 - [[Developer_Resources]] — Learning tools, infrastructure, and references
 

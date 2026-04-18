@@ -2,11 +2,11 @@
 title: Macro Trading
 type: topic
 domain: markets
-sources: [Articles.md, Brief.md, Trading.md]
-related: [[Market Regime]], [[Cross-Asset Analysis]], [[Risk Analysis]], [[Trading Philosophy]], [[Stanley Druckenmiller]]
+sources: [Articles.md, Brief.md, Trading.md, CT.md]
+related: [[Market Regime]], [[Cross-Asset Analysis]], [[Risk Analysis]], [[Trading Philosophy]], [[Stanley Druckenmiller]], [[CT]]
 created: 2026-04-12
-updated: 2026-04-12
-tags: [macro, trading-strategy, methodology, analysis]
+updated: 2026-04-18
+tags: [macro, trading-strategy, methodology, analysis, m2, debt-default]
 ---
 
 ## Overview
@@ -49,3 +49,21 @@ This fundamental principle drives macro trading: what matters is not objective r
 - [[Markets - Brief]] - Daily overview template
 - [[Markets - Articles]] - Curated macro research
 - [[Citrini Research]] - Macro analysis and research
+
+## CT Framings (from [[CT]])
+
+### M2 overlay
+[[fejau_inc]]: overlaying M2 on any chart and going long-on-up reportedly outperforms PhD-staffed pod shops. The market "will not frontrun that ever and let you in" (from [[CT]]). Useful as a regime prior more than a trade trigger.
+
+### Crypto as silent debt default
+[[goodalexander]]: elites may use crypto as a silent debt-default mechanism — zero-sum game vs uneducated masses (from [[CT]]). Read alongside [[Political_Commentary]].
+
+### Bessent "white-hat-hacking" the dollar
+[[CT]] archive: Bessent's tariff volatility as controlled detonation — deleveraging Wall Street, boxing in China, forcing a Yuan collapse → flight to Treasuries → lower rates to refinance $9T of expiring US debt. Explicit framing of policy as adversarial game-theory.
+
+### Crypto decorrelation as forward-looking
+[[RJ_Killmex]] (Hayes-ish): crypto as the least-regulated market prices in information before equities/rates.
+[[OxHamz]]: alternative framing — decorrelation is a flow artifact (equities bid from rebalancing inflows; crypto relies on new entrants). Both can be true in different regimes. Flagged in [[CT]] under Contradictions.
+
+### Tide out reveals swimmers
+[[GCRClassic]]: "celsius, terraform, etc are just inevitable blowups of a macro unwinding, long prophesied by a handful of augurs" (from [[CT]]).

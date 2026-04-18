@@ -65,12 +65,46 @@ export function slugifyHeading(text: string): string {
     .replace(/^-|-$/g, "");
 }
 
-export function wikilinksToHtml(content: string, pages: Map<string, WikiPage>): string {
+// Resolve a wikilink name (e.g. "Philosophy_and_Meaning") to a page. Obsidian
+// convention uses the filename as the link target, but our primary slug comes
+// from the page title. When a title contains chars that slugify differently
+// (e.g. "Philosophy & Meaning" → "philosophy-meaning" vs filename
+// "Philosophy_and_Meaning" → "philosophy-and-meaning"), both link styles need
+// to resolve. We maintain a filename alias map as a fallback.
+export function resolveLink(
+  name: string,
+  pages: Map<string, WikiPage>,
+  fileAliases?: Map<string, string>
+): WikiPage | undefined {
+  const slug = slugify(name);
+  const direct = pages.get(slug);
+  if (direct) return direct;
+  const aliased = fileAliases?.get(slug);
+  if (aliased) return pages.get(aliased);
+  return undefined;
+}
+
+export function buildFileAliases(pages: Map<string, WikiPage>): Map<string, string> {
+  const aliases = new Map<string, string>();
+  for (const [slug, page] of pages) {
+    const base = basename(page.path, ".md");
+    const fileSlug = slugify(base);
+    if (fileSlug && fileSlug !== slug && !pages.has(fileSlug)) {
+      aliases.set(fileSlug, slug);
+    }
+  }
+  return aliases;
+}
+
+export function wikilinksToHtml(
+  content: string,
+  pages: Map<string, WikiPage>,
+  fileAliases?: Map<string, string>
+): string {
   return content.replace(/\[\[([^\]]+)\]\]/g, (_, raw) => {
     const [name, alias] = raw.split("|").map((s: string) => s.trim());
     const display = alias || name;
-    const slug = slugify(name);
-    const page = pages.get(slug);
+    const page = resolveLink(name, pages, fileAliases);
     if (page) {
       return `<a href="/page/${page.slug}" class="wikilink" data-slug="${page.slug}">${display}</a>`;
     }
@@ -279,6 +313,8 @@ export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
     if (!seenPaths.has(path)) parseCache.delete(path);
   }
 
+  const fileAliases = buildFileAliases(pages);
+
   // Second pass: render HTML. Reuse cached HTML when the slug set hasn't
   // changed since last render (ordinary content edits only touch one file).
   const sig = slugSetSignature(pages);
@@ -287,7 +323,7 @@ export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
     if (entry && entry.page === page && entry.htmlSig === sig && page.html) {
       continue; // reuse cached page.html
     }
-    const withLinks = wikilinksToHtml(page.content, pages);
+    const withLinks = wikilinksToHtml(page.content, pages, fileAliases);
     const html = markdownToHtml(withLinks, assetSet);
     page.html = injectHeadingIds(html, page.headings);
     if (entry) entry.htmlSig = sig;
@@ -302,6 +338,7 @@ export function buildGraphData(pages: Map<string, WikiPage>) {
   const nodes: { id: string; label: string; type: string; domain: string; category: string; linkCount: number }[] = [];
   const edges: { source: string; target: string }[] = [];
   const edgeSet = new Set<string>();
+  const fileAliases = buildFileAliases(pages);
 
   for (const [slug, page] of pages) {
     nodes.push({
@@ -314,12 +351,12 @@ export function buildGraphData(pages: Map<string, WikiPage>) {
     });
 
     for (const link of page.links) {
-      const targetSlug = slugify(link);
-      if (pages.has(targetSlug)) {
-        const key = [slug, targetSlug].sort().join("--");
+      const target = resolveLink(link, pages, fileAliases);
+      if (target) {
+        const key = [slug, target.slug].sort().join("--");
         if (!edgeSet.has(key)) {
           edgeSet.add(key);
-          edges.push({ source: slug, target: targetSlug });
+          edges.push({ source: slug, target: target.slug });
         }
       }
     }
@@ -334,13 +371,14 @@ export function computeBacklinks(
   pages: Map<string, WikiPage>
 ): Map<string, { slug: string; title: string; type: string }[]> {
   const backlinks = new Map<string, { slug: string; title: string; type: string }[]>();
+  const fileAliases = buildFileAliases(pages);
 
   for (const [slug, page] of pages) {
     for (const link of page.links) {
-      const targetSlug = slugify(link);
-      if (pages.has(targetSlug) && targetSlug !== slug) {
-        if (!backlinks.has(targetSlug)) backlinks.set(targetSlug, []);
-        const list = backlinks.get(targetSlug)!;
+      const target = resolveLink(link, pages, fileAliases);
+      if (target && target.slug !== slug) {
+        if (!backlinks.has(target.slug)) backlinks.set(target.slug, []);
+        const list = backlinks.get(target.slug)!;
         if (!list.some((b) => b.slug === slug)) {
           list.push({ slug, title: page.title, type: page.type });
         }
@@ -365,9 +403,9 @@ export function resolveRelatedList(
   else if (typeof names === "string") list = names.split(",").map((s) => s.trim()).filter(Boolean);
   else list = [String(names)];
 
+  const fileAliases = buildFileAliases(pages);
   return list.map((name) => {
-    const slug = slugify(name);
-    const page = pages.get(slug);
+    const page = resolveLink(name, pages, fileAliases);
     if (page) {
       return { name, slug: page.slug, title: page.title, type: page.type, resolved: true };
     }
@@ -407,6 +445,7 @@ export function computeLint(
 ): LintIssue[] {
   const issues: LintIssue[] = [];
   const now = Date.now();
+  const fileAliases = buildFileAliases(pages);
 
   // Collect titles (case-folded) to detect duplicates
   const titleMap = new Map<string, string[]>();
@@ -427,7 +466,7 @@ export function computeLint(
 
     // Broken wikilinks
     for (const link of page.links) {
-      if (!pages.has(slugify(link))) {
+      if (!resolveLink(link, pages, fileAliases)) {
         issues.push({ kind: "broken-link", slug, title: page.title, detail: link });
       }
     }
