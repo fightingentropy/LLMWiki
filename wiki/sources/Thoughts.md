@@ -96,4 +96,4 @@ Processed food design exploits human vulnerability.
 **Story is interface between idea and world.** Get it wrong, idea dies. Get it right, you bend steel.
 
 ---
-Related: [[Psychology]], [[Philosophy]], [[Social_Commentary]], [[Design_Thinking]]
+Related: [[Psychology]], [[Philosophy_and_Meaning]], [[Social_Commentary]], [[Design_Thinking]]

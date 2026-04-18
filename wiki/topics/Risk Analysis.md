@@ -48,7 +48,7 @@ Risks that could cause sharp drawdowns:
 - Duration blow-up (real yields spike, mortgages stress)
 
 ## Scenario Analysis
-The [[JUNE 2028 scenario]] in [[Articles.md]] is an example of explicit downside scenario modeling:
+The "June 2028 scenario" in [[Markets - Articles]] is an example of explicit downside scenario modeling:
 - S&P down 38% from highs
 - Unemployment at 10.2%
 - Private credit unraveling

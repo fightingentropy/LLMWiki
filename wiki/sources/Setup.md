@@ -25,7 +25,7 @@ Quick inventory of development and productivity tools.
 - **Handy** - Voice transcription tool
 
 ## Resources
-[[OpenClaw on Mac Mini: The Complete Setup Guide|OpenClaw Setup]] - Comprehensive guide for setting up OpenClaw on Mac Mini hardware.
+OpenClaw Setup — "OpenClaw on Mac Mini: The Complete Setup Guide" (from raw/misc/Setup.md) covers setting up OpenClaw on Mac Mini hardware.
 
 ---
-Related topics: [[Developer Resources]], [[Tools]]
+Related topics: [[Developer_Resources]], [[Tools]]

@@ -74,4 +74,4 @@ tags: [development, tools, learning, infrastructure]
 - Handy - Voice transcription
 
 ---
-Related: [[Design_Tools]], [[Setup]], [[Tools]]
+Related: [[Design_and_Aesthetics]], [[Setup]], [[Tools]]

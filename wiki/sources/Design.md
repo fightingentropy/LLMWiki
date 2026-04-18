@@ -96,4 +96,4 @@ Curated collection of design tools, galleries, and learning resources.
 - Hotkeys.design - Design hotkeys - https://hotkeys.design/
 
 ---
-Related: [[Design_Tools]], [[Web_Design]], [[Developer_Resources]]
+Related: [[Design_and_Aesthetics]], [[Developer_Resources]]

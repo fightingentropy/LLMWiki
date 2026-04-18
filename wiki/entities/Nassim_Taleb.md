@@ -55,4 +55,4 @@ And the core antifragility summary as it appears in [[Quotes]]:
 Influential in risk management, optionality thinking, and dignity/honor philosophy.
 
 ---
-Related: [[Philosophy_and_Meaning]], [[Risk_Management]]
+Related: [[Philosophy_and_Meaning]], [[Risk Analysis]]

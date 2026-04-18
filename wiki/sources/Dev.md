@@ -57,4 +57,4 @@ Curated collection of development, design, and visualization tools.
 - Toolfolio.io - https://toolfolio.io/
 
 ---
-Related: [[Developer Resources]], [[Design Tools]]
+Related: [[Developer_Resources]], [[Design_and_Aesthetics]]

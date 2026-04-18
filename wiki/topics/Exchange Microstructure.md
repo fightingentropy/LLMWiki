@@ -18,7 +18,7 @@ Microstructure is how order flow translates to price. It encompasses latency, or
 - **Maker advantage**: Fast participants can front-run slow ones
 - **Latency arbitrage**: Opportunities in flow timing
 - **Geographic factors**: Distance from matching engine, network routing
-- **Monitoring**: [[Hyperliquid Latency Map]] tracks real-time network conditions
+- **Monitoring**: Hyperliquid Latency Map (see [[Markets - Tools]]) tracks real-time network conditions
 
 ### Liquidity Provision
 - **Bid-ask spreads**: Tighter in liquid markets, wider in stressed

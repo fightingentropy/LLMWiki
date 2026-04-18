@@ -15,7 +15,7 @@ Master catalog of all wiki pages. Read this first to navigate the wiki.
 Reference collections and curated resource lists that form the foundation of the wiki.
 
 - [[Bizz_and_Finance]] — Consumer spending patterns, market psychology, and economic insights
-- [[Body]] — Core body optimization philosophy, supplements, and training protocols
+- [[Body Optimization]] — Core body optimization philosophy, supplements, and training protocols
 - [[CT]] — Crypto Takes: verbatim archive of crypto-twitter trader quotes on price discovery, psychology, macro, microstructure
 - [[Culture]] — Geography, environment, business strategy, and cultural observations
 - [[Design]] — Design tools, systems, and aesthetic frameworks
@@ -33,7 +33,7 @@ Reference collections and curated resource lists that form the foundation of the
 - [[Medical]] — ADHD, circadian rhythms, thyroid health, and medical insights
 - [[PAT Testing]] — Portable appliance testing guide covering inspection, testing, and safety
 - [[Pick-up-limes]] — Personal archive of crude one-liners, pickup lines, Greek phrases, and dating banter
-- [[Politics]] — Media critique, elite control, and political analysis
+- [[Political Commentary]] — Media critique, elite control, and political analysis
 - [[Psychology]] — Psychology of behavior, trauma, decision-making, and relationships
 - [[Quotes]] — Cross-domain curated quote archive: philosophy, action, trading, love, self, time, art, craft
 - [[Setup]] — Development tools and productivity setup inventory
@@ -95,6 +95,23 @@ Key figures, organizations, standards, and platforms referenced throughout the w
 - [[Tim_Ferriss]] — Productivity hacker and life optimization author
 - [[Toto Wolff]] — Mercedes Formula 1 team principal
 - [[trading_axe]] — Crypto trader; Remilio voice, never-flex, IRL opsec
+- [[AutismCapital]] — X account covering crypto/culture and ideology-gap commentary
+- [[CL207]] — Crypto trader X account; contrarian narrative takes
+- [[David_Goggins]] — Former Navy SEAL and author; discipline and mental toughness
+- [[fewseethis]] — Crypto trader X account
+- [[G_K_Chesterton]] — English writer and Catholic philosopher; paradox and orthodoxy
+- [[Gabriel_Garcia_Marquez]] — Colombian novelist; love, memory, and magical realism
+- [[HighStakesCap]] — Crypto trader X account; risk-first framing
+- [[Kafka]] — Franz Kafka; bureaucratic alienation, patience, and self-knowledge
+- [[Kornfield]] — Jack Kornfield; Buddhist meditation teacher on forgiveness and presence
+- [[LomahCrypto]] — Crypto trader X account; decision-making under uncertainty
+- [[OxHamz]] — Crypto trader X account; correlation framing
+- [[Peter_Thiel]] — Investor, PayPal co-founder; contrarian thinking and monopoly theory
+- [[RJ_Killmex]] — Crypto/macro trader X account; decorrelation takes
+- [[Steve_Jobs]] — Apple co-founder; taste, craft, and mortality as clarifier
+- [[Sylvia_Plath]] — American poet; self-observation and internal contradiction
+- [[thiccythot]] — Crypto trader X account; market psychology
+- [[Zhu Su]] — Three Arrows Capital co-founder; post-collapse crypto voice
 
 ## Topics
 
@@ -110,6 +127,13 @@ Organized by domain. Each page provides deep dives into specific subjects.
 - [[Philosophy_and_Meaning]] — Entropy vs. extropy, identity, and purpose
 - [[Self_Improvement]] — Compounding deltas, discipline, and personal growth
 - [[Trading_Psychology]] — Trader psychology, decision-making, and motivation
+- [[Circadian_Rhythm]] — Sleep/wake timing, light exposure, and ADHD link
+- [[Decision-Making]] — Decision quality, edge, and process under uncertainty
+- [[Genius_and_Madness]] — Thin line between trading edge and self-destruction
+- [[Neurodiversity]] — ADHD reframed as variation, not deficit
+- [[Proximity_Infatuation]] — Attraction as function of proximity and context
+- [[Stress_Management]] — Cortisol, recovery, nervous system regulation
+- [[Thoughts_and_Observations]] — Cross-domain personal observations front-door
 
 ### Health & Body
 
@@ -152,6 +176,10 @@ Organized by domain. Each page provides deep dives into specific subjects.
 - [[Trading Philosophy]] — Principles, methodology, and trader mindset
 - [[Trading Platforms]] — Exchanges, brokers, and trading infrastructure
 - [[Traders Directory]] — Notable traders and market participants
+- [[Behavioral_Finance]] — Biases, heuristics, and market psychology
+- [[Capital_Allocation_Timing]] — When to deploy vs. hold dry powder
+- [[Economics]] — Macro economics as backdrop to market/political frames
+- [[Market Cycles]] — Crypto and macro cycle structure
 
 ### Electrics
 
@@ -165,6 +193,11 @@ Organized by domain. Each page provides deep dives into specific subjects.
 - [[Safe Isolation]] — Safe isolation procedures and dead-testing
 - [[Test Equipment Standards]] — Testing equipment calibration and standards
 - [[Tools]] — Testing equipment and tools reference
+- [[Part P]] — UK Building Regs domestic notifiable electrical work
+- [[EICR]] — Electrical Installation Condition Report; C1/C2/C3/FI codes
+- [[GS38]] — HSE guidance on electrical test equipment (probes, leads, fuses)
+- [[BS EN 61010]] — Safety standard for electrical test equipment (CAT ratings)
+- [[BS EN 61557]] — Performance standard for installation test equipment
 
 ### Culture & Politics
 
@@ -173,11 +206,21 @@ Organized by domain. Each page provides deep dives into specific subjects.
 - [[Masculinity_and_Men]] — Performative male epidemic, war on men, and sterile optimization
 - [[Political_Commentary]] — Media capture, elite control, and governance
 - [[Developer_Resources]] — Learning tools, infrastructure, and references
+- [[Business_Philosophy]] — Craft, distinctiveness, and principles of long-game business
+- [[Catfish_Effect]] — Competitive stress and managed disruption as performance driver
+- [[Culture_and_Environment]] — How place, climate, and surroundings shape identity
+- [[Design_Thinking]] — Story-as-interface, taste, and iterative problem framing
+- [[Entropy_vs_Extropy]] — Curtis Yarvin's framework of decay vs. ordered progress
+- [[Media_Critique]] — Narrative capture, institutional media, and information flow
+- [[Political_Philosophy]] — Governance, legitimacy, and political thought across traditions
+- [[Self_Improvement_Culture_Critique]] — Skeptical lens on the self-help industry
+- [[Social_Commentary]] — Observations on dating, work, class, and modern mores
+- [[Technology_Critique]] — Tradeoffs, dependencies, and costs of technological adoption
 
 ---
 
 **Navigation tips:**
-- Use wikilinks [[ ]] to jump between pages
+- Use wikilinks (double square brackets) to jump between pages
 - Search by domain above to find topics in your area of interest
 - Follow "related:" connections in each page's frontmatter to discover connected concepts
 - Sources provide research foundations; Entities are key references; Topics are detailed explorations

@@ -224,7 +224,7 @@ Key references for Building Regulations knowledge:
 
 - [[Part P]] (detailed)
 - [[RCD Protection]] (detailed)
-- [[Cable Routing and Safe Zones]] (detailed)
-- [[Structural Limits]] (detailed)
 - [[EIC and MEIWC]] (certification under Building Regs)
-- [[Safe Addition Principle]] (Regulation 132.16)
+- Cable routing and safe zones — see BS 7671 section 522.6 (covered in [[Electrical Safety]] and [[BS 7671]])
+- Structural limits on notching/drilling joists — see BS 7671 section 522.6 and Approved Document A
+- Safe Addition Principle — Regulation 132.16 of [[BS 7671]]

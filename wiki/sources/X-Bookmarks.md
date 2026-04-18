@@ -49,7 +49,7 @@ HYPE/Hyperliquid, market microstructure, Discovery Bounds V2, perps, funding, ma
 - Subthemes: Hyperliquid adl/HLP mechanics · 24/7 perps / Discovery Bounds · prediction-market arbitrage (Polymarket, gabagool22) · profit-taking math (see Insights) · bond selloff post-Iran · Anthropic-as-largest-IPO thesis · dog-tumor-mRNA-vaccine story · Noise.xyz information markets
 
 ### 6. Culture & Commentary (~90)
-UK/EU cultural-decline posts, Epstein files, political commentary, Europe migration coverage. Skews right/populist. Continues the [[Politics]] / [[Culture]] thread.
+UK/EU cultural-decline posts, Epstein files, political commentary, Europe migration coverage. Skews right/populist. Continues the [[Political Commentary]] / [[Culture]] thread.
 - Handles: **@europa**, **@TRobinsonNewEra**, **@SamLovesEngland**, **@LPNational**, **@unusual_whales**, **@Heatherc_77**
 - Subthemes: Afghan-national crime coverage · Chilterns "diversity target" piece · Epstein-Grijalva 4chan post identification · France-as-lost-city-of-love · Tommy Robinson Unite-the-West
 

@@ -88,4 +88,4 @@ Famous Richter rat study (1957): Domesticated rats swim 40-60 hours; wild rats d
 "Radical honesty is lazy. Ability to discern between necessary disclosure and tactful omission = important life skill." Context matters.
 
 ---
-Related: [[Mental_Health]], [[Self-Improvement]], [[Philosophy]], [[Trading_Psychology]]
+Related: [[Mental_Health]], [[Self_Improvement]], [[Philosophy_and_Meaning]], [[Trading_Psychology]]

@@ -71,4 +71,4 @@ Limits for notches and chases to maintain structural integrity:
 ## References
 
 - Electrics guide to Building Regs: pages 38 and 168
-- [[Floors and Ceilings]] notes (placeholder topic for expansion)
+- Floors and Ceilings notes — see [[Building Regulations]] and [[BS 7671]] section 522.6 (cable routing in walls/joists)
