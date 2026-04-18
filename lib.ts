@@ -169,17 +169,93 @@ function toStringArray(v: any): string[] {
 
 // --- Load Wiki ---
 
-export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
-  const pages = new Map<string, WikiPage>();
+// Cache of parsed + rendered pages, keyed by absolute file path. Reused
+// across reloads: if a file's mtime is unchanged we skip re-reading and
+// re-parsing markdown. HTML is additionally keyed by the slug set so it
+// only re-renders when the set of linkable pages changes (i.e. a page
+// was added/removed/renamed) — ordinary content edits only re-render the
+// one file that changed.
+interface ParseCacheEntry {
+  mtime: number;
+  slug: string;
+  page: WikiPage; // page.html is the rendered HTML; invalidated when slugSig changes
+  htmlSig: string; // slug set signature at time of render
+}
+const parseCache = new Map<string, ParseCacheEntry>();
 
-  // Build the asset set so image wikilinks can be resolved
+async function loadAssetSet(): Promise<Set<string>> {
   const assetSet = new Set<string>();
   try {
     const assets = await readdir(join(import.meta.dir, "raw", "assets"));
     assets.forEach((a) => assetSet.add(a));
-  } catch {
-    // No assets dir — fine
+  } catch {}
+  return assetSet;
+}
+
+function slugSetSignature(pages: Map<string, WikiPage>): string {
+  // Cheap hash: sorted slugs joined. Only used to detect added/removed/renamed
+  // pages so HTML (which resolves wikilinks) can be reused when the set is stable.
+  return [...pages.keys()].sort().join("|");
+}
+
+async function parsePage(fullPath: string, relPath: string): Promise<WikiPage | null> {
+  const st = await stat(fullPath);
+  const cached = parseCache.get(fullPath);
+  if (cached && cached.mtime === st.mtimeMs) {
+    return cached.page;
   }
+
+  try {
+    let raw = await readFile(fullPath, "utf-8");
+    const fmMatch = raw.match(/^---\n([\s\S]*?)\n---/);
+    if (fmMatch) {
+      const cleanedFm = fmMatch[1].replace(/\[\[/g, "").replace(/\]\]/g, "");
+      raw = `---\n${cleanedFm}\n---` + raw.slice(fmMatch[0].length);
+    }
+    const { data, content } = matter(raw);
+    const category = relPath.includes("/") ? relPath.split("/")[0] : "root";
+    const slug = slugify(data.title || basename(relPath, ".md"));
+    const headings = extractHeadings(content);
+    const wc = wordCount(content);
+
+    const page: WikiPage = {
+      slug,
+      title: data.title || basename(relPath, ".md"),
+      type: data.type || "unknown",
+      domain: Array.isArray(data.domain) ? data.domain.join(", ") : data.domain || "unknown",
+      tags: toStringArray(data.tags),
+      sources: toStringArray(data.sources),
+      related: toStringArray(data.related),
+      created: normalizeDate(data.created),
+      updated: normalizeDate(data.updated),
+      content,
+      html: "",
+      links: extractWikilinks(content),
+      category,
+      path: relPath,
+      wordCount: wc,
+      readingTime: Math.max(1, Math.round(wc / 225)),
+      headings,
+      mtime: st.mtimeMs,
+    };
+
+    // Evict any stale entry under a different slug (e.g. after a title rename)
+    if (cached && cached.slug !== slug) {
+      // previous slug may still be referenced elsewhere; its cache entry
+      // is tied to this path so we just overwrite below
+    }
+    parseCache.set(fullPath, { mtime: st.mtimeMs, slug, page, htmlSig: "" });
+    return page;
+  } catch (e) {
+    console.error(`Error parsing ${fullPath}:`, e);
+    return null;
+  }
+}
+
+export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
+  const pages = new Map<string, WikiPage>();
+  const assetSet = await loadAssetSet();
+  const seenPaths = new Set<string>();
 
   async function walkDir(dir: string) {
     const entries = await readdir(dir, { withFileTypes: true });
@@ -188,56 +264,33 @@ export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
       if (entry.isDirectory()) {
         await walkDir(fullPath);
       } else if (entry.name.endsWith(".md")) {
-        try {
-          let raw = await readFile(fullPath, "utf-8");
-          // Sanitize frontmatter: strip [[ ]] from YAML values to avoid parse errors
-          const fmMatch = raw.match(/^---\n([\s\S]*?)\n---/);
-          if (fmMatch) {
-            const cleanedFm = fmMatch[1].replace(/\[\[/g, "").replace(/\]\]/g, "");
-            raw = `---\n${cleanedFm}\n---` + raw.slice(fmMatch[0].length);
-          }
-          const { data, content } = matter(raw);
-          const relPath = relative(WIKI_DIR, fullPath);
-          const category = relPath.includes("/") ? relPath.split("/")[0] : "root";
-          const slug = slugify(data.title || basename(entry.name, ".md"));
-          const st = await stat(fullPath);
-
-          const headings = extractHeadings(content);
-          const wc = wordCount(content);
-          pages.set(slug, {
-            slug,
-            title: data.title || basename(entry.name, ".md"),
-            type: data.type || "unknown",
-            domain: Array.isArray(data.domain) ? data.domain.join(", ") : data.domain || "unknown",
-            tags: toStringArray(data.tags),
-            sources: toStringArray(data.sources),
-            related: toStringArray(data.related),
-            created: normalizeDate(data.created),
-            updated: normalizeDate(data.updated),
-            content,
-            html: "",
-            links: extractWikilinks(content),
-            category,
-            path: relPath,
-            wordCount: wc,
-            readingTime: Math.max(1, Math.round(wc / 225)),
-            headings,
-            mtime: st.mtimeMs,
-          });
-        } catch (e) {
-          console.error(`Error parsing ${fullPath}:`, e);
-        }
+        seenPaths.add(fullPath);
+        const relPath = relative(WIKI_DIR, fullPath);
+        const page = await parsePage(fullPath, relPath);
+        if (page) pages.set(page.slug, page);
       }
     }
   }
 
   await walkDir(WIKI_DIR);
 
-  // Second pass: convert wikilinks to HTML links, then render markdown
+  // Evict cache entries whose files were removed
+  for (const path of [...parseCache.keys()]) {
+    if (!seenPaths.has(path)) parseCache.delete(path);
+  }
+
+  // Second pass: render HTML. Reuse cached HTML when the slug set hasn't
+  // changed since last render (ordinary content edits only touch one file).
+  const sig = slugSetSignature(pages);
   for (const [, page] of pages) {
+    const entry = parseCache.get(join(WIKI_DIR, page.path));
+    if (entry && entry.page === page && entry.htmlSig === sig && page.html) {
+      continue; // reuse cached page.html
+    }
     const withLinks = wikilinksToHtml(page.content, pages);
     const html = markdownToHtml(withLinks, assetSet);
     page.html = injectHeadingIds(html, page.headings);
+    if (entry) entry.htmlSig = sig;
   }
 
   return pages;
@@ -493,6 +546,71 @@ export function buildMeta(pages: Map<string, WikiPage>): WikiMeta {
     totalWords,
     domains,
   };
+}
+
+// --- Pending Ingest ---
+// Raw source files (raw/**/*.md, excluding assets) that haven't been ingested
+// into wiki/sources yet. A raw file is considered ingested if any wiki page of
+// type=source references it by basename in its `sources:` frontmatter.
+
+const RAW_DIR = join(import.meta.dir, "raw");
+const INGEST_SKIP_DIRS = new Set(["assets"]);
+
+export interface PendingSource {
+  path: string; // relative to raw/
+  basename: string;
+  size: number;
+  mtime: number;
+}
+
+export async function computePendingIngest(
+  pages: Map<string, WikiPage>
+): Promise<PendingSource[]> {
+  const referenced = new Set<string>();
+  for (const page of pages.values()) {
+    // A raw file is "ingested" once any wiki page cites it in sources[],
+    // regardless of page type — topic/entity pages often draw from multiple raws.
+    for (const s of page.sources) {
+      const name = String(s).trim();
+      if (!name) continue;
+      referenced.add(name);
+      const base = name.split("/").pop()!;
+      referenced.add(base);
+    }
+  }
+
+  const pending: PendingSource[] = [];
+  async function walk(dir: string, prefix: string) {
+    let entries;
+    try {
+      entries = await readdir(dir, { withFileTypes: true });
+    } catch {
+      return;
+    }
+    for (const entry of entries) {
+      if (entry.name.startsWith(".")) continue;
+      if (entry.isDirectory()) {
+        if (INGEST_SKIP_DIRS.has(entry.name)) continue;
+        await walk(join(dir, entry.name), prefix ? `${prefix}/${entry.name}` : entry.name);
+      } else if (entry.name.endsWith(".md")) {
+        if (referenced.has(entry.name) || referenced.has(`${prefix}/${entry.name}`)) continue;
+        try {
+          const st = await stat(join(dir, entry.name));
+          pending.push({
+            path: prefix ? `${prefix}/${entry.name}` : entry.name,
+            basename: entry.name,
+            size: st.size,
+            mtime: st.mtimeMs,
+          });
+        } catch {}
+      }
+    }
+  }
+  await walk(RAW_DIR, "");
+
+  // Newest first — most recently added raw files surface at the top
+  pending.sort((a, b) => b.mtime - a.mtime);
+  return pending;
 }
 
 // --- Search ---

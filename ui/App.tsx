@@ -125,6 +125,26 @@ function MenuIcon() {
     </svg>
   );
 }
+function SyncIcon({ spinning }: { spinning?: boolean }) {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 16 16"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={spinning ? "spin" : ""}
+    >
+      <path d="M2 8a6 6 0 0 1 10.24-4.24L14 5.5" />
+      <path d="M14 2v3.5H10.5" />
+      <path d="M14 8a6 6 0 0 1-10.24 4.24L2 10.5" />
+      <path d="M2 14v-3.5H5.5" />
+    </svg>
+  );
+}
 
 // --- Data fetching (cached where it makes sense) ---
 let _pagesCache: PageSummary[] | null = null;
@@ -189,6 +209,41 @@ async function fetchSearchIndex(): Promise<any[]> {
   const res = await fetch("/data/search.json");
   _searchCache = await res.json();
   return _searchCache!;
+}
+
+interface PendingSource { path: string; basename: string; size: number; mtime: number; }
+
+async function fetchPendingIngest(): Promise<PendingSource[]> {
+  try {
+    const res = await fetch("/data/pending-ingest.json");
+    if (!res.ok) return [];
+    return await res.json();
+  } catch {
+    return [];
+  }
+}
+
+function resetCaches() {
+  _pagesCache = null;
+  _searchCache = null;
+  _graphCache = null;
+  _metaCache = null;
+}
+
+async function runSync(): Promise<{ ok: boolean; synced: string[]; errors: string[]; pending: number; error?: string }> {
+  try {
+    const res = await fetch("/api/sync");
+    const data = await res.json();
+    return {
+      ok: !!data.ok,
+      synced: data.synced || [],
+      errors: data.errors || [],
+      pending: data.pending || 0,
+      error: data.error,
+    };
+  } catch (e: any) {
+    return { ok: false, synced: [], errors: [String(e?.message || e)], pending: 0, error: String(e) };
+  }
 }
 
 async function runSearch(q: string) {
@@ -498,15 +553,24 @@ function Sidebar({
   );
 }
 
-// --- Table of Contents ---
-function TableOfContents({ headings }: { headings: { level: number; text: string; id: string }[] }) {
+// --- Page Aside (TOC + Backlinks) ---
+function PageAside({
+  headings,
+  backlinks,
+  onNavigate,
+}: {
+  headings: { level: number; text: string; id: string }[];
+  backlinks: { slug: string; title: string; type: string }[];
+  onNavigate: (slug: string) => void;
+}) {
   const [active, setActive] = useState<string | null>(null);
+  const showToc = headings.length >= 3;
+  const showBacklinks = backlinks.length > 0;
 
   useEffect(() => {
-    if (!headings.length) return;
+    if (!showToc) return;
     const observer = new IntersectionObserver(
       (entries) => {
-        // Pick the first visible heading as active
         for (const e of entries) {
           if (e.isIntersecting) {
             setActive(e.target.id);
@@ -521,34 +585,55 @@ function TableOfContents({ headings }: { headings: { level: number; text: string
       if (el) observer.observe(el);
     });
     return () => observer.disconnect();
-  }, [headings]);
+  }, [headings, showToc]);
 
-  if (headings.length < 3) return null;
+  if (!showToc && !showBacklinks) return null;
 
   return (
-    <aside className="toc">
-      <div className="toc-title">On this page</div>
-      <ul>
-        {headings
-          .filter((h) => h.level >= 1 && h.level <= 3)
-          .map((h) => (
-            <li key={h.id} className={`toc-level-${h.level} ${active === h.id ? "active" : ""}`}>
-              <a
-                href={`#${h.id}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  const el = document.getElementById(h.id);
-                  if (el) {
-                    el.scrollIntoView({ behavior: "smooth", block: "start" });
-                    history.replaceState(null, "", `#${h.id}`);
-                  }
-                }}
-              >
-                {h.text}
-              </a>
-            </li>
-          ))}
-      </ul>
+    <aside className="page-aside">
+      {showToc && (
+        <div className="aside-section toc">
+          <div className="aside-title">On this page</div>
+          <ul>
+            {headings
+              .filter((h) => h.level >= 1 && h.level <= 3)
+              .map((h) => (
+                <li key={h.id} className={`toc-level-${h.level} ${active === h.id ? "active" : ""}`}>
+                  <a
+                    href={`#${h.id}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const el = document.getElementById(h.id);
+                      if (el) {
+                        el.scrollIntoView({ behavior: "smooth", block: "start" });
+                        history.replaceState(null, "", `#${h.id}`);
+                      }
+                    }}
+                  >
+                    {h.text}
+                  </a>
+                </li>
+              ))}
+          </ul>
+        </div>
+      )}
+      {showBacklinks && (
+        <div className="aside-section aside-backlinks">
+          <div className="aside-title">Referenced by · {backlinks.length}</div>
+          <ul>
+            {backlinks.map((b) => (
+              <li key={b.slug}>
+                <button className="aside-backlink" onClick={() => onNavigate(b.slug)}>
+                  <span className="sidebar-glyph" style={{ color: TYPE_COLORS[b.type] || TYPE_COLORS.unknown }}>
+                    {typeGlyph(b.type)}
+                  </span>
+                  <span className="aside-backlink-title">{b.title}</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </aside>
   );
 }
@@ -704,28 +789,13 @@ function PageView({
             </div>
           )}
 
-          {page.backlinks?.length > 0 && (
-            <div className="backlinks">
-              <div className="backlinks-title">Backlinks · {page.backlinks.length}</div>
-              <div className="backlinks-list">
-                {page.backlinks.map((b) => (
-                  <button
-                    key={b.slug}
-                    className="backlink-item"
-                    onClick={() => onNavigate(b.slug)}
-                  >
-                    <span className="sidebar-glyph" style={{ color: TYPE_COLORS[b.type] || TYPE_COLORS.unknown }}>
-                      {typeGlyph(b.type)}
-                    </span>
-                    {b.title}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
         </article>
 
-        <TableOfContents headings={page.headings || []} />
+        <PageAside
+          headings={page.headings || []}
+          backlinks={page.backlinks || []}
+          onNavigate={onNavigate}
+        />
       </div>
     </div>
   );
@@ -1410,16 +1480,325 @@ function ShortcutsOverlay({ open, onClose }: { open: boolean; onClose: () => voi
 }
 
 // --- App ---
+// --- Sync button + pending-ingest modal ---
+interface SyncToast { kind: "ok" | "err"; text: string; }
+
+function SyncButton({
+  pending,
+  onSynced,
+  onShowPending,
+}: {
+  pending: PendingSource[];
+  onSynced: () => void;
+  onShowPending: () => void;
+}) {
+  const [busy, setBusy] = useState(false);
+  const [toast, setToast] = useState<SyncToast | null>(null);
+
+  async function handleSync() {
+    if (busy) return;
+    setBusy(true);
+    setToast(null);
+    const result = await runSync();
+    setBusy(false);
+    if (result.ok) {
+      const changed = result.synced.length;
+      const text = changed === 0
+        ? "Already up to date"
+        : `${result.synced.length} folder${result.synced.length === 1 ? "" : "s"} synced`;
+      setToast({ kind: "ok", text });
+      onSynced();
+    } else {
+      setToast({ kind: "err", text: result.error || result.errors[0] || "Sync failed" });
+    }
+    setTimeout(() => setToast(null), 2800);
+  }
+
+  return (
+    <div className="sync-wrap">
+      <button
+        className="icon-btn sync-btn"
+        onClick={handleSync}
+        disabled={busy}
+        title={busy ? "Syncing…" : "Sync from Obsidian vault"}
+        aria-label="Sync from Obsidian"
+      >
+        <SyncIcon spinning={busy} />
+      </button>
+      {pending.length > 0 && (
+        <button
+          className="pending-badge"
+          onClick={onShowPending}
+          title={`${pending.length} raw source${pending.length === 1 ? "" : "s"} not yet ingested`}
+          aria-label="Show pending ingest"
+        >
+          {pending.length}
+        </button>
+      )}
+      {toast && <div className={`sync-toast sync-toast-${toast.kind}`}>{toast.text}</div>}
+    </div>
+  );
+}
+
+function PendingModal({
+  items,
+  onClose,
+  onIngest,
+}: {
+  items: PendingSource[];
+  onClose: () => void;
+  onIngest: (files: string[]) => void;
+}) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  function fmtSize(bytes: number) {
+    if (bytes < 1024) return `${bytes} B`;
+    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+    return `${(bytes / 1024 / 1024).toFixed(1)} MB`;
+  }
+
+  return (
+    <div className="overlay" onClick={onClose}>
+      <div className="modal" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-header">
+          <h2>Pending ingest · {items.length}</h2>
+          <div className="modal-header-actions">
+            {items.length > 0 && (
+              <button
+                className="modal-primary"
+                onClick={() => onIngest(items.map((i) => i.path))}
+                title="Run claude CLI to ingest these files into the wiki"
+              >
+                Ingest all
+              </button>
+            )}
+            <button className="modal-close" onClick={onClose} aria-label="Close">×</button>
+          </div>
+        </div>
+        <div className="modal-hint">
+          Raw source files in <code>raw/</code> not referenced by any wiki page's <code>sources:</code> frontmatter.
+          <span style={{ display: "block", marginTop: 4 }}>
+            "Ingest all" runs the <code>claude</code> CLI locally using your Max subscription — it will create source/entity/topic pages following CLAUDE.md.
+          </span>
+        </div>
+        {items.length === 0 ? (
+          <div className="modal-empty">All raw sources have been ingested.</div>
+        ) : (
+          <ul className="pending-list">
+            {items.map((it) => (
+              <li key={it.path} className="pending-item">
+                <span className="pending-path">{it.path}</span>
+                <span className="pending-meta">{fmtSize(it.size)}</span>
+                <button
+                  className="pending-ingest-one"
+                  onClick={() => onIngest([it.path])}
+                  title="Ingest only this file"
+                >
+                  Ingest
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// --- Ingest progress panel ---
+interface IngestEvent {
+  kind: "text" | "tool" | "result" | "stderr" | "system" | "exit" | "other";
+  text: string;
+  tool?: string;
+}
+
+function parseIngestLine(line: string): IngestEvent | null {
+  try {
+    const ev = JSON.parse(line);
+    if (ev.type === "stderr") return { kind: "stderr", text: ev.text };
+    if (ev.type === "exit") return { kind: "exit", text: `Exit: ${ev.status} (${ev.exitCode ?? "?"})` };
+    if (ev.type === "system") return { kind: "system", text: ev.subtype || "system" };
+    if (ev.type === "assistant") {
+      const content = ev.message?.content;
+      if (Array.isArray(content)) {
+        const parts: IngestEvent[] = [];
+        for (const c of content) {
+          if (c.type === "text" && c.text) parts.push({ kind: "text", text: c.text });
+          else if (c.type === "tool_use") {
+            const name = c.name || "?";
+            const input = c.input || {};
+            let hint = "";
+            if (input.file_path) hint = String(input.file_path);
+            else if (input.path) hint = String(input.path);
+            else if (input.pattern) hint = String(input.pattern);
+            else if (input.command) hint = String(input.command).slice(0, 80);
+            parts.push({ kind: "tool", text: hint, tool: name });
+          }
+        }
+        if (parts.length) return parts[parts.length - 1]; // return last part — multiple collapsed for brevity
+      }
+      return null;
+    }
+    if (ev.type === "result") return { kind: "result", text: ev.result || "done" };
+    return { kind: "other", text: ev.type || "event" };
+  } catch {
+    return { kind: "stderr", text: line };
+  }
+}
+
+function IngestPanel({
+  files,
+  onClose,
+  onDone,
+}: {
+  files: string[];
+  onClose: () => void;
+  onDone: () => void;
+}) {
+  const [events, setEvents] = useState<IngestEvent[]>([]);
+  const [status, setStatus] = useState<"starting" | "running" | "done" | "failed" | "aborted">("starting");
+  const abortRef = useRef<AbortController | null>(null);
+  const logRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctrl = new AbortController();
+    abortRef.current = ctrl;
+    (async () => {
+      try {
+        const res = await fetch("/api/ingest", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ files }),
+          signal: ctrl.signal,
+        });
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          setEvents((e) => [...e, { kind: "stderr", text: err.error || `HTTP ${res.status}` }]);
+          setStatus("failed");
+          return;
+        }
+        setStatus("running");
+        const reader = res.body!.getReader();
+        const decoder = new TextDecoder();
+        let buf = "";
+        while (true) {
+          const { value, done } = await reader.read();
+          if (done) break;
+          buf += decoder.decode(value, { stream: true });
+          let nl: number;
+          while ((nl = buf.indexOf("\n")) !== -1) {
+            const line = buf.slice(0, nl);
+            buf = buf.slice(nl + 1);
+            if (!line) continue;
+            const ev = parseIngestLine(line);
+            if (!ev) continue;
+            if (ev.kind === "exit") {
+              setStatus(
+                ev.text.includes("done") ? "done" : ev.text.includes("aborted") ? "aborted" : "failed"
+              );
+            }
+            setEvents((prev) => {
+              const next = [...prev, ev];
+              return next.length > 500 ? next.slice(-500) : next;
+            });
+          }
+        }
+      } catch (e: any) {
+        if (e.name !== "AbortError") {
+          setEvents((prev) => [...prev, { kind: "stderr", text: String(e.message || e) }]);
+          setStatus("failed");
+        }
+      }
+    })();
+    return () => ctrl.abort();
+  }, []);
+
+  useEffect(() => {
+    if (logRef.current) logRef.current.scrollTop = logRef.current.scrollHeight;
+  }, [events]);
+
+  useEffect(() => {
+    if (status === "done" || status === "failed" || status === "aborted") {
+      onDone();
+    }
+  }, [status, onDone]);
+
+  async function abort() {
+    await fetch("/api/ingest/abort", { method: "POST" }).catch(() => {});
+    abortRef.current?.abort();
+    setStatus("aborted");
+  }
+
+  const finished = status !== "running" && status !== "starting";
+
+  return (
+    <div className="overlay">
+      <div className="modal ingest-panel">
+        <div className="modal-header">
+          <h2>
+            Ingest · {files.length} file{files.length === 1 ? "" : "s"}
+            <span className={`ingest-status ingest-status-${status}`}>{status}</span>
+          </h2>
+          <div className="modal-header-actions">
+            {!finished && (
+              <button className="modal-primary ingest-abort" onClick={abort}>
+                Abort
+              </button>
+            )}
+            {finished && (
+              <button className="modal-primary" onClick={onClose}>
+                Close
+              </button>
+            )}
+          </div>
+        </div>
+        <div className="ingest-log" ref={logRef}>
+          {events.length === 0 && status === "starting" && (
+            <div className="ingest-empty">Starting claude CLI…</div>
+          )}
+          {events.map((ev, i) => (
+            <div key={i} className={`ingest-event ingest-event-${ev.kind}`}>
+              {ev.kind === "tool" && <span className="ingest-tool-tag">{ev.tool}</span>}
+              <span className="ingest-event-text">{ev.text}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const [pages, setPages] = useState<PageSummary[]>([]);
   const [route, setRoute] = useState<Route>(parseRoute());
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [meta, setMeta] = useState<Meta | null>(null);
+  const [pending, setPending] = useState<PendingSource[]>([]);
+  const [showPending, setShowPending] = useState(false);
+  const [ingestFiles, setIngestFiles] = useState<string[] | null>(null);
+
+  function startIngestForFiles(files: string[]) {
+    setShowPending(false);
+    setIngestFiles(files);
+  }
+
+  async function refreshAll() {
+    resetCaches();
+    const [p, m, pend] = await Promise.all([fetchPages(), fetchMeta(), fetchPendingIngest()]);
+    setPages(p);
+    setMeta(m);
+    setPending(pend);
+  }
 
   useEffect(() => {
     fetchPages().then(setPages);
     fetchMeta().then(setMeta);
+    fetchPendingIngest().then(setPending);
   }, []);
 
   useEffect(() => {
@@ -1561,7 +1940,29 @@ function App() {
         >
           <DiceIcon />
         </button>
+        <SyncButton
+          pending={pending}
+          onSynced={refreshAll}
+          onShowPending={() => setShowPending(true)}
+        />
       </div>
+      {showPending && (
+        <PendingModal
+          items={pending}
+          onClose={() => setShowPending(false)}
+          onIngest={startIngestForFiles}
+        />
+      )}
+      {ingestFiles && (
+        <IngestPanel
+          files={ingestFiles}
+          onClose={() => {
+            setIngestFiles(null);
+            refreshAll();
+          }}
+          onDone={refreshAll}
+        />
+      )}
       <div className="layout">
         <Sidebar
           pages={pages}

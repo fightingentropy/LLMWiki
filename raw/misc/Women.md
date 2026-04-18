@@ -2277,3 +2277,5 @@ married decides to marry, she has not
 sinned. But those who marry will have trouble
 in this life, and I want you to be f ree f rom
 trouble.
+
+The most racist man you know would still save a brown man from a burning building. The least racist woman you know would laugh at your funeral if you voted wrong

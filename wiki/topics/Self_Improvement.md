@@ -2,11 +2,11 @@
 title: Self-Improvement
 type: topic
 domain: culture
-sources: [Body.md, Psychology.md, Thoughts.md]
+sources: [Body.md, Psychology.md, Thoughts.md, Youtube.md]
 related: [Body Optimization, Mental Health, Philosophy]
 created: 2026-04-12
-updated: 2026-04-12
-tags: [self-improvement, growth, discipline, agency]
+updated: 2026-04-18
+tags: [self-improvement, growth, discipline, agency, delusion, motivation]
 ---
 
 # Self-Improvement
@@ -73,6 +73,16 @@ True optimization: doing the thing, not optimizing how you'll do the thing.
 **Opportunities don't grow on trees.** Optionality value of high-trust encounters with important people = immense.
 
 Living in big cities invaluable because you increase odds of serendipitous encounters. Envelope of possibility contains 10x more for those positioned in it.
+
+## Delusion as Tool
+
+Bookmarked via [[Youtube]]: "Why delusion is important." Functional self-belief that runs ahead of the evidence is a feature, not a bug — it gets you to act before the data would justify it, and the action itself produces the data. Related to [[Trading_Psychology]]: intuitive operators who commit before consensus are the ones who catch the move.
+
+Delusion is not the opposite of realism here. It's realism about what belief does, not just what belief claims.
+
+## Motivation as Reframe
+
+"How can you lack motivation?" (bookmarked via [[Youtube]]) — treats absent motivation as a category error rather than a deficiency to be fixed. The reframe: motivation follows action, not the reverse. See also [[Mental_Health]] on overthinking paralysis.
 
 ## Autonomy & Self-Direction
 "The state can substitute for what women want from men, but can't substitute for what men want from women."

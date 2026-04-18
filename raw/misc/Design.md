@@ -1,15 +1,6 @@
 # Design
 
 
-framer
-paper
-figma
-anything.com
-
-
-Air OS
-
-
 Design with google
 https://stitch.withgoogle.com/
 
@@ -23,257 +14,38 @@ https://departuremono.com/
 beautiful real estate website
 https://fluid.glass/
 
+Endless designs for your ideas, just scroll.
+https://variant.com/
 
-motivational hero video
-https://x.com/parveen__tyagi/status/2034403615591604688
 
 figma capture (save as bookmark)
 javascript:(function(){var s=document.createElement('script');s.src='https://mcp.figma.com/mcp/html-to-design/capture.js';document.head.appendChild(s);setTimeout(function(){window.location.hash='figmacapture&figmadelay=1000';var s2=document.createElement('script');s2.src='https://mcp.figma.com/mcp/html-to-design/capture.js';document.head.appendChild(s2);},500);})();
 
 
 
-beautiful zoom out effect flow
-https://x.com/krocits/status/2032085240131514665
-
-
-gorgeous templates
-https://cargo.site/templates
-
-conversation minimap
-https://x.com/raunofreiberg/status/2031794945896378820
-
-
-colorful templates made with a1
-https://www.a1.gallery/
-
-
-immersive porfolio website 
-https://rickyzhang.me/
-
-
-alt fonts
-https://alt-tf.com/
-
-
-fonts
-https://joshpuckett.me/locale
-
-https://aeroarchive.vercel.app/
-
-https://sorenblank.com/snippets/small-card-micro-animation
-![[Pasted image 20260312104727.png]]
-
-https://21st.dev/community/components
-
-
-Useful resources for designers & developers
-https://x.com/mayowafalowo/status/2021476624693158097
-
-https://www.componentful.com/
-
-
-https://base-ui.com/
-
-https://variant.com/
-
-
-Cool framer designs
-https://gridilo.com/
-
-
-https://cal.com/paronyme/call?date=2026-03-13
-
-https://athas.dev/
-
-https://typographyprinciples.obys.agency/
-
-https://www.sutera.ch/
-
-
-Design
-https://variant.com/
-https://goclone.dev/
-
-
-native mac apps
-https://sidequery.dev/
-
-
-https://animations.dev/
-
-https://www.didiercatz.com/
-
-https://detail.design/
-
-https://stripe.dev/blog
-
 https://www.pencil.dev/
 
-
-https://stripe.dev/blog
-
-https://www.navbar.gallery/
-
-https://www.inceptionlabs.ai/
 
 AirOS
 https://x.com/slavakornilov/status/2028885781448671325
 
+
 https://www.framer.com/
 
-UI Components
-https://spell.sh/
-
-https://openpencil.dev/
-
-
-cool designer
-https://www.taylorallen.co/
-
-
-https://every.to/
-
-https://poly.app/
-
-https://www.easing.dev/
-
-
-https://www.planhat.com/keynote
-
-
-https://www.terrae.dev/
-
-https://tympanus.net/Tutorials/DepthGallery/
-
-
-population density 3d map
-https://x.com/AhmedShahnab/status/2034600780892963323
 
 
 https://tympanus.net/Tutorials/InfiniteCanvas/
 
-https://tympanus.net/codrops/hub/
 
-
-https://makeitanimated.dev/
-
-https://makeitanimated.dev/components/loader
-
-
-https://particles.casberry.in/
-
-https://the-brandidentity.com/
-
-https://app.reve.com/inspiration
-
-
-https://benji.org/liveline
-
-
-https://www.agentation.com/features#smart-identification
-
-https://family.co/docs/connectkit/try-it-out
-
-https://devouringdetails.com/
 
 https://github.com/dip/cmdk
 
-https://designengineer.io/
-
-703+ curated UI sounds.
-Copy. Paste. Play
-https://www.soundcn.xyz/
-
-
-https://haptics.lochie.me/
-
-https://colorai.app/
-
-https://rauno.me/
-
-https://sonner.emilkowal.ski/
-
-https://emilkowal.ski/ui/css-transforms
-
-https://animations.dev/
-
-https://www.raphaelsalaja.com/library/12-principles-of-animation
-
-https://emilkowal.ski/ui/developing-taste
-
-https://tympanus.net/codrops/hub/
-
-
-https://www.mockdown.design/
-
-https://motion.alisamadii.com/m/pin-items
-
-
-https://www.navbar.gallery/browse
-
-
-https://directstudio.framer.website/
-
-https://particles.casberry.in/
 
 https://makhnostudio.com/
 
 https://madewithgsap.com/
 
 
-https://the-brandidentity.com/store/product/stack-collection-01-jitter-templates
-
-https://the-brandidentity.com/store/product/tms-marketing-presentation-template
-
-https://x.com/jshguo/status/1972564708525064688
-
-
-https://string-tune.fiddle.digital/
-
-geometric frames
-https://xyz.ertdfgcvb.xyz/
-
-https://x.com/Aurelien_Gz/status/2031462820668203349
-
-https://ajinqya.com/projects
-
-portfolio website
-https://ajinqya.com/
-
-
-brand store
-https://the-brandidentity.com/store
-
-Beautiful website with typography. 
-https://the1.amsterdam/
-
-
-https://x.com/junyi42/status/2031024111716331759
-
-Explorations in code and design from the creative web community
-https://tympanus.net/codrops/hub/
-
-Motion. A production-grade
-animation library for the web.
-https://motion.dev/
-
-https://github.com/thesysdev/openui
-
-
-collection of small detailed components
-https://detail.design/
-
-kindle like portfolio website
-https://rene.wang/
-
-https://polar.sh/company
-
-
-vibe coded components
-https://x.com/slavakornilov/status/2031783533287501944
-
-construction scetch
-https://x.com/MadMaraca/status/2032039651121287196
 
 
 postcard design
@@ -283,55 +55,18 @@ Tadao Ando Architecture
 https://x.com/SciFiArchives/status/2031992839597420549
 
 
-portfolio website
-https://manneskja.is/
 
-
-great website for typography
-https://type-01.com/typeonemagazine/?ref=marisadesignteamofone
-
-nice animation
-https://x.com/madtirth/status/2031405080369582544
-
-card design
-https://x.com/dom_strykowski/status/2032098536368619994/photo/1
-
-illustration map
-https://x.com/darasoba/status/2032066968354689194
-
-
-beautiful prediction markets UI
-https://polymarket.com/predictions/oscars
-
-
-beautiful components portfolio
-https://sorenblank.com/
-
-
-mars journey since 2012
-https://www.rovers.land/
-
-Water a ripple effect animation. 
-https://x.com/Aurelien_Gz/status/2033581159112745132
 
 figma glass visuals
 https://x.com/markoilico/status/1950239048674791564
 
 
-actual liquid ui
+liquid loading indicator
 https://x.com/wabi/status/2033617109184614676
 
 
-beautiful design good fella
-https://good-fella.com/
-
-
-portfolio website
-https://godly.website/
-
+infinite canvas
 https://x.com/nonzeroexitcode/status/2025527448536756311
-
-https://newpeace.jp/
 
 space hypnosis
 https://x.com/compusophy/status/2033320227216539975
@@ -340,62 +75,16 @@ geometric grid
 https://codepen.io/vanholtzco/pen/bNwBQBY
 
 
-rive app
-https://x.com/hansonerere2/status/2033551100956352998
 
 
-liquid ui
-https://x.com/azhassan_/status/2033562683732066371
-
-https://atlas.spatial-index.xyz/
-
-https://x.com/gbryanwt/status/2033592417849413874
-
-https://ramp.com/global
-
-
-loading water
-https://x.com/wabi/status/2033617109184614676
-
-https://obsidianassembly.com/
-
-
-https://fiddle.digital/
 
 particles
 https://x.com/spottedinprod/status/2033611347242504326
 
-liquid metal
-https://codepen.io/sabosugi/full/yyabKEP
-
-shadcn ui patterns
-https://reui.io/
-
-
-clean design
-https://x.com/marconoiz/status/2033855552858820715
-
-ultimate design resources
-https://desengs.com/
 
 gallery image
 https://x.com/ayushsoni_io/status/2033880374624063863/photo/2
 
-impeccable style prompts skills
-https://impeccable.style/
-
-humanoid atlas
-https://www.humanoids.fyi/#/tab/skeleton
-
-design websites
-https://www.awwwards.com/
-
-templates
-https://pro.lndev.me/templates
-
-
-beautiful slick brand website
-https://the-brandidentity.com/
 
 Karuselli Swivel Chair by Yrjö Kukkapuro, 1960's
 https://x.com/interiorsuckerr/status/2033906701359845529
@@ -652,3 +341,17 @@ https://3dsvg.design/
 https://html-in-canvas.dev/demos/
 
 https://x.com/alyx_so/status/2043049871826149518
+
+https://motion-core.dev/docs/globe
+
+https://studio.neato.fun/
+
+https://demo.gracia.ai/playcanvas.html
+
+color picker
+https://x.com/tbsrnstrm/status/2043275391087849957
+
+3js
+https://curllmooha.vercel.app/
+
+https://www.liumichelle.com/

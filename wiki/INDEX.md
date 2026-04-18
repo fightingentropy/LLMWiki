@@ -3,7 +3,7 @@ title: Wiki Index
 type: index
 domain: personal
 tags: [index, navigation]
-updated: 2026-04-12
+updated: 2026-04-18
 ---
 
 # Wiki Index
@@ -32,12 +32,14 @@ Reference collections and curated resource lists that form the foundation of the
 - [[Psychology]] — Psychology of behavior, trauma, decision-making, and relationships
 - [[Setup]] — Development tools and productivity setup inventory
 - [[Thoughts]] — Personal observations, wealth dynamics, and acceptance principles
+- [[Youtube]] — Curated YouTube bookmarks on meaning, delusion, motivation, intimacy, inflation
 
 ## Entities
 
 Key figures, organizations, standards, and platforms referenced throughout the wiki.
 
 - [[Andrew_Huberman]] — Neuroscientist and podcaster known for dopamine and sleep optimization
+- [[Charles_Bukowski]] — American poet; terse working-class life advice
 - [[BS 7671]] — British Standard for electrical installations and wiring regulations
 - [[Citrini Research]] — Macro research and analysis on global markets and trading
 - [[Citadel Securities]] — Market maker and trading infrastructure

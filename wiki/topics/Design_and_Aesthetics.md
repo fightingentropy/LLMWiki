@@ -2,14 +2,20 @@
 title: Design & Aesthetics
 type: topic
 domain: dev
-sources: [Design.md, Thoughts.md]
+sources: [Design.md, Thoughts.md, Youtube.md]
 related: [Developer Resources, Design Tools, Philosophy]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-18
 tags: [design, aesthetics, ui-ux, taste, tools]
 ---
 
 # Design & Aesthetics
+
+## Beauty & Toxicity as Juxtaposition
+
+Bookmarked via [[Youtube]] — Daisy Gray's cover of Chris Isaak's "Wicked Game." The creator's pinned framing: the cigarette isn't endorsement, it's deliberate juxtaposition of beauty (ocean) and toxicity (smoke), matching the song's lyric about attraction to something destructive.
+
+Design note: strong aesthetic often lives on the edge of something uncomfortable. Safe beauty reads as stock photography; beauty with tension sticks.
 
 ## Aesthetic as Inner World
 "Your aesthetic taste is map of your inner world projected outward. What you're drawn to reveals which parts of your spirit are awake. Aesthetic taste is unconscious confession."

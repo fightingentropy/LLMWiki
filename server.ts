@@ -1,4 +1,5 @@
 import { join } from "path";
+import { watch } from "fs";
 import {
   loadWikiPages,
   buildGraphData,
@@ -9,16 +10,48 @@ import {
   loadTimeline,
   buildMeta,
   resolveRelatedList,
+  computePendingIngest,
 } from "./lib";
 import { sync } from "./sync";
+import { startIngest, jobStream, getCurrentJob, abortCurrent } from "./ingest";
 import type { WikiPage } from "./lib";
 
 const STATIC_DIR = join(import.meta.dir, "ui");
 const ASSETS_DIR = join(import.meta.dir, "raw", "assets");
+const WIKI_DIR = join(import.meta.dir, "wiki");
 
 let pages = await loadWikiPages();
 let backlinks = computeBacklinks(pages);
 console.log(`Loaded ${pages.size} wiki pages`);
+
+async function reloadPages(reason: string) {
+  const t0 = performance.now();
+  pages = await loadWikiPages();
+  backlinks = computeBacklinks(pages);
+  const ms = Math.round(performance.now() - t0);
+  console.log(`Reloaded ${pages.size} pages in ${ms}ms (${reason})`);
+}
+
+// Watch wiki/ for .md changes and hot-reload. Debounced because editors
+// often fire multiple events per save (write, rename, chmod).
+let reloadTimer: ReturnType<typeof setTimeout> | null = null;
+let pendingTrigger = "";
+try {
+  watch(WIKI_DIR, { recursive: true }, (_event, filename) => {
+    if (!filename || !filename.endsWith(".md")) return;
+    pendingTrigger = filename;
+    if (reloadTimer) clearTimeout(reloadTimer);
+    reloadTimer = setTimeout(() => {
+      reloadTimer = null;
+      reloadPages(`changed ${pendingTrigger}`).catch((e) =>
+        console.error("Reload failed:", e)
+      );
+    }, 150);
+  });
+  console.log(`Watching ${WIKI_DIR} for changes`);
+} catch (e) {
+  console.warn("fs.watch unavailable — falling back to manual /api/reload:", e);
+}
 
 function pageSummaryList() {
   return [...pages.values()].map(({ slug, title, type, domain, tags, category, links, updated, mtime, wordCount, readingTime }) => ({
@@ -59,6 +92,9 @@ function pageDetail(page: WikiPage) {
 
 const server = Bun.serve({
   port: 3000,
+  // Long-lived streaming responses (notably /api/ingest) can go many minutes
+  // without a byte between tool calls. Disable Bun's default 10s idle timeout.
+  idleTimeout: 0,
   async fetch(req) {
     const url = new URL(req.url);
     const path = url.pathname;
@@ -120,17 +156,63 @@ const server = Bun.serve({
     if (path === "/api/sync") {
       try {
         const result = await sync();
-        pages = await loadWikiPages();
-        backlinks = computeBacklinks(pages);
-        return Response.json({ ok: true, count: pages.size, ...result });
+        await reloadPages("sync");
+        const pending = await computePendingIngest(pages);
+        return Response.json({ ok: true, count: pages.size, pending: pending.length, ...result });
       } catch (e: any) {
         return Response.json({ ok: false, error: e.message }, { status: 500 });
       }
     }
 
+    if (path === "/api/pending-ingest" || path === "/data/pending-ingest.json") {
+      return Response.json(await computePendingIngest(pages));
+    }
+
+    if (path === "/api/ingest" && req.method === "POST") {
+      try {
+        const body = await req.json().catch(() => ({}));
+        let files: string[] = Array.isArray(body?.files) ? body.files.map(String) : [];
+        if (files.length === 0) {
+          // Default: ingest everything currently pending
+          const pending = await computePendingIngest(pages);
+          files = pending.map((p) => `raw/${p.path}`);
+        } else {
+          files = files.map((f) => (f.startsWith("raw/") ? f : `raw/${f}`));
+        }
+        const job = startIngest(files);
+        const stream = jobStream(job);
+        return new Response(stream, {
+          headers: {
+            "Content-Type": "application/x-ndjson",
+            "Cache-Control": "no-cache",
+            "X-Ingest-Job-Id": job.id,
+          },
+        });
+      } catch (e: any) {
+        return Response.json({ ok: false, error: e.message }, { status: 409 });
+      }
+    }
+
+    if (path === "/api/ingest/status") {
+      const job = getCurrentJob();
+      if (!job) return Response.json({ running: false });
+      return Response.json({
+        running: job.status === "running",
+        status: job.status,
+        id: job.id,
+        startedAt: job.startedAt,
+        files: job.files,
+        exitCode: job.exitCode,
+      });
+    }
+
+    if (path === "/api/ingest/abort" && req.method === "POST") {
+      const ok = abortCurrent();
+      return Response.json({ ok });
+    }
+
     if (path === "/api/reload") {
-      pages = await loadWikiPages();
-      backlinks = computeBacklinks(pages);
+      await reloadPages("manual /api/reload");
       return Response.json({ ok: true, count: pages.size });
     }
 

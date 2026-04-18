@@ -2,11 +2,11 @@
 title: Mental Health
 type: topic
 domain: psychology
-sources: [Psychology.md, Body.md, Medical.md]
+sources: [Psychology.md, Body.md, Medical.md, Youtube.md]
 related: [Self-Improvement, ADHD, Stress Management]
 created: 2026-04-12
-updated: 2026-04-12
-tags: [mental-health, depression, therapy, wellness]
+updated: 2026-04-18
+tags: [mental-health, depression, therapy, wellness, motivation]
 ---
 
 # Mental Health

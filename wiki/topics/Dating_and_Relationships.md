@@ -2,11 +2,11 @@
 title: Dating & Relationships
 type: topic
 domain: culture
-sources: [Culture.md, Thoughts.md, X takes.md]
+sources: [Culture.md, Thoughts.md, X takes.md, Youtube.md]
 related: [Psychology, Philosophy, Self-Improvement]
 created: 2026-04-12
-updated: 2026-04-12
-tags: [dating, relationships, gender-dynamics, attraction]
+updated: 2026-04-18
+tags: [dating, relationships, gender-dynamics, attraction, intimacy]
 ---
 
 # Dating & Relationships
@@ -60,6 +60,10 @@ Story: "I learned something about agency on second date with now-girlfriend. I m
 "Physiognomy is eternal. One of greatest findings of RW Twitter is that physiognomy is undeniably real. This is stuff that would take decades of travel to figure out; we share freely every day. A numinous feast."
 
 Appearance signals health, genetics, character. It matters more than meritocratic illusions suggest.
+
+## True Intimacy
+
+Bookmarked via [[Youtube]]: "True intimacy." Flagged separately from performed closeness — the everyday mimicry (cohabitation, routine, shared calendars) can substitute for the thing itself. The bookmark is preserved as a prompt, not a definition.
 
 ## Modern Celibacy
 Critique of hyper-optimized masculinity: "Tim Ferris, Andrew Huberman, Lex Fridman—secular priesthood of sterile optimization. No sons, daughters, wives, lineage. They're selling surrogate masculinity unmoored from duty or generational continuity."

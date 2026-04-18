@@ -2,11 +2,11 @@
 title: Trading Psychology
 type: topic
 domain: markets
-sources: [Bizz & Finance.md, Psychology.md]
+sources: [Bizz & Finance.md, Psychology.md, Youtube.md]
 related: [Markets, Psychology, Decision-Making]
 created: 2026-04-12
-updated: 2026-04-12
-tags: [trading, psychology, decision-making, behavioral-finance]
+updated: 2026-04-18
+tags: [trading, psychology, decision-making, behavioral-finance, delusion, skin-in-the-game]
 ---
 
 # Trading Psychology
@@ -59,6 +59,13 @@ Overthinking + underacting = miserable traders. System: **just move.** Imperfect
 
 ## Market Efficiency
 Everything is priced in. Your existence was valued decades ago by market omniscience. Free will illusion. This is market theology—tongue-in-cheek but contains truth about how forward-looking pricing works.
+
+## Delusion & Soul in the Game
+
+Two bookmarks from [[Youtube]] sit next to each other in trader mindset:
+
+- **Delusion** — useful conviction that runs ahead of the evidence. Intuitive traders who commit before consensus catch moves; the disbelief is the edge. See [[Self_Improvement]] for the general form.
+- **Soul in the game** — extension of [[Nassim_Taleb]]'s skin-in-the-game: not just risk exposure, but caring about the output beyond personal stake. Edge comes from operators who care, not just operators who are paid.
 
 ## Decision vs. Outcome
 Market outcome ≠ quality of decision. Randomness masks poor reasoning; luck masks bad strategy. Long-term separates signal from noise.

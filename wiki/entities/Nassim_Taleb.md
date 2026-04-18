@@ -2,10 +2,10 @@
 title: Nassim Taleb
 type: entity
 domain: culture
-sources: [Thoughts.md, Stories.md]
+sources: [Thoughts.md, Stories.md, Youtube.md]
 related: [Philosophy, Risk Management]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-18
 tags: [taleb, antifragility, philosophy]
 ---
 
@@ -32,6 +32,9 @@ From Thoughts:
 - Collect as many "free nonlottery tickets" (open-ended payoffs) as possible
 - Living in big cities invaluable—increases exposure to envelope of serendipity
 - Work hard not in grunt work but in chasing opportunities and maximizing exposure to them
+
+## Skin in the Game → Soul in the Game
+Bookmarked via [[Youtube]]: the "Soul in the Game" framing extends Taleb's skin-in-the-game beyond risk exposure to *caring about the output* beyond personal stake. See [[Trading_Psychology]] — operators who care outperform operators who are merely paid.
 
 ## Legacy
 Influential in risk management, optionality thinking, and dignity/honor philosophy.

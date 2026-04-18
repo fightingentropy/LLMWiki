@@ -1,10 +1,6 @@
 # Resources
 
 
-Webinar: https://www.bigmarker.com/access-training/electrics-webinar-5-initial-verification-inspection-b026d74b8b07
-
-50:50/03:02:28
-
 
 ## Core formulas
 Use these quick relationships for basic electrical calculations.

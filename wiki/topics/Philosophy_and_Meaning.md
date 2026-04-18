@@ -2,10 +2,10 @@
 title: Philosophy & Meaning
 type: topic
 domain: culture
-sources: [Culture.md, Thoughts.md, Psychology.md, X takes.md]
+sources: [Culture.md, Thoughts.md, Psychology.md, X takes.md, Youtube.md]
 related: [Political Philosophy, Psychology, Self-Improvement]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-18
 tags: [philosophy, meaning, identity, entropy, extropy]
 ---
 
@@ -62,6 +62,18 @@ Take it one day at a time. Try perceive all experiences with objective curiosity
 "Work hard not in grunt work, but in chasing serendipitous opportunities. Maximize exposure to envelope of possibility."
 
 Living in big cities invaluable because you increase odds of meaningful encounters. Serendipity requires position within possibility space.
+
+## Do Epic Shit, Not Happiness
+
+"My goal in life is not necessarily to be happy. My goal in life is to do epic shit." (bookmarked via [[Youtube]])
+
+Happiness framed as a downstream side-effect, not an orienting target. The related bookmarks on the same video — "Views on happiness" and "The only way is through" — reinforce the same posture: there are no shortcuts around the difficulty; the path runs through it.
+
+## Usefulness Over Truth
+
+"What's useful is more important than what is true." (bookmarked via [[Youtube]])
+
+Pragmatism as working epistemology. Echoes the [[Mental_Health]] argument that psychedelic "false insight" can still be therapeutically load-bearing if aimed at a genuine blocker — a belief earns its keep by what it enables, not by correspondence alone.
 
 ## Freedom & Choice Architecture
 "I've never come back from holiday feeling relaxed. I come back with taste of freedom still fresh, renewed hatred for work, strong suspicion this isn't what I should be doing."
