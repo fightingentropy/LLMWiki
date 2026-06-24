@@ -975,3 +975,13 @@ tame you
 Game theory proves that people will betray you at some point once your interests do not align with theirs. You become incompatible - a liability. Under high stakes, prepare to be betrayed. Always take note of who leaves - and reward those who remain loyal.
 
 risk is like energy, it cannot be destroyed, it can only be transferred
+
+Decline starts with the replacement of dreams with
+memories and ends with the replacement of memories
+with other memories.
+-Taleb
+
+Τα είδωλα
+Πορεύονται στο δρόμο της μοναχικότητας 
+
+ethan hawke said something i haven’t stopped thinking about — we usually move past art like we have no need for it, until loss enters our life and suddenly nothing ordinary can hold what we’re feeling

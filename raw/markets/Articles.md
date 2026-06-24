@@ -2,6 +2,41 @@
 
 
 
+school is not enough
+https://www.palladiummag.com/2023/06/06/school-is-not-enough
+
+Life is a Picture, But You Live in a Pixel
+https://waitbutwhy.com/2013/11/life-is-picture-but-you-live-in-pixel.html
+
+
+Career Decisions
+https://blog.eladgil.com/p/career-decisions
+
+Looking for Alice
+https://www.henrikkarlsson.xyz/p/looking-for-alice
+
+
+Hugging the X Axis
+https://perell.com/essay/hugging-the-x-axis/
+
+
+What problem should you be working on now?
+https://www.henrikkarlsson.xyz/p/problem-selection
+
+
+How to be successful
+https://blog.samaltman.com/how-to-be-successful
+
+
+https://usefulfictions.substack.com/
+
+Omens of exceptional talent
+https://guzey.com/talent/
+
+
+Make something heavy
+https://www.workingtheorys.com/p/make-something-heavy#footnote-2-158538641
+
 Global Macro Trading for Idiots: Part Three
 https://www.citriniresearch.com/p/global-macro-trading-for-idiots-part-611
 

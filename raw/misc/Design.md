@@ -355,3 +355,69 @@ https://x.com/tbsrnstrm/status/2043275391087849957
 https://curllmooha.vercel.app/
 
 https://www.liumichelle.com/
+
+
+top fonts
+Awesome Serif Bunch
+Coolvebica Bricolage Grotesque
+Instrument Serif DM Mono
+Helvetica Neue Inter
+DM Serif Display Darker Grotesque
+Caros TUSKep GPOtesK
+
+https://manneskja.is/
+
+https://experiments.thisiswhitespace.com/code-slice-hero
+
+https://roam.neesh.page/
+
+https://brasshands.com/
+
+https://experiments.thisiswhitespace.com/shader-deck
+
+https://styles.refero.design/
+
+https://x.com/adebola_io/status/2050347511160717666
+
+https://samspratt.com/story
+
+https://deck.gallery/
+
+https://oklch.fyi/
+
+https://x.com/jonaasw1/status/2064028010345324959
+
+https://www.sotazine.com/
+
+https://europe2031.ai/
+
+
+https://poolsuite.net/
+
+https://www.typo.love/
+
+https://cafe.endofday.studio/
+
+https://zzz.zoomquilt.org/
+
+https://x.com/itsjessyin/status/2066948348611870912?s=20
+
+https://typatone.com/
+
+https://humanoid-index.com/
+
+https://x.com/jonaasw1/status/2068024323915350244
+
+https://recent.design/
+
+
+https://www.virgileflores.com/
+
+https://x.com/Eryth_Studio/status/2069046098287792348
+
+https://transitions.dev/
+
+https://clapet.app/d
+
+https://x.com/neverwin_cc/status/2069304402838737393
+

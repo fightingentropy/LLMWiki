@@ -29,3 +29,7 @@ Popping bone structure, lean chiseled looking face with hyperpigmentation acting
 Porn is mostly bad, therapy is mostly gay. premarital is good, age gaps are
 fine. ssris are overprescribed. masculinity is good, your dad was probably
 right
+
+
+https://x.com/photobiogenesis/status/2055817587779395996
+
