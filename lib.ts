@@ -286,10 +286,35 @@ async function parsePage(fullPath: string, relPath: string): Promise<WikiPage | 
   }
 }
 
-export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
+// Assign a unique slug to every page, deterministically. Two files whose
+// titles/filenames slugify to the same value must NOT silently overwrite each
+// other (that drops a page from search, graph, backlinks and routing). Sorting
+// by path keeps assignment stable across reloads: the first page keeps the bare
+// slug, the rest get -2/-3 suffixes (which surface as duplicate-title lint).
+export function assignUniqueSlugs(
+  collected: WikiPage[]
+): { pages: Map<string, WikiPage>; collisions: string[] } {
   const pages = new Map<string, WikiPage>();
+  const collisions: string[] = [];
+  for (const page of [...collected].sort((a, b) => a.path.localeCompare(b.path))) {
+    const base = slugify(page.title || basename(page.path, ".md")) || "page";
+    let slug = base;
+    let n = 1;
+    while (pages.has(slug)) {
+      n += 1;
+      slug = `${base}-${n}`;
+    }
+    if (n > 1) collisions.push(`"${page.title}" (${page.path}) -> ${slug}`);
+    page.slug = slug;
+    pages.set(slug, page);
+  }
+  return { pages, collisions };
+}
+
+export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
   const assetSet = await loadAssetSet();
   const seenPaths = new Set<string>();
+  const collected: WikiPage[] = [];
 
   async function walkDir(dir: string) {
     const entries = await readdir(dir, { withFileTypes: true });
@@ -301,7 +326,7 @@ export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
         seenPaths.add(fullPath);
         const relPath = relative(WIKI_DIR, fullPath);
         const page = await parsePage(fullPath, relPath);
-        if (page) pages.set(page.slug, page);
+        if (page) collected.push(page);
       }
     }
   }
@@ -311,6 +336,13 @@ export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
   // Evict cache entries whose files were removed
   for (const path of [...parseCache.keys()]) {
     if (!seenPaths.has(path)) parseCache.delete(path);
+  }
+
+  const { pages, collisions } = assignUniqueSlugs(collected);
+  if (collisions.length) {
+    console.warn(
+      `Disambiguated ${collisions.length} slug collision(s): ${collisions.join("; ")}`
+    );
   }
 
   const fileAliases = buildFileAliases(pages);
@@ -393,7 +425,8 @@ export function computeBacklinks(
 // UI can show type badges and mark broken ones.
 export function resolveRelatedList(
   names: any,
-  pages: Map<string, WikiPage>
+  pages: Map<string, WikiPage>,
+  fileAliases?: Map<string, string>
 ): { name: string; slug: string | null; title: string; type: string; resolved: boolean }[] {
   // Defensively coerce frontmatter into a string[]. gray-matter can return a
   // scalar when the YAML is `related: Foo` instead of `related: [Foo]`.
@@ -403,9 +436,9 @@ export function resolveRelatedList(
   else if (typeof names === "string") list = names.split(",").map((s) => s.trim()).filter(Boolean);
   else list = [String(names)];
 
-  const fileAliases = buildFileAliases(pages);
+  const aliases = fileAliases ?? buildFileAliases(pages);
   return list.map((name) => {
-    const page = resolveLink(name, pages, fileAliases);
+    const page = resolveLink(name, pages, aliases);
     if (page) {
       return { name, slug: page.slug, title: page.title, type: page.type, resolved: true };
     }

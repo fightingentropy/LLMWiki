@@ -1,5 +1,7 @@
-import { spawn } from "bun";
+import { spawn, $ } from "bun";
 import type { Subprocess } from "bun";
+import { join } from "path";
+import { existsSync } from "fs";
 
 // Spawns the `claude` CLI headless to ingest one or more raw source files
 // into the wiki. Uses the user's Claude Max subscription (no API key) —
@@ -12,6 +14,7 @@ export interface IngestJob {
   proc: Subprocess<"ignore", "pipe", "pipe">;
   status: "running" | "done" | "failed" | "aborted";
   exitCode: number | null;
+  snapshot: string | null; // git SHA capturing wiki/ before the run, for recovery
   log: string[]; // tail of structured events (for late subscribers / status polls)
 }
 
@@ -43,12 +46,51 @@ A single source may touch 5–15 wiki pages — be thorough but factual.
 When done, print a brief summary of what you created/updated.`;
 }
 
-export function startIngest(files: string[]): IngestJob {
+// Capture the current repo state (including wiki/) as a git object WITHOUT
+// touching the working tree, index, or stash list, so a bad ingest is
+// recoverable with `git checkout <sha> -- wiki/`. Best-effort: returns null if
+// git is unavailable or this is not a repo.
+async function snapshotWiki(): Promise<string | null> {
+  try {
+    let sha = (await $`git stash create`.cwd(import.meta.dir).quiet().nothrow().text()).trim();
+    if (!sha) {
+      // Nothing uncommitted — HEAD already represents the current state.
+      sha = (await $`git rev-parse HEAD`.cwd(import.meta.dir).quiet().nothrow().text()).trim();
+    }
+    return sha || null;
+  } catch {
+    return null;
+  }
+}
+
+export async function startIngest(
+  files: string[],
+  onComplete?: (job: IngestJob) => void
+): Promise<IngestJob> {
   if (currentJob && currentJob.status === "running") {
     throw new Error("An ingest is already running");
   }
   if (files.length === 0) {
     throw new Error("No files to ingest");
+  }
+
+  // The ingest prompt instructs the agent to follow the schema in CLAUDE.md.
+  // Without it, page types/frontmatter/layout are left to improvisation, so
+  // fail loudly here rather than silently degrade wiki quality.
+  if (!existsSync(join(import.meta.dir, "CLAUDE.md"))) {
+    throw new Error(
+      "CLAUDE.md (the wiki schema) is missing — ingest needs it. Restore it: git checkout HEAD -- CLAUDE.md"
+    );
+  }
+
+  // Snapshot wiki/ before the agent (running in acceptEdits mode) can rewrite it.
+  const snapshot = await snapshotWiki();
+  if (snapshot) {
+    console.log(
+      `Pre-ingest snapshot ${snapshot.slice(0, 10)} — revert wiki with: git checkout ${snapshot} -- wiki/`
+    );
+  } else {
+    console.warn("Could not snapshot wiki/ before ingest — run is not auto-revertible");
   }
 
   const prompt = buildPrompt(files);
@@ -77,6 +119,7 @@ export function startIngest(files: string[]): IngestJob {
     proc,
     status: "running",
     exitCode: null,
+    snapshot,
     log: [],
   };
   currentJob = job;
@@ -86,6 +129,7 @@ export function startIngest(files: string[]): IngestJob {
     if (job.status === "running") {
       job.status = code === 0 ? "done" : "failed";
     }
+    onComplete?.(job);
   });
 
   return job;
