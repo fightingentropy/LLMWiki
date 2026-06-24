@@ -8,7 +8,9 @@ import {
   computeLint,
   loadTimeline,
   buildMeta,
-  resolveRelatedList,
+  pageSummary,
+  pageDetail,
+  searchIndexEntry,
 } from "./lib";
 
 const DIST_DIR = join(import.meta.dir, "dist");
@@ -76,41 +78,12 @@ ${cssTag}
   await writeFile(join(DIST_DIR, "index.html"), indexHtml);
 
   // 3. Summary list
-  const pagesList = [...pages.values()].map(({ slug, title, type, domain, tags, category, links, updated, mtime, wordCount, readingTime }) => ({
-    slug,
-    title,
-    type,
-    domain,
-    tags,
-    category,
-    linkCount: links.length,
-    updated,
-    mtime,
-    wordCount,
-    readingTime,
-  }));
+  const pagesList = [...pages.values()].map(pageSummary);
   await writeFile(join(DIST_DIR, "data", "pages.json"), JSON.stringify(pagesList));
 
   // 4. Individual page files (with resolved related, backlinks, headings)
   for (const [slug, page] of pages) {
-    const pageData = {
-      slug: page.slug,
-      title: page.title,
-      type: page.type,
-      domain: page.domain,
-      tags: page.tags,
-      sources: page.sources,
-      related: resolveRelatedList(page.related, pages),
-      created: page.created,
-      updated: page.updated,
-      html: page.html,
-      links: page.links,
-      category: page.category,
-      wordCount: page.wordCount,
-      readingTime: page.readingTime,
-      headings: page.headings,
-      backlinks: backlinks.get(slug) || [],
-    };
+    const pageData = pageDetail(page, pages, backlinks);
     await writeFile(join(DIST_DIR, "data", "pages", `${slug}.json`), JSON.stringify(pageData));
   }
 
@@ -118,15 +91,7 @@ ${cssTag}
   await writeFile(join(DIST_DIR, "data", "graph.json"), JSON.stringify(buildGraphData(pages)));
 
   // 6. Search index (kept content for snippets — it's a personal wiki, fine)
-  const searchIndex = [...pages.values()].map(({ slug, title, type, domain, tags, category, content }) => ({
-    slug,
-    title,
-    type,
-    domain,
-    tags,
-    category,
-    content,
-  }));
+  const searchIndex = [...pages.values()].map(searchIndexEntry);
   await writeFile(join(DIST_DIR, "data", "search.json"), JSON.stringify(searchIndex));
 
   // 7. Tags

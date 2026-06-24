@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { createRoot } from "react-dom/client";
 import * as d3 from "d3";
+import Fuse from "fuse.js";
 import "./index.css";
 
 // --- Types (loose — server-shaped) ---
@@ -149,6 +150,7 @@ function SyncIcon({ spinning }: { spinning?: boolean }) {
 // --- Data fetching (cached where it makes sense) ---
 let _pagesCache: PageSummary[] | null = null;
 let _searchCache: any[] | null = null;
+let _fuse: Fuse<any> | null = null;
 let _graphCache: any = null;
 let _metaCache: Meta | null = null;
 
@@ -226,6 +228,7 @@ async function fetchPendingIngest(): Promise<PendingSource[]> {
 function resetCaches() {
   _pagesCache = null;
   _searchCache = null;
+  _fuse = null;
   _graphCache = null;
   _metaCache = null;
 }
@@ -246,30 +249,58 @@ async function runSync(): Promise<{ ok: boolean; synced: string[]; errors: strin
   }
 }
 
-async function runSearch(q: string) {
+// Build the Fuse index over the search.json payload once and reuse it. Field
+// weights mirror the server (title >> tags > category/domain > content).
+async function getFuse(): Promise<Fuse<any>> {
+  if (_fuse) return _fuse;
   const pages = await fetchSearchIndex();
-  const lq = q.toLowerCase();
-  return pages
-    .map((p) => {
-      let score = 0;
-      if (p.title.toLowerCase().includes(lq)) score += 10;
-      if (p.title.toLowerCase() === lq) score += 20;
-      if (p.tags?.some((t: string) => t.toLowerCase().includes(lq))) score += 5;
-      const idx = p.content.toLowerCase().indexOf(lq);
-      if (idx !== -1) score += 3;
-      if (score === 0) return null;
-      const si = p.content.toLowerCase().indexOf(lq);
-      const start = Math.max(0, si - 60);
-      const end = Math.min(p.content.length, (si === -1 ? 0 : si) + q.length + 60);
-      const snippet =
-        si !== -1
-          ? (start > 0 ? "..." : "") + p.content.slice(start, end).replace(/\n/g, " ") + (end < p.content.length ? "..." : "")
-          : p.content.slice(0, 120).replace(/\n/g, " ") + "...";
-      return { slug: p.slug, title: p.title, type: p.type, domain: p.domain, category: p.category, snippet, score };
-    })
-    .filter(Boolean)
-    .sort((a: any, b: any) => b.score - a.score)
-    .slice(0, 10);
+  // search.json keeps tags as string[]; Fuse handles arrays, but joining keeps
+  // ranking parity with the server (which indexes a single joined string).
+  const docs = pages.map((p) => ({ ...p, tags: Array.isArray(p.tags) ? p.tags.join(" ") : p.tags || "" }));
+  _fuse = new Fuse(docs, {
+    includeScore: true,
+    ignoreLocation: true,
+    threshold: 0.4,
+    minMatchCharLength: 2,
+    keys: [
+      { name: "title", weight: 3 },
+      { name: "tags", weight: 2 },
+      { name: "category", weight: 1 },
+      { name: "domain", weight: 1 },
+      { name: "content", weight: 0.5 },
+    ],
+  });
+  return _fuse;
+}
+
+function buildSnippet(content: string, q: string): string {
+  const idx = content.toLowerCase().indexOf(q.toLowerCase());
+  if (idx !== -1) {
+    const start = Math.max(0, idx - 60);
+    const end = Math.min(content.length, idx + q.length + 60);
+    return (start > 0 ? "..." : "") + content.slice(start, end).replace(/\n/g, " ") + (end < content.length ? "..." : "");
+  }
+  return content.slice(0, 120).replace(/\n/g, " ") + "...";
+}
+
+async function runSearch(q: string) {
+  const query = q.trim();
+  if (!query) return [];
+  const fuse = await getFuse();
+  // fuse score: 0 = perfect, 1 = worst. Invert to the descending score the UI
+  // sorts on, preserving the existing { slug,title,type,domain,category,snippet,score } shape.
+  return fuse
+    .search(query)
+    .slice(0, 10)
+    .map(({ item, score }: any) => ({
+      slug: item.slug,
+      title: item.title,
+      type: item.type,
+      domain: item.domain,
+      category: item.category,
+      snippet: buildSnippet(item.content, query),
+      score: 1 - (score ?? 0),
+    }));
 }
 
 // --- URL Routing ---

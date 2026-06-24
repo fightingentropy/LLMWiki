@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  OPT-IN macOS launchd job: runs `bun run refresh` (sync + pending-ingest count)
+  on a schedule. It does NOT ingest — pending files are only counted, never
+  processed automatically.
+
+  This is a TEMPLATE. Before loading it:
+    1. Copy it to your LaunchAgents dir, renaming to match the Label:
+         cp scripts/com.brainwiki.sync.plist ~/Library/LaunchAgents/com.brainwiki.sync.plist
+    2. Edit the COPY: replace the three __PLACEHOLDER__ values below with absolute
+       paths for your machine (no env expansion happens in a plist):
+         __BUN_BIN__       -> output of `which bun`        (e.g. /Users/you/.bun/bin/bun)
+         __REPO_DIR__      -> this repo's absolute path    (e.g. /Users/you/Developer/LLMWiki)
+         __BRAIN_PATH__    -> your Obsidian vault path, OR delete the whole
+                              EnvironmentVariables block to use sync.ts's default.
+
+  Load / unload / inspect (opt-in — nothing runs until you load it):
+    launchctl load   ~/Library/LaunchAgents/com.brainwiki.sync.plist
+    launchctl unload ~/Library/LaunchAgents/com.brainwiki.sync.plist
+    launchctl list | grep com.brainwiki.sync
+    launchctl start  com.brainwiki.sync     # run once now, on demand
+
+  Logs land in raw/.refresh.{out,err}.log (gitignored alongside other raw/ state).
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.brainwiki.sync</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>__BUN_BIN__</string>
+    <string>run</string>
+    <string>refresh</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>__REPO_DIR__</string>
+
+  <!-- Delete this block to fall back to sync.ts's default BRAIN_PATH. -->
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>BRAIN_PATH</key>
+    <string>__BRAIN_PATH__</string>
+  </dict>
+
+  <!-- Run every day at 09:00 local time. Adjust Hour/Minute, or swap
+       StartCalendarInterval for StartInterval (seconds) for a fixed cadence. -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>9</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <!-- Don't fire a missed run on wake/load; just wait for the next slot. -->
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>StandardOutPath</key>
+  <string>__REPO_DIR__/raw/.refresh.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>__REPO_DIR__/raw/.refresh.err.log</string>
+</dict>
+</plist>

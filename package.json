@@ -8,6 +8,7 @@
     "dev": "bun --watch server.ts",
     "start": "bun server.ts",
     "sync": "bun run sync.ts",
+    "refresh": "bun run scripts/refresh.ts",
     "build": "bun run build.ts",
     "check": "bun run check.ts",
     "test": "bun test"

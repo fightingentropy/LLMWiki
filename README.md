@@ -30,6 +30,7 @@ your credentials and write access).
 | `bun run dev` | Server with auto-restart on code changes |
 | `bun run start` | Server (no watch) |
 | `bun run sync` | Pull the Obsidian vault into `raw/` (see below) |
+| `bun run refresh` | Sync, then print the pending-ingest count (no auto-ingest) |
 | `bun run build` | Build the static site into `dist/` (for Cloudflare Pages) |
 | `bun run check` | Content gate — fails on broken wikilinks |
 | `bun test` | Unit tests for the `lib.ts` derivation functions |
@@ -51,6 +52,26 @@ Obsidian vault  ──①sync──▶  raw/  ──②ingest──▶  wiki/  �
    the SHA is logged and returned in `X-Ingest-Snapshot`).
 3. **Serve** (`server.ts` + `lib.ts`): renders `wiki/` and hot-reloads on changes.
    Derived data (graph/lint/tags/search) is computed once per reload and cached.
+
+## Automation (optional)
+
+For a hands-off pull, `bun run refresh` syncs the vault and then prints how many
+`raw/` files are pending ingest — it **never** auto-ingests (ingest spawns the
+`claude` CLI with your credentials, so it stays a manual click).
+
+To run that on a schedule, a macOS `launchd` template lives at
+`scripts/com.brainwiki.sync.plist`. It is **opt-in** — nothing runs until you
+copy it into `~/Library/LaunchAgents/`, fill in the absolute paths it documents,
+and `launchctl load` it:
+
+```bash
+cp scripts/com.brainwiki.sync.plist ~/Library/LaunchAgents/com.brainwiki.sync.plist
+# edit the copy: set __BUN_BIN__, __REPO_DIR__, __BRAIN_PATH__
+launchctl load ~/Library/LaunchAgents/com.brainwiki.sync.plist   # unload to disable
+```
+
+It runs daily at 09:00 by default (editable in the plist) and logs to
+`raw/.refresh.{out,err}.log`.
 
 ## Configuration
 

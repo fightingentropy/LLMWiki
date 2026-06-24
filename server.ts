@@ -10,13 +10,15 @@ import {
   computeLint,
   loadTimeline,
   buildMeta,
-  resolveRelatedList,
   computePendingIngest,
+  updateIngestManifest,
   buildFileAliases,
+  pageSummary,
+  pageDetail,
+  searchIndexEntry,
 } from "./lib";
 import { sync } from "./sync";
 import { startIngest, jobStream, getCurrentJob, abortCurrent } from "./ingest";
-import type { WikiPage } from "./lib";
 
 const STATIC_DIR = join(import.meta.dir, "ui");
 const ASSETS_DIR = join(import.meta.dir, "raw", "assets");
@@ -29,13 +31,13 @@ let backlinks = computeBacklinks(pages);
 // once per reload and serve from this cache instead of rebuilding the graph,
 // lint, tags, meta, search index and file-alias map on every single request.
 interface DerivedData {
-  summaryList: ReturnType<typeof pageSummaryList>;
+  summaryList: ReturnType<typeof pageSummary>[];
   graph: ReturnType<typeof buildGraphData>;
   tags: ReturnType<typeof computeTagIndex>;
   lint: ReturnType<typeof computeLint>;
   meta: ReturnType<typeof buildMeta>;
   timeline: Awaited<ReturnType<typeof loadTimeline>>;
-  searchIndex: { slug: string; title: string; type: string; domain: string; tags: string[]; category: string; content: string }[];
+  searchIndex: ReturnType<typeof searchIndexEntry>[];
   fileAliases: Map<string, string>;
 }
 let derived: DerivedData;
@@ -46,21 +48,13 @@ const tsxCache = new Map<string, { mtime: number; code: string }>();
 
 async function computeDerived(): Promise<void> {
   derived = {
-    summaryList: pageSummaryList(),
+    summaryList: [...pages.values()].map(pageSummary),
     graph: buildGraphData(pages),
     tags: computeTagIndex(pages),
     lint: computeLint(pages, backlinks),
     meta: buildMeta(pages),
     timeline: await loadTimeline(),
-    searchIndex: [...pages.values()].map(({ slug, title, type, domain, tags, category, content }) => ({
-      slug,
-      title,
-      type,
-      domain,
-      tags,
-      category,
-      content,
-    })),
+    searchIndex: [...pages.values()].map(searchIndexEntry),
     fileAliases: buildFileAliases(pages),
   };
 }
@@ -100,43 +94,6 @@ try {
   console.log(`Watching ${WIKI_DIR} for changes`);
 } catch (e) {
   console.warn("fs.watch unavailable — falling back to manual /api/reload:", e);
-}
-
-function pageSummaryList() {
-  return [...pages.values()].map(({ slug, title, type, domain, tags, category, links, updated, mtime, wordCount, readingTime }) => ({
-    slug,
-    title,
-    type,
-    domain,
-    tags,
-    category,
-    linkCount: links.length,
-    updated,
-    mtime,
-    wordCount,
-    readingTime,
-  }));
-}
-
-function pageDetail(page: WikiPage) {
-  return {
-    slug: page.slug,
-    title: page.title,
-    type: page.type,
-    domain: page.domain,
-    tags: page.tags,
-    sources: page.sources,
-    related: resolveRelatedList(page.related, pages, derived.fileAliases),
-    created: page.created,
-    updated: page.updated,
-    html: page.html,
-    links: page.links,
-    category: page.category,
-    wordCount: page.wordCount,
-    readingTime: page.readingTime,
-    headings: page.headings,
-    backlinks: backlinks.get(page.slug) || [],
-  };
 }
 
 // Mutating endpoints (/api/ingest, /api/sync, /api/reload) spawn the `claude`
@@ -193,7 +150,7 @@ const server = Bun.serve({
         : path.slice("/data/pages/".length, -".json".length);
       const page = pages.get(slug);
       if (!page) return Response.json({ error: "Not found" }, { status: 404 });
-      return Response.json(pageDetail(page));
+      return Response.json(pageDetail(page, pages, backlinks, derived.fileAliases));
     }
 
     if (path === "/api/search") {
@@ -257,11 +214,20 @@ const server = Bun.serve({
         } else {
           files = files.map((f) => (f.startsWith("raw/") ? f : `raw/${f}`));
         }
-        const job = await startIngest(files, () => {
-          // One clean reload when the job exits (the watcher is suppressed during ingest).
-          reloadPages("ingest complete").catch((e) =>
-            console.error("Post-ingest reload failed:", e)
-          );
+        const job = await startIngest(files, (finished) => {
+          // On success, record the ingested raw files in the manifest BEFORE the
+          // reload so the next computePendingIngest reflects them as ingested.
+          // Skipped on non-zero exit so a failed/aborted job leaves pending intact.
+          const after = async () => {
+            if (finished.exitCode === 0) {
+              await updateIngestManifest(finished.files).catch((e) =>
+                console.error("Ingest manifest update failed:", e)
+              );
+            }
+            // One clean reload when the job exits (the watcher is suppressed during ingest).
+            await reloadPages("ingest complete");
+          };
+          after().catch((e) => console.error("Post-ingest reload failed:", e));
         });
         const stream = jobStream(job);
         return new Response(stream, {
@@ -294,7 +260,7 @@ const server = Bun.serve({
     if (path === "/api/ingest/abort" && req.method === "POST") {
       const blocked = guardMutation(req);
       if (blocked) return blocked;
-      const ok = abortCurrent();
+      const ok = await abortCurrent();
       return Response.json({ ok });
     }
 

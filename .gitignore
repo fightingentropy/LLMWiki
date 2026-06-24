@@ -2,3 +2,6 @@ node_modules/
 dist/
 .DS_Store
 raw/.sync-backups/
+raw/.ingest-manifest.json
+raw/.refresh.out.log
+raw/.refresh.err.log

@@ -20,6 +20,11 @@ export interface IngestJob {
 
 let currentJob: IngestJob | null = null;
 
+// Jobs currently being torn down by abortCurrent(). While a job is in here the
+// proc.exited handler defers final-status reconciliation to abortCurrent(),
+// which sets the real exit code first, so the two don't race on job.status.
+const aborting = new WeakSet<IngestJob>();
+
 export function getCurrentJob(): IngestJob | null {
   return currentJob;
 }
@@ -94,8 +99,18 @@ export async function startIngest(
   }
 
   const prompt = buildPrompt(files);
+  // Launch claude inside a brand-new session/process group (pgid == its own
+  // pid) so an abort can signal the WHOLE tree — claude plus any child tool
+  // processes / in-flight writes it spawned — via kill(-pgid). A plain SIGTERM
+  // to just the parent would orphan those children. Bun.spawn keeps the child
+  // in our group by default and exposes no `detached` option, so we prepend a
+  // tiny `perl POSIX::setsid` shim that calls setsid(2) then exec's the real
+  // command. Because it exec's (no extra layer), proc.pid IS the group leader.
   const proc = spawn({
     cmd: [
+      "perl",
+      "-e",
+      "use POSIX qw(setsid); setsid(); exec @ARGV or die $!;",
       "claude",
       "-p",
       prompt,
@@ -126,7 +141,12 @@ export async function startIngest(
 
   proc.exited.then((code) => {
     job.exitCode = code;
-    if (job.status === "running") {
+    // Reconcile final status from the real exit code. A clean exit 0 is "done"
+    // even mid-abort (claude finished before our signal landed); otherwise an
+    // aborting job is "aborted" and any other non-zero exit is "failed".
+    if (aborting.has(job)) {
+      job.status = code === 0 ? "done" : "aborted";
+    } else if (job.status === "running") {
       job.status = code === 0 ? "done" : "failed";
     }
     onComplete?.(job);
@@ -202,13 +222,47 @@ export function jobStream(job: IngestJob): ReadableStream<Uint8Array> {
   });
 }
 
-export function abortCurrent(): boolean {
-  if (!currentJob || currentJob.status !== "running") return false;
+// Signal a whole process group, swallowing ESRCH (group already gone).
+function killGroup(pgid: number, signal: NodeJS.Signals): void {
   try {
-    currentJob.proc.kill("SIGTERM");
-    currentJob.status = "aborted";
-    return true;
+    // Negative pid targets the entire process group (claude + its children).
+    process.kill(-pgid, signal);
   } catch {
-    return false;
+    // Group already exited (ESRCH) or not permitted — nothing more to do.
   }
+}
+
+// Abort the running ingest by tearing down its whole process group, then wait
+// for the process to actually exit before reporting back. Returns true if a
+// running job was found and signalled. The job's final status is reconciled
+// from the real exit code by the proc.exited handler in startIngest.
+export async function abortCurrent(): Promise<boolean> {
+  const job = currentJob;
+  if (!job || job.status !== "running") return false;
+
+  aborting.add(job);
+  // proc.pid is the group leader (we exec'd claude under setsid), so signalling
+  // -pid reaches claude and every child tool process it spawned.
+  const pgid = job.proc.pid;
+
+  // Graceful first: SIGTERM the group, then await exit with a short grace
+  // window. If claude (or a stuck child) is still alive, SIGKILL the group.
+  killGroup(pgid, "SIGTERM");
+
+  const KILL_TIMEOUT_MS = 3000;
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const timeout = new Promise<"timeout">((resolve) => {
+    timer = setTimeout(() => resolve("timeout"), KILL_TIMEOUT_MS);
+  });
+
+  const winner = await Promise.race([job.proc.exited.then(() => "exited" as const), timeout]);
+  if (winner === "timeout") {
+    killGroup(pgid, "SIGKILL");
+    await job.proc.exited; // SIGKILL is uncatchable; this resolves promptly.
+  }
+  if (timer) clearTimeout(timer);
+
+  // proc.exited has now resolved, so the startIngest handler has already set
+  // job.status (aborted/done) and fired onComplete exactly once.
+  return true;
 }
