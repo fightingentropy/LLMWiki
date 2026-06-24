@@ -60,5 +60,8 @@ Better blood flow to neck increases intelligence (established via neuroscience).
 - Most benefits come from basics + consistency, not exotic supplements
 - Sleep, food quality, sun, movement > supplements
 
+## Injectable Peptides (Separate Category)
+Beyond oral supplements, the biohacking stack now reaches into **injectable research peptides** — e.g. [[Retatrutide]] (LY3437943), an investigational GLP-1-class triple agonist used for weight loss. These are pharmaceuticals, not supplements: they require reconstitution from lyophilized powder with [[Bacteriostatic Water]], subcutaneous dosing, careful titration, and cold storage. See [[Peptide Reconstitution]] for handling and [[Peptides]] for the source guide.
+
 ---
-Related: [[Body_Optimization]], [[Fitness]], [[Mental_Health]]
+Related: [[Body_Optimization]], [[Fitness]], [[Mental_Health]], [[Peptide Reconstitution]], [[Retatrutide]]

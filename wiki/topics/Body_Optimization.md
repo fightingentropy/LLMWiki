@@ -70,6 +70,9 @@ Poor sleep timing = brain fog. Late sleep → late wake → persistent fog. Prop
 ## Recovery & Longevity
 Cold showers dramatically improve day trajectory—immediate effects comparable to medication.
 
+## Peptides (Pharmacological Layer)
+Beyond the food/sun/movement/supplement basics, an injectable layer exists: GLP-1-class peptides such as [[Retatrutide]] (LY3437943, investigational) for appetite suppression and weight loss. These are reconstituted from powder with [[Bacteriostatic Water]] and dosed subcutaneously — see [[Peptide Reconstitution]] and the [[Peptides]] guide. Noted as part of the optimization landscape, not an endorsement.
+
 ## Tiny Deltas
 **Power of replacing -1/-3 decisions with +1/+2 decisions.** Most people don't catastrophically fail; they erode through 1000 small withdrawals.
 
@@ -89,4 +92,4 @@ Cold showers dramatically improve day trajectory—immediate effects comparable 
 **Consistency > perfection.**
 
 ---
-Related: [[Fitness]], [[Mental_Health]], [[Self-Improvement]], [[Supplements]]
+Related: [[Fitness]], [[Mental_Health]], [[Self-Improvement]], [[Supplements]], [[Peptide Reconstitution]], [[Retatrutide]]

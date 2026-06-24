@@ -32,6 +32,7 @@ Reference collections and curated resource lists that form the foundation of the
 - [[Markets - Trading]] — Core trading principles, market drivers, and trader directories
 - [[Medical]] — ADHD, circadian rhythms, thyroid health, and medical insights
 - [[PAT Testing]] — Portable appliance testing guide covering inspection, testing, and safety
+- [[Peptides]] — Retatrutide reconstitution guide: BAC water, dilution math, storage, injection, titration
 - [[Pick-up-limes]] — Personal archive of crude one-liners, pickup lines, Greek phrases, and dating banter
 - [[Political Commentary]] — Media critique, elite control, and political analysis
 - [[Psychology]] — Psychology of behavior, trauma, decision-making, and relationships
@@ -86,6 +87,8 @@ Key figures, organizations, standards, and platforms referenced throughout the w
 - [[Naval_Ravikant]] — AngelList founder and aphorist; agency, freedom, intention
 - [[Nietzsche]] — German philosopher; habit-as-character, self-command, interpretation-as-power
 - [[RCD Protection]] — Residual current devices and electrical safety
+- [[Retatrutide]] — Investigational GLP-1/GIP/glucagon triple-agonist peptide (LY3437943) for weight loss
+- [[Bacteriostatic Water]] — 0.9% benzyl alcohol solvent for reconstituting injectable peptides
 - [[Rewkang]] — Crypto trader/essayist; PvP vs PvE heuristics
 - [[Robinhood HYPE]] — Retail trading platform
 - [[Satoshi_Nakamoto]] — Pseudonymous Bitcoin creator; 2010 production-cost/price passage
@@ -140,6 +143,7 @@ Organized by domain. Each page provides deep dives into specific subjects.
 - [[Body_Optimization]] — Optimization philosophy, energy, and core protocols
 - [[Fitness]] — Strength training, cardiac health, and functional movement
 - [[Supplements]] — Vitamin D3, creatine, magnesium, and biohacking stack
+- [[Peptide Reconstitution]] — Reconstituting, dosing, storing, and injecting research peptides
 
 ### Markets & Trading
 
