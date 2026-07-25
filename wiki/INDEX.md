@@ -3,7 +3,7 @@ title: Wiki Index
 type: index
 domain: personal
 tags: [index, navigation]
-updated: 2026-04-18
+updated: 2026-07-25
 ---
 
 # Wiki Index
@@ -41,7 +41,7 @@ Reference collections and curated resource lists that form the foundation of the
 - [[Thoughts]] — Personal observations, wealth dynamics, and acceptance principles
 - [[Top-Pods]] — Podcast/video bookmarks on masculinity, Huberman, Tate, and JRE
 - [[Women]] — Personal archive on women, dating, gender dynamics, and "game"; Heartiste-heavy, DrDynamis-heavy, internally contradictory
-- [[X-Bookmarks]] — 1,091-item X/Twitter bookmarks export (2026-03-19), thematic index across dev/design/AI/markets/culture
+- [[X-Bookmarks]] — Historical 1,091-item X/Twitter export plus its 499-entry curated successor
 - [[Youtube]] — Curated YouTube bookmarks on meaning, delusion, motivation, intimacy, inflation
 
 ## Entities

@@ -2,10 +2,10 @@
 title: Business Strategy
 type: topic
 domain: markets
-sources: [Bizz & Finance.md, Culture.md]
+sources: [Bizz & Finance.md, Culture.md, "bookmarks/Business & Startups.md"]
 related: [Markets, Trading Psychology, Philosophy]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-07-25
 tags: [business, strategy, competition, economics]
 ---
 
@@ -51,6 +51,17 @@ Business lifecycle considerations:
 - **Protection phase:** Act slowly, preserve capital. Security > opportunity.
 
 Most entrepreneurs reverse these instinctively.
+
+## Venture-investor sourcing
+
+A May 2025 creator-compiled snapshot names four investors said to have led three Series A rounds that later became $5B+ companies:
+
+- Doug Leone — Nubank, Wiz, Cyera
+- Hemant Taneja — Livongo, Gusto, Commure
+- Keith Rabois — Affirm, Faire, Ramp
+- Marc Andreessen — Samsara, Applied Intuition, SSI
+
+Use this as a **deal-sourcing lead list, not a ranking**. The post publishes no underlying dataset or inclusion rules, and valuation thresholds, round leadership, and individual attribution are time-sensitive. Verify each relationship before using it in diligence. (from [[X-Bookmarks]])
 
 ## Free vs. Paid Economics
 When price → $0:

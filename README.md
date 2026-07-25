@@ -43,8 +43,9 @@ Obsidian vault  ──①sync──▶  raw/  ──②ingest──▶  wiki/  �
 ```
 
 1. **Sync** (`sync.ts`, `GET /api/sync`): one-way `rsync` pull from the vault into
-   `raw/`. Set the vault location with `BRAIN_PATH` (defaults to the iCloud Obsidian
-   path). Missing/empty source folders are skipped rather than mirrored, and anything
+   `raw/`, including the curated `bookmarks/` collection. Set the vault location
+   with `BRAIN_PATH` (defaults to the active iCloud Markdown Brain path).
+   Missing/empty source folders are skipped rather than mirrored, and anything
    `--delete` would remove is first copied to `raw/.sync-backups/<timestamp>/`.
 2. **Ingest** (`ingest.ts`, `POST /api/ingest`): runs the `claude` CLI over pending
    `raw/` files to create/update pages under `wiki/`, following `CLAUDE.md`. The
@@ -77,7 +78,7 @@ It runs daily at 09:00 by default (editable in the plist) and logs to
 
 | Env var | Default | Purpose |
 |---------|---------|---------|
-| `BRAIN_PATH` | iCloud Obsidian `brain/` path | Obsidian vault to sync from |
+| `BRAIN_PATH` | iCloud Markdown `Brain/` path | Markdown vault to sync from |
 
 ## Deploy
 

@@ -2,11 +2,11 @@
 title: Equities
 type: topic
 domain: markets
-sources: [Brief.md]
-related: [[Cross-Asset Analysis]], [[Market Regime]], [[Macro Trading]], [[Sector Rotation]]
+sources: [Brief.md, "bookmarks/Markets & Crypto.md"]
+related: [[Cross-Asset Analysis]], [[Market Regime]], [[Macro Trading]], [[Sector Rotation]], [[Market Cycles]], [[X-Bookmarks]]
 created: 2026-04-12
-updated: 2026-04-12
-tags: [equities, stocks, breadth, leadership, valuation]
+updated: 2026-07-25
+tags: [equities, stocks, breadth, leadership, valuation, semiconductors, memory, supply-cycles]
 ---
 
 ## Overview
@@ -47,5 +47,11 @@ Equities are the highest-risk, highest-return asset class and most sensitive to 
 - **Unemployment rising**: First serious sign of recession
 - **Valuations contracting**: Multiple compression = earnings down forecasts
 
+## Memory equities and the capacity response
+
+Memory shares may discount announced fab capacity three or four quarters before memory prices themselves peak. Keep this as a **watchlist scenario**, not a timing rule: the post supplies a plausible market question, not evidence that the cycle has already turned.
+
+Track announced capex against clean-room completion and wafer-start timing, product mix, utilization, contract-price revisions, and whether HBM's larger wafer requirements absorb nominal capacity. This is the equity-market expression of the supply-response problem in [[Market Cycles]]. (from [[X-Bookmarks]])
+
 ## See Also
-[[Cross-Asset Analysis]] for equity relationships to rates/FX/commodities, [[Sector Rotation]] for rotation patterns.
+[[Cross-Asset Analysis]] for equity relationships to rates/FX/commodities, [[Sector Rotation]] for rotation patterns, and [[Market Cycles]] for the broader supply and pricing cycle.

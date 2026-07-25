@@ -6,7 +6,7 @@ import { stat, readdir, mkdir, cp } from "fs/promises";
 // repo isn't pinned to one user's iCloud container.
 const BRAIN_PATH =
   process.env.BRAIN_PATH ||
-  "/Users/erlinhoxha/Library/Mobile Documents/iCloud~md~obsidian/Documents/brain";
+  "/Users/erlinhoxha/Library/Mobile Documents/com~apple~CloudDocs/Markdown/Brain";
 
 const RAW_DIR = join(import.meta.dir, "raw");
 
@@ -14,6 +14,7 @@ const RAW_DIR = join(import.meta.dir, "raw");
 const SYNC_MAP: Record<string, string> = {
   "misc":      "misc",
   "markets":   "markets",
+  "bookmarks": "bookmarks",
   "electrics": "electrics",
   "Clippings": "clippings",
   "img":       "assets",

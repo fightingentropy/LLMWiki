@@ -2,10 +2,10 @@
 title: Market Cycles
 type: topic
 domain: markets
-sources: [Bizz & Finance.md, CT.md, Markets - Articles.md]
-related: [Crypto Trading, Trading_Psychology, Markets, Macro Trading]
+sources: [Bizz & Finance.md, CT.md, Markets - Articles.md, "bookmarks/Markets & Crypto.md"]
+related: [Crypto Trading, Trading_Psychology, Markets, Macro Trading, Equities, X-Bookmarks]
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-07-25
 tags: [cycles, seasonality, boom-bust, dilution, supercycle]
 ---
 
@@ -26,5 +26,6 @@ Referenced from [[Crypto Trading]] and threaded through the [[CT]] trader commen
 - **Bear-market structure (Rhea, 1935).** Three phases: abandonment of hopes → reduced earning power → distress liquidation. Each separated by a secondary reaction often mistaken for a new bull ([[Bizz_and_Finance]], [[Markets]]).
 - **Seasonality overlay.** January-October strong; May-August "sell in May"; week after July 4 is the annual nadir; September is when the year really begins; post-Thanksgiving lull ([[Markets]], [[Trading_Psychology]]).
 - **Reflexive pumps.** Cycles end and begin with reflexivity — no one left to sell, shorts pile in, disbelief rally, FOMO parabola ([[Markets]]).
+- **Equities can lead the physical cycle.** The memory-capacity bookmark asks whether shares can price a 2028 supply response three or four quarters before memory prices peak. Treat it as a falsifiable scenario, not a fixed lead-time rule; the operating evidence to watch lives in [[Equities]]. (from [[X-Bookmarks]])
 
-Related: [[Crypto Trading]], [[Trading_Psychology]], [[Markets]], [[Macro Trading]], [[Behavioral_Finance]]
+Related: [[Crypto Trading]], [[Trading_Psychology]], [[Markets]], [[Macro Trading]], [[Behavioral_Finance]], [[Equities]]

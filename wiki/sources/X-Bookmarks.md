@@ -2,22 +2,56 @@
 title: X-Bookmarks
 type: source
 domain: dev
-sources: ["X-Bookmarks.md"]
-related: [[Dev], [[Design], [[Markets - Trading], [[Crypto Trading], [[Design_and_Aesthetics], [[Developer_Resources], [[Trading_Psychology], [[Citrini Research], [[goodalexander], [[cobie], [[TheFlowHorse], [[0xaporia], [[CryptoCred], [[Hyperliquid]]
+sources: ["misc/X-Bookmarks.md", "bookmarks/Index.md", "bookmarks/AI & Agents.md", "bookmarks/Business & Startups.md", "bookmarks/Culture & Ideas.md", "bookmarks/Design & Frontend.md", "bookmarks/Developer Tools.md", "bookmarks/Health & Psychology.md", "bookmarks/Markets & Crypto.md", "bookmarks/Media & Inspiration.md", "bookmarks/Personal & Life.md", "bookmarks/Reference & Utilities.md"]
+related: [[Dev], [[Design], [[Markets - Trading], [[Crypto Trading], [[Design_and_Aesthetics], [[Developer_Resources], [[Equities], [[Business_Strategy], [[Dating_and_Relationships], [[Trading_Psychology], [[Citrini Research], [[goodalexander], [[cobie], [[TheFlowHorse], [[0xaporia], [[CryptoCred], [[Hyperliquid]]
 created: 2026-04-18
-updated: 2026-04-18
-tags: [bookmarks, x-twitter, archive, dev, design, ai, markets, cross-domain]
+updated: 2026-07-25
+tags: [bookmarks, x-twitter, archive, curated, dev, design, ai, markets, cross-domain]
 ---
 
 # X-Bookmarks
 
-> Note: This page is a **thematic index**, not a verbatim archive. The raw file contains 1,091 individual bookmarks and is too large to transcribe in full. For any specific item, consult `raw/misc/X-Bookmarks.md` directly. Counts below are approximate, based on a stratified sample across the file.
+This page now distinguishes two layers:
 
-## What this is
+- The **historical archive** is the 1,091-item export from 19 March 2026.
+- The **current curated collection** is the authoritative 499-entry set distilled into 10 topical Markdown notes on 25 July 2026.
+
+The two totals are not directly subtractable. The curated set incorporates later live tranches, while cleanup also removed duplicates and material already represented elsewhere in the Brain.
+
+## Current curated collection — 2026-07-25
+
+| Note | Entries |
+|---|---:|
+| AI & Agents | 77 |
+| Design & Frontend | 105 |
+| Developer Tools | 88 |
+| Markets & Crypto | 75 |
+| Business & Startups | 29 |
+| Health & Psychology | 9 |
+| Culture & Ideas | 30 |
+| Media & Inspiration | 44 |
+| Reference & Utilities | 30 |
+| Personal & Life | 12 |
+| **Total** | **499** |
+
+The collection keeps durable ideas, tools, evidence-aware claims, and creative references. Duplicates, unsupported medical or market claims, hateful material, and disposable timeline content are rejected rather than preserved by default.
+
+### Latest recovery additions
+
+- **Developer tools:** a [Cloudflare Email Service migration checklist](https://x.com/levelsio/status/2053482525780008997), incorporating the separate suppression-list reminder, and a [lean self-hosted web stack](https://x.com/levelsio/status/2052734824541016107). See [[Developer_Resources]].
+- **Markets:** a [memory-equity capacity-response scenario](https://x.com/jukan05/status/2078462124486283755), retained as a watchlist hypothesis rather than a timing rule. See [[Equities]] and [[Market Cycles]].
+- **Business:** a [May 2025 Series A investor outcome snapshot](https://x.com/ColeRotman/status/1928485912113037432), retained as a sourcing lead rather than a verified ranking. See [[Business_Strategy]].
+- **Media:** an [Off Campus consent scene](https://x.com/onfilmdiaries/status/2065829523128467634) and a [Titanic dialogue reversal](https://x.com/QUEENP0P/status/2065472136748363795) as compact relationship-writing references. See [[Dating_and_Relationships]].
+
+The recovery sweep reviewed 25 readable bookmarks, distilled seven source bookmarks into six new entries, recognized four items already represented elsewhere, rejected 14 low-value items, removed five unavailable records, and ended with a verified live X bookmark count of zero.
+
+## Historical export — 2026-03-19
+
+> This section is a **thematic index**, not a verbatim archive. The historical raw file contains 1,091 individual bookmarks and is too large to transcribe in full. Counts below are approximate, based on a stratified sample.
 
 Full export of the human's X/Twitter bookmarks under the handle **@entropyholdings** (display name: Merlin). Exported **2026-03-19**. **1,091 bookmarks.** Format per entry: author + handle + timestamp + link + quoted text + optional quoted-tweet link, separated by `---`.
 
-The archive is aggressively **cross-domain** — what the human is actively curating on X right now. Date range in the sample spans ~mid-2025 through the export date, with most of the volume concentrated in Feb–Mar 2026 (most recent at the top of the file). Heavy overlap with existing wiki domains: dev tools, design inspiration, AI tooling, crypto/markets, and cultural/political commentary. This is the "what I'm tracking" companion to the older verbatim [[CT]] archive (crypto-focused) and the themed [[Dev]], [[Design]], and [[Markets - Tools]] source pages.
+The archive is aggressively **cross-domain** and captures what the human was tracking around the export date. Date range in the sample spans roughly mid-2025 through the export date, with most of the volume concentrated in February–March 2026. It overlaps with existing wiki domains: dev tools, design inspiration, AI tooling, crypto/markets, and cultural or political commentary. It is the historical companion to the newer curated collection above, the older verbatim [[CT]] archive, and the themed [[Dev]], [[Design]], and [[Markets - Tools]] source pages.
 
 ## Taxonomy
 
@@ -233,10 +267,11 @@ Verbatim excerpts chosen for signal/reusability. All from [[X-Bookmarks]].
 
 ## How to use this archive
 
-- **To look up a specific bookmark**: open `raw/misc/X-Bookmarks.md` and search by handle or keyword. Each entry is numbered (1–1091) and date-stamped.
+- **To look up a historical bookmark**: search the March export by handle or keyword. Each entry is numbered (1–1091) and date-stamped.
+- **To use the current collection**: start with the category table above, then follow the relevant topic page or `raw/bookmarks/` note.
 - **To follow a theme**: use the Taxonomy section above as a starting point, then grep the raw file by handle or keyword (e.g. `grep -n "@Citrini7" raw/misc/X-Bookmarks.md`).
 - **To extend wiki pages**: if an X bookmark clearly strengthens an existing topic (e.g. a new @0xaporia post on exits), lift the verbatim quote into the relevant entity or topic page and cite `(from [[X-Bookmarks]])`.
-- **Cross-references**: [[CT]] holds verbatim crypto tweets collected separately; [[Dev]] and [[Design]] hold curated tool/aesthetic lists; [[Markets - Tools]] holds the trading-specific tool list. This bookmarks archive is the *living feed* those curated pages are distilled from.
+- **Cross-references**: [[CT]] holds verbatim crypto tweets collected separately; [[Dev]] and [[Design]] hold tool and aesthetic lists; [[Markets - Tools]] holds the trading-specific tool list. The 499-entry topical collection is now the maintained layer.
 
 ## Related pages
 

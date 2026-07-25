@@ -2,7 +2,7 @@
 title: Wiki Overview
 type: overview
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-07-25
 ---
 
 # Wiki Overview
@@ -27,7 +27,7 @@ Technical study notes for electrical certification. Comprehensive coverage of [[
 Observations on society, dating dynamics, aesthetics, and political commentary. Less structured than other domains — more a collection of takes and frameworks than a developed thesis. [[Political_Commentary]] spans UK wage compression, immigration, and US policy analysis. [[Dating_and_Relationships]] captures behavioral observations. [[Design_and_Aesthetics]] is mostly a tool bookmark collection.
 
 ### Dev & Design
-Lightweight — mostly link collections. [[Developer_Resources]] and [[Design_and_Aesthetics]] catalogue tools and references. [[Tools]] covers setup preferences (Claude Code, Obsidian, Helium).
+The current [[X-Bookmarks]] collection contributes 499 curated, topical entries rather than a raw timeline dump. [[Developer_Resources]] and [[Design_and_Aesthetics]] catalogue tools and references with source caveats; [[Tools]] covers setup preferences (Claude Code, Obsidian, Helium).
 
 ## Gaps and Opportunities
 

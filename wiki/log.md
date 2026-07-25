@@ -1,12 +1,18 @@
 ---
 title: Wiki Log
 type: log
-updated: 2026-04-18
+updated: 2026-07-25
 ---
 
 # Wiki Log
 
 Chronological record of wiki operations. Each entry starts with `## [date] operation | details` for easy parsing.
+
+---
+
+## [2026-07-25] update | curated bookmark recovery additions
+
+Refreshed [[X-Bookmarks]] as the hub for both the historical 1,091-item March export and the current 499-entry curated collection. Routed six durable entries distilled from seven source bookmarks into four existing topics: Cloudflare Email Service migration and a lean self-hosted stack in [[Developer_Resources]]; the memory-capacity watchlist scenario in [[Equities]] and [[Market Cycles]]; the Series A investor outcome snapshot in [[Business_Strategy]]; and the _Off Campus_ and _Titanic_ dialogue references in [[Dating_and_Relationships]]. Preserved the archive count as historical rather than treating 1,091 and 499 as directly subtractable. The recovery sweep ended with a verified live X bookmark count of zero.
 
 ---
 

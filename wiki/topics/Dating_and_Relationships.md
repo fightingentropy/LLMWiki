@@ -2,10 +2,10 @@
 title: Dating & Relationships
 type: topic
 domain: culture
-sources: [Culture.md, Thoughts.md, X takes.md, Youtube.md, Women.md]
+sources: [Culture.md, Thoughts.md, X takes.md, Youtube.md, Women.md, "bookmarks/Media & Inspiration.md"]
 related: [Psychology, Philosophy, Self-Improvement, Gender_Dynamics, Heartiste, DrDynamis]
 created: 2026-04-12
-updated: 2026-04-18
+updated: 2026-07-25
 tags: [dating, relationships, gender-dynamics, attraction, intimacy, game, red-pill]
 ---
 
@@ -64,6 +64,11 @@ Appearance signals health, genetics, character. It matters more than meritocrati
 ## True Intimacy
 
 Bookmarked via [[Youtube]]: "True intimacy." Flagged separately from performed closeness — the everyday mimicry (cohabitation, routine, shared calendars) can substitute for the thing itself. The bookmark is preserved as a prompt, not a definition.
+
+## Dialogue as relationship characterization
+
+- **_Off Campus_: consent as intimacy.** Garrett turns away while Hannah changes because seeing her is not the same as being invited to look. Restraint carries the romantic characterization without a speech about virtue. (from [[X-Bookmarks]])
+- **_Titanic_: rejecting possession.** Rose converts Cal's attempted sexual insult into a rejection of status, possession, and his control. The reversal defines both characters through one exchange. (from [[X-Bookmarks]])
 
 ## Modern Celibacy
 Critique of hyper-optimized masculinity: "Tim Ferris, Andrew Huberman, Lex Fridman—secular priesthood of sterile optimization. No sons, daughters, wives, lineage. They're selling surrogate masculinity unmoored from duty or generational continuity."

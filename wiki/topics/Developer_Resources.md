@@ -2,10 +2,10 @@
 title: Developer Resources
 type: topic
 domain: dev
-sources: [Dev.md, Setup.md, X-Bookmarks.md]
+sources: [Dev.md, Setup.md, X-Bookmarks.md, "bookmarks/Developer Tools.md"]
 related: [Design Tools, Tools, X-Bookmarks]
 created: 2026-04-12
-updated: 2026-04-18
+updated: 2026-07-25
 tags: [development, tools, learning, infrastructure]
 ---
 
@@ -66,6 +66,11 @@ tags: [development, tools, learning, infrastructure]
 - **agent-browser, openclaw, Paperclip, Molty — the autonomous-agent stack.** @ctatedev's agent-browser went native Rust with 18x less memory (#116). @steipete documents openclaw workflows (#746 "personality prompt", #140 Chrome MCP). @dotta open-sourced Paperclip, an org-chart/budget/goal-alignment framework for "zero-human companies" (#491).
 - **Open-source SaaS alternatives are a full discipline.** 180K-star directory at @xoaanya #488 covers Slack/Notion/Shopify analogues. Relevant for [[Setup]] minimization.
 - **EU Inc.** proposal: 48hrs / €100 to incorporate, common portal, digital-only, stock options taxed only at sale, simplified insolvency — @initjean #9. Relevant if ever considering EU entity structure.
+
+## Lean infrastructure and email migration
+
+- **Cloudflare Email Service migration:** inventory every outbound-email path, route sends through one provider adapter, import the previous provider's suppression list, canary a low-stakes message, and leave authentication-critical mail until delivery is proven. The original beta prompt is a starting sequence, not current documentation: recheck Cloudflare's REST API, pricing, activity logs, and event subscriptions before a migration. (from [[X-Bookmarks]])
+- **Lean self-hosted stack:** Ubuntu and Nginx, unattended upgrades, cron, SQLite, vanilla web code, Cloudflare Tunnel and R2, Tailscale, OpenFreeMap, Stripe, and a low-cost Hetzner VPS form a coherent small-team baseline. The source's “about $5/month” at “about 5M unique visitors” is an unverified self-report, not a capacity or cost benchmark. (from [[X-Bookmarks]])
 
 ## Development Environment
 - [[Setup]] - Dev tools and environment setup
