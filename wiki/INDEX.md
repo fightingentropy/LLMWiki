@@ -41,7 +41,7 @@ Reference collections and curated resource lists that form the foundation of the
 - [[Thoughts]] — Personal observations, wealth dynamics, and acceptance principles
 - [[Top-Pods]] — Podcast/video bookmarks on masculinity, Huberman, Tate, and JRE
 - [[Women]] — Personal archive on women, dating, gender dynamics, and "game"; Heartiste-heavy, DrDynamis-heavy, internally contradictory
-- [[X-Bookmarks]] — Historical 1,091-item X/Twitter export plus its 499-entry curated successor
+- [[X-Bookmarks]] — Current 499-entry X bookmark collection organized into 10 topical notes
 - [[Youtube]] — Curated YouTube bookmarks on meaning, delusion, motivation, intimacy, inflation
 
 ## Entities
