@@ -16,7 +16,6 @@ const SYNC_MAP: Record<string, string> = {
   "markets":   "markets",
   "bookmarks": "bookmarks",
   "electrics": "electrics",
-  "Clippings": "clippings",
   "img":       "assets",
 };
 

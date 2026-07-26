@@ -124,3 +124,14 @@ It's Yarvin's way of saying politics isn't really about policy details anymore-i
 
 
 Yep. Men were given a choice: feminize or get socially ostracized. All remotely prosocial men chose the former and got cucked. And thus, only men who have no regard for pro sociality (autistics, hyper-disagreebless) have retained any semblance of masculinity.
+
+
+## Islam as an Arab "biospirit"
+
+> Everyone agrees Islam should not exist, but can you admit that it's merely the biospirit of the Arab, and if it is destroyed, they will recreate it?
+>
+> The Quran is just Arabs writing in their diary about what they want to do, then saying "look, God gave me permission."
+
+— PsychoMath / @itispsychomath, [X post](https://x.com/itispsychomath/status/2081235605351288882)
+
+Saved as an attributed cultural and political assertion, not as a sourced historical claim.

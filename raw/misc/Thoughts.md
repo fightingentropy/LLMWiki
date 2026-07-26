@@ -188,3 +188,10 @@ This is actually spot on. I was asking AI (Gemini & ChatGPT) tech qusts about me
 
 
 https://nabeelqu.co/principles/
+
+
+## Maybe intelligence is not the limiting factor
+
+Clifford Sosin’s thesis: abundant high-quality reasoning can transform work with smooth, verifiable solution spaces, but many important problems remain constrained by contact with reality. Ideas still have to be built, tested, measured, and corrected; reality supplies new facts that reasoning alone cannot.
+
+Source: https://x.com/CliffordSosin/status/2078594661359194500

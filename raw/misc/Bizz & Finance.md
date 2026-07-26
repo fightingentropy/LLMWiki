@@ -314,3 +314,10 @@ Eg 2: San Francisco made its community college free
 And now apparently the slots get filled with scammers
 
 All profit comes from margins.
+
+
+## Double opt-in introductions
+
+Before introducing two people, ask each person privately whether they want the introduction and give enough context to decide. Make the connection only after both agree. This protects attention, avoids social pressure, and increases the chance that the introduction is useful.
+
+Source: https://x.com/reidhoffman/status/2079177965766635936

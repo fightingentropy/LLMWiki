@@ -27,6 +27,7 @@ https://www.pencil.dev/
 
 
 AirOS
+
 https://x.com/slavakornilov/status/2028885781448671325
 
 
@@ -415,9 +416,37 @@ https://www.virgileflores.com/
 
 https://x.com/Eryth_Studio/status/2069046098287792348
 
-https://transitions.dev/
+[Transitions.dev](https://transitions.dev/) — Copy-ready web UI transitions with CSS and React implementations, plus an agent skill for Claude, Cursor, and Codex. Install with `npx skills add Jakubantalik/transitions.dev`. Check the current repository terms before copying or vendoring code because it does not presently declare a license.
 
 https://clapet.app/d
 
 https://x.com/neverwin_cc/status/2069304402838737393
 
+
+https://x.com/guerriero_se/status/2069791907392200784
+
+https://www.palladiummag.com/2023/06/06/school-is-not-enough
+
+https://www.tripwire.sh/dither-kit
+
+https://cuelume-site.pages.dev/
+
+https://linear.app/now/introducing-loops
+
+https://rselmi.com/lab/card-expand
+
+https://jib.design/
+
+
+https://x.com/imdevPU23/status/2079909963489591794
+https://lab.moumen.dev/components
+
+
+## Sound resources
+
+- BBC Sound Effects — searchable archive of more than 30,000 recordings with a built-in mixer. Free use is generally limited to personal, educational, or research projects; commercial use needs separate licensing.
+  https://sound-effects.bbcrewind.co.uk/
+  https://sound-effects.bbcrewind.co.uk/faqs
+
+
+https://ui.nexvyn.dev/components

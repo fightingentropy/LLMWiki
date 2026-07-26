@@ -619,3 +619,24 @@ sideways and frowns. The latina pussy is brown and loud. White pussy is
 like a fresh mountain spring from a snowy peak. The world is full of jungle
 and sand pussy. Don't fall that snatch.
 
+Negroid parasites often complain that they live in "food deserts." These are urban areas where it is difficult to find healthy food, like you would find at a grocery store.
+
+Food deserts exist because when you open a grocery store near a negroid population, they steal from it until it goes out of business.
+
+When the grocery store closes, the negroids believe that the food has been "taken away" from them, which is "racist." They do not understand that the food was actually being brought TO them, and that the work of bringing the food is what stopped.
+
+Do you see the difference in framing? They do not say "oh no, we robbed the store too much and they stopped bringing food to us." They say "the food was coming out of the ground like a Magic Fountain and you stole it from us."
+
+This is because it is not possible for the vast majority of negroid brains to learn about work.
+
+It is difficult for most Whites to understand this, but negroids do not even know that work happens. Even if they have jobs, they do not know that they are doing work. They only know that they have to do something unpleasant or else they can't have money. This is also "racism."
+
+The idea that "the food would not be here if someone did not do work, and that's why we have to pay for the food" is far, far beyond the capacity of the negroid brain.
+
+The grocery store simply "was here" and the food "was in it," to be stolen at their leisure.
+
+When the grocery store is removed, this is not the result of a business giving up after being robbed into poverty, it is a great subtraction of a food fountain that belonged to them because they lived near it. Big racism!
+
+This is how the world works below 85 IQ, which is over 90% of blacks and about 80% of indians.
+
+This is why brown populations can never be helped or fixed. The more you give to them, the faster they reproduce. You cannot make them more intelligent. You can only make more food fountain deservers.desi

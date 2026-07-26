@@ -5,6 +5,9 @@
 school is not enough
 https://www.palladiummag.com/2023/06/06/school-is-not-enough
 
+Capital Allocation Is Dead
+https://x.com/kwharrison13/status/2078513579461079246
+
 Life is a Picture, But You Live in a Pixel
 https://waitbutwhy.com/2013/11/life-is-picture-but-you-live-in-pixel.html
 
@@ -55,9 +58,6 @@ https://x.com/radigancarter/status/2035073252134129757
 
 the pyramid and the tomb
 https://minutes.substack.com/p/the-pyramid-and-the-tomb
-
-How to Secretarymaxx Your Girl
-https://x.com/rawknuckle/status/2026366781984588177
 
 The exponential Horizon
 https://x.com/Rewkang/status/2020560687722852391
@@ -197,3 +197,8 @@ https://x.com/nicbstme/status/2015174818497437834
 
 That’s the story of Toto Wolff.
 https://www.bizofspeed.com/p/toto-wolff-turning-trauma-into-a?utm_campaign=post&utm_medium=twitter
+
+https://www.palladiummag.com/2023/06/06/school-is-not-enough
+
+
+https://gilcarvalhomdphd.substack.com/p/30-years-of-nutrition-knowledge-simplified?triedRedirect=true

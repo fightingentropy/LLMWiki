@@ -162,3 +162,29 @@ https://github.com/punitarani/fli
 https://particles.casberry.in/
 
 https://x.com/poetengineer__/status/2041998061153427861
+
+
+## Curated tools and practices — July 2026
+
+### UI and product references
+
+- Canvas UI — open-source WebGL and HTML-in-canvas component registry for React, Vue, Svelte, and vanilla TypeScript. Some HTML-in-canvas behavior is experimental, so verify browser support before production use.
+  https://canvasui.dev/
+- Native Bloom — browsable React Native UI patterns and components. Evaluate the free material before paying for Pro.
+  https://nativebloom.dev/
+- Buzz — open-source group chat for teams of people and agents; canonical product reference.
+  https://buzz.xyz/
+- Slate — native iPhone voice-journal reference using on-device transcription and local storage.
+  https://apps.apple.com/gb/app/slate-voice-journal/id6763851079
+
+### Agent workflows and technical writing
+
+- pstack “show me your work” pattern — keep a compact decision trail recording what changed, why, the evidence, and the result. Audit important choices rather than every line of generated code.
+  https://github.com/cursor/plugins/blob/main/pstack/skills/show-me-your-work/SKILL.md
+- ASD-STE100 Simplified Technical English — controlled-language rules worth borrowing for clear technical documentation and agent output. The correct name is ASD-STE100, not “ADS-STE100.”
+  https://www.asd-ste100.org/
+
+### Model watchlist
+
+- Inkling — open-weight multimodal model from Thinking Machines for text, image, and audio input. Reassess against current models before adopting.
+  https://thinkingmachines.ai/inkling/

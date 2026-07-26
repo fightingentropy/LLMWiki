@@ -66,3 +66,12 @@ Robinhood HYPE wallet
 
 [https://hyperevmscan.io/address/0x841ed663f2636863d40be4ee76243377dff13a34](https://hyperevmscan.io/address/0x841ed663f2636863d40be4ee76243377dff13a34)
 
+
+## Every trading system pays a characteristic cost
+
+- Trend-following pays through false starts.
+- Momentum often enters late and can buy tops or sell bottoms.
+- Mean reversion periodically gets overwhelmed by a genuinely outsized move.
+- A recurring failure mode is abandoning a valid system because its unavoidable cost is mistaken for evidence that the system is broken.
+
+Source: https://x.com/CryptoCred/status/2079138151528890777

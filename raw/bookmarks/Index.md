@@ -10,7 +10,7 @@ The raw March 2026 export was reviewed entry by entry. Durable material was orga
 - [Markets & Crypto](<Markets & Crypto.md>) — 75 items
 - [Business & Startups](<Business & Startups.md>) — 29 items
 - [Health & Psychology](<Health & Psychology.md>) — 9 items
-- [Culture & Ideas](<Culture & Ideas.md>) — 30 items
+- [Culture & Ideas](<Culture & Ideas.md>) — 31 items
 - [Media & Inspiration](<Media & Inspiration.md>) — 44 items
 - [Reference & Utilities](<Reference & Utilities.md>) — 30 items
 - [Personal & Life](<Personal & Life.md>) — 12 items
@@ -18,7 +18,7 @@ The raw March 2026 export was reviewed entry by entry. Durable material was orga
 ## Review summary
 
 - Archive entries reviewed: 1091
-- Added to this curated collection: 499
+- Added to this curated collection: 500
 - Removed as redundant or low-value: 778
 - Review completed: 2026-07-25
 
@@ -43,3 +43,12 @@ The raw March 2026 export was reviewed entry by entry. Durable material was orga
 - Removed from X during the recovery sweep: 30
 - Current X bookmark count: 0, verified by a complete Bird 0.1.4 pass with no continuation cursor
 - No separate recovery audit was recreated; this index remains the durable cleanup record
+
+### New live bookmark review — 2026-07-26
+
+- Live bookmarks reviewed: 5
+- New durable entries in the curated collection: 1
+- Existing topical Brain notes created or improved: 2
+- Rejected as unsupported or low-value: 2
+- Removed from X after curation: 5
+- Current X bookmark count: 0, verified by a complete Bird 0.1.4 pass with no continuation cursor
