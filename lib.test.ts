@@ -12,6 +12,10 @@ import {
   buildGraphData,
   parseLog,
   searchPages,
+  markdownToHtml,
+  normalizeSafeUrl,
+  sanitizeRenderedHtml,
+  wikilinksToHtml,
   type WikiPage,
 } from "./lib";
 
@@ -76,6 +80,65 @@ describe("extractWikilinks", () => {
   test("ignores image wikilinks ![[...]]", () => {
     expect(extractWikilinks("text ![[diagram.png]] and [[Real Page]]"))
       .toEqual(["Real Page"]);
+  });
+});
+
+describe("untrusted Markdown rendering", () => {
+  const safe = mkPage({ slug: "safe", title: "Safe" });
+  const pages = mapOf(safe);
+
+  test("escapes hostile wikilink names and aliases", () => {
+    const html = wikilinksToHtml(
+      '[[Safe|</a><img src=x onerror="globalThis.pwned=1">]] [[Missing|<svg onload=alert(1)>]]',
+      pages
+    );
+    expect(html).toContain("&lt;/a&gt;&lt;img");
+    expect(html).toContain("&lt;svg onload=alert(1)&gt;");
+    expect(html).not.toContain("<img");
+    expect(html).not.toContain("<svg");
+  });
+
+  test("disables raw HTML and rejects executable Markdown URLs", () => {
+    const markdown = [
+      "<script>globalThis.pwned = 1</script>",
+      "",
+      '<img src=x onerror="globalThis.pwned=2">',
+      "",
+      "[script](javascript:alert(1)) [data](data:text/html,x) [mail](mailto:a@example.com)",
+      "",
+      "[safe](https://example.com/path?q=1&x=2)",
+      "",
+      '[[Safe|</a><img src=x onerror="globalThis.pwned=3">]]',
+      "",
+      "[[Missing|<svg onload=alert(4)>]]",
+    ].join("\n");
+    const html = markdownToHtml(markdown, new Set(), pages);
+
+    expect(html).not.toMatch(/<script\b/i);
+    expect(html).not.toMatch(/<img\b[^>]*\sonerror=/i);
+    expect(html).not.toMatch(/<svg\b/i);
+    expect(html).not.toMatch(/href=["'](?:javascript|data|mailto):/i);
+    expect(html).toContain("&lt;script&gt;");
+    expect(html).toContain('<a href="https://example.com/path?q=1&amp;x=2" rel="noopener noreferrer">safe</a>');
+    expect(html).toContain('<a href="/page/safe" class="wikilink" data-slug="safe">&lt;/a&gt;&lt;img');
+  });
+
+  test("final sanitizer strips event handlers, active tags and bad schemes", () => {
+    const html = sanitizeRenderedHtml(
+      '<p onclick="alert(1)">x</p><script>alert(2)</script><a href="jAvAsCrIpT:alert(3)">bad</a><img src="data:image/svg+xml,x" onerror="alert(4)">'
+    );
+    expect(html).toBe('<p>x</p><span>bad</span><span class="image-ref image-missing"></span>');
+  });
+
+  test("URL policy permits only HTTP(S), root-local paths and simple anchors", () => {
+    expect(normalizeSafeUrl("https://example.com/a")).toBe("https://example.com/a");
+    expect(normalizeSafeUrl("http://example.com")).toBe("http://example.com/");
+    expect(normalizeSafeUrl("/page/safe?q=1#top")).toBe("/page/safe?q=1#top");
+    expect(normalizeSafeUrl("#section-1")).toBe("#section-1");
+    expect(normalizeSafeUrl("javascript:alert(1)")).toBeNull();
+    expect(normalizeSafeUrl("data:text/html,x")).toBeNull();
+    expect(normalizeSafeUrl("//evil.example/x")).toBeNull();
+    expect(normalizeSafeUrl("not a URL")).toBeNull();
   });
 });
 

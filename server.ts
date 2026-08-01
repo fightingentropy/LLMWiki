@@ -1,4 +1,4 @@
-import { join } from "path";
+import { join, relative, resolve } from "path";
 import { watch } from "fs";
 import { stat } from "fs/promises";
 import {
@@ -19,6 +19,12 @@ import {
 } from "./lib";
 import { sync } from "./sync";
 import { startIngest, jobStream, getCurrentJob, abortCurrent } from "./ingest";
+import {
+  createMutationSecurity,
+  methodNotAllowed,
+  readJsonBody,
+  RequestBodyError,
+} from "./server-security";
 
 const STATIC_DIR = join(import.meta.dir, "ui");
 const ASSETS_DIR = join(import.meta.dir, "raw", "assets");
@@ -96,36 +102,44 @@ try {
   console.warn("fs.watch unavailable — falling back to manual /api/reload:", e);
 }
 
-// Mutating endpoints (/api/ingest, /api/sync, /api/reload) spawn the `claude`
-// CLI with the host's credentials and write into the repo. Keep them strictly
-// local: bind to the loopback interface and reject cross-origin (CSRF) and
-// DNS-rebind requests as defense-in-depth. This server is for local use only.
+// Mutating endpoints can write into the repo or launch a credentialed provider.
+// They require a per-process HttpOnly session plus a separate CSRF token, and
+// are only reachable from a browser page served by this loopback process.
 const PORT = 3000;
-const ALLOWED_HOSTS = new Set([
-  `localhost:${PORT}`,
-  `127.0.0.1:${PORT}`,
-  `[::1]:${PORT}`,
+const mutationSecurity = createMutationSecurity(PORT);
+const MUTATION_PATHS = new Set([
+  "/api/sync",
+  "/api/reload",
+  "/api/ingest",
+  "/api/ingest/abort",
 ]);
+const DOCUMENT_SECURITY_HEADERS = {
+  "Content-Security-Policy": [
+    "default-src 'self'",
+    "script-src 'self'",
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+    "font-src https://fonts.gstatic.com",
+    "img-src 'self' http: https:",
+    "connect-src 'self'",
+    "object-src 'none'",
+    "base-uri 'none'",
+    "frame-ancestors 'none'",
+    "form-action 'self'",
+  ].join("; "),
+  "Referrer-Policy": "no-referrer",
+  "X-Content-Type-Options": "nosniff",
+  "X-Frame-Options": "DENY",
+};
 
-function guardMutation(req: Request): Response | null {
-  // Cross-origin browsers send an Origin header on these requests; a same-origin
-  // GET sends none and curl/CLI clients send none — both are allowed.
-  const origin = req.headers.get("origin");
-  if (origin) {
-    let host: string | null = null;
-    try {
-      host = new URL(origin).host;
-    } catch {}
-    if (!host || !ALLOWED_HOSTS.has(host)) {
-      return Response.json({ error: "Forbidden: cross-origin request blocked" }, { status: 403 });
-    }
-  }
-  // Defend against DNS rebinding: the Host header must be a known loopback host.
-  const hostHeader = req.headers.get("host");
-  if (hostHeader && !ALLOWED_HOSTS.has(hostHeader)) {
-    return Response.json({ error: "Forbidden: unexpected Host header" }, { status: 403 });
-  }
-  return null;
+function sessionDocument(file: Blob): Response {
+  return mutationSecurity.attachSessionCookie(
+    new Response(file, { headers: DOCUMENT_SECURITY_HEADERS })
+  );
+}
+
+function isWithin(parent: string, candidate: string): boolean {
+  const rel = relative(parent, candidate);
+  return rel === "" || (!rel.startsWith("..") && !rel.startsWith("/"));
 }
 
 const server = Bun.serve({
@@ -137,6 +151,19 @@ const server = Bun.serve({
   async fetch(req) {
     const url = new URL(req.url);
     const path = url.pathname;
+
+    if (MUTATION_PATHS.has(path) && req.method !== "POST") {
+      return methodNotAllowed("POST");
+    }
+
+    if (path === "/api/session") {
+      const blocked = mutationSecurity.guardSessionRequest(req);
+      if (blocked) return blocked;
+      return Response.json(
+        { csrfToken: mutationSecurity.csrfToken },
+        { headers: { "Cache-Control": "no-store" } }
+      );
+    }
 
     // --- API (data endpoints, used for both /api/* and /data/*.json) ---
 
@@ -184,7 +211,7 @@ const server = Bun.serve({
     }
 
     if (path === "/api/sync") {
-      const blocked = guardMutation(req);
+      const blocked = mutationSecurity.guardMutation(req);
       if (blocked) return blocked;
       try {
         const result = await sync();
@@ -201,11 +228,11 @@ const server = Bun.serve({
       return Response.json(await computePendingIngest(pages));
     }
 
-    if (path === "/api/ingest" && req.method === "POST") {
-      const blocked = guardMutation(req);
+    if (path === "/api/ingest") {
+      const blocked = mutationSecurity.guardMutation(req);
       if (blocked) return blocked;
       try {
-        const body = await req.json().catch(() => ({}));
+        const body = await readJsonBody(req, 64 * 1024);
         let files: string[] = Array.isArray(body?.files) ? body.files.map(String) : [];
         if (files.length === 0) {
           // Default: ingest everything currently pending
@@ -219,7 +246,7 @@ const server = Bun.serve({
           // reload so the next computePendingIngest reflects them as ingested.
           // Skipped on non-zero exit so a failed/aborted job leaves pending intact.
           const after = async () => {
-            if (finished.exitCode === 0) {
+            if (finished.status === "done") {
               await updateIngestManifest(finished.files).catch((e) =>
                 console.error("Ingest manifest update failed:", e)
               );
@@ -239,7 +266,8 @@ const server = Bun.serve({
           },
         });
       } catch (e: any) {
-        return Response.json({ ok: false, error: e.message }, { status: 409 });
+        const status = e instanceof RequestBodyError ? e.status : 409;
+        return Response.json({ ok: false, error: e.message }, { status });
       }
     }
 
@@ -254,18 +282,21 @@ const server = Bun.serve({
         files: job.files,
         exitCode: job.exitCode,
         snapshot: job.snapshot,
+        error: job.error,
+        stagingDir: job.status === "failed" ? job.stagingDir : null,
+        diffPath: job.diffPath,
       });
     }
 
-    if (path === "/api/ingest/abort" && req.method === "POST") {
-      const blocked = guardMutation(req);
+    if (path === "/api/ingest/abort") {
+      const blocked = mutationSecurity.guardMutation(req);
       if (blocked) return blocked;
       const ok = await abortCurrent();
       return Response.json({ ok });
     }
 
     if (path === "/api/reload") {
-      const blocked = guardMutation(req);
+      const blocked = mutationSecurity.guardMutation(req);
       if (blocked) return blocked;
       await reloadPages("manual /api/reload");
       return Response.json({ ok: true, count: pages.size });
@@ -285,7 +316,18 @@ const server = Bun.serve({
 
     // --- Static files (with TSX/TS transpilation) ---
     try {
-      const filePath = path === "/" ? join(STATIC_DIR, "index.html") : join(STATIC_DIR, path);
+      let decodedPath: string;
+      try {
+        decodedPath = decodeURIComponent(path);
+      } catch {
+        return new Response("Bad request", { status: 400 });
+      }
+      const filePath = path === "/"
+        ? join(STATIC_DIR, "index.html")
+        : resolve(STATIC_DIR, `.${decodedPath}`);
+      if (!isWithin(STATIC_DIR, filePath)) {
+        return new Response("Forbidden", { status: 403 });
+      }
       const file = Bun.file(filePath);
       if (await file.exists()) {
         if (filePath.endsWith(".tsx") || filePath.endsWith(".ts")) {
@@ -313,14 +355,15 @@ const server = Bun.serve({
             });
           }
         }
-        return new Response(file);
+        if (filePath.endsWith("index.html")) return sessionDocument(file);
+        return new Response(file, { headers: { "X-Content-Type-Options": "nosniff" } });
       }
     } catch {}
 
     // SPA fallback
     const indexFile = Bun.file(join(STATIC_DIR, "index.html"));
     if (await indexFile.exists()) {
-      return new Response(indexFile);
+      return sessionDocument(indexFile);
     }
 
     return Response.json({ error: "Not found" }, { status: 404 });

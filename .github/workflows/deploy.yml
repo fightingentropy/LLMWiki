@@ -3,24 +3,43 @@ name: Deploy to Cloudflare Pages
 on:
   push:
     branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
 
 jobs:
-  deploy:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
       - uses: oven-sh/setup-bun@v2
         with:
-          bun-version: latest
+          bun-version: 1.3.10
 
-      - run: bun install
+      - run: bun install --frozen-lockfile
 
       - run: bun test
 
-      - run: bun run check.ts
+      - run: bun run check
 
-      - run: bun run build.ts
+      - run: bun run build
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.10
+
+      - run: bun install --frozen-lockfile
+
+      - run: bun run build
 
       - uses: cloudflare/wrangler-action@v3
         with:

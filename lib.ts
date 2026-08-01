@@ -2,7 +2,8 @@ import { readdir, readFile, stat, writeFile } from "fs/promises";
 import { join, relative, basename } from "path";
 import { createHash } from "crypto";
 import matter from "gray-matter";
-import { marked } from "marked";
+import { Marked } from "marked";
+import sanitizeHtml from "sanitize-html";
 import Fuse from "fuse.js";
 
 const WIKI_DIR = join(import.meta.dir, "wiki");
@@ -98,39 +99,215 @@ export function buildFileAliases(pages: Map<string, WikiPage>): Map<string, stri
   return aliases;
 }
 
+export function escapeHtml(value: string): string {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+// Markdown links are untrusted source data. Only explicit HTTP(S) destinations
+// and same-origin root/hash links are useful in the wiki. In particular, do not
+// let javascript:, data:, protocol-relative or browser-parser edge cases reach
+// an href/src attribute.
+export function normalizeSafeUrl(value: string): string | null {
+  const input = String(value).trim();
+  if (!input || /[\u0000-\u001f\u007f]/.test(input)) return null;
+  if (input.startsWith("#")) return /^#[A-Za-z0-9_-]+$/.test(input) ? input : null;
+  if (input.startsWith("/") && !input.startsWith("//")) {
+    try {
+      const parsed = new URL(input, "http://wiki.local");
+      return parsed.origin === "http://wiki.local" ? `${parsed.pathname}${parsed.search}${parsed.hash}` : null;
+    } catch {
+      return null;
+    }
+  }
+  try {
+    const parsed = new URL(input);
+    if (parsed.protocol !== "http:" && parsed.protocol !== "https:") return null;
+    return parsed.href;
+  } catch {
+    return null;
+  }
+}
+
+function splitWikiTarget(raw: string): { name: string; display: string } {
+  const divider = raw.indexOf("|");
+  const name = (divider === -1 ? raw : raw.slice(0, divider)).trim();
+  const alias = divider === -1 ? "" : raw.slice(divider + 1).trim();
+  return { name, display: alias || name };
+}
+
+function renderWikilink(
+  raw: string,
+  pages: Map<string, WikiPage>,
+  fileAliases?: Map<string, string>
+): string {
+  const { name, display } = splitWikiTarget(raw);
+  const page = resolveLink(name, pages, fileAliases);
+  if (page) {
+    return `<a href="/page/${escapeHtml(page.slug)}" class="wikilink" data-slug="${escapeHtml(page.slug)}">${escapeHtml(display)}</a>`;
+  }
+  return `<span class="wikilink broken" title="No page: ${escapeHtml(name)}">${escapeHtml(display)}</span>`;
+}
+
+function renderImageWikilink(raw: string, assetSet: Set<string>): string {
+  const name = raw.split("|")[0].trim();
+  const filename = name.replace(/\\/g, "/").split("/").pop() || name;
+  if (!assetSet.has(filename)) {
+    return `<span class="image-ref image-missing" title="Asset not found">${escapeHtml(filename)}</span>`;
+  }
+  const href = `${ASSETS_URL_PREFIX}${encodeURIComponent(filename)}`;
+  return `<img class="wiki-image" src="${href}" alt="${escapeHtml(filename)}" loading="lazy">`;
+}
+
 export function wikilinksToHtml(
   content: string,
   pages: Map<string, WikiPage>,
   fileAliases?: Map<string, string>
 ): string {
-  return content.replace(/\[\[([^\]]+)\]\]/g, (_, raw) => {
-    const [name, alias] = raw.split("|").map((s: string) => s.trim());
-    const display = alias || name;
-    const page = resolveLink(name, pages, fileAliases);
-    if (page) {
-      return `<a href="/page/${page.slug}" class="wikilink" data-slug="${page.slug}">${display}</a>`;
-    }
-    return `<span class="wikilink broken" title="No page: ${name}">${display}</span>`;
-  });
+  return content.replace(/(?<!!)\[\[([^\]\n]+)\]\]/g, (_match, raw) =>
+    renderWikilink(raw, pages, fileAliases)
+  );
 }
 
 // Resolve image wikilinks (![[foo.png]]) to real <img> tags pointing at /assets/
 export function imageWikilinksToHtml(md: string, assetSet: Set<string>): string {
-  return md.replace(/!\[\[([^\]]+)\]\]/g, (_, raw) => {
-    const name = raw.split("|")[0].trim();
-    const filename = name.split("/").pop() || name;
-    const exists = assetSet.has(filename);
-    const href = `${ASSETS_URL_PREFIX}${encodeURIComponent(filename)}`;
-    if (exists) {
-      return `<img class="wiki-image" src="${href}" alt="${filename}" loading="lazy" />`;
-    }
-    return `<span class="image-ref image-missing" title="Asset not found">${filename}</span>`;
+  return md.replace(/!\[\[([^\]\n]+)\]\]/g, (_match, raw) =>
+    renderImageWikilink(raw, assetSet)
+  );
+}
+
+const ALLOWED_HTML_TAGS = [
+  "a", "blockquote", "br", "code", "del", "details", "em", "h1", "h2", "h3", "h4",
+  "h5", "h6", "hr", "img", "input", "kbd", "li", "mark", "ol", "p", "pre", "s",
+  "span", "strong", "sub", "summary", "sup", "table", "tbody", "td", "th", "thead",
+  "tr", "ul",
+];
+
+export function sanitizeRenderedHtml(html: string): string {
+  return sanitizeHtml(html, {
+    allowedTags: ALLOWED_HTML_TAGS,
+    allowedAttributes: {
+      a: ["href", "title", "class", "data-slug", "rel"],
+      img: ["src", "alt", "title", "class", "loading"],
+      input: ["type", "checked", "disabled"],
+      span: ["class", "title"],
+      "*": ["id"],
+    },
+    allowedClasses: {
+      a: ["wikilink"],
+      img: ["wiki-image"],
+      span: ["wikilink", "broken", "image-ref", "image-missing"],
+    },
+    allowedSchemes: ["http", "https"],
+    allowProtocolRelative: false,
+    transformTags: {
+      a: (_tagName, attribs) => {
+        const href = attribs.href ? normalizeSafeUrl(attribs.href) : null;
+        if (!href) {
+          const { href: _discarded, rel: _rel, ...safeAttribs } = attribs;
+          return { tagName: "span", attribs: safeAttribs };
+        }
+        return {
+          tagName: "a",
+          attribs: {
+            ...attribs,
+            href,
+            ...(href.startsWith("http://") || href.startsWith("https://")
+              ? { rel: "noopener noreferrer" }
+              : {}),
+          },
+        };
+      },
+      img: (_tagName, attribs) => {
+        const src = attribs.src ? normalizeSafeUrl(attribs.src) : null;
+        if (!src) return { tagName: "span", attribs: { class: "image-ref image-missing" } };
+        return { tagName: "img", attribs: { ...attribs, src, loading: "lazy" } };
+      },
+      input: (_tagName, attribs) => ({
+        tagName: "input",
+        attribs: {
+          type: "checkbox",
+          disabled: "",
+          ...(Object.hasOwn(attribs, "checked") ? { checked: "" } : {}),
+        },
+      }),
+    },
   });
 }
 
-export function markdownToHtml(md: string, assetSet: Set<string>): string {
-  const withImages = imageWikilinksToHtml(md, assetSet);
-  return marked.parse(withImages, { async: false }) as string;
+export function markdownToHtml(
+  md: string,
+  assetSet: Set<string>,
+  pages: Map<string, WikiPage> = new Map(),
+  fileAliases?: Map<string, string>
+): string {
+  const parser = new Marked({
+    gfm: true,
+    async: false,
+    renderer: {
+      // Marked intentionally passes raw HTML through by default. Render it as
+      // text instead; the final allowlist below remains a second line of defence.
+      html({ text }) {
+        return escapeHtml(text);
+      },
+      link({ href, title, tokens }) {
+        const label = this.parser.parseInline(tokens);
+        const safeHref = normalizeSafeUrl(href);
+        if (!safeHref) return label;
+        const titleAttr = title ? ` title="${escapeHtml(title)}"` : "";
+        const rel = safeHref.startsWith("http://") || safeHref.startsWith("https://")
+          ? ' rel="noopener noreferrer"'
+          : "";
+        return `<a href="${escapeHtml(safeHref)}"${titleAttr}${rel}>${label}</a>`;
+      },
+      image({ href, title, text }) {
+        const safeSrc = normalizeSafeUrl(href);
+        if (!safeSrc) return escapeHtml(text);
+        const titleAttr = title ? ` title="${escapeHtml(title)}"` : "";
+        return `<img src="${escapeHtml(safeSrc)}" alt="${escapeHtml(text)}"${titleAttr} loading="lazy">`;
+      },
+    },
+    extensions: [
+      {
+        name: "wikiImage",
+        level: "inline",
+        start(src) {
+          const index = src.indexOf("![[");
+          return index === -1 ? undefined : index;
+        },
+        tokenizer(src) {
+          const match = /^!\[\[([^\]\n]+)\]\]/.exec(src);
+          if (!match) return undefined;
+          return { type: "wikiImage", raw: match[0], value: match[1] };
+        },
+        renderer(token) {
+          return renderImageWikilink(String(token.value), assetSet);
+        },
+      },
+      {
+        name: "wikilink",
+        level: "inline",
+        start(src) {
+          const index = src.indexOf("[[");
+          return index === -1 ? undefined : index;
+        },
+        tokenizer(src) {
+          const match = /^\[\[([^\]\n]+)\]\]/.exec(src);
+          if (!match) return undefined;
+          return { type: "wikilink", raw: match[0], value: match[1] };
+        },
+        renderer(token) {
+          return renderWikilink(String(token.value), pages, fileAliases);
+        },
+      },
+    ],
+  });
+
+  return sanitizeRenderedHtml(parser.parse(md) as string);
 }
 
 // Extract headings (h1..h4) from raw markdown, for the page TOC.
@@ -388,9 +565,10 @@ export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
     if (entry && entry.page === page && entry.htmlSig === sig && page.html) {
       continue; // reuse cached page.html
     }
-    const withLinks = wikilinksToHtml(page.content, pages, fileAliases);
-    const html = markdownToHtml(withLinks, assetSet);
-    page.html = injectHeadingIds(html, page.headings);
+    const html = markdownToHtml(page.content, assetSet, pages, fileAliases);
+    // Heading ids are generated from a strict slug alphabet. Sanitize once more
+    // after injecting them so page.html is always the final allowlisted output.
+    page.html = sanitizeRenderedHtml(injectHeadingIds(html, page.headings));
     if (entry) entry.htmlSig = sig;
   }
 

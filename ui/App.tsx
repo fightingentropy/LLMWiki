@@ -233,9 +233,38 @@ function resetCaches() {
   _metaCache = null;
 }
 
+let _csrfToken: string | null = null;
+
+async function mutationFetch(path: string, init: RequestInit = {}): Promise<Response> {
+  if (!_csrfToken) {
+    const session = await fetch("/api/session", {
+      method: "POST",
+      credentials: "same-origin",
+      headers: { Accept: "application/json" },
+    });
+    if (!session.ok) throw new Error("Local wiki session expired — refresh the page and try again");
+    const data = await session.json();
+    if (typeof data.csrfToken !== "string" || !data.csrfToken) {
+      throw new Error("Local wiki session did not provide a CSRF token");
+    }
+    _csrfToken = data.csrfToken;
+  }
+
+  const headers = new Headers(init.headers);
+  headers.set("X-CSRF-Token", _csrfToken);
+  const response = await fetch(path, {
+    ...init,
+    method: "POST",
+    credentials: "same-origin",
+    headers,
+  });
+  if (response.status === 401 || response.status === 403) _csrfToken = null;
+  return response;
+}
+
 async function runSync(): Promise<{ ok: boolean; synced: string[]; errors: string[]; pending: number; error?: string }> {
   try {
-    const res = await fetch("/api/sync");
+    const res = await mutationFetch("/api/sync");
     const data = await res.json();
     return {
       ok: !!data.ok,
@@ -429,10 +458,12 @@ function Search({ onSelect }: { onSelect: (slug: string) => void }) {
     return () => document.removeEventListener("keydown", handler);
   }, []);
 
-  function highlightSnippet(snippet: string, q: string) {
+  function highlightSnippet(snippet: string, q: string): React.ReactNode {
     if (!q) return snippet;
     const regex = new RegExp(`(${escapeRegExp(q)})`, "gi");
-    return snippet.replace(regex, "<mark>$1</mark>");
+    return snippet.split(regex).map((part, index) =>
+      index % 2 === 1 ? <mark key={index}>{part}</mark> : part
+    );
   }
 
   function pick(slug: string) {
@@ -492,7 +523,7 @@ function Search({ onSelect }: { onSelect: (slug: string) => void }) {
                 {isRecents && typeof r.linkCount === "number" && <span>{r.linkCount} links</span>}
               </div>
               {!isRecents && (
-                <div className="search-result-snippet" dangerouslySetInnerHTML={{ __html: highlightSnippet(r.snippet, query) }} />
+                <div className="search-result-snippet">{highlightSnippet(r.snippet, query)}</div>
               )}
             </div>
           ))}
@@ -1651,7 +1682,11 @@ function parseIngestLine(line: string): IngestEvent | null {
   try {
     const ev = JSON.parse(line);
     if (ev.type === "stderr") return { kind: "stderr", text: ev.text };
-    if (ev.type === "exit") return { kind: "exit", text: `Exit: ${ev.status} (${ev.exitCode ?? "?"})` };
+    if (ev.type === "exit") {
+      const detail = ev.error ? ` — ${ev.error}` : "";
+      const staged = ev.stagingDir ? ` (staged at ${ev.stagingDir})` : "";
+      return { kind: "exit", text: `Exit: ${ev.status} (${ev.exitCode ?? "?"})${detail}${staged}` };
+    }
     if (ev.type === "system") return { kind: "system", text: ev.subtype || "system" };
     if (ev.type === "assistant") {
       const content = ev.message?.content;
@@ -1700,8 +1735,7 @@ function IngestPanel({
     abortRef.current = ctrl;
     (async () => {
       try {
-        const res = await fetch("/api/ingest", {
-          method: "POST",
+        const res = await mutationFetch("/api/ingest", {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ files }),
           signal: ctrl.signal,
@@ -1759,7 +1793,7 @@ function IngestPanel({
   }, [status, onDone]);
 
   async function abort() {
-    await fetch("/api/ingest/abort", { method: "POST" }).catch(() => {});
+    await mutationFetch("/api/ingest/abort").catch(() => {});
     abortRef.current?.abort();
     setStatus("aborted");
   }
