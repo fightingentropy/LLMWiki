@@ -141,6 +141,9 @@ ${cssTag}
 
 # SPA fallback
 /*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' http: https:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'
+  Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
 `;
   await writeFile(join(DIST_DIR, "_headers"), headers);
