@@ -2,10 +2,10 @@
 title: Humor
 type: topic
 domain: culture
-sources: [Jokes.md, Pick up limes.md, Funny.md]
-related: [Pick-up-limes, Jokes, Funny, Culture, Dating_and_Relationships]
+sources: [Jokes.md, Pick up limes.md, Funny.md, "X takes.md"]
+related: [[Pick-up-limes]], [[Jokes]], [[Funny]], [[Culture]], [[Dating_and_Relationships]], [[Online Extremism and Evidence]]
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [humor, jokes, memes, comedy, wordplay, greek, tweets, shitpost]
 ---
 
@@ -40,6 +40,12 @@ Across all three archives, the same comedic modes keep showing up — useful as 
 - Greek, English and Albanian bits coexist without translation; some jokes only work in Greek (wordplay), some only in English, a handful ride on bilingual collisions (*Japan ενδεχόμενο*, *ΚΤΕΛ Αβίβ*, *Tattoo Καίσαρος*, *φωτόσπαθο μες στο κλαμπ*).
 - The human saves both **punchline jokes** (setup → payoff) and **vibe fragments** ("Brutal hippo attack", "Sound check", "Will smith husband hair lost", "Hideous Nigger", "Wired headphones.") — the latter presumably as mnemonics for something seen online.
 - **Cross-archive repeats**: a handful of lines appear in two or three of the archives (e.g. "math test / boyfriend" cheating line, "Θα χέσω με καισαρική", "blowjob voice" Urban Dictionary link, "I'm very vulnerable rn", "Έλα να μου ξεβουλώσεις τ'αρχίδια"). Confirms these are personal re-saves, not a deduplicated collection.
+
+## Latest additions and boundary
+
+The August batch adds visual non sequiturs, sports and hardware language collisions, finance jargon reactions, style parody, dark wordplay, and sexual anecdotes. A caption's insinuation about an athlete, influencer, or performer is not evidence of private conduct.
+
+One appended passage is dehumanizing racial propaganda rather than a joke with a separable setup and punchline. It remains in immutable raw material but is catalogued only through [[Online Extremism and Evidence]], without repeating its slurs or treating its pseudo-scientific claims as facts.
 
 ## Related culture pages
 

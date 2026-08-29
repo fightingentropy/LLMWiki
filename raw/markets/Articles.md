@@ -202,3 +202,6 @@ https://www.palladiummag.com/2023/06/06/school-is-not-enough
 
 
 https://gilcarvalhomdphd.substack.com/p/30-years-of-nutrition-knowledge-simplified?triedRedirect=true
+
+
+https://structuralist.substack.com/p/the-laws-of-this-world

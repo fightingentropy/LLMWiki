@@ -2,10 +2,10 @@
 title: Tools & Software
 type: topic
 domain: dev
-sources: [Dev.md, Setup.md, Design.md]
-related: [Developer Resources, Design Tools, Setup]
+sources: [Dev.md, Setup.md, Design.md, "bookmarks/Developer Tools.md"]
+related: [[Developer_Resources]], [[Design_and_Aesthetics]], [[Setup]], [[Omarchy]], [[OpenShip]]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-08-29
 tags: [tools, software, productivity, dev-tools]
 ---
 
@@ -65,5 +65,13 @@ tags: [tools, software, productivity, dev-tools]
 - **Quick Map Tools** - Mapping utilities
 - **Monitor the Situation** - Surveillance/monitoring
 
+## New environment and operations tools
+
+- [[Omarchy]] — Arch/Hyprland development environment; evaluate upstream dependencies and workflow fit.
+- [[OpenShip]] — self-hosted deployment/operations watchlist item with explicit recovery and access-control gates.
+- Coolify — self-hosted application platform; inspect release-specific migration and rollback notes before production upgrades.
+- Talkify — on-device macOS dictation; author benchmarks need local reproduction.
+- Space Rabbit — macOS Spaces transition utility relying on a compatibility-sensitive workaround.
+
 ---
-Related: [[Developer_Resources]], [[Design_and_Aesthetics]], [[Setup]]
+Related: [[Developer_Resources]], [[Design_and_Aesthetics]], [[Setup]], [[Omarchy]], [[OpenShip]]

@@ -139,3 +139,14 @@ Taleb’s Father:
 “My greatest lesson in courage came from my father—as a child, I had admired him before for his erudition, but was not overly fazed since erudition on its own does not make a man. He had a large ego and immense dignity, and he demanded respect. He was once insulted by a militiaman at a road check during the Lebanese war. He refused to comply, and got angry at the militiaman for being disrespectful. As he drove away, the gunman shot him in the back. The bullet stayed in his chest for the rest of his life so he had to carry an X-ray image through airport terminals. ” “This set the bar very high for me: dignity is worth nothing unless you earn it, unless you are willing to pay a price for it.”
 Antifragile, NNT
  (p 312)
+
+## David Cifaldi's Granite Peak self-rescue
+
+On 20 July 2026, emergency-room nurse David Cifaldi slipped near the summit of Granite Peak in Montana and fell onto a trekking pole, which passed through his torso while narrowly missing vital organs. After assessing that he could breathe, had full feeling, and was not bleeding heavily, he and his two companions alerted authorities by satellite communicator and spent roughly six and a half hours descending ten miles under their own power. One friend steadied him while the other warned approaching families about the injury. Surgeons later removed the pole, and the group intends to attempt the summit again after he recovers.
+
+This is a remarkable account of calm and endurance, not a model for handling impalement or deciding against emergency extraction.
+
+Sources:
+
+- https://x.com/SMB_Attorney/status/2081926110174957611
+- https://www.theguardian.com/us-news/2026/jul/27/montana-man-hikes-10-miles-fall-trekking-pole

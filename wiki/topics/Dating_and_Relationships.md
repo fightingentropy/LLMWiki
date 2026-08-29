@@ -3,9 +3,9 @@ title: Dating & Relationships
 type: topic
 domain: culture
 sources: [Culture.md, Thoughts.md, X takes.md, Youtube.md, Women.md, "bookmarks/Media & Inspiration.md"]
-related: [Psychology, Philosophy, Self-Improvement, Gender_Dynamics, Heartiste, DrDynamis]
+related: [[Psychology]], [[Philosophy_and_Meaning]], [[Self_Improvement]], [[Gender_Dynamics]], [[Heartiste]], [[DrDynamis]], [[OnlyFans]], [[Repeated Games]]
 created: 2026-04-12
-updated: 2026-07-25
+updated: 2026-08-29
 tags: [dating, relationships, gender-dynamics, attraction, intimacy, game, red-pill]
 ---
 
@@ -170,5 +170,13 @@ Flag rather than resolve (see also [[Gender_Dynamics]]):
 - **"Women do things for themselves"** (AJA_Cortes corrective in [[Women]]) vs the default red-pill reading that all female behaviour is strategy aimed at men.
 - **Physical warmth / emotional warmth** (earlier on this page) vs **the oak-tree doctrine** of Heartiste — "be warm" vs "be immovable." Resolution depends on context; the file doesn't resolve it.
 
+## August 2026 additions
+
+- **Peer-group feedback:** group chats can reinforce selective retellings and co-rumination, but they can also surface genuine risk. Judge the evidence and incentive structure of the advice, not the sex of the group.
+- **Dating apps as scaled distribution:** apps may expand access unevenly and blur casual-match availability with relationship availability. The market-language framing is reductive and requires behavioral data.
+- **Limerence:** distinguish reciprocal knowledge of a real person from an imagined relationship maintained through checking and rumination; see [[Mental_Health]].
+- **Repeated-game boundaries:** begin cooperatively, respond proportionally to exploitation, and restore cooperation after correction rather than keeping a permanent revenge ledger. See [[Repeated Games]].
+- **[[OnlyFans]]:** creator agency and platform incentives can coexist; neither a clean victimhood story nor a clean voluntarist story captures every case.
+
 ---
-Related: [[Psychology]], [[Philosophy_and_Meaning]], [[Gender_Dynamics]], [[Masculinity_and_Men]], [[Heartiste]], [[DrDynamis]], [[Women]]
+Related: [[Psychology]], [[Philosophy_and_Meaning]], [[Gender_Dynamics]], [[Masculinity_and_Men]], [[Heartiste]], [[DrDynamis]], [[Women]], [[OnlyFans]], [[Repeated Games]], [[Mental_Health]]

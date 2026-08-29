@@ -2,10 +2,10 @@
 title: Business & Finance
 type: source
 domain: markets
-sources: [Bizz & Finance.md]
+sources: ["misc/Bizz & Finance.md"]
 related: [Trading Psychology, Markets, Crypto, Business Strategy]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-08-29
 tags: [finance, markets, business, trading, economics, psychology]
 ---
 
@@ -81,6 +81,10 @@ All companies face pressure to merge into equilibrium with environment. Amazon's
 - Tokenization enables: 24/7/365 global trading, seamless collateralization, non-custodial lending, broader investor access
 - Most benefit those without robust existing market structure
 - Larry Fink (BlackRock) very interested in tokenization thesis
+
+## Double opt-in introductions
+
+Ask each person privately whether they want an introduction and provide enough context to decide. Connect them only after both agree. This protects attention, avoids social pressure, and makes a useful match more likely. The same consent boundary applies to agent-generated relationship suggestions in [[AI Agents]].
 
 ---
 Related: [[Markets]], [[Trading_Psychology]], [[Business_Strategy]], [[Crypto Trading]]

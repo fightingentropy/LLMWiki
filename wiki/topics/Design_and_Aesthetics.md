@@ -2,10 +2,10 @@
 title: Design & Aesthetics
 type: topic
 domain: dev
-sources: [Design.md, Thoughts.md, Youtube.md, X-Bookmarks.md]
-related: [Developer Resources, Design Tools, Philosophy, X-Bookmarks]
+sources: [Design.md, Thoughts.md, Youtube.md, X-Bookmarks.md, "bookmarks/Design & Frontend.md", "bookmarks/Media & Inspiration.md"]
+related: [[Developer_Resources]], [[Design_Thinking]], [[Philosophy_and_Meaning]], [[X-Bookmarks]]
 created: 2026-04-12
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [design, aesthetics, ui-ux, taste, tools]
 ---
 
@@ -101,6 +101,15 @@ Design taste = character revelation. What you build reveals who you are.
 - **Mockdown** - Quick mockup generation
 - **Peel.studio** - Extract design from images
 - **Hotkeys.design** - Design tool keyboard shortcuts
+
+## August 2026 references
+
+- **Ink calligraphy interface:** traditional craft made explorable through tracing, stroke order, surface choices, ink weight, wetness, speed, formality, and generative seed without overwhelming the canvas.
+- **Figma → generation → Figma:** use image generation for texture and dimensionality while keeping composition and finishing under designer control.
+- **Native-feeling motion:** progressive blur, tactile receipt-printer interaction, and Emil Kowalski's mobile-detail examples belong in a real-device checklist that includes reduced motion, transparency, touch latency, keyboard access, and semantics.
+- **Systems over decoration:** Munich 1972 demonstrates modular grids, pictograms, restrained typography, multilingual hierarchy, wayfinding, and event identity expressed through rules.
+- **Art direction:** vintage cars, keys, warm night light, and red accents create intimacy in the retained Valentino film; a single campaign still cannot establish a broad cultural return.
+- **Reference galleries:** Details, Rare UI, Cuelume, Beautiful UI, and bare source URLs are inspiration queues, not accessibility or production-quality guarantees.
 
 ---
 Related: [[Developer_Resources]], [[Philosophy_and_Meaning]], [[Thoughts_and_Observations]]

@@ -5,7 +5,7 @@ domain: markets
 sources: [Bizz & Finance.md, Culture.md, "bookmarks/Business & Startups.md"]
 related: [Markets, Trading Psychology, Philosophy]
 created: 2026-04-12
-updated: 2026-07-25
+updated: 2026-08-29
 tags: [business, strategy, competition, economics]
 ---
 
@@ -73,6 +73,14 @@ When price → $0:
 Example: Free healthcare (NHS waiting lists 9mo-1yr, 7M waiting); Free college (scammers filled seats).
 
 **Lesson:** Marginal cost structure determines behavior. Price communicates scarcity; price = $0 communicates unlimited supply.
+
+## Double opt-in introductions
+
+Ask both people privately before connecting them, and provide enough context for each to decide. This respects attention, avoids social pressure, and raises the chance that the match is useful. Agent-generated relationship suggestions should follow the same consent boundary; see [[AI Agents]].
+
+## Systems produce incentives
+
+When a system appears broken, first ask whether it is producing exactly the outcome rewarded by its payoff matrix. Increasing effort inside the same structure may raise output without changing who benefits. This connects business design to [[Decision-Making]].
 
 ---
 Related: [[Markets]], [[Trading_Psychology]], [[Philosophy_and_Meaning]]

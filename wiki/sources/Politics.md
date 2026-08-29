@@ -1,15 +1,15 @@
 ---
-title: Political Commentary
+title: Politics
 type: source
 domain: culture
-sources: [Politics.md]
-related: [Political Philosophy, Social Commentary]
+sources: [misc/Politics.md]
+related: [[Political_Philosophy]], [[Social_Commentary]], [[Online Extremism and Evidence]]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-08-29
 tags: [politics, media-critique, iran, government, ideology]
 ---
 
-# Political Commentary
+# Politics
 
 ## Media & Elite Control
 Wealthy elites have slowly politicized news over decades through brainwashing population with their agenda. Multi-channel strategy (left/right leaning) attracts viewers and ensures they stay within controlled spectrum. Entertainment increased; actual news/education decreased.
@@ -44,6 +44,14 @@ USSR never fell below 5:1 wage compression ratio.
 
 ## Sovereignty as Distressed Asset
 (See: UK wage compression, state capture, regulatory capture)
+
+## COVID-19 origins: divided evidence
+
+The White House presents a laboratory or research-related accident in Wuhan as the most likely origin, drawing on the House Select Subcommittee's 2024 report. The retained WHO expert review instead says available evidence weighs toward zoonotic spillover while keeping all hypotheses open because early data remain unavailable. US intelligence agencies also remain divided, mostly at low confidence. Preserve the administration's page as an official position, not a settled scientific conclusion.
+
+## Racial-separatist proposal
+
+A reply advocates racial solidarity and territorial balkanization in named US regions. It is retained as explicit separatist rhetoric, not a demonstrated strategy, neutral demographic analysis, or endorsement. See [[Online Extremism and Evidence]].
 
 ---
 Related: [[Political_Philosophy]], [[Media_Critique]], [[Social_Commentary]]

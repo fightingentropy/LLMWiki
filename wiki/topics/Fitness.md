@@ -2,10 +2,10 @@
 title: Fitness
 type: topic
 domain: health
-sources: [Body.md]
+sources: [Body.md, "bookmarks/Health & Psychology.md"]
 related: [Body Optimization, Mental Health]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-08-29
 tags: [fitness, training, exercise, health]
 ---
 
@@ -71,6 +71,10 @@ Combine these for baseline testosterone optimization without supplementation.
 Better way to determine health than most biomarkers: look at hair quality, skin quality, nails.
 
 These reflect protein status, micronutrient absorption, overall metabolic health.
+
+## Lower-leg and rotation movement reference
+
+A retained Guy Macchia clip demonstrates foot/ankle work, standing rotation, supported movement, and bouncing. It is an exercise reference, not a validated rehabilitation plan. Claims that most training should occur below the knee, that rotation is a universal “master of decompression,” or that broad fascia explanations apply to everyone are not established by the clip. Load, balance, injury history, and pain determine suitability. (from [[X-Bookmarks]])
 
 ---
 Related: [[Body_Optimization]], [[Mental_Health]], [[Self_Improvement]]

@@ -1,5 +1,5 @@
 ---
-title: Body Optimization
+title: Body
 type: source
 domain: health
 sources: [Body.md]
@@ -9,7 +9,7 @@ updated: 2026-04-12
 tags: [fitness, optimization, supplements, dopamine, testosterone, training]
 ---
 
-# Body Optimization
+# Body
 
 ## Core Philosophy
 "The more you do, the more energy you have, the more you relax." World is full of people who do nothing, are constantly exhausted, and never recoup.

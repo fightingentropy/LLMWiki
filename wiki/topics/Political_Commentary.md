@@ -2,10 +2,10 @@
 title: Political Commentary
 type: topic
 domain: culture
-sources: [Politics.md, Culture.md, Top Pods.md]
-related: [Philosophy and Meaning, Social Commentary, Masculinity_and_Men]
+sources: [Politics.md, Culture.md, Top Pods.md, "bookmarks/Culture & Ideas.md"]
+related: [[Philosophy_and_Meaning]], [[Social_Commentary]], [[Masculinity_and_Men]], [[Online Extremism and Evidence]]
 created: 2026-04-12
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [politics, media-critique, ideology, governance, decline]
 ---
 
@@ -69,5 +69,13 @@ When governments cannot maintain basic property rights, wage justice, or economi
 
 Bookmarked via [[Top-Pods]]: [[Andrew_Tate]]'s "Fall of Empire (Second Half)" clip. Late-Rome framing applied to the contemporary West. Pairs with the [[Curtis_Yarvin]] entropy-vs-extropy frame above — the institutions dissolve first, the roles they held in place dissolve second, and the men who filled those roles get blamed for the dissolution. See [[Masculinity_and_Men]].
 
+## COVID-19 origins: distinguish positions from findings
+
+The White House now presents a laboratory or research-related accident as the most likely origin of COVID-19. The retained WHO expert review says available evidence weighs toward zoonotic spillover while leaving hypotheses open because key early data remain missing; US intelligence agencies are divided, mostly at low confidence. The administration's page is an official position, not a settled scientific conclusion. (from [[Politics]])
+
+## Separatism and demographic rhetoric
+
+A source advocates racial solidarity and territorial balkanization in named US regions. It is retained as explicit separatist advocacy, not a demonstrated political strategy. Related demographic, replacement, genetics, and ethnic-bloc claims are reviewed in [[Online Extremism and Evidence]].
+
 ---
-Related: [[Philosophy_and_Meaning]], [[Social_Commentary]], [[Media_Critique]], [[Masculinity_and_Men]], [[Top-Pods]]
+Related: [[Philosophy_and_Meaning]], [[Social_Commentary]], [[Media_Critique]], [[Masculinity_and_Men]], [[Top-Pods]], [[Online Extremism and Evidence]]

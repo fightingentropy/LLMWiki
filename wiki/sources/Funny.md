@@ -2,10 +2,10 @@
 title: Funny
 type: source
 domain: culture
-sources: [Funny.md]
-related: [Humor, Jokes, Pick-up-limes, Culture, Dating_and_Relationships, Markets, Crypto Trading]
+sources: [misc/Funny.md]
+related: [[Humor]], [[Jokes]], [[Pick-up-limes]], [[Culture]], [[Dating_and_Relationships]], [[Markets]], [[Crypto Trading]], [[Online Extremism and Evidence]]
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [humor, memes, tweets, greek, albanian, crude, dark-comedy, crypto, shitpost, links]
 ---
 
@@ -430,6 +430,12 @@ Preserved as-is; these recur in the raw source:
 - [[Jokes]] — the "math test" cheating line, "Θα χέσω με καισαρική", Tibidabo-adjacent reveries, the Σ. griphos register
 - [[Pick-up-limes]] — "blowjob voice" Urban Dictionary link, "Are you crying? No I just have something in both my eyes", "I'm very vulnerable rn", "powder puff girls", "I want you to focus on the first 3 words", "Can you pop a champagne with no hands", "Έλα να μου ξεβουλώσεις τ'αρχίδια", "math test" variant, "Its very important i don't get cut, so people don't see the wires…"
 
+## August 2026 additions
+
+The new meme cluster includes political-philosophy/porn-site incongruity, sports-camera framing, a dancing-dinosaur interruption, athlete-outfit and crypto-hotel reaction posts, robot-injury hardware language, Peter Thiel style parody, finance jargon reactions, dark wordplay, and several bawdy anecdotes. They are preserved as attributed jokes; captions do not establish private conduct, identity, or factual context.
+
+A long appended passage makes dehumanizing racial and pseudo-scientific claims about food access, work, intelligence, and whole populations. The source provides no credible dataset or evidence for those claims. It is catalogued only as extremist rhetoric in [[Online Extremism and Evidence]], not repeated as humor or promoted into a group-level thesis.
+
 ---
 
-Related: [[Humor]], [[Jokes]], [[Pick-up-limes]], [[Culture]], [[Dating_and_Relationships]], [[Andrew_Huberman]], [[Chris_Williamson]], [[Joe_Rogan]].
+Related: [[Humor]], [[Jokes]], [[Pick-up-limes]], [[Culture]], [[Dating_and_Relationships]], [[Online Extremism and Evidence]], [[Andrew_Huberman]], [[Chris_Williamson]], [[Joe_Rogan]].

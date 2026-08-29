@@ -2,10 +2,10 @@
 title: Markets - Trading
 type: source
 domain: markets
-sources: [Trading.md]
+sources: [markets/Trading.md]
 related: [[Crypto Trading]], [[Market Drivers]], [[Trading Philosophy]], [[Traders Directory]], [[Robinhood HYPE]]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-08-29
 tags: [trading-principles, market-drivers, trader-list, sentiment, flow-analysis]
 ---
 
@@ -83,3 +83,12 @@ Reference: https://youtu.be/rZ9rUh9WhwU?t=1876
 ### Robinhood HYPE Wallet
 - Address: https://hyperevmscan.io/address/0x841ed663f2636863d40be4ee76243377dff13a34
 - Tracks Robinhood's crypto positions on Hyperliquid
+
+## Every system pays a characteristic cost
+
+- Trend-following pays through false starts.
+- Momentum pays through late entries and occasional top-buying or bottom-selling.
+- Mean reversion pays through rare moves that do not revert before risk limits are hit.
+- A recurring failure mode is abandoning a valid system because its unavoidable cost is mistaken for evidence that the system is broken.
+
+This extends [[Trading_Psychology]] and [[Trading Philosophy]] with a more useful question than “does this strategy lose?”: **what loss pattern is the price of its edge, and is that price survivable?**

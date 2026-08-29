@@ -3,9 +3,9 @@ title: Equities
 type: topic
 domain: markets
 sources: [Brief.md, "bookmarks/Markets & Crypto.md"]
-related: [[Cross-Asset Analysis]], [[Market Regime]], [[Macro Trading]], [[Sector Rotation]], [[Market Cycles]], [[X-Bookmarks]]
+related: [[Cross-Asset Analysis]], [[Market Regime]], [[Macro Trading]], [[Sector Rotation]], [[Market Cycles]], [[X-Bookmarks]], [[AI Infrastructure Economics]]
 created: 2026-04-12
-updated: 2026-07-25
+updated: 2026-08-29
 tags: [equities, stocks, breadth, leadership, valuation, semiconductors, memory, supply-cycles]
 ---
 
@@ -52,6 +52,14 @@ Equities are the highest-risk, highest-return asset class and most sensitive to 
 Memory shares may discount announced fab capacity three or four quarters before memory prices themselves peak. Keep this as a **watchlist scenario**, not a timing rule: the post supplies a plausible market question, not evidence that the cycle has already turned.
 
 Track announced capex against clean-room completion and wafer-start timing, product mix, utilization, contract-price revisions, and whether HBM's larger wafer requirements absorb nominal capacity. This is the equity-market expression of the supply-response problem in [[Market Cycles]]. (from [[X-Bookmarks]])
+
+## August 2026 research hypotheses
+
+- **AI infrastructure:** adoption and tokens per user can drive demand while frontier-lab pricing, training capex, future revenue, power, and eventual overbuild determine who captures value. See [[AI Infrastructure Economics]].
+- **GLP-1 and apparel:** changing body size and shopping behavior could affect demand, but a single share-price move cannot isolate that effect from company execution, valuation, marketing, or the market.
+- **Lab-grown diamonds:** falling production costs support a commoditization bear case; natural provenance premiums, branding, resale liquidity, supply discipline, and changing taste keep the outcome open.
+- **Situational Awareness liquidation:** the reported portfolio transfer to Citadel is distinct from the unverified scenario that a liquidity provider engineered or anticipated the fund's risk-limit failure.
+- **“Orchestrated market” claims:** a sequence of moves and headlines is not evidence of coordination without order-level data, causal identification, communications, or independent corroboration.
 
 ## See Also
 [[Cross-Asset Analysis]] for equity relationships to rates/FX/commodities, [[Sector Rotation]] for rotation patterns, and [[Market Cycles]] for the broader supply and pricing cycle.

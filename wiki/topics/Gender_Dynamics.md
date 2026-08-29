@@ -2,10 +2,10 @@
 title: Gender Dynamics
 type: topic
 domain: culture
-sources: [Women.md, Culture.md, Top Pods.md]
+sources: [Women.md, Culture.md, Top Pods.md, "bookmarks/Culture & Ideas.md"]
 related: [Dating_and_Relationships, Masculinity_and_Men, Psychology, Heartiste, DrDynamis]
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [gender, polarity, masculine-feminine, cognition, asymmetry, women, men]
 ---
 
@@ -133,5 +133,12 @@ The file uses this as a general corrective to male-projection error: women's beh
 - "Men are less malicious than women assume" vs "women control men through tears, sex, drama."
 - Is polygamy-as-feminine-solution a real trend or a rhetorical device?
 
+## August 2026 additions
+
+- **“Cherished property” / “disposable tool.”** The attributed model describes traditional female and male roles as opposite bargains: intrinsic value plus constraint versus agency plus conditional utility. It is an ideological compression, not a biological or sociological fact.
+- **[[OnlyFans]] and agency.** A platform can deliberately recruit adult creators while individual creators also exercise agency. Neither fact alone resolves coercion, incentives, exploitation, or victimization.
+- **Girl-group-chat influence.** Co-rumination, selective retelling, and peer reinforcement are plausible mechanisms; the source supplies no evidence that women's group chats generally ruin relationships.
+- **Motherhood changing political perspective.** One mother's account of concern for boys' support is an individual perspective, not proof that every woman abandons feminism after having a son.
+
 ---
-Related: [[Dating_and_Relationships]], [[Masculinity_and_Men]], [[Psychology]], [[Heartiste]], [[DrDynamis]], [[Women]], [[Culture]], [[Philosophy_and_Meaning]]
+Related: [[Dating_and_Relationships]], [[Masculinity_and_Men]], [[Psychology]], [[Heartiste]], [[DrDynamis]], [[Women]], [[OnlyFans]], [[Culture]], [[Philosophy_and_Meaning]]

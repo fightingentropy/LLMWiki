@@ -5,7 +5,7 @@ domain: markets
 sources: [Trading.md, Articles.md, Tools.md, CT.md, X-Bookmarks.md]
 related: [[Market Drivers]], [[Trading Philosophy]], [[Exchange Microstructure]], [[Traders Directory]], [[Hyperliquid]], [[CT]], [[X-Bookmarks]]
 created: 2026-04-12
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [crypto, trading, positioning, momentum, bag-holding, cycles]
 ---
 
@@ -82,3 +82,11 @@ Both takes rely on the same demographic observation — desperate, lonely, lotte
 - **Selling the top is more dangerous than selling into drops.** [[Zhu Su]] via [[X-Bookmarks]] #890: the euphoria of top-selling leads to early rebidding and overconfidence.
 - **Discovery Bounds V2** (Hyperliquid / @0xmev #128): the evolution from static bounds to active bounds that converge toward persistent edge-of-range levels — a concrete microstructure innovation enabling 24/7 perps price discovery that outruns closed-weekend tradfi. See [[Exchange Microstructure]], [[Hyperliquid]].
 - **ML engineers quietly extracting alpha from prediction markets and sports gambling.** @evisdrenova #744 reports personally knowing an ML engineer with $15M over 5 years from sports gambling; @RohOnChain #896 documents the Frank-Wolfe + Bregman projection algorithms used by Polymarket arb bots (e.g. gabagool22).
+
+## August 2026 additions
+
+- **[[TradeXYZ]] and HYPE accrual:** the DEX's relationship to Hyperliquid is documented narrowly; fee routing, buy/burn/distribution, and token-holder accrual remain unanswered diligence questions.
+- **ASXN liquidity comparisons:** depth, spread, and estimated slippage dashboards are useful, but results depend on instrument equivalence, timestamp, size, fees, funding, latency, and venue risk.
+- **Funding skepticism:** aggregated funding and OI conditionals did not produce robust daily alpha in the retained research; see [[Funding Rates]].
+- **Broad on-chain-finance scenario:** [[goodalexander]] links AI disappointment, fiscal stress, stablecoins, tokenized debt, FX, and leveraged on-chain markets. Test each premise separately against actual adoption and fee growth.
+- **Execution discipline:** profitable implementation matters more than public top/bottom calls; see [[Trading_Psychology]].

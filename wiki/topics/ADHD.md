@@ -2,10 +2,10 @@
 title: ADHD
 type: topic
 domain: health
-sources: [Medical.md, Psychology.md]
+sources: [Medical.md, Psychology.md, "bookmarks/Health & Psychology.md"]
 related: [Mental Health, Circadian Rhythm, Self-Improvement]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-08-29
 tags: [adhd, circadian-rhythm, neurodevelopmental, medication]
 ---
 
@@ -24,5 +24,9 @@ Neurodivergent thinking—specifically autism/ADHD—is freedom from consensus-f
 
 This makes them **naturally free thinkers and high-agency individuals** in decision-making and belief formation.
 
+## Hyperfocus and limerence
+
+The latest source notes a possible connection between ADHD-related hyperfocus and vulnerability to limerence. It is not inevitable, and limerence is not an official diagnosis. Distinguish reciprocal knowledge of a real person from a relationship constructed through checking, projection, and rumination; see [[Mental_Health]] and [[Health Evidence]].
+
 ---
-Related: [[Mental_Health]], [[Circadian_Rhythm]], [[Neurodiversity]]
+Related: [[Mental_Health]], [[Circadian_Rhythm]], [[Neurodiversity]], [[Health Evidence]]

@@ -2,10 +2,10 @@
 title: Quotes
 type: source
 domain: personal
-sources: [Quotes.md]
+sources: [misc/Quotes.md]
 related: [Thoughts, Philosophy_and_Meaning, Self_Improvement, Trading_Psychology, Mental_Health, Dating_and_Relationships, Masculinity_and_Men]
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [quotes, wisdom, philosophy, trading, psychology, aphorisms]
 ---
 
@@ -895,6 +895,16 @@ Grouped by theme rather than author. Where an author has their own entity page, 
 ---
 
 ## Themes across the collection
+
+### August 2026 additions
+
+- Becoming the age one's parents were in childhood reframes them as young adults still figuring life out; attribution remains unknown.
+- “Everyone is an artist till rent is due” compresses the tension between artistic identity and financial necessity; saved from a visible video title, not an unwatched argument.
+- Doomscrolling as “gambling for revelation” links infinite feeds to intermittent reinforcement.
+- Maintenance is cheaper than repair across machines, homes, and relationships; the claimed “Japanese legend” attribution is unverified.
+- “Nobody is atheist at 50x leverage” turns leverage into a joke about involuntary prayer.
+- Plato's *Republic* I, 347c supports the idea that refusing to rule leaves one governed by someone worse; the familiar “governed by your inferiors” wording is a paraphrase.
+- Nick Land's “objective cosmic euphoria” and the semiotics/ontology warning are preserved as cultural-philosophical rhetoric, not causal or operational claims.
 
 - **Action precedes feeling** — motivation, courage, and conviction follow action, not the reverse. Aim, fire, correct later.
 - **Time as scarce resource** — Altman, Jobs, Kornfield, Marcus Aurelius all converge.

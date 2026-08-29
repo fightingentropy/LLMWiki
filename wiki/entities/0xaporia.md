@@ -5,7 +5,7 @@ domain: markets
 sources: [CT.md, Articles.md, X-Bookmarks.md]
 related: [[Traders Directory]], [[CT]], [[Trading_Psychology]], [[Trading Philosophy]], [[Crypto Trading]]
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [trader, twitter, crypto, philosophy, systems, variance]
 ---
 
@@ -34,8 +34,20 @@ From [[X-Bookmarks]] (2026-03, ~4 posts saved):
 
 @Cheshire_Cap followed with concrete EV math: if you win 5x on 20% of trades and lose 50% on 80% (EV +40%), aggressive TP at 2x flips you to EV -20% (from [[X-Bookmarks]] #392).
 
+### Economic-service filter
+
+Before trusting a statistical pattern, ask what economic service the strategy provides. This does not prove an edge, but it is a first-principles filter for distinguishing a plausible market mechanism from pattern noise. (from [[X-Bookmarks]])
+
+### AI-assisted backtesting
+
+Use agents to remove repetitive implementation work without outsourcing the judgment needed to detect look-ahead bias, overfitting, and path dependence. Removing losing weekdays after seeing the results, or repeatedly optimizing the same historical sample, can fit noise. Freeze the evaluation protocol, reserve unseen periods, and include execution costs and risk before treating a result as evidence. (from [[X-Bookmarks]])
+
+### Calls versus execution
+
+Calling an exact top or bottom is a different activity from running a profitable strategy. Sizing, path, leverage, costs, invalidation, and exits can turn a correct directional call into a losing trade. (from [[X-Bookmarks]])
+
 ## References
 - Twitter: @0xaporia
 - Also cited in [[Markets - Articles]] for "How to Build Systems That Actually Work"
 - Quote archive in [[CT]]
-- Recurring in [[X-Bookmarks]] (profit-taking, exits)
+- Recurring in [[X-Bookmarks]] (profit-taking, economic-service tests, backtesting, and execution)

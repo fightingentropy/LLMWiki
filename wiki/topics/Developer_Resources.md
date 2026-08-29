@@ -2,10 +2,10 @@
 title: Developer Resources
 type: topic
 domain: dev
-sources: [Dev.md, Setup.md, X-Bookmarks.md, "bookmarks/Developer Tools.md"]
-related: [Design Tools, Tools, X-Bookmarks]
+sources: [Dev.md, Setup.md, X-Bookmarks.md, "bookmarks/Developer Tools.md", "bookmarks/AI & Agents.md"]
+related: [[Design_and_Aesthetics]], [[Tools]], [[X-Bookmarks]], [[AI Agents]], [[Digital Security]], [[Omarchy]], [[OpenShip]]
 created: 2026-04-12
-updated: 2026-07-25
+updated: 2026-08-29
 tags: [development, tools, learning, infrastructure]
 ---
 
@@ -78,5 +78,17 @@ tags: [development, tools, learning, infrastructure]
 - Zero Brew - Homebrew alternative
 - Handy - Voice transcription
 
+## August 2026 tool watchlist
+
+- [[Omarchy]] — opinionated Arch/Hyprland environment with both strong adoption claims and upstream-attribution scepticism; evaluate on non-critical hardware.
+- [[OpenShip]] and Coolify — self-hosted deployment references. Backup, rollback, secrets, monitoring, migration, and email deliverability are adoption gates.
+- Talkify — local macOS dictation using Apple's on-device models. Reproduce author-reported latency, accuracy, language, permission, and battery results on the intended Mac.
+- Space Rabbit — small Swift utility that removes the normal macOS Spaces transition through a synthetic-swipe workaround; current OS compatibility and permissions need review.
+- Oracle Cloud Always Free — useful capacity lead, but region availability, home-region rules, idle-instance reclamation, quota, and paid-resource boundaries make it unsuitable as the sole copy of important data.
+- Cloudflare's DNS-cache optimization is a reusable representation lesson: immutable slices, compact offsets, removed metadata, and measured locality can turn tiny per-entry savings into fleet-scale gains.
+- Base UI adoption, progressive blur, local browser/security experiments, Torflix, Beautiful UI, and Helium are implementation leads rather than blanket endorsements.
+
+Agent-specific workflows now live in [[AI Agents]]; permissions and connected-account risks live in [[Digital Security]].
+
 ---
-Related: [[Design_and_Aesthetics]], [[Setup]], [[Tools]]
+Related: [[Design_and_Aesthetics]], [[Setup]], [[Tools]], [[AI Agents]], [[Digital Security]], [[Omarchy]], [[OpenShip]]

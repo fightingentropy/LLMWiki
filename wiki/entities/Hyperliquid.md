@@ -2,10 +2,10 @@
 title: Hyperliquid
 type: entity
 domain: markets
-sources: [Tools.md, Articles.md]
-related: [[Exchange Microstructure]], [[Trading Platforms]], [[Markets - Tools]]
+sources: [Tools.md, Articles.md, "bookmarks/Markets & Crypto.md"]
+related: [[Exchange Microstructure]], [[Trading Platforms]], [[Markets - Tools]], [[TradeXYZ]], [[Gloomberb]]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-08-29
 tags: [platform, exchange, derivatives, crypto, microstructure]
 ---
 
@@ -34,3 +34,9 @@ CT archive notes that Hyperliquid "increased bandwidth and reduced latency so mu
 
 ### HYPE-margined collateral risk
 Preserved in [[CT]]: concern that over-collateralizing positions in HYPE (vs. USDC at 1:1) creates cascade risk where slippage and spread could leave positions under-collateralized and the protocol insolvent.
+
+## August 2026 diligence
+
+- [[TradeXYZ]] uses Hyperliquid's blockchain through a HIP-3 DEX deployed by described independent contributors. Fee routing and HYPE-holder value accrual remain unanswered.
+- ASXN compares depth, spreads, and estimated slippage across Hyperliquid and other venues. Treat results as time-, size-, instrument-, and methodology-specific.
+- Public market-data MCP tooling can expose live quotes and options data alongside order placement and cancellation; connected access is not automatically read-only. See [[Digital Security]].

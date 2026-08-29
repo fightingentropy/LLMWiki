@@ -107,3 +107,30 @@ Curated from the March 2026 X bookmark archive. Entries are kept here because th
 - [Cavalry procedural motion-design software](https://cavalry.studio/en/) — Real-time 2D animation tool for procedural rigs, generative motion, data-driven sequences, text animation, dynamics, and Lottie export on macOS and Windows. The official site currently says it is free for individuals; confirm account and usage terms before standardizing a workflow. _(Discovered via Talley (@__Talley__); live review 2026-07-25)_
 - [Basement Shader Lab](https://eng.basement.studio/tools/shader-lab) — Browser compositor for stacking, animating, and exporting WebGPU and Three.js shader effects; its open-source package can carry a composition into a React scene as post-processing. Check browser WebGPU support and generated-code performance on the target device. _(basement.studio (@basementstudio); live review 2026-07-25)_
 - [Dispatch an autonomous ride before destination entry](https://x.com/pbeisel/status/1915149302638498044) — An autonomous fleet can begin sending an available vehicle as soon as the rider taps “Pick Me Up,” then collect the destination while it is en route because a vehicle has less destination sensitivity than a human driver. It is a useful latency-hiding pattern, subject to routing, safety, pricing, service-area, and cancellation constraints. _(phil beisel (@pbeisel); live review 2026-07-25)_
+- [Ink: a Chinese calligraphy art and learning interface](https://x.com/benlaudesign/status/2082434477536530619) — Ben Lau's prototype combines free writing and character tracing with stroke-order teaching, plain/grid/scroll surfaces, and controls for ink weight, wetness, speed, formality, and generative seed. It is a strong interaction reference for making a traditional physical craft explorable without visually overwhelming the canvas. _(Ben Lau (@benlaudesign); selected live bookmark 2026-07-29)_
+- [Figma → Codex → Figma avatar workflow](https://x.com/NateWatkin/status/2082068768914632825) — Start with a simple Figma orb, then ask Codex: “I want to generate some default avatars for an app. I created this quick mockup in Figma but I want to turn it into an image that feels more real — orb-like with dimension, texture and layers.” Finish in Figma with a duplicated layer using Screen blend mode at 65% opacity. This is a compact example of using generation for texture while retaining designer-controlled composition and finishing. _(Nate (@NateWatkin); selected live bookmark 2026-07-29)_
+- [Progressive-blur header and footer for Expo](https://x.com/davidmokos_/status/2082582252110643643) — David Mokos demonstrates a reusable feathered blur treatment for softening the transition between scrolling content and fixed header/footer chrome. Install through the shadcn registry with `npx shadcn@latest add davidmokos/beautiful-expo/progressive-blur`; test platform support, reduced-transparency behavior, and scroll performance on older devices before adopting it. _(David Mokos (@davidmokos_); selected live bookmark 2026-07-30)_
+https://x.com/loficosmos1/status/2084025812886376481
+
+
+https://x.com/cmnijhof/status/2084271925119906241
+
+
+https://x.com/raul_dronca/status/2084572141815509009
+- [Tile-pattern branding effect](https://x.com/arlanoska/status/2085028305364037816) — Arlan demonstrates a repeating tile treatment that turns a small brand mark into a more dimensional background or identity surface and links reusable code through the post. Preserve it as a visual and implementation reference; check motion, contrast, rendering cost, and reduced-motion behavior before production use. _(Arlan (@arlanoska); selected live bookmark 2026-08-08)_
+
+https://cuelume-site.pages.dev/
+
+
+https://a-g-i.org/
+- [Munich 1972 Olympic information design](https://x.com/stallboerger/status/2086428724417740868) — Tickets, passes, schedules, pictograms, restrained typography, and event-specific colors demonstrate a coherent system that remains legible across many formats. Preserve the carousel as a reference for modular grids, multilingual hierarchy, wayfinding, and identity expressed through rules rather than decorative variation. _(Anton (@stallboerger); manually retained 2026-08-11)_
+
+
+https://noechague-site.vercel.app/
+
+https://www.details.so/inspo
+
+https://www.rareui.com/components
+
+- [Receipt Printer interaction](https://x.com/insporadesign/status/2087475430865383598) — A physical-receipt-inspired interface by dqnamo, retained as a reference for tactile motion, constrained typography, and skeuomorphic feedback. Reuse the interaction idea rather than copying the execution, and check responsiveness, reduced-motion behavior, keyboard access, semantics, and printing assumptions. _(Inspora (@insporadesign); selected live bookmark 2026-08-23)_
+- [Small details that make mobile interfaces feel native](https://x.com/emilkowalski/status/2087150812761858367) — Emil Kowalski collects interaction details that improve perceived platform fit, including motion and touch behavior. Use the examples as a review checklist rather than universal rules; verify them against current iOS and Android conventions, accessibility settings, reduced motion, latency, and real-device testing. _([Animations on the Web](https://animations.dev/); selected live bookmark 2026-08-23)_

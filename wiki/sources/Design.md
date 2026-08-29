@@ -2,10 +2,10 @@
 title: Design Resources
 type: source
 domain: dev
-sources: [Design.md]
-related: [Design Tools, Developer Resources, Web Design]
+sources: [misc/Design.md]
+related: [[Design_and_Aesthetics]], [[Developer_Resources]]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-08-29
 tags: [design, tools, ui-ux, animation, typography, components]
 ---
 
@@ -94,6 +94,14 @@ Curated collection of design tools, galleries, and learning resources.
 - Figma Capture (Bookmarklet) - Convert HTML to Figma design
 - Liquid Glass Editor - https://liquidglasseditor.vercel.app/
 - Hotkeys.design - Design hotkeys - https://hotkeys.design/
+
+## July and August 2026 additions
+
+- [Transitions.dev](https://transitions.dev/) — copy-ready CSS and React transitions plus an agent skill; inspect current repository licensing before copying or vendoring.
+- [BBC Sound Effects](https://sound-effects.bbcrewind.co.uk/) — searchable archive and mixer; free use is generally personal, educational, or research, with separate commercial licensing.
+- Interaction and component references: Linear Loops, Romain Selmi's expanding card, Jib, Moumen Lab, Nexvyn UI, Amicro, Arlan's Liquid UI, Savee-style exploration, and several source X posts.
+- The raw entry `khttps://www.tripwire.sh/dither-kit` appears malformed; preserve it as a gap rather than silently inventing the intended URL.
+- Several bare URLs still lack enough annotation for a durable judgment. They remain source leads, not endorsements.
 
 ---
 Related: [[Design_and_Aesthetics]], [[Developer_Resources]]

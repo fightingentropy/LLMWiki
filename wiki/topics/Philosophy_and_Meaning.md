@@ -5,7 +5,7 @@ domain: culture
 sources: [Culture.md, Thoughts.md, Psychology.md, X takes.md, Youtube.md, Quotes.md]
 related: [Political Philosophy, Psychology, Self-Improvement]
 created: 2026-04-12
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [philosophy, meaning, identity, entropy, extropy]
 ---
 
@@ -113,6 +113,13 @@ Sam Altman's subjective-time compression — "life is half over by 23 or 24" —
 ### Cardinal sin: impatience
 
 > "Perhaps there is only one cardinal sin: impatience. Because of impatience we were driven out of Paradise; because of impatience we cannot return." — Kafka (from [[Quotes]])
+
+### Maintenance, adulthood, and attention
+
+- Becoming the age one's parents were in childhood can replace the image of fully formed adults with empathy for young people improvising responsibility.
+- “Maintenance is always cheaper than repairing” connects objects, homes, and relationships; the retained attribution is modern and uncertain.
+- Doomscrolling as “gambling for revelation” describes the hope that one valuable post will justify an otherwise low-value infinite feed.
+- Plato's *Republic* I, 347c supplies a more careful source for the idea that refusing rule leaves one governed by someone worse; the popular “inferiors” wording is a paraphrase.
 
 ---
 Related: [[Political_Philosophy]], [[Psychology]], [[Culture_and_Environment]], [[Quotes]], [[Nietzsche]], [[Dostoevsky]], [[Marcus_Aurelius]], [[Seneca]], [[Carl_Jung]], [[Steve_Jobs]]

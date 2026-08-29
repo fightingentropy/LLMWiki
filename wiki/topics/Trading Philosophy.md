@@ -2,10 +2,10 @@
 title: Trading Philosophy
 type: topic
 domain: markets
-sources: [Articles.md, Trading.md, Brief.md, CT.md]
-related: [[Macro Trading]], [[Crypto Trading]], [[Market Drivers]], [[Risk Analysis]], [[Stanley Druckenmiller]], [[CT]]
+sources: [Articles.md, Trading.md, Brief.md, CT.md, X-Bookmarks.md]
+related: [[Macro Trading]], [[Crypto Trading]], [[Market Drivers]], [[Risk Analysis]], [[Trading_Psychology]], [[Stanley Druckenmiller]], [[0xaporia]], [[CT]]
 created: 2026-04-12
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [philosophy, mindset, principles, framework]
 ---
 
@@ -75,3 +75,19 @@ Directly contradicts [[GiganticRebirth]]'s "sacrifice your weekends" framing —
 
 ## Poker Discipline (from [[CT]])
 [[0xaporia]]: poker players know variance is the game; novice traders conflate constant activity with progress. Restraint — not playing every hand — is a structural edge.
+
+## Every System Pays a Characteristic Cost
+
+- Trend-following pays through false starts.
+- Momentum often enters late and can buy tops or sell bottoms.
+- Mean reversion periodically gets overwhelmed by a genuinely outsized move.
+
+The practical error is to abandon a valid system because its unavoidable cost is mistaken for evidence that the system is broken. A strategy still needs out-of-sample evidence and realistic costs; naming its expected pain does not validate it. (from [[Markets - Trading]])
+
+## Backtesting Without Hindsight
+
+AI can remove clerical friction, but it also makes it cheap to keep optimizing the same history until noise looks intentional. Keep research and evaluation separate, reserve unseen periods, test parameter sensitivity, and include fees, slippage, latency, and risk. The Stanford pairs-trading study retained in [[X-Bookmarks]] is useful as a negative-result example: changing one rolling window can reverse the result on the same stock and day. See [[0xaporia]].
+
+## Execution Over Predictions
+
+An exact top or bottom call can still lose money through sizing, leverage, path, or exit mistakes. A mediocre entry can support a good trade when exposure, invalidation, costs, and exits are coherent. Public predictions and profitable execution are separate scoreboards. (from [[X-Bookmarks]])

@@ -1,5 +1,9 @@
 # Quotes
 
+- “At some point you become the age that your parents were in your childhood memories, only you don't feel like an adult, and you realize your parents were still just kids trying to figure it out too.” — [Shared by Adiofreak](https://x.com/Adiofreak/status/2092952713420021978), who encountered it in an Instagram reel. Preserve it as an unattributed reflection on adulthood and empathy for one's parents, not a verified original quotation. _(manually retained 2026-08-29)_
+
+- “Everyone is an artist till rent is due.” — Video title attributed in the screenshot to Bailey Schildbach, [shared by Shaan Puri](https://x.com/ShaanVP/status/2092999256621953417). A compact line about artistic identity meeting financial necessity; saved from the visible title, not as a summary of the unwatched video. _(manually retained 2026-08-28)_
+
 
 "Academia is to knowledge what prostitution is to love."
 
@@ -985,3 +989,27 @@ with other memories.
 Πορεύονται στο δρόμο της μοναχικότητας 
 
 ethan hawke said something i haven’t stopped thinking about — we usually move past art like we have no need for it, until loss enters our life and suddenly nothing ordinary can hold what we’re feeling
+
+> “Doomscrolling is gambling for revelation, pulling the lever of an infinite slot machine, persuaded that after a billion worthless posts, the next one will finally justify all the others.”
+>
+> — [graveair](https://x.com/graveair/status/2081453437728735561)
+
+> “Whether it's a machine, a house, or a relationship, maintenance is always cheaper than repairing. What you don't maintain, you eventually lose.”
+>
+> — [bluewdrift](https://x.com/bluewdrift/status/2082153614035087754). The post calls this a “Japanese legend,” but no reliable attribution was supplied, so preserve it as a modern aphorism.
+
+> “Nobody is atheist at 50x leverage.”
+>
+> — [Heart](https://x.com/heart_/status/1913899934153113796)
+
+> “The chief penalty is to be governed by someone worse if a man will not himself hold office and rule.”
+>
+> — Plato, _Republic_ I, 347c. The bookmarked wording—“One of the penalties for refusing to participate in politics is that you end up being governed by your inferiors”—is a popular paraphrase rather than a reliable verbatim translation. [Bookmark](https://x.com/CCrowley100/status/2083996168279986494)
+
+> “Objective cosmic euphoria” closely tracks the Bitcoin price.
+>
+> — A compact Nick Land attribution about market mood and metaphysical confidence; preserve it as a joke-like cultural observation rather than a verified causal relationship. [Bookmark](https://x.com/virotechnics/status/2091110141232029804)
+
+> If your semiotics are weak and your ontology is shaky, the sudden emergence of “rhizomatic simulacra” will make the next few years difficult.
+>
+> — A memorable warning that synthetic media, copied signs, and networked representations will become harder to interpret; the phrasing is philosophical rhetoric, not an operational forecast. [Bookmark](https://x.com/tsotchke/status/2090572453747499410)

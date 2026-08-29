@@ -427,7 +427,7 @@ https://x.com/guerriero_se/status/2069791907392200784
 
 https://www.palladiummag.com/2023/06/06/school-is-not-enough
 
-https://www.tripwire.sh/dither-kit
+khttps://www.tripwire.sh/dither-kit
 
 https://cuelume-site.pages.dev/
 
@@ -450,3 +450,16 @@ https://lab.moumen.dev/components
 
 
 https://ui.nexvyn.dev/components
+
+
+https://amicro.vercel.app/
+
+https://www.arlan.me/vault/liquid-ui
+
+https://www.heyiam.dk/
+
+https://x.com/mayvencraft/status/2081907737907114326
+
+https://save.design/explore
+
+https://x.com/trpfsu/status/2082534124531687602

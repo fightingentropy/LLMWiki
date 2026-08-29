@@ -2,10 +2,10 @@
 title: CryptoCred
 type: entity
 domain: markets
-sources: [CT.md]
+sources: [CT.md, markets/Trading.md, "bookmarks/Markets & Crypto.md"]
 related: [[Traders Directory]], [[CT]], [[Trading_Psychology]], [[Crypto Trading]], [[Exchange Microstructure]]
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [trader, twitter, crypto, education, psychology, bag-holding]
 ---
 
@@ -35,6 +35,14 @@ Self-aware taxonomy of recycled CT posts: "Hindsight risk management post / Vacu
 
 ### Education promise
 > "Will I tell you when to buy and sell? No. Will I tell you when I'm buying and selling? No. But will I provide you with the necessary tools and techniques so that you can intelligently trade yourselves? Also no." (from [[CT]])
+
+### Every system pays a cost
+
+Trend-following pays through false starts, momentum through late entries, and mean reversion through occasional outsized moves. Do not confuse a strategy's expected pain profile with proof that the system stopped working. (from [[Markets - Trading]])
+
+### Reset after a major move
+
+Avoid revenge shorts, oversized late entries, exact-retest stories, binary exposure, paralysis, and five-minute overtrading. Rebuild the trade from signal, type, horizon, invalidation, volatility, and size. (from [[X-Bookmarks]])
 
 ## References
 - Twitter: @CryptoCred

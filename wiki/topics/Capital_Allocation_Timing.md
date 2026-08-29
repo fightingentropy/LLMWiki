@@ -2,10 +2,10 @@
 title: Capital Allocation Timing
 type: topic
 domain: markets
-sources: [Bizz & Finance.md]
+sources: [Bizz & Finance.md, markets/Articles.md, markets/Trading.md]
 related: [Trading_Psychology, Markets, Behavioral_Finance, Risk Analysis]
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [capital-allocation, timing, asymmetry, risk-management]
 ---
 
@@ -24,5 +24,7 @@ Introduced in [[Bizz_and_Finance]] as a one-line heuristic and echoed inside [[T
 - **Cash as optionality.** Cash = optionality; option value maximized by volatility; inflation is the option premium ([[Trading_Psychology]], [[Markets]]). Holding cash through 40%+ alt wicks preserves the ability to deploy.
 - **Seasonality overlay.** Capital-timing errors compound with market seasonality — low-volume summer periods and September FOMC gyrations punish ill-timed deployment ([[Trading_Psychology]]).
 - **Opportunity-window quote.** "You need to take advantage of an opportunity of a lifetime in the lifetime of the opportunity" — Thomson (from [[Quotes]], via [[Trading_Psychology]]).
+- **Characteristic system cost.** Protecting capital includes surviving the normal loss pattern of the chosen strategy rather than abandoning it after a familiar drawdown. Trend, momentum, and mean reversion each pay for their edge differently.
+- **New reading lead.** “Capital Allocation Is Dead” was added to [[Markets - Articles]] but has not yet been synthesized deeply enough to override the existing framework.
 
 Related: [[Trading_Psychology]], [[Behavioral_Finance]], [[Markets]], [[Business_Strategy]], [[Risk Analysis]]

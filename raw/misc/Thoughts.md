@@ -195,3 +195,51 @@ https://nabeelqu.co/principles/
 Clifford Sosin’s thesis: abundant high-quality reasoning can transform work with smooth, verifiable solution spaces, but many important problems remain constrained by contact with reality. Ideas still have to be built, tested, measured, and corrected; reality supplies new facts that reasoning alone cannot.
 
 Source: https://x.com/CliffordSosin/status/2078594661359194500
+
+## Systems produce incentives
+
+A system that appears broken may be producing exactly the outcomes rewarded by its incentive structure. More effort inside the existing payoff matrix raises output without changing that matrix. Identify whose interests the structure serves, then either change the game or play the game that actually exists rather than optimizing for the one you wish existed.
+
+Source: https://x.com/incentivising/status/2081434700711596312
+
+### Environment must convert ability into returns
+
+Self-improvement can become an endless optimization loop when the surrounding structure remains untouched. Becoming more skilled or disciplined does not guarantee a better outcome if the environment cannot reward those qualities. Ask which environment would convert what you already have into a return, what moving there would cost, and whether changing the structure now would outperform another decade of polishing yourself inside the wrong one.
+
+Source: https://x.com/incentivising/status/2082173497166446786
+
+## Ability is a bundle, not a scalar
+
+Analytical intelligence does not automatically supply competitive judgment, persistence, composure, social perception, or the willingness to act under pressure. The useful counterpoint is that these are not mutually exclusive types: unusually effective people may combine high reasoning ability, conscientiousness, emotional stability, and competitive instinct. Treat the attached three-trait chart as an illustration rather than sourced population evidence, and discard the posts' inflammatory labels.
+
+Sources:
+- https://x.com/iamgingertrash/status/2082860562355224922
+- https://x.com/lefttailguy/status/2082944239797940466
+
+## Visible success reflects selection as well as merit
+
+Highly visible young winners are not selected by talent alone. Networks, sponsorship, access to capital, institutional incentives, narrative appeal, and usefulness to powerful allocators can amplify one person while equally capable people remain unseen. This is a correction to pure meritocratic storytelling, not proof that young founders cannot attract capital or that every success is manufactured.
+
+Source: https://x.com/robbezdjian/status/2083005594819027293
+
+## Win the repeated game, not every round
+
+Repeated interactions reward a strategy that begins cooperatively, responds promptly and proportionally to exploitation, and restores cooperation once the other side does. The durable lesson from Tit for Tat is not “dominate every encounter,” but make cooperation profitable and defection predictably costly while avoiding permanent revenge loops.
+
+The source essay dramatizes Robert Axelrod's tournaments and overstates Tit for Tat as universally dominant. Its performance depends on the population, noise, error correction, and game structure; treat it as a practical boundary-setting analogy rather than a mathematical law for relationships.
+
+Sources:
+- Original essay: https://x.com/alexeixbt/status/2083512257808417082
+- Commentary and Prisoner's Dilemma framing: https://x.com/alexeixbt/status/2085402227489800240
+
+## Recovery depends on preserving later rounds
+
+After a major loss, the urge to erase it with one decisive gamble can destroy the only resource that makes recovery possible: continued participation. In an iterated game, stabilize first, cap further losses, preserve optionality, and plan recovery across later rounds instead of demanding that the present round repair the past.
+
+Source: https://x.com/incentivising/status/2083985433973702656
+
+## Outliers, distributions, and individual claims
+
+An exception does not by itself disprove a population-level tendency, but a population average does not determine an individual case. Ask whether the original claim is actually statistical, how large and well-supported the effect is, how much the groups overlap, and whether the decision concerns a population or the person in front of you. This preserves the useful principle while discarding the source image's insult-based framing.
+
+Source: https://x.com/TheRabbitHole/status/2085792303533392157

@@ -2,10 +2,10 @@
 title: Culture & Observations
 type: source
 domain: culture
-sources: [Culture.md]
-related: [Political Commentary, Dating and Relationships, Philosophy]
+sources: [misc/Culture.md]
+related: [[Political_Commentary]], [[Dating_and_Relationships]], [[Political_Philosophy]], [[Online Extremism and Evidence]]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-08-29
 tags: [culture, philosophy, entropy-extropy, dating, technology-critique]
 ---
 
@@ -41,5 +41,11 @@ Modern fitness culture hides something: very fit, never-going-to-have-children w
 ## Gender & Masculine Energy
 Men were given a choice: feminize or face social ostracization. Prosocial men "chose" feminization and got "cucked." Only men with no regard for prosociality (autistics, high disagreeableness) retained semblance of masculinity.
 
+## Religious satire and identity claims
+
+Two short “Islam Begins” animations portray religious authority and rule-making as self-serving declarations. They are retained as satire, not primary evidence for the origin or interpretation of Quranic verses.
+
+An edited street interview and the “Arab biospirit” post generalize from provocative media to whole religious or ethnic populations. Preserve them as attributed political rhetoric whose historical and representative claims remain unestablished. See [[Online Extremism and Evidence]].
+
 ---
-Related: [[Political_Philosophy]], [[Dating_and_Relationships]], [[Technology_Critique]]
+Related: [[Political_Philosophy]], [[Dating_and_Relationships]], [[Technology_Critique]], [[Online Extremism and Evidence]]

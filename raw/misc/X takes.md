@@ -588,3 +588,8 @@ a really crazy experience for me was when i realized most people can't
 think of second order effects unconsciously, their reasoningjust stops
 after one cause+effect in their head unless they sit down and force it to
 continue. when i realized this so much of the world made sense
+
+## Hostile gender pessimism
+
+- [Appearance as the least important criticism](https://x.com/Clonerist/status/2081846538246946855) — Clonerist uses an inversion joke: declining to criticize women's appearance only to attack their character instead. Preserve it as deliberately misogynistic humor and an example of hostile gender rhetoric, not as a factual claim about women.
+- [“Your girl is going”](https://x.com/cocagroyp/status/2074746892521447432) — A Nick Fuentes clip claims that status, attractiveness, athleticism, and power cannot prevent a partner from eventually leaving. Preserve it as a cynical rhetorical position about relationship insecurity, not a universal prediction.

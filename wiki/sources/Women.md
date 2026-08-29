@@ -2,10 +2,10 @@
 title: Women
 type: source
 domain: culture
-sources: [Women.md]
+sources: [misc/Women.md]
 related: [Dating_and_Relationships, Masculinity_and_Men, Gender_Dynamics, Culture, Psychology, Heartiste, DrDynamis]
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [women, dating, relationships, gender, attraction, femininity, game, red-pill, heartiste]
 ---
 
@@ -151,6 +151,13 @@ This cluster bleeds beyond women into broader male-life advice and shows up all 
 
 ## The Contradictions (preserved, not resolved)
 
+### August 2026 additions
+
+- **“Cherished property” versus “disposable tool.”** An attributed ideological model frames traditional women as intrinsically valued but constrained and men as agentic but valued only for utility. The objectifying categories are reductive and overlap the earlier “women are born valuable; men must become valuable” thesis.
+- **[[OnlyFans]] origin and agency.** The source claim overstates a clean general-platform-to-porn transformation and treats voluntary participation as dispositive. Early adult-industry recruitment and platform incentives complicate both the history and the agency argument.
+- **Girl-group-chat influence.** Peer reinforcement, selective retelling, and co-rumination may affect relationship decisions, but one prompt does not establish that women's group chats generally destroy relationships or that outside feedback is harmful.
+- **Television cast reaction post.** A source link is retained without enough visible context for a substantive claim.
+
 - **Women as memoryless** vs **women detach emotionally long before leaving** (requires forward planning).
 - **"The most attractive women are slightly male-brained"** vs **"Once a woman becomes rational around you she's no longer in love"** (rationality coded both attractive and terminal).
 - **"Women control men through tears, sex, drama"** vs **"Women are far more cunning than men give them credit for, and men are far less malicious than women assume."**
@@ -175,11 +182,12 @@ This cluster bleeds beyond women into broader male-life advice and shows up all 
 
 - [[Dating_and_Relationships]] — extended with nonchalance, hypergamy/solipsism/Briffault, proximity, attraction-vs-retention, breakup asymmetry, game canon
 - [[Masculinity_and_Men]] — extended with male cognitive asymmetry essay, DrDynamis life-philosophy cluster, fear-of-confrontation thesis
-- [[Gender_Dynamics]] — the M/F polarity, identity-vs-action asymmetry, loyalty-asymmetry material lives here
+- [[Gender_Dynamics]] — the M/F polarity, identity-vs-action asymmetry, loyalty-asymmetry, and latest role-bargain material lives here
+- [[OnlyFans]] — platform-history and agency caveats
 - [[Heartiste]] — anchor for the 16 Commandments and the file's most-quoted voice
 - [[DrDynamis]] — anchor for the Mediterranean-stoic moralist cluster
 - [[Andrew_Tate]] — one bookmarked clip referenced
 - [[Culture]], [[Psychology]], [[Philosophy_and_Meaning]]
 
 ---
-Related: [[Dating_and_Relationships]], [[Masculinity_and_Men]], [[Gender_Dynamics]], [[Heartiste]], [[DrDynamis]], [[Andrew_Tate]], [[Culture]], [[Psychology]]
+Related: [[Dating_and_Relationships]], [[Masculinity_and_Men]], [[Gender_Dynamics]], [[OnlyFans]], [[Heartiste]], [[DrDynamis]], [[Andrew_Tate]], [[Culture]], [[Psychology]]

@@ -2,10 +2,10 @@
 title: Leverage
 type: topic
 domain: markets
-sources: [Trading.md, Brief.md, CT.md]
+sources: [Trading.md, Brief.md, CT.md, "bookmarks/Markets & Crypto.md"]
 related: [[Risk Analysis]], [[Liquidations]], [[Positioning]], [[Funding Rates]], [[CT]]
 created: 2026-04-12
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [leverage, margin, funding-rates, risk, amplification]
 ---
 
@@ -114,3 +114,9 @@ CT archive flags a Hyperliquid-specific concern: HYPE-margined positions are mor
 > "In bull markets funding can stay higher than shorts can remain solvent."
 
 Fading high funding works in PvP regimes but breaks in PvE regimes where retail DCA overrides mean reversion.
+
+## Leverage as a compressed deadline
+
+Leverage is an attempt to reach a target faster by narrowing the acceptable path and timing. At high enough leverage, being directionally right is not enough: financing, volatility, maintenance margin, liquidation rules, slippage, gaps, and correlation can end the position before the thesis resolves. Social feeds overrepresent fast outliers and distort the perceived clock. (from [[X-Bookmarks]])
+
+Funding-rate levels indicate carrying cost and crowding, not a self-contained directional signal. The latest research note found weak daily prediction and fragile carry results; see [[Funding Rates]].

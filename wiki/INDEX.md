@@ -2,8 +2,11 @@
 title: Wiki Index
 type: index
 domain: personal
+sources: []
+related: ["Wiki Overview"]
+created: 2026-04-12
 tags: [index, navigation]
-updated: 2026-07-25
+updated: 2026-08-29
 ---
 
 # Wiki Index
@@ -15,7 +18,7 @@ Master catalog of all wiki pages. Read this first to navigate the wiki.
 Reference collections and curated resource lists that form the foundation of the wiki.
 
 - [[Bizz_and_Finance]] — Consumer spending patterns, market psychology, and economic insights
-- [[Body Optimization]] — Core body optimization philosophy, supplements, and training protocols
+- [[Body]] — Core body optimization source notes, supplements, and training protocols
 - [[CT]] — Crypto Takes: verbatim archive of crypto-twitter trader quotes on price discovery, psychology, macro, microstructure
 - [[Culture]] — Geography, environment, business strategy, and cultural observations
 - [[Design]] — Design tools, systems, and aesthetic frameworks
@@ -34,19 +37,30 @@ Reference collections and curated resource lists that form the foundation of the
 - [[PAT Testing]] — Portable appliance testing guide covering inspection, testing, and safety
 - [[Peptides]] — Retatrutide reconstitution guide: BAC water, dilution math, storage, injection, titration
 - [[Pick-up-limes]] — Personal archive of crude one-liners, pickup lines, Greek phrases, and dating banter
-- [[Political Commentary]] — Media critique, elite control, and political analysis
+- [[Politics]] — Source notes on media critique, elite control, and political analysis
 - [[Psychology]] — Psychology of behavior, trauma, decision-making, and relationships
 - [[Quotes]] — Cross-domain curated quote archive: philosophy, action, trading, love, self, time, art, craft
 - [[Setup]] — Development tools and productivity setup inventory
+- [[Stories]] — Personal anecdote bank spanning hospitality, travel, family, humor, dignity, and endurance
 - [[Thoughts]] — Personal observations, wealth dynamics, and acceptance principles
 - [[Top-Pods]] — Podcast/video bookmarks on masculinity, Huberman, Tate, and JRE
 - [[Women]] — Personal archive on women, dating, gender dynamics, and "game"; Heartiste-heavy, DrDynamis-heavy, internally contradictory
-- [[X-Bookmarks]] — Current 499-entry X bookmark collection organized into 10 topical notes
+- [[X-Bookmarks]] — Current 624-entry structured X bookmark collection organized into 10 topical notes
+- [[X-Takes]] — Rough X-post archive covering culture, technology, gender, humor, and contradictory rhetoric
 - [[Youtube]] — Curated YouTube bookmarks on meaning, delusion, motivation, intimacy, inflation
 
 ## Entities
 
 Key figures, organizations, standards, and platforms referenced throughout the wiki.
+
+- [[David Cifaldi]] — Emergency-room nurse whose Granite Peak self-rescue is retained as an endurance story
+- [[Gloomberb]] — Open-source keyboard-driven finance terminal and market-research watchlist item
+- [[Grok Bot]] — Personal-operations agent product with connected-account and approval boundaries
+- [[Omarchy]] — Opinionated Arch/Hyprland development environment and agentic-work setup
+- [[OnlyFans]] — Creator platform examined through adult-industry history, agency, and incentives
+- [[OpenShip]] — Open-source self-hosted deployment and operations platform watchlist item
+- [[PhoneLLM Alpha 1]] — Open-weights language component tuned for low-latency voice agents
+- [[TradeXYZ]] — RWA-oriented HIP-3 DEX with unresolved HYPE value-accrual questions
 
 - [[Alex_Hormozi]] — Entrepreneur; imperfect-action framing on Chris Williamson podcast
 - [[Andrew_Huberman]] — Neuroscientist and podcaster known for dopamine and sleep optimization
@@ -135,6 +149,7 @@ Organized by domain. Each page provides deep dives into specific subjects.
 - [[Genius_and_Madness]] — Thin line between trading edge and self-destruction
 - [[Neurodiversity]] — ADHD reframed as variation, not deficit
 - [[Proximity_Infatuation]] — Attraction as function of proximity and context
+- [[Repeated Games]] — Cooperation, proportionate boundaries, recovery, and preserving future rounds
 - [[Stress_Management]] — Cortisol, recovery, nervous system regulation
 - [[Thoughts_and_Observations]] — Cross-domain personal observations front-door
 
@@ -142,10 +157,14 @@ Organized by domain. Each page provides deep dives into specific subjects.
 
 - [[Body_Optimization]] — Optimization philosophy, energy, and core protocols
 - [[Fitness]] — Strength training, cardiac health, and functional movement
+- [[Health Evidence]] — Evidence ladder for separating clips, anecdotes, pilots, and clinical claims
 - [[Supplements]] — Vitamin D3, creatine, magnesium, and biohacking stack
 - [[Peptide Reconstitution]] — Reconstituting, dosing, storing, and injecting research peptides
+- [[Water Filtration]] — Contaminant-first comparison framework for countertop filters and reverse osmosis
 
 ### Markets & Trading
+
+- [[AI Infrastructure Economics]] — AI demand, lab economics, capex, power constraints, and value capture
 
 - [[Business_Strategy]] — Catfish effect, managed competition, and innovation
 - [[CME]] — Chicago Mercantile Exchange
@@ -205,6 +224,9 @@ Organized by domain. Each page provides deep dives into specific subjects.
 
 ### Culture & Politics
 
+- [[AI Agents]] — Operational agent workflows, specialized runtimes, adoption, reliability, and safety
+- [[Digital Security]] — Account recovery, phone theft, phishing, connected tools, and least privilege
+
 - [[Design_and_Aesthetics]] — Design taste, aesthetics, and UI/UX principles
 - [[Humor]] — Humor archives landing page: registers, tones, and taxonomy across Jokes and Pick-up-limes
 - [[Masculinity_and_Men]] — Performative male epidemic, war on men, and sterile optimization
@@ -216,6 +238,7 @@ Organized by domain. Each page provides deep dives into specific subjects.
 - [[Design_Thinking]] — Story-as-interface, taste, and iterative problem framing
 - [[Entropy_vs_Extropy]] — Curtis Yarvin's framework of decay vs. ordered progress
 - [[Media_Critique]] — Narrative capture, institutional media, and information flow
+- [[Online Extremism and Evidence]] — How events, anecdotes, and partial evidence become identity-level propaganda
 - [[Political_Philosophy]] — Governance, legitimacy, and political thought across traditions
 - [[Self_Improvement_Culture_Critique]] — Skeptical lens on the self-help industry
 - [[Social_Commentary]] — Observations on dating, work, class, and modern mores

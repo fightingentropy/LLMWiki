@@ -2,10 +2,10 @@
 title: Thoughts & Observations
 type: source
 domain: culture
-sources: [Thoughts.md]
-related: [Philosophy, Psychology, Social Commentary, Design]
+sources: [misc/Thoughts.md]
+related: [[Philosophy_and_Meaning]], [[Psychology]], [[Social_Commentary]], [[Design_Thinking]], [[Repeated Games]], [[Decision-Making]]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-08-29
 tags: [observations, philosophy, psychology, social-dynamics, intelligence]
 ---
 
@@ -95,5 +95,15 @@ Processed food design exploits human vulnerability.
 
 **Story is interface between idea and world.** Get it wrong, idea dies. Get it right, you bend steel.
 
+## Latest frameworks
+
+- **Intelligence is not always the bottleneck.** Smooth, verifiable problem spaces benefit from abundant reasoning; many important problems still require building, measuring, and contact with reality.
+- **Systems produce incentives.** A structure that appears broken may be producing exactly what its payoff matrix rewards. Change the game or act according to the game that exists.
+- **Environment converts ability into returns.** More self-improvement does not help when the surrounding structure cannot reward the capacity already built.
+- **Ability is a bundle.** Analytical intelligence does not automatically supply judgment, persistence, composure, social perception, or action under pressure.
+- **Visibility reflects selection as well as merit.** Networks, sponsorship, capital, narrative appeal, and allocator usefulness amplify some capable people over others.
+- **Win the repeated game.** Cooperative starts, proportional boundaries, restoration after correction, and preserving future rounds are synthesized in [[Repeated Games]].
+- **Group statistics do not determine individuals.** An exception does not erase a population tendency, and a population average does not decide the individual case. Inspect overlap, effect size, measurement, selection, and decision context.
+
 ---
-Related: [[Psychology]], [[Philosophy_and_Meaning]], [[Social_Commentary]], [[Design_Thinking]]
+Related: [[Psychology]], [[Philosophy_and_Meaning]], [[Social_Commentary]], [[Design_Thinking]], [[Repeated Games]], [[Decision-Making]]

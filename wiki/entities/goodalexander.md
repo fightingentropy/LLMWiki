@@ -2,10 +2,10 @@
 title: goodalexander
 type: entity
 domain: markets
-sources: [CT.md]
+sources: [CT.md, "bookmarks/Markets & Crypto.md"]
 related: [[Traders Directory]], [[CT]], [[Macro Trading]], [[Trading Philosophy]]
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [trader, twitter, crypto, macro, debt, political-economy]
 ---
 
@@ -22,6 +22,10 @@ Long thread framing Bessent's tariff volatility as intentional controlled detona
 
 ### Trading as new boss
 > "'I want to trade so I don't have a boss' — now you have a new boss that's the invisible preferences of a bunch of psychos. he controls your mood, thoughts, wakes you up in the middle of the night" (from [[CT]])
+
+### AI disappointment and on-chain finance scenario
+
+The latest retained essay links slow AI economic returns, hacking, addictive media, labor displacement, and political conflict to fiscal stress, capital flight, stablecoins, tokenized debt, FX, and leveraged on-chain markets. It is a scenario map, not a forecast; test each premise against productivity, margins, rates, regulation, security, adoption, and fee growth. (from [[X-Bookmarks]])
 
 ## References
 - Twitter: @goodalexander

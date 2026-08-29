@@ -2279,3 +2279,31 @@ in this life, and I want you to be f ree f rom
 trouble.
 
 The most racist man you know would still save a brown man from a burning building. The least racist woman you know would laugh at your funeral if you voted wrong
+
+## Television cast reaction post
+
+Retained source link: https://x.com/Jeene2yarr/status/2057099427664568600
+
+## “Cherished property” and “disposable tool” thesis
+
+Max frames traditional female and male roles as opposite bargains: women are valued intrinsically but constrained as “cherished property,” while men have more agency but are valued only for their usefulness as “disposable tools.” He argues that modern attempts to escape these roles can produce new forms of dependence—women becoming economically disposable and men becoming consumers managed by large corporations—and proposes self-cultivation, provider status, and traditional family formation as the way forward.
+
+This is an attributed ideological model, not a biological or sociological fact. Its property/tool language is deliberately objectifying, its sex categories are reductive, and it overlaps with the same author's earlier “women are born valuable; men must become valuable” argument already retained above.
+
+Source: https://x.com/minordissent/status/1965159762024435791
+
+## OnlyFans origin and agency claim
+
+The post argues that OnlyFans began as a general premium-content platform, was transformed into a pornography platform by women acting voluntarily, and therefore disproves accounts of women as victims of the porn industry. The platform did support general creator subscriptions, but contemporary histories describe it as primarily hosting pornography early on, its founder had prior adult-industry businesses, and adult performers were deliberately recruited. Patreon also does not categorically ban all adult content. Even if some creators choose sex work voluntarily, that does not by itself settle questions about coercion, exploitation, platform incentives, payment processors, or individual victimization.
+
+Preserve this as an attributed argument about agency and platform affordances, not a reliable platform history or a general conclusion about women.
+
+Source: https://x.com/HakureiRyan/status/2084714667033706766
+
+## Girl-group-chat relationship influence
+
+> “Anyone want to take bets on how many relationships have been unnecessarily ruined by ‘girl group chats’?”
+
+Retain this as a concise hypothesis about peer-group reinforcement, selective retelling, and co-rumination affecting romantic decisions. It is an anecdotal prompt, not evidence that women's group chats generally damage relationships or that outside feedback is necessarily harmful.
+
+Source: https://x.com/cubsjaw/status/1927757347864125942

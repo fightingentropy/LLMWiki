@@ -2,10 +2,10 @@
 title: Markets - Articles
 type: source
 domain: markets
-sources: [Articles.md]
+sources: [markets/Articles.md]
 related: [[Markets - Trading]], [[Markets - Brief]], [[Macro Trading]], [[Crypto Trading]], [[Trading Philosophy]]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-08-29
 tags: [articles, links, reading-list, macro, crypto, trading, philosophy]
 ---
 
@@ -49,7 +49,6 @@ Curated collection of article links spanning global macro trading, crypto tradin
 - **Fertility Cult** - https://www.jaccusepaper.co.uk/p/fertility-cult
 - **New Books Aren't Worth Reading** - https://x.com/realAtlasPress/status/2016142273499824512
 - **The Pyramid and the Tomb** - https://minutes.substack.com/p/the-pyramid-and-the-tomb
-- **How to Secretarymaxx Your Girl** - https://x.com/rawknuckle/status/2026366781984588177
 - **The Exponential Horizon** - https://x.com/Rewkang/status/2020560687722852391
 - **The Claude-Native Law Firm** - https://x.com/zackbshapiro/status/2027389987444957625
 - **You Died Last Night and the Person Reading This Is Not Who Went to Sleep** - https://x.com/JIMMYEDGAR/status/2028613683832598802
@@ -75,3 +74,10 @@ Curated collection of article links spanning global macro trading, crypto tradin
 - **Lessons from Building AI Agents for Financial Services** - https://x.com/nicbstme/status/2015174818497437834
 - **That's the Story of Toto Wolff** - https://www.bizofspeed.com/p/toto-wolff-turning-trauma-into-a?utm_campaign=post&utm_medium=twitter
   - Quote: "The world breaks everyone, and afterward, many are stronger at the broken places"
+
+## Latest additions
+
+- **Capital Allocation Is Dead** — https://x.com/kwharrison13/status/2078513579461079246 — retained as a lead for [[Capital_Allocation_Timing]] rather than a settled thesis.
+- **School Is Not Enough** — https://www.palladiummag.com/2023/06/06/school-is-not-enough — duplicate link in the raw list; one canonical entry is sufficient.
+- **Thirty Years of Nutrition Knowledge Simplified** — https://gilcarvalhomdphd.substack.com/p/30-years-of-nutrition-knowledge-simplified — broad educational overview, also covered with evidence caveats in [[Health Evidence]].
+- **The Laws of This World** — https://structuralist.substack.com/p/the-laws-of-this-world — new reading-queue item awaiting deeper synthesis.

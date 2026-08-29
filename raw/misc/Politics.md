@@ -37,3 +37,22 @@ UK often has student loans.
 Britain is nominally capitalist but functionally communist. China is
 nominally communist but functionally capitalist.
 Funny how that works.
+
+## White House lab-leak position and unresolved evidence
+
+The White House presents a laboratory or research-related accident in Wuhan as the most likely origin of COVID-19, drawing its case from the House Select Subcommittee's 2024 report. Preserve this as the current administration's official position, not as a settled scientific conclusion.
+
+The evidentiary picture remains divided. The World Health Organization's 2025 expert review said the weight of available evidence suggests zoonotic spillover while keeping every hypothesis open because important early data remain unavailable. The US intelligence community likewise considers natural exposure and a laboratory-associated incident plausible, with agencies divided and most judgments held at low confidence.
+
+Sources:
+
+- https://x.com/WhiteHouse/status/2082467621220307445
+- https://www.whitehouse.gov/lab-leak-true-origins-of-covid-19/
+- https://www.who.int/news/item/27-06-2025-who-scientific-advisory-group-issues-report-on-origins-of-covid-19
+- https://www.dni.gov/files/ODNI/documents/assessments/Declassified-Assessment-on-COVID-19-Origins.pdf
+
+## Racial-separatist balkanization proposal
+
+A reply argues that racial solidarity and territorial balkanization are the only path to political victory, naming the Pacific Northwest, Great Lakes, and New England as logistically viable areas. Preserve it as an example of explicit online racial-separatist advocacy, not as a neutral demographic analysis, a demonstrated political strategy, or an endorsement.
+
+Source: https://x.com/itispsychomath/status/2082206097029595410

@@ -2,10 +2,10 @@
 title: Nassim Taleb
 type: entity
 domain: culture
-sources: [Thoughts.md, Stories.md, Youtube.md, Quotes.md]
-related: [Philosophy, Risk Management]
+sources: [Thoughts.md, Stories.md, Youtube.md, Quotes.md, "bookmarks/Culture & Ideas.md"]
+related: [[Philosophy_and_Meaning]], [[Risk Analysis]], [[Political_Philosophy]], [[Social_Commentary]]
 created: 2026-04-12
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [taleb, antifragility, philosophy]
 ---
 
@@ -53,6 +53,12 @@ And the core antifragility summary as it appears in [[Quotes]]:
 
 ## Legacy
 Influential in risk management, optionality thinking, and dignity/honor philosophy.
+
+## August 2026 additions
+
+- **Role models:** character, nobility, and conduct are proposed as better selection criteria than celebrity appeal. Taleb's insults toward named figures remain rhetoric, not clinical findings.
+- **Scale-dependent politics:** communal provision can increase at family/community scale while liberty increases at federal scale. Preserve this as a subsidiarity heuristic, not a complete policy programme; attribution wording is secondary.
+- **Statistics and individuals:** population evidence can update a prior without fixing an individual's outcome. Within-group variance, direct evidence, measurement, selection, and error costs remain decisive.
 
 ---
 Related: [[Philosophy_and_Meaning]], [[Risk Analysis]]

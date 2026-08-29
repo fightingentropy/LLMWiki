@@ -2,10 +2,10 @@
 title: Trading Psychology
 type: topic
 domain: markets
-sources: [Bizz & Finance.md, Psychology.md, Youtube.md, CT.md, Quotes.md]
-related: [Markets, Psychology, Decision-Making]
+sources: [Bizz & Finance.md, Psychology.md, Youtube.md, CT.md, Quotes.md, markets/Trading.md, "bookmarks/Markets & Crypto.md"]
+related: [[Markets]], [[Psychology]], [[Decision-Making]], [[Repeated Games]]
 created: 2026-04-12
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [trading, psychology, decision-making, behavioral-finance, delusion, skin-in-the-game, bag-holding, variance]
 ---
 
@@ -148,5 +148,14 @@ Trading-flavoured selections from the human's [[Quotes]] archive. Full attributi
 
 > "People that mourn mistakes simply don't believe in themselves. Everyone that wants to make it in 1 month is really saying 'I need to get very lucky because I do not believe I am equipped to make it in a sustainable way over the next 5-10 years'." — [[cobie]] (from [[Quotes]])
 
+## August 2026 process additions
+
+- **Every system pays a characteristic cost.** Trend-following pays in false starts, momentum in late entries, and mean reversion in rare moves that keep going. A familiar loss shape is not automatically evidence that the system broke.
+- **Backtesting can remove clerical work without removing judgment.** Repeatedly optimizing one historical sample, deleting losing weekdays after seeing results, or tuning through an agent can fit noise. Freeze the protocol, reserve unseen periods, and include execution costs and path dependence.
+- **Reset after a large move.** [[CryptoCred]] warns against revenge shorts, oversized late entries, exact-retest stories, paralysis, and five-minute overtrading. Restate signal, trade type, horizon, invalidation, volatility, and size from scratch.
+- **Leverage compresses the deadline for being right.** Directional accuracy is insufficient when financing, liquidation, gaps, and path force an exit first.
+- **Execution beats public prediction.** Calling an exact top or bottom is a status game distinct from earning a return with defined exposure, costs, invalidation, and exits.
+- **Preserve future rounds.** After a large loss, stabilization and optionality matter more than repairing the past in one gamble. See [[Repeated Games]].
+
 ---
-Related: [[Markets]], [[Psychology]], [[Decision-Making]], [[Behavioral_Finance]], [[CT]], [[CryptoCred]], [[Pentosh1]], [[0xaporia]], [[cobie]], [[trading_axe]], [[Rewkang]], [[Quotes]], [[Stanley Druckenmiller]], [[Alex_Hormozi]], [[Seneca]], [[Naval_Ravikant]]
+Related: [[Markets]], [[Psychology]], [[Decision-Making]], [[Behavioral_Finance]], [[Repeated Games]], [[CT]], [[CryptoCred]], [[Pentosh1]], [[0xaporia]], [[cobie]], [[trading_axe]], [[Rewkang]], [[Quotes]], [[Stanley Druckenmiller]], [[Alex_Hormozi]], [[Seneca]], [[Naval_Ravikant]]

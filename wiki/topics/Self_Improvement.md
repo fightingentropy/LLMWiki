@@ -2,10 +2,10 @@
 title: Self-Improvement
 type: topic
 domain: culture
-sources: [Body.md, Psychology.md, Thoughts.md, Youtube.md, Go Do.md, Quotes.md]
-related: [Body Optimization, Mental Health, Philosophy, Japanese_Philosophy, Alex_Hormozi]
+sources: [Body.md, Psychology.md, Thoughts.md, Youtube.md, Go Do.md, Quotes.md, "bookmarks/Personal & Life.md", Stories.md]
+related: [[Body_Optimization]], [[Mental_Health]], [[Philosophy_and_Meaning]], [[Japanese_Philosophy]], [[Alex_Hormozi]], [[Repeated Games]], [[David Cifaldi]]
 created: 2026-04-12
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [self-improvement, growth, discipline, agency, delusion, motivation]
 ---
 
@@ -137,5 +137,14 @@ Thematic selection from the human's [[Quotes]] archive. Full context and attribu
 
 > "Comfort is a drug. It's addictive... The comfort zone is where dreams go to die." (from [[Quotes]])
 
+## Environment, seasons, and reality
+
+- **Ability needs a converting environment.** More discipline is not always the answer when the surrounding system cannot reward current capacity. Change the payoff matrix or move to a setting where the ability has a return.
+- **Intelligence is not always limiting.** Important problems still require building, testing, measuring, and correction from reality.
+- **Balance across seasons.** Ambitious work, fitness, travel, relationships, and family may require deliberate periods of over-allocation. Make the season explicit, keep hard health and ethical limits, and set a review date.
+- **Preserve chosen friction.** Remove waste, but retain difficulty that practices navigation, cooking, improvisation, asking for help, and disrupted-plan tolerance.
+- **Win later rounds.** After loss, stabilize and preserve participation rather than demanding immediate repair. See [[Repeated Games]].
+- **[[David Cifaldi]]:** the Granite Peak story is a striking account of calm and endurance, not a medical protocol or instruction to self-rescue.
+
 ---
-Related: [[Body_Optimization]], [[Mental_Health]], [[Philosophy_and_Meaning]], [[Japanese_Philosophy]], [[Alex_Hormozi]], [[Chris_Williamson]], [[Quotes]], [[Nietzsche]], [[Dostoevsky]], [[Bruce_Lee]], [[Naval_Ravikant]], [[Carl_Jung]]
+Related: [[Body_Optimization]], [[Mental_Health]], [[Philosophy_and_Meaning]], [[Japanese_Philosophy]], [[Repeated Games]], [[David Cifaldi]], [[Alex_Hormozi]], [[Chris_Williamson]], [[Quotes]], [[Nietzsche]], [[Dostoevsky]], [[Bruce_Lee]], [[Naval_Ravikant]], [[Carl_Jung]]

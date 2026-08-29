@@ -3,9 +3,9 @@ title: Decision-Making
 type: topic
 domain: psychology
 sources: [Psychology.md, Bizz & Finance.md, CT.md, Thoughts.md]
-related: [Trading_Psychology, Behavioral_Finance, Psychology, Self_Improvement]
+related: [[Trading_Psychology]], [[Behavioral_Finance]], [[Psychology]], [[Self_Improvement]], [[Repeated Games]]
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [decision-making, agency, variance, intuition, process]
 ---
 
@@ -26,4 +26,13 @@ Surfaces across [[Trading_Psychology]], [[Psychology]], and [[Thoughts]]. The re
 - **Variance tolerance.** Most traders misread losing streaks as strategy failure rather than noise. Decouple process from outcome ([[0xaporia]] in [[CT]]).
 - **Physiognomy & feedback.** Repeated decisions reshape the actor: aggressive masculine decisions change features, frame, muscle ease ([[Thoughts]]).
 
-Related: [[Trading_Psychology]], [[Behavioral_Finance]], [[Psychology]], [[Self_Improvement]], [[Genius_and_Madness]]
+## August 2026 additions
+
+- **Contact with reality.** Reasoning is powerful in smooth, verifiable problem spaces; building, measurement, and feedback reveal facts that cannot be derived in advance.
+- **Read the payoff matrix.** A system that appears broken may be producing exactly the outcomes it rewards. More effort inside it does not change its incentives.
+- **Change environment before endlessly polishing ability.** Ask which setting converts current capacity into returns and what moving costs.
+- **Treat ability as a bundle.** Analytical reasoning, persistence, composure, social perception, and action under pressure are separable dimensions.
+- **Separate group and individual inference.** Averages update priors but do not decide a person; inspect overlap, measurement, selection, and the cost of errors.
+- **Optimize the repeated game.** Preserve cooperation, boundaries, and future rounds rather than maximizing one encounter. See [[Repeated Games]].
+
+Related: [[Trading_Psychology]], [[Behavioral_Finance]], [[Psychology]], [[Self_Improvement]], [[Genius_and_Madness]], [[Repeated Games]]

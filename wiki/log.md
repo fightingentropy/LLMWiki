@@ -1,12 +1,23 @@
 ---
 title: Wiki Log
 type: log
-updated: 2026-07-25
+domain: personal
+sources: []
+related: ["Wiki Index", "Wiki Overview"]
+created: 2026-04-12
+updated: 2026-08-29
+tags: [log, operations, timeline]
 ---
 
 # Wiki Log
 
 Chronological record of wiki operations. Each entry starts with `## [date] operation | details` for easy parsing.
+
+---
+
+## [2026-08-29] ingest | latest 25 pending source updates
+
+Synced the live vault and ingested all 25 pending Markdown sources across bookmarks, misc notes, and markets. The batch added or changed 125 structured bookmark entries beyond the prior 499-entry snapshot, refreshed 19 raw files from the vault, and closed six earlier manifest-pending updates. Created source pages [[Stories]] and [[X-Takes]]; entity pages [[David Cifaldi]], [[Gloomberb]], [[Grok Bot]], [[Omarchy]], [[OnlyFans]], [[OpenShip]], [[PhoneLLM Alpha 1]], and [[TradeXYZ]]; and topic pages [[AI Agents]], [[AI Infrastructure Economics]], [[Digital Security]], [[Health Evidence]], [[Online Extremism and Evidence]], [[Repeated Games]], and [[Water Filtration]]. Updated source summaries and cross-domain pages for agent permissions, health-evidence boundaries, design references, developer tooling, AI capex and power, trading-system costs, backtest overfitting, funding-rate skepticism, leverage, relationship dynamics, incentives, and repeated games. Hostile racial, religious, and gender claims were retained as attributed rhetoric with explicit evidence boundaries rather than promoted as facts. Updated [[INDEX]] and [[Wiki Overview]].
 
 ---
 

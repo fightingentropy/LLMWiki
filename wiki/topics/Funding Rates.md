@@ -2,15 +2,17 @@
 title: Funding Rates
 type: topic
 domain: markets
-sources: [Trading.md]
+sources: [Trading.md, "bookmarks/Markets & Crypto.md"]
 related: [[Crypto Trading]], [[Leverage]], [[Market Drivers]], [[Liquidations]]
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-08-29
 tags: [crypto, derivatives, funding, leverage-indicator]
 ---
 
 ## Overview
 Perpetual futures funding rates are a direct measure of leverage and leverage imbalance in crypto markets. They reveal when longs or shorts are paying to hold positions.
+
+**Evidence boundary:** funding describes carrying cost and relative crowding; it is not a robust standalone daily price predictor. Thresholds below are heuristics, not invariant probabilities or automatic trades.
 
 ## How Funding Rates Work
 
@@ -97,3 +99,7 @@ In perpetual futures (perpetual swap):
 
 ## See Also
 [[Leverage]] for broader leverage indicator context, [[Liquidations]] for forced selling mechanics, [[Crypto Trading]] for crypto-specific drivers.
+
+## Skeptical research result
+
+The latest retained research tested per-contract normalization, open interest, price action, cross-venue aggregation, composites, volatility sizing, hedging, and settlement timing. Raw funding was weak for daily direction; the proposed conditionals did not add robust alpha, and stronger carry results were fragile and concentrated in 2020–2021. The repository and raw datasets were unavailable for independent recomputation, so preserve this as a negative-result lead rather than a final replication. (from [[X-Bookmarks]])

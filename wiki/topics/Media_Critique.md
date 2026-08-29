@@ -2,10 +2,10 @@
 title: Media Critique
 type: topic
 domain: culture
-sources: [Politics.md, Culture.md]
-related: [Political_Commentary, Social_Commentary, Technology_Critique]
+sources: [Politics.md, Culture.md, "bookmarks/Culture & Ideas.md", Funny.md]
+related: [[Political_Commentary]], [[Social_Commentary]], [[Technology_Critique]], [[Online Extremism and Evidence]]
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-08-29
 tags: [media, critique, narrative, elite-capture, journalism]
 ---
 
@@ -27,4 +27,10 @@ Anchored in [[Political_Commentary]] under "Media Capture by Elites." Supplement
 - **Narrative as interface.** "Storytelling is the ultimate compression algorithm for human attention. If you can't wrap an idea in compelling narrative, nobody cares" — explains why facts don't change minds; narrative matters more than truth ([[Thoughts]], [[Philosophy_and_Meaning]]).
 - **Podcasts = low-density medium.** Lowest information density of any medium ever created, but totally passive — poor vehicle for actual learning ([[Thoughts]], [[Technology_Critique]]).
 
-Related: [[Political_Commentary]], [[Social_Commentary]], [[Technology_Critique]], [[Philosophy_and_Meaning]]
+## Evidence laundering in social media
+
+The latest additions show a repeatable path: a real investigation, released email, public scenario report, company relationship, study abstract, or edited clip is wrapped in a much broader ethnic, conspiratorial, or ideological claim. The primary item may support a narrow historical fact while doing nothing to establish the caption's causal story.
+
+The corrective is not to dismiss the source object, but to label the layers: verified event, attributed allegation, unresolved legal status, secondary interpretation, and unsupported extrapolation. See [[Online Extremism and Evidence]].
+
+Related: [[Political_Commentary]], [[Social_Commentary]], [[Technology_Critique]], [[Philosophy_and_Meaning]], [[Online Extremism and Evidence]]
