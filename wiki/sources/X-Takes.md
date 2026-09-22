@@ -2,11 +2,28 @@
 title: X Takes
 type: source
 domain: culture
-sources: ["X takes.md"]
-related: [[Social_Commentary]], [[Technology_Critique]], [[Culture_and_Environment]], [[Gender_Dynamics]], [[Online Extremism and Evidence]], [[Humor]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [x-twitter, takes, culture, technology, gender, humor]
+sources:
+  - misc/X takes.md
+related:
+  - Social Commentary
+  - Technology Critique
+  - Culture and Environment
+  - Gender Dynamics
+  - Online Extremism and Evidence
+  - Humor
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - x-twitter
+  - takes
+  - culture
+  - technology
+  - gender
+  - humor
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # X Takes

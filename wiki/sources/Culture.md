@@ -2,11 +2,25 @@
 title: Culture & Observations
 type: source
 domain: culture
-sources: [misc/Culture.md]
-related: [[Political_Commentary]], [[Dating_and_Relationships]], [[Political_Philosophy]], [[Online Extremism and Evidence]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [culture, philosophy, entropy-extropy, dating, technology-critique]
+sources:
+  - misc/Culture.md
+related:
+  - Political Commentary
+  - Dating & Relationships
+  - Political Philosophy
+  - Online Extremism and Evidence
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - culture
+  - philosophy
+  - entropy-extropy
+  - dating
+  - technology-critique
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Culture & Observations

@@ -2,11 +2,29 @@
 title: Crypto Trading
 type: topic
 domain: markets
-sources: [Trading.md, Articles.md, Tools.md, CT.md, X-Bookmarks.md]
-related: [[Market Drivers]], [[Trading Philosophy]], [[Exchange Microstructure]], [[Traders Directory]], [[Hyperliquid]], [[CT]], [[X-Bookmarks]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [crypto, trading, positioning, momentum, bag-holding, cycles]
+sources:
+  - markets/Trading.md
+  - markets/Articles.md
+  - markets/Tools.md
+  - misc/CT.md
+  - misc/X-Bookmarks.md
+related:
+  - Market Drivers
+  - Trading Philosophy
+  - Exchange Microstructure
+  - Traders Directory
+  - Hyperliquid
+  - Crypto Takes
+  - X-Bookmarks
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - crypto
+  - trading
+  - positioning
+  - momentum
+  - bag-holding
+  - cycles
 ---
 
 ## Overview

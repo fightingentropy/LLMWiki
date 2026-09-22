@@ -2,11 +2,32 @@
 title: PAT Testing
 type: source
 domain: electrics
-sources: [raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT Testing.md]
-related: [Electrical Safety, In-Service Testing, Class 1 Equipment, Class 2 Equipment, Protective Conductor Continuity, Insulation Resistance Testing, Test Equipment Standards]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [pat, in-service-testing, portable-appliances, inspection, testing, safety, equipment-failure]
+sources: []
+related:
+  - Electrical Safety
+  - In-Service Testing
+  - Continuity Testing
+  - Inspection and Testing Fundamentals
+  - Test Equipment Standards
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - pat
+  - in-service-testing
+  - portable-appliances
+  - inspection
+  - testing
+  - safety
+  - equipment-failure
+source_gaps:
+  - >-
+    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT
+    Testing.md
+review_status: unverified
+review_notes: >-
+  Historical webinar summary. The original transcript is unavailable; detailed
+  test limits, procedures, chapter and exam references have not been
+  authenticated against current material.
 ---
 
 # PAT Testing

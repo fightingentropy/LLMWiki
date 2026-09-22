@@ -2,94 +2,58 @@
 title: Body Optimization
 type: topic
 domain: health
-sources: [Body.md, Medical.md]
-related: [Fitness, Supplements, Mental Health, Self-Improvement]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [optimization, fitness, health, supplements, dopamine]
+sources:
+  - misc/Body.md
+  - misc/Medical.md
+  - clippings/evidence-review-2026-09-22/Health.md
+related:
+  - Fitness
+  - Circadian Rhythm
+  - Mental Health
+  - Supplements & Biohacking
+  - Health Evidence
+  - Self-Improvement
+  - Decision-Making
+  - Retatrutide
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - optimization
+  - fitness
+  - health
+  - supplements
+  - dopamine
+summary: >-
+  Keep the useful consistency framework while correcting unsupported health
+  mechanisms.
+reviewed: '2026-09-22'
+review_status: partial
+review_notes: >-
+  The corrections below were checked against the cited sources. Other retained
+  claims are identified as unresolved.
+review_due: '2026-12-21'
 ---
 
 # Body Optimization
 
-## Core Philosophy
-"The more you do, the more energy you have, the more you relax." Most people do nothing, are constantly exhausted, never recoup. **Action begets energy.**
+The useful thread through [[Body]] is consistency: small choices, tolerating beginner discomfort and making movement easier to sustain. Its biochemical claims require a different standard of evidence.
 
-## Supplement Stack
-**Foundational:**
-- Vitamin D3 (widely accepted)
-- Creatine (breaking through mainstream)
-- Magnesium (Threonate or Bisglycinate) - protects hearing, reduces migraines, improves sleep. Take 30-60min before bed
+## A practical starting point
 
-**Specialized:**
-- Tongkat Ali (testosterone boost; morning dose only, not afternoon)
-- Pomegranate juice (offsets estrogen block)
+Use [[Fitness]] for activity guidance and the limits of fitness proxies. Use [[Circadian_Rhythm]] for sleep timing, [[Mental_Health]] for the distinction between helpful routines and treatment, and [[Supplements]] for claims that still need evidence. Persistent fatigue or brain fog should not be assumed to have a single lifestyle cause.
 
-## Dopamine Production
-Dopamine synthesized from Tyrosine amino acid → Tyrosine Hydroxylase enzyme → **requires sunlight**. Direct link between sun exposure and dopamine production.
+## Corrected mechanisms
 
-**Cold exposure** also facilitates high dopamine release; effects dramatic and immediate.
+- **Sunlight and dopamine:** the earlier “requires sunlight” statement was incorrect. The enzyme reaction and circadian responses to light are different mechanisms.
+- **Blueberries:** the instant-cure claim remains an anecdote, not an established intervention.
+- **Cold showers:** the source describes personal mood changes. It does not show a predictable dopamine effect lasting all day or equivalence to medication.
+- **Stress:** the “acute good, chronic bad” slogan omits severity, recovery and individual context; a brief stressor can also be harmful.
+- **Temperature and intelligence:** the source's air-conditioning quotation and cold-exposure anecdotes do not establish that lower temperature increases intelligence.
 
-## Stress Architecture
-- **Acute stress = beneficial.** Competition, high-intensity exercise, conflict make you better, stronger, more adaptive
-- **Chronic stress = toxic.** Isolation, bad sleep, soulless work, 24/7 news = burnout and depression
+Corrections and references: [[Health Evidence Review - September 2026]].
 
-**Modern problem:** Abundant chronic stress, void of acute stress. Solution: eliminate chronic stressors, introduce acute stressors. [[Stress_Management]]
+## Retained ideas, with their original role
 
-## Intelligence & Temperature
-**Temperature is directly related to intelligence.** Cold exposure enhances cognitive function.
+The source values movement, food, sleep, skills, prayer, relationships and fewer distractions. These are personal priorities rather than a universal medical stack. The training, hormone, breathing and peptide protocols remain in the original note for provenance; they have not been promoted into current advice here.
 
-**Boxed breathing** - Powerful stress regulation and focus tool.
-
-## Brain Optimization
-- **Exercise rewires brain** - Physical activity activates neural plasticity
-- **Blueberry protocol** - 500g+ blueberries in one sitting clears brain fog instantly via flavonoid-mediated inflammation reduction
-- **L-Theanine + Caffeine** - Synergistic stack enabling coffee benefits without anxiety/blood pressure elevation
-
-## Movement Modalities
-All therapeutic: walking, dancing, sun exposure, cuddling, creating, writing. **Movement = medicine.**
-
-**Walking protocol:** Coordinate rapid nasal inhales (2-4 per exhale) with high-tempo music, time eye blinks/movements similarly. Builds energy welling sensation; with practice induces bliss state.
-
-## Sleep & Circadian Rhythm
-Poor sleep timing = brain fog. Late sleep → late wake → persistent fog. Proper circadian alignment essential.
-
-## Fitness Programming
-**Push-ups as cardiac predictor:** 40+ pushups = 96% reduced heart disease risk vs. <10 pushups. Better predictor than aerobic treadmill tests.
-
-**Leg training:** High reps (15+) per set with minimal rest builds muscle without bulk.
-
-**Comprehensive routine:**
-- Push-ups, pull-ups, squats (major movers)
-- Leg raises (abs)
-- Supermans, planks (lower back)
-- Side lunges (hamstrings)
-- Calf work
-- Pull-up bar exercises (shoulders, abs)
-- Neck bridges (neck)
-
-## Recovery & Longevity
-Cold showers dramatically improve day trajectory—immediate effects comparable to medication.
-
-## Peptides (Pharmacological Layer)
-Beyond the food/sun/movement/supplement basics, an injectable layer exists: GLP-1-class peptides such as [[Retatrutide]] (LY3437943, investigational) for appetite suppression and weight loss. These are reconstituted from powder with [[Bacteriostatic Water]] and dosed subcutaneously — see [[Peptide Reconstitution]] and the [[Peptides]] guide. Noted as part of the optimization landscape, not an endorsement.
-
-## Tiny Deltas
-**Power of replacing -1/-3 decisions with +1/+2 decisions.** Most people don't catastrophically fail; they erode through 1000 small withdrawals.
-
-## General Principles ("Magic Pill of Life")
-1. No porn
-2. Avoid sugar
-3. Drink water
-4. Run often
-5. Make money
-6. Pray daily
-7. No distraction
-8. Network
-9. Develop skills
-10. No partying
-11. Eat healthy
-
-**Consistency > perfection.**
-
----
-Related: [[Fitness]], [[Mental_Health]], [[Self-Improvement]], [[Supplements]], [[Peptide Reconstitution]], [[Retatrutide]]
+The “tiny deltas” idea connects to [[Self-Improvement]] and [[Decision-Making]]: review repeated choices and their costs, without assuming effort guarantees a particular outcome. [[Peptides]] and [[Retatrutide]] are pharmacological research references with separate evidence requirements.

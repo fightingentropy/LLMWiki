@@ -2,11 +2,19 @@
 title: Markets Wiki Index
 type: index
 domain: markets
-sources: [Articles.md, Brief.md, Handbook.md, Tools.md, Trading.md]
+sources:
+  - markets/Articles.md
+  - markets/Brief.md
+  - markets/Handbook.md
+  - markets/Tools.md
+  - markets/Trading.md
 related: []
-created: 2026-04-12
-updated: 2026-04-12
-tags: [index, navigation, wiki-index]
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - index
+  - navigation
+  - wiki-index
 ---
 
 ## About This Wiki

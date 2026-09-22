@@ -2,11 +2,25 @@
 title: Leverage
 type: topic
 domain: markets
-sources: [Trading.md, Brief.md, CT.md, "bookmarks/Markets & Crypto.md"]
-related: [[Risk Analysis]], [[Liquidations]], [[Positioning]], [[Funding Rates]], [[CT]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [leverage, margin, funding-rates, risk, amplification]
+sources:
+  - markets/Trading.md
+  - markets/Brief.md
+  - misc/CT.md
+  - bookmarks/Markets & Crypto.md
+related:
+  - Risk Analysis
+  - Liquidations
+  - Positioning
+  - Funding Rates
+  - Crypto Takes
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - leverage
+  - margin
+  - funding-rates
+  - risk
+  - amplification
 ---
 
 ## Overview

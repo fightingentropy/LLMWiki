@@ -2,11 +2,19 @@
 title: Gabriel Garcia Marquez
 type: entity
 domain: culture
-sources: [Quotes.md]
-related: [[Quotes]], [[Philosophy_and_Meaning]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [writer, novelist, colombian, magical-realism, nostalgia]
+sources:
+  - misc/Quotes.md
+related:
+  - Quotes
+  - Philosophy & Meaning
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - writer
+  - novelist
+  - colombian
+  - magical-realism
+  - nostalgia
 ---
 
 # Gabriel Garcia Marquez

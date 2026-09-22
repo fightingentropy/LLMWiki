@@ -2,11 +2,30 @@
 title: Online Extremism and Evidence
 type: topic
 domain: culture
-sources: ["bookmarks/Culture & Ideas.md", Culture.md, Politics.md, Funny.md, "X takes.md", Women.md]
-related: [[Media_Critique]], [[Political_Commentary]], [[Political_Philosophy]], [[Social_Commentary]], [[Technology_Critique]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [extremism, propaganda, conspiracy, racism, evidence, rhetoric]
+sources:
+  - bookmarks/Culture & Ideas.md
+  - misc/Culture.md
+  - misc/Politics.md
+  - misc/Funny.md
+  - misc/X takes.md
+  - misc/Women.md
+  - clippings/bookmark-updates-2026-09-22/Culture & Ideas.md
+related:
+  - Media Critique
+  - Political Commentary
+  - Political Philosophy
+  - Social Commentary
+  - Technology Critique
+  - Bookmarks - Culture & Ideas
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - extremism
+  - propaganda
+  - conspiracy
+  - racism
+  - evidence
+  - rhetoric
 ---
 
 # Online Extremism and Evidence
@@ -34,3 +53,9 @@ Several new sources preserve hostile racial, religious, and gender rhetoric. The
 This page also covers the raw `Funny.md` addition that presents racist pseudo-scientific claims about food access and intelligence. It is retained only as an example of dehumanizing propaganda; the source supplies no credible evidence for its group claims.
 
 Related: [[Media_Critique]], [[Political_Commentary]], [[Political_Philosophy]], [[Social_Commentary]], [[Technology_Critique]]
+
+## September 2026 evidence gaps
+
+The court-list scraping post uses names as demographic proxies; the crime post adds identity and conspiracy framing; the Spartan-history thread mixes historical claims with modern narration. Each requires a narrower original source and method before it can support a factual conclusion. Media-silence and image-only accusations are unresolved until the event and original reporting are identified.
+
+The full source register remains in [[Bookmarks - Culture & Ideas]]. The retention policy now preserves all reviewed X items with attribution, including those whose evidential value is weak. That policy change does not relax the standard for factual synthesis.

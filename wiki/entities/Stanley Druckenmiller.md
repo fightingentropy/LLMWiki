@@ -2,11 +2,19 @@
 title: Stanley Druckenmiller
 type: entity
 domain: markets
-sources: [Brief.md]
-related: [[Trading Philosophy]], [[Market Regime]], [[Macro Trading]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [investor, macro, philosophy, methodology]
+sources:
+  - markets/Brief.md
+related:
+  - Trading Philosophy
+  - Market Regime
+  - Macro Trading
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - investor
+  - macro
+  - philosophy
+  - methodology
 ---
 
 ## Overview

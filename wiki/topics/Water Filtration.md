@@ -2,11 +2,22 @@
 title: Water Filtration
 type: topic
 domain: health
-sources: ["bookmarks/Personal & Life.md"]
-related: [[Health Evidence]], [[Body_Optimization]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [water, filtration, reverse-osmosis, purchasing, evidence]
+sources:
+  - bookmarks/Personal & Life.md
+  - clippings/bookmark-updates-2026-09-22/Personal & Life.md
+related:
+  - X-Bookmarks
+  - Health Evidence
+  - Body Optimization
+  - Bookmarks - Personal & Life
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - water
+  - filtration
+  - reverse-osmosis
+  - purchasing
+  - evidence
 ---
 
 # Water Filtration
@@ -24,3 +35,7 @@ The current notes preserve two shopping leads rather than a product selection: a
 The Oasis ranking lacks an accessible common methodology in the retained source. Ninja's launch material describes HydraSense certification to NSF/ANSI 42, 53, and 401, but that does not make it equivalent to reverse osmosis. No product is selected or purchased here. (from [[X-Bookmarks]])
 
 Related: [[Health Evidence]], [[Body_Optimization]]
+
+## September 2026 shortlist expansion
+
+The source now also retains Hommix SanitRO, Sparo, and EspressRO countertop reverse-osmosis listings, plus a Klense filtered showerhead. These are shopping references; the latter's limescale, skin, and hair claims remain vendor claims. Keep drinking-water treatment and shower-equipment claims distinct, with model-specific evidence and running costs beside each listing. No purchase or product selection is recorded by this ingest. (from [[Bookmarks - Personal & Life]])

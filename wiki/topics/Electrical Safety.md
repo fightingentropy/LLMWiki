@@ -2,212 +2,64 @@
 title: Electrical Safety
 type: topic
 domain: electrics
-sources: [raw/electrics/Resources.md, raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection and Testing Demonstration.md, raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT Testing.md]
-related: [Safe Isolation, RCD Protection, Circuit Protection, Electrical Standards, Protective Conductors, Competence and Training]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [safety, electrical-safety, hazard-protection, risk-assessment, competence]
+sources:
+  - electrics/Resources.md
+  - clippings/evidence-review-2026-09-22/Electrics.md
+related:
+  - Safe Isolation
+  - Test Equipment Standards
+  - GS38
+  - RCD Protection
+  - Building Regulations
+  - In-Service Testing
+  - Electrical Study Map
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - safety
+  - electrical-safety
+  - hazard-protection
+  - risk-assessment
+  - competence
+summary: >-
+  Safe-working principles and protection limits, with historical procedure gaps
+  made explicit.
+reviewed: '2026-09-22'
+review_status: partial
+review_notes: >-
+  Edition, scope and stated corrections checked against official references.
+  Detailed historical procedures and page numbers require the applicable
+  standard and course materials.
+review_due: '2026-10-15'
+source_gaps:
+  - >-
+    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
+    and Testing Demonstration.md
+  - >-
+    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT
+    Testing.md
 ---
 
 # Electrical Safety
 
-Core principles and practices for ensuring safety in electrical installations, testing, and equipment maintenance.
+Electrical safety starts with understanding the installation, the work and the limits of one's competence. [[Safe Isolation]], [[Test Equipment Standards]] and supervised practical training belong together.
 
-## Fundamental Safety Principles
+## Working safely
 
-### Risk of Electrical Hazards
+[HSE](https://www.hse.gov.uk/electricity/faq.htm) says work should normally be performed dead, with equipment securely isolated and checked dead. [[GS38]] is HSE guidance on suitable test equipment. A written sequence in an old webinar summary does not cover every supply arrangement or prove that all sources have been isolated.
 
-Electrical work is inherently dangerous if done incorrectly:
-- Electric shock hazards
-- Fire risk from faults
-- Arc flash risk
-- Equipment damage
+## Protection measures are complementary
 
-### Competence Requirement
+RCD protection does not replace isolation, correct cable routing, earthing or the other required measures. [[RCD Protection]] corrects the old trip-time and selectivity statements. [[Building Regulations]] corrects the claim that an RCD permits arbitrary concealed routes.
 
-Safety depends on real competence, not just qualifications:
-- Sound technical knowledge
-- Relevant practical experience
-- Understanding of the installation
-- Understanding of equipment connected
-- Understanding of test instruments being used
-- Deep knowledge of standards (BS 7671, GN3, Building Regulations)
+A protective conductor and an overcurrent device perform different roles. Avoid reducing all exposed metal to “must be earthed”: the protective measure and equipment class matter. Similarly, bonding requirements depend on whether a part is actually extraneous and on the applicable installation rules.
 
-### Professional Mindset
+## Inspection and testing
 
-- Ask questions and don't be embarrassed about what you don't know
-- "Every day is a school day"
-- Prioritize safety over speed or convenience
-- Never assume; verify
+The condition of equipment, the environment and the intended use matter alongside measurements. Some tests can damage connected equipment; the procedure and limits must match the actual installation and instruments. Record defects and the scope of verification rather than treating a single reading or a sticker as proof of safety.
 
-## Protection Devices
+For portable equipment, [HSE's PAT FAQ](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm) explains risk-based maintenance rather than blanket annual testing. See [[In-Service Testing]].
 
-### RCD (Residual Current Device)
+## Evidence status
 
-**Purpose**: Protects against earth faults and electric shock
-
-**Application rules**:
-- 30 mA RCD required for cables less than 50 mm deep in safe zones (Regulation 522.6.202)
-- 30 mA RCD required for circuits in stud walls made mainly of metal (Regulation 522.6.203)
-- RCD may be avoided if cables in earthed metallic covering, conduit, or trunking (Regulation 522.5.204)
-
-### Circuit Breaker
-
-**Purpose**: Protects against overcurrent and short circuit
-
-### Earth Cable (Protective Conductor)
-
-**Purpose**: Provides low-resistance escape route for fault current if live conductor touches metal
-
-**Key requirement**: Continuity must be verified through testing
-
-## Safe Isolation Procedure
-
-[[Safe Isolation]] is critical for all electrical work:
-
-1. Identify what is to be isolated (circuit or whole installation)
-2. Inform/agree with client/occupants before turning power off
-3. Use approved voltage indicator (AVI) compliant with [[GS38]]
-4. Prove voltage indicator works (proving unit or known live source)
-5. Isolate at best point (prefer external isolator for whole-DB)
-6. Lock off isolator/main switch
-7. Remove fuses if necessary
-8. Retain key personally
-9. Apply warning label/signage
-10. Prove dead on load side in consistent sequence (earth-to-line, earth-to-neutral, line-to-neutral)
-11. Re-prove voltage indicator
-12. Replace covers before leaving (incoming tails may still be live)
-
-## Hazard Recognition
-
-### Exposed-Conductive-Part
-
-A conductive part of equipment that can be touched and is not normally live, but can become live under fault conditions.
-
-**Safety requirement**: Must be connected to protective earth.
-
-### Extraneous-Conductive-Part
-
-A conductive part that can introduce a potential (generally earth potential) and is not part of the electrical installation.
-
-**Safety requirement**: Must be bonded to prevent dangerous voltage differentials.
-
-## Cable Routing Safety
-
-### Safe Zones
-
-Cables routed in safe zones are protected from accidental damage:
-- Directly above/below switches or sockets (vertical)
-- Horizontal runs to accessories
-- Within 150 mm of ceiling
-- Within 150 mm of corners
-
-**If cables outside safe zones**: Need protection (conduit, trunking) or other risk mitigation.
-
-## In-Service Equipment Safety
-
-### Visual Inspection Priority
-
-Before any testing, conduct thorough visual inspection:
-- Equipment function/operation
-- Environment and housekeeping (suitability for location/use)
-- Flex/cable condition
-- Plug condition
-- Socket outlet condition
-- Visible appliance damage
-
-**Critical point**: Equipment can be unsafe due to environment even if equipment itself looks fine.
-
-### Common Failure Points
-
-**Plugs are frequent weak points**:
-- Physical damage/cracks
-- Burning signs (inside or outside)
-- Flex not properly entered plug
-- Loose or incorrect fuses
-- Loose copper strands
-- Missing earth on Class 1 equipment
-- Taped flex or poor repairs
-- Wrong cable type used
-- Excessive visible copper
-- Insecure covers
-- Cardboard insert (fire risk)
-
-### Safe Working with In-Service Equipment
-
-- Some checks require equipment to be energized (e.g., functional tests)
-- Live working only when unreasonable to isolate, reasonable to keep live, and suitable precautions taken
-- Never repair during inspection unless explicitly part of your role
-- Mark failed items and report; equipment belongs to customer
-
-## Testing Safety
-
-### Test Equipment Safety
-
-Test equipment must be safe and accurate:
-- Compliant with [[BS EN 61010]] (safety)
-- Compliant with [[BS EN 61557]] (accuracy)
-- Test leads/probes compliant with [[GS38]]
-- Safe leads/probes condition is as important as knowing test steps
-
-### High-Voltage Test Hazards
-
-Some dead tests apply significant voltage:
-- Insulation resistance tests use 500 V DC
-- Can damage sensitive equipment (RCDs, LED lighting, IT equipment)
-- Must understand what is connected before applying test voltages
-
-### Vulnerable Equipment
-
-Know what equipment might be damaged by testing:
-- RCDs
-- LED lighting
-- IT/computer equipment
-- Sensitive electronic equipment
-- Some heating equipment
-
-## Competence Standards
-
-### Legal Framework
-
-- **Health and Safety at Work Act**: Overall duty of care
-- **Management of Health and Safety at Work Regulations**: Risk assessment, competence
-- **Electricity at Work Regulations**: Safe systems of work
-- **PUWER**: Equipment safety standards
-- **Building Regulations**: Installation compliance
-
-### Professional Standards
-
-- **BS 7671**: Wiring Regulations (technical requirements)
-- **GN3** (Guidance Note 3): Inspection and testing standards
-- **On-Site Guide**: Practical guidance
-- **Best Practice Guides**: Industry best practices
-
-## Practical Safety Advice
-
-### Before Starting Work
-
-- Know what is being installed/tested
-- Know what equipment is connected
-- Know what might be damaged by testing
-- Obtain external earth fault loop impedance and prospective fault current data
-- Know the earthing arrangement (TN-C-S, TN-S, TT)
-- Identify any particularly vulnerable equipment
-
-### During Work
-
-- Never withdraw DNO fuses without authorization
-- Perform safe isolation correctly every time
-- Use correct instrument for each test
-- Eliminate parallel paths that could distort readings
-- Take measurements at point of work, not just at distribution board
-- Test in correct sequence (dead tests before live)
-
-### After Work
-
-- Record all results for evidence/protection
-- Re-test after site visits to catch damage
-- Document any defects clearly
-- Mark failed equipment appropriately
-- Do not repair unless explicitly authorized
-- Maintain test equipment accuracy records
+The original two webinar transcripts are unavailable. Detailed legacy test procedures elsewhere in the wiki remain study notes awaiting comparison with the course material and current standard. [[Electrical Study Map]] provides a focused route through those checks. This page's verified scope is documented in [[Electrical Evidence Review - September 2026]].

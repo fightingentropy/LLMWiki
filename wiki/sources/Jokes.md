@@ -2,11 +2,29 @@
 title: Jokes
 type: source
 domain: culture
-sources: [Jokes.md]
-related: [Pick-up-limes, Funny, Culture, Humor, Dating_and_Relationships]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [humor, jokes, memes, greek, puns, wordplay, crude, dark-comedy]
+sources:
+  - misc/Jokes.md
+related:
+  - Pick Up Limes
+  - Funny
+  - Culture & Observations
+  - Humor
+  - Dating & Relationships
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - humor
+  - jokes
+  - memes
+  - greek
+  - puns
+  - wordplay
+  - crude
+  - dark-comedy
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Jokes

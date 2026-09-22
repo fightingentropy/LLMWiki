@@ -2,11 +2,27 @@
 title: Youtube
 type: source
 domain: personal
-sources: [Youtube.md]
-related: [Philosophy_and_Meaning, Self_Improvement, Mental_Health, Dating_and_Relationships, Design_and_Aesthetics, Trading_Psychology]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [bookmarks, youtube, videos, timestamps, quotes]
+sources:
+  - misc/Youtube.md
+related:
+  - Philosophy & Meaning
+  - Self-Improvement
+  - Mental Health
+  - Dating & Relationships
+  - Design & Aesthetics
+  - Trading Psychology
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - bookmarks
+  - youtube
+  - videos
+  - timestamps
+  - quotes
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Youtube

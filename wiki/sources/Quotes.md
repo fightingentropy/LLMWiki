@@ -2,11 +2,29 @@
 title: Quotes
 type: source
 domain: personal
-sources: [misc/Quotes.md]
-related: [Thoughts, Philosophy_and_Meaning, Self_Improvement, Trading_Psychology, Mental_Health, Dating_and_Relationships, Masculinity_and_Men]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [quotes, wisdom, philosophy, trading, psychology, aphorisms]
+sources:
+  - misc/Quotes.md
+related:
+  - Thoughts & Observations
+  - Philosophy & Meaning
+  - Self-Improvement
+  - Trading Psychology
+  - Mental Health
+  - Dating & Relationships
+  - Masculinity & Men
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - quotes
+  - wisdom
+  - philosophy
+  - trading
+  - psychology
+  - aphorisms
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Quotes

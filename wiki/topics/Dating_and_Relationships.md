@@ -2,11 +2,32 @@
 title: Dating & Relationships
 type: topic
 domain: culture
-sources: [Culture.md, Thoughts.md, X takes.md, Youtube.md, Women.md, "bookmarks/Media & Inspiration.md"]
-related: [[Psychology]], [[Philosophy_and_Meaning]], [[Self_Improvement]], [[Gender_Dynamics]], [[Heartiste]], [[DrDynamis]], [[OnlyFans]], [[Repeated Games]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [dating, relationships, gender-dynamics, attraction, intimacy, game, red-pill]
+sources:
+  - misc/Culture.md
+  - misc/Thoughts.md
+  - misc/X takes.md
+  - misc/Youtube.md
+  - misc/Women.md
+  - bookmarks/Media & Inspiration.md
+related:
+  - Psychology & Behavior
+  - Philosophy & Meaning
+  - Self-Improvement
+  - Gender Dynamics
+  - Heartiste
+  - DrDynamis
+  - OnlyFans
+  - Repeated Games
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - dating
+  - relationships
+  - gender-dynamics
+  - attraction
+  - intimacy
+  - game
+  - red-pill
 ---
 
 # Dating & Relationships

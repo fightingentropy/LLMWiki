@@ -2,11 +2,32 @@
 title: Inspection and Testing Fundamentals
 type: source
 domain: electrics
-sources: [raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection and Testing Demonstration.md]
-related: [Safe Isolation, Continuity Testing, Building Regulations, PAT Testing, EIC and MEIWC, Inspection and Testing Process]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [inspection, testing, fundamentals, dead-tests, documentation, safe-isolation, continuity]
+sources: []
+related:
+  - Safe Isolation
+  - Continuity Testing
+  - Building Regulations
+  - PAT Testing
+  - EIC and MEIWC
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - inspection
+  - testing
+  - fundamentals
+  - dead-tests
+  - documentation
+  - safe-isolation
+  - continuity
+source_gaps:
+  - >-
+    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
+    and Testing Demonstration.md
+review_status: unverified
+review_notes: >-
+  Historical webinar summary. The original transcript is unavailable; detailed
+  test limits, procedures, chapter and exam references have not been
+  authenticated against current material.
 ---
 
 # Inspection and Testing Fundamentals

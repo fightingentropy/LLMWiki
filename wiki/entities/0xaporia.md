@@ -2,11 +2,25 @@
 title: 0xaporia
 type: entity
 domain: markets
-sources: [CT.md, Articles.md, X-Bookmarks.md]
-related: [[Traders Directory]], [[CT]], [[Trading_Psychology]], [[Trading Philosophy]], [[Crypto Trading]]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [trader, twitter, crypto, philosophy, systems, variance]
+sources:
+  - misc/CT.md
+  - markets/Articles.md
+  - misc/X-Bookmarks.md
+related:
+  - Traders Directory
+  - Crypto Takes
+  - Trading Psychology
+  - Trading Philosophy
+  - Crypto Trading
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - philosophy
+  - systems
+  - variance
 ---
 
 ## Overview

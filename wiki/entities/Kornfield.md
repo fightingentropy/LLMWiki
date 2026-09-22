@@ -2,11 +2,21 @@
 title: Jack Kornfield
 type: entity
 domain: personal
-sources: [Quotes.md]
-related: [[Quotes]], [[Philosophy_and_Meaning]], [[Marcus_Aurelius]], [[Steve_Jobs]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [buddhism, teacher, mindfulness, mortality, time]
+sources:
+  - misc/Quotes.md
+related:
+  - Quotes
+  - Philosophy & Meaning
+  - Marcus Aurelius
+  - Steve Jobs
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - buddhism
+  - teacher
+  - mindfulness
+  - mortality
+  - time
 ---
 
 # Jack Kornfield

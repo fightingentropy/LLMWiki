@@ -2,11 +2,21 @@
 title: Rates
 type: topic
 domain: markets
-sources: [Brief.md]
-related: [[Cross-Asset Analysis]], [[Market Regime]], [[Macro Trading]], [[Real Yields]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [rates, bonds, treasury, yield-curve, monetary-policy]
+sources:
+  - markets/Brief.md
+related:
+  - Cross-Asset Analysis
+  - Market Regime
+  - Macro Trading
+  - Real Yields
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - rates
+  - bonds
+  - treasury
+  - yield-curve
+  - monetary-policy
 ---
 
 ## Overview

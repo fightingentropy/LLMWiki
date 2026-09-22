@@ -2,11 +2,26 @@
 title: Seneca
 type: entity
 domain: culture
-sources: [Quotes.md]
-related: [Philosophy_and_Meaning, Marcus_Aurelius, Self_Improvement]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [stoic, philosopher, roman, wealth, wisdom]
+sources:
+  - misc/Quotes.md
+  - clippings/bookmark-updates-2026-09-22/Culture & Ideas.md
+related:
+  - Marcus Aurelius
+  - Quotes
+  - Mental Health
+  - Self-Improvement
+  - Alex Hormozi
+  - Philosophy & Meaning
+  - Personal Knowledge Management
+  - Bookmarks - Culture & Ideas
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - stoic
+  - philosopher
+  - roman
+  - wealth
+  - wisdom
 ---
 
 # Seneca
@@ -32,3 +47,7 @@ Lucius Annaeus Seneca (c. 4 BC – 65 AD). Roman Stoic philosopher, statesman, a
 
 ---
 Related: [[Quotes]], [[Philosophy_and_Meaning]], [[Marcus_Aurelius]], [[Self_Improvement]], [[Mental_Health]]
+
+## Reading depth reference
+
+A September bookmark connects a modern information-overload screenshot to Seneca's Letter 2 to Lucilius. The saved note interprets it as depth over constantly switching books; the source should not be read as a verbatim ancient description of smartphones or feeds. The reusable connection is developed in [[Personal Knowledge Management]]. (from [[Bookmarks - Culture & Ideas]])

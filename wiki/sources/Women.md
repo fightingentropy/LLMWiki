@@ -2,11 +2,32 @@
 title: Women
 type: source
 domain: culture
-sources: [misc/Women.md]
-related: [Dating_and_Relationships, Masculinity_and_Men, Gender_Dynamics, Culture, Psychology, Heartiste, DrDynamis]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [women, dating, relationships, gender, attraction, femininity, game, red-pill, heartiste]
+sources:
+  - misc/Women.md
+related:
+  - Dating & Relationships
+  - Masculinity & Men
+  - Gender Dynamics
+  - Culture & Observations
+  - Psychology & Behavior
+  - Heartiste
+  - DrDynamis
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - women
+  - dating
+  - relationships
+  - gender
+  - attraction
+  - femininity
+  - game
+  - red-pill
+  - heartiste
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Women

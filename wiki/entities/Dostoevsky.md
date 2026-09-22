@@ -2,11 +2,20 @@
 title: Fyodor Dostoevsky
 type: entity
 domain: culture
-sources: [Quotes.md]
-related: [Philosophy_and_Meaning, Self_Improvement, Mental_Health]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [novelist, dostoevsky, self-betrayal, psychology, russian-literature]
+sources:
+  - misc/Quotes.md
+related:
+  - Philosophy & Meaning
+  - Self-Improvement
+  - Mental Health
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - novelist
+  - dostoevsky
+  - self-betrayal
+  - psychology
+  - russian-literature
 ---
 
 # Fyodor Dostoevsky

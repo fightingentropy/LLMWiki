@@ -2,11 +2,19 @@
 title: insiliconot
 type: entity
 domain: markets
-sources: [CT.md]
-related: [[Traders Directory]], [[CT]], [[Trading_Psychology]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [trader, twitter, crypto, humor]
+sources:
+  - misc/CT.md
+related:
+  - Traders Directory
+  - Crypto Takes
+  - Trading Psychology
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - humor
 ---
 
 ## Overview

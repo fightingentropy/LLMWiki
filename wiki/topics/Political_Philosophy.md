@@ -2,11 +2,23 @@
 title: Political Philosophy
 type: topic
 domain: culture
-sources: [Culture.md, Politics.md]
-related: [Curtis_Yarvin, Philosophy_and_Meaning, Political_Commentary, Entropy_vs_Extropy]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [political-philosophy, yarvin, entropy, extropy, hierarchy, sovereignty]
+sources:
+  - misc/Culture.md
+  - misc/Politics.md
+related:
+  - Curtis Yarvin (Mencius Moldbug)
+  - Philosophy & Meaning
+  - Political Commentary
+  - Entropy vs Extropy
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - political-philosophy
+  - yarvin
+  - entropy
+  - extropy
+  - hierarchy
+  - sovereignty
 ---
 
 # Political Philosophy

@@ -3,5 +3,7 @@ dist/
 .DS_Store
 raw/.sync-backups/
 raw/.ingest-manifest.json
+raw/.capture-manifest.json
+raw/.capture-manifest.json.tmp
 raw/.refresh.out.log
 raw/.refresh.err.log

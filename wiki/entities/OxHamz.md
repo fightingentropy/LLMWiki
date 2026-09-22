@@ -2,11 +2,23 @@
 title: OxHamz
 type: entity
 domain: markets
-sources: [CT.md]
-related: [[CT]], [[Traders Directory]], [[Macro Trading]], [[Crypto Trading]], [[RJ_Killmex]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [trader, twitter, crypto, macro, flows, correlation]
+sources:
+  - misc/CT.md
+related:
+  - Crypto Takes
+  - Traders Directory
+  - Macro Trading
+  - Crypto Trading
+  - RJ Killmex
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - macro
+  - flows
+  - correlation
 ---
 
 # OxHamz

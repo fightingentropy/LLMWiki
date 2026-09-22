@@ -4,7 +4,8 @@ import { createHash } from "crypto";
 import matter from "gray-matter";
 import { Marked } from "marked";
 import sanitizeHtml from "sanitize-html";
-import Fuse from "fuse.js";
+import { canonicalTag, plainText, searchDocuments, type SearchDocument } from "./search";
+import { loadAssetFiles, resolveSource, type RawSource } from "./sources";
 
 const WIKI_DIR = join(import.meta.dir, "wiki");
 const ASSETS_URL_PREFIX = "/assets/";
@@ -29,11 +30,19 @@ export interface WikiPage {
   wordCount: number;
   readingTime: number; // minutes
   headings: { level: number; text: string; id: string }[];
+  reviewed?: string;
+  reviewStatus?: string;
+  reviewNotes?: string;
+  reviewDue?: string;
+  sourceGaps?: string[];
+  summary?: string;
   mtime: number; // ms since epoch — filesystem modification time, used as fallback for updated
 }
 
 export interface LintIssue {
-  kind: "orphan" | "broken-link" | "missing-type" | "missing-tags" | "missing-domain" | "stale" | "untyped-link" | "duplicate-title";
+  kind: "orphan" | "broken-link" | "missing-type" | "missing-tags" | "missing-domain" | "stale" | "untyped-link" | "duplicate-title" | "broken-source" | "broken-related" | "needs-review" | "source-gap";
+  priority?: "high" | "normal";
+  domain?: string;
   slug: string;
   title: string;
   detail?: string;
@@ -155,7 +164,8 @@ function renderWikilink(
 
 function renderImageWikilink(raw: string, assetSet: Set<string>): string {
   const name = raw.split("|")[0].trim();
-  const filename = name.replace(/\\/g, "/").split("/").pop() || name;
+  const normalized = name.replace(/\\/g, "/").replace(/^(?:img|assets)\//, "");
+  const filename = assetSet.has(normalized) ? normalized : normalized.split("/").pop() || name;
   if (!assetSet.has(filename)) {
     return `<span class="image-ref image-missing" title="Asset not found">${escapeHtml(filename)}</span>`;
   }
@@ -396,31 +406,8 @@ interface ParseCacheEntry {
 }
 const parseCache = new Map<string, ParseCacheEntry>();
 
-// Cache the asset filename set at module scope. readdir on raw/assets ran on
-// every loadWikiPages call; instead we stat the dir and only re-read when its
-// mtime changes (i.e. an asset was added/removed). Behavior is preserved.
-const ASSETS_DIR = join(import.meta.dir, "raw", "assets");
-let assetSetCache: { mtime: number; set: Set<string> } | null = null;
-
-async function loadAssetSet(): Promise<Set<string>> {
-  let mtime: number;
-  try {
-    mtime = (await stat(ASSETS_DIR)).mtimeMs;
-  } catch {
-    // Missing/unreadable assets dir — preserve old behavior (empty set).
-    assetSetCache = null;
-    return new Set<string>();
-  }
-  if (assetSetCache && assetSetCache.mtime === mtime) {
-    return assetSetCache.set;
-  }
-  const set = new Set<string>();
-  try {
-    const assets = await readdir(ASSETS_DIR);
-    assets.forEach((a) => set.add(a));
-  } catch {}
-  assetSetCache = { mtime, set };
-  return set;
+export async function loadAssetSet(): Promise<Set<string>> {
+  return new Set((await loadAssetFiles()).keys());
 }
 
 function slugSetSignature(pages: Map<string, WikiPage>): string {
@@ -464,6 +451,12 @@ async function parsePage(fullPath: string, relPath: string): Promise<WikiPage | 
       related: toStringArray(data.related),
       created: normalizeDate(data.created),
       updated: normalizeDate(data.updated),
+      reviewed: normalizeDate(data.reviewed),
+      reviewStatus: String(data.review_status || ""),
+      reviewNotes: String(data.review_notes || ""),
+      reviewDue: normalizeDate(data.review_due),
+      sourceGaps: toStringArray(data.source_gaps),
+      summary: String(data.summary || ""),
       content,
       html: "",
       links: extractWikilinks(content),
@@ -527,7 +520,7 @@ export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
       const fullPath = join(dir, entry.name);
       if (entry.isDirectory()) {
         await walkDir(fullPath);
-      } else if (entry.name.endsWith(".md")) {
+      } else if (entry.isFile() && entry.name.endsWith(".md")) {
         seenPaths.add(fullPath);
         mdPaths.push({ fullPath, relPath: relative(WIKI_DIR, fullPath) });
       }
@@ -559,7 +552,7 @@ export async function loadWikiPages(): Promise<Map<string, WikiPage>> {
 
   // Second pass: render HTML. Reuse cached HTML when the slug set hasn't
   // changed since last render (ordinary content edits only touch one file).
-  const sig = slugSetSignature(pages);
+  const sig = slugSetSignature(pages) + JSON.stringify([...assetSet].sort());
   for (const [, page] of pages) {
     const entry = parseCache.get(join(WIKI_DIR, page.path));
     if (entry && entry.page === page && entry.htmlSig === sig && page.html) {
@@ -662,7 +655,7 @@ export function resolveRelatedList(
 // their HTTP/static outputs, so both call one source of truth. Pure functions.
 
 // Summary entry for the pages list (/api/pages, dist/data/pages.json).
-export function pageSummary(page: WikiPage) {
+export function pageSummary(page: WikiPage, referencedBy = 0) {
   return {
     slug: page.slug,
     title: page.title,
@@ -671,6 +664,8 @@ export function pageSummary(page: WikiPage) {
     tags: page.tags,
     category: page.category,
     linkCount: page.links.length,
+    referencedBy,
+    summary: page.summary || "",
     updated: page.updated,
     mtime: page.mtime,
     wordCount: page.wordCount,
@@ -684,7 +679,8 @@ export function pageDetail(
   page: WikiPage,
   pages: Map<string, WikiPage>,
   backlinks: Map<string, { slug: string; title: string; type: string }[]>,
-  fileAliases?: Map<string, string>
+  fileAliases?: Map<string, string>,
+  rawSources: RawSource[] = []
 ) {
   return {
     slug: page.slug,
@@ -693,6 +689,8 @@ export function pageDetail(
     domain: page.domain,
     tags: page.tags,
     sources: page.sources,
+    sourceLinks: page.sources.map(name => { const source = resolveSource(name, rawSources); return { name, id: source?.id || null, title: source?.title || name, path: source?.path || name, capturedAt: source?.capturedAt || null }; }),
+    reviewed: page.reviewed, reviewStatus: page.reviewStatus, reviewNotes: page.reviewNotes, sourceGaps: page.sourceGaps, summary: page.summary,
     related: resolveRelatedList(page.related, pages, fileAliases),
     created: page.created,
     updated: page.updated,
@@ -707,16 +705,12 @@ export function pageDetail(
 }
 
 // Search-index entry (/data/search.json) — keeps content for client snippets.
-export function searchIndexEntry(page: WikiPage) {
-  return {
-    slug: page.slug,
-    title: page.title,
-    type: page.type,
-    domain: page.domain,
-    tags: page.tags,
-    category: page.category,
-    content: page.content,
-  };
+export function searchIndexEntry(page: WikiPage): SearchDocument {
+  const sections: {id: string; title: string; content: string}[] = [];
+  const chunks = page.content.split(/(?=^#{1,4} )/m).filter(c => /^#{1,4} /.test(c));
+  chunks.forEach((chunk, i) => { const h = page.headings[i]; if (h) sections.push({ id: h.id, title: h.text, content: plainText(chunk) }); });
+  return { slug: page.slug, title: page.title, type: page.type, domain: page.domain,
+    tags: page.tags, category: page.category, content: plainText(page.content), href: `/page/${page.slug}`, sections };
 }
 
 // --- Tags ---
@@ -726,8 +720,8 @@ export function computeTagIndex(
 ): { tag: string; count: number; pages: { slug: string; title: string; type: string }[] }[] {
   const tagMap = new Map<string, { slug: string; title: string; type: string }[]>();
   for (const [slug, page] of pages) {
-    for (const tag of page.tags || []) {
-      const key = String(tag).toLowerCase();
+    for (const tag of new Set((page.tags || []).map(canonicalTag))) {
+      const key = String(tag);
       if (!tagMap.has(key)) tagMap.set(key, []);
       tagMap.get(key)!.push({ slug, title: page.title, type: page.type });
     }
@@ -743,11 +737,10 @@ export function computeTagIndex(
 
 // --- Lint ---
 
-const STALE_DAYS = 90;
-
 export function computeLint(
   pages: Map<string, WikiPage>,
-  backlinks: Map<string, { slug: string; title: string; type: string }[]>
+  backlinks: Map<string, { slug: string; title: string; type: string }[]>,
+  rawSources?: RawSource[]
 ): LintIssue[] {
   const issues: LintIssue[] = [];
   const now = Date.now();
@@ -777,6 +770,13 @@ export function computeLint(
       }
     }
 
+    for (const name of page.related) {
+      if (!resolveLink(name, pages, fileAliases)) issues.push({ kind: "broken-related", slug, title: page.title, detail: name, priority: "high", domain: page.domain });
+    }
+    if (rawSources) for (const name of page.sources) {
+      if (!resolveSource(name, rawSources)) issues.push({ kind: "broken-source", slug, title: page.title, detail: name, priority: "high", domain: page.domain });
+    }
+    if (page.sourceGaps?.length) issues.push({ kind: "source-gap", slug, title: page.title, detail: page.sourceGaps.join("; "), priority: "high", domain: page.domain });
     if (!page.type || page.type === "unknown") {
       issues.push({ kind: "missing-type", slug, title: page.title });
     }
@@ -789,11 +789,14 @@ export function computeLint(
       issues.push({ kind: "missing-domain", slug, title: page.title });
     }
 
-    // Stale (based on frontmatter `updated` if present, else mtime)
-    const u = page.updated ? new Date(page.updated).getTime() : page.mtime;
-    if (!isMeta && !Number.isNaN(u) && now - u > STALE_DAYS * 86400 * 1000) {
-      const days = Math.floor((now - u) / (86400 * 1000));
-      issues.push({ kind: "stale", slug, title: page.title, detail: `${days}d` });
+    const consequential = ["health", "electrics"].includes(page.domain);
+    const archive = page.type === "source" || page.reviewStatus === "archive";
+    if (!isMeta && !archive && (page.reviewStatus === "unverified" || page.reviewStatus === "partial" || (consequential && !page.reviewed))) {
+      issues.push({ kind: "needs-review", slug, title: page.title, domain: page.domain,
+        priority: consequential ? "high" : "normal", detail: page.reviewNotes || "Claims have not had a recorded evidence review." });
+    } else if (!isMeta && !archive && page.reviewed) {
+      const due = page.reviewDue ? new Date(page.reviewDue).getTime() : new Date(page.reviewed).getTime() + (consequential ? 90 : 365) * 86400000;
+      if (Number.isFinite(due) && now > due) issues.push({kind: "stale", slug, title: page.title, domain: page.domain, detail: `Evidence review due since ${new Date(due).toISOString().slice(0,10)}`, priority: consequential ? "high" : "normal"});
     }
   }
 
@@ -812,7 +815,7 @@ export function computeLint(
     }
   }
 
-  return issues;
+  return issues.map(issue => ({...issue, domain: issue.domain || pages.get(issue.slug)?.domain}));
 }
 
 // --- Timeline (parsed from wiki/log.md) ---
@@ -822,6 +825,7 @@ export interface TimelineEntry {
   op: string;
   detail: string;
   body: string;
+  html?: string;
 }
 
 export function parseLog(logContent: string): TimelineEntry[] {
@@ -841,15 +845,16 @@ export function parseLog(logContent: string): TimelineEntry[] {
       body,
     });
   }
-  return entries.reverse(); // newest first
+  return entries.reverse().sort((a, b) => b.date.localeCompare(a.date)); // stable within the same day
 }
 
-export async function loadTimeline(): Promise<TimelineEntry[]> {
+export async function loadTimeline(pages: Map<string, WikiPage> = new Map()): Promise<TimelineEntry[]> {
   try {
     const path = join(WIKI_DIR, "log.md");
     const raw = await readFile(path, "utf-8");
     const { content } = matter(raw);
-    return parseLog(content);
+    const aliases = buildFileAliases(pages);
+    return parseLog(content).map(e => ({ ...e, html: markdownToHtml(e.body, new Set(), pages, aliases) }));
   } catch {
     return [];
   }
@@ -979,7 +984,7 @@ async function collectRawSources(): Promise<
       if (entry.isDirectory()) {
         if (INGEST_SKIP_DIRS.has(entry.name)) continue;
         await walk(join(dir, entry.name), rel);
-      } else if (entry.name.endsWith(".md")) {
+      } else if (entry.isFile() && entry.name.endsWith(".md")) {
         try {
           const full = join(dir, entry.name);
           const st = await stat(full);
@@ -1112,102 +1117,6 @@ function normalizeRawRelPath(f: string): string {
 }
 
 // --- Search ---
-
-// What fuse.js indexes per page. Keeping content here lets fuzzy matching reach
-// body text; the snippet is still derived from the raw content at query time.
-interface SearchDoc {
-  slug: string;
-  title: string;
-  type: string;
-  domain: string;
-  category: string;
-  tags: string;
-  content: string;
-}
-
-export interface SearchResult {
-  slug: string;
-  title: string;
-  type: string;
-  domain: string;
-  category: string;
-  snippet: string;
-  score: number;
-}
-
-// Field weights mirror the old hand-tuned priorities (title >> tags > content).
-const FUSE_OPTIONS: import("fuse.js").IFuseOptions<SearchDoc> = {
-  includeScore: true,
-  ignoreLocation: true, // a content match anywhere in the body should count
-  threshold: 0.4,
-  minMatchCharLength: 2,
-  keys: [
-    { name: "title", weight: 3 },
-    { name: "tags", weight: 2 },
-    { name: "category", weight: 1 },
-    { name: "domain", weight: 1 },
-    { name: "content", weight: 0.5 },
-  ],
-};
-
-// Building the Fuse index over every page's content is the expensive part, so
-// cache it and only rebuild when the page set changes (add/remove/rename). The
-// signature reuses slugSetSignature — fuzzy ranking over title/tags/category is
-// stable for a fixed set, and content edits don't change which pages exist.
-let searchIndexCache: { sig: string; fuse: Fuse<SearchDoc>; docs: Map<string, SearchDoc> } | null = null;
-
-function getSearchIndex(pages: Map<string, WikiPage>) {
-  const sig = slugSetSignature(pages);
-  if (searchIndexCache && searchIndexCache.sig === sig) return searchIndexCache;
-  const docs = new Map<string, SearchDoc>();
-  const list: SearchDoc[] = [];
-  for (const [slug, page] of pages) {
-    const doc: SearchDoc = {
-      slug,
-      title: page.title,
-      type: page.type,
-      domain: page.domain,
-      category: page.category,
-      tags: (page.tags || []).join(" "),
-      content: page.content,
-    };
-    docs.set(slug, doc);
-    list.push(doc);
-  }
-  const fuse = new Fuse(list, FUSE_OPTIONS);
-  searchIndexCache = { sig, fuse, docs };
-  return searchIndexCache;
-}
-
-// Build a ~120-char snippet around the first literal occurrence of the query in
-// the content, falling back to the head of the content (matches prior behavior).
-export function buildSnippet(content: string, query: string): string {
-  const idx = content.toLowerCase().indexOf(query.toLowerCase());
-  if (idx !== -1) {
-    const start = Math.max(0, idx - 60);
-    const end = Math.min(content.length, idx + query.length + 60);
-    return (start > 0 ? "..." : "") + content.slice(start, end).replace(/\n/g, " ") + (end < content.length ? "..." : "");
-  }
-  return content.slice(0, 120).replace(/\n/g, " ") + "...";
-}
-
-export function searchPages(pages: Map<string, WikiPage>, query: string): SearchResult[] {
-  const q = query.trim();
-  if (!q) return [];
-  const { fuse, docs } = getSearchIndex(pages);
-
-  // fuse score: 0 = perfect, 1 = worst. Invert into the descending "higher is
-  // better" score the client sorts on and expects (results[].score).
-  return fuse.search(q).map(({ item, score }) => {
-    const doc = docs.get(item.slug)!;
-    return {
-      slug: doc.slug,
-      title: doc.title,
-      type: doc.type,
-      domain: doc.domain,
-      category: doc.category,
-      snippet: buildSnippet(doc.content, q),
-      score: 1 - (score ?? 0),
-    };
-  });
+export function searchPages(pages: Map<string, WikiPage>, query: string) {
+  return searchDocuments([...pages.values()].map(searchIndexEntry), query);
 }

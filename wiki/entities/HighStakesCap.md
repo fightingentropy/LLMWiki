@@ -2,11 +2,23 @@
 title: HighStakesCap
 type: entity
 domain: markets
-sources: [CT.md, Trading.md]
-related: [[CT]], [[Traders Directory]], [[Trading_Psychology]], [[Markets - Trading]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [trader, twitter, crypto, psychology, risk-management, execution]
+sources:
+  - misc/CT.md
+  - markets/Trading.md
+related:
+  - Crypto Takes
+  - Traders Directory
+  - Trading Psychology
+  - Markets - Trading
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - psychology
+  - risk-management
+  - execution
 ---
 
 # HighStakesCap

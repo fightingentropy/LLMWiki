@@ -2,44 +2,45 @@
 title: Retatrutide
 type: entity
 domain: health
-sources: [Peptides.md]
-related: [Peptides, Peptide Reconstitution, Bacteriostatic Water, Body_Optimization, Supplements]
-created: 2026-06-24
-updated: 2026-06-24
-tags: [peptide, retatrutide, glp-1, gip, glucagon, weight-loss, investigational]
+sources:
+  - misc/Peptides.md
+  - clippings/evidence-review-2026-09-22/Health.md
+related:
+  - Peptides
+  - Peptide Reconstitution
+  - Bacteriostatic Water
+  - Health Evidence
+created: 2026-06-24T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - peptide
+  - retatrutide
+  - glp-1
+  - gip
+  - glucagon
+  - weight-loss
+  - investigational
+summary: >-
+  Dated US regulatory status and the evidence missing from the saved retatrutide
+  guide.
+reviewed: '2026-09-22'
+review_status: partial
+review_notes: >-
+  The corrections below were checked against the cited sources. Other retained
+  claims are identified as unresolved.
+review_due: '2026-12-21'
 ---
 
 # Retatrutide
 
-**Retatrutide (LY3437943)** is an investigational injectable peptide developed by Eli Lilly, studied for weight loss and metabolic disease. As characterized in the source guide (from [[Peptides]]): an **investigational compound still in Phase 3 clinical trials, not FDA-approved.** Treated here as a personal research reference, not an endorsement or medical advice.
+Retatrutide (LY3437943) is the investigational compound discussed in the saved [[Peptides]] guide. That guide is an archive of claims, not an approved product label.
 
-## What It Is
+## Regulatory check
 
-- A multi-receptor agonist in the GLP-1 class (commonly described as a **triple agonist** of the GLP-1, GIP, and glucagon receptors — the "next generation" beyond single GLP-1 drugs like semaglutide and the dual GLP-1/GIP agonist tirzepatide).
-- Code name **LY3437943** (Eli Lilly).
-- Supplied as **lyophilized (freeze-dried) powder**, typically in 5 mg, 10 mg, or 30 mg vials, requiring reconstitution before use.
+As checked on 22 September 2026, the [FDA](https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss) says retatrutide is not a component of an FDA-approved drug. This is a US regulatory statement; no UK approval conclusion is inferred from it. (from [[Health Evidence Review - September 2026]])
 
-## Effects & Side Effects (per source)
+## What this wiki has not established
 
-- **Appetite suppression** becomes noticeable around the 4 mg/week step.
-- **GI side effects** (nausea, vomiting, diarrhea) are the dose-limiting factor — they begin in early escalation and are the reason titration must be gradual.
-- **Significant weight loss** at therapeutic doses (9 mg) and above.
+The archive does not authenticate any vendor's vial, establish a safe personal dose, validate a storage period or provide a formulation-specific stability study. Its dose-escalation and dilution tables remain accessible in the original source but are not carried forward as clinical instructions.
 
-## Handling & Dosing Summary
-
-Full procedural detail lives in [[Peptide Reconstitution]]; the retatrutide-specific essentials:
-
-- **Reconstitute** with [[Bacteriostatic Water]] — popular setup is **10 mg vial + 2 mL BAC water = 5 mg/mL** (1 mg = 20 units on a U-100 syringe).
-- **Route:** subcutaneous only, **once weekly**, same day each week, rotating injection sites.
-- **Titration:** 1 → 2 → 4 → 6 → 9 → 12 mg over ~21+ weeks. **12 mg is the max dose studied in trials.** Do not skip steps; hold an extra 2–4 weeks if side effects are significant.
-- **Storage:** lyophilized powder keeps for months–years cold; **reconstituted solution lasts up to 28 days refrigerated** and must never be frozen or left at room temperature.
-
-## See Also
-
-- [[Peptides]] — the source reconstitution guide
-- [[Peptide Reconstitution]] — generalized peptide handling
-- [[Bacteriostatic Water]] — the reconstitution solvent
-- [[Body_Optimization]], [[Supplements]] — adjacent health material
-
----
-Related: [[Peptides]], [[Peptide Reconstitution]], [[Bacteriostatic Water]], [[Body_Optimization]], [[Supplements]]
+Follow [[Peptide Reconstitution]] and [[Bacteriostatic Water]] for the limits of the preparation claims; [[Health Evidence]] describes how to distinguish a study, a product and a personal treatment decision.

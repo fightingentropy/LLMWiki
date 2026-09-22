@@ -2,11 +2,22 @@
 title: Capital Allocation Timing
 type: topic
 domain: markets
-sources: [Bizz & Finance.md, markets/Articles.md, markets/Trading.md]
-related: [Trading_Psychology, Markets, Behavioral_Finance, Risk Analysis]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [capital-allocation, timing, asymmetry, risk-management]
+sources:
+  - misc/Bizz & Finance.md
+  - markets/Articles.md
+  - markets/Trading.md
+related:
+  - Trading Psychology
+  - Markets
+  - Behavioral Finance
+  - Risk Analysis
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - capital-allocation
+  - timing
+  - asymmetry
+  - risk-management
 ---
 
 # Capital Allocation Timing

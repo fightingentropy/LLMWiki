@@ -2,11 +2,25 @@
 title: Psychology & Behavior
 type: source
 domain: psychology
-sources: [Psychology.md]
-related: [Mental Health, Self-Improvement, Philosophy, Trading Psychology]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [psychology, behavior, trauma, cognition, relationships]
+sources:
+  - misc/Psychology.md
+related:
+  - Mental Health
+  - Self-Improvement
+  - Philosophy & Meaning
+  - Trading Psychology
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - psychology
+  - behavior
+  - trauma
+  - cognition
+  - relationships
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Psychology & Behavior
@@ -63,7 +77,7 @@ Men watch porn, women watch mirrors.
 Language rewires neurology. Self-labeling creates pathways.
 
 ## Depression Origins
-"Chemical imbalance theory conclusively disproven. What causes depression? Learned helplessness. Not leaving house, no socializing, high dopamine baseline (social media), lack sunlight, poor diet/sleep."
+**Source viewpoint, not a clinical conclusion:** "Chemical imbalance theory conclusively disproven. What causes depression? Learned helplessness. Not leaving house, no socializing, high dopamine baseline (social media), lack sunlight, poor diet/sleep."
 
 ## Trading Psychology
 Why people trade:
@@ -89,3 +103,7 @@ Famous Richter rat study (1957): Domesticated rats swim 40-60 hours; wild rats d
 
 ---
 Related: [[Mental_Health]], [[Self_Improvement]], [[Philosophy_and_Meaning]], [[Trading_Psychology]]
+
+## Evidence boundary
+
+The quoted single-cause account of depression is a retained viewpoint, not a complete explanation or treatment model. See [[Mental_Health]] for the corrected synthesis and [[Health Evidence]] for evidence standards.

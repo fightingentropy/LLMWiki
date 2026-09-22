@@ -2,11 +2,21 @@
 title: Lex Fridman
 type: entity
 domain: culture
-sources: [Body.md, X takes.md]
-related: [Andrew Huberman, Tim Ferriss, Self-Improvement Culture]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [fridman, podcaster, ai, optimization, critique]
+sources:
+  - misc/Body.md
+  - misc/X takes.md
+related:
+  - Andrew Huberman
+  - Tim Ferriss
+  - Self-Improvement Culture Critique
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - fridman
+  - podcaster
+  - ai
+  - optimization
+  - critique
 ---
 
 # Lex Fridman

@@ -2,11 +2,18 @@
 title: Curtis Yarvin (Mencius Moldbug)
 type: entity
 domain: culture
-sources: [Culture.md, Political_Commentary.md]
-related: [Political Philosophy, Entropy vs Extropy]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [yarvin, mencius-moldbug, political-philosophy]
+sources:
+  - misc/Culture.md
+  - misc/Politics.md
+related:
+  - Political Philosophy
+  - Entropy vs Extropy
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - yarvin
+  - mencius-moldbug
+  - political-philosophy
 ---
 
 # Curtis Yarvin (Mencius Moldbug)

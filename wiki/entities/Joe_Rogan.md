@@ -2,11 +2,21 @@
 title: Joe Rogan
 type: entity
 domain: culture
-sources: [Top Pods.md]
-related: [Andrew_Huberman, Lex_Fridman, Masculinity_and_Men, Political_Commentary]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [rogan, jre, podcasting, long-form, celebrity]
+sources:
+  - misc/Top Pods.md
+related:
+  - Andrew Huberman
+  - Lex Fridman
+  - Masculinity & Men
+  - Political Commentary
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - rogan
+  - jre
+  - podcasting
+  - long-form
+  - celebrity
 ---
 
 # Joe Rogan

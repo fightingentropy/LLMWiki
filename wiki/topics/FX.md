@@ -2,11 +2,21 @@
 title: FX
 type: topic
 domain: markets
-sources: [Brief.md]
-related: [[Cross-Asset Analysis]], [[Market Regime]], [[Macro Trading]], [[DXY]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [fx, currencies, dollar, carry-trade, macro]
+sources:
+  - markets/Brief.md
+related:
+  - Cross-Asset Analysis
+  - Market Regime
+  - Macro Trading
+  - DXY
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - fx
+  - currencies
+  - dollar
+  - carry-trade
+  - macro
 ---
 
 ## Overview

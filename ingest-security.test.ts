@@ -198,3 +198,17 @@ describe("staged validation and publication", () => {
     await removeIngestWorkspace(workspace);
   });
 });
+
+test('staged publication rejects broken metadata even when body links are valid',async()=>{
+ const {workspace,validated}=await stagedFixture();
+ await mkdir(join(workspace.wikiDir,'sources'),{recursive:true});
+ const file=join(workspace.wikiDir,'sources','Input.md');
+ const source=(refs:string,sources:string)=>`---\ntitle: Input\ntype: source\ndomain: dev\nsources: [${sources}]\nrelated: [${refs}]\ntags: [test]\n---\n\n[[Base]]\n`;
+ await writeFile(file,source('Missing','misc/input.md'));
+ await expect(validateStagedWiki(workspace,validated)).rejects.toThrow('broken related page');
+ await writeFile(file,source('Base','misc/input.md, misc/missing.md'));
+ await expect(validateStagedWiki(workspace,validated)).rejects.toThrow('missing source');
+ await writeFile(file,source('Base','misc/input.md'));
+ expect((await validateStagedWiki(workspace,validated)).changedFiles).toContain('sources/Input.md');
+ await removeIngestWorkspace(workspace);
+});

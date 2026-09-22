@@ -2,11 +2,22 @@
 title: trading_axe
 type: entity
 domain: markets
-sources: [CT.md]
-related: [[Traders Directory]], [[CT]], [[Trading_Psychology]], [[Sentiment]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [trader, twitter, crypto, psychology, culture, remilio]
+sources:
+  - misc/CT.md
+related:
+  - Traders Directory
+  - Crypto Takes
+  - Trading Psychology
+  - Sentiment
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - psychology
+  - culture
+  - remilio
 ---
 
 ## Overview

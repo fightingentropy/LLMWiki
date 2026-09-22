@@ -2,27 +2,39 @@
 title: Circadian Rhythm
 type: topic
 domain: health
-sources: [Medical.md, Body.md]
-related: [ADHD, Body_Optimization, Mental_Health, Supplements]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [circadian, sleep, adhd, dopamine, sunlight]
+sources:
+  - misc/Medical.md
+  - misc/Body.md
+  - clippings/bookmark-updates-2026-09-22/Health & Psychology.md
+related:
+  - ADHD
+  - Body Optimization
+  - Mental Health
+  - Bookmarks - Health & Psychology
+  - Health Evidence
+  - Supplements & Biohacking
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - circadian
+  - sleep
+  - adhd
+  - dopamine
+  - sunlight
 ---
 
 # Circadian Rhythm
 
-The 24-hour cycle regulating sleep, alertness, hormones, and temporal cognition. The wiki treats circadian alignment as a first-class lever on cognition and mood, not a downstream lifestyle concern.
+The daily timing of sleep, alertness, and related biological rhythms connects [[ADHD]], [[Body_Optimization]], and [[Mental_Health]] in the source notes.
 
-## In this wiki
+## ADHD evidence boundary
 
-Primary entry point is the reframing of [[ADHD]] as fundamentally a circadian rhythm disorder. Downstream implications appear in [[Body_Optimization]] (sleep timing, dopamine, sun exposure).
+The [2025 perspective](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1697900/full), checked 2026-09-22, describes a circadian phenotype in a subgroup. Its treatment discussion is adjunctive, and its hormone curves are conceptual illustrations rather than individual measurements. See the explicit correction in [[ADHD]]. (from [[Bookmarks - Health & Psychology]])
 
-## Key themes
+## Earlier claims needing qualification
 
-- **ADHD as circadian disorder.** Recently reconceptualized as a circadian rhythm disorder rather than purely an attention-deficit one — reframes treatment around sleep-wake cycles, chronotype, temporal cognition (from [[Medical]], [[ADHD]]). NIH source on ADHD meds stimulating alertness and motivation.
-- **Sleep timing > sleep duration.** Poor sleep timing causes brain fog. Late sleep → late wake → persistent fog. Proper circadian alignment essential ([[Body_Optimization]]).
-- **Sun → dopamine.** Dopamine synthesized from Tyrosine via Tyrosine Hydroxylase — the enzyme requires sunlight. Direct link between sun exposure and dopamine production ([[Body_Optimization]]).
-- **Magnesium before bed.** Magnesium Threonate/Bisglycinate 30-60min before bed — improves sleep quality as part of the circadian stack ([[Supplements]], [[Body_Optimization]]).
-- **Cold exposure.** Triggers dopamine release; effects dramatic and immediate — pairs with morning-light for waking up circadian machinery ([[Body_Optimization]]).
+The prior page presented “sleep timing > sleep duration,” sunlight as a requirement for dopamine synthesis, bedtime magnesium, and cold exposure as settled mechanisms or a general treatment stack. Those claims were stronger than the evidence provided in the cited personal notes. They remain source viewpoints to investigate, not prescriptions carried forward by this page.
 
-Related: [[ADHD]], [[Body_Optimization]], [[Supplements]], [[Mental_Health]]
+Sleep timing, light exposure, medication effects, and symptoms are separate questions; the bookmark alone cannot establish an individual's cause or treatment. [[Health Evidence]] records the standard used when adding clinical claims.
+
+Related: [[ADHD]], [[Body_Optimization]], [[Supplements]], [[Mental_Health]], [[Health Evidence]], [[Bookmarks - Health & Psychology]]

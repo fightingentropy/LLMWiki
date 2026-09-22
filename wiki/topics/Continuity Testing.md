@@ -2,11 +2,32 @@
 title: Continuity Testing
 type: topic
 domain: electrics
-sources: [raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection and Testing Demonstration.md, raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT Testing.md]
-related: [Dead Testing, Protective Conductors, Resistance Calculations, Test Lead Compensation, Conductor Properties]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [continuity, testing, protective-conductors, bonding, resistance, dead-tests]
+sources: []
+related:
+  - Safe Isolation
+  - Electrical Safety
+  - Ohm's Law and Electrical Calculations
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - continuity
+  - testing
+  - protective-conductors
+  - bonding
+  - resistance
+  - dead-tests
+source_gaps:
+  - >-
+    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
+    and Testing Demonstration.md
+  - >-
+    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT
+    Testing.md
+review_status: unverified
+review_notes: >-
+  Historical webinar summary. The original transcript is unavailable; detailed
+  test limits, procedures, chapter and exam references have not been
+  authenticated against current material.
 ---
 
 # Continuity Testing

@@ -2,11 +2,23 @@
 title: fewseethis
 type: entity
 domain: markets
-sources: [CT.md]
-related: [[CT]], [[Traders Directory]], [[Crypto Trading]], [[Liquidations]], [[Leverage]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [trader, twitter, crypto, liquidations, leverage, market-structure]
+sources:
+  - misc/CT.md
+related:
+  - Crypto Takes
+  - Traders Directory
+  - Crypto Trading
+  - Liquidations
+  - Leverage
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - liquidations
+  - leverage
+  - market-structure
 ---
 
 # fewseethis

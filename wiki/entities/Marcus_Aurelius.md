@@ -2,11 +2,20 @@
 title: Marcus Aurelius
 type: entity
 domain: culture
-sources: [Quotes.md]
-related: [Philosophy_and_Meaning, Seneca, Self_Improvement]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [stoic, emperor, philosophy, mortality, meditations]
+sources:
+  - misc/Quotes.md
+related:
+  - Philosophy & Meaning
+  - Seneca
+  - Self-Improvement
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - stoic
+  - emperor
+  - philosophy
+  - mortality
+  - meditations
 ---
 
 # Marcus Aurelius

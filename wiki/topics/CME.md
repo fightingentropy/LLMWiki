@@ -2,11 +2,21 @@
 title: CME
 type: topic
 domain: markets
-sources: [Articles.md]
-related: [[Commodities]], [[Exchange Microstructure]], [[Silver]], [[Trading Platforms]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [exchange, cme, commodities, derivatives, centralized]
+sources:
+  - markets/Articles.md
+related:
+  - Commodities
+  - Exchange Microstructure
+  - Silver
+  - Trading Platforms
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - exchange
+  - cme
+  - commodities
+  - derivatives
+  - centralized
 ---
 
 ## Overview

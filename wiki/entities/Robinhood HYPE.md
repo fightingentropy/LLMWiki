@@ -2,11 +2,20 @@
 title: Robinhood HYPE
 type: entity
 domain: markets
-sources: [Trading.md]
-related: [[Hyperliquid]], [[Wallets]], [[Market Participants]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [wallet, trading, robinhood, market-participant, hyperliquid]
+sources:
+  - markets/Trading.md
+related:
+  - Hyperliquid
+  - Digital Security
+  - Traders Directory
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - wallet
+  - trading
+  - robinhood
+  - market-participant
+  - hyperliquid
 ---
 
 ## Overview

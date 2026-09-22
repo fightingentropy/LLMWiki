@@ -2,11 +2,36 @@
 title: Crypto Takes
 type: source
 domain: markets
-sources: [CT.md]
-related: [[Markets - Trading]], [[Markets - Articles]], [[Crypto Trading]], [[Trading_Psychology]], [[Trading Philosophy]], [[Traders Directory]], [[Macro Trading]], [[Liquidations]], [[Leverage]], [[Exchange Microstructure]], [[Hyperliquid]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [crypto, trading, price-discovery, macro, market-structure, traders, psychology, twitter, quotes]
+sources:
+  - misc/CT.md
+related:
+  - Markets - Trading
+  - Markets - Articles
+  - Crypto Trading
+  - Trading Psychology
+  - Trading Philosophy
+  - Traders Directory
+  - Macro Trading
+  - Liquidations
+  - Leverage
+  - Exchange Microstructure
+  - Hyperliquid
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - crypto
+  - trading
+  - price-discovery
+  - macro
+  - market-structure
+  - traders
+  - psychology
+  - twitter
+  - quotes
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 ## Overview

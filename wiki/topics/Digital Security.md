@@ -2,11 +2,37 @@
 title: Digital Security
 type: topic
 domain: dev
-sources: ["bookmarks/Reference & Utilities.md", "bookmarks/AI & Agents.md", "bookmarks/Developer Tools.md", "bookmarks/Markets & Crypto.md"]
-related: [[AI Agents]], [[Developer_Resources]], [[Technology_Critique]], [[Grok Bot]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [security, privacy, accounts, devices, least-privilege, phishing]
+sources:
+  - bookmarks/Reference & Utilities.md
+  - bookmarks/AI & Agents.md
+  - bookmarks/Developer Tools.md
+  - bookmarks/Markets & Crypto.md
+  - clippings/bookmark-updates-2026-09-22/Reference & Utilities.md
+  - clippings/bookmark-updates-2026-09-22/Developer Tools.md
+  - clippings/bookmark-updates-2026-09-22/Business & Startups.md
+  - clippings/bookmark-updates-2026-09-22/Personal & Life.md
+related:
+  - X-Bookmarks
+  - Grok Bot
+  - AI Agents
+  - Developer Resources
+  - Technology Critique
+  - Quicker
+  - Omarchy iCloud Photos
+  - Helium Browser
+  - Bookmarks - Reference & Utilities
+  - Bookmarks - Developer Tools
+  - Bookmarks - Business & Startups
+  - Bookmarks - Personal & Life
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - security
+  - privacy
+  - accounts
+  - devices
+  - least-privilege
+  - phishing
 ---
 
 # Digital Security
@@ -30,3 +56,14 @@ The same rule applies to [[Grok Bot]], relationship graphs, and cross-device age
 The macOS `ComputerUseAllowForbiddenTargets` preference relaxes a safety boundary. It belongs in troubleshooting notes, not default setup: enable only for a understood target and delete the preference afterward. Experimental censorship-bypass features such as TLS ClientHello splitting can also make traffic fail or stand out; suitability depends on the network and personal risk.
 
 Related: [[AI Agents]], [[Developer_Resources]], [[Technology_Critique]], [[Grok Bot]]
+
+## September 2026 account and provenance references
+
+- [[Quicker]] raises the distinction between storing messages locally and processing, syncing, or backing them up elsewhere.
+- [[Omarchy iCloud Photos]] separates downloading copies from operations that change iCloud, including Shared Library assets.
+- [[Helium Browser]] gathers privacy-feature references; TLS fragmentation and debugging-warning changes remain version-specific.
+- The source retains KYC misuse only by link and a privacy-risk summary, without exposed identity data. Private-account graph inference is catalogued as a privacy-risk claim, not a workflow to perform.
+- Content credentials, reverse-image search, account-recovery services, and disposable phone numbers involve different provenance and recovery boundaries; a missing marker or search result does not itself establish authorship or identity.
+- An account-console bookmark is a navigation reference. It is not evidence that a service is connected, installed, or activated.
+
+Sources: [[Bookmarks - Reference & Utilities]], [[Bookmarks - Developer Tools]], [[Bookmarks - Business & Startups]], and [[Bookmarks - Personal & Life]].

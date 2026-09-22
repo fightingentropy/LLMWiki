@@ -17,6 +17,7 @@ import { basename, dirname, extname, isAbsolute, join, relative, resolve, sep } 
 import { tmpdir } from "os";
 import matter from "gray-matter";
 import { extractWikilinks, markdownToHtml, slugify } from "./lib";
+import { loadRawSources, resolveSource } from "./sources";
 
 export const DEFAULT_INGEST_LIMITS = {
   maxFiles: 50,
@@ -326,6 +327,21 @@ export async function validateStagedWiki(
     if (!current || !staged.equals(current)) changedFiles.push(rel);
   }
   if (changedFiles.length === 0) throw new Error("Ingest produced no wiki changes");
+
+  // A valid body can still conceal broken provenance or navigation in YAML.
+  // Validate changed pages only; an unrelated historical gap must not block ingest.
+  const rawSources = await loadRawSources(join(dirname(workspace.repoWikiDir), "raw"));
+  for (const page of parsedPages.filter(p => changedFiles.includes(p.rel))) {
+    const related = Array.isArray(page.data.related) ? page.data.related : page.data.related ? [page.data.related] : [];
+    for (const reference of related) {
+      const slug = slugify(String(reference).replace(/^\[\[|\]\]$/g, ""));
+      if (!titleSlugs.has(slug) && !fileSlugs.has(slug)) throw new Error(`Staged wiki has a broken related page in ${page.rel}: ${reference}`);
+    }
+    const sources = Array.isArray(page.data.sources) ? page.data.sources : page.data.sources ? [page.data.sources] : [];
+    for (const reference of sources) {
+      if (!resolveSource(String(reference), rawSources)) throw new Error(`Staged wiki has a missing source in ${page.rel}: ${reference}`);
+    }
+  }
 
   return { files, changedFiles, totalBytes };
 }

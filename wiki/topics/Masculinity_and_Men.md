@@ -2,11 +2,33 @@
 title: Masculinity & Men
 type: topic
 domain: culture
-sources: [Top Pods.md, Culture.md, X takes.md, Body.md, Women.md]
-related: [Dating_and_Relationships, Political_Commentary, Self_Improvement, Andrew_Huberman, Andrew_Tate, Joe_Rogan, Gender_Dynamics, DrDynamis, Heartiste]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [masculinity, men, gender, culture, performative-male, war-on-men, stoic, mediterranean]
+sources:
+  - misc/Top Pods.md
+  - misc/Culture.md
+  - misc/X takes.md
+  - misc/Body.md
+  - misc/Women.md
+related:
+  - Dating & Relationships
+  - Political Commentary
+  - Self-Improvement
+  - Andrew Huberman
+  - Andrew Tate
+  - Joe Rogan
+  - Gender Dynamics
+  - DrDynamis
+  - Heartiste
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - masculinity
+  - men
+  - gender
+  - culture
+  - performative-male
+  - war-on-men
+  - stoic
+  - mediterranean
 ---
 
 # Masculinity & Men

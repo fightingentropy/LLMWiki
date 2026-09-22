@@ -2,11 +2,28 @@
 title: EIC and MEIWC
 type: topic
 domain: electrics
-sources: [raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection and Testing Demonstration.md]
-related: [EICR, Building Regulations, Certification, Safe Addition to Installations, Documentation]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [certification, documentation, electrical-installation-certificate, minor-works, forms, compliance]
+sources: []
+related:
+  - EICR
+  - Building Regulations
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - certification
+  - documentation
+  - electrical-installation-certificate
+  - minor-works
+  - forms
+  - compliance
+source_gaps:
+  - >-
+    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
+    and Testing Demonstration.md
+review_status: unverified
+review_notes: >-
+  Historical webinar summary. The original transcript is unavailable; detailed
+  test limits, procedures, chapter and exam references have not been
+  authenticated against current material.
 ---
 
 # EIC and MEIWC

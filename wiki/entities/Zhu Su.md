@@ -2,11 +2,22 @@
 title: Zhu Su
 type: entity
 domain: markets
-sources: [X-Bookmarks.md]
-related: [[X-Bookmarks]], [[Traders Directory]], [[Crypto Trading]], [[Trading_Psychology]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [crypto, founder, 3ac, opnx, psychology, exit-discipline]
+sources:
+  - misc/X-Bookmarks.md
+related:
+  - X-Bookmarks
+  - Traders Directory
+  - Crypto Trading
+  - Trading Psychology
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - crypto
+  - founder
+  - 3ac
+  - opnx
+  - psychology
+  - exit-discipline
 ---
 
 # Zhu Su

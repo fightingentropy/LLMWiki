@@ -2,11 +2,24 @@
 title: Andrew Huberman
 type: entity
 domain: culture
-sources: [Body.md, X takes.md, Top Pods.md]
-related: [Tim Ferriss, Lex Fridman, Self-Improvement Culture, Masculinity_and_Men, Top-Pods]
-created: 2026-04-12
-updated: 2026-04-18
-tags: [huberman, podcaster, neuroscience, optimization, criticism]
+sources:
+  - misc/Body.md
+  - misc/X takes.md
+  - misc/Top Pods.md
+related:
+  - Tim Ferriss
+  - Lex Fridman
+  - Self-Improvement Culture Critique
+  - Masculinity & Men
+  - Top Pods
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - huberman
+  - podcaster
+  - neuroscience
+  - optimization
+  - criticism
 ---
 
 # Andrew Huberman

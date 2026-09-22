@@ -2,11 +2,22 @@
 title: Positioning
 type: topic
 domain: markets
-sources: [Brief.md, Trading.md]
-related: [[Risk Analysis]], [[Liquidations]], [[Sentiment]], [[Market Drivers]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [positioning, leverage, crowding, extremes, squeeze]
+sources:
+  - markets/Brief.md
+  - markets/Trading.md
+related:
+  - Risk Analysis
+  - Liquidations
+  - Sentiment
+  - Market Drivers
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - positioning
+  - leverage
+  - crowding
+  - extremes
+  - squeeze
 ---
 
 ## Overview

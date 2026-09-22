@@ -9,7 +9,8 @@ raw/                   # Immutable source documents. LLM reads, never modifies.
   misc/                # Personal notes, bookmarks, takes, observations
   markets/             # Trading, macro, crypto, finance
   electrics/           # Electrical safety, building regs, study notes
-  clippings/           # Web clips (articles, transcripts, videos)
+  clippings/           # Web clips and dated research notes
+  snapshots/           # Immutable dated revisions captured from the vault
   assets/              # Images referenced by sources
 wiki/                  # LLM-generated pages. LLM owns this entirely.
   INDEX.md             # Content catalog - every wiki page listed with summary
@@ -58,6 +59,12 @@ related: [list of wiki pages this page links to]
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 tags: [relevant tags]
+summary: Optional concise reader summary
+reviewed: YYYY-MM-DD     # Only after a scoped evidence check
+review_status: reviewed | verified | partial | unverified | archive
+review_notes: What was checked and what remains uncertain
+review_due: YYYY-MM-DD   # Optional explicit review deadline
+source_gaps: []          # Historical source names that cannot currently be found
 ---
 ```
 
@@ -68,6 +75,8 @@ Use Obsidian-style wikilinks: `[[Page Name]]`. Every page should link to related
 ## Workflows
 
 ### Ingest
+
+Capture revisions as new files under `raw/snapshots/`; never overwrite or delete an existing raw source. Cite a raw-relative file path to pin a version. Capture, synthesis and evidence review are separate events.
 
 When the human adds a new source to `raw/`:
 
@@ -99,7 +108,10 @@ Periodic health check. The UI's `/lint` view automatically surfaces:
 - Orphan pages (no inbound wikilinks)
 - Broken wikilinks (pointing at non-existent pages)
 - Pages with missing `type`, `domain`, or `tags` in frontmatter
-- Stale pages (`updated` more than 90 days old)
+- Broken `related` references and missing raw source paths
+- Explicit historical source gaps
+- Unreviewed health/electrical claims and pages marked partial or unverified
+- Overdue evidence reviews (`review_due`, or 90 days for health/electrics and 365 days elsewhere after `reviewed`); source archives are exempt from age alone
 - Duplicate titles (where wikilinks may resolve ambiguously)
 
 These can be resolved automatically; the LLM should additionally watch for issues the UI can't detect:
@@ -133,4 +145,4 @@ The wiki currently spans these domains (expect this list to grow):
 ## Local Dev
 
 - `wiki`: run `bun server.ts`.
-- The local dev server listens on port 3000.
+- The local dev server defaults to port 3000; use `PORT=3001 bun server.ts` when another project occupies it.

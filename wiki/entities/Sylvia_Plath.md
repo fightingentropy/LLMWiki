@@ -2,11 +2,20 @@
 title: Sylvia Plath
 type: entity
 domain: culture
-sources: [Quotes.md]
-related: [[Quotes]], [[Philosophy_and_Meaning]], [[Self_Improvement]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [writer, poet, american, mental-health, ambition]
+sources:
+  - misc/Quotes.md
+related:
+  - Quotes
+  - Philosophy & Meaning
+  - Self-Improvement
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - writer
+  - poet
+  - american
+  - mental-health
+  - ambition
 ---
 
 # Sylvia Plath

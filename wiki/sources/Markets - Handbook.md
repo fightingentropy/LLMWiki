@@ -2,11 +2,24 @@
 title: Markets - Handbook
 type: source
 domain: markets
-sources: [Handbook.md]
-related: [[Exchange Hours]], [[Commodities]], [[Market Structure]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [exchange-hours, commodities, trading-hours, reference-data, handbook]
+sources:
+  - markets/Handbook.md
+related:
+  - Exchange Hours
+  - Commodities
+  - Exchange Microstructure
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - exchange-hours
+  - commodities
+  - trading-hours
+  - reference-data
+  - handbook
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 ## Stock Exchange Opening Hours

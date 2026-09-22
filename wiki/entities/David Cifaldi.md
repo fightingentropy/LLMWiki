@@ -2,11 +2,19 @@
 title: David Cifaldi
 type: entity
 domain: personal
-sources: [Stories.md]
-related: [[Stories]], [[Self_Improvement]], [[Fitness]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [self-rescue, endurance, granite-peak, emergency]
+sources:
+  - misc/Stories.md
+related:
+  - Stories
+  - Self-Improvement
+  - Fitness
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - self-rescue
+  - endurance
+  - granite-peak
+  - emergency
 ---
 
 # David Cifaldi

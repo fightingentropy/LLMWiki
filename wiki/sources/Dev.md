@@ -2,11 +2,23 @@
 title: Dev Resources
 type: source
 domain: dev
-sources: [misc/Dev.md]
-related: [[Developer_Resources]], [[Design_and_Aesthetics]], [[AI Agents]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [development, tools, resources, links]
+sources:
+  - misc/Dev.md
+related:
+  - Developer Resources
+  - Design & Aesthetics
+  - AI Agents
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - development
+  - tools
+  - resources
+  - links
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Developer Resources

@@ -2,11 +2,20 @@
 title: Markets
 type: topic
 domain: markets
-sources: [Bizz & Finance.md]
-related: [Trading Psychology, Economics, Business Strategy]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [markets, trading, economics, finance, business]
+sources:
+  - misc/Bizz & Finance.md
+related:
+  - Trading Psychology
+  - Economics
+  - Business Strategy
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - markets
+  - trading
+  - economics
+  - finance
+  - business
 ---
 
 # Markets

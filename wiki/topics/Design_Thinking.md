@@ -2,11 +2,21 @@
 title: Design Thinking
 type: topic
 domain: dev
-sources: [Thoughts.md, Design.md]
-related: [Design_and_Aesthetics, Philosophy_and_Meaning, Developer_Resources]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [design, taste, aesthetics, thinking, craft]
+sources:
+  - misc/Thoughts.md
+  - misc/Design.md
+related:
+  - Design & Aesthetics
+  - Philosophy & Meaning
+  - Developer Resources
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - design
+  - taste
+  - aesthetics
+  - thinking
+  - craft
 ---
 
 # Design Thinking

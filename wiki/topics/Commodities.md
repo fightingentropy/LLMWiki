@@ -2,11 +2,24 @@
 title: Commodities
 type: topic
 domain: markets
-sources: [Handbook.md, Articles.md]
-related: [[Market Regime]], [[Macro Trading]], [[Cross-Asset Analysis]], [[Oil]], [[Natural Gas]], [[Gold]], [[Silver]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [commodities, raw-materials, supply-demand, trading]
+sources:
+  - markets/Handbook.md
+  - markets/Articles.md
+related:
+  - Market Regime
+  - Macro Trading
+  - Cross-Asset Analysis
+  - Oil
+  - Natural Gas
+  - Gold
+  - Silver
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - commodities
+  - raw-materials
+  - supply-demand
+  - trading
 ---
 
 ## Overview

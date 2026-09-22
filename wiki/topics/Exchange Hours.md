@@ -2,11 +2,18 @@
 title: Exchange Hours
 type: topic
 domain: markets
-sources: [Handbook.md]
-related: [[Market Structure]], [[Cross-Asset Analysis]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [trading-hours, schedule, reference, exchanges]
+sources:
+  - markets/Handbook.md
+related:
+  - Exchange Microstructure
+  - Cross-Asset Analysis
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trading-hours
+  - schedule
+  - reference
+  - exchanges
 ---
 
 ## Stock Exchanges

@@ -2,11 +2,21 @@
 title: Naval Ravikant
 type: entity
 domain: personal
-sources: [Quotes.md]
-related: [Self_Improvement, Philosophy_and_Meaning, Trading_Psychology]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [founder, angelist, aphorism, agency, wealth, freedom]
+sources:
+  - misc/Quotes.md
+related:
+  - Self-Improvement
+  - Philosophy & Meaning
+  - Trading Psychology
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - founder
+  - angelist
+  - aphorism
+  - agency
+  - wealth
+  - freedom
 ---
 
 # Naval Ravikant

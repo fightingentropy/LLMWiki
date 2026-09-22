@@ -2,11 +2,23 @@
 title: Catfish Effect
 type: topic
 domain: markets
-sources: [Bizz & Finance.md, Culture.md]
-related: [Business_Strategy, Business_Philosophy, Markets, Stress_Management]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [catfish-effect, competition, china, hr, managed-stress, tesla]
+sources:
+  - misc/Bizz & Finance.md
+  - misc/Culture.md
+related:
+  - Business Strategy
+  - Business Philosophy
+  - Markets
+  - Stress Management
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - catfish-effect
+  - competition
+  - china
+  - hr
+  - managed-stress
+  - tesla
 ---
 
 # Catfish Effect (鲶鱼效应)

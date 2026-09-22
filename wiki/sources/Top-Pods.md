@@ -2,11 +2,32 @@
 title: Top Pods
 type: source
 domain: culture
-sources: [Top Pods.md]
-related: [Masculinity_and_Men, Andrew_Huberman, Andrew_Tate, Joe_Rogan, Dating_and_Relationships, Mental_Health, Political_Commentary, Youtube]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [bookmarks, youtube, podcasts, masculinity, huberman, tate, rogan, culture]
+sources:
+  - misc/Top Pods.md
+related:
+  - Masculinity & Men
+  - Andrew Huberman
+  - Andrew Tate
+  - Joe Rogan
+  - Dating & Relationships
+  - Mental Health
+  - Political Commentary
+  - Youtube
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - bookmarks
+  - youtube
+  - podcasts
+  - masculinity
+  - huberman
+  - tate
+  - rogan
+  - culture
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Top Pods

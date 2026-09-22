@@ -2,11 +2,26 @@
 title: Business & Finance
 type: source
 domain: markets
-sources: ["misc/Bizz & Finance.md"]
-related: [Trading Psychology, Markets, Crypto, Business Strategy]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [finance, markets, business, trading, economics, psychology]
+sources:
+  - misc/Bizz & Finance.md
+related:
+  - Trading Psychology
+  - Markets
+  - Crypto Trading
+  - Business Strategy
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - finance
+  - markets
+  - business
+  - trading
+  - economics
+  - psychology
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Business & Finance

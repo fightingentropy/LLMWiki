@@ -2,11 +2,19 @@
 title: Peter Thiel
 type: entity
 domain: culture
-sources: [Quotes.md]
-related: [[Quotes]], [[Self_Improvement]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [investor, paypal, contrarian, founder, courage]
+sources:
+  - misc/Quotes.md
+related:
+  - Quotes
+  - Self-Improvement
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - investor
+  - paypal
+  - contrarian
+  - founder
+  - courage
 ---
 
 # Peter Thiel

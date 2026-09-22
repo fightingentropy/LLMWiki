@@ -2,11 +2,23 @@
 title: LomahCrypto
 type: entity
 domain: markets
-sources: [CT.md, Bizz & Finance.md]
-related: [[CT]], [[Traders Directory]], [[Trading_Psychology]], [[Crypto Trading]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [trader, twitter, crypto, psychology, risk-management, exit-discipline]
+sources:
+  - misc/CT.md
+  - misc/Bizz & Finance.md
+related:
+  - Crypto Takes
+  - Traders Directory
+  - Trading Psychology
+  - Crypto Trading
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - psychology
+  - risk-management
+  - exit-discipline
 ---
 
 # LomahCrypto

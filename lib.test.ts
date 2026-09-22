@@ -272,3 +272,28 @@ describe("searchPages", () => {
     expect(results.every((r) => typeof r.snippet === "string")).toBe(true);
   });
 });
+
+test('review uses evidence dates, keeps archives out of age-only queues, and checks provenance',()=>{
+ const archive=mkPage({slug:'archive',title:'Archive',type:'source',domain:'health',updated:'2001-01-01',sources:['missing.md'],related:['Missing']});
+ const changed=mkPage({slug:'changed',title:'Changed',domain:'health',updated:'2099-01-01'});
+ const reviewed={...mkPage({slug:'reviewed',title:'Reviewed',domain:'health'}),reviewed:'2026-09-22',reviewStatus:'verified',reviewDue:'2099-01-01'};
+ const pages=mapOf(archive,changed,reviewed),issues=computeLint(pages,computeBacklinks(pages),[]);
+ expect(issues.some(i=>i.slug==='archive'&&['needs-review','stale'].includes(i.kind))).toBe(false);
+ expect(issues.some(i=>i.slug==='archive'&&i.kind==='broken-source')).toBe(true);
+ expect(issues.some(i=>i.slug==='archive'&&i.kind==='broken-related')).toBe(true);
+ expect(issues.some(i=>i.slug==='changed'&&i.kind==='needs-review')).toBe(true);
+ expect(issues.some(i=>i.slug==='reviewed'&&['needs-review','stale'].includes(i.kind))).toBe(false);
+});
+
+test('timeline handles mixed append and prepend history, newest date first',()=>{
+ const log='## [2026-08-29] ingest | August\nA\n## [2026-04-12] ingest | April\nB\n## [2026-09-22] improve | September\nC';
+ expect(parseLog(log).map(e=>e.date)).toEqual(['2026-09-22','2026-08-29','2026-04-12']);
+});
+
+test('search reflects edited content even when page counts and slugs are unchanged',()=>{
+ const page=mkPage({slug:'p',title:'Page',content:'first unique phrase'});
+ expect(searchPages(mapOf(page),'first unique phrase')).toHaveLength(1);
+ const changed={...page,content:'replacement wording'};
+ expect(searchPages(mapOf(changed),'first unique phrase')).toHaveLength(0);
+ expect(searchPages(mapOf(changed),'replacement wording')).toHaveLength(1);
+});

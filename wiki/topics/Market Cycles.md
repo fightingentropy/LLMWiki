@@ -2,11 +2,26 @@
 title: Market Cycles
 type: topic
 domain: markets
-sources: [Bizz & Finance.md, CT.md, Markets - Articles.md, "bookmarks/Markets & Crypto.md"]
-related: [Crypto Trading, Trading_Psychology, Markets, Macro Trading, Equities, X-Bookmarks]
-created: 2026-04-18
-updated: 2026-07-25
-tags: [cycles, seasonality, boom-bust, dilution, supercycle]
+sources:
+  - misc/Bizz & Finance.md
+  - misc/CT.md
+  - markets/Articles.md
+  - bookmarks/Markets & Crypto.md
+related:
+  - Crypto Trading
+  - Trading Psychology
+  - Markets
+  - Macro Trading
+  - Equities
+  - X-Bookmarks
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - cycles
+  - seasonality
+  - boom-bust
+  - dilution
+  - supercycle
 ---
 
 # Market Cycles

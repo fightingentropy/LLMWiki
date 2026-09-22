@@ -2,11 +2,27 @@
 title: Hyperliquid
 type: entity
 domain: markets
-sources: [Tools.md, Articles.md, "bookmarks/Markets & Crypto.md"]
-related: [[Exchange Microstructure]], [[Trading Platforms]], [[Markets - Tools]], [[TradeXYZ]], [[Gloomberb]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [platform, exchange, derivatives, crypto, microstructure]
+sources:
+  - markets/Tools.md
+  - markets/Articles.md
+  - bookmarks/Markets & Crypto.md
+  - clippings/bookmark-updates-2026-09-22/Markets & Crypto.md
+related:
+  - Robinhood HYPE
+  - Crypto Takes
+  - Exchange Microstructure
+  - TradeXYZ
+  - Digital Security
+  - Market Performance Measurement
+  - Bookmarks - Markets & Crypto
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - platform
+  - exchange
+  - derivatives
+  - crypto
+  - microstructure
 ---
 
 ## Overview
@@ -40,3 +56,12 @@ Preserved in [[CT]]: concern that over-collateralizing positions in HYPE (vs. US
 - [[TradeXYZ]] uses Hyperliquid's blockchain through a HIP-3 DEX deployed by described independent contributors. Fee routing and HYPE-holder value accrual remain unanswered.
 - ASXN compares depth, spreads, and estimated slippage across Hyperliquid and other venues. Treat results as time-, size-, instrument-, and methodology-specific.
 - Public market-data MCP tooling can expose live quotes and options data alongside order placement and cancellation; connected access is not automatically read-only. See [[Digital Security]].
+
+## September 2026 performance and borrowing notes
+
+- [[Market Performance Measurement]] captures the leaderboard question: large displayed accounts may have different roles, exposures, cost bases, and hedges.
+- The HYPE funding-trade entry now preserves the author's mathematical correction alongside the setup. The official [portfolio-margin documentation](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin), checked 2026-09-22, explains account-level maintenance, borrowing, and carry-trade risks; a spot/perpetual hedge does not remove every liquidation path.
+- The manual-borrows post is retained as a dated official announcement. It does not establish current account eligibility or a fixed future borrowing rate.
+- Chrome additions include fee views, leaderboards, trade exporters, ecosystem directories, and financial dashboards. They are research references, not validated account records.
+
+Full trail and both corrected-trade links: [[Bookmarks - Markets & Crypto]].

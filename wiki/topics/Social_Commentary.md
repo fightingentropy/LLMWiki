@@ -2,11 +2,26 @@
 title: Social Commentary
 type: topic
 domain: culture
-sources: [Thoughts.md, Politics.md, Culture.md, X takes.md, "bookmarks/Culture & Ideas.md"]
-related: [[Political_Commentary]], [[Thoughts_and_Observations]], [[Culture_and_Environment]], [[Masculinity_and_Men]], [[Online Extremism and Evidence]]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [social, commentary, observations, society, culture]
+sources:
+  - misc/Thoughts.md
+  - misc/Politics.md
+  - misc/Culture.md
+  - misc/X takes.md
+  - bookmarks/Culture & Ideas.md
+related:
+  - Political Commentary
+  - Thoughts and Observations
+  - Culture and Environment
+  - Masculinity & Men
+  - Online Extremism and Evidence
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - social
+  - commentary
+  - observations
+  - society
+  - culture
 ---
 
 # Social Commentary

@@ -2,11 +2,26 @@
 title: Markets - Trading
 type: source
 domain: markets
-sources: [markets/Trading.md]
-related: [[Crypto Trading]], [[Market Drivers]], [[Trading Philosophy]], [[Traders Directory]], [[Robinhood HYPE]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [trading-principles, market-drivers, trader-list, sentiment, flow-analysis]
+sources:
+  - markets/Trading.md
+related:
+  - Crypto Trading
+  - Market Drivers
+  - Trading Philosophy
+  - Traders Directory
+  - Robinhood HYPE
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trading-principles
+  - market-drivers
+  - trader-list
+  - sentiment
+  - flow-analysis
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 ## Core Principle

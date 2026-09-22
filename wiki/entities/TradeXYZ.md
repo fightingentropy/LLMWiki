@@ -2,11 +2,21 @@
 title: TradeXYZ
 type: entity
 domain: markets
-sources: ["bookmarks/Markets & Crypto.md"]
-related: [[Hyperliquid]], [[Trading Platforms]], [[Equities]], [[AI Infrastructure Economics]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [rwa, hip-3, hyperliquid, dex, due-diligence]
+sources:
+  - bookmarks/Markets & Crypto.md
+related:
+  - Hyperliquid
+  - Trading Platforms
+  - Equities
+  - AI Infrastructure Economics
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - rwa
+  - hip-3
+  - hyperliquid
+  - dex
+  - due-diligence
 ---
 
 # TradeXYZ

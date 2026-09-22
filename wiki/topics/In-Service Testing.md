@@ -2,11 +2,28 @@
 title: In-Service Testing
 type: topic
 domain: electrics
-sources: [raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT Testing.md]
-related: [Electrical Safety, Class 1 Equipment, Class 2 Equipment, Protective Conductor Continuity, Insulation Resistance Testing, Test Documentation]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [in-service-testing, pat, appliances, formal-inspection, equipment-testing]
+sources: []
+related:
+  - Electrical Safety
+  - Continuity Testing
+  - Inspection and Testing Fundamentals
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - in-service-testing
+  - pat
+  - appliances
+  - formal-inspection
+  - equipment-testing
+source_gaps:
+  - >-
+    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT
+    Testing.md
+review_status: unverified
+review_notes: >-
+  Historical webinar summary. The original transcript is unavailable; detailed
+  test limits, procedures, chapter and exam references have not been
+  authenticated against current material.
 ---
 
 # In-Service Testing

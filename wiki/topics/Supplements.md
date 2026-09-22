@@ -2,66 +2,57 @@
 title: Supplements & Biohacking
 type: topic
 domain: health
-sources: [Body.md, Medical.md]
-related: [Body Optimization, Fitness, Mental Health]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [supplements, biohacking, optimization, health]
+sources:
+  - misc/Body.md
+  - misc/Medical.md
+  - clippings/evidence-review-2026-09-22/Health.md
+related:
+  - Body Optimization
+  - Fitness
+  - Mental Health
+  - Health Evidence
+  - Peptides
+  - Retatrutide
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - supplements
+  - biohacking
+  - optimization
+  - health
+summary: >-
+  Separate established guidance, research leads and unsupported supplement
+  claims.
+reviewed: '2026-09-22'
+review_status: partial
+review_notes: >-
+  The corrections below were checked against the cited sources. Other retained
+  claims are identified as unresolved.
+review_due: '2026-12-21'
 ---
 
 # Supplements & Biohacking
 
-## Foundational Stack
-- **Vitamin D3** - Widely accepted; foundational for most people
-- **Creatine** - Breaking through mainstream acceptance; well-researched
-- **Magnesium (Threonate or Bisglycinate)** - Next frontier supplement
-  - Protects against hearing loss
-  - Solid data on migraine reduction
-  - Improves sleep quality
-  - Dosage: 30-60min before bed
+The original stack in [[Body]] and [[Medical]] mixes public-health guidance, supplement leads and unsupported mechanisms. Evaluate each claimed outcome separately.
 
-## Cognitive Support
-- **L-Theanine + Caffeine** - Synergistic stack
-  - Coffee's brain-boosting benefits
-  - Without blood pressure elevation
-  - Without anxiety/jitter
-  - Smooth, sustained focus
+## Supported guidance and its scope
 
-## Hormonal Support
-- **Tongkat Ali** - Testosterone support
-  - Take in morning only (not afternoon—disrupts sleep)
-  - Stack with Pomegranate juice to offset estrogen block
+The [NHS vitamin D guidance](https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/) advises adults to consider 10 micrograms daily in autumn and winter, with year-round advice for some groups. That recommendation does not validate the rest of a combined stack. (from [[Health Evidence Review - September 2026]])
 
-## Thyroid Health
-- **Hydroxyapatite Toothpaste** - Alternative to fluoride
-  - Remineralizes teeth without endocrine disruption
-  - Standard in Japan for decades
-  - Fluoride blocks iodine at thyroid receptors (same receptor competition)
-  - Traditional fluoride = twice-daily thyroid suppression through highly absorbent tissue
+## Claims awaiting evidence
 
-## Dopamine Optimization
-**Sunlight exposure** - Required for Tyrosine Hydroxylase step in dopamine synthesis.
+- **Creatine:** retained as a training-supplement research lead; this page has not assessed a formulation, indication or individual suitability.
+- **Magnesium:** the source groups hearing, migraine and sleep claims together. These need separate evidence and population checks. “30–60 minutes before bed” is timing, not a dose.
+- **L-theanine with caffeine:** the source's promise of no blood-pressure rise or anxiety is too absolute. It supplies no evidence establishing that outcome for every person.
+- **Tongkat ali and pomegranate:** the hormone-balancing mechanism and combined protocol are unverified in the source record.
+- **Blueberries:** a subjective report does not establish an instant brain-fog cure or the claimed brain-inflammation mechanism.
 
-**Cold exposure** - Facilitates high dopamine release; effects immediate and dramatic.
+## Corrections to the earlier page
 
-## Brain Optimization
-**Blueberries (500g+ in one sitting)** - Flavonoids lower brain inflammation
-- Tangible sensation of prefrontal cortex clarity
-- Near-instant brain fog relief
+The fluoride/thyroid claim is unsupported for normal toothpaste use and conflicts with NHS dental advice; see [[Medical]]. Sunlight is not a biochemical requirement for dopamine synthesis. Cold-shower anecdotes do not establish medication-equivalent effects. Claims that extra neck blood flow increases intelligence were not supported by the attached notes. (from [[Health Evidence Review - September 2026]])
 
-## Nitric Oxide & Blood Flow
-**Pomegranate juice** - Improves blood flow; specifically offsets estrogen block from Tongkat Ali.
+## Peptides
 
-Better blood flow to neck increases intelligence (established via neuroscience).
+[[Retatrutide]] is an investigational drug, not a nutritional supplement. The retained [[Peptides]] guide does not establish a validated preparation protocol. [[Peptide Reconstitution]] explains the missing formulation evidence.
 
-## General Principles
-- Foundations first: Vitamin D3, Creatine, Magnesium
-- Stack thoughtfully (timing, synergies, counterbalancing)
-- Most benefits come from basics + consistency, not exotic supplements
-- Sleep, food quality, sun, movement > supplements
-
-## Injectable Peptides (Separate Category)
-Beyond oral supplements, the biohacking stack now reaches into **injectable research peptides** — e.g. [[Retatrutide]] (LY3437943), an investigational GLP-1-class triple agonist used for weight loss. These are pharmaceuticals, not supplements: they require reconstitution from lyophilized powder with [[Bacteriostatic Water]], subcutaneous dosing, careful titration, and cold storage. See [[Peptide Reconstitution]] for handling and [[Peptides]] for the source guide.
-
----
-Related: [[Body_Optimization]], [[Fitness]], [[Mental_Health]], [[Peptide Reconstitution]], [[Retatrutide]]
+Related: [[Body_Optimization]], [[Fitness]], [[Mental_Health]], [[Health Evidence]].

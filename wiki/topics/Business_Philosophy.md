@@ -2,11 +2,22 @@
 title: Business Philosophy
 type: topic
 domain: markets
-sources: [Culture.md, Bizz & Finance.md]
-related: [Business_Strategy, Markets, Catfish_Effect, Philosophy_and_Meaning]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [business, philosophy, distinctiveness, competition, strategy]
+sources:
+  - misc/Culture.md
+  - misc/Bizz & Finance.md
+related:
+  - Business Strategy
+  - Markets
+  - Catfish Effect
+  - Philosophy & Meaning
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - business
+  - philosophy
+  - distinctiveness
+  - competition
+  - strategy
 ---
 
 # Business Philosophy

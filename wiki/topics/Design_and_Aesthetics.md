@@ -2,11 +2,30 @@
 title: Design & Aesthetics
 type: topic
 domain: dev
-sources: [Design.md, Thoughts.md, Youtube.md, X-Bookmarks.md, "bookmarks/Design & Frontend.md", "bookmarks/Media & Inspiration.md"]
-related: [[Developer_Resources]], [[Design_Thinking]], [[Philosophy_and_Meaning]], [[X-Bookmarks]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [design, aesthetics, ui-ux, taste, tools]
+sources:
+  - misc/Design.md
+  - misc/Thoughts.md
+  - misc/Youtube.md
+  - misc/X-Bookmarks.md
+  - bookmarks/Design & Frontend.md
+  - bookmarks/Media & Inspiration.md
+  - clippings/bookmark-updates-2026-09-22/Design & Frontend.md
+related:
+  - Youtube
+  - X-Bookmarks
+  - Developer Resources
+  - Philosophy & Meaning
+  - Thoughts and Observations
+  - Compositor
+  - Bookmarks - Design & Frontend
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - design
+  - aesthetics
+  - ui-ux
+  - taste
+  - tools
 ---
 
 # Design & Aesthetics
@@ -113,3 +132,9 @@ Design taste = character revelation. What you build reveals who you are.
 
 ---
 Related: [[Developer_Resources]], [[Philosophy_and_Meaning]], [[Thoughts_and_Observations]]
+
+## September 2026 references
+
+[[Compositor]] combines two saved releases into one product page while retaining both sources. The surrounding bookmarks add component directories, brand SVGs, Lissajous generation, spatial interfaces, flipbook presentation, stationery, and navigation motion.
+
+The practical design question is what each reference contributes: hierarchy, material, timing, feedback, or interaction. A Wallet concept, keyboard complaint, or impressive generated interface is evidence of taste or an observation, not proof of platform support, accessibility, or measured usability. OpenDesign quality and efficiency claims remain vendor reports. The unannotated gallery URLs remain unresolved references. (from [[Bookmarks - Design & Frontend]])

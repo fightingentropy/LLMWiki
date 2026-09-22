@@ -2,11 +2,22 @@
 title: Entropy vs Extropy
 type: topic
 domain: culture
-sources: [Culture.md, Politics.md]
-related: [Curtis_Yarvin, Political_Philosophy, Philosophy_and_Meaning]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [entropy, extropy, yarvin, political-philosophy, hierarchy, order]
+sources:
+  - misc/Culture.md
+  - misc/Politics.md
+related:
+  - Curtis Yarvin (Mencius Moldbug)
+  - Political Philosophy
+  - Philosophy & Meaning
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - entropy
+  - extropy
+  - yarvin
+  - political-philosophy
+  - hierarchy
+  - order
 ---
 
 # Entropy vs Extropy

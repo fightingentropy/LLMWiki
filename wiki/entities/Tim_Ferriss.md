@@ -2,11 +2,20 @@
 title: Tim Ferriss
 type: entity
 domain: culture
-sources: [Body.md, X takes.md]
-related: [Andrew Huberman, Lex Fridman, Self-Improvement Culture]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [ferriss, optimization, productivity, critique]
+sources:
+  - misc/Body.md
+  - misc/X takes.md
+related:
+  - Andrew Huberman
+  - Lex Fridman
+  - Self-Improvement Culture Critique
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - ferriss
+  - optimization
+  - productivity
+  - critique
 ---
 
 # Tim Ferriss

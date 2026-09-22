@@ -2,11 +2,23 @@
 title: Heartiste
 type: entity
 domain: culture
-sources: [Women.md]
-related: [Dating_and_Relationships, Gender_Dynamics, Masculinity_and_Men, DrDynamis]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [heartiste, roissy, game, pua, red-pill, dating, attraction]
+sources:
+  - misc/Women.md
+related:
+  - Dating & Relationships
+  - Gender Dynamics
+  - Masculinity & Men
+  - DrDynamis
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - heartiste
+  - roissy
+  - game
+  - pua
+  - red-pill
+  - dating
+  - attraction
 ---
 
 # Heartiste

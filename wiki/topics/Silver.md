@@ -2,11 +2,20 @@
 title: Silver
 type: topic
 domain: markets
-sources: [Handbook.md]
-related: [[Commodities]], [[Gold]], [[Macro Trading]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [commodities, silver, precious-metals, industrial, macro]
+sources:
+  - markets/Handbook.md
+related:
+  - Commodities
+  - Gold
+  - Macro Trading
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - commodities
+  - silver
+  - precious-metals
+  - industrial
+  - macro
 ---
 
 ## Overview

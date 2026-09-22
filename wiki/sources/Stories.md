@@ -2,11 +2,26 @@
 title: Stories
 type: source
 domain: personal
-sources: [Stories.md]
-related: [[Nassim_Taleb]], [[David Cifaldi]], [[Self_Improvement]], [[Humor]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [stories, anecdotes, hospitality, travel, endurance, personal]
+sources:
+  - misc/Stories.md
+related:
+  - Nassim Taleb
+  - David Cifaldi
+  - Self-Improvement
+  - Humor
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - stories
+  - anecdotes
+  - hospitality
+  - travel
+  - endurance
+  - personal
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Stories

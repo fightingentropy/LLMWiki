@@ -4,7 +4,6 @@ import { stat } from "fs/promises";
 import {
   loadWikiPages,
   buildGraphData,
-  searchPages,
   computeBacklinks,
   computeTagIndex,
   computeLint,
@@ -18,6 +17,8 @@ import {
   searchIndexEntry,
 } from "./lib";
 import { sync } from "./sync";
+import { loadCatalog } from "./catalog";
+import { searchDocuments } from "./search";
 import { startIngest, jobStream, getCurrentJob, abortCurrent } from "./ingest";
 import {
   createMutationSecurity,
@@ -27,7 +28,6 @@ import {
 } from "./server-security";
 
 const STATIC_DIR = join(import.meta.dir, "ui");
-const ASSETS_DIR = join(import.meta.dir, "raw", "assets");
 const WIKI_DIR = join(import.meta.dir, "wiki");
 
 let pages = await loadWikiPages();
@@ -45,22 +45,26 @@ interface DerivedData {
   timeline: Awaited<ReturnType<typeof loadTimeline>>;
   searchIndex: ReturnType<typeof searchIndexEntry>[];
   fileAliases: Map<string, string>;
+  catalog: Awaited<ReturnType<typeof loadCatalog>>;
 }
 let derived: DerivedData;
 
-// Transpiled-bundle cache for the dev server's on-the-fly TSX handler, keyed by
-// entrypoint mtime so we don't re-bundle React + d3 on every page load.
+// Cache the browser bundle between UI edits, including imported modules.
 const tsxCache = new Map<string, { mtime: number; code: string }>();
+watch(STATIC_DIR, {recursive:true}, () => tsxCache.clear());
+for (const module of ['search.ts','graph.ts']) watch(join(import.meta.dir,module),()=>tsxCache.clear());
 
 async function computeDerived(): Promise<void> {
+  const catalog = await loadCatalog(pages);
   derived = {
-    summaryList: [...pages.values()].map(pageSummary),
+    catalog,
+    summaryList: [...pages.values()].map(p => pageSummary(p, (backlinks.get(p.slug) || []).filter(b => !["index", "log"].includes(b.type)).length)),
     graph: buildGraphData(pages),
     tags: computeTagIndex(pages),
-    lint: computeLint(pages, backlinks),
+    lint: computeLint(pages, backlinks, catalog.raw),
     meta: buildMeta(pages),
-    timeline: await loadTimeline(),
-    searchIndex: [...pages.values()].map(searchIndexEntry),
+    timeline: await loadTimeline(pages),
+    searchIndex: [...pages.values()].map(searchIndexEntry).concat(catalog.search),
     fileAliases: buildFileAliases(pages),
   };
 }
@@ -105,7 +109,8 @@ try {
 // Mutating endpoints can write into the repo or launch a credentialed provider.
 // They require a per-process HttpOnly session plus a separate CSRF token, and
 // are only reachable from a browser page served by this loopback process.
-const PORT = 3000;
+const PORT = Number(process.env.PORT || 3000);
+if (!Number.isInteger(PORT) || PORT < 1 || PORT > 65535) throw new Error("PORT must be a valid TCP port");
 const mutationSecurity = createMutationSecurity(PORT);
 const MUTATION_PATHS = new Set([
   "/api/sync",
@@ -167,6 +172,19 @@ const server = Bun.serve({
 
     // --- API (data endpoints, used for both /api/* and /data/*.json) ---
 
+    if (path === "/data/bookmarks.json") return Response.json(derived.catalog.bookmarks);
+    if (path === "/data/capture.json") return Response.json(derived.catalog.status);
+    if (path === "/data/sources.json") return Response.json(derived.catalog.sources.map(({html, headings, ...s}) => s));
+    if (path.startsWith("/data/sources/") && path.endsWith(".json")) {
+      const id = path.slice("/data/sources/".length, -5);
+      const source = derived.catalog.sources.find(s => s.id === id);
+      return source ? Response.json(source) : Response.json({error:"Source not found"}, {status:404});
+    }
+    if (path === "/api/sync/preview") {
+      try { return Response.json(await sync({preview:true})); }
+      catch (e: any) { return Response.json({error:e.message}, {status:500}); }
+    }
+
     if (path === "/api/pages" || path === "/data/pages.json") {
       return Response.json(derived.summaryList);
     }
@@ -177,13 +195,13 @@ const server = Bun.serve({
         : path.slice("/data/pages/".length, -".json".length);
       const page = pages.get(slug);
       if (!page) return Response.json({ error: "Not found" }, { status: 404 });
-      return Response.json(pageDetail(page, pages, backlinks, derived.fileAliases));
+      return Response.json(pageDetail(page, pages, backlinks, derived.fileAliases, derived.catalog.raw));
     }
 
     if (path === "/api/search") {
       const q = url.searchParams.get("q") || "";
       if (!q) return Response.json([]);
-      return Response.json(searchPages(pages, q));
+      return Response.json(searchDocuments(derived.searchIndex, q));
     }
 
     if (path === "/api/graph" || path === "/data/graph.json") {
@@ -304,13 +322,11 @@ const server = Bun.serve({
 
     // --- Static assets (raw images) ---
     if (path.startsWith("/assets/")) {
-      const name = decodeURIComponent(path.slice("/assets/".length));
-      // Prevent path traversal
-      if (name.includes("..") || name.includes("/")) {
-        return new Response("Forbidden", { status: 403 });
-      }
-      const file = Bun.file(join(ASSETS_DIR, name));
-      if (await file.exists()) return new Response(file);
+      let name: string;
+      try { name = decodeURIComponent(path.slice("/assets/".length)); }
+      catch { return new Response("Bad asset path", {status:400}); }
+      const assetPath = derived.catalog.assetFiles.get(name);
+      if (assetPath) return new Response(Bun.file(assetPath));
       return new Response("Not found", { status: 404 });
     }
 

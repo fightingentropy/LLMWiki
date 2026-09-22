@@ -2,11 +2,31 @@
 title: AI Agents
 type: topic
 domain: dev
-sources: ["bookmarks/AI & Agents.md", "bookmarks/Developer Tools.md", Dev.md]
-related: [[Developer_Resources]], [[Technology_Critique]], [[Digital Security]], [[AI Infrastructure Economics]], [[Grok Bot]], [[PhoneLLM Alpha 1]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [ai, agents, automation, tool-use, voice, safety]
+sources:
+  - bookmarks/AI & Agents.md
+  - bookmarks/Developer Tools.md
+  - misc/Dev.md
+  - clippings/bookmark-updates-2026-09-22/AI & Agents.md
+related:
+  - Grok Bot
+  - X-Bookmarks
+  - Digital Security
+  - PhoneLLM Alpha 1
+  - AI Infrastructure Economics
+  - Developer Resources
+  - Technology Critique
+  - Bookmarks - AI & Agents
+  - 3D Printing and Digital Fabrication
+  - Personal Knowledge Management
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - ai
+  - agents
+  - automation
+  - tool-use
+  - voice
+  - safety
 ---
 
 # AI Agents
@@ -42,3 +62,13 @@ The dental DICOM-viewer anecdote demonstrates how cheaply an agent can create a 
 Enterprise adoption is better treated as a distribution of skill and workflow integration than as a login count. Measure verified output, task completion, return per token, and the share of work that survives review. This connects agent practice to [[AI Infrastructure Economics]].
 
 Related: [[Developer_Resources]], [[Technology_Critique]], [[Digital Security]], [[AI Infrastructure Economics]], [[Grok Bot]], [[PhoneLLM Alpha 1]]
+
+## September 2026 workflow references
+
+- **Repository review:** first-principles and agent-intuitive-codebase prompts ask for clearer assumptions, simpler interfaces, and testable completion. The prompts are review aids, not instructions to delete working code indiscriminately.
+- **Explanation:** the ontology-first prompt asks for the concepts and examples needed to understand a diff before implementation detail.
+- **Voice and onboarding:** Expo voice demos and personal voice-memo interviews show ways to collect context; the transcript and connected accounts still need deliberate data boundaries.
+- **Local models and media:** Qwen GGUF, FLUX adapters, and image/video demos are leads whose provenance, licences, hardware, and repeatability remain unresolved.
+- **Product claims:** context-window settings, refunds, multi-agent allowances, and the reported Codex usage-limit bug remain dated reports. This wiki ingest did not change any agent configuration.
+
+Full source trail: [[Bookmarks - AI & Agents]]. The image-to-CAD example connects to [[3D Printing and Digital Fabrication]]; retrieval and source freshness connect to [[Personal Knowledge Management]].

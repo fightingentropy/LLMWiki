@@ -2,42 +2,92 @@
 title: X-Bookmarks
 type: source
 domain: dev
-sources: ["bookmarks/Index.md", "bookmarks/AI & Agents.md", "bookmarks/Business & Startups.md", "bookmarks/Culture & Ideas.md", "bookmarks/Design & Frontend.md", "bookmarks/Developer Tools.md", "bookmarks/Health & Psychology.md", "bookmarks/Markets & Crypto.md", "bookmarks/Media & Inspiration.md", "bookmarks/Personal & Life.md", "bookmarks/Reference & Utilities.md"]
-related: [Dev, Design, "Markets - Trading", "Crypto Trading", Design_and_Aesthetics, Developer_Resources, Equities, Business_Strategy, Dating_and_Relationships, Trading_Psychology]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [bookmarks, x-twitter, curated, dev, design, ai, markets, cross-domain]
+sources:
+  - bookmarks/AI & Agents.md
+  - bookmarks/Business & Startups.md
+  - bookmarks/Culture & Ideas.md
+  - bookmarks/Design & Frontend.md
+  - bookmarks/Developer Tools.md
+  - bookmarks/Health & Psychology.md
+  - bookmarks/Index.md
+  - bookmarks/Markets & Crypto.md
+  - bookmarks/Media & Inspiration.md
+  - bookmarks/Personal & Life.md
+  - bookmarks/Reference & Utilities.md
+  - clippings/bookmark-updates-2026-09-22/AI & Agents.md
+  - clippings/bookmark-updates-2026-09-22/Business & Startups.md
+  - clippings/bookmark-updates-2026-09-22/Culture & Ideas.md
+  - clippings/bookmark-updates-2026-09-22/Design & Frontend.md
+  - clippings/bookmark-updates-2026-09-22/Developer Tools.md
+  - clippings/bookmark-updates-2026-09-22/Health & Psychology.md
+  - clippings/bookmark-updates-2026-09-22/Index.md
+  - clippings/bookmark-updates-2026-09-22/Markets & Crypto.md
+  - clippings/bookmark-updates-2026-09-22/Media & Inspiration.md
+  - clippings/bookmark-updates-2026-09-22/Personal & Life.md
+  - clippings/bookmark-updates-2026-09-22/Reference & Utilities.md
+  - misc/X-Bookmarks.md
+  - snapshots/1790106580663-7f3260814dfb/bookmarks/Index.md
+related:
+  - Bookmarks - AI & Agents
+  - Bookmarks - Business & Startups
+  - Bookmarks - Culture & Ideas
+  - Bookmarks - Design & Frontend
+  - Bookmarks - Developer Tools
+  - Bookmarks - Health & Psychology
+  - Bookmarks - Markets & Crypto
+  - Bookmarks - Media & Inspiration
+  - Bookmarks - Personal & Life
+  - Bookmarks - Reference & Utilities
+  - Personal Knowledge Management
+  - AI Agents
+  - Health Evidence
+  - Market Performance Measurement
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - bookmarks
+  - x-twitter
+  - curated
+  - dev
+  - design
+  - ai
+  - markets
+  - cross-domain
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # X-Bookmarks
 
-The authoritative X bookmark collection is organized into 10 topical Markdown notes. As of 2026-08-29 the category files contain **624 structured bullet entries**, plus a small number of bare design-reference URLs awaiting annotation. It is a working knowledge base rather than a timeline dump.
+The Brain bookmark collection combines X posts and Chrome references in 10 topical Markdown notes. As of **2026-09-22**, those notes contain **921 structured entries**, up from 624 in the August wiki snapshot. This ingest covers **303 added or revised entries** (297 net new entries and six revisions), plus newly added bare design URLs. Entry totals are not counts of unique URLs or X post IDs.
 
 ## Collection
 
-| Note | Entries |
-|---|---:|
-| AI & Agents | 96 |
-| Design & Frontend | 112 |
-| Developer Tools | 102 |
-| Markets & Crypto | 95 |
-| Business & Startups | 29 |
-| Health & Psychology | 29 |
-| Culture & Ideas | 57 |
-| Media & Inspiration | 52 |
-| Reference & Utilities | 33 |
-| Personal & Life | 19 |
-| **Structured total** | **624** |
+- [[Bookmarks - AI & Agents]] — 133 entries; 37 added or revised since the August snapshot.
+- [[Bookmarks - Design & Frontend]] — 130 entries; 18 added or revised since the August snapshot.
+- [[Bookmarks - Developer Tools]] — 132 entries; 32 added or revised since the August snapshot.
+- [[Bookmarks - Markets & Crypto]] — 131 entries; 37 added or revised since the August snapshot.
+- [[Bookmarks - Business & Startups]] — 36 entries; 7 added or revised since the August snapshot.
+- [[Bookmarks - Health & Psychology]] — 51 entries; 24 added or revised since the August snapshot.
+- [[Bookmarks - Culture & Ideas]] — 88 entries; 32 added or revised since the August snapshot.
+- [[Bookmarks - Media & Inspiration]] — 112 entries; 60 added or revised since the August snapshot.
+- [[Bookmarks - Reference & Utilities]] — 56 entries; 23 added or revised since the August snapshot.
+- [[Bookmarks - Personal & Life]] — 52 entries; 33 added or revised since the August snapshot.
+
+Each category page provides key takeaways, the complete September change register, and links to related topics. Earlier entries remain in the original raw category files.
 
 ## Curation model
 
-- Durable ideas, useful tools, evidence-aware claims, and strong creative references are routed into topical notes.
-- Existing Brain notes remain authoritative when they already cover the same material.
-- Unsupported medical or market claims, hateful material, duplicates, stale news, and disposable timeline content are rejected.
-- Claims that may age are preserved with caveats and links to stronger sources where available.
-- The index records category totals and cleanup state; it is not a catch-all destination.
+- Since 2026-09-05, the user's explicit choice is to retain all reviewed X bookmarks, including entertainment, disputed claims, advertisements, and low-confidence leads.
+- **Superseded policy:** the July workflow rejected some material as low-value or unsupported. That historical filtering rule no longer describes September X retention; it does not imply that the already-filtered July collection has been reconstructed.
+- Retention preserves a source, not its truth. Topic pages distinguish evidence, individual reports, speculation, demonstrations, and ephemera.
+- Keep corrections and counterexamples attached to the original claim. Do not invent the contents of images, videos, or unresolved links.
+- The September Chrome review had its own selection rules, recorded in the source index. “Keep all X bookmarks” should not be misread as a claim that every Chrome bookmark was imported.
+- The source index records curation and cleanup history. [[Personal Knowledge Management]] explains how that record differs from a factual knowledge page.
 
-## Latest recovery additions
+## July recovery additions
 
 ### Developer tools
 
@@ -57,11 +107,22 @@ The authoritative X bookmark collection is organized into 10 topical Markdown no
 - [Off Campus: consent as romantic characterization](https://x.com/onfilmdiaries/status/2065829523128467634) — Restraint communicates intimacy without a speech about virtue. See [[Dating_and_Relationships]].
 - [Titanic: rejecting possession](https://x.com/QUEENP0P/status/2065472136748363795) — Rose reverses Cal's insult into a rejection of status, possession, and control. See [[Dating_and_Relationships]].
 
-## Current state
+## Capture and ingestion state
 
-- The 2026-08-29 vault sync added or changed 125 structured bookmark entries relative to the previous 499-entry snapshot, plus several unannotated design URLs.
-- The raw bookmark index still reports the earlier 500-entry July snapshot; category-file counts above are derived from the current files and therefore supersede it for navigation.
-- The prior cleanup recorded a live X bookmark count of zero after complete pagination. That external state was **not reverified** during this ingest.
+- The current Brain index was copied verbatim to `raw/clippings/bookmark-updates-2026-09-22/Index.md`.
+- Ten accompanying clippings preserve every nonblank added or revised source line, with source and baseline hashes. Existing `raw/bookmarks/` files are unchanged; the dated clippings extend them rather than replacing them.
+- The 921 structured-entry total is measured from the current category files and matches the captured Brain index. Six changed entries revise earlier annotations, so 303 changed entries produce 297 net additions.
+- The source records 155 X bookmark markers cleared on 2026-09-17 and 30 on 2026-09-22 after exact-ID coverage checks, with zero remaining at each recorded verification. These are historical task results; this wiki ingest did not recheck or change X or Chrome.
+- Source clippings and generated pages are local wiki content. This ingest does not enable scheduled sync or publish a hosted build.
+
+## September 2026 additions
+
+- **AI and developer workflows:** review prompts, voice onboarding, local models, remote access, browser runtimes, and version-sensitive release notes extend [[AI Agents]] and [[Developer_Resources]].
+- **Product references:** [[Compositor]], [[Helium Browser]], [[Omarchy iCloud Photos]], and [[Quicker]] now have entity pages.
+- **Physical projects:** image-to-CAD, OpenTools Studio, and VAULT/Gridfinity connect through [[3D Printing and Digital Fabrication]].
+- **Markets:** [[Market Performance Measurement]] separates account identity, displayed PnL, and risk; [[Hyperliquid]] retains the funding-trade correction and the manual-borrows announcement.
+- **Health:** [[ADHD]], [[Circadian_Rhythm]], and [[Health Evidence]] distinguish a circadian phenotype from a universal redefinition, and preserve opposing stimulant experiences as anecdotes.
+- **Culture, media, and personal references:** source registers retain all new links, including unresolved images and ephemera, with cross-links for reading depth, authentication fatigue, household shortlists, and evidence quality.
 
 ## August 2026 additions
 
@@ -88,3 +149,7 @@ The authoritative X bookmark collection is organized into 10 topical Markdown no
 - [[AI Agents]] · [[Digital Security]] · [[AI Infrastructure Economics]] · [[Health Evidence]]
 - [[Water Filtration]] · [[Online Extremism and Evidence]] · [[Developer_Resources]] · [[Design_and_Aesthetics]]
 - [[Equities]] · [[Market Cycles]] · [[Business_Strategy]] · [[Dating_and_Relationships]] · [[Crypto Trading]] · [[Trading_Psychology]]
+
+## Complete catalog and history
+
+[Browse all current bookmarks](/bookmarks) for individual records, category filtering and post-ID search. The complete September category captures are linked by the ten category source pages. The March export has also been restored byte-for-byte from repository history so older numbered citations remain traceable. That export is historical; its 1,091-item count is separate from the 934-record current curated catalog (921 structured entries plus 13 bare links).

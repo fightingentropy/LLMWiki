@@ -2,11 +2,18 @@
 title: Lee Kuan Yew
 type: entity
 domain: culture
-sources: [Body.md]
-related: [Philosophy, Governance]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [lee-kuan-yew, singapore, governance, pragmatism]
+sources:
+  - misc/Body.md
+related:
+  - Philosophy & Meaning
+  - Political Philosophy
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - lee-kuan-yew
+  - singapore
+  - governance
+  - pragmatism
 ---
 
 # Lee Kuan Yew

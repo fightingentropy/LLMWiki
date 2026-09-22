@@ -2,11 +2,20 @@
 title: Javier Milei
 type: entity
 domain: markets
-sources: [Quotes.md]
-related: [Political_Commentary, Philosophy_and_Meaning, Macro Trading]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [politician, argentina, libertarian, economics, polemic]
+sources:
+  - misc/Quotes.md
+related:
+  - Political Commentary
+  - Philosophy & Meaning
+  - Macro Trading
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - politician
+  - argentina
+  - libertarian
+  - economics
+  - polemic
 ---
 
 # Javier Milei

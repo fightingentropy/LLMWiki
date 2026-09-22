@@ -2,41 +2,41 @@
 title: Bacteriostatic Water
 type: entity
 domain: health
-sources: [Peptides.md]
-related: [Peptides, Retatrutide, Peptide Reconstitution]
-created: 2026-06-24
-updated: 2026-06-24
-tags: [bacteriostatic-water, bac-water, benzyl-alcohol, reconstitution, peptides]
+sources:
+  - misc/Peptides.md
+  - clippings/evidence-review-2026-09-22/Health.md
+related:
+  - Peptide Reconstitution
+  - Retatrutide
+  - Peptides
+  - Health Evidence
+created: 2026-06-24T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - bacteriostatic-water
+  - bac-water
+  - benzyl-alcohol
+  - reconstitution
+  - peptides
+summary: >-
+  Product-specific diluent instructions replace the earlier universal shelf-life
+  claims.
+reviewed: '2026-09-22'
+review_status: partial
+review_notes: >-
+  The corrections below were checked against the cited sources. Other retained
+  claims are identified as unresolved.
+review_due: '2026-12-21'
 ---
 
 # Bacteriostatic Water
 
-**Bacteriostatic Water (BAC water)** is sterile water containing **0.9% benzyl alcohol** as a preservative. It is the standard solvent for reconstituting lyophilized injectable peptides such as [[Retatrutide]] (from [[Peptides]]).
+The referenced Bacteriostatic Water for Injection label describes sterile water with 0.9% benzyl alcohol, intended as a vehicle for compatible drugs under their manufacturer's instructions. See the [prescribing label](https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ccadcf46-6a6f-436b-9bbc-17e2983a335f&type=display).
 
-## Why It Matters
+## Correction to the earlier page
 
-- The benzyl alcohol **inhibits bacterial growth**, which is what lets a reconstituted multi-dose vial be stored and drawn from repeatedly for up to **28 days** (refrigerated).
-- This is essential for once-weekly peptides where a single vial spans multiple weeks.
+A preservative does not make every peptide compatible or establish a universal 28-day refrigerated life after mixing. The original [[Peptides]] note supplied no formulation-specific evidence for its 28-day versus 24-hour comparison. Storage and expiry must come from the actual product's validated instructions.
 
-## BAC Water vs. Sterile Water (SWI)
+The label also identifies incompatibilities and important restrictions, including benzyl-alcohol toxicity in neonates. This page is a source reference; it does not select a diluent for any individual or vendor product. (from [[Health Evidence Review - September 2026]])
 
-| | Bacteriostatic Water | Sterile Water for Injection |
-|---|---|---|
-| Preservative | 0.9% benzyl alcohol | none |
-| Reconstituted shelf life | up to 28 days (refrigerated) | within 24 hours |
-| Multi-dose use | yes | no — single use |
-
-Using sterile water (or saline, or tap water) instead of BAC water is one of the [[Peptide Reconstitution|common reconstitution mistakes]]: with no preservative, the vial must be discarded after 24 hours.
-
-## Caution
-
-- **Benzyl alcohol allergy:** a small percentage of people are sensitive to benzyl alcohol. Those affected must use sterile water and reconstitute a fresh dose each time.
-
-## See Also
-
-- [[Peptides]] — source guide
-- [[Retatrutide]] — the compound it reconstitutes
-- [[Peptide Reconstitution]] — full handling procedure
-
----
-Related: [[Peptides]], [[Retatrutide]], [[Peptide Reconstitution]]
+Related: [[Peptide Reconstitution]], [[Retatrutide]], [[Peptides]], [[Health Evidence]].

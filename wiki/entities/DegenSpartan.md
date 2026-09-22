@@ -2,11 +2,21 @@
 title: DegenSpartan
 type: entity
 domain: markets
-sources: [CT.md]
-related: [[Traders Directory]], [[CT]], [[Crypto Trading]], [[Trading Philosophy]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [trader, twitter, crypto, bearish, philosophy]
+sources:
+  - misc/CT.md
+related:
+  - Traders Directory
+  - Crypto Takes
+  - Crypto Trading
+  - Trading Philosophy
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - bearish
+  - philosophy
 ---
 
 ## Overview

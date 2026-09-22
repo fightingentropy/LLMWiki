@@ -2,11 +2,21 @@
 title: Gold
 type: topic
 domain: markets
-sources: [Handbook.md]
-related: [[Commodities]], [[Macro Trading]], [[Market Regime]], [[Silver]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [commodities, gold, precious-metals, safe-haven, macro]
+sources:
+  - markets/Handbook.md
+related:
+  - Commodities
+  - Macro Trading
+  - Market Regime
+  - Silver
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - commodities
+  - gold
+  - precious-metals
+  - safe-haven
+  - macro
 ---
 
 ## Overview

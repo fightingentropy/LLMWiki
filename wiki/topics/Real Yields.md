@@ -2,11 +2,22 @@
 title: Real Yields
 type: topic
 domain: markets
-sources: [Brief.md]
-related: [[Rates]], [[Macro Trading]], [[Market Regime]], [[Gold]], [[Cross-Asset Analysis]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [rates, real-yields, inflation, macro, opportunity-cost]
+sources:
+  - markets/Brief.md
+related:
+  - Rates
+  - Macro Trading
+  - Market Regime
+  - Gold
+  - Cross-Asset Analysis
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - rates
+  - real-yields
+  - inflation
+  - macro
+  - opportunity-cost
 ---
 
 ## Overview

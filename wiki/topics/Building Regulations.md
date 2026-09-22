@@ -2,229 +2,59 @@
 title: Building Regulations
 type: topic
 domain: electrics
-sources: [raw/electrics/Resources.md, raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection and Testing Demonstration.md]
-related: [Part P, Cable Routing and Safe Zones, Structural Limits, RCD Protection, Regulation 132.16]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [building-regulations, legislation, compliance, part-p, structural-limits, cable-protection]
+sources:
+  - electrics/Resources.md
+  - clippings/evidence-review-2026-09-22/Electrics.md
+related:
+  - Part P
+  - BS 7671
+  - Electrical Safety
+  - RCD Protection
+  - EIC and MEIWC
+  - Electrics - Resources
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - building-regulations
+  - legislation
+  - compliance
+  - part-p
+  - structural-limits
+  - cable-protection
+summary: >-
+  Corrected cable-route advice and clearer boundaries between legislation and
+  study notes.
+reviewed: '2026-09-22'
+review_status: partial
+review_notes: >-
+  Edition, scope and stated corrections checked against official references.
+  Detailed historical procedures and page numbers require the applicable
+  standard and course materials.
+review_due: '2026-10-15'
+source_gaps:
+  - >-
+    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
+    and Testing Demonstration.md
 ---
 
 # Building Regulations
 
-Overview of Building Regulations relevant to electrical installations, particularly Part P and associated structural and protection requirements.
+Electrical work can involve several distinct requirements: building legislation, technical installation standards, safe working duties and certification. [[Part P]] covers the England-specific building-control question; [[BS 7671]] covers technical requirements.
 
-## Statutory vs Non-Statutory Documents
+## Law and guidance
 
-### Statutory Legislation (Law)
+Approved Documents provide guidance on compliance; they are not the statutory requirements themselves. GN3 is published by the IET, not HSE. A qualification, a test certificate and a building-control notification are separate records and should not be used interchangeably. (from [[Electrical Evidence Review - September 2026]])
 
-Mandatory legal requirements:
-- **Health and Safety at Work Act**: Overall duty of care
-- **Management of Health and Safety at Work Regulations**: Risk assessment, competence requirements
-- **Electricity at Work Regulations**: Safe systems of work for electrical installations
-- **PUWER** (Provision and Use of Work Equipment Regulations): Equipment safety
-- **Building Regulations**: Building work compliance
+## Concealed cable routes: correction
 
-### Non-Statutory Guidance (Reference)
+The earlier page said a cable outside prescribed zones could be made acceptable simply by adding a 30 mA RCD. That was wrong. An RCD provides additional protection but does not prevent a screw or drill from damaging a cable. Routing and permitted protective construction must both satisfy the applicable standard.
 
-Guidance documents (not law themselves, but highly important):
-- **Approved Documents**: Including Part A, Part L, Part M, Part P (these are guidance, not law)
-- **BS 7671**: Wiring Regulations (technical requirements, not statutory law but industry standard)
-- **GN3** (Guidance Note 3): Inspection and testing standards (HSE guidance)
-- **On-Site Guide**: Practical electrical guidance
-- **Best Practice Guides**: Industry good practice
+The [IET's 2015 cable article](https://electrical.theiet.org/media/1445/cables-in-walls.pdf) explains that distinction under the seventeenth edition. It is useful historical evidence for the correction, not a complete A4 design rule. Consult the current standard for all conditions. Ordinary plastic conduit is not interchangeable with a specifically permitted earthed metallic method. The raw note's “522.5.204” reference has not been carried forward as a verified clause.
 
-**Important clarification**: Approved Documents are guidance; they explain how to comply with Building Regulations, but are not themselves the law.
+## Structural rules need construction context
 
-## Part P: Electrical Safety in Buildings
+The original [[Electrics - Resources]] note lists notch and chase fractions but omits conditions, locations and construction types. Its suggestion to guess wall thickness from one brick is not a reliable design basis. Use the relevant structural guidance and actual construction details. These incomplete rules have been removed from the practical checklist rather than presented as universal limits.
 
-### Scope and Application
+## Additions and alterations
 
-Part P applies to electrical installation work in:
-- **Dwellings**: Where people permanently reside
-- **Common parts of buildings**: Shared areas in multi-unit buildings
-
-### Notifiable Work
-
-Certain electrical work in dwellings is notifiable (requires Building Control approval):
-- Consumer unit replacement or installation
-- Installation of new circuits
-- Certain work in bathrooms and kitchens
-- Specific applications per regulations
-
-### Self-Certification and CPS
-
-To self-certify notifiable work:
-- Must be registered with a Competent Person Scheme (CPS)
-- Examples: NICEIC, NAPIT, and other approved schemes
-- Registration involves assessment and ongoing compliance
-
-### Approved Document Guidance
-
-"Electrician's Guide to Building Regs" provides detailed guidance:
-- Pages 38 and 168 referenced for electrical protection
-- Cable protection and routing requirements
-- RCD protection specifications
-- Structural impact assessment requirements
-
-## Protection Requirements
-
-### RCD (Residual Current Device) Protection
-
-**Regulation 522.6.202**: Cables less than 50 mm deep in safe zones must have 30 mA RCD protection
-
-Applies when:
-- Cable depth from surface is less than 50 mm
-- Cable routed in standard (non-safe) zones
-- Additional protection required to prevent shock/damage
-
-**Regulation 522.5.204**: RCD can be avoided if cables are in earthed metallic covering, conduit, or trunking
-
-Alternative protection:
-- Earthed metallic covering around cable (e.g., steel conduit properly bonded)
-- Or solid conduit/trunking providing mechanical protection
-
-**Regulation 522.6.203**: Circuits in stud walls made mainly of metal require 30 mA RCD unless Regulation 522.6.204 is followed
-
-Application:
-- Metal stud wall systems (increasingly common)
-- Risk: Metal components could cause fault
-- 30 mA RCD protects against this risk, OR
-- Follow Regulation 522.6.204 alternative protection method
-
-## Cable Routes and Safe Zones
-
-### Safe Zone Definition and Application
-
-Safe zones are locations where cables are protected from accidental damage:
-
-**Safe zones include**:
-- **Vertical runs**: Directly above or below a switch or socket (within cable radius)
-- **Horizontal runs**: Routes running to accessories
-- **Ceiling runs**: Within 150 mm of the ceiling (measured from finished surface)
-- **Corner routes**: Within 150 mm of corners
-
-### Outside Safe Zones
-
-If cables are routed outside safe zones:
-- Additional protection required (conduit, trunking)
-- OR 30 mA RCD protection (Regulation 522.6.202)
-- Purpose: Prevent accidental damage from screws, nails, drilling
-
-### Practical Application
-
-When planning cable routes:
-1. Identify which routes are safe zones
-2. Route cables preferentially through safe zones
-3. If outside safe zones, provide mechanical protection or RCD protection
-4. Document route decisions
-
-## Structural Limits for Building Work
-
-### Joist Notches
-
-Maximum depth of notches in floor joists:
-
-**Limit**: Maximum depth = 0.125 × joist depth
-
-**Example**:
-- Joist depth: 200 mm
-- Maximum notch depth: 0.125 × 200 = 25 mm
-
-**Reason**: Maintain structural integrity; excessive notches weaken joists
-
-### Wall Chases (Vertical and Horizontal)
-
-Chasing or cutting into walls for cables must follow limits:
-
-**Vertical chases**:
-- Maximum depth: 1/3 of wall thickness
-- Example: 100 mm wall → max 33 mm deep chase
-
-**Horizontal chases**:
-- Maximum depth: 1/6 of wall thickness
-- Example: 100 mm wall → max 17 mm deep chase
-
-**Reason**: Maintain wall structural capacity; excessive chasing weakens walls
-
-### Wall Thickness Estimation
-
-If wall thickness is unknown:
-- Approximate using standard brick depth: ~100 mm per brick
-- Measure or research if possible
-- Account for actual construction method
-
-**Important note**: Exclude plaster thickness in calculations
-- Only structural material counts (brick, block, timber, etc.)
-- Plaster provides no structural contribution
-
-### Practical Approach
-
-When planning chases:
-1. Determine wall thickness (measure, research, estimate)
-2. Calculate maximum chase depth (vertical = 1/3, horizontal = 1/6)
-3. Plan cable route to stay within limits
-4. Make chases carefully to minimize depth
-5. Fill chases securely after cable installation
-
-## Regulation 132.16: Safe Addition to Installations
-
-### Core Principle
-
-Additions and alterations to electrical installations must not be made unless the existing installation is adequate and safe.
-
-**Teaching phrase**: "We add to good, we don't add to bad."
-
-### Application in Practice
-
-Before proceeding with alterations or additions:
-- Assess the existing installation/circuit
-- Determine if it is adequate for its continued use
-- If defects found, either:
-  - Remedy the defect as part of work (change scope to EIC)
-  - Decline to proceed with the alteration
-  - Advise client of extent of work needed
-
-### Example: Older Lighting Circuit Without CPC
-
-Real-world scenario:
-
-**Situation**: Adding new light fitting to older circuit with no circuit protective conductor
-
-**Assessment**:
-- Inspect existing circuit for CPC
-- Test continuity if CPC appears present
-- Determine if continuous throughout circuit
-
-**Problem**: Visible CPC at one point doesn't mean whole circuit is adequate
-- Circuit may be altered incorrectly in past
-- Continuity may be broken
-- Connections may be unreliable
-
-**Class 1 fitting requirement**: Needs reliable CPC
-
-**If no valid CPC**:
-- Option 1: Fit Class 2 (non-earthed) fitting instead
-- Option 2: Advise client of defect and cost of remedial work
-- Option 3: Rerun entire circuit with proper CPC (changes to EIC)
-
-**Conduit systems**: Older installations sometimes use conduit as CPC
-- May be acceptable if continuity proven reliable
-- Requires proper fly-leads at connections
-
-## Documentation References
-
-Key references for Building Regulations knowledge:
-- **Electrician's Guide to Building Regs**: pages 38 and 168
-- **Part P Compliance**: Self-certification requirements and CPS information
-- **Approved Document P**: Official guidance (available from government website)
-- **GN3** (Chapter 1): Legislation overview
-- **BS 7671**: Wiring Regulations technical content
-
-## Related Topics
-
-- [[Part P]] (detailed)
-- [[RCD Protection]] (detailed)
-- [[EIC and MEIWC]] (certification under Building Regs)
-- Cable routing and safe zones — see BS 7671 section 522.6 (covered in [[Electrical Safety]] and [[BS 7671]])
-- Structural limits on notching/drilling joists — see BS 7671 section 522.6 and Approved Document A
-- Safe Addition Principle — Regulation 132.16 of [[BS 7671]]
+Assess the suitability of the existing installation before extending it. The previous light-fitting example was too abbreviated to determine compliance from a missing or visible conductor alone. [[EIC and MEIWC]], [[Electrical Safety]] and the applicable standard provide the next study references.

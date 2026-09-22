@@ -2,11 +2,20 @@
 title: Friedrich Nietzsche
 type: entity
 domain: culture
-sources: [Quotes.md]
-related: [Philosophy_and_Meaning, Self_Improvement, Nassim_Taleb]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [philosopher, nietzsche, morality, will-to-power, aphorism]
+sources:
+  - misc/Quotes.md
+related:
+  - Philosophy & Meaning
+  - Self-Improvement
+  - Nassim Taleb
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - philosopher
+  - nietzsche
+  - morality
+  - will-to-power
+  - aphorism
 ---
 
 # Friedrich Nietzsche

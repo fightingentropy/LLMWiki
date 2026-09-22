@@ -2,11 +2,22 @@
 title: Flow Analysis
 type: topic
 domain: markets
-sources: [Trading.md, Tools.md, Brief.md]
-related: [[Market Drivers]], [[Positioning]], [[Crypto Trading]], [[Sentiment]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [flows, positioning, money-movement, analysis]
+sources:
+  - markets/Trading.md
+  - markets/Tools.md
+  - markets/Brief.md
+related:
+  - Market Drivers
+  - Positioning
+  - Crypto Trading
+  - Sentiment
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - flows
+  - positioning
+  - money-movement
+  - analysis
 ---
 
 ## Overview

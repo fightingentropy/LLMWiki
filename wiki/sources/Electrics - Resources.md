@@ -2,73 +2,67 @@
 title: Electrics - Resources
 type: source
 domain: electrics
-sources: [raw/electrics/Resources.md]
-related: [Electrical Safety, Building Regulations, Part P, Circuit Protection, Ohm's Law, RCD Protection]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [electrics, formulas, building-regulations, protection-devices, cable-routing, structural-limits]
+sources:
+  - electrics/Resources.md
+  - clippings/evidence-review-2026-09-22/Electrics.md
+  - snapshots/1790109058909-4d616a72b2e3/electrics/Resources.md
+related:
+  - Electrical Safety
+  - Building Regulations
+  - RCD Protection
+  - BS 7671
+  - Part P
+  - Ohm's Law and Electrical Calculations
+  - Electrical Study Map
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - electrics
+  - formulas
+  - building-regulations
+  - protection-devices
+  - cable-routing
+  - structural-limits
+summary: >-
+  Original formulas and rules retained, with missing assumptions and
+  cable-protection errors identified.
+reviewed: '2026-09-22'
+review_status: partial
+review_notes: >-
+  Edition, scope and stated corrections checked against official references.
+  Detailed historical procedures and page numbers require the applicable
+  standard and course materials.
+review_due: '2026-10-15'
 ---
 
 # Electrics - Resources
 
-Reference material covering core electrical calculations, definitions, protection devices, building regulations, cable routing, and structural limits for electrical installations.
+The original note contains formulas, definitions, cable-protection rules, structural fractions and page references. It is preserved unchanged in the source record below.
 
-Webinar: https://www.bigmarker.com/access-training/electrics-webinar-5-initial-verification-inspection-b026d74b8b07
+## Useful starting points
 
-## Core Formulas
+- Ohm's law relates voltage, current and resistance for the applicable circuit model: V = I × R.
+- P = V × I describes DC or unity-power-factor real-power calculations; it is not a universal AC load rule. The note's 1 kW ≈ 4.35 A at 230 V assumes that context.
+- Exposed- and extraneous-conductive-part definitions introduce different questions about protection. [[Electrical Safety]] explains why equipment class and installation context matter.
 
-Quick reference relationships for basic electrical calculations:
+## Corrections and incomplete rules
 
-- **Ohm's law triangle**: V = I x R
-- **Power triangle**: P = I x V
-- **Rule of thumb at 230 V**: 1 kW is approximately 4.35 A
+The RCD and cable-zone statements need their full conditions. The source's “522.5.204” reference is unverified and should not be copied as a current clause. [[Building Regulations]] and [[RCD Protection]] carry the correction: an RCD alone does not permit an arbitrary concealed route.
 
-## Key Definitions
+The notch/chase fractions omit the construction and location conditions. Guessing structural wall thickness is not a reliable design method. Historical book page numbers also need an edition. See [[BS 7671]], [[Part P]] and [[Electrical Evidence Review - September 2026]].
 
-Terms describing parts that can become hazardous under fault conditions:
+Related: [[Ohm's Law and Electrical Calculations]], [[Electrical Study Map]].
 
-- **Exposed-conductive-part**: A conductive part of equipment that can be touched and is not normally live, but can become live under fault conditions.
-- **Extraneous-conductive-part**: A conductive part that can introduce a potential (generally earth potential) and is not part of the electrical installation.
+## Equipment and training leads captured 22 September
 
-## Protection Devices and Earthing
+The revised note also saves these research leads. Product suitability, specifications and training accreditation have not been evaluated here.
 
-What each protection measure is intended to handle:
+- [Lutron commercial lighting](https://commercial.lutron.com/uk/en/home)
+- [Hilti SC 6ML-22](https://www.hilti.co.uk/c/CLS_POWER_TOOLS_7125/CLS_SAWS_7125/r17484560?itemCode=2315446&activeTab=mini-configurator-tab)
+- [Hilti SC 4MR-22](https://www.hilti.co.uk/c/CLS_POWER_TOOLS_7125/CLS_SAWS_7125/r17654785?itemCode=2351363&activeTab=mini-configurator-tab)
+- [Hilti SB 6-22](https://www.hilti.co.uk/c/CLS_POWER_TOOLS_7125/CLS_SAWS_7125/r17416897?itemCode=2326050&activeTab=mini-configurator-tab)
+- [Hilti SB 4-22](https://www.hilti.co.uk/c/CLS_POWER_TOOLS_7125/CLS_SAWS_7125/r13250376?itemCode=2240543&activeTab=mini-configurator-tab)
+- [Hilti AG 6D-22](https://www.hilti.co.uk/c/CLS_POWER_TOOLS_7125/CLS_GRINDERS_SANDERS_7125/r13009534?itemCode=2215454&activeTab=mini-configurator-tab)
+- [Electrician Training](https://electriciantraining.co.uk/)
 
-- **RCD**: Protects against earth faults and electric shock.
-- **Circuit breaker**: Protects against overcurrent and short circuit.
-- **Earth cable**: Provides a low-resistance escape route for fault current if live touches metal.
-
-## Building Regulations and Scope
-
-Where specific regulations and protections apply:
-
-- **Part P**: Applies where people permanently reside (dwellings).
-- **Regulation 522.6.202**: Cables less than 50 mm deep in safe zones must be 30 mA RCD protected.
-- **Regulation 522.5.204**: If cables are in earthed metallic covering, conduit, or trunking, an RCD can be avoided.
-- **Regulation 522.6.203**: If a circuit is in a stud wall made mainly of metal, 30 mA RCD is required unless Regulation 522.6.204 is followed.
-
-## Cable Routes and Safe Zones
-
-Guidance for routing to avoid damage and ensure compliance:
-
-**Safe zones** include:
-- Directly above/below a switch or socket (vertical)
-- Horizontal runs to accessories
-- Within 150 mm of the ceiling
-- Within 150 mm of corners
-
-## Structural Limits for Building Work
-
-Limits for notches and chases to maintain structural integrity:
-
-- **Joist notches**: Maximum depth is 0.125 x joist depth
-- **Wall chases**: 
-  - Vertical up to 1/3 of wall thickness
-  - Horizontal up to 1/6 of wall thickness
-- **Wall thickness approximation**: If unknown, approximate with one brick (about 100 mm of brick depth)
-- **Important note**: Exclude plaster thickness because it is not structural
-
-## References
-
-- Electrics guide to Building Regs: pages 38 and 168
-- Floors and Ceilings notes — see [[Building Regulations]] and [[BS 7671]] section 522.6 (cable routing in walls/joists)
+Use [[Electrical Study Map]] to connect a training choice to the knowledge and assessment it needs to cover.

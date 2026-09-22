@@ -2,11 +2,22 @@
 title: HIP-3 Silver Microstructure
 type: topic
 domain: markets
-sources: [Articles.md]
-related: [[Exchange Microstructure]], [[Commodities]], [[Silver]], [[Hyperliquid]], [[CME]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [microstructure, silver, hyperliquid, cme, comparison]
+sources:
+  - markets/Articles.md
+related:
+  - Exchange Microstructure
+  - Commodities
+  - Silver
+  - Hyperliquid
+  - CME
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - microstructure
+  - silver
+  - hyperliquid
+  - cme
+  - comparison
 ---
 
 ## Overview

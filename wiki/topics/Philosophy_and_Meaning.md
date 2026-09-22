@@ -2,11 +2,25 @@
 title: Philosophy & Meaning
 type: topic
 domain: culture
-sources: [Culture.md, Thoughts.md, Psychology.md, X takes.md, Youtube.md, Quotes.md]
-related: [Political Philosophy, Psychology, Self-Improvement]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [philosophy, meaning, identity, entropy, extropy]
+sources:
+  - misc/Culture.md
+  - misc/Thoughts.md
+  - misc/Psychology.md
+  - misc/X takes.md
+  - misc/Youtube.md
+  - misc/Quotes.md
+related:
+  - Political Philosophy
+  - Psychology & Behavior
+  - Self-Improvement
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - philosophy
+  - meaning
+  - identity
+  - entropy
+  - extropy
 ---
 
 # Philosophy & Meaning

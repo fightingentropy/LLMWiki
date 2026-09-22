@@ -2,11 +2,51 @@
 title: Trading Psychology
 type: topic
 domain: markets
-sources: [Bizz & Finance.md, Psychology.md, Youtube.md, CT.md, Quotes.md, markets/Trading.md, "bookmarks/Markets & Crypto.md"]
-related: [[Markets]], [[Psychology]], [[Decision-Making]], [[Repeated Games]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [trading, psychology, decision-making, behavioral-finance, delusion, skin-in-the-game, bag-holding, variance]
+sources:
+  - misc/Bizz & Finance.md
+  - misc/Psychology.md
+  - misc/Youtube.md
+  - misc/CT.md
+  - misc/Quotes.md
+  - markets/Trading.md
+  - bookmarks/Markets & Crypto.md
+  - clippings/bookmark-updates-2026-09-22/Markets & Crypto.md
+related:
+  - Genius and Madness
+  - Youtube
+  - Self-Improvement
+  - Nassim Taleb
+  - CryptoCred
+  - Crypto Takes
+  - Pentosh1
+  - LomahCrypto
+  - 0xaporia
+  - trading_axe
+  - Rewkang
+  - Quotes
+  - Stanley Druckenmiller
+  - Alex Hormozi
+  - Seneca
+  - cobie
+  - Repeated Games
+  - Markets
+  - Psychology & Behavior
+  - Decision-Making
+  - Behavioral Finance
+  - Naval Ravikant
+  - Market Performance Measurement
+  - Bookmarks - Markets & Crypto
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trading
+  - psychology
+  - decision-making
+  - behavioral-finance
+  - delusion
+  - skin-in-the-game
+  - bag-holding
+  - variance
 ---
 
 # Trading Psychology
@@ -159,3 +199,7 @@ Trading-flavoured selections from the human's [[Quotes]] archive. Full attributi
 
 ---
 Related: [[Markets]], [[Psychology]], [[Decision-Making]], [[Behavioral_Finance]], [[Repeated Games]], [[CT]], [[CryptoCred]], [[Pentosh1]], [[0xaporia]], [[cobie]], [[trading_axe]], [[Rewkang]], [[Quotes]], [[Stanley Druckenmiller]], [[Alex_Hormozi]], [[Seneca]], [[Naval_Ravikant]]
+
+## September 2026 performance narratives
+
+A public leaderboard and a convincing hindsight story can obscure what was actually measured. [[Market Performance Measurement]] asks which accounts, flows, hedges, costs, and time windows produce the displayed PnL. The saved Zcash hindsight post and trader/personal-life clip remain anecdotes rather than execution evidence. (from [[Bookmarks - Markets & Crypto]])

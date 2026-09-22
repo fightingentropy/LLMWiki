@@ -2,11 +2,24 @@
 title: Andrew Tate
 type: entity
 domain: culture
-sources: [Top Pods.md, Women.md]
-related: [Masculinity_and_Men, Political_Commentary, Joe_Rogan, DrDynamis, Heartiste]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [tate, masculinity, fame, empire, culture, controversy]
+sources:
+  - misc/Top Pods.md
+  - misc/Women.md
+related:
+  - Masculinity & Men
+  - Political Commentary
+  - Joe Rogan
+  - DrDynamis
+  - Heartiste
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - tate
+  - masculinity
+  - fame
+  - empire
+  - culture
+  - controversy
 ---
 
 # Andrew Tate

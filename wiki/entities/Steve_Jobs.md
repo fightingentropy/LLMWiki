@@ -2,11 +2,22 @@
 title: Steve Jobs
 type: entity
 domain: culture
-sources: [Quotes.md]
-related: [[Quotes]], [[Philosophy_and_Meaning]], [[Marcus_Aurelius]], [[Self_Improvement]], [[Kornfield]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [entrepreneur, apple, mortality, product, taste]
+sources:
+  - misc/Quotes.md
+related:
+  - Quotes
+  - Philosophy & Meaning
+  - Marcus Aurelius
+  - Self-Improvement
+  - Jack Kornfield
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - entrepreneur
+  - apple
+  - mortality
+  - product
+  - taste
 ---
 
 # Steve Jobs

@@ -2,11 +2,20 @@
 title: Chris Williamson
 type: entity
 domain: personal
-sources: [Go Do.md, Youtube.md]
-related: [Alex_Hormozi, Self_Improvement, Philosophy_and_Meaning, Masculinity_and_Men]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [podcaster, modern-wisdom, long-form]
+sources:
+  - misc/Go Do.md
+  - misc/Youtube.md
+related:
+  - Alex Hormozi
+  - Self-Improvement
+  - Philosophy & Meaning
+  - Masculinity & Men
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - podcaster
+  - modern-wisdom
+  - long-form
 ---
 
 # Chris Williamson

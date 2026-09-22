@@ -2,11 +2,23 @@
 title: fejau_inc
 type: entity
 domain: markets
-sources: [Trading.md, CT.md]
-related: [[Traders Directory]], [[Crypto Trading]], [[Macro Trading]], [[CT]]
-created: 2026-04-12
-updated: 2026-04-18
-tags: [trader, twitter, crypto, positioning, macro, m2]
+sources:
+  - markets/Trading.md
+  - misc/CT.md
+related:
+  - Traders Directory
+  - Crypto Trading
+  - Macro Trading
+  - Crypto Takes
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - positioning
+  - macro
+  - m2
 ---
 
 ## Overview

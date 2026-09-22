@@ -2,11 +2,20 @@
 title: OpenShip
 type: entity
 domain: dev
-sources: [Setup.md]
-related: [[Setup]], [[Developer_Resources]], [[Tools]], [[Digital Security]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [self-hosting, deployment, operations, infrastructure]
+sources:
+  - misc/Setup.md
+related:
+  - Setup
+  - Developer Resources
+  - Tools & Software
+  - Digital Security
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - self-hosting
+  - deployment
+  - operations
+  - infrastructure
 ---
 
 # OpenShip

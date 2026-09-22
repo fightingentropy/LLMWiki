@@ -2,11 +2,23 @@
 title: Autism Capital
 type: entity
 domain: markets
-sources: [CT.md, X-Bookmarks.md, Thoughts.md]
-related: [[CT]], [[X-Bookmarks]], [[Traders Directory]], [[Culture_and_Environment]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [twitter, crypto, culture, commentary, dissociation]
+sources:
+  - misc/CT.md
+  - misc/X-Bookmarks.md
+  - misc/Thoughts.md
+related:
+  - Crypto Takes
+  - X-Bookmarks
+  - Traders Directory
+  - Culture and Environment
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - twitter
+  - crypto
+  - culture
+  - commentary
+  - dissociation
 ---
 
 # Autism Capital

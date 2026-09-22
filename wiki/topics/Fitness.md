@@ -2,79 +2,54 @@
 title: Fitness
 type: topic
 domain: health
-sources: [Body.md, "bookmarks/Health & Psychology.md"]
-related: [Body Optimization, Mental Health]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [fitness, training, exercise, health]
+sources:
+  - misc/Body.md
+  - clippings/bookmark-updates-2026-09-22/Health & Psychology.md
+  - clippings/evidence-review-2026-09-22/Health.md
+related:
+  - Body Optimization
+  - Stress Management
+  - Health Evidence
+  - Bookmarks - Health & Psychology
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - fitness
+  - training
+  - exercise
+  - health
+summary: >-
+  Exercise guidance, the actual scope of the push-up study, and retained
+  training leads.
+reviewed: '2026-09-22'
+review_status: partial
+review_notes: >-
+  The corrections below were checked against the cited sources. Other retained
+  claims are identified as unresolved.
+review_due: '2026-12-21'
 ---
 
 # Fitness
 
-## Push-Ups as Cardiac Predictor
-Men who can do 40+ push-ups = **96% reduced risk of heart disease** vs. men who can do <10.
+## Activity baseline
 
-Push-ups are better predictor of heart disease than aerobic treadmill tests.
+For adults aged 19–64, [NHS guidance](https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/) combines aerobic activity with strength work: aim for 150 minutes of moderate activity or 75 minutes of vigorous activity weekly, plus strengthening the major muscle groups on at least two days. Adjust activity to health, ability and experience. (from [[Health Evidence Review - September 2026]])
 
-**Implication:** Functional strength = health marker. Simple, repeatable movement under load = better biomarker than aerobic capacity.
+## What the push-up study actually found
 
-## Leg Training: High Reps, Low Bulk
-Keep leg reps 15+ per set with minimal rest between movements to build muscle without bulk.
+[Yang et al. (2019)](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2724778) followed 1,104 active male firefighters. Higher baseline push-up capacity was associated with fewer cardiovascular events. The widely quoted 96% figure compares groups in that cohort. It does not mean doing forty push-ups causes a 96% risk reduction, nor validate a universal replacement for clinical assessment or treadmill testing.
 
-Three rounds of each exercise with consistent tempo.
+## Ideas retained from the source
 
-## Comprehensive Body Coverage
-- **Push-ups, Pull-ups, Squats** - Major movers (upper push, upper pull, lower push)
-- **Leg raises** - Abdominals
-- **Supermans, Planks** - Lower back
-- **Side squats/lunges** - Hamstrings
-- **Calf jumps, Calf string skipping** - Calves
-- **Pull-up bar exercises, Dips, L-sits** - Shoulders and abs
-- **Neck bridges, Neck raises** - Neck
+[[Body]] collects bodyweight exercise ideas, posture clips, high-repetition leg work and cold-shower anecdotes. The earlier page turned these into a general routine and promised particular physique and hormone outcomes. That confidence was not justified by the supplied evidence.
 
-This covers muscular balance and functional strength.
+- Choose progression and recovery appropriate to the task; “15+ reps prevents bulk” is not established by the source.
+- The neck-bridge and neck-blood-flow advice has not been validated here.
+- Hair appearance is not a substitute for a health assessment.
+- Cold-shower mood reports are personal experiences, not evidence of medication equivalence.
 
-## Recovery & Adaptation
-"The more you do, the more energy you have, the more you relax."
+## Saved mobility reference
 
-Counterintuitive: activity breeds recovery energy. Inactivity breeds fatigue.
+The September lower-leg and foot-rotation clip is a demonstration to evaluate, not a diagnosis or a complete rehabilitation programme. Its original link and annotation are in [[Bookmarks - Health & Psychology]].
 
-## Cold Exposure Benefits
-5-minute cold showers = immediate dopamine spike with lasting day-long mood improvement. Effect comparable to medication.
-
-Benefits:
-- Acute stress response training
-- Dopamine upregulation
-- Mood stabilization
-- Circulation improvement
-
-## Stress Type Differentiation
-- **Acute stress** (competition, intense exercise, conflict) = adaptive, makes you stronger
-- **Chronic stress** (isolation, poor sleep, drudgery) = toxic, causes burnout
-
-Modern life: abundant chronic, absent acute. Introduce acute stressors (training, competition, calculated risk).
-
-## Movement as Medicine
-All movement modalities therapeutic: walking, dancing, sun exposure, cuddling, creating, writing.
-
-Movement = nervous system regulation = mental health intervention.
-
-## Testosterone Production
-Secreted via:
-- Sleep (circadian alignment)
-- Leg training (major muscle groups)
-- Sun exposure
-
-Combine these for baseline testosterone optimization without supplementation.
-
-## Hair & Protein Status
-Better way to determine health than most biomarkers: look at hair quality, skin quality, nails.
-
-These reflect protein status, micronutrient absorption, overall metabolic health.
-
-## Lower-leg and rotation movement reference
-
-A retained Guy Macchia clip demonstrates foot/ankle work, standing rotation, supported movement, and bouncing. It is an exercise reference, not a validated rehabilitation plan. Claims that most training should occur below the knee, that rotation is a universal “master of decompression,” or that broad fascia explanations apply to everyone are not established by the clip. Load, balance, injury history, and pain determine suitability. (from [[X-Bookmarks]])
-
----
-Related: [[Body_Optimization]], [[Mental_Health]], [[Self_Improvement]]
+Related: [[Body_Optimization]], [[Stress_Management]], [[Health Evidence]].

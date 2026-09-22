@@ -2,11 +2,34 @@
 title: Funny
 type: source
 domain: culture
-sources: [misc/Funny.md]
-related: [[Humor]], [[Jokes]], [[Pick-up-limes]], [[Culture]], [[Dating_and_Relationships]], [[Markets]], [[Crypto Trading]], [[Online Extremism and Evidence]]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [humor, memes, tweets, greek, albanian, crude, dark-comedy, crypto, shitpost, links]
+sources:
+  - misc/Funny.md
+related:
+  - Humor
+  - Jokes
+  - Pick Up Limes
+  - Culture & Observations
+  - Dating & Relationships
+  - Markets
+  - Crypto Trading
+  - Online Extremism and Evidence
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - humor
+  - memes
+  - tweets
+  - greek
+  - albanian
+  - crude
+  - dark-comedy
+  - crypto
+  - shitpost
+  - links
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Funny

@@ -2,11 +2,31 @@
 title: Test Equipment Standards
 type: topic
 domain: electrics
-sources: [raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection and Testing Demonstration.md, raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT Testing.md]
-related: [Electrical Safety, GS38, Calibration and Accuracy, Test Leads and Probes, Multi-Function Testers]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [test-equipment, standards, safety, accuracy, calibration, gs38]
+sources: []
+related:
+  - Electrical Safety
+  - GS38
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - test-equipment
+  - standards
+  - safety
+  - accuracy
+  - calibration
+  - gs38
+source_gaps:
+  - >-
+    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
+    and Testing Demonstration.md
+  - >-
+    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT
+    Testing.md
+review_status: unverified
+review_notes: >-
+  Historical webinar summary. The original transcript is unavailable; detailed
+  test limits, procedures, chapter and exam references have not been
+  authenticated against current material.
 ---
 
 # Test Equipment Standards

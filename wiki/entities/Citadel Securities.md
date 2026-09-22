@@ -2,11 +2,18 @@
 title: Citadel Securities
 type: entity
 domain: markets
-sources: [Articles.md]
-related: [[Markets - Articles]], [[Market Structure]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [firm, market-maker, trading, research]
+sources:
+  - markets/Articles.md
+related:
+  - Markets - Articles
+  - Exchange Microstructure
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - firm
+  - market-maker
+  - trading
+  - research
 ---
 
 ## Overview

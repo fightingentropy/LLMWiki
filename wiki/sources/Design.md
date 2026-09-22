@@ -2,11 +2,24 @@
 title: Design Resources
 type: source
 domain: dev
-sources: [misc/Design.md]
-related: [[Design_and_Aesthetics]], [[Developer_Resources]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [design, tools, ui-ux, animation, typography, components]
+sources:
+  - misc/Design.md
+related:
+  - Design & Aesthetics
+  - Developer Resources
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - design
+  - tools
+  - ui-ux
+  - animation
+  - typography
+  - components
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Design Resources

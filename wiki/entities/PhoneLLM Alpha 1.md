@@ -2,11 +2,18 @@
 title: PhoneLLM Alpha 1
 type: entity
 domain: dev
-sources: ["bookmarks/AI & Agents.md"]
-related: [[AI Agents]], [[Developer_Resources]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [voice-agent, language-model, open-weights, tool-use]
+sources:
+  - bookmarks/AI & Agents.md
+related:
+  - AI Agents
+  - Developer Resources
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - voice-agent
+  - language-model
+  - open-weights
+  - tool-use
 ---
 
 # PhoneLLM Alpha 1

@@ -2,11 +2,25 @@
 title: CryptoCred
 type: entity
 domain: markets
-sources: [CT.md, markets/Trading.md, "bookmarks/Markets & Crypto.md"]
-related: [[Traders Directory]], [[CT]], [[Trading_Psychology]], [[Crypto Trading]], [[Exchange Microstructure]]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [trader, twitter, crypto, education, psychology, bag-holding]
+sources:
+  - misc/CT.md
+  - markets/Trading.md
+  - bookmarks/Markets & Crypto.md
+related:
+  - Traders Directory
+  - Crypto Takes
+  - Trading Psychology
+  - Crypto Trading
+  - Exchange Microstructure
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - education
+  - psychology
+  - bag-holding
 ---
 
 ## Overview

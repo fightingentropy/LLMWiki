@@ -2,11 +2,24 @@
 title: Political Commentary
 type: topic
 domain: culture
-sources: [Politics.md, Culture.md, Top Pods.md, "bookmarks/Culture & Ideas.md"]
-related: [[Philosophy_and_Meaning]], [[Social_Commentary]], [[Masculinity_and_Men]], [[Online Extremism and Evidence]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [politics, media-critique, ideology, governance, decline]
+sources:
+  - misc/Politics.md
+  - misc/Culture.md
+  - misc/Top Pods.md
+  - bookmarks/Culture & Ideas.md
+related:
+  - Philosophy & Meaning
+  - Social Commentary
+  - Masculinity & Men
+  - Online Extremism and Evidence
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - politics
+  - media-critique
+  - ideology
+  - governance
+  - decline
 ---
 
 # Political Commentary

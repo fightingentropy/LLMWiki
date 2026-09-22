@@ -2,11 +2,25 @@
 title: Markets - Tools
 type: source
 domain: markets
-sources: [markets/Tools.md]
-related: [[Hyperliquid]], [[Trading Platforms]], [[Liquidations]], [[Gloomberb]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [tools, platforms, analytics, real-time-data, latency]
+sources:
+  - markets/Tools.md
+related:
+  - Hyperliquid
+  - Trading Platforms
+  - Liquidations
+  - Gloomberb
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - tools
+  - platforms
+  - analytics
+  - real-time-data
+  - latency
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 ## Real-Time Tools

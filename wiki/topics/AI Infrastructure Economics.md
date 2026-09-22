@@ -2,11 +2,31 @@
 title: AI Infrastructure Economics
 type: topic
 domain: markets
-sources: ["bookmarks/Markets & Crypto.md", "bookmarks/AI & Agents.md", "bookmarks/Developer Tools.md"]
-related: [[AI Agents]], [[Equities]], [[Economics]], [[Markets]], [[Developer_Resources]], [[Technology_Critique]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [ai, infrastructure, semiconductors, data-centres, capex, valuation]
+sources:
+  - bookmarks/Markets & Crypto.md
+  - bookmarks/AI & Agents.md
+  - bookmarks/Developer Tools.md
+  - clippings/bookmark-updates-2026-09-22/Markets & Crypto.md
+  - clippings/bookmark-updates-2026-09-22/AI & Agents.md
+related:
+  - X-Bookmarks
+  - AI Agents
+  - Equities
+  - Economics
+  - Markets
+  - Developer Resources
+  - Technology Critique
+  - Bookmarks - Markets & Crypto
+  - Bookmarks - AI & Agents
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - ai
+  - infrastructure
+  - semiconductors
+  - data-centres
+  - capex
+  - valuation
 ---
 
 # AI Infrastructure Economics
@@ -34,3 +54,7 @@ Data-centre economics depend on electricity generation, transmission, interconne
 - When does capacity become overbuild and margin pressure?
 
 Related: [[AI Agents]], [[Equities]], [[Economics]], [[Markets]], [[Developer_Resources]], [[Technology_Critique]]
+
+## September 2026 scenarios
+
+Two new speculative branches extend the existing questions: an efficient-model shift away from hyperscaling that might redirect capital toward Treasuries, and a private-frontier/wet-lab thesis about where model-enabled discoveries could be monetised. Neither is established by the retained posts. Track the technical, commercial, and policy premises separately before drawing a valuation conclusion. (from [[Bookmarks - Markets & Crypto]] and [[Bookmarks - AI & Agents]])

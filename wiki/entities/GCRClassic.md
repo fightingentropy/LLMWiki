@@ -2,11 +2,24 @@
 title: GCRClassic
 type: entity
 domain: markets
-sources: [CT.md]
-related: [[Traders Directory]], [[CT]], [[Crypto Trading]], [[Macro Trading]], [[Trading_Psychology]], [[Sentiment]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [trader, twitter, crypto, macro, philosophy, determinism]
+sources:
+  - misc/CT.md
+related:
+  - Traders Directory
+  - Crypto Takes
+  - Crypto Trading
+  - Macro Trading
+  - Trading Psychology
+  - Sentiment
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - macro
+  - philosophy
+  - determinism
 ---
 
 ## Overview

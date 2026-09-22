@@ -2,11 +2,28 @@
 title: Safe Isolation
 type: topic
 domain: electrics
-sources: [raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection and Testing Demonstration.md]
-related: [Electrical Safety, Approved Voltage Indicators, GS38, Lock-Off Procedures, Test Points]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [safe-isolation, procedure, voltage-indicator, lock-off, proving-dead, dead-testing]
+sources: []
+related:
+  - Electrical Safety
+  - GS38
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - safe-isolation
+  - procedure
+  - voltage-indicator
+  - lock-off
+  - proving-dead
+  - dead-testing
+source_gaps:
+  - >-
+    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
+    and Testing Demonstration.md
+review_status: unverified
+review_notes: >-
+  Historical webinar summary. The original transcript is unavailable; detailed
+  test limits, procedures, chapter and exam references have not been
+  authenticated against current material.
 ---
 
 # Safe Isolation

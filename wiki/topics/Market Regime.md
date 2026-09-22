@@ -2,11 +2,23 @@
 title: Market Regime
 type: topic
 domain: markets
-sources: [Brief.md, Articles.md]
-related: [[Macro Trading]], [[Cross-Asset Analysis]], [[Inflation]], [[Growth]], [[Liquidity]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [regime, analysis, macro, volatility, liquidity]
+sources:
+  - markets/Brief.md
+  - markets/Articles.md
+related:
+  - Macro Trading
+  - Cross-Asset Analysis
+  - Real Yields
+  - Economics
+  - Flow Analysis
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - regime
+  - analysis
+  - macro
+  - volatility
+  - liquidity
 ---
 
 ## Overview

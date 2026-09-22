@@ -2,11 +2,23 @@
 title: Economics
 type: topic
 domain: markets
-sources: [Bizz & Finance.md, Politics.md, Culture.md]
-related: [Markets, Business_Strategy, Political_Commentary, Credit, Rates]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [economics, incentives, price-theory, policy]
+sources:
+  - misc/Bizz & Finance.md
+  - misc/Politics.md
+  - misc/Culture.md
+related:
+  - Markets
+  - Business Strategy
+  - Political Commentary
+  - Credit
+  - Rates
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - economics
+  - incentives
+  - price-theory
+  - policy
 ---
 
 # Economics

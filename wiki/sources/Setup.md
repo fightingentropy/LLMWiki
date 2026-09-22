@@ -2,11 +2,22 @@
 title: Setup
 type: source
 domain: dev
-sources: [misc/Setup.md]
-related: [[Developer_Resources]], [[Tools]], [[OpenShip]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [setup, tools, dev-environment]
+sources:
+  - misc/Setup.md
+related:
+  - Developer Resources
+  - Tools & Software
+  - OpenShip
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - setup
+  - tools
+  - dev-environment
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Setup

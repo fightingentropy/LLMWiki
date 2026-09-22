@@ -2,11 +2,33 @@
 title: Technology Critique
 type: topic
 domain: culture
-sources: [Culture.md, Thoughts.md, "X takes.md", "bookmarks/AI & Agents.md", "bookmarks/Personal & Life.md"]
-related: [[Culture_and_Environment]], [[Social_Commentary]], [[Self_Improvement_Culture_Critique]], [[AI Agents]], [[Digital Security]]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [technology, critique, optimization, tools, attention]
+sources:
+  - misc/Culture.md
+  - misc/Thoughts.md
+  - misc/X takes.md
+  - bookmarks/AI & Agents.md
+  - bookmarks/Personal & Life.md
+  - clippings/bookmark-updates-2026-09-22/Culture & Ideas.md
+related:
+  - Culture & Observations
+  - Thoughts & Observations
+  - Self-Improvement Culture Critique
+  - Quotes
+  - Digital Security
+  - Culture and Environment
+  - Social Commentary
+  - Design & Aesthetics
+  - AI Agents
+  - Bookmarks - Culture & Ideas
+  - Personal Knowledge Management
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - technology
+  - critique
+  - optimization
+  - tools
+  - attention
 ---
 
 # Technology Critique
@@ -36,3 +58,9 @@ Introduced in [[Culture]] under "Technology Critique & Women," extended through 
 - **Tool power widens the permission problem.** Personal-operation bots, relationship graphs, brokerage MCPs, and cross-device control planes make [[Digital Security]] part of product design rather than an afterthought.
 
 Related: [[Culture_and_Environment]], [[Social_Commentary]], [[Self_Improvement_Culture_Critique]], [[Design_and_Aesthetics]], [[AI Agents]], [[Digital Security]]
+
+## September 2026 source extensions
+
+Authentication fatigue, image-led Hacker News commentary, an AI actress interview, and claims about knowledge-worker displacement add contemporary examples of the gap between product framing and lived use. Some have no recoverable argument in the saved text and should remain visual references until their context is identified. (from [[Bookmarks - Culture & Ideas]])
+
+[[Personal Knowledge Management]] connects the critique of endless consumption to the practical question of whether retained material is being revisited, corrected, and used.

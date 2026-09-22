@@ -3,10 +3,15 @@ title: Wiki Log
 type: log
 domain: personal
 sources: []
-related: ["Wiki Index", "Wiki Overview"]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [log, operations, timeline]
+related:
+  - Wiki Index
+  - Wiki Overview
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - log
+  - operations
+  - timeline
 ---
 
 # Wiki Log
@@ -121,3 +126,31 @@ Ingested the Quotes file (~34KB, long-running curated quote archive spanning phi
 ## [2026-04-18] gap-fill | 43 new pages, 0 broken links
 
 Closed all 78 broken wikilinks flagged by lint. Created 17 new entity pages ([[Kafka]], [[Sylvia_Plath]], [[Gabriel_Garcia_Marquez]], [[G_K_Chesterton]], [[Kornfield]], [[Steve_Jobs]], [[Peter_Thiel]], [[David_Goggins]], [[Zhu Su]], and 8 crypto X-account traders: [[AutismCapital]], [[CL207]], [[fewseethis]], [[HighStakesCap]], [[LomahCrypto]], [[OxHamz]], [[RJ_Killmex]], [[thiccythot]]). Created 21 new topic pages ([[Behavioral_Finance]], [[Capital_Allocation_Timing]], [[Decision-Making]], [[Economics]], [[Genius_and_Madness]], [[Market Cycles]], [[Stress_Management]], [[Circadian_Rhythm]], [[Neurodiversity]], [[Proximity_Infatuation]], [[Culture_and_Environment]], [[Business_Philosophy]], [[Political_Philosophy]], [[Technology_Critique]], [[Social_Commentary]], [[Media_Critique]], [[Self_Improvement_Culture_Critique]], [[Entropy_vs_Extropy]], [[Thoughts_and_Observations]], [[Catfish_Effect]], [[Design_Thinking]]). Created 5 new electrics topic pages for UK standards/regs: [[Part P]], [[EICR]], [[GS38]], [[BS EN 61010]], [[BS EN 61557]]. Fixed alias-mismatch wikilinks across source pages (Politics→Political Commentary, Philosophy→Philosophy_and_Meaning, Risk_Management→Risk Analysis, Crypto→Crypto Trading, Design_Tools/Web_Design→Design_and_Aesthetics). Removed literal-title and section-heading wikilinks that weren't real pages (OpenClaw setup guide title, Floors and Ceilings, Cable Routing, Structural Limits, Safe Addition Principle, Hyperliquid Latency Map, June 2028 scenario, Articles.md). Updated [[INDEX]] with all 43 new pages grouped under Entities, Personal & Psychology, Markets & Trading, Electrics, and Culture & Politics. Lint broken-link count: 78 → 0.
+
+---
+
+## [2026-09-22] ingest | September bookmark updates through 22 September
+
+Ingested the current Brain bookmark index and every added or revised line across its ten categories. The collection grew from 624 to 921 structured entries: 297 net additions plus six revised annotations, giving 303 changed entries. This includes all 30 X bookmarks retained in the referenced bookmarks task on 22 September, the 17 September batch, the September Chrome additions, and the manually added ADHD/circadian source.
+
+Preserved existing raw files byte-for-byte and added 11 dated source clippings under `raw/clippings/bookmark-updates-2026-09-22/`: a verbatim index and ten change clippings with original-source and baseline hashes. Created ten category source pages, four entity pages ([[Compositor]], [[Helium Browser]], [[Omarchy iCloud Photos]], [[Quicker]]), and three topic pages ([[Personal Knowledge Management]], [[3D Printing and Digital Fabrication]], [[Market Performance Measurement]]). Source registers preserve every changed entry, original links, unresolved visual context, and caveats.
+
+Updated related developer, design, security, market, culture, personal-reference, and health pages. Explicitly corrected the obsolete reject-low-value retention rule, the universal circadian redefinition of ADHD, and clinical overstatements contradicted by the new health sources. Preserved opposing medication anecdotes and the Hyperliquid funding-trade author's own correction. Checked selected primary product documentation, the 2025 circadian perspective, NIMH's depression overview, and Hyperliquid's portfolio-margin documentation; the remaining linked posts remain attributed source records, not newly verified facts.
+
+Updated [[X-Bookmarks]], [[INDEX]], and [[Wiki Overview]]. External cleanup counts are historical records from the source task; this ingest did not mutate X, Chrome, the iCloud Brain, or any connected account. It does not activate scheduled synchronization or publish a hosted deployment.
+
+Validation: all 303 changed entries and the 30 latest X post IDs were preserved; 57 existing raw files and all 11 live Brain source hashes matched the pre-ingest snapshot. Content lint found no issues in the touched pages, no broken wikilinks, and no duplicate titles. The 219-page static build passed, and the ingest manifest records all 11 clippings as processed.
+
+---
+
+## [2026-09-22] improve | app navigation, source history and evidence corrections
+
+Added individual records for all 934 current bookmarks (921 structured entries and 13 bare URLs), exact post-ID search, section links, a source viewer with preserved revisions, capture previews, pinned/recent pages, phone navigation, an accessible search menu, a focused graph and clearer error states. Source capture now appends immutable revisions instead of overwriting or deleting raw notes. Timeline entries sort by their date and render linked details. Review separates content edits from evidence checks and validates body links, related pages and source paths.
+
+Recovered the original March X export from Git commit 554dd7e292b4811fe16f986e596c6df1fc66fede without changing existing raw files. Normalised source and related-page references. Recorded missing electrical webinar transcripts explicitly; original documents could not be recovered. [[Health Evidence Review - September 2026]] and [[Electrical Evidence Review - September 2026]] support the dated corrections to health claims, cable protection, Part P scope and publication editions.
+
+Added [[Developer Tool Evaluation Map]], [[Trading Evidence and Review Framework]] and [[Electrical Study Map]]. The ten category source pages now link their complete September captures; indexing a retained bookmark is distinct from independently verifying its claims.
+
+Captured two additional upstream revisions of [[Markets - Articles]] and [[Electrics - Resources]] through the new preview flow. Added the newly saved article, equipment and training leads to their source summaries without claiming their contents or suitability were evaluated. Original source files and images remain unchanged; the viewer and static export also resolve newly captured image versions.
+
+Final coverage check found 13 bare design URLs outside the structured bullet list. These now have individual records with explicit unannotated-link labels, including three previously unindexed X posts. The catalog covers all 776 unique X post IDs present in the current category sources.

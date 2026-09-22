@@ -2,7 +2,8 @@
 
 A personal knowledge wiki built from an Obsidian vault. Raw notes are pulled in,
 an LLM turns them into cross-linked wiki pages, and a Bun server renders them as a
-browsable site (search, graph, tags, timeline, backlinks, lint).
+browsable site with a complete bookmark catalog, original source history, search,
+graph, tags, timeline, backlinks and an evidence review queue.
 
 ## Prerequisites
 
@@ -29,24 +30,28 @@ Metadata. It is intended for **local use only**.
 |--------|--------------|
 | `bun run dev` | Server with auto-restart on code changes |
 | `bun run start` | Server (no watch) |
-| `bun run sync` | Pull the Obsidian vault into `raw/` (see below) |
+| `bun run sync` | Capture new or revised vault files without changing earlier captures |
+| `bun run sync -- --preview` | Preview source changes without writing files |
 | `bun run refresh` | Sync, then print the pending-ingest count (no auto-ingest) |
 | `bun run build` | Build the static site into `dist/` (for Cloudflare Pages) |
-| `bun run check` | Content gate — fails on broken wikilinks |
-| `bun test` | Unit tests for the `lib.ts` derivation functions |
+| `bun run check` | Fail on broken body links, related-page links or source paths |
+| `bun test` | Source capture, search, graph, content derivation and ingest boundary tests |
 
 ## The pipeline
 
 ```
 Obsidian vault  ──①sync──▶  raw/  ──②ingest──▶  wiki/  ──③serve──▶  browser
-(source of truth)         (mirror)            (LLM pages)   (Bun + fs.watch)
+(source of truth)         (immutable versions)            (LLM pages)   (Bun + fs.watch)
 ```
 
-1. **Sync** (`sync.ts`, `POST /api/sync`): one-way `rsync` pull from the vault into
-   `raw/`, including the curated `bookmarks/` collection. Set the vault location
-   with `BRAIN_PATH` (defaults to the active iCloud Markdown Brain path).
-   Missing/empty source folders are skipped rather than mirrored, and anything
-   `--delete` would remove is first copied to `raw/.sync-backups/<timestamp>/`.
+1. **Capture** (`sync.ts`, `POST /api/sync`): read the vault, including the curated
+   `bookmarks/` collection. New files and changes are saved under
+   `raw/snapshots/<timestamp>-<hash>/<original-path>`. Existing captures are never
+   overwritten or deleted, including when a source disappears upstream. Empty or
+   missing folders are reported. `GET /api/sync/preview` shows changes without
+   writing; the app previews this list before the Capture action. `BRAIN_PATH`
+   selects the vault. The local `.capture-manifest.json` can be rebuilt from the
+   snapshot directories and is separate from the synthesis manifest.
 2. **Ingest** (`ingest.ts`, `POST /api/ingest`): canonicalizes and limits selected
    Markdown sources, copies only those sources plus `wiki/` into a private staging
    workspace, and runs `claude` there with an empty home, an environment allowlist,
@@ -55,8 +60,13 @@ Obsidian vault  ──①sync──▶  raw/  ──②ingest──▶  wiki/  �
    changed pages are atomically published. Prompt-injection text in a source is
    explicitly treated as untrusted data. The published `wiki/` is also snapshotted
    first (recover with `git checkout <sha> -- wiki/`).
-3. **Serve** (`server.ts` + `lib.ts`): renders `wiki/` and hot-reloads on changes.
-   Derived data (graph/lint/tags/search) is computed once per reload and cached.
+3. **Serve** (`server.ts` + `lib.ts`): renders the wiki, captured source records and
+   individual bookmarks. Citations pin a particular raw file; the bookmark catalog
+   uses the latest capture of each category. Search prioritises exact titles and
+   post IDs, returns clean snippets and links to matching sections. Derived data
+   is cached between reloads. Pins, recent pages and collapsed navigation groups
+   are saved in this browser. The static build contains the same reading data;
+   capture and ingest actions require the local server.
 
 ## Automation (optional)
 
@@ -82,7 +92,8 @@ It runs daily at 09:00 by default (editable in the plist) and logs to
 
 | Env var | Default | Purpose |
 |---------|---------|---------|
-| `BRAIN_PATH` | iCloud Markdown `Brain/` path | Markdown vault to sync from |
+| `BRAIN_PATH` | iCloud Markdown `Brain/` path | Markdown vault to capture from |
+| `PORT` | `3000` | Local server port; for example `PORT=3001 bun server.ts` |
 
 ## Deploy
 
@@ -90,3 +101,15 @@ It runs daily at 09:00 by default (editable in the plist) and logs to
 uses the frozen lockfile, and runs tests, content checks, and the production build
 on pull requests and pushes. Only validated pushes to `main` deploy to Cloudflare
 Pages.
+
+## Evidence and source metadata
+
+`updated` is the content edit date. `reviewed` records the date of a scoped evidence
+check; `review_status`, `review_notes` and `review_due` describe its limits and next
+review. Use `source_gaps` for unavailable historical documents and keep their
+original names there. Do not put an invented path in `sources`.
+
+The Review view prioritises source gaps, broken references, unresolved health or
+electrical claims and overdue recorded reviews. Source archives do not become
+stale simply because they are old. A capture, synthesis and evidence verification
+are distinct events.

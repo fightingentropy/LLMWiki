@@ -2,11 +2,23 @@
 title: Omarchy
 type: entity
 domain: dev
-sources: ["bookmarks/Developer Tools.md"]
-related: [[Developer_Resources]], [[Tools]], [[Technology_Critique]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [linux, arch, hyprland, development-environment]
+sources:
+  - bookmarks/Developer Tools.md
+  - clippings/bookmark-updates-2026-09-22/Developer Tools.md
+related:
+  - X-Bookmarks
+  - Developer Resources
+  - Tools & Software
+  - Technology Critique
+  - Omarchy iCloud Photos
+  - Bookmarks - Developer Tools
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - linux
+  - arch
+  - hyprland
+  - development-environment
 ---
 
 # Omarchy
@@ -18,3 +30,9 @@ The source batch contains both rapid-adoption promotion and scepticism that the 
 Omarchy Pods is a small AirPods-control utility for the environment; inspect Bluetooth permissions, supported models, dependencies, packaging, and maintenance before installation. (from [[X-Bookmarks]])
 
 Related: [[Developer_Resources]], [[Tools]], [[Technology_Critique]]
+
+## September 2026 ecosystem notes
+
+The revised compatibility note adds an author's mlx-omarchy parity percentage; it remains a project-defined measure. Other posts describe Linux on Apple hardware and T1 fingerprint support, each with hardware and recovery questions. These claims do not establish general macOS feature parity.
+
+[[Omarchy iCloud Photos]] is now a separate entity page for the photo-library tool. Its current repository describes a native interface over existing downloading and authentication components. All original links remain in [[Bookmarks - Developer Tools]].

@@ -1,5 +1,6 @@
+import { loadCatalog } from "./catalog";
 import { mkdir, writeFile, copyFile, readdir } from "fs/promises";
-import { join } from "path";
+import { join, dirname } from "path";
 import {
   loadWikiPages,
   buildGraphData,
@@ -15,13 +16,13 @@ import {
 
 const DIST_DIR = join(import.meta.dir, "dist");
 const UI_DIR = join(import.meta.dir, "ui");
-const ASSETS_SRC = join(import.meta.dir, "raw", "assets");
 
 async function build() {
   console.log("Building static site...");
 
   const pages = await loadWikiPages();
   const backlinks = computeBacklinks(pages);
+  const catalog = await loadCatalog(pages);
   console.log(`Loaded ${pages.size} wiki pages`);
 
   // Create output dirs
@@ -77,13 +78,19 @@ ${cssTag}
 </html>`;
   await writeFile(join(DIST_DIR, "index.html"), indexHtml);
 
+  await mkdir(join(DIST_DIR, "data", "sources"), {recursive:true});
+  await writeFile(join(DIST_DIR,"data","bookmarks.json"), JSON.stringify(catalog.bookmarks));
+  await writeFile(join(DIST_DIR,"data","capture.json"), JSON.stringify(catalog.status));
+  await writeFile(join(DIST_DIR,"data","sources.json"), JSON.stringify(catalog.sources.map(({html,headings,...s})=>s)));
+  for (const source of catalog.sources) await writeFile(join(DIST_DIR,"data","sources",`${source.id}.json`),JSON.stringify(source));
+
   // 3. Summary list
-  const pagesList = [...pages.values()].map(pageSummary);
+  const pagesList = [...pages.values()].map(p => pageSummary(p, (backlinks.get(p.slug) || []).filter(b => !["index", "log"].includes(b.type)).length));
   await writeFile(join(DIST_DIR, "data", "pages.json"), JSON.stringify(pagesList));
 
   // 4. Individual page files (with resolved related, backlinks, headings)
   for (const [slug, page] of pages) {
-    const pageData = pageDetail(page, pages, backlinks);
+    const pageData = pageDetail(page, pages, backlinks, undefined, catalog.raw);
     await writeFile(join(DIST_DIR, "data", "pages", `${slug}.json`), JSON.stringify(pageData));
   }
 
@@ -91,32 +98,28 @@ ${cssTag}
   await writeFile(join(DIST_DIR, "data", "graph.json"), JSON.stringify(buildGraphData(pages)));
 
   // 6. Search index (kept content for snippets — it's a personal wiki, fine)
-  const searchIndex = [...pages.values()].map(searchIndexEntry);
+  const searchIndex = [...pages.values()].map(searchIndexEntry).concat(catalog.search);
   await writeFile(join(DIST_DIR, "data", "search.json"), JSON.stringify(searchIndex));
 
   // 7. Tags
   await writeFile(join(DIST_DIR, "data", "tags.json"), JSON.stringify(computeTagIndex(pages)));
 
   // 8. Lint
-  await writeFile(join(DIST_DIR, "data", "lint.json"), JSON.stringify(computeLint(pages, backlinks)));
+  await writeFile(join(DIST_DIR, "data", "lint.json"), JSON.stringify(computeLint(pages, backlinks, catalog.raw)));
 
   // 9. Timeline (parsed from wiki/log.md)
-  await writeFile(join(DIST_DIR, "data", "timeline.json"), JSON.stringify(await loadTimeline()));
+  await writeFile(join(DIST_DIR, "data", "timeline.json"), JSON.stringify(await loadTimeline(pages)));
 
   // 10. Meta (build timestamp, domains, counts)
-  await writeFile(join(DIST_DIR, "data", "meta.json"), JSON.stringify(buildMeta(pages)));
+  await writeFile(join(DIST_DIR, "data", "meta.json"), JSON.stringify({...buildMeta(pages), canEditSources: false}));
 
-  // 11. Copy raw/assets/* into dist/assets (images referenced by ![[...]] wikilinks)
+  // 11. Export the latest captured assets, including nested images.
   let assetCount = 0;
-  try {
-    const files = await readdir(ASSETS_SRC);
-    for (const f of files) {
-      if (f.startsWith(".")) continue;
-      await copyFile(join(ASSETS_SRC, f), join(DIST_DIR, "assets", f));
-      assetCount++;
-    }
-  } catch {
-    // no assets dir — fine
+  for (const [name, source] of catalog.assetFiles) {
+    const destination = join(DIST_DIR, "assets", name);
+    await mkdir(dirname(destination), {recursive:true});
+    await copyFile(source, destination);
+    assetCount++;
   }
 
   // 12. _headers for caching
@@ -128,7 +131,7 @@ ${cssTag}
   Cache-Control: public, max-age=31536000, immutable
 
 /assets/*
-  Cache-Control: public, max-age=604800
+  Cache-Control: no-cache
 
 # Data files change on redeploy
 /data/*
@@ -151,6 +154,10 @@ ${cssTag}
   // 13. _redirects for SPA routing
   const redirects = `# SPA fallback — serve index.html for client-side routes
 /page/*    /index.html  200
+/bookmarks /index.html 200
+/bookmarks/* /index.html 200
+/source/* /index.html 200
+/sources /index.html 200
 /graph     /index.html  200
 /tags      /index.html  200
 /tags/*    /index.html  200

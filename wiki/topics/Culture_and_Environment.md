@@ -2,11 +2,21 @@
 title: Culture and Environment
 type: topic
 domain: culture
-sources: [Culture.md, X takes.md]
-related: [Philosophy_and_Meaning, Political_Commentary, Proximity_Infatuation]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [geography, environment, identity, place, personality]
+sources:
+  - misc/Culture.md
+  - misc/X takes.md
+related:
+  - Philosophy & Meaning
+  - Political Commentary
+  - Proximity Infatuation
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - geography
+  - environment
+  - identity
+  - place
+  - personality
 ---
 
 # Culture and Environment

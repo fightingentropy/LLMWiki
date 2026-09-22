@@ -2,11 +2,32 @@
 title: Self-Improvement
 type: topic
 domain: culture
-sources: [Body.md, Psychology.md, Thoughts.md, Youtube.md, Go Do.md, Quotes.md, "bookmarks/Personal & Life.md", Stories.md]
-related: [[Body_Optimization]], [[Mental_Health]], [[Philosophy_and_Meaning]], [[Japanese_Philosophy]], [[Alex_Hormozi]], [[Repeated Games]], [[David Cifaldi]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [self-improvement, growth, discipline, agency, delusion, motivation]
+sources:
+  - misc/Body.md
+  - misc/Psychology.md
+  - misc/Thoughts.md
+  - misc/Youtube.md
+  - misc/Go Do.md
+  - misc/Quotes.md
+  - bookmarks/Personal & Life.md
+  - misc/Stories.md
+related:
+  - Body Optimization
+  - Mental Health
+  - Philosophy & Meaning
+  - Japanese Philosophy & Cultural Concepts
+  - Alex Hormozi
+  - Repeated Games
+  - David Cifaldi
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - self-improvement
+  - growth
+  - discipline
+  - agency
+  - delusion
+  - motivation
 ---
 
 # Self-Improvement

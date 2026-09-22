@@ -2,11 +2,21 @@
 title: Thoughts and Observations
 type: topic
 domain: culture
-sources: [Thoughts.md]
-related: [Philosophy_and_Meaning, Psychology, Social_Commentary, Design_and_Aesthetics]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [observations, commentary, aesthetics, psychology, social-dynamics]
+sources:
+  - misc/Thoughts.md
+related:
+  - Philosophy & Meaning
+  - Psychology & Behavior
+  - Social Commentary
+  - Design & Aesthetics
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - observations
+  - commentary
+  - aesthetics
+  - psychology
+  - social-dynamics
 ---
 
 # Thoughts and Observations

@@ -2,11 +2,21 @@
 title: Proximity Infatuation
 type: topic
 domain: psychology
-sources: [Psychology.md, X takes.md, Women.md]
-related: [Psychology, Dating_and_Relationships, Gender_Dynamics]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [proximity, attraction, context, relationships]
+sources:
+  - misc/Psychology.md
+  - misc/X takes.md
+  - misc/Women.md
+related:
+  - Psychology & Behavior
+  - Dating & Relationships
+  - Gender Dynamics
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - proximity
+  - attraction
+  - context
+  - relationships
 ---
 
 # Proximity Infatuation

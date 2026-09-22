@@ -1,7 +1,9 @@
+import { graphNeighborhood } from '../graph';
 import React, { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { createRoot } from "react-dom/client";
 import * as d3 from "d3";
-import Fuse from "fuse.js";
+import { searchDocuments, canonicalTag, type SearchDocument, type SearchHit } from "../search";
+import { BookmarksView, SourcesView, SourceView, useJson, LoadState, type CaptureStatus } from "./Library";
 import "./index.css";
 
 // --- Types (loose — server-shaped) ---
@@ -13,6 +15,8 @@ interface PageSummary {
   tags: string[];
   category: string;
   linkCount: number;
+  referencedBy?: number;
+  summary?: string;
   updated?: string;
   mtime?: number;
   wordCount?: number;
@@ -21,6 +25,8 @@ interface PageSummary {
 
 interface PageDetail extends PageSummary {
   html: string;
+  reviewed?: string; reviewStatus?: string; reviewNotes?: string; sourceGaps?: string[];
+  sourceLinks?: {name:string;id:string|null;title:string;path:string;capturedAt:string|null}[];
   sources: string[];
   related: { name: string; slug: string | null; title: string; type: string; resolved: boolean }[];
   created?: string;
@@ -40,6 +46,8 @@ interface LintIssue {
   slug: string;
   title: string;
   detail?: string;
+  domain?: string;
+  priority?: string;
 }
 
 interface TimelineEntry {
@@ -47,9 +55,11 @@ interface TimelineEntry {
   op: string;
   detail: string;
   body: string;
+  html?: string;
 }
 
 interface Meta {
+  canEditSources?: boolean;
   builtAt: string;
   pageCount: number;
   sourceCount: number;
@@ -77,16 +87,25 @@ function badgeClass(type: string) {
 }
 
 function typeGlyph(type: string) {
-  switch (type) {
-    case "source": return "S";
-    case "entity": return "E";
-    case "topic": return "T";
-    case "analysis": return "A";
-    case "overview": return "O";
-    case "index": return "I";
-    case "log": return "L";
-    default: return "·";
-  }
+  const shapes: Record<string, React.ReactNode> = {
+    source: <><path d="M9 2H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6Z"/><path d="M9 2v4h4M6 9h4M6 11.5h3"/></>,
+    topic: <><rect x="3" y="2" width="10" height="12" rx="2"/><path d="M6 2v12M8.5 5h2"/></>,
+    entity: <><circle cx="8" cy="5" r="2.5"/><path d="M3 14v-1a5 5 0 0 1 10 0v1"/></>,
+    analysis: <><path d="M3 2v11h11M6 10V7m3 3V4m3 6V6"/></>,
+    overview: <><path d="M8 4C6 2.5 3.5 2.5 1.5 3v10C4 12.5 6 12.5 8 14c2-1.5 4-1.5 6.5-1V3C12.5 2.5 10 2.5 8 4Zm0 0v10"/></>,
+    log: <><circle cx="8" cy="8" r="5.5"/><path d="M8 4.5V8l2.5 1.5"/></>,
+    index: <><rect x="2.5" y="2.5" width="11" height="11" rx="2"/><path d="M6 2.5v11M6 6h7.5"/></>,
+  };
+  return <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{shapes[type] || shapes.topic}</svg>;
+}
+function PinIcon() {
+  return <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 2 7 7-3 1-2 2-4-4 2-2Zm0 8-4 4"/></svg>;
+}
+function NetworkIcon() {
+  return <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.3" aria-hidden="true"><path d="m5.5 6 4-2m-4 4 4 3"/><circle cx="4" cy="7" r="2"/><circle cx="11.5" cy="3" r="2"/><circle cx="11.5" cy="12" r="2"/></svg>;
+}
+function ChevronIcon() {
+  return <svg className="section-chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m4.5 2.5 3.5 3.5-3.5 3.5"/></svg>;
 }
 
 // --- Icons ---
@@ -150,26 +169,29 @@ function SyncIcon({ spinning }: { spinning?: boolean }) {
 // --- Data fetching (cached where it makes sense) ---
 let _pagesCache: PageSummary[] | null = null;
 let _searchCache: any[] | null = null;
-let _fuse: Fuse<any> | null = null;
+
 let _graphCache: any = null;
 let _metaCache: Meta | null = null;
 
 async function fetchPages(): Promise<PageSummary[]> {
   if (_pagesCache) return _pagesCache;
   const res = await fetch("/data/pages.json");
+  if (!res.ok) throw new Error("Could not load the wiki. Check the server and try again.");
   _pagesCache = await res.json();
   return _pagesCache!;
 }
 
-async function fetchPage(slug: string): Promise<PageDetail | null> {
-  const res = await fetch(`/data/pages/${slug}.json`);
-  if (!res.ok) return null;
+async function fetchPage(slug: string, signal?: AbortSignal): Promise<PageDetail | null> {
+  const res = await fetch(`/data/pages/${encodeURIComponent(slug)}.json`, {signal});
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error("Could not load this page. Try again.");
   return res.json();
 }
 
 async function fetchGraph() {
   if (_graphCache) return _graphCache;
   const res = await fetch("/data/graph.json");
+  if (!res.ok) throw new Error("Could not load the graph.");
   _graphCache = await res.json();
   return _graphCache;
 }
@@ -186,29 +208,10 @@ async function fetchMeta(): Promise<Meta | null> {
   }
 }
 
-async function fetchTags(): Promise<TagEntry[]> {
-  const res = await fetch("/data/tags.json");
-  return res.json();
-}
-
-async function fetchLint(): Promise<LintIssue[]> {
-  const res = await fetch("/data/lint.json");
-  return res.json();
-}
-
-async function fetchTimeline(): Promise<TimelineEntry[]> {
-  try {
-    const res = await fetch("/data/timeline.json");
-    if (!res.ok) return [];
-    return await res.json();
-  } catch {
-    return [];
-  }
-}
-
 async function fetchSearchIndex(): Promise<any[]> {
   if (_searchCache) return _searchCache;
   const res = await fetch("/data/search.json");
+  if (!res.ok) throw new Error("Search is unavailable. Try again.");
   _searchCache = await res.json();
   return _searchCache!;
 }
@@ -228,7 +231,7 @@ async function fetchPendingIngest(): Promise<PendingSource[]> {
 function resetCaches() {
   _pagesCache = null;
   _searchCache = null;
-  _fuse = null;
+
   _graphCache = null;
   _metaCache = null;
 }
@@ -278,64 +281,13 @@ async function runSync(): Promise<{ ok: boolean; synced: string[]; errors: strin
   }
 }
 
-// Build the Fuse index over the search.json payload once and reuse it. Field
-// weights mirror the server (title >> tags > category/domain > content).
-async function getFuse(): Promise<Fuse<any>> {
-  if (_fuse) return _fuse;
-  const pages = await fetchSearchIndex();
-  // search.json keeps tags as string[]; Fuse handles arrays, but joining keeps
-  // ranking parity with the server (which indexes a single joined string).
-  const docs = pages.map((p) => ({ ...p, tags: Array.isArray(p.tags) ? p.tags.join(" ") : p.tags || "" }));
-  _fuse = new Fuse(docs, {
-    includeScore: true,
-    ignoreLocation: true,
-    threshold: 0.4,
-    minMatchCharLength: 2,
-    keys: [
-      { name: "title", weight: 3 },
-      { name: "tags", weight: 2 },
-      { name: "category", weight: 1 },
-      { name: "domain", weight: 1 },
-      { name: "content", weight: 0.5 },
-    ],
-  });
-  return _fuse;
-}
-
-function buildSnippet(content: string, q: string): string {
-  const idx = content.toLowerCase().indexOf(q.toLowerCase());
-  if (idx !== -1) {
-    const start = Math.max(0, idx - 60);
-    const end = Math.min(content.length, idx + q.length + 60);
-    return (start > 0 ? "..." : "") + content.slice(start, end).replace(/\n/g, " ") + (end < content.length ? "..." : "");
-  }
-  return content.slice(0, 120).replace(/\n/g, " ") + "...";
-}
-
-async function runSearch(q: string) {
-  const query = q.trim();
-  if (!query) return [];
-  const fuse = await getFuse();
-  // fuse score: 0 = perfect, 1 = worst. Invert to the descending score the UI
-  // sorts on, preserving the existing { slug,title,type,domain,category,snippet,score } shape.
-  return fuse
-    .search(query)
-    .slice(0, 10)
-    .map(({ item, score }: any) => ({
-      slug: item.slug,
-      title: item.title,
-      type: item.type,
-      domain: item.domain,
-      category: item.category,
-      snippet: buildSnippet(item.content, query),
-      score: 1 - (score ?? 0),
-    }));
-}
-
 // --- URL Routing ---
 type Route =
   | { view: "home" }
-  | { view: "page"; slug: string }
+  | { view: "page"; slug: string; anchor?: string }
+  | { view: "bookmarks"; id?: string }
+  | { view: "sources" }
+  | { view: "source"; id: string }
   | { view: "graph"; focus?: string }
   | { view: "tags" }
   | { view: "tag"; tag: string }
@@ -343,10 +295,12 @@ type Route =
   | { view: "lint" }
   | { view: "random" };
 
-function parseRoute(): Route {
-  const path = window.location.pathname;
-  const search = new URLSearchParams(window.location.search);
-  if (path.startsWith("/page/")) return { view: "page", slug: path.slice("/page/".length) };
+function parseRoute(href = window.location.href): Route {
+  const url = new URL(href, window.location.origin), path = url.pathname, search = url.searchParams;
+  if (path.startsWith("/page/")) return { view: "page", slug: path.slice(6), anchor: url.hash.slice(1) || undefined };
+  if (path === "/bookmarks" || path.startsWith("/bookmarks/")) return {view:"bookmarks", id:path.split("/")[2] || undefined};
+  if (path === "/sources") return {view:"sources"};
+  if (path.startsWith("/source/")) return {view:"source", id:path.slice(8)};
   if (path === "/graph") {
     const focus = search.get("focus") || undefined;
     return { view: "graph", focus };
@@ -361,7 +315,10 @@ function parseRoute(): Route {
 
 function routeToPath(r: Route): string {
   switch (r.view) {
-    case "page": return `/page/${r.slug}`;
+    case "page": return `/page/${r.slug}${r.anchor ? "#"+r.anchor : ""}`;
+    case "bookmarks": return r.id ? `/bookmarks/${r.id}` : "/bookmarks";
+    case "sources": return "/sources";
+    case "source": return `/source/${r.id}`;
     case "graph": return r.focus ? `/graph?focus=${encodeURIComponent(r.focus)}` : "/graph";
     case "tags": return "/tags";
     case "tag": return `/tags/${encodeURIComponent(r.tag)}`;
@@ -403,216 +360,55 @@ function updatedTime(p: PageSummary): number {
   return p.mtime || 0;
 }
 
+const NAV: {label:string; href:string}[] = [{label:"Home",href:"/"},{label:"Bookmarks",href:"/bookmarks"},{label:"Sources",href:"/sources"},{label:"Graph",href:"/graph"},{label:"Tags",href:"/tags"},{label:"Timeline",href:"/timeline"},{label:"Review",href:"/lint"}];
+function useStored<T>(key:string, initial:T) {
+  const [value,setValue]=useState<T>(()=>{try {const raw=localStorage.getItem(key);if(!raw)return initial;const parsed=JSON.parse(raw);if(Array.isArray(initial))return (Array.isArray(parsed)&&parsed.every(v=>typeof v==='string')?parsed:initial) as T;return parsed&&typeof parsed==='object'&&!Array.isArray(parsed)?{...initial,...parsed}:initial;}catch{return initial;}});
+  useEffect(()=>{try{localStorage.setItem(key,JSON.stringify(value));}catch{}},[key,value]);
+  return [value,setValue] as const;
+}
+function openHeading(id:string) {
+  const el=document.getElementById(id); if(!el)return;
+  let parent:HTMLElement|null=el;
+  while(parent){if(parent instanceof HTMLDetailsElement)parent.open=true;parent=parent.parentElement;}
+  el.scrollIntoView({behavior:"auto",block:"start"});
+}
 // --- Search Component ---
-function Search({ onSelect }: { onSelect: (slug: string) => void }) {
-  const [query, setQuery] = useState("");
-  const [results, setResults] = useState<any[]>([]);
-  const [open, setOpen] = useState(false);
-  const [activeIdx, setActiveIdx] = useState(0);
-  const [recents, setRecents] = useState<PageSummary[]>([]);
-  const ref = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
-
-  // Populate recents/top-pages for the empty state
-  useEffect(() => {
-    fetchPages().then((pages) => {
-      const top = [...pages]
-        .filter((p) => p.type !== "index" && p.type !== "log")
-        .sort((a, b) => (b.linkCount || 0) - (a.linkCount || 0))
-        .slice(0, 6);
-      setRecents(top);
-    });
-  }, []);
-
-  useEffect(() => {
-    if (!query.trim()) {
-      setResults([]);
-      return;
-    }
-    const t = setTimeout(async () => {
-      const r = await runSearch(query);
-      setResults(r.slice(0, 8));
-      setActiveIdx(0);
-      setOpen(true);
-    }, 150);
-    return () => clearTimeout(t);
-  }, [query]);
-
-  useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
-    };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, []);
-
-  useEffect(() => {
-    const handler = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
-        e.preventDefault();
-        inputRef.current?.focus();
-        setOpen(true);
-      }
-    };
-    document.addEventListener("keydown", handler);
-    return () => document.removeEventListener("keydown", handler);
-  }, []);
-
-  function highlightSnippet(snippet: string, q: string): React.ReactNode {
-    if (!q) return snippet;
-    const regex = new RegExp(`(${escapeRegExp(q)})`, "gi");
-    return snippet.split(regex).map((part, index) =>
-      index % 2 === 1 ? <mark key={index}>{part}</mark> : part
-    );
-  }
-
-  function pick(slug: string) {
-    onSelect(slug);
-    setOpen(false);
-    setQuery("");
-    inputRef.current?.blur();
-  }
-
-  function onKey(e: React.KeyboardEvent) {
-    const items = query.trim() ? results : recents;
-    if (e.key === "ArrowDown") {
-      e.preventDefault();
-      setActiveIdx((i) => Math.min(i + 1, items.length - 1));
-    } else if (e.key === "ArrowUp") {
-      e.preventDefault();
-      setActiveIdx((i) => Math.max(i - 1, 0));
-    } else if (e.key === "Enter") {
-      e.preventDefault();
-      const r = items[activeIdx];
-      if (r) pick(r.slug);
-    } else if (e.key === "Escape") {
-      setOpen(false);
-      inputRef.current?.blur();
-    }
-  }
-
-  const showing = query.trim() ? results : open && !query.trim() ? recents : [];
-  const isRecents = !query.trim();
-
-  return (
-    <div className="search-wrap" ref={ref}>
-      <SearchIcon />
-      <input
-        ref={inputRef}
-        placeholder="Search wiki... (⌘K)"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        onKeyDown={onKey}
-        onFocus={() => setOpen(true)}
-      />
-      <kbd className="search-kbd">⌘K</kbd>
-      {open && showing.length > 0 && (
-        <div className="search-results">
-          {isRecents && <div className="search-results-header">Top pages</div>}
-          {showing.map((r, i) => (
-            <div
-              key={r.slug}
-              className={`search-result ${i === activeIdx ? "active" : ""}`}
-              onMouseEnter={() => setActiveIdx(i)}
-              onClick={() => pick(r.slug)}
-            >
-              <div className="search-result-title">{r.title}</div>
-              <div className="search-result-meta">
-                <span className={badgeClass(r.type)}>{r.type}</span>
-                {r.domain && <span>{r.domain}</span>}
-                {isRecents && typeof r.linkCount === "number" && <span>{r.linkCount} links</span>}
-              </div>
-              {!isRecents && (
-                <div className="search-result-snippet">{highlightSnippet(r.snippet, query)}</div>
-              )}
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  );
+function Search({onNavigate,version}:{onNavigate:(href:string)=>void;version?:string}) {
+  const [query,setQuery]=useState(""),[open,setOpen]=useState(false),[active,setActive]=useState(0);
+  const [docs,setDocs]=useState<SearchDocument[]|null>(null),[error,setError]=useState(""),[attempt,setAttempt]=useState(0);
+  const [kind,setKind]=useState("all"),[domain,setDomain]=useState("all");
+  const ref=useRef<HTMLDivElement>(null), input=useRef<HTMLInputElement>(null);
+  useEffect(()=>{let alive=true;fetchSearchIndex().then(d=>{if(alive)setDocs(d);}).catch(e=>{if(alive)setError(e.message);});return()=>{alive=false;};},[attempt,version]);
+  const results=useMemo(()=>docs?searchDocuments(docs,query,{kind,domain,limit:12}):[],[docs,query,kind,domain]);
+  useEffect(()=>setActive(0),[query,kind,domain]);
+  useEffect(()=>{if(open)document.getElementById(`search-result-${active}`)?.scrollIntoView({block:"nearest"});},[active,open]);
+  useEffect(()=>{const click=(e:MouseEvent)=>{if(!ref.current?.contains(e.target as Node))setOpen(false);};const key=(e:KeyboardEvent)=>{if((e.metaKey||e.ctrlKey)&&e.key==='k'){e.preventDefault();input.current?.focus();setOpen(true);}};document.addEventListener('mousedown',click);document.addEventListener('keydown',key);return()=>{document.removeEventListener('mousedown',click);document.removeEventListener('keydown',key);};},[]);
+  function pick(hit:SearchHit){onNavigate(hit.href);setOpen(false);setQuery("");input.current?.blur();}
+  return <div className="search-wrap" ref={ref}><SearchIcon/><input ref={input} aria-label="Search wiki and bookmarks" role="combobox" aria-expanded={open} aria-controls={open&&results.length?"wiki-search-results":undefined} aria-autocomplete="list" aria-activedescendant={open&&results[active]?`search-result-${active}`:undefined}
+    placeholder="Search wiki and bookmarks…" value={query} onChange={e=>{setQuery(e.target.value);setActive(0);setOpen(true);}} onFocus={()=>setOpen(true)}
+    onKeyDown={e=>{if(e.key==='ArrowDown'){e.preventDefault();setActive(n=>Math.min(n+1,Math.max(0,results.length-1)));}else if(e.key==='ArrowUp'){e.preventDefault();setActive(n=>Math.max(0,n-1));}else if(e.key==='Enter'&&results[active]){e.preventDefault();pick(results[active]);}else if(e.key==='Escape'){setOpen(false);input.current?.blur();}}}/><kbd className="search-kbd">⌘K</kbd>
+    {open&&<div className="search-results"><div className="search-filters"><select aria-label="Search in" value={kind} onChange={e=>setKind(e.target.value)}><option value="all">Everything</option><option value="page">Wiki pages</option><option value="bookmark">Bookmarks</option></select><select aria-label="Search domain" value={domain} onChange={e=>setDomain(e.target.value)}><option value="all">All domains</option>{[...new Set((docs||[]).map(d=>d.domain))].sort().map(d=><option key={d}>{d}</option>)}</select></div>
+      {error?<div role="alert" className="search-feedback">{error} <button onClick={()=>{setError('');setAttempt(n=>n+1);}}>Retry</button></div>:!docs?<div className="search-feedback" role="status">Loading search…</div>:!query.trim()?<div className="search-feedback">Search a title, phrase, tool or original post ID.</div>:!results.length?<div className="search-feedback" role="status">No matches for “{query}”. Try a shorter phrase or change the filters.</div>:<div id="wiki-search-results" role="listbox" aria-label="Search results">{results.map((r,i)=><div key={r.slug} id={`search-result-${i}`} role="option" aria-selected={active===i} className={`search-result ${active===i?'active':''}`} onMouseMove={()=>setActive(i)}><a href={r.href} onClick={()=>{setOpen(false);setQuery('');}}><div className="search-result-title">{r.title}</div><div className="search-result-meta">{r.type} · {r.domain}{r.anchor?' · Matching section':''}</div><div className="search-result-snippet">{r.snippet}</div></a></div>)}</div>}
+    </div>}
+  </div>;
 }
 
 // --- Sidebar ---
-function Sidebar({
-  pages,
-  current,
-  onSelect,
-  open,
-  onClose,
-}: {
-  pages: PageSummary[];
-  current: string | null;
-  onSelect: (slug: string) => void;
-  open: boolean;
-  onClose: () => void;
-}) {
-  const [filter, setFilter] = useState("");
-
-  const grouped = useMemo(() => {
-    const g: Record<string, PageSummary[]> = { sources: [], entities: [], topics: [], analyses: [] };
-    pages.forEach((p) => {
-      if (g[p.category]) g[p.category].push(p);
-      else if (p.category === "root" && p.type !== "index" && p.type !== "log") g.topics.push(p);
-    });
-    Object.values(g).forEach((arr) => arr.sort((a, b) => a.title.localeCompare(b.title)));
-    return g;
-  }, [pages]);
-
-  const lowerFilter = filter.trim().toLowerCase();
-  const matches = (p: PageSummary) =>
-    !lowerFilter ||
-    p.title.toLowerCase().includes(lowerFilter) ||
-    (p.tags || []).some((t) => t.toLowerCase().includes(lowerFilter));
-
-  return (
-    <>
-      <div className={`sidebar ${open ? "open" : ""}`}>
-        <div className="sidebar-filter">
-          <input
-            type="text"
-            placeholder="Filter pages..."
-            value={filter}
-            onChange={(e) => setFilter(e.target.value)}
-          />
-          {filter && (
-            <button className="sidebar-filter-clear" onClick={() => setFilter("")} aria-label="Clear">
-              ×
-            </button>
-          )}
-        </div>
-        {Object.entries(grouped).map(([cat, items]) => {
-          const filtered = items.filter(matches);
-          if (items.length === 0) return null;
-          if (lowerFilter && filtered.length === 0) return null;
-          return (
-            <div key={cat} className="sidebar-section">
-              <div className="sidebar-section-title">
-                {cat} <span className="sidebar-section-count">({filtered.length})</span>
-              </div>
-              {filtered.map((p) => (
-                <div
-                  key={p.slug}
-                  className={`sidebar-item ${current === p.slug ? "active" : ""}`}
-                  onClick={() => {
-                    onSelect(p.slug);
-                    onClose();
-                  }}
-                  title={p.title}
-                >
-                  <span className="sidebar-glyph" style={{ color: TYPE_COLORS[p.type] || TYPE_COLORS.unknown }}>
-                    {typeGlyph(p.type)}
-                  </span>
-                  <span className="sidebar-item-label">{p.title}</span>
-                </div>
-              ))}
-            </div>
-          );
-        })}
-      </div>
-      <div className={`sidebar-backdrop ${open ? "visible" : ""}`} onClick={onClose} />
-    </>
-  );
+function Sidebar({pages,current,open,onClose,pins,recents}:{pages:PageSummary[];current:string|null;open:boolean;onClose:()=>void;pins:string[];recents:string[]}) {
+ const [filter,setFilter]=useState(''),[type,setType]=useState('all');
+ const [mobile,setMobile]=useState(()=>matchMedia('(max-width:720px)').matches);
+ useEffect(()=>{const mq=matchMedia('(max-width:720px)'),changed=()=>setMobile(mq.matches);mq.addEventListener('change',changed);return()=>mq.removeEventListener('change',changed);},[]);
+ const [collapsed,setCollapsed]=useStored<Record<string,boolean>>('brain-wiki-collapsed',{culture:true,dev:true,electrics:true,health:true,markets:true,personal:true,psychology:true});
+ const matches=(p:PageSummary)=>(type==='all'||p.type===type)&&(!filter||`${p.title} ${p.tags.join(' ')}`.toLowerCase().includes(filter.toLowerCase()));
+ const groups=useMemo(()=>{const g:Record<string,PageSummary[]>={};for(const p of pages){if(['index','log'].includes(p.type))continue;const key=p.title.startsWith('Bookmarks - ')?'Bookmark collections':p.domain;if(!g[key])g[key]=[];g[key].push(p);}return Object.entries(g).sort(([a],[b])=>a.localeCompare(b));},[pages]);
+ const item=(p:PageSummary)=><a key={p.slug} className={`sidebar-item ${current===p.slug?'active':''}`} href={'/page/'+p.slug} aria-current={current===p.slug?'page':undefined} title={p.title}><span className="sidebar-glyph">{typeGlyph(p.type)}</span><span className="sidebar-item-label">{p.title.replace(/^Bookmarks - /,'')}</span></a>;
+ return <><aside className={`sidebar ${open?'open':''}`} aria-label="Page navigation" id="page-navigation" inert={mobile&&!open} aria-hidden={mobile&&!open?true:undefined}><nav className="sidebar-global" aria-label="Main navigation">{NAV.map(n=><a key={n.href} href={n.href}>{n.label}</a>)}</nav>
+  <div className="sidebar-filter"><input aria-label="Filter pages" placeholder="Find a page…" value={filter} onChange={e=>setFilter(e.target.value)}/>{filter&&<button className="sidebar-filter-clear" onClick={()=>setFilter('')} aria-label="Clear page filter">×</button>}</div>
+  <select className="sidebar-type" aria-label="Page type" value={type} onChange={e=>setType(e.target.value)}><option value="all">All page types</option>{['topic','source','entity','analysis'].map(t=><option key={t}>{t}</option>)}</select>
+  {[['Pinned',pins],['Recently opened',recents.slice(0,5)]] .map(([name,ids])=>{const found=(ids as string[]).map(id=>pages.find(p=>p.slug===id)).filter((p):p is PageSummary=>!!p&&matches(p));return found.length?<section key={name as string} className="sidebar-section"><div className="sidebar-section-title">{name}</div>{found.map(item)}</section>:null;})}
+  {groups.map(([name,items])=>{const shown=items.filter(matches);if(!shown.length)return null;const isOpen=!!filter||!collapsed[name];return <section key={name} className="sidebar-section"><button className="sidebar-section-title section-toggle" aria-expanded={isOpen} onClick={()=>setCollapsed(c=>({...c,[name]:!c[name]}))}><span><ChevronIcon/>{name.charAt(0).toUpperCase()+name.slice(1)}</span><span>{shown.length}</span></button>{isOpen&&shown.sort((a,b)=>a.title.localeCompare(b.title)).map(item)}</section>;})}
+  {!pages.some(matches)&&<p className="search-feedback">No matching pages.</p>}
+ </aside><div className={`sidebar-backdrop ${open?'visible':''}`} onClick={onClose}/></>;
 }
 
 // --- Page Aside (TOC + Backlinks) ---
@@ -626,7 +422,7 @@ function PageAside({
   onNavigate: (slug: string) => void;
 }) {
   const [active, setActive] = useState<string | null>(null);
-  const showToc = headings.length >= 3;
+  const showToc = headings.filter(h=>h.level>1).length >= 2;
   const showBacklinks = backlinks.length > 0;
 
   useEffect(() => {
@@ -658,7 +454,7 @@ function PageAside({
           <div className="aside-title">On this page</div>
           <ul>
             {headings
-              .filter((h) => h.level >= 1 && h.level <= 3)
+              .filter((h) => h.level >= 2 && h.level <= 3)
               .map((h) => (
                 <li key={h.id} className={`toc-level-${h.level} ${active === h.id ? "active" : ""}`}>
                   <a
@@ -667,7 +463,7 @@ function PageAside({
                       e.preventDefault();
                       const el = document.getElementById(h.id);
                       if (el) {
-                        el.scrollIntoView({ behavior: "smooth", block: "start" });
+                        openHeading(h.id);
                         history.replaceState(null, "", `#${h.id}`);
                       }
                     }}
@@ -685,12 +481,12 @@ function PageAside({
           <ul>
             {backlinks.map((b) => (
               <li key={b.slug}>
-                <button className="aside-backlink" onClick={() => onNavigate(b.slug)}>
+                <a className="aside-backlink" href={"/page/"+b.slug}>
                   <span className="sidebar-glyph" style={{ color: TYPE_COLORS[b.type] || TYPE_COLORS.unknown }}>
                     {typeGlyph(b.type)}
                   </span>
                   <span className="aside-backlink-title">{b.title}</span>
-                </button>
+                </a>
               </li>
             ))}
           </ul>
@@ -700,67 +496,54 @@ function PageAside({
   );
 }
 
+function ArticleContent({html,collapsed}:{html:string;collapsed:boolean}) {
+ const clean=html.replace(/^\s*<h1(?: [^>]*)?>[\s\S]*?<\/h1>/i,'');
+ if(!collapsed)return <div className="page-content" dangerouslySetInnerHTML={{__html:clean}}/>;
+ const matches=[...clean.matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)];
+ if(!matches.length)return <div className="page-content" dangerouslySetInnerHTML={{__html:clean}}/>;
+ return <div className="page-content"><div dangerouslySetInnerHTML={{__html:clean.slice(0,matches[0].index)}}/>{matches.map((m,i)=><details key={m[1]} id={m[1]} className="archive-section"><summary dangerouslySetInnerHTML={{__html:m[2]}}/><div dangerouslySetInnerHTML={{__html:clean.slice(m.index!+m[0].length,matches[i+1]?.index??clean.length)}}/></details>)}</div>;
+}
+
 // --- Page View ---
 function PageView({
   slug,
   onNavigate,
   onGraph,
-  onTag,
+  onTag, anchor, pinned, onPin,
 }: {
   slug: string;
   onNavigate: (slug: string) => void;
   onGraph: (slug: string) => void;
   onTag: (tag: string) => void;
+  anchor?:string; pinned:boolean; onPin:()=>void;
 }) {
   const [page, setPage] = useState<PageDetail | null>(null);
   const [copied, setCopied] = useState(false);
+  const [error,setError]=useState("");
+  const [attempt,setAttempt]=useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    setPage(null);
-    fetchPage(slug).then(setPage);
-    // Scroll to top when the page changes
-    const main = document.querySelector(".main");
-    if (main) main.scrollTop = 0;
-  }, [slug]);
-
-  useEffect(() => {
-    if (!contentRef.current) return;
-    const handler = (e: Event) => {
-      const link = (e.target as HTMLElement).closest("a.wikilink") as HTMLAnchorElement | null;
-      if (link) {
-        e.preventDefault();
-        onNavigate(link.dataset.slug!);
-      }
-    };
-    const el = contentRef.current;
-    el.addEventListener("click", handler);
-    return () => el.removeEventListener("click", handler);
-  }, [page, onNavigate]);
-
-  // Deep-link: if the URL has a hash, scroll to it after the page renders
-  useEffect(() => {
-    if (!page || !window.location.hash) return;
-    const id = window.location.hash.slice(1);
-    requestAnimationFrame(() => {
-      const el = document.getElementById(id);
-      if (el) el.scrollIntoView({ behavior: "auto", block: "start" });
-    });
-  }, [page]);
+    const controller=new AbortController(); setPage(null);setError('');
+    fetchPage(slug,controller.signal).then(p=>{if(!controller.signal.aborted){setPage(p);if(!p)setError('Page not found');}}).catch(e=>{if(e.name!=='AbortError')setError(e.message);});
+    const main=document.querySelector('.main');if(main)main.scrollTop=0;
+    return ()=>controller.abort();
+  },[slug,attempt]);
+  useEffect(()=>{if(page&&anchor)requestAnimationFrame(()=>openHeading(anchor));},[page,anchor]);
 
   function copyLink() {
-    navigator.clipboard.writeText(window.location.origin + `/page/${slug}`).then(() => {
+    navigator.clipboard.writeText(window.location.href).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 1200);
     });
   }
 
-  if (!page) return <div className="main"><div className="loading-state">Loading</div></div>;
+  if (!page) return <div className="main"><div className="loading-state" role={error?"alert":"status"}>{error||"Loading…"}{error&&<p><a href="/">Home</a> · <button onClick={()=>setAttempt(n=>n+1)}>Try again</button></p>}</div></div>;
 
   return (
     <div className="main">
       <div className="breadcrumb">
-        <a onClick={() => onNavigate("")}>Home</a>
+        <a href="/">Home</a>
         <span className="breadcrumb-sep">/</span>
         <span className="breadcrumb-cat">{page.category === "root" ? "Wiki" : page.category}</span>
         <span className="breadcrumb-sep">/</span>
@@ -771,8 +554,8 @@ function PageView({
         <article className="page-article">
           <header className="page-header">
             <div className="page-title-row">
-              <h1 className="page-title">{page.title}</h1>
-              <div className="page-actions">
+              <h1 className="page-title" id={page.headings[0]?.level===1?page.headings[0].id:undefined}>{page.title}</h1>
+              <div className="page-actions"><button className="page-action" aria-label={pinned?"Unpin page":"Pin page"} aria-pressed={pinned} onClick={onPin}><PinIcon/>{pinned?"Pinned":"Pin"}</button>
                 <button
                   className="page-action"
                   onClick={copyLink}
@@ -781,19 +564,19 @@ function PageView({
                   <CopyIcon /> {copied ? "Copied" : "Copy link"}
                 </button>
                 <button className="page-action" onClick={() => onGraph(slug)} title="Show this page in the graph">
-                  Graph
+                  <NetworkIcon/> Graph
                 </button>
               </div>
             </div>
             <div className="page-meta">
               <span className={badgeClass(page.type)}>{page.type}</span>
               {page.domain && page.domain !== "unknown" && <span className="page-domain">{page.domain}</span>}
-              {page.readingTime && (
-                <span className="page-date">
-                  {page.readingTime} min read · {page.wordCount} words
+              {!!page.readingTime && (
+                <span className="page-date" title={`${page.wordCount} words`}>
+                  {page.readingTime} min read
                 </span>
               )}
-              {page.updated && <span className="page-date">Updated {formatRelativeDate(page.updated)}</span>}
+              {page.updated && <span className="page-date">Edited {formatRelativeDate(page.updated)}</span>}
             </div>
             {page.tags?.length > 0 && (
               <div className="tag-list">
@@ -806,7 +589,9 @@ function PageView({
             )}
           </header>
 
-          <div className="page-content" ref={contentRef} dangerouslySetInnerHTML={{ __html: page.html }} />
+          {page.summary&&<p className="article-summary">{page.summary}</p>}
+          {Boolean(page.reviewed||page.reviewNotes||page.sourceGaps?.length)&&<div className="reader-note"><strong>{page.reviewStatus==='verified'?'Evidence reviewed':page.reviewStatus==='archive'?'Source archive':'Review note'}</strong>{page.reviewed&&` · ${page.reviewed}`}<div>{page.reviewNotes}</div>{page.sourceGaps?.map(g=><div key={g}>Historical source unavailable: {g}</div>)}</div>}
+          <div ref={contentRef}><ArticleContent html={page.html} collapsed={page.type==='source'&&(page.wordCount||0)>2000}/></div>
 
           {(page.related?.length > 0 || page.sources?.length > 0) && (
             <div className="page-footer-blocks">
@@ -820,7 +605,7 @@ function PageView({
                           <a
                             key={i}
                             className="related-item"
-                            onClick={() => onNavigate(r.slug!)}
+                            href={"/page/"+r.slug}
                           >
                             <span className="sidebar-glyph" style={{ color: TYPE_COLORS[r.type] || TYPE_COLORS.unknown }}>
                               {typeGlyph(r.type)}
@@ -842,9 +627,7 @@ function PageView({
                 <div className="page-block">
                   <div className="page-block-title">Sources</div>
                   <div className="page-block-list">
-                    {page.sources.map((s, i) => (
-                      <span key={i} className="source-item">{s}</span>
-                    ))}
+                    {(page.sourceLinks||page.sources.map(name=>({name,id:null,title:name}))).map((source,i)=>source.id?<a key={i} className="source-item" href={'/source/'+source.id}>{source.title} ↗</a>:<span key={i} className="source-item broken">{source.name} · unavailable</span>)}
                   </div>
                 </div>
               )}
@@ -864,180 +647,40 @@ function PageView({
 }
 
 // --- Home ---
-function Home({ pages, onSelect, onGoto }: { pages: PageSummary[]; onSelect: (slug: string) => void; onGoto: (r: Route) => void }) {
-  const [meta, setMeta] = useState<Meta | null>(null);
-  useEffect(() => {
-    fetchMeta().then(setMeta);
-  }, []);
-
-  const stats = useMemo(
-    () => ({
-      total: pages.length,
-      sources: pages.filter((p) => p.type === "source").length,
-      entities: pages.filter((p) => p.type === "entity").length,
-      topics: pages.filter((p) => p.type === "topic").length,
-    }),
-    [pages]
-  );
-
-  const recentlyUpdated = useMemo(() => {
-    return [...pages]
-      .filter((p) => p.type !== "index" && p.type !== "log")
-      .sort((a, b) => updatedTime(b) - updatedTime(a))
-      .slice(0, 8);
-  }, [pages]);
-
-  const mostLinked = useMemo(() => {
-    return [...pages]
-      .filter((p) => p.type !== "index" && p.type !== "log")
-      .sort((a, b) => (b.linkCount || 0) - (a.linkCount || 0))
-      .slice(0, 8);
-  }, [pages]);
-
-  const domains = useMemo(() => {
-    const d: Record<string, PageSummary[]> = {};
-    pages.forEach((p) => {
-      const dom = p.domain?.split(",")[0]?.trim() || "other";
-      if (dom === "unknown") return;
-      if (!d[dom]) d[dom] = [];
-      d[dom].push(p);
-    });
-    return d;
-  }, [pages]);
-
-  return (
-    <div className="main">
-      <div className="home-hero">
-        <h1>Brain Wiki</h1>
-        <p>
-          Personal knowledge base — {stats.total} pages across {Object.keys(domains).length} domains
-          {meta && ` · ${meta.totalWords.toLocaleString()} words`}
-        </p>
-      </div>
-
-      <div className="stats-row">
-        <div className="stat">
-          <div className="stat-number">{stats.sources}</div>
-          <div className="stat-label">Sources</div>
-        </div>
-        <div className="stat">
-          <div className="stat-number">{stats.entities}</div>
-          <div className="stat-label">Entities</div>
-        </div>
-        <div className="stat">
-          <div className="stat-number">{stats.topics}</div>
-          <div className="stat-label">Topics</div>
-        </div>
-        <div className="stat">
-          <div className="stat-number">{pages.filter((p) => p.type === "analysis").length}</div>
-          <div className="stat-label">Analyses</div>
-        </div>
-      </div>
-
-      <div className="home-row">
-        <div className="home-row-item">
-          <div className="domain-title">
-            Recently updated
-            <a className="domain-more" onClick={() => onGoto({ view: "timeline" })}>Timeline →</a>
-          </div>
-          <div className="home-list">
-            {recentlyUpdated.map((p) => (
-              <div key={p.slug} className="home-list-item" onClick={() => onSelect(p.slug)}>
-                <span className="sidebar-glyph" style={{ color: TYPE_COLORS[p.type] || TYPE_COLORS.unknown }}>
-                  {typeGlyph(p.type)}
-                </span>
-                <span className="home-list-title">{p.title}</span>
-                <span className="home-list-date">{formatRelativeDate(updatedTime(p))}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="home-row-item">
-          <div className="domain-title">
-            Most linked
-            <a className="domain-more" onClick={() => onGoto({ view: "graph" })}>Graph →</a>
-          </div>
-          <div className="home-list">
-            {mostLinked.map((p) => (
-              <div key={p.slug} className="home-list-item" onClick={() => onSelect(p.slug)}>
-                <span className="sidebar-glyph" style={{ color: TYPE_COLORS[p.type] || TYPE_COLORS.unknown }}>
-                  {typeGlyph(p.type)}
-                </span>
-                <span className="home-list-title">{p.title}</span>
-                <span className="home-list-date">{p.linkCount} links</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {Object.entries(domains)
-        .sort((a, b) => b[1].length - a[1].length)
-        .map(([domain, domPages]) => (
-          <div key={domain} className="domain-section">
-            <div className="domain-title">
-              {domain.charAt(0).toUpperCase() + domain.slice(1)}
-              <span className="domain-count">{domPages.length}</span>
-            </div>
-            <div className="home-grid">
-              {domPages
-                .sort((a, b) => a.title.localeCompare(b.title))
-                .map((p) => (
-                  <div key={p.slug} className="home-card" onClick={() => onSelect(p.slug)}>
-                    <div className="home-card-title">{p.title}</div>
-                    <div className="home-card-meta">
-                      <span className={badgeClass(p.type)}>{p.type}</span>
-                      {p.linkCount > 0 && <span className="home-card-dot">· {p.linkCount} links</span>}
-                    </div>
-                  </div>
-                ))}
-            </div>
-          </div>
-        ))}
-    </div>
-  );
+function Home({pages,recents}:{pages:PageSummary[];recents:string[]}) {
+ const {data:timelineData,error:timelineError,retry:retryTimeline}=useJson<TimelineEntry[]>('/data/timeline.json');
+ const timeline=timelineData||[];
+ const content=pages.filter(p=>!['index','log','overview'].includes(p.type));
+ const mostReferenced=[...content].sort((a,b)=>(b.referencedBy||0)-(a.referencedBy||0)||a.title.localeCompare(b.title)).slice(0,6);
+ const recent=recents.map(slug=>pages.find(p=>p.slug===slug)).filter((p):p is PageSummary=>!!p).slice(0,6);
+ const domains=[...new Set(content.map(p=>p.domain))].sort();
+ const list=(items:PageSummary[])=><div className="home-list">{items.map(p=><a key={p.slug} className="home-list-item" href={'/page/'+p.slug}><span className="sidebar-glyph">{typeGlyph(p.type)}</span><span className="home-list-title">{p.title}</span><span className="home-list-date">{p.referencedBy||0} references</span></a>)}</div>;
+ return <div className="main"><div className="home-hero"><h1>Brain Wiki</h1><p>Ideas, sources and useful answers across {domains.length} subjects.</p><div className="source-actions"><a href="/bookmarks">Browse bookmarks →</a><a href="/sources">Original sources →</a><a href="/page/wiki-overview">Wiki overview →</a></div></div>
+  <div className="stats-row">{[['source','Sources'],['entity','Entities'],['topic','Topics'],['analysis','Analyses']].map(([type,label])=><div className="stat" key={type}><div className="stat-number">{pages.filter(p=>p.type===type).length}</div><div className="stat-label">{label}</div></div>)}</div>
+  <div className="home-row"><section><div className="domain-title">{recent.length?'Continue reading':'Most referenced'}</div>{list(recent.length?recent:mostReferenced)}</section>
+   <section><div className="domain-title">Recent activity<a className="domain-more" href="/timeline">Timeline →</a></div><div className="home-list">{timelineError&&<p role="alert">Recent activity could not load. <button onClick={retryTimeline}>Retry</button></p>}{!timelineData&&!timelineError&&<p role="status">Loading activity…</p>}{timeline.slice(0,3).map((e,i)=><a className="home-list-item activity-item" href="/timeline" key={i}><span className="home-list-title"><small>{e.date} · {e.op}</small>{e.detail}</span></a>)}</div></section></div>
+  <div className="domain-title">Explore by subject</div><div className="domain-directory">{domains.map(domain=><details key={domain} className="domain-disclosure"><summary><span>{domain}</span><span>{content.filter(p=>p.domain===domain).length} pages</span></summary><div className="home-list">{content.filter(p=>p.domain===domain).sort((a,b)=>a.title.localeCompare(b.title)).map(p=><a className="home-list-item" key={p.slug} href={'/page/'+p.slug}><span className="home-list-title">{p.title}</span><span className="home-list-date">{p.type}</span></a>)}</div></details>)}</div>
+ </div>;
 }
 
 // --- Tags ---
 function TagsView({ onSelect, onTag }: { onSelect: (slug: string) => void; onTag: (t: string) => void }) {
-  const [tags, setTags] = useState<TagEntry[]>([]);
-  useEffect(() => {
-    fetchTags().then(setTags);
-  }, []);
-
-  return (
-    <div className="main">
-      <div className="home-hero">
-        <h1>Tags</h1>
-        <p>{tags.length} tags · click a tag to see its pages</p>
-      </div>
-      <div className="tag-cloud">
-        {tags.map((t) => (
-          <button
-            key={t.tag}
-            className="tag-cloud-item"
-            onClick={() => onTag(t.tag)}
-            style={{ fontSize: `${12 + Math.min(t.count, 10)}px` }}
-          >
-            #{t.tag} <span className="tag-cloud-count">{t.count}</span>
-          </button>
-        ))}
-      </div>
-    </div>
-  );
+ const {data:tags,error,retry}=useJson<TagEntry[]>('/data/tags.json');
+ const [query,setQuery]=useState(''),[all,setAll]=useState(false);
+ if(!tags)return <LoadState error={error} retry={retry}/>;
+ const shown=tags.filter(t=>(all||query||t.count>1)&&(t.tag.includes(query.trim().toLowerCase())||t.tag===canonicalTag(query.trim())));
+ return <div className="main"><div className="home-hero"><h1>Tags</h1><p>Browse shared subjects, or search all {tags.length} tags. Related spellings share one tag.</p></div><div className="browse-controls"><input aria-label="Find tags" placeholder="Find a tag…" value={query} onChange={e=>setQuery(e.target.value)}/><label><input type="checkbox" checked={all} onChange={e=>setAll(e.target.checked)}/> Include tags used once</label></div><div className="tag-cloud">{shown.map(t=><a className="tag-cloud-item" key={t.tag} href={'/tags/'+encodeURIComponent(t.tag)}>#{t.tag} <span className="tag-cloud-count">{t.count}</span></a>)}</div>{!shown.length&&<p className="empty">No matching tags.</p>}</div>;
 }
 
 function TagView({ tag, onSelect, onBack }: { tag: string; onSelect: (slug: string) => void; onBack: () => void }) {
-  const [tags, setTags] = useState<TagEntry[]>([]);
-  useEffect(() => {
-    fetchTags().then(setTags);
-  }, []);
-  const entry = tags.find((t) => t.tag === tag.toLowerCase());
+  const {data:tags,error,retry}=useJson<TagEntry[]>('/data/tags.json');
+  if(!tags)return <LoadState error={error} retry={retry}/>;
+  const entry = tags.find((t) => t.tag === canonicalTag(tag));
 
   return (
     <div className="main">
       <div className="breadcrumb">
-        <a onClick={onBack}>Tags</a>
+        <a href="/tags">Tags</a>
         <span className="breadcrumb-sep">/</span>
         <span>#{tag}</span>
       </div>
@@ -1048,12 +691,12 @@ function TagView({ tag, onSelect, onBack }: { tag: string; onSelect: (slug: stri
       {entry && (
         <div className="home-grid">
           {entry.pages.map((p) => (
-            <div key={p.slug} className="home-card" onClick={() => onSelect(p.slug)}>
+            <a key={p.slug} className="home-card" href={"/page/"+p.slug}>
               <div className="home-card-title">{p.title}</div>
               <div className="home-card-meta">
                 <span className={badgeClass(p.type)}>{p.type}</span>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       )}
@@ -1063,10 +706,8 @@ function TagView({ tag, onSelect, onBack }: { tag: string; onSelect: (slug: stri
 
 // --- Timeline ---
 function TimelineView() {
-  const [entries, setEntries] = useState<TimelineEntry[]>([]);
-  useEffect(() => {
-    fetchTimeline().then(setEntries);
-  }, []);
+  const {data:entries,error,retry}=useJson<TimelineEntry[]>('/data/timeline.json');
+  if(!entries)return <LoadState error={error} retry={retry}/>;
 
   return (
     <div className="main">
@@ -1085,7 +726,7 @@ function TimelineView() {
                 <span className="timeline-sep">—</span>
                 <span className="timeline-detail">{e.detail}</span>
               </div>
-              {e.body && <pre className="timeline-content">{e.body}</pre>}
+              {e.body && <details className="timeline-details"><summary>View changes</summary><div className="page-content timeline-content" dangerouslySetInnerHTML={{__html:e.html || ""}}/></details>}
             </div>
           </div>
         ))}
@@ -1095,76 +736,17 @@ function TimelineView() {
 }
 
 // --- Lint ---
-const LINT_LABELS: Record<string, string> = {
-  orphan: "Orphan pages",
-  "broken-link": "Broken wikilinks",
-  "missing-type": "Missing type",
-  "missing-tags": "Missing tags",
-  "missing-domain": "Missing domain",
-  stale: "Stale (>90d)",
-  "duplicate-title": "Duplicate titles",
-};
-
-const LINT_DESCRIPTIONS: Record<string, string> = {
-  orphan: "No other page links to these. Either add cross-references or consider whether the page is still needed.",
-  "broken-link": "Wikilinks that point to a page that doesn't exist. Either create the page or fix the link.",
-  "missing-type": "Frontmatter is missing `type:` — the page won't be categorised correctly.",
-  "missing-tags": "No `tags:` in frontmatter — harder to discover via tag browse.",
-  "missing-domain": "No `domain:` in frontmatter — won't appear on the home page domain grids.",
-  stale: "Frontmatter `updated:` is more than 90 days old. Review for accuracy.",
-  "duplicate-title": "Multiple pages share this title. Wikilinks may resolve to the wrong one.",
-};
-
-function LintView({ onSelect }: { onSelect: (slug: string) => void }) {
-  const [issues, setIssues] = useState<LintIssue[]>([]);
-  useEffect(() => {
-    fetchLint().then(setIssues);
-  }, []);
-
-  const grouped = useMemo(() => {
-    const g: Record<string, LintIssue[]> = {};
-    for (const i of issues) {
-      if (!g[i.kind]) g[i.kind] = [];
-      g[i.kind].push(i);
-    }
-    return g;
-  }, [issues]);
-
-  const order: string[] = ["broken-link", "orphan", "missing-type", "missing-domain", "missing-tags", "stale", "duplicate-title"];
-
-  return (
-    <div className="main">
-      <div className="home-hero">
-        <h1>Lint</h1>
-        <p>
-          {issues.length === 0
-            ? "No issues. Wiki is clean."
-            : `${issues.length} issue${issues.length === 1 ? "" : "s"} across ${Object.keys(grouped).length} categor${
-                Object.keys(grouped).length === 1 ? "y" : "ies"
-              }`}
-        </p>
-      </div>
-      {order
-        .filter((k) => grouped[k])
-        .map((kind) => (
-          <div key={kind} className="lint-section">
-            <div className="lint-title">
-              {LINT_LABELS[kind] || kind}
-              <span className="lint-count">{grouped[kind].length}</span>
-            </div>
-            <div className="lint-desc">{LINT_DESCRIPTIONS[kind]}</div>
-            <div className="lint-list">
-              {grouped[kind].map((i, idx) => (
-                <div key={idx} className="lint-item" onClick={() => onSelect(i.slug)}>
-                  <span className="lint-item-title">{i.title}</span>
-                  {i.detail && <span className="lint-item-detail">{i.detail}</span>}
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
-    </div>
-  );
+const LINT_LABELS: Record<string,string> = {'broken-source':'Missing source references','broken-related':'Missing related pages','broken-link':'Broken article links','source-gap':'Pages with unavailable historical sources','needs-review':'Evidence review needed',stale:'Evidence review due',orphan:'Unconnected pages','missing-type':'Missing page type','missing-tags':'Missing tags','missing-domain':'Missing domain','duplicate-title':'Duplicate titles'};
+function LintView({onSelect}:{onSelect:(slug:string)=>void}) {
+ const {data:issues,error,retry}=useJson<LintIssue[]>('/data/lint.json');
+ const [domain,setDomain]=useState('all');
+ if(!issues)return <LoadState error={error} retry={retry}/>;
+ const loaded=true;
+ const filtered=issues.filter(i=>domain==='all'||i.domain===domain);
+ const order=['broken-source','broken-related','broken-link','source-gap','needs-review','stale','orphan','missing-type','missing-domain','missing-tags','duplicate-title'];
+ return <div className="main"><div className="home-hero"><h1>Review</h1><p>Prioritize missing evidence, consequential claims and scheduled reviews. Editing a page does not mark its claims verified.</p></div><div className="browse-controls"><select aria-label="Review domain" value={domain} onChange={e=>setDomain(e.target.value)}><option value="all">All domains</option>{[...new Set(issues.map(i=>i.domain).filter(Boolean))].sort().map(d=><option key={d}>{d}</option>)}</select><span role="status">{loaded?`${filtered.length} review items`:'Loading…'}</span></div>{error&&<p role="alert">{error}</p>}
+ {loaded&&!filtered.length&&<p className="empty">No items in this review queue. Preserved archives do not need review just because they are old.</p>}
+ {order.map(kind=>{const group=filtered.filter(i=>i.kind===kind);if(!group.length)return null;return <section className="lint-section" key={kind}><h2 className="lint-title">{LINT_LABELS[kind]} <span className="lint-count">{group.length}</span></h2><div className="lint-list">{group.map((i,n)=><a key={i.slug+n} href={'/page/'+i.slug} className="lint-item"><span className="lint-item-title">{i.title}</span><span className="lint-item-detail">{i.detail}</span></a>)}</div></section>;})}</div>;
 }
 
 // --- Graph View ---
@@ -1174,6 +756,12 @@ function GraphView({ onSelect, focusSlug }: { onSelect: (slug: string) => void; 
   const [graphData, setGraphData] = useState<any>(null);
   const [tooltip, setTooltip] = useState({ show: false, x: 0, y: 0, text: "" });
   const [filter, setFilter] = useState("all");
+  const [focus,setFocus]=useState(focusSlug||'wiki-overview');
+  const [hops,setHops]=useState('1');
+  const [includeCatalog,setIncludeCatalog]=useState(false);
+  const [graphError,setGraphError]=useState('');
+  useEffect(()=>{if(focusSlug)setFocus(focusSlug);},[focusSlug]);
+  const visible=useMemo(()=>graphData?graphNeighborhood(graphData.nodes,graphData.edges,{focus,hops:hops==='all'?Infinity:Number(hops),domain:filter,includeCatalog}):{nodes:[],edges:[]},[graphData,focus,hops,filter,includeCatalog]);
   // Cache node positions across filter changes so layout isn't thrown away
   const positionsRef = useRef<Map<string, { x: number; y: number }>>(new Map());
   const simRef = useRef<any>(null);
@@ -1182,7 +770,7 @@ function GraphView({ onSelect, focusSlug }: { onSelect: (slug: string) => void; 
   const transformRef = useRef({ x: 0, y: 0, k: 1 });
 
   useEffect(() => {
-    fetchGraph().then(setGraphData);
+    fetchGraph().then(setGraphData).catch(e=>setGraphError(e.message));
   }, []);
 
   useEffect(() => {
@@ -1204,29 +792,10 @@ function GraphView({ onSelect, focusSlug }: { onSelect: (slug: string) => void; 
     }
 
     const rect = resize();
-    const W = rect.width;
-    const H = rect.height;
+    let W = rect.width;
+    let H = rect.height;
 
-    // Filter nodes + edges
-    let nodes: any[], edges: any[];
-    if (filter === "all") {
-      nodes = graphData.nodes.slice();
-      edges = graphData.edges.slice();
-    } else {
-      const keep = new Set(
-        graphData.nodes
-          .filter((n: any) => n.category === filter || n.type === filter)
-          .map((n: any) => n.id)
-      );
-      graphData.edges.forEach((e: any) => {
-        if (keep.has(e.source) || keep.has(e.target)) {
-          keep.add(e.source);
-          keep.add(e.target);
-        }
-      });
-      nodes = graphData.nodes.filter((n: any) => keep.has(n.id));
-      edges = graphData.edges.filter((e: any) => keep.has(e.source) && keep.has(e.target));
-    }
+    let nodes: any[] = visible.nodes.slice(), edges: any[] = visible.edges.slice();
 
     // Restore cached positions if available; otherwise seed near center
     nodes = nodes.map((n: any) => {
@@ -1248,9 +817,9 @@ function GraphView({ onSelect, focusSlug }: { onSelect: (slug: string) => void; 
         d3
           .forceLink(edges.map((e: any) => ({ source: nodeMap.get(e.source), target: nodeMap.get(e.target) })))
           .id((d: any) => d.id)
-          .distance(80)
+          .distance(nodes.length < 40 ? 120 : 80)
       )
-      .force("charge", d3.forceManyBody().strength(-200))
+      .force("charge", d3.forceManyBody().strength(nodes.length < 40 ? -450 : -200))
       .force("center", d3.forceCenter(W / 2, H / 2))
       .force("collide", d3.forceCollide(20))
       .alphaDecay(0.02);
@@ -1286,7 +855,7 @@ function GraphView({ onSelect, focusSlug }: { onSelect: (slug: string) => void; 
         ctx.stroke();
       });
 
-      const highlighted = hoveredRef.current || (focusSlug ? nodeMap.get(focusSlug) : null);
+      const highlighted = hoveredRef.current || (focus ? nodeMap.get(focus) : null);
       if (highlighted) {
         const hid = highlighted.id;
         ctx.lineWidth = 1.5 / k;
@@ -1301,11 +870,12 @@ function GraphView({ onSelect, focusSlug }: { onSelect: (slug: string) => void; 
         });
       }
 
-      nodes.forEach((n: any) => {
+      const labelBoxes:{left:number;top:number;right:number;bottom:number}[]=[];
+      [...nodes].sort((a,b)=>Number(b.id===focus)-Number(a.id===focus)).forEach((n: any) => {
         const r = nodeRadius(n);
         const color = TYPE_COLORS[n.type] || TYPE_COLORS.unknown;
         const isHovered = hoveredRef.current?.id === n.id;
-        const isFocus = focusSlug === n.id;
+        const isFocus = focus === n.id;
 
         ctx.beginPath();
         ctx.arc(n.x, n.y, r + (isFocus ? 2 : 0), 0, Math.PI * 2);
@@ -1320,9 +890,14 @@ function GraphView({ onSelect, focusSlug }: { onSelect: (slug: string) => void; 
 
         if (isHovered || isFocus || (k > 0.6 && n.linkCount > 5)) {
           ctx.font = `400 ${Math.max(10, 11 / k)}px Inter, system-ui, sans-serif`;
-          ctx.fillStyle = isHovered || isFocus ? "#fafafa" : "#666666";
+          ctx.fillStyle = isHovered || isFocus ? "#fafafa" : "#969696";
           ctx.textAlign = "center";
-          ctx.fillText(n.label, n.x, n.y + r + 12 / k);
+          const y=n.y+r+12/k, width=ctx.measureText(n.label).width;
+          const x=Math.max((8-tx)/k+width/2,Math.min(n.x,(r2.width-8-tx)/k-width/2));
+          const box={left:x-width/2-5/k,right:x+width/2+5/k,top:y-11/k,bottom:y+4/k};
+          if(isHovered||!labelBoxes.some(b=>box.left<b.right&&box.right>b.left&&box.top<b.bottom&&box.bottom>b.top)){
+            ctx.fillText(n.label,x,y);labelBoxes.push(box);
+          }
         }
       });
 
@@ -1332,8 +907,8 @@ function GraphView({ onSelect, focusSlug }: { onSelect: (slug: string) => void; 
     sim.on("tick", draw);
 
     // If a focus slug is provided, center the view on it after layout settles
-    if (focusSlug && nodeMap.has(focusSlug)) {
-      const target = nodeMap.get(focusSlug)!;
+    if (focus && nodeMap.has(focus)) {
+      const target = nodeMap.get(focus)!;
       // Fix position temporarily so it settles in the middle
       target.fx = W / 2;
       target.fy = H / 2;
@@ -1451,7 +1026,13 @@ function GraphView({ onSelect, focusSlug }: { onSelect: (slug: string) => void; 
     canvas.addEventListener("wheel", onWheel, { passive: false });
 
     const resizeObs = new ResizeObserver(() => {
-      resize();
+      const next=resize();
+      if(next.width!==W||next.height!==H){
+        const dx=(next.width-W)/2,dy=(next.height-H)/2;
+        for(const n of nodes){n.x+=dx;n.y+=dy;if(n.fx!=null)n.fx+=dx;if(n.fy!=null)n.fy+=dy;}
+        W=next.width;H=next.height;
+        sim.force('center',d3.forceCenter(W/2,H/2)).alpha(0.25).restart();
+      }
       draw();
     });
     resizeObs.observe(container);
@@ -1465,21 +1046,21 @@ function GraphView({ onSelect, focusSlug }: { onSelect: (slug: string) => void; 
       canvas.removeEventListener("dblclick", onDblClick);
       canvas.removeEventListener("wheel", onWheel);
     };
-  }, [graphData, filter, focusSlug]);
+  }, [graphData, visible, focus]);
 
-  if (!graphData) return <div className="main full-width"><div className="loading-state">Loading graph</div></div>;
+  if (!graphData) return <div className="main full-width"><div className="loading-state" role={graphError?'alert':'status'}>{graphError||'Loading graph'}{graphError&&<button onClick={()=>{setGraphError('');fetchGraph().then(setGraphData).catch(e=>setGraphError(e.message));}}>Retry</button>}</div></div>;
 
   return (
     <div className="main full-width">
       <div className="graph-container" ref={containerRef}>
         <canvas ref={canvasRef} />
-        <div className="graph-filter">
-          {["all", "sources", "entities", "topics"].map((f) => (
-            <button key={f} className={filter === f ? "active" : ""} onClick={() => setFilter(f)}>
-              {f.charAt(0).toUpperCase() + f.slice(1)}
-            </button>
-          ))}
+        <div className="graph-filter graph-controls">
+          <label>Focus <select aria-label="Graph focus" value={focus} onChange={e=>setFocus(e.target.value)}>{graphData.nodes.filter((n:any)=>!['index','log'].includes(n.type)).sort((a:any,b:any)=>a.label.localeCompare(b.label)).map((n:any)=><option key={n.id} value={n.id}>{n.label}</option>)}</select></label>
+          <label>Connections <select aria-label="Graph distance" value={hops} onChange={e=>setHops(e.target.value)}><option value="1">One step</option><option value="2">Two steps</option><option value="all">Whole wiki</option></select></label>
+          <label>Subject <select aria-label="Graph subject" value={filter} onChange={e=>setFilter(e.target.value)}><option value="all">All subjects</option>{[...new Set(graphData.nodes.map((n:any)=>n.domain))].sort().filter(Boolean).map((d:any)=><option key={d}>{d}</option>)}</select></label>
+          <label className="graph-catalog"><input type="checkbox" checked={includeCatalog} onChange={e=>setIncludeCatalog(e.target.checked)}/> Catalog pages</label>
         </div>
+        <details className="graph-related"><summary>{visible.nodes.length} connected pages</summary><div>{visible.nodes.map((n:any)=><a key={n.id} href={'/page/'+n.id}>{n.label}</a>)}</div></details>
         <div className="graph-legend">
           {Object.entries(TYPE_COLORS)
             .filter(([k]) => !["unknown", "log", "index"].includes(k))
@@ -1545,61 +1126,15 @@ function ShortcutsOverlay({ open, onClose }: { open: boolean; onClose: () => voi
 // --- Sync button + pending-ingest modal ---
 interface SyncToast { kind: "ok" | "err"; text: string; }
 
-function SyncButton({
-  pending,
-  onSynced,
-  onShowPending,
-}: {
-  pending: PendingSource[];
-  onSynced: () => void;
-  onShowPending: () => void;
-}) {
-  const [busy, setBusy] = useState(false);
-  const [toast, setToast] = useState<SyncToast | null>(null);
-
-  async function handleSync() {
-    if (busy) return;
-    setBusy(true);
-    setToast(null);
-    const result = await runSync();
-    setBusy(false);
-    if (result.ok) {
-      const changed = result.synced.length;
-      const text = changed === 0
-        ? "Already up to date"
-        : `${result.synced.length} folder${result.synced.length === 1 ? "" : "s"} synced`;
-      setToast({ kind: "ok", text });
-      onSynced();
-    } else {
-      setToast({ kind: "err", text: result.error || result.errors[0] || "Sync failed" });
-    }
-    setTimeout(() => setToast(null), 2800);
-  }
-
-  return (
-    <div className="sync-wrap">
-      <button
-        className="icon-btn sync-btn"
-        onClick={handleSync}
-        disabled={busy}
-        title={busy ? "Syncing…" : "Sync from Obsidian vault"}
-        aria-label="Sync from Obsidian"
-      >
-        <SyncIcon spinning={busy} />
-      </button>
-      {pending.length > 0 && (
-        <button
-          className="pending-badge"
-          onClick={onShowPending}
-          title={`${pending.length} raw source${pending.length === 1 ? "" : "s"} not yet ingested`}
-          aria-label="Show pending ingest"
-        >
-          {pending.length}
-        </button>
-      )}
-      {toast && <div className={`sync-toast sync-toast-${toast.kind}`}>{toast.text}</div>}
-    </div>
-  );
+function SyncButton({pending,onSynced,onShowPending}:{pending:PendingSource[];onSynced:()=>void;onShowPending:()=>void}) {
+ const [busy,setBusy]=useState(false),[preview,setPreview]=useState<any>(null),[message,setMessage]=useState('');
+ useEffect(()=>{if(!preview)return;const previous=document.activeElement as HTMLElement;const dialog=document.querySelector('[aria-labelledby="capture-title"]') as HTMLElement|null;dialog?.querySelector<HTMLButtonElement>('button')?.focus();const key=(e:KeyboardEvent)=>{if(e.key==='Escape'&&!busy){e.preventDefault();setPreview(null);}if(e.key==='Tab'&&dialog){const controls=[...dialog.querySelectorAll<HTMLElement>('button:not(:disabled),a[href],input,select')];if(!controls.length)return;const first=controls[0],last=controls[controls.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}};document.addEventListener('keydown',key);return()=>{document.removeEventListener('keydown',key);previous?.focus();};},[preview,busy]);
+ async function inspect(){setBusy(true);setMessage('');try{const r=await fetch('/api/sync/preview');if(!r.ok)throw Error('Could not preview the source capture.');setPreview(await r.json());}catch(e:any){setMessage(e.message);}finally{setBusy(false);}}
+ async function capture(){setBusy(true);const r=await runSync();setMessage(r.ok?`${r.synced.length} source revisions captured. Earlier versions are preserved.`:r.error||r.errors.join('; '));setBusy(false);setPreview(null);onSynced();}
+ return <div className="sync-wrap"><button className="icon-btn" onClick={inspect} disabled={busy} title="Preview source changes" aria-label="Preview source changes"><SyncIcon spinning={busy}/></button><button className={`pending-badge ${pending.length?"":"is-empty"}`} onClick={onShowPending} title="Sources waiting for synthesis" aria-label="Show pending ingest">{pending.length}</button>
+ {message&&<div className="sync-toast" role="status">{message}<button aria-label="Dismiss capture message" onClick={()=>setMessage('')}>×</button></div>}
+ {preview&&<div className="overlay" onClick={()=>!busy&&setPreview(null)}><div className="modal" role="dialog" aria-modal="true" aria-labelledby="capture-title" onClick={e=>e.stopPropagation()}><div className="modal-header"><h2 id="capture-title">Capture source changes</h2><button className="modal-close" disabled={busy} onClick={()=>setPreview(null)} aria-label="Close capture preview">×</button></div><div className="modal-hint">{preview.changes?.length||0} new or revised sources. Each change is saved as a new version; previous captures stay available.</div>{preview.errors?.map((e:string)=><p className="reader-note" role="alert" key={e}>{e}</p>)}<ul className="pending-list">{preview.changes?.map((c:any)=><li className="pending-item" key={c.source}><span>{c.source}</span><span className="pending-meta">{c.kind}</span></li>)}</ul><div className="capture-footer"><button className="page-action" onClick={()=>setPreview(null)} disabled={busy}>Close</button><button className="modal-primary" disabled={busy||!preview.changes?.length} onClick={capture}>{busy?'Capturing…':'Capture changes'}</button></div></div></div>}
+ </div>;
 }
 
 function PendingModal({
@@ -1633,7 +1168,7 @@ function PendingModal({
               <button
                 className="modal-primary"
                 onClick={() => onIngest(items.map((i) => i.path))}
-                title="Run claude CLI to ingest these files into the wiki"
+                title="Create wiki summaries from the selected sources"
               >
                 Ingest all
               </button>
@@ -1642,9 +1177,9 @@ function PendingModal({
           </div>
         </div>
         <div className="modal-hint">
-          Raw source files in <code>raw/</code> not referenced by any wiki page's <code>sources:</code> frontmatter.
+          New or changed source versions waiting to be summarized and connected to wiki pages.
           <span style={{ display: "block", marginTop: 4 }}>
-            "Ingest all" runs the <code>claude</code> CLI locally using your Max subscription — it will create source/entity/topic pages following CLAUDE.md.
+            “Ingest all” prepares summaries and related pages in an isolated workspace, validates them, then publishes the changes. Original sources are preserved.
           </span>
         </div>
         {items.length === 0 ? (
@@ -1839,6 +1374,10 @@ function IngestPanel({
 
 function App() {
   const [pages, setPages] = useState<PageSummary[]>([]);
+  const [pins,setPins]=useStored<string[]>("brain-wiki-pins",[]);
+  const [recents,setRecents]=useStored<string[]>("brain-wiki-recents",[]);
+  const [captureStatus,setCaptureStatus]=useState<CaptureStatus|null>(null);
+  const [appError,setAppError]=useState("");
   const [route, setRoute] = useState<Route>(parseRoute());
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
@@ -1854,16 +1393,16 @@ function App() {
 
   async function refreshAll() {
     resetCaches();
-    const [p, m, pend] = await Promise.all([fetchPages(), fetchMeta(), fetchPendingIngest()]);
+    const [p, m, capture] = await Promise.all([fetchPages(), fetchMeta(), fetch("/data/capture.json").then(r=>r.json())]);
+    const pend = m?.canEditSources === false ? [] : await fetchPendingIngest();
+    setCaptureStatus(capture);setAppError("");
     setPages(p);
     setMeta(m);
     setPending(pend);
   }
 
   useEffect(() => {
-    fetchPages().then(setPages);
-    fetchMeta().then(setMeta);
-    fetchPendingIngest().then(setPending);
+    refreshAll().catch(e=>setAppError(e.message));
   }, []);
 
   useEffect(() => {
@@ -1888,6 +1427,21 @@ function App() {
     },
     [navigate]
   );
+
+  const navigateHref=useCallback((href:string)=>navigate(parseRoute(href)),[navigate]);
+  useEffect(()=>{
+    const click=(e:MouseEvent)=>{
+      if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+      const a=(e.target as HTMLElement).closest('a[href]') as HTMLAnchorElement|null;
+      if(!a||a.target||a.hasAttribute('download'))return;
+      const url=new URL(a.href,location.origin);
+      if(url.origin!==location.origin||!/^\/(?:$|page\/|bookmarks(?:\/|$)|sources$|source\/|graph$|tags(?:\/|$)|timeline$|lint$|random$)/.test(url.pathname))return;
+      e.preventDefault();navigateHref(url.href);
+    };
+    document.addEventListener('click',click);return()=>document.removeEventListener('click',click);
+  },[navigateHref]);
+  useEffect(()=>{if(route.view==='page'&&pages.some(p=>p.slug===route.slug))setRecents(old=>[route.slug,...old.filter(s=>s!==route.slug)].slice(0,20));},[route.view,route.view==='page'?route.slug:'',pages.length]);
+  useEffect(()=>{setSidebarOpen(false);document.querySelector('.main')?.scrollTo(0,0);},[route.view]);
 
   // Handle the /random pseudo-route by redirecting to a real page
   useEffect(() => {
@@ -1958,45 +1512,14 @@ function App() {
   return (
     <>
       <div className="topbar">
-        <button className="sidebar-toggle" onClick={() => setSidebarOpen((o) => !o)} aria-label="Toggle sidebar">
+        <button className="sidebar-toggle" onClick={() => setSidebarOpen((o) => !o)} aria-label="Toggle sidebar" aria-expanded={sidebarOpen} aria-controls="page-navigation">
           <MenuIcon />
         </button>
-        <div className="topbar-logo" onClick={() => navigate({ view: "home" })}>
-          Brain <span>Wiki</span>
-        </div>
-        <Search onSelect={goToPage} />
-        <div className="nav-tabs">
-          <button
-            className={`nav-tab ${route.view === "home" ? "active" : ""}`}
-            onClick={() => navigate({ view: "home" })}
-          >
-            Home
-          </button>
-          <button
-            className={`nav-tab ${route.view === "graph" ? "active" : ""}`}
-            onClick={() => navigate({ view: "graph" })}
-          >
-            Graph
-          </button>
-          <button
-            className={`nav-tab ${route.view === "tags" || route.view === "tag" ? "active" : ""}`}
-            onClick={() => navigate({ view: "tags" })}
-          >
-            Tags
-          </button>
-          <button
-            className={`nav-tab ${route.view === "timeline" ? "active" : ""}`}
-            onClick={() => navigate({ view: "timeline" })}
-          >
-            Timeline
-          </button>
-          <button
-            className={`nav-tab ${route.view === "lint" ? "active" : ""}`}
-            onClick={() => navigate({ view: "lint" })}
-          >
-            Lint
-          </button>
-        </div>
+        <a className="topbar-logo" href="/">
+          <span className="brand-mark">{typeGlyph("overview")}</span><span className="brand-name">Brain <span>Wiki</span></span>
+        </a>
+        <Search version={meta?.builtAt} onNavigate={navigateHref} />
+        <nav className="nav-tabs" aria-label="Main navigation">{NAV.map(n=><a key={n.href} href={n.href} className={`nav-tab ${routeToPath(route).split('?')[0].split('#')[0]===n.href?'active':''}`}>{n.label}</a>)}</nav>
         <button
           className="icon-btn"
           onClick={() => navigate({ view: "random" })}
@@ -2005,11 +1528,11 @@ function App() {
         >
           <DiceIcon />
         </button>
-        <SyncButton
+        {meta && meta.canEditSources !== false && <SyncButton
           pending={pending}
           onSynced={refreshAll}
           onShowPending={() => setShowPending(true)}
-        />
+        />}
       </div>
       {showPending && (
         <PendingModal
@@ -2028,24 +1551,28 @@ function App() {
           onDone={refreshAll}
         />
       )}
+      {appError&&<div className="reader-note" role="alert">{appError} <button onClick={()=>refreshAll().catch(e=>setAppError(e.message))}>Retry</button></div>}
       <div className="layout">
         <Sidebar
           pages={pages}
           current={currentSlug}
-          onSelect={goToPage}
+          pins={pins} recents={recents}
           open={sidebarOpen}
           onClose={() => setSidebarOpen(false)}
         />
-        {route.view === "home" && <Home pages={pages} onSelect={goToPage} onGoto={navigate} />}
+        {route.view === "home" && <Home pages={pages} recents={recents} />}
+        {route.view === "bookmarks" && <BookmarksView key={route.id||"all"} id={route.id}/>}
+        {route.view === "sources" && <SourcesView status={captureStatus}/>}
+        {route.view === "source" && <SourceView key={route.id} id={route.id}/>}
         {route.view === "page" && (
           <PageView
-            slug={route.slug}
+            slug={route.slug} anchor={route.anchor} pinned={pins.includes(route.slug)} onPin={()=>setPins(old=>old.includes(route.slug)?old.filter(s=>s!==route.slug):[...old,route.slug])}
             onNavigate={goToPage}
             onGraph={(slug) => navigate({ view: "graph", focus: slug })}
             onTag={(tag) => navigate({ view: "tag", tag })}
           />
         )}
-        {route.view === "graph" && <GraphView onSelect={goToPage} focusSlug={route.focus} />}
+        {route.view === "graph" && <GraphView onSelect={goToPage} focusSlug={route.focus || recents[0] || "wiki-overview"} />}
         {route.view === "tags" && <TagsView onSelect={goToPage} onTag={(t) => navigate({ view: "tag", tag: t })} />}
         {route.view === "tag" && <TagView tag={route.tag} onSelect={goToPage} onBack={() => navigate({ view: "tags" })} />}
         {route.view === "timeline" && <TimelineView />}
@@ -2058,7 +1585,8 @@ function App() {
             <>
               <span>{meta.pageCount} pages</span>
               <span className="footer-sep">·</span>
-              <span>Built {formatRelativeDate(meta.builtAt)}</span>
+              <a href="/sources">{captureStatus?.lastCapturedAt?`Captured ${formatRelativeDate(captureStatus.lastCapturedAt)}`:"Source history"}</a>
+              {captureStatus&&<><span className="footer-sep">·</span><a href="/bookmarks">{captureStatus.bookmarkCount} bookmarks</a></>}
             </>
           )}
         </div>

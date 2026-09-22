@@ -2,11 +2,23 @@
 title: Exchange Microstructure
 type: topic
 domain: markets
-sources: [Tools.md, Articles.md, CT.md]
-related: [[Hyperliquid]], [[Trading Platforms]], [[Market Structure]], [[CME]], [[Crypto Trading]], [[CT]]
-created: 2026-04-12
-updated: 2026-04-18
-tags: [microstructure, order-flow, latency, execution]
+sources:
+  - markets/Tools.md
+  - markets/Articles.md
+  - misc/CT.md
+related:
+  - Hyperliquid
+  - Trading Platforms
+  - CME
+  - Crypto Trading
+  - Crypto Takes
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - microstructure
+  - order-flow
+  - latency
+  - execution
 ---
 
 ## Overview

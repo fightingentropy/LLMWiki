@@ -2,11 +2,24 @@
 title: Tools & Software
 type: topic
 domain: dev
-sources: [Dev.md, Setup.md, Design.md, "bookmarks/Developer Tools.md"]
-related: [[Developer_Resources]], [[Design_and_Aesthetics]], [[Setup]], [[Omarchy]], [[OpenShip]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [tools, software, productivity, dev-tools]
+sources:
+  - misc/Dev.md
+  - misc/Setup.md
+  - misc/Design.md
+  - bookmarks/Developer Tools.md
+related:
+  - Developer Resources
+  - Design & Aesthetics
+  - Setup
+  - Omarchy
+  - OpenShip
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - tools
+  - software
+  - productivity
+  - dev-tools
 ---
 
 # Tools & Software

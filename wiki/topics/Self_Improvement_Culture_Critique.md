@@ -2,11 +2,24 @@
 title: Self-Improvement Culture Critique
 type: topic
 domain: culture
-sources: [X takes.md, Body.md, Top Pods.md]
-related: [Andrew_Huberman, Tim_Ferriss, Lex_Fridman, Masculinity_and_Men, Self_Improvement]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [self-improvement, optimization, critique, masculinity, legacy]
+sources:
+  - misc/X takes.md
+  - misc/Body.md
+  - misc/Top Pods.md
+related:
+  - Andrew Huberman
+  - Tim Ferriss
+  - Lex Fridman
+  - Masculinity & Men
+  - Self-Improvement
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - self-improvement
+  - optimization
+  - critique
+  - masculinity
+  - legacy
 ---
 
 # Self-Improvement Culture Critique

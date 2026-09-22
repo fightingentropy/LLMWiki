@@ -2,11 +2,27 @@
 title: Macro Trading
 type: topic
 domain: markets
-sources: [Articles.md, Brief.md, Trading.md, CT.md]
-related: [[Market Regime]], [[Cross-Asset Analysis]], [[Risk Analysis]], [[Trading Philosophy]], [[Stanley Druckenmiller]], [[CT]]
-created: 2026-04-12
-updated: 2026-04-18
-tags: [macro, trading-strategy, methodology, analysis, m2, debt-default]
+sources:
+  - markets/Articles.md
+  - markets/Brief.md
+  - markets/Trading.md
+  - misc/CT.md
+related:
+  - Market Regime
+  - Cross-Asset Analysis
+  - Risk Analysis
+  - Trading Philosophy
+  - Stanley Druckenmiller
+  - Crypto Takes
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - macro
+  - trading-strategy
+  - methodology
+  - analysis
+  - m2
+  - debt-default
 ---
 
 ## Overview

@@ -2,11 +2,29 @@
 title: Markets - Articles
 type: source
 domain: markets
-sources: [markets/Articles.md]
-related: [[Markets - Trading]], [[Markets - Brief]], [[Macro Trading]], [[Crypto Trading]], [[Trading Philosophy]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [articles, links, reading-list, macro, crypto, trading, philosophy]
+sources:
+  - markets/Articles.md
+  - snapshots/1790109058909-00849b585ac3/markets/Articles.md
+related:
+  - Markets - Trading
+  - Markets - Brief
+  - Macro Trading
+  - Crypto Trading
+  - Trading Philosophy
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - articles
+  - links
+  - reading-list
+  - macro
+  - crypto
+  - trading
+  - philosophy
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 ## Overview
@@ -81,3 +99,9 @@ Curated collection of article links spanning global macro trading, crypto tradin
 - **School Is Not Enough** — https://www.palladiummag.com/2023/06/06/school-is-not-enough — duplicate link in the raw list; one canonical entry is sufficient.
 - **Thirty Years of Nutrition Knowledge Simplified** — https://gilcarvalhomdphd.substack.com/p/30-years-of-nutrition-knowledge-simplified — broad educational overview, also covered with evidence caveats in [[Health Evidence]].
 - **The Laws of This World** — https://structuralist.substack.com/p/the-laws-of-this-world — new reading-queue item awaiting deeper synthesis.
+
+## Reading queue captured 22 September
+
+- [Saved Spectator article](https://spectator.com/article/lust-cant-be-lectured/) — the new source entry contains a bare link. The article has not been read or synthesized here.
+
+The full revised source is linked below; earlier versions remain available. Use [[Trading Evidence and Review Framework]] when a saved market argument is developed into a claim.

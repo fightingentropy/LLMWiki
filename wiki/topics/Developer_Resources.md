@@ -2,11 +2,37 @@
 title: Developer Resources
 type: topic
 domain: dev
-sources: [Dev.md, Setup.md, X-Bookmarks.md, "bookmarks/Developer Tools.md", "bookmarks/AI & Agents.md"]
-related: [[Design_and_Aesthetics]], [[Tools]], [[X-Bookmarks]], [[AI Agents]], [[Digital Security]], [[Omarchy]], [[OpenShip]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [development, tools, learning, infrastructure]
+sources:
+  - misc/Dev.md
+  - misc/Setup.md
+  - misc/X-Bookmarks.md
+  - bookmarks/Developer Tools.md
+  - bookmarks/AI & Agents.md
+  - clippings/bookmark-updates-2026-09-22/Developer Tools.md
+  - clippings/bookmark-updates-2026-09-22/AI & Agents.md
+related:
+  - X-Bookmarks
+  - Setup
+  - Omarchy
+  - OpenShip
+  - AI Agents
+  - Digital Security
+  - Design & Aesthetics
+  - Tools & Software
+  - Helium Browser
+  - Omarchy iCloud Photos
+  - 3D Printing and Digital Fabrication
+  - Compositor
+  - Quicker
+  - Bookmarks - Developer Tools
+  - Bookmarks - AI & Agents
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - development
+  - tools
+  - learning
+  - infrastructure
 ---
 
 # Developer Resources
@@ -92,3 +118,13 @@ Agent-specific workflows now live in [[AI Agents]]; permissions and connected-ac
 
 ---
 Related: [[Design_and_Aesthetics]], [[Setup]], [[Tools]], [[AI Agents]], [[Digital Security]], [[Omarchy]], [[OpenShip]]
+
+## September 2026 references
+
+- [[Helium Browser]] and [[Omarchy iCloud Photos]] now have dedicated entries, with capabilities separated from unresolved privacy and compatibility questions.
+- Obscura browser automation, FluidVoice dictation, UTM graphics, Fastpotify, and the FFmpeg skill are dated implementation references.
+- Swift plus a Worker backend, UK Property Insight, and BestAgent form leads for native-agent and property-data projects; no integration has been tested here.
+- OpenTools Studio and image-to-CAD connect to [[3D Printing and Digital Fabrication]]. The Spectrum Library release remains a repository to identify, not an inferred tool description.
+- [[Compositor]] extends the graphics-tool references; [[Quicker]] extends account-connected product research.
+
+All new links and revised annotations: [[Bookmarks - Developer Tools]] and [[Bookmarks - AI & Agents]].

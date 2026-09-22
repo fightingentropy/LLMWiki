@@ -2,11 +2,34 @@
 title: EICR
 type: topic
 domain: electrics
-sources: [raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection and Testing Demonstration.md]
-related: [EIC and MEIWC, Building Regulations, Part P, Electrical Safety, BS 7671, GN3 Guidance Note 3, In-Service Testing]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [uk-regs, standards, electrical-safety, eicr, condition-report, periodic-inspection, landlord]
+sources: []
+related:
+  - EIC and MEIWC
+  - Building Regulations
+  - Part P
+  - Electrical Safety
+  - BS 7671
+  - GN3 Guidance Note 3
+  - In-Service Testing
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - uk-regs
+  - standards
+  - electrical-safety
+  - eicr
+  - condition-report
+  - periodic-inspection
+  - landlord
+source_gaps:
+  - >-
+    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
+    and Testing Demonstration.md
+review_status: unverified
+review_notes: >-
+  Historical webinar summary. The original transcript is unavailable; detailed
+  test limits, procedures, chapter and exam references have not been
+  authenticated against current material.
 ---
 
 # EICR

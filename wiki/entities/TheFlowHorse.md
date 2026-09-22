@@ -2,11 +2,23 @@
 title: TheFlowHorse
 type: entity
 domain: markets
-sources: [Trading.md, Articles.md, X-Bookmarks.md]
-related: [[Traders Directory]], [[Crypto Trading]], [[Markets - Trading]], [[X-Bookmarks]]
-created: 2026-04-12
-updated: 2026-04-18
-tags: [trader, twitter, crypto, flow-analysis, market-structure]
+sources:
+  - markets/Trading.md
+  - markets/Articles.md
+  - misc/X-Bookmarks.md
+related:
+  - Traders Directory
+  - Crypto Trading
+  - Markets - Trading
+  - X-Bookmarks
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - flow-analysis
+  - market-structure
 ---
 
 ## Overview

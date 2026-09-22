@@ -2,11 +2,18 @@
 title: Jeff Bezos
 type: entity
 domain: culture
-sources: [Bizz & Finance.md]
-related: [Business Strategy, Philosophy]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [bezos, amazon, business, philosophy]
+sources:
+  - misc/Bizz & Finance.md
+related:
+  - Business Strategy
+  - Philosophy & Meaning
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - bezos
+  - amazon
+  - business
+  - philosophy
 ---
 
 # Jeff Bezos

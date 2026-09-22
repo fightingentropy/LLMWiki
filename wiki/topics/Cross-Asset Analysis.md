@@ -2,11 +2,24 @@
 title: Cross-Asset Analysis
 type: topic
 domain: markets
-sources: [Brief.md, Trading.md]
-related: [[Market Regime]], [[Macro Trading]], [[Rates]], [[FX]], [[Equities]], [[Credit]], [[Commodities]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [correlation, integration, macro, regime]
+sources:
+  - markets/Brief.md
+  - markets/Trading.md
+related:
+  - Market Regime
+  - Macro Trading
+  - Rates
+  - FX
+  - Equities
+  - Credit
+  - Commodities
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - correlation
+  - integration
+  - macro
+  - regime
 ---
 
 ## Overview

@@ -2,11 +2,20 @@
 title: Citrini Research
 type: entity
 domain: markets
-sources: [Articles.md, X-Bookmarks.md]
-related: [[Macro Trading]], [[Markets - Articles]], [[X-Bookmarks]]
-created: 2026-04-12
-updated: 2026-04-18
-tags: [research, macro, trading, analysis]
+sources:
+  - markets/Articles.md
+  - misc/X-Bookmarks.md
+related:
+  - Macro Trading
+  - Markets - Articles
+  - X-Bookmarks
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - research
+  - macro
+  - trading
+  - analysis
 ---
 
 ## Overview

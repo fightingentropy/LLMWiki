@@ -2,11 +2,19 @@
 title: Alex Hormozi
 type: entity
 domain: personal
-sources: [Go Do.md]
-related: [Chris_Williamson, Self_Improvement, Philosophy_and_Meaning]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [entrepreneur, business, imperfect-action, motivation]
+sources:
+  - misc/Go Do.md
+related:
+  - Chris Williamson
+  - Self-Improvement
+  - Philosophy & Meaning
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - entrepreneur
+  - business
+  - imperfect-action
+  - motivation
 ---
 
 # Alex Hormozi

@@ -2,11 +2,23 @@
 title: Market Drivers
 type: topic
 domain: markets
-sources: [Trading.md, Brief.md]
-related: [[Crypto Trading]], [[Macro Trading]], [[Market Regime]], [[Sentiment]], [[Flow Analysis]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [drivers, catalysts, fundamental, technical, flow]
+sources:
+  - markets/Trading.md
+  - markets/Brief.md
+related:
+  - Crypto Trading
+  - Macro Trading
+  - Market Regime
+  - Sentiment
+  - Flow Analysis
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - drivers
+  - catalysts
+  - fundamental
+  - technical
+  - flow
 ---
 
 ## Overview

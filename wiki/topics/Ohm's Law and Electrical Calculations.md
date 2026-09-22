@@ -2,11 +2,18 @@
 title: Ohm's Law and Electrical Calculations
 type: topic
 domain: electrics
-sources: [raw/electrics/Resources.md]
-related: [Circuit Protection, Power Calculations, Resistance Calculations, Conductor Properties]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [formulas, calculations, ohm-law, power, electrical-theory]
+sources:
+  - electrics/Resources.md
+related:
+  - RCD Protection
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - formulas
+  - calculations
+  - ohm-law
+  - power
+  - electrical-theory
 ---
 
 # Ohm's Law and Electrical Calculations

@@ -2,11 +2,39 @@
 title: Humor
 type: topic
 domain: culture
-sources: [Jokes.md, Pick up limes.md, Funny.md, "X takes.md"]
-related: [[Pick-up-limes]], [[Jokes]], [[Funny]], [[Culture]], [[Dating_and_Relationships]], [[Online Extremism and Evidence]]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [humor, jokes, memes, comedy, wordplay, greek, tweets, shitpost]
+sources:
+  - misc/Jokes.md
+  - misc/Pick up limes.md
+  - misc/Funny.md
+  - misc/X takes.md
+  - clippings/bookmark-updates-2026-09-22/Media & Inspiration.md
+  - clippings/bookmark-updates-2026-09-22/Culture & Ideas.md
+related:
+  - Pick Up Limes
+  - Jokes
+  - Funny
+  - Crypto Trading
+  - Trading Philosophy
+  - Online Extremism and Evidence
+  - Culture & Observations
+  - Dating & Relationships
+  - Andrew Huberman
+  - Chris Williamson
+  - Joe Rogan
+  - Andrew Tate
+  - Bookmarks - Media & Inspiration
+  - Bookmarks - Culture & Ideas
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - humor
+  - jokes
+  - memes
+  - comedy
+  - wordplay
+  - greek
+  - tweets
+  - shitpost
 ---
 
 # Humor
@@ -57,3 +85,9 @@ One appended passage is dehumanizing racial propaganda rather than a joke with a
 - No entity page yet for any specific comedian/creator. `@thanos1625` appears twice in [[Jokes]]; Reddit usernames appear in [[Pick-up-limes]]; [[Funny]] has ~30 linked tweets/videos but each handle appears once or twice. Nothing rises to entity-worthy (one-off sources, not recurring voices the human tracks).
 - [[Funny]] does cross-reference existing entity pages: [[Andrew_Huberman]] ("ruined the SF social scene"), [[Chris_Williamson]] (alcohol-assumption quote), [[Joe_Rogan]] (JRE 1851 Salvador Dali), [[Andrew_Tate]] (Tim Dillon on Tate).
 - If the human later adds a dedicated comedian-focused source (e.g. full set transcripts or podcast clips), that would be the trigger to spin up entity pages.
+
+## September 2026 bookmark registers
+
+[[Bookmarks - Media & Inspiration]] and [[Bookmarks - Culture & Ideas]] preserve the new clip-led and image-led material: visual puns, trader reactions, authentication fatigue, academic employment humour, wildlife, absurd succession jokes, and adult ephemera. Missing image context stays missing rather than being invented.
+
+Complete retention is the user's September curation choice. It does not turn hostile framing into a factual claim or require repeating slurs in thematic summaries.

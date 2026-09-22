@@ -2,11 +2,22 @@
 title: thiccythot
 type: entity
 domain: markets
-sources: [CT.md]
-related: [[CT]], [[Traders Directory]], [[Crypto Trading]], [[Satoshi_Nakamoto]], [[0xaporia]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [trader, twitter, crypto, price-discovery, commentary]
+sources:
+  - misc/CT.md
+related:
+  - Crypto Takes
+  - Traders Directory
+  - Crypto Trading
+  - Satoshi Nakamoto
+  - 0xaporia
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - price-discovery
+  - commentary
 ---
 
 # thiccythot

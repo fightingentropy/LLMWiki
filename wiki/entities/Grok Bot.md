@@ -2,11 +2,20 @@
 title: Grok Bot
 type: entity
 domain: dev
-sources: ["bookmarks/AI & Agents.md", "bookmarks/Developer Tools.md"]
-related: [[AI Agents]], [[Digital Security]], [[Developer_Resources]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [grok, agent, automation, personal-operations]
+sources:
+  - bookmarks/AI & Agents.md
+  - bookmarks/Developer Tools.md
+related:
+  - AI Agents
+  - Digital Security
+  - Developer Resources
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - grok
+  - agent
+  - automation
+  - personal-operations
 ---
 
 # Grok Bot

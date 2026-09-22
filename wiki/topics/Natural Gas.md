@@ -2,11 +2,18 @@
 title: Natural Gas
 type: topic
 domain: markets
-sources: [Handbook.md]
-related: [[Commodities]], [[Energy]], [[Macro Trading]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [commodities, natural-gas, energy, seasonal]
+sources:
+  - markets/Handbook.md
+related:
+  - Commodities
+  - Macro Trading
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - commodities
+  - natural-gas
+  - energy
+  - seasonal
 ---
 
 ## Overview

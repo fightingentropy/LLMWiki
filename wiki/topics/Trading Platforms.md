@@ -2,11 +2,21 @@
 title: Trading Platforms
 type: topic
 domain: markets
-sources: [Tools.md, Trading.md]
-related: [[Hyperliquid]], [[CME]], [[Exchange Microstructure]], [[Crypto Trading]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [platforms, execution, trading-venues, derivatives]
+sources:
+  - markets/Tools.md
+  - markets/Trading.md
+related:
+  - Hyperliquid
+  - CME
+  - Exchange Microstructure
+  - Crypto Trading
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - platforms
+  - execution
+  - trading-venues
+  - derivatives
 ---
 
 ## Overview

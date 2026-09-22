@@ -2,11 +2,19 @@
 title: Franz Kafka
 type: entity
 domain: culture
-sources: [Quotes.md]
-related: [[Quotes]], [[Philosophy_and_Meaning]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [writer, literature, czech, existential, aphorism]
+sources:
+  - misc/Quotes.md
+related:
+  - Quotes
+  - Philosophy & Meaning
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - writer
+  - literature
+  - czech
+  - existential
+  - aphorism
 ---
 
 # Franz Kafka

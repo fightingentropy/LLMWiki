@@ -2,11 +2,28 @@
 title: Trading Philosophy
 type: topic
 domain: markets
-sources: [Articles.md, Trading.md, Brief.md, CT.md, X-Bookmarks.md]
-related: [[Macro Trading]], [[Crypto Trading]], [[Market Drivers]], [[Risk Analysis]], [[Trading_Psychology]], [[Stanley Druckenmiller]], [[0xaporia]], [[CT]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [philosophy, mindset, principles, framework]
+sources:
+  - markets/Articles.md
+  - markets/Trading.md
+  - markets/Brief.md
+  - misc/CT.md
+  - misc/X-Bookmarks.md
+related:
+  - Macro Trading
+  - Crypto Trading
+  - Market Drivers
+  - Risk Analysis
+  - Trading Psychology
+  - Stanley Druckenmiller
+  - 0xaporia
+  - Crypto Takes
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - philosophy
+  - mindset
+  - principles
+  - framework
 ---
 
 ## Core Principles

@@ -2,11 +2,23 @@
 title: Japanese Philosophy & Cultural Concepts
 type: topic
 domain: culture
-sources: [Go Do.md]
-related: [Philosophy_and_Meaning, Self_Improvement, Design_and_Aesthetics]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [japan, philosophy, aesthetics, ikigai, wabi-sabi, kaizen, kintsugi, omotenashi]
+sources:
+  - misc/Go Do.md
+related:
+  - Philosophy & Meaning
+  - Self-Improvement
+  - Design & Aesthetics
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - japan
+  - philosophy
+  - aesthetics
+  - ikigai
+  - wabi-sabi
+  - kaizen
+  - kintsugi
+  - omotenashi
 ---
 
 # Japanese Philosophy & Cultural Concepts

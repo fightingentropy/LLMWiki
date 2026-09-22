@@ -2,11 +2,27 @@
 title: Pick Up Limes
 type: source
 domain: culture
-sources: [Pick up limes.md]
-related: [Culture, Dating_and_Relationships, Humor, Jokes, Funny]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [humor, jokes, one-liners, greek, dating-banter, crude]
+sources:
+  - misc/Pick up limes.md
+related:
+  - Culture & Observations
+  - Dating & Relationships
+  - Humor
+  - Jokes
+  - Funny
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - humor
+  - jokes
+  - one-liners
+  - greek
+  - dating-banter
+  - crude
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Pick Up Limes

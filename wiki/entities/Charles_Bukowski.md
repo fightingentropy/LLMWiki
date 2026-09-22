@@ -2,11 +2,18 @@
 title: Charles Bukowski
 type: entity
 domain: culture
-sources: [Youtube.md, Quotes.md]
-related: [Philosophy_and_Meaning, Self_Improvement]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [writer, poet, life-advice]
+sources:
+  - misc/Youtube.md
+  - misc/Quotes.md
+related:
+  - Philosophy & Meaning
+  - Self-Improvement
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - writer
+  - poet
+  - life-advice
 ---
 
 # Charles Bukowski

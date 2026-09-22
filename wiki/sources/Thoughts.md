@@ -2,11 +2,27 @@
 title: Thoughts & Observations
 type: source
 domain: culture
-sources: [misc/Thoughts.md]
-related: [[Philosophy_and_Meaning]], [[Psychology]], [[Social_Commentary]], [[Design_Thinking]], [[Repeated Games]], [[Decision-Making]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [observations, philosophy, psychology, social-dynamics, intelligence]
+sources:
+  - misc/Thoughts.md
+related:
+  - Philosophy & Meaning
+  - Psychology & Behavior
+  - Social Commentary
+  - Design Thinking
+  - Repeated Games
+  - Decision-Making
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - observations
+  - philosophy
+  - psychology
+  - social-dynamics
+  - intelligence
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Thoughts & Observations

@@ -2,11 +2,19 @@
 title: Toto Wolff
 type: entity
 domain: markets
-sources: [Articles.md]
-related: [[Trading Philosophy]], [[Leadership]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [leader, sports, team-management, philosophy, resilience]
+sources:
+  - markets/Articles.md
+related:
+  - Trading Philosophy
+  - Business Philosophy
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - leader
+  - sports
+  - team-management
+  - philosophy
+  - resilience
 ---
 
 ## Overview

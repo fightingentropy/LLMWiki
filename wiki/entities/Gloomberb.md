@@ -2,11 +2,20 @@
 title: Gloomberb
 type: entity
 domain: markets
-sources: [Tools.md]
-related: [[Markets - Tools]], [[Trading Platforms]], [[Markets]], [[Digital Security]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [finance-terminal, open-source, market-data, watchlist]
+sources:
+  - markets/Tools.md
+related:
+  - Markets - Tools
+  - Trading Platforms
+  - Markets
+  - Digital Security
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - finance-terminal
+  - open-source
+  - market-data
+  - watchlist
 ---
 
 # Gloomberb

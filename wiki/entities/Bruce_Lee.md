@@ -2,11 +2,20 @@
 title: Bruce Lee
 type: entity
 domain: culture
-sources: [Quotes.md]
-related: [Self_Improvement, Mental_Health, Philosophy_and_Meaning]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [martial-arts, philosophy, self-talk, water, adaptation]
+sources:
+  - misc/Quotes.md
+related:
+  - Self-Improvement
+  - Mental Health
+  - Philosophy & Meaning
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - martial-arts
+  - philosophy
+  - self-talk
+  - water
+  - adaptation
 ---
 
 # Bruce Lee

@@ -2,11 +2,22 @@
 title: Sector Rotation
 type: topic
 domain: markets
-sources: [Brief.md]
-related: [[Equities]], [[Market Regime]], [[Cross-Asset Analysis]], [[Macro Trading]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [equities, sectors, rotation, cyclicals, defensives, leadership]
+sources:
+  - markets/Brief.md
+related:
+  - Equities
+  - Market Regime
+  - Cross-Asset Analysis
+  - Macro Trading
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - equities
+  - sectors
+  - rotation
+  - cyclicals
+  - defensives
+  - leadership
 ---
 
 ## Overview

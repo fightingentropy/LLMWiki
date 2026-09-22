@@ -2,11 +2,21 @@
 title: jimtalbot
 type: entity
 domain: markets
-sources: [CT.md]
-related: [[Traders Directory]], [[CT]], [[Exchange Microstructure]], [[Trading Philosophy]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [trader, twitter, crypto, microstructure, philosophy]
+sources:
+  - misc/CT.md
+related:
+  - Traders Directory
+  - Crypto Takes
+  - Exchange Microstructure
+  - Trading Philosophy
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - microstructure
+  - philosophy
 ---
 
 ## Overview

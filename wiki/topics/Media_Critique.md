@@ -2,11 +2,24 @@
 title: Media Critique
 type: topic
 domain: culture
-sources: [Politics.md, Culture.md, "bookmarks/Culture & Ideas.md", Funny.md]
-related: [[Political_Commentary]], [[Social_Commentary]], [[Technology_Critique]], [[Online Extremism and Evidence]]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [media, critique, narrative, elite-capture, journalism]
+sources:
+  - misc/Politics.md
+  - misc/Culture.md
+  - bookmarks/Culture & Ideas.md
+  - misc/Funny.md
+related:
+  - Political Commentary
+  - Social Commentary
+  - Technology Critique
+  - Online Extremism and Evidence
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - media
+  - critique
+  - narrative
+  - elite-capture
+  - journalism
 ---
 
 # Media Critique

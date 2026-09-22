@@ -2,11 +2,20 @@
 title: Carl Jung
 type: entity
 domain: culture
-sources: [Quotes.md]
-related: [Mental_Health, Self_Improvement, Philosophy_and_Meaning]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [psychology, jung, shadow, addiction, unconscious]
+sources:
+  - misc/Quotes.md
+related:
+  - Mental Health
+  - Self-Improvement
+  - Philosophy & Meaning
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - psychology
+  - jung
+  - shadow
+  - addiction
+  - unconscious
 ---
 
 # Carl Jung

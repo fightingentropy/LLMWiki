@@ -2,35 +2,51 @@
 title: Mental Health
 type: topic
 domain: psychology
-sources: [Psychology.md, Body.md, Medical.md, Youtube.md, Top Pods.md, "bookmarks/Health & Psychology.md"]
-related: [[Self_Improvement]], [[ADHD]], [[Stress_Management]], [[Health Evidence]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [mental-health, depression, therapy, wellness, motivation]
+sources:
+  - misc/Psychology.md
+  - misc/Body.md
+  - misc/Medical.md
+  - misc/Youtube.md
+  - misc/Top Pods.md
+  - bookmarks/Health & Psychology.md
+  - clippings/bookmark-updates-2026-09-22/Health & Psychology.md
+related:
+  - Bookmarks - Health & Psychology
+  - Top Pods
+  - Andrew Huberman
+  - Health Evidence
+  - Self-Improvement
+  - ADHD
+  - Body Optimization
+  - Psychology & Behavior
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - mental-health
+  - depression
+  - therapy
+  - wellness
+  - motivation
 ---
 
 # Mental Health
 
-## Depression: Root Causes
-Chemical imbalance theory is **conclusively disproven.** Actual causes:
-- Learned helplessness
-- Not leaving house; social isolation
-- High dopamine baseline from social media (tolerance effect)
-- Lack of sunlight
-- Poor diet
-- Poor sleep
+This page includes personal philosophy and older source viewpoints. September additions explicitly qualify earlier clinical overstatements; retained quotations are not diagnoses or treatment advice.
 
-**Solution:** Reverse the causes. Get outside, move body, improve sleep, eat real food, limit dopamine-dumping activities.
+## Depression: source claims and correction
 
-## Therapy Limitations
-"Porn is mostly bad; therapy is mostly gay." Therapy is oversold, overprescribed for issues that need behavioral correction, not talk processing.
+The older notes attributed depression to helplessness, isolation, social-media habits, sunlight, diet, and sleep, and treated reversing those factors as a complete solution. The September purpose-as-cure bookmark repeats that single-explanation pattern; the claim is not established by either source.
 
-**Better therapeutic modalities:** Movement, sun, cold exposure, genuine connection, creation.
+[NIMH's depression overview](https://www.nimh.nih.gov/health/publications/depression), checked 2026-09-22, describes genetic, biological, environmental, and psychological contributors and treatments that may include psychotherapy, medication, or both. Meaning, routines, and relationships can be topics for care without making them a universal cure. (from [[Bookmarks - Health & Psychology]])
+
+## Therapy scepticism in the source
+
+The personal notes criticise therapy and favour movement, connection, and making things. Preserve that preference as the source's viewpoint; it does not establish that therapy is ineffective or that lifestyle practices replace indicated care. This conflicts with the clinical certainty of the earlier version of this page.
 
 ## Words as Reality Builders
 "Words are like spells. Be careful labeling yourself 'traumatized' or 'depressed'—they start becoming real."
 
-Language rewires neurology. Self-labeling creates neurological pathways. Avoid self-defeating language.
+The quotation is a metaphor about self-description. The source does not establish that naming a condition creates it or that avoiding a label removes a clinical problem.
 
 ## Radical Honesty vs. Tact
 "Radical honesty is lazy. Ability to discern between necessary disclosure and tactful omission = important life skill."
@@ -40,44 +56,38 @@ Sometimes truth serves ego, not healing. Context and audience matter.
 ## Relationships as Mental Health
 "You fall in love with people who make you love the person you are when around them."
 
-Quality of intimate relationships = strongest mental health predictor.
+The source values intimate relationships; its claim that these are the strongest predictor is not established by comparative evidence here.
 
 "My therapist said: 'People don't abandon people they love, they abandon people they're using.' That was all closure I needed."
 
 ## Overthinking Paralysis
-All miserable people: overthink, underact.
-
-**System:** Just move. Imperfect action > perfect planning. Aim, fire, correct later.
+The source favours action over rumination, expressed as “aim, fire, correct later.” Keep it as motivational framing rather than an explanation of everyone's distress.
 
 ## Stress Architecture
 - **Acute stress** (competition, intense exercise, conflict) = adaptive, beneficial
 - **Chronic stress** (constant low-level threat, isolation, drudgery) = toxic
 
-Modern life: abundant chronic, absent acute. Reverse this.
+This contrast is a source framing about stress, not a prescription to seek conflict or intense exposure.
 
 ## Psychedelics & False Insight
 Psychedelics make consciousness feel exceptionally clear, generating sense of deep insight. **But consciousness is fallible, especially about valence.**
 
 "It's like déjà vu—brain's familiarity circuit misfiring."
 
-**However:** Same mechanism behind false insight creates therapeutic potential. If aimed at genuine psychological blocker (trauma, forgiveness), false insight sticks emotionally. Usefulness > truthfulness.
+The source speculates about therapeutic potential from this mechanism. That speculation does not establish safety, effectiveness, or a self-treatment protocol.
 
 ## Hope vs. Hopelessness
-Richter rat study (1957): wild rats die in 15min in cold water, but if exposed multiple times and removed, they last as long as domesticated rats.
 
-**Not physiological—psychological.** Hopelessness = death. Hope = endurance.
-
-If escape seems possible, will to live multiplies.
+The source uses a popular account of Richter's rat experiments as a metaphor for hope and endurance. The earlier timings and exclusively psychological interpretation are not established by primary experimental records in this wiki. Do not infer a clinical mechanism from the motivational retelling.
 
 ## Exercise & Neuroplasticity
-Exercise rewires brain at fundamental level. Physical activity = neural plasticity activation.
 
-Walking, dancing, cold exposure, sun, movement = all proven neurological interventions more effective than most pharmaceuticals for mood.
+Movement is a recurring preference in the personal notes. The earlier statement that walking, dancing, cold exposure, and sun were all proven more effective than most pharmaceuticals for mood was unsupported by the cited material and is not carried forward as guidance.
 
 ## Proximity to Great Examples
 "Best thing to do in life = find autistic people and surround yourself with them."
 
-Autists have high correlation with honor, integrity, and honest thinking. Their presence rewires your truth-seeking baseline.
+This is personal admiration, not evidence that a diagnosis predicts honesty or integrity or that proximity changes another person's neurology.
 
 ## Reclaiming Attention
 
@@ -95,3 +105,7 @@ See [[Health Evidence]] for the evidence ladder applied to these claims.
 
 ---
 Related: [[Self_Improvement]], [[ADHD]], [[Body_Optimization]], [[Psychology]], [[Top-Pods]], [[Health Evidence]]
+
+## September source trail
+
+[[Bookmarks - Health & Psychology]] preserves the contrasting medication accounts, memory-related posts, the purpose-as-cure critique, and the unsupported rapid-cure and craving claims. [[Health Evidence]] keeps their evidential status explicit instead of silently choosing one anecdote as the answer.

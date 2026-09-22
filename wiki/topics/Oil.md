@@ -2,11 +2,19 @@
 title: Oil
 type: topic
 domain: markets
-sources: [Handbook.md]
-related: [[Commodities]], [[Macro Trading]], [[Market Regime]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [commodities, oil, energy, cycle]
+sources:
+  - markets/Handbook.md
+related:
+  - Commodities
+  - Macro Trading
+  - Market Regime
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - commodities
+  - oil
+  - energy
+  - cycle
 ---
 
 ## Overview

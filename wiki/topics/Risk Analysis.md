@@ -2,11 +2,28 @@
 title: Risk Analysis
 type: topic
 domain: markets
-sources: [Brief.md, Articles.md, Handbook.md]
-related: [[Market Regime]], [[Macro Trading]], [[Liquidations]], [[Positioning]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [risk, downside, volatility, triggers, radar]
+sources:
+  - markets/Brief.md
+  - markets/Articles.md
+  - markets/Handbook.md
+  - clippings/bookmark-updates-2026-09-22/Markets & Crypto.md
+related:
+  - Markets - Brief
+  - Markets - Articles
+  - Market Regime
+  - Liquidations
+  - Positioning
+  - Market Performance Measurement
+  - Hyperliquid
+  - Bookmarks - Markets & Crypto
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - risk
+  - downside
+  - volatility
+  - triggers
+  - radar
 ---
 
 ## Overview
@@ -70,3 +87,9 @@ Focus on specific, observable confirmations rather than predictions:
 - [[Market Regime]] - Regime context for risks
 - [[Liquidations]] - Mechanical risk amplification
 - [[Positioning]] - Crowding and extremes create risk
+
+## Hedged-position and measurement risk
+
+The September source pairs a HYPE funding-trade setup with the author's later correction. The reusable lesson is to retain the corrected assumptions alongside the initial payoff story. Financing, collateral rules, maintenance requirements, and price drift remain part of the exposure described by the source.
+
+[[Market Performance Measurement]] applies the same discipline to leaderboard returns: apparent success can be misclassified when account roles or offsetting positions are missing. See [[Hyperliquid]] and [[Bookmarks - Markets & Crypto]] for the underlying references.

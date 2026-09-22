@@ -2,11 +2,24 @@
 title: Politics
 type: source
 domain: culture
-sources: [misc/Politics.md]
-related: [[Political_Philosophy]], [[Social_Commentary]], [[Online Extremism and Evidence]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [politics, media-critique, iran, government, ideology]
+sources:
+  - misc/Politics.md
+related:
+  - Political Philosophy
+  - Social Commentary
+  - Online Extremism and Evidence
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - politics
+  - media-critique
+  - iran
+  - government
+  - ideology
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Politics

@@ -2,11 +2,25 @@
 title: Markets - Brief
 type: source
 domain: markets
-sources: [Brief.md]
-related: [[Markets - Articles]], [[Macro Trading]], [[Market Regime]], [[Risk Analysis]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [daily-overview, market-analysis, template, druckenmiller-style, regime-analysis]
+sources:
+  - markets/Brief.md
+related:
+  - Markets - Articles
+  - Macro Trading
+  - Market Regime
+  - Risk Analysis
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - daily-overview
+  - market-analysis
+  - template
+  - druckenmiller-style
+  - regime-analysis
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 ## Overview

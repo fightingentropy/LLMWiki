@@ -2,11 +2,21 @@
 title: GiganticRebirth
 type: entity
 domain: markets
-sources: [CT.md]
-related: [[Traders Directory]], [[CT]], [[Crypto Trading]], [[Sentiment]]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [trader, twitter, crypto, bull-cycle, doge]
+sources:
+  - misc/CT.md
+related:
+  - Traders Directory
+  - Crypto Takes
+  - Crypto Trading
+  - Sentiment
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - bull-cycle
+  - doge
 ---
 
 ## Overview

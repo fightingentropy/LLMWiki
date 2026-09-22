@@ -2,11 +2,28 @@
 title: Equities
 type: topic
 domain: markets
-sources: [Brief.md, "bookmarks/Markets & Crypto.md"]
-related: [[Cross-Asset Analysis]], [[Market Regime]], [[Macro Trading]], [[Sector Rotation]], [[Market Cycles]], [[X-Bookmarks]], [[AI Infrastructure Economics]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [equities, stocks, breadth, leadership, valuation, semiconductors, memory, supply-cycles]
+sources:
+  - markets/Brief.md
+  - bookmarks/Markets & Crypto.md
+related:
+  - Cross-Asset Analysis
+  - Market Regime
+  - Macro Trading
+  - Sector Rotation
+  - Market Cycles
+  - X-Bookmarks
+  - AI Infrastructure Economics
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - equities
+  - stocks
+  - breadth
+  - leadership
+  - valuation
+  - semiconductors
+  - memory
+  - supply-cycles
 ---
 
 ## Overview

@@ -2,11 +2,22 @@
 title: Stress Management
 type: topic
 domain: health
-sources: [Body.md, Psychology.md]
-related: [Body_Optimization, Mental_Health, Fitness, ADHD]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [stress, acute-stress, chronic-stress, breathing, recovery]
+sources:
+  - misc/Body.md
+  - misc/Psychology.md
+related:
+  - Body Optimization
+  - Mental Health
+  - Fitness
+  - ADHD
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - stress
+  - acute-stress
+  - chronic-stress
+  - breathing
+  - recovery
 ---
 
 # Stress Management

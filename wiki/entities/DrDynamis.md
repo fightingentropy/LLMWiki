@@ -2,11 +2,23 @@
 title: DrDynamis
 type: entity
 domain: culture
-sources: [Women.md]
-related: [Masculinity_and_Men, Self_Improvement, Dating_and_Relationships, Philosophy_and_Meaning, Heartiste]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [drdynamis, masculinity, mediterranean-stoic, life-philosophy, red-pill, moralist]
+sources:
+  - misc/Women.md
+related:
+  - Masculinity & Men
+  - Self-Improvement
+  - Dating & Relationships
+  - Philosophy & Meaning
+  - Heartiste
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - drdynamis
+  - masculinity
+  - mediterranean-stoic
+  - life-philosophy
+  - red-pill
+  - moralist
 ---
 
 # DrDynamis

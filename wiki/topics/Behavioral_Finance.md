@@ -2,11 +2,23 @@
 title: Behavioral Finance
 type: topic
 domain: markets
-sources: [Bizz & Finance.md, Psychology.md, CT.md, "bookmarks/Markets & Crypto.md"]
-related: [Trading_Psychology, Decision-Making, Markets, Psychology]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [behavioral-finance, decision-making, cognitive-bias, market-psychology]
+sources:
+  - misc/Bizz & Finance.md
+  - misc/Psychology.md
+  - misc/CT.md
+  - bookmarks/Markets & Crypto.md
+related:
+  - Trading Psychology
+  - Decision-Making
+  - Markets
+  - Psychology & Behavior
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - behavioral-finance
+  - decision-making
+  - cognitive-bias
+  - market-psychology
 ---
 
 # Behavioral Finance

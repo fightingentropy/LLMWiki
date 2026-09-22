@@ -2,11 +2,26 @@
 title: Go Do
 type: source
 domain: personal
-sources: [Go Do.md]
-related: [Japanese_Philosophy, Self_Improvement, Philosophy_and_Meaning, Alex_Hormozi, Chris_Williamson]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [bucket-list, japan, travel, experiences, imperfect-action]
+sources:
+  - misc/Go Do.md
+related:
+  - Japanese Philosophy & Cultural Concepts
+  - Self-Improvement
+  - Philosophy & Meaning
+  - Alex Hormozi
+  - Chris Williamson
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - bucket-list
+  - japan
+  - travel
+  - experiences
+  - imperfect-action
+review_status: archive
+review_notes: >-
+  Source summary and attributed claims. Capture or edit dates do not establish
+  factual verification.
 ---
 
 # Go Do

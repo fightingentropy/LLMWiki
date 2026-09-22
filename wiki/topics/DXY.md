@@ -2,11 +2,24 @@
 title: DXY
 type: topic
 domain: markets
-sources: [Handbook.md, Brief.md]
-related: [[FX]], [[Cross-Asset Analysis]], [[Commodities]], [[Gold]], [[Silver]], [[Macro Trading]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [fx, dollar, index, macro, reference]
+sources:
+  - markets/Handbook.md
+  - markets/Brief.md
+related:
+  - FX
+  - Cross-Asset Analysis
+  - Commodities
+  - Gold
+  - Silver
+  - Macro Trading
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - fx
+  - dollar
+  - index
+  - macro
+  - reference
 ---
 
 ## Overview

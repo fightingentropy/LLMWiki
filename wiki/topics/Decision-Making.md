@@ -2,11 +2,25 @@
 title: Decision-Making
 type: topic
 domain: psychology
-sources: [Psychology.md, Bizz & Finance.md, CT.md, Thoughts.md]
-related: [[Trading_Psychology]], [[Behavioral_Finance]], [[Psychology]], [[Self_Improvement]], [[Repeated Games]]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [decision-making, agency, variance, intuition, process]
+sources:
+  - misc/Psychology.md
+  - misc/Bizz & Finance.md
+  - misc/CT.md
+  - misc/Thoughts.md
+related:
+  - Trading Psychology
+  - Behavioral Finance
+  - Psychology & Behavior
+  - Self-Improvement
+  - Repeated Games
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - decision-making
+  - agency
+  - variance
+  - intuition
+  - process
 ---
 
 # Decision-Making

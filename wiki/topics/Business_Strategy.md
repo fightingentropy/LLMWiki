@@ -2,11 +2,27 @@
 title: Business Strategy
 type: topic
 domain: markets
-sources: [Bizz & Finance.md, Culture.md, "bookmarks/Business & Startups.md"]
-related: [Markets, Trading Psychology, Philosophy]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [business, strategy, competition, economics]
+sources:
+  - misc/Bizz & Finance.md
+  - misc/Culture.md
+  - bookmarks/Business & Startups.md
+  - clippings/bookmark-updates-2026-09-22/Business & Startups.md
+related:
+  - X-Bookmarks
+  - AI Agents
+  - Decision-Making
+  - Markets
+  - Trading Psychology
+  - Philosophy & Meaning
+  - Quicker
+  - Bookmarks - Business & Startups
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - business
+  - strategy
+  - competition
+  - economics
 ---
 
 # Business Strategy
@@ -84,3 +100,9 @@ When a system appears broken, first ask whether it is producing exactly the outc
 
 ---
 Related: [[Markets]], [[Trading_Psychology]], [[Philosophy_and_Meaning]]
+
+## September 2026 product and founder leads
+
+[[Quicker]] is a product-pattern reference for bringing fragmented conversations into one inbox; its integration and privacy claims remain open. BestAgent's property-data connection is a founder's testing report, while advertising-quality and environment-reset posts are anecdotes.
+
+The US LLC checklist, free-domain offer, and Cyprus IP Box post compress material eligibility, ownership, residency, and cost questions. Retain them as leads, not completed due diligence or a tax strategy. See [[Bookmarks - Business & Startups]] for every source and its qualifications.

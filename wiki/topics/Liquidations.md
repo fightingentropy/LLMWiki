@@ -2,11 +2,24 @@
 title: Liquidations
 type: topic
 domain: markets
-sources: [Trading.md, Tools.md, CT.md]
-related: [[Crypto Trading]], [[Market Structure]], [[Risk Analysis]], [[Leverage]], [[CT]]
-created: 2026-04-12
-updated: 2026-04-18
-tags: [liquidations, leverage, risk, cascade, mechanical-flow]
+sources:
+  - markets/Trading.md
+  - markets/Tools.md
+  - misc/CT.md
+related:
+  - Crypto Trading
+  - Exchange Microstructure
+  - Risk Analysis
+  - Leverage
+  - Crypto Takes
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - liquidations
+  - leverage
+  - risk
+  - cascade
+  - mechanical-flow
 ---
 
 ## Overview

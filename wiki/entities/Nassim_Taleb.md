@@ -2,11 +2,23 @@
 title: Nassim Taleb
 type: entity
 domain: culture
-sources: [Thoughts.md, Stories.md, Youtube.md, Quotes.md, "bookmarks/Culture & Ideas.md"]
-related: [[Philosophy_and_Meaning]], [[Risk Analysis]], [[Political_Philosophy]], [[Social_Commentary]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [taleb, antifragility, philosophy]
+sources:
+  - misc/Thoughts.md
+  - misc/Stories.md
+  - misc/Youtube.md
+  - misc/Quotes.md
+  - bookmarks/Culture & Ideas.md
+related:
+  - Philosophy & Meaning
+  - Risk Analysis
+  - Political Philosophy
+  - Social Commentary
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - taleb
+  - antifragility
+  - philosophy
 ---
 
 # Nassim Taleb

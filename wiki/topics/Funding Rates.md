@@ -2,11 +2,21 @@
 title: Funding Rates
 type: topic
 domain: markets
-sources: [Trading.md, "bookmarks/Markets & Crypto.md"]
-related: [[Crypto Trading]], [[Leverage]], [[Market Drivers]], [[Liquidations]]
-created: 2026-04-12
-updated: 2026-08-29
-tags: [crypto, derivatives, funding, leverage-indicator]
+sources:
+  - markets/Trading.md
+  - bookmarks/Markets & Crypto.md
+related:
+  - Crypto Trading
+  - Leverage
+  - Market Drivers
+  - Liquidations
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - crypto
+  - derivatives
+  - funding
+  - leverage-indicator
 ---
 
 ## Overview

@@ -9,17 +9,13 @@
 import { sync } from "../sync.ts";
 import { computePendingIngest } from "../lib.ts";
 
-const { synced, errors, deleted, backupDir } = await sync();
+const { synced, errors } = await sync();
 
 if (synced.length) {
-  console.log("Synced:");
+  console.log("Captured new source versions:");
   synced.forEach((s) => console.log(`  ✓ ${s}`));
 } else {
-  console.log("Everything already up to date.");
-}
-
-if (deleted > 0) {
-  console.log(`\n${deleted} file(s) deleted — backed up to ${backupDir}`);
+  console.log("No new source revisions.");
 }
 
 if (errors.length) {

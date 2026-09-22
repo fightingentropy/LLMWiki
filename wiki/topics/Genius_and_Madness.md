@@ -2,11 +2,21 @@
 title: Genius and Madness
 type: topic
 domain: psychology
-sources: [Psychology.md, Bizz & Finance.md]
-related: [Trading_Psychology, Decision-Making, Psychology]
-created: 2026-04-18
-updated: 2026-04-18
-tags: [genius, madness, intuition, information-flow, aging]
+sources:
+  - misc/Psychology.md
+  - misc/Bizz & Finance.md
+related:
+  - Trading Psychology
+  - Decision-Making
+  - Psychology & Behavior
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - genius
+  - madness
+  - intuition
+  - information-flow
+  - aging
 ---
 
 # Genius and Madness

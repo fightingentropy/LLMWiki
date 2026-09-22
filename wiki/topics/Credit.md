@@ -2,11 +2,21 @@
 title: Credit
 type: topic
 domain: markets
-sources: [Brief.md]
-related: [[Cross-Asset Analysis]], [[Market Regime]], [[Risk Analysis]], [[Macro Trading]]
-created: 2026-04-12
-updated: 2026-04-12
-tags: [credit, spreads, bonds, default-risk, corporate]
+sources:
+  - markets/Brief.md
+related:
+  - Cross-Asset Analysis
+  - Market Regime
+  - Risk Analysis
+  - Macro Trading
+created: 2026-04-12T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - credit
+  - spreads
+  - bonds
+  - default-risk
+  - corporate
 ---
 
 ## Overview

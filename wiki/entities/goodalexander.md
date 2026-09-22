@@ -2,11 +2,23 @@
 title: goodalexander
 type: entity
 domain: markets
-sources: [CT.md, "bookmarks/Markets & Crypto.md"]
-related: [[Traders Directory]], [[CT]], [[Macro Trading]], [[Trading Philosophy]]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [trader, twitter, crypto, macro, debt, political-economy]
+sources:
+  - misc/CT.md
+  - bookmarks/Markets & Crypto.md
+  - clippings/bookmark-updates-2026-09-22/Markets & Crypto.md
+related:
+  - Crypto Takes
+  - X-Bookmarks
+  - Bookmarks - Markets & Crypto
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - trader
+  - twitter
+  - crypto
+  - macro
+  - debt
+  - political-economy
 ---
 
 ## Overview
@@ -30,3 +42,7 @@ The latest retained essay links slow AI economic returns, hacking, addictive med
 ## References
 - Twitter: @goodalexander
 - Quote archive in [[CT]]
+
+## September 2026 tokenization scenario
+
+The [September retained essay](https://x.com/goodalexander/status/2100700327003467985) links tokenization, stablecoins, CBDCs, privacy, ZK systems, institutional settlement, and agentic finance to sovereign-debt demand. This extends the earlier on-chain-finance scenario; it does not resolve its regulatory, technical, or economic premises. Keep it as an attributed scenario and distinguish adoption from token-holder value capture. (from [[Bookmarks - Markets & Crypto]])

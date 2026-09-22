@@ -3,39 +3,46 @@ title: Wiki Index
 type: index
 domain: personal
 sources: []
-related: ["Wiki Overview"]
-created: 2026-04-12
-tags: [index, navigation]
-updated: 2026-08-29
+related:
+  - Wiki Overview
+created: 2026-04-12T00:00:00.000Z
+tags:
+  - index
+  - navigation
+updated: '2026-09-22'
 ---
 
 # Wiki Index
 
 Master catalog of all wiki pages. Read this first to navigate the wiki.
 
+- [[Wiki Overview]] — Themes, current coverage, and remaining gaps
+- [[Wiki Log]] — Dated ingestion and maintenance record
+- [[Markets Wiki Index]] — Dedicated markets navigation
+
 ## Sources
 
 Reference collections and curated resource lists that form the foundation of the wiki.
 
 - [[Bizz_and_Finance]] — Consumer spending patterns, market psychology, and economic insights
-- [[Body]] — Core body optimization source notes, supplements, and training protocols
+- [[Body]] — Original body notes with supplement and training claims explicitly distinguished from evidence
 - [[CT]] — Crypto Takes: verbatim archive of crypto-twitter trader quotes on price discovery, psychology, macro, microstructure
 - [[Culture]] — Geography, environment, business strategy, and cultural observations
 - [[Design]] — Design tools, systems, and aesthetic frameworks
 - [[Dev]] — Developer resources, tools, and infrastructure references
-- [[Electrics - Resources]] — Electrical formulas, protection devices, and building regulations reference
+- [[Electrics - Resources]] — Original electrical notes with dated corrections, source gaps and equipment/training leads
 - [[Funny]] — Largest humor archive: link-heavy shitpost/crypto-twitter/hospitality-worker voice, tweets, YouTube timestamps, multilingual fragments
 - [[Go Do]] — Bucket list: experiences, travel (Chile/Tanzania/Japan), Japanese cultural concepts, imperfect-action study
-- [[Inspection and Testing Fundamentals]] — Webinar on inspection, testing, and safe isolation procedures
+- [[Inspection and Testing Fundamentals]] — Historical webinar summary; original transcript unavailable, detailed procedures await verification
 - [[Jokes]] — Larger humor archive: Greek wordplay, name-puns, element-table set piece, long-form shaggy-dog jokes, English absurd one-liners
-- [[Markets - Articles]] — Curated articles on macro trading, crypto, and market philosophy
+- [[Markets - Articles]] — Curated articles and reading queue on macro trading, crypto, market philosophy and broader ideas
 - [[Markets - Brief]] — Daily market analysis template in Druckenmiller style
 - [[Markets - Handbook]] — Exchange hours, commodities data, and trading reference
 - [[Markets - Tools]] — Real-time liquidations, latency monitoring, and trading analytics tools
 - [[Markets - Trading]] — Core trading principles, market drivers, and trader directories
 - [[Medical]] — ADHD, circadian rhythms, thyroid health, and medical insights
 - [[PAT Testing]] — Portable appliance testing guide covering inspection, testing, and safety
-- [[Peptides]] — Retatrutide reconstitution guide: BAC water, dilution math, storage, injection, titration
+- [[Peptides]] — Archived retatrutide guide with unsupported stability and prescribing claims identified
 - [[Pick-up-limes]] — Personal archive of crude one-liners, pickup lines, Greek phrases, and dating banter
 - [[Politics]] — Source notes on media critique, elite control, and political analysis
 - [[Psychology]] — Psychology of behavior, trauma, decision-making, and relationships
@@ -45,7 +52,17 @@ Reference collections and curated resource lists that form the foundation of the
 - [[Thoughts]] — Personal observations, wealth dynamics, and acceptance principles
 - [[Top-Pods]] — Podcast/video bookmarks on masculinity, Huberman, Tate, and JRE
 - [[Women]] — Personal archive on women, dating, gender dynamics, and "game"; Heartiste-heavy, DrDynamis-heavy, internally contradictory
-- [[X-Bookmarks]] — Current 624-entry structured X bookmark collection organized into 10 topical notes
+- [[X-Bookmarks]] — X and Chrome collection updated through 2026-09-22: 921 entries across ten categories, with 303 added or revised entries ingested
+- [[Bookmarks - AI & Agents]] — Review prompts, voice onboarding, local models, demonstrations, and dated product claims
+- [[Bookmarks - Design & Frontend]] — Compositor, component galleries, native motion, stationery, and bare design leads
+- [[Bookmarks - Developer Tools]] — Browser and native-app releases, Omarchy, remote access, APIs, and hardware leads
+- [[Bookmarks - Markets & Crypto]] — Hyperliquid PnL, portfolio-margin corrections, macro scenarios, and research utilities
+- [[Bookmarks - Business & Startups]] — Quicker, founder workflows, property-data products, and unverified tax claims
+- [[Bookmarks - Health & Psychology]] — Circadian ADHD perspective, opposing medication anecdotes, evidence gaps, and corrections
+- [[Bookmarks - Culture & Ideas]] — Reading depth, media rhetoric, disputed history, screenshots, and cultural ephemera
+- [[Bookmarks - Media & Inspiration]] — Watch-later clips, humour, streaming references, and unresolved visual posts
+- [[Bookmarks - Reference & Utilities]] — Password managers, privacy references, utility links, and reading queues
+- [[Bookmarks - Personal & Life]] — Account portals, household and travel shortlists, life experiments, and workshop storage
 - [[X-Takes]] — Rough X-post archive covering culture, technology, gender, humor, and contradictory rhetoric
 - [[Youtube]] — Curated YouTube bookmarks on meaning, delusion, motivation, intimacy, inflation
 
@@ -53,6 +70,10 @@ Reference collections and curated resource lists that form the foundation of the
 
 Key figures, organizations, standards, and platforms referenced throughout the wiki.
 
+- [[Compositor]] — Open-source Mac editor for compositing and post-processing
+- [[Helium Browser]] — Chromium-based desktop browser with dated privacy and compatibility boundaries
+- [[Omarchy iCloud Photos]] — Third-party native photo browser with distinct download and iCloud-write operations
+- [[Quicker]] — Unified messaging inbox lead with unresolved integration and data-flow claims
 - [[David Cifaldi]] — Emergency-room nurse whose Granite Peak self-rescue is retained as an endurance story
 - [[Gloomberb]] — Open-source keyboard-driven finance terminal and market-research watchlist item
 - [[Grok Bot]] — Personal-operations agent product with connected-account and approval boundaries
@@ -136,7 +157,7 @@ Organized by domain. Each page provides deep dives into specific subjects.
 
 ### Personal & Psychology
 
-- [[ADHD]] — Circadian rhythm disorder reconceptualization and treatment
+- [[ADHD]] — Circadian phenotype, source corrections, attention, and contrasting personal treatment accounts
 - [[Dating_and_Relationships]] — Dating culture, attraction, and relationship dynamics
 - [[Gender_Dynamics]] — Masculine/feminine polarity, cognitive asymmetry, attraction structure, breakup asymmetry
 - [[Japanese_Philosophy]] — Ikigai, wabi-sabi, kaizen, kintsugi, omotenashi, and the coherent cultural package
@@ -149,6 +170,7 @@ Organized by domain. Each page provides deep dives into specific subjects.
 - [[Genius_and_Madness]] — Thin line between trading edge and self-destruction
 - [[Neurodiversity]] — ADHD reframed as variation, not deficit
 - [[Proximity_Infatuation]] — Attraction as function of proximity and context
+- [[Personal Knowledge Management]] — Retention, attribution, corrections, source freshness, and bookmark-to-wiki workflow
 - [[Repeated Games]] — Cooperation, proportionate boundaries, recovery, and preserving future rounds
 - [[Stress_Management]] — Cortisol, recovery, nervous system regulation
 - [[Thoughts_and_Observations]] — Cross-domain personal observations front-door
@@ -185,6 +207,7 @@ Organized by domain. Each page provides deep dives into specific subjects.
 - [[Liquidations]] — Liquidation cascades and market impact
 - [[Macro Trading]] — Global macro strategy, regime analysis, and cross-asset
 - [[Market Drivers]] — Sentiment, flow, fundamental, and technical drivers
+- [[Market Performance Measurement]] — Leaderboard identity, PnL definitions, missing exposures, and corrected funding-trade claims
 - [[Market Regime]] — Market regime identification and shifts
 - [[Markets]] — Overall market overview and relationships
 - [[Natural Gas]] — Natural gas futures and energy markets
@@ -222,20 +245,24 @@ Organized by domain. Each page provides deep dives into specific subjects.
 - [[BS EN 61010]] — Safety standard for electrical test equipment (CAT ratings)
 - [[BS EN 61557]] — Performance standard for installation test equipment
 
-### Culture & Politics
+### Dev & Design
 
+- [[3D Printing and Digital Fabrication]] — Image-to-CAD, printer, and Gridfinity references with reproducibility questions
 - [[AI Agents]] — Operational agent workflows, specialized runtimes, adoption, reliability, and safety
 - [[Digital Security]] — Account recovery, phone theft, phishing, connected tools, and least privilege
 
 - [[Design_and_Aesthetics]] — Design taste, aesthetics, and UI/UX principles
+- [[Developer_Resources]] — Learning tools, infrastructure, and references
+- [[Design_Thinking]] — Story-as-interface, taste, and iterative problem framing
+
+### Culture & Politics
+
 - [[Humor]] — Humor archives landing page: registers, tones, and taxonomy across Jokes and Pick-up-limes
 - [[Masculinity_and_Men]] — Performative male epidemic, war on men, and sterile optimization
 - [[Political_Commentary]] — Media capture, elite control, and governance
-- [[Developer_Resources]] — Learning tools, infrastructure, and references
 - [[Business_Philosophy]] — Craft, distinctiveness, and principles of long-game business
 - [[Catfish_Effect]] — Competitive stress and managed disruption as performance driver
 - [[Culture_and_Environment]] — How place, climate, and surroundings shape identity
-- [[Design_Thinking]] — Story-as-interface, taste, and iterative problem framing
 - [[Entropy_vs_Extropy]] — Curtis Yarvin's framework of decay vs. ordered progress
 - [[Media_Critique]] — Narrative capture, institutional media, and information flow
 - [[Online Extremism and Evidence]] — How events, anecdotes, and partial evidence become identity-level propaganda
@@ -251,3 +278,11 @@ Organized by domain. Each page provides deep dives into specific subjects.
 - Search by domain above to find topics in your area of interest
 - Follow "related:" connections in each page's frontmatter to discover connected concepts
 - Sources provide research foundations; Entities are key references; Topics are detailed explorations
+
+## Analyses and evidence reviews
+
+- [[Developer Tool Evaluation Map]] — A repeatable real-task comparison for saved tool candidates
+- [[Trading Evidence and Review Framework]] — Record claims, assumptions, corrections and measured outcomes
+- [[Electrical Study Map]] — Connect safety, standards, measurements and documentation
+- [[Health Evidence Review - September 2026]] — Primary references correcting older health claims
+- [[Electrical Evidence Review - September 2026]] — Current edition, scope and safety corrections with source gaps

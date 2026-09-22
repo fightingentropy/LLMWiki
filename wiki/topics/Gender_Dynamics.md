@@ -2,11 +2,27 @@
 title: Gender Dynamics
 type: topic
 domain: culture
-sources: [Women.md, Culture.md, Top Pods.md, "bookmarks/Culture & Ideas.md"]
-related: [Dating_and_Relationships, Masculinity_and_Men, Psychology, Heartiste, DrDynamis]
-created: 2026-04-18
-updated: 2026-08-29
-tags: [gender, polarity, masculine-feminine, cognition, asymmetry, women, men]
+sources:
+  - misc/Women.md
+  - misc/Culture.md
+  - misc/Top Pods.md
+  - bookmarks/Culture & Ideas.md
+related:
+  - Dating & Relationships
+  - Masculinity & Men
+  - Psychology & Behavior
+  - Heartiste
+  - DrDynamis
+created: 2026-04-18T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - gender
+  - polarity
+  - masculine-feminine
+  - cognition
+  - asymmetry
+  - women
+  - men
 ---
 
 # Gender Dynamics

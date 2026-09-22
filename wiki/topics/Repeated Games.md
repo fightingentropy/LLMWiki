@@ -2,11 +2,23 @@
 title: Repeated Games
 type: topic
 domain: psychology
-sources: [Thoughts.md, "bookmarks/Markets & Crypto.md"]
-related: [[Decision-Making]], [[Trading_Psychology]], [[Behavioral_Finance]], [[Dating_and_Relationships]], [[Self_Improvement]]
-created: 2026-08-29
-updated: 2026-08-29
-tags: [game-theory, cooperation, boundaries, recovery, risk]
+sources:
+  - misc/Thoughts.md
+  - bookmarks/Markets & Crypto.md
+related:
+  - Decision-Making
+  - Trading Psychology
+  - Behavioral Finance
+  - Dating & Relationships
+  - Self-Improvement
+created: 2026-08-29T00:00:00.000Z
+updated: '2026-09-22'
+tags:
+  - game-theory
+  - cooperation
+  - boundaries
+  - recovery
+  - risk
 ---
 
 # Repeated Games
