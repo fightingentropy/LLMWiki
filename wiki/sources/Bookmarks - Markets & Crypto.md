@@ -3,10 +3,16 @@ title: Bookmarks - Markets & Crypto
 type: source
 domain: markets
 sources:
+  - snapshots/1790804551519-1de9816cb631/bookmarks/Markets & Crypto.md
   - bookmarks/Markets & Crypto.md
   - clippings/bookmark-updates-2026-09-22/Markets & Crypto.md
   - snapshots/1790106580663-33c2f5b6597a/bookmarks/Markets & Crypto.md
 related:
+  - Evergreen Lessons from X - September 2026
+  - Credit
+  - Developer Resources
+  - Exchange Microstructure
+  - Trading Evidence and Review Framework
   - X-Bookmarks
   - Hyperliquid
   - Market Performance Measurement
@@ -15,7 +21,7 @@ related:
   - goodalexander
   - Trading Psychology
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - bookmarks
   - september-2026
@@ -35,7 +41,9 @@ summary: >-
 
 # Bookmarks - Markets & Crypto
 
-September update to **131 structured entries** in the Brain category (previous wiki snapshot: 95). This page preserves all **37 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
+Latest category capture, **30 September 2026**: **135 structured entries**. The new evergreen-only section below adds 4 distilled knowledge entries; earlier September registers retain their original scope.
+
+22 September update to **131 structured entries** in the Brain category (previous wiki snapshot: 95). This page preserves all **37 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
 
 ## Key takeaways
 
@@ -139,3 +147,15 @@ The following annotations are reproduced from the curated Brain notes. Dates rec
 ## Complete source capture
 
 The linked September source record preserves the full current category, including older entries. The sections above summarize the added or revised September material. Every current saved item can also be opened individually in [Bookmarks](/bookmarks), searched by title or original post ID, and traced to its captured note. Inclusion records the curated source; it does not imply every claim has been independently verified.
+
+## Evergreen-only additions — 30 September 2026
+
+Pinned source revision: `raw/snapshots/1790804551519-1de9816cb631/bookmarks/Markets & Crypto.md`. Selected from the 70-post live review using the human's narrower instruction to keep lasting knowledge. See [[Evergreen Lessons from X - September 2026]] for the synthesis and evidence limits.
+
+- [Name the source of your trading edge](https://x.com/frankdegods/status/2103860364089708742) — Use four prompts: informational advantage, better analysis, behavioural discipline, and quantitative or execution advantage. For each trade, name the proposed edge and the result that would disprove it. This is a journal heuristic; categories overlap and do not establish positive returns. _(@frankdegods; evergreen synthesis retained 2026-09-30)_
+
+- [Do not manufacture trades to relieve boredom](https://x.com/lobcrunchwave/status/2103836826729623943) — Judge a trade against the setup and process, rather than the need for stimulation. If only your mood changed, record that before adding risk. This is an attributed process principle from a post quoting jimtalbot, not evidence that a particular strategy is profitable. _(@lobcrunchwave; evergreen synthesis retained 2026-09-30)_
+
+- [Keep the trading hot path simple and measure bottlenecks](https://x.com/liquidated_hl/status/2104510929300037683) — The pictured March 2023 messages attributed to Jeff favour an in-memory order book, simple feed-to-strategy handling, and choosing Rust or C++ when measured performance requires it. Separate network delay from computation; introduce shared memory or concurrency for a demonstrated need. Historical engineering advice, with attribution and venue-specific performance unverified. _(@liquidated_hl; evergreen synthesis retained 2026-09-30)_
+
+- [Mortgage prepayment is an option with conditions](https://x.com/liensofnewyork/status/2104717103508967657) — The contractual ability to repay early can let a borrower refinance after rates fall, while creating prepayment risk for the lender. Its value depends on fees, penalties and the ability to qualify for a new loan. Federal Reserve staff research explains the option in US fixed-rate conforming mortgages; CFPB confirms some loans charge prepayment penalties. Keep the concept, without the post's spread figures or a universal buy-now rule. References: [Federal Reserve staff paper, prepayment discussion](https://www.federalreserve.gov/pubs/feds/2012/201222/201222pap.pdf); [CFPB prepayment penalties](https://www.consumerfinance.gov/ask-cfpb/what-is-a-prepayment-penalty-en-1957/). _(@liensofnewyork; evergreen synthesis retained 2026-09-30)_

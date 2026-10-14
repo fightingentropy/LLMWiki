@@ -3,6 +3,16 @@ title: X-Bookmarks
 type: source
 domain: dev
 sources:
+  - snapshots/2026-09-30-x-evergreen-cleanup/receipt.md
+  - snapshots/1790805107293-1d59d21b8449/bookmarks/Index.md
+  - snapshots/1790804551519-8f428ba1884a/bookmarks/Design & Frontend.md
+  - snapshots/1790804551519-6d896f5ea773/bookmarks/Reference & Utilities.md
+  - snapshots/1790804551519-b4816fecf206/bookmarks/Personal & Life.md
+  - snapshots/1790804551519-2ba369d73e43/bookmarks/AI & Agents.md
+  - snapshots/1790804551519-41aaf5e11d3a/bookmarks/Index.md
+  - snapshots/1790804551519-100cbe63e7fd/bookmarks/Developer Tools.md
+  - snapshots/1790804551519-1de9816cb631/bookmarks/Markets & Crypto.md
+  - snapshots/1790804551519-19d4b0c03105/bookmarks/Culture & Ideas.md
   - bookmarks/AI & Agents.md
   - bookmarks/Business & Startups.md
   - bookmarks/Culture & Ideas.md
@@ -27,7 +37,10 @@ sources:
   - clippings/bookmark-updates-2026-09-22/Reference & Utilities.md
   - misc/X-Bookmarks.md
   - snapshots/1790106580663-7f3260814dfb/bookmarks/Index.md
+  - snapshots/1790338863036-34f85df55e2f/bookmarks/Index.md
 related:
+  - X Bookmark Cleanup - 30 September 2026
+  - Evergreen Lessons from X - September 2026
   - Bookmarks - AI & Agents
   - Bookmarks - Business & Startups
   - Bookmarks - Culture & Ideas
@@ -43,7 +56,7 @@ related:
   - Health Evidence
   - Market Performance Measurement
 created: 2026-04-18T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - bookmarks
   - x-twitter
@@ -61,27 +74,30 @@ review_notes: >-
 
 # X-Bookmarks
 
-The Brain bookmark collection combines X posts and Chrome references in 10 topical Markdown notes. As of **2026-09-22**, those notes contain **921 structured entries**, up from 624 in the August wiki snapshot. This ingest covers **303 added or revised entries** (297 net new entries and six revisions), plus newly added bare design URLs. Entry totals are not counts of unique URLs or X post IDs.
+The Brain bookmark collection combines X posts and Chrome references in 10 topical Markdown notes. As of **2026-09-30**, those notes contain **936 structured entries** plus **15 bare design links**. The 22 September ingest added or revised 303 entries (297 net additions and six revisions), bringing the structured total from 624 to 921; one manually supplied post was added on 25 September, and 14 evergreen knowledge entries were added on 30 September. Two bare design links were already present upstream before the latest task. Entry totals are not counts of unique URLs or X post IDs.
 
 ## Collection
 
-- [[Bookmarks - AI & Agents]] — 133 entries; 37 added or revised since the August snapshot.
-- [[Bookmarks - Design & Frontend]] — 130 entries; 18 added or revised since the August snapshot.
-- [[Bookmarks - Developer Tools]] — 132 entries; 32 added or revised since the August snapshot.
-- [[Bookmarks - Markets & Crypto]] — 131 entries; 37 added or revised since the August snapshot.
+- [[Bookmarks - AI & Agents]] — 135 entries; 37 added or revised by 22 September; 2 evergreen additions on 30 September.
+- [[Bookmarks - Design & Frontend]] — 131 entries; 18 added or revised by 22 September; 1 evergreen additions on 30 September.
+- [[Bookmarks - Developer Tools]] — 135 entries; 32 added or revised by 22 September; 3 evergreen additions on 30 September.
+- [[Bookmarks - Markets & Crypto]] — 135 entries; 37 added or revised by 22 September; 4 evergreen additions on 30 September.
 - [[Bookmarks - Business & Startups]] — 36 entries; 7 added or revised since the August snapshot.
-- [[Bookmarks - Health & Psychology]] — 51 entries; 24 added or revised since the August snapshot.
-- [[Bookmarks - Culture & Ideas]] — 88 entries; 32 added or revised since the August snapshot.
+- [[Bookmarks - Health & Psychology]] — 52 entries; 24 added or revised on 22 September, plus one addition on 25 September.
+- [[Bookmarks - Culture & Ideas]] — 89 entries; 32 added or revised by 22 September; 1 evergreen additions on 30 September.
 - [[Bookmarks - Media & Inspiration]] — 112 entries; 60 added or revised since the August snapshot.
-- [[Bookmarks - Reference & Utilities]] — 56 entries; 23 added or revised since the August snapshot.
-- [[Bookmarks - Personal & Life]] — 52 entries; 33 added or revised since the August snapshot.
+- [[Bookmarks - Reference & Utilities]] — 58 entries; 23 added or revised by 22 September; 2 evergreen additions on 30 September.
+- [[Bookmarks - Personal & Life]] — 53 entries; 33 added or revised by 22 September; 1 evergreen additions on 30 September.
 
 Each category page provides key takeaways, the complete September change register, and links to related topics. Earlier entries remain in the original raw category files.
 
+The 25 September addition retains Hereafter's paternal-investment post, its quoted source, and the paper link in [[Bookmarks - Health & Psychology]], with an explicit limit on the evidence check. The category and index have new immutable captures; X bookmark state was neither checked nor changed.
+
 ## Curation model
 
-- Since 2026-09-05, the user's explicit choice is to retain all reviewed X bookmarks, including entertainment, disputed claims, advertisements, and low-confidence leads.
-- **Superseded policy:** the July workflow rejected some material as low-value or unsupported. That historical filtering rule no longer describes September X retention; it does not imply that the already-filtered July collection has been reconstructed.
+- **Current batch, 2026-09-30:** retain only evergreen knowledge worth knowing, then clear the live X list. Fourteen entries from fifteen posts are retained; releases, forecasts, gossip, humour and unsupported clinical conclusions are omitted. See [[Evergreen Lessons from X - September 2026]].
+- **Historical policy, 2026-09-05 through 2026-09-25:** retain all reviewed X bookmarks, including entertainment, disputed claims, advertisements, and low-confidence leads.
+- **Superseded policy:** the July workflow rejected some material as low-value or unsupported. That historical filtering rule differed from the earlier September keep-all policy; it does not imply that the already-filtered July collection has been reconstructed.
 - Retention preserves a source, not its truth. Topic pages distinguish evidence, individual reports, speculation, demonstrations, and ephemera.
 - Keep corrections and counterexamples attached to the original claim. Do not invent the contents of images, videos, or unresolved links.
 - The September Chrome review had its own selection rules, recorded in the source index. “Keep all X bookmarks” should not be misread as a claim that every Chrome bookmark was imported.
@@ -111,7 +127,7 @@ Each category page provides key takeaways, the complete September change registe
 
 - The current Brain index was copied verbatim to `raw/clippings/bookmark-updates-2026-09-22/Index.md`.
 - Ten accompanying clippings preserve every nonblank added or revised source line, with source and baseline hashes. Existing `raw/bookmarks/` files are unchanged; the dated clippings extend them rather than replacing them.
-- The 921 structured-entry total is measured from the current category files and matches the captured Brain index. Six changed entries revise earlier annotations, so 303 changed entries produce 297 net additions.
+- The 921 structured-entry total was measured on 22 September and matches that captured Brain index. Six changed entries revise earlier annotations, so 303 changed entries produce 297 net additions. The 25 September captures record the single addition and current 922-entry total.
 - The source records 155 X bookmark markers cleared on 2026-09-17 and 30 on 2026-09-22 after exact-ID coverage checks, with zero remaining at each recorded verification. These are historical task results; this wiki ingest did not recheck or change X or Chrome.
 - Source clippings and generated pages are local wiki content. This ingest does not enable scheduled sync or publish a hosted build.
 
@@ -152,4 +168,8 @@ Each category page provides key takeaways, the complete September change registe
 
 ## Complete catalog and history
 
-[Browse all current bookmarks](/bookmarks) for individual records, category filtering and post-ID search. The complete September category captures are linked by the ten category source pages. The March export has also been restored byte-for-byte from repository history so older numbered citations remain traceable. That export is historical; its 1,091-item count is separate from the 934-record current curated catalog (921 structured entries plus 13 bare links).
+[Browse all current bookmarks](/bookmarks) for individual records, category filtering and post-ID search. The complete September category captures are linked by the ten category source pages. The March export has also been restored byte-for-byte from repository history so older numbered citations remain traceable. That export is historical; its 1,091-item count is separate from the 935-record current curated catalog (922 structured entries plus 13 bare links).
+
+## Evergreen-only batch — 30 September 2026
+
+Reviewed all 70 live saved posts and retained 14 distilled entries from 15 posts in seven categories. The two privacy posts became one entry. Existing category contents were preserved. The new index and seven category revisions are pinned above; [[Evergreen Lessons from X - September 2026]] connects the lasting knowledge to the corresponding topics. All 70 live bookmark markers were removed; the freshly loaded and reloaded X Bookmarks interface confirmed an empty list. See [[X Bookmark Cleanup - 30 September 2026]].

@@ -1,0 +1,106 @@
+# X bookmark cleanup — 30 September 2026
+
+- Account: @entropyholdings
+- Human instruction: keep only evergreen knowledge, then clear all X bookmarks
+- Retained: 14 distilled knowledge entries from 15 posts in seven canonical Brain categories
+- Complete pre-removal inventory: 70 unique saved posts, `nextCursor: null`, matching the reviewed set
+- Original inventory: `snapshots/2026-09-30-x-bookmark-review/inventory.md`
+- Removal started: 2026-09-30T21:46:30.874514+00:00
+- Removal requests completed: 2026-09-30T21:48:03.384380+00:00
+- Bird result: 70 successful bookmark-removal messages across seven batches; every batch exited 0
+- After-removal Bird reads: unable to verify because client-bundle discovery failed
+- Independent account verification: freshly loaded and reloaded X web interface, Bookmarks selected, authenticated as @entropyholdings
+- Visible empty state: Save posts for later; Bookmark posts to easily find them again in the future.
+- Remaining bookmarks: 0, confirmed by the web interface
+- Empty-list verification completed: 2026-09-30T21:51:47.209378+00:00
+- Pre-removal response SHA-256: f861f8b7a0235d832d77556081eb20a9458dff738a6f600248fa3178b6e32afa
+- After-removal response SHA-256: dedee0164fdadb39b887213506ff24046ec68b215fcb1eb088b024c5f955b9df
+
+## After-removal UI observation
+
+```json
+{
+  "verification": "X web interface via CUA; fresh navigation and independent reload",
+  "account": "@entropyholdings",
+  "url": "https://x.com/i/history",
+  "selected_tab": "Bookmarks",
+  "empty_state": "Save posts for later Bookmark posts to easily find them again in the future.",
+  "remaining_bookmarks": 0,
+  "loading_finished": true,
+  "verified_at": "2026-09-30T21:51:47.209378+00:00",
+  "bird_after_read_error": "No client bundles discovered; x.com layout may have changed."
+}
+```
+
+## Exact bookmark markers removed
+
+- 2105326261069295711
+- 2105124827145355591
+- 2105240431193989582
+- 2105266419331899756
+- 2105335831888072981
+- 2105092170998743134
+- 2104984504133918973
+- 2104815339846721845
+- 2104618178974245029
+- 2104594527797330352
+- 2104760418602463742
+- 2104514885673443709
+- 2104717103508967657
+- 2104622481080525138
+- 2104638750022402356
+- 2104758444368769253
+- 2104622416383369303
+- 2104572127617994917
+- 2104612093668548776
+- 2104510929300037683
+- 2104323759339655446
+- 2103674669392183654
+- 2104254223517106349
+- 2103928802242179120
+- 2103928811192541443
+- 2103805052817453255
+- 2103760572835938540
+- 2103807409395233170
+- 1953630076496728493
+- 2103860364089708742
+- 2102591147927654847
+- 2103263150221234471
+- 2103901914375045526
+- 2103869801898844321
+- 2103600616694051018
+- 2103571004543193098
+- 2103775182506631522
+- 2103814550198059296
+- 2103757218621653040
+- 2099636310692835673
+- 2100000461009158533
+- 2100362346145501450
+- 2103804906356224076
+- 2103836826729623943
+- 2103411123424768349
+- 2103475624010760685
+- 2103503259650707609
+- 2103599870275649891
+- 2103665365968658809
+- 2103543472330342835
+- 2103517099511451940
+- 2103150600753950923
+- 2103340252668760111
+- 2103315922098470926
+- 2103300207857353043
+- 2103330591189979274
+- 2102827785811333410
+- 2103061202641264797
+- 2102747612600271198
+- 2102869344438911310
+- 2102715010309095779
+- 2102841453550395418
+- 2102862042231439645
+- 2102822521510789146
+- 2102836288541913351
+- 2102718346357551248
+- 2102540461131063358
+- 2102483547080765642
+- 2102519291589669061
+- 2039652368443158804

@@ -3,11 +3,13 @@ title: AI Agents
 type: topic
 domain: dev
 sources:
+  - snapshots/1790804551519-2ba369d73e43/bookmarks/AI & Agents.md
   - bookmarks/AI & Agents.md
   - bookmarks/Developer Tools.md
   - misc/Dev.md
   - clippings/bookmark-updates-2026-09-22/AI & Agents.md
 related:
+  - Evergreen Lessons from X - September 2026
   - Grok Bot
   - X-Bookmarks
   - Digital Security
@@ -19,7 +21,7 @@ related:
   - 3D Printing and Digital Fabrication
   - Personal Knowledge Management
 created: 2026-08-29T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - ai
   - agents
@@ -72,3 +74,11 @@ Related: [[Developer_Resources]], [[Technology_Critique]], [[Digital Security]],
 - **Product claims:** context-window settings, refunds, multi-agent allowances, and the reported Codex usage-limit bug remain dated reports. This wiki ingest did not change any agent configuration.
 
 Full source trail: [[Bookmarks - AI & Agents]]. The image-to-CAD example connects to [[3D Printing and Digital Fabrication]]; retrieval and source freshness connect to [[Personal Knowledge Management]].
+
+## Voice triage and data provenance
+
+Voice interaction is a useful workflow candidate for bounded inbox and calendar triage away from a screen. Preserve decisions in durable text and review consequential actions before execution. This is a first-person workflow idea, without the source's prediction that apps will disappear.
+
+The 2024 model-collapse paper studies recursive generated-data training. Preserve source provenance and evaluate on independent real data, including rare cases; the paper does not establish that all synthetic data fails or that a current named model is collapsing. (from [[Bookmarks - AI & Agents]])
+
+The complete evergreen selection is [[Evergreen Lessons from X - September 2026]].

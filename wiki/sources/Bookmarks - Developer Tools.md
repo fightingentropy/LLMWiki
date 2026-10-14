@@ -3,10 +3,12 @@ title: Bookmarks - Developer Tools
 type: source
 domain: dev
 sources:
+  - snapshots/1790804551519-100cbe63e7fd/bookmarks/Developer Tools.md
   - bookmarks/Developer Tools.md
   - clippings/bookmark-updates-2026-09-22/Developer Tools.md
   - snapshots/1790106580663-f31d8b54f166/bookmarks/Developer Tools.md
 related:
+  - Evergreen Lessons from X - September 2026
   - X-Bookmarks
   - Developer Resources
   - Digital Security
@@ -15,7 +17,7 @@ related:
   - Helium Browser
   - 3D Printing and Digital Fabrication
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - bookmarks
   - september-2026
@@ -35,7 +37,9 @@ summary: >-
 
 # Bookmarks - Developer Tools
 
-September update to **132 structured entries** in the Brain category (previous wiki snapshot: 102). This page preserves all **32 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
+Latest category capture, **30 September 2026**: **135 structured entries**. The new evergreen-only section below adds 3 distilled knowledge entries; earlier September registers retain their original scope.
+
+22 September update to **132 structured entries** in the Brain category (previous wiki snapshot: 102). This page preserves all **32 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
 
 ## Key takeaways
 
@@ -129,3 +133,13 @@ The following annotations are reproduced from the curated Brain notes. Dates rec
 ## Complete source capture
 
 The linked September source record preserves the full current category, including older entries. The sections above summarize the added or revised September material. Every current saved item can also be opened individually in [Bookmarks](/bookmarks), searched by title or original post ID, and traced to its captured note. Inclusion records the curated source; it does not imply every claim has been independently verified.
+
+## Evergreen-only additions — 30 September 2026
+
+Pinned source revision: `raw/snapshots/1790804551519-100cbe63e7fd/bookmarks/Developer Tools.md`. Selected from the 70-post live review using the human's narrower instruction to keep lasting knowledge. See [[Evergreen Lessons from X - September 2026]] for the synthesis and evidence limits.
+
+- [Review production software through concrete failure cases](https://x.com/GohilHardy/status/2103760572835938540) — Ask how the system detects or survives deadlocks, memory leaks, N+1 queries, concurrent updates, stale reads, dependency failures and failed releases. For each relevant failure, identify an owner, an observable symptom, and recovery or rollback. A reusable review checklist distilled from the post. _(@GohilHardy; evergreen synthesis retained 2026-09-30)_
+
+- [Use a travel device as a frontend to home compute](https://x.com/ashen_one/status/2103757218621653040) — Run demanding jobs on an available home workstation and use the portable device for the interface. Private-network reachability and SSH or remote-desktop authentication are separate controls; test recovery when the connection drops. The source is a workflow anecdote, not proof of a universal hardware setup. Tailscale documentation confirms that ordinary SSH authentication remains separate from network access. References: [Tailscale: SSH over a private network](https://tailscale.com/docs/reference/ssh-over-tailscale). _(@ashen_one; evergreen synthesis retained 2026-09-30)_
+
+- [Treat privacy as several separate layers](https://x.com/cyber_razz/status/2103807409395233170) — A VPN exit IP does not remove every browser, account or locale signal. WebRTC candidate addresses can expose network information depending on application and browser configuration; MDN describes relay-only ICE as one application control. DNS-over-HTTPS or TLS encrypts DNS exchanges, not all traffic or identity signals. Test the actual device and browser instead of assuming WebRTC always bypasses a VPN or encrypted DNS hides every visited site. References: [additional X source](https://x.com/schmidt1024/status/2103300207857353043); [MDN: WebRTC candidate addresses](https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/address); [Cloudflare: encrypted DNS](https://www.cloudflare.com/learning/dns/dns-over-tls/). _(@cyber_razz, @schmidt1024; evergreen synthesis retained 2026-09-30)_

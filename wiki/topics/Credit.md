@@ -3,14 +3,17 @@ title: Credit
 type: topic
 domain: markets
 sources:
+  - snapshots/1790804551519-1de9816cb631/bookmarks/Markets & Crypto.md
   - markets/Brief.md
 related:
+  - Evergreen Lessons from X - September 2026
+  - Bookmarks - Markets & Crypto
   - Cross-Asset Analysis
   - Market Regime
   - Risk Analysis
   - Macro Trading
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - credit
   - spreads
@@ -76,3 +79,9 @@ When equities hold up but spreads widen = warning sign:
 
 ## See Also
 [[Cross-Asset Analysis]] for credit-equity-rate relationships, [[Risk Analysis]] for credit tail risk scenarios.
+
+## Prepayment and refinancing optionality
+
+The contractual right to repay a mortgage early can provide a refinancing opportunity if rates fall, while creating reinvestment or prepayment risk for the lender. Fees, penalties and borrower eligibility constrain its value. The cited Federal Reserve staff paper concerns US fixed-rate conforming mortgages; CFPB confirms that some loans have prepayment penalties. This is a contractual concept, not a universal mortgage-buying rule. (from [[Bookmarks - Markets & Crypto]])
+
+The complete evergreen selection is [[Evergreen Lessons from X - September 2026]].

@@ -8,6 +8,7 @@ sources:
   - misc/Body.md
   - clippings/bookmark-updates-2026-09-22/Health & Psychology.md
   - clippings/evidence-review-2026-09-22/Health.md
+  - snapshots/1790338863036-d5f1baaac670/bookmarks/Health & Psychology.md
 related:
   - ADHD
   - Mental Health
@@ -18,7 +19,7 @@ related:
   - Bookmarks - Health & Psychology
   - Health Evidence Review - September 2026
 created: 2026-08-29T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-09-25'
 tags:
   - health
   - evidence
@@ -50,6 +51,8 @@ The latest health bookmarks are most useful as an evidence-discipline page. They
 - UK prostate-cancer incidence is not, by itself, an argument for universal PSA screening; overdiagnosis and downstream harm remain part of the decision.
 
 ## Psychology and behavior
+
+The paternal-investment bookmark is a useful interpretation check: distinguish perceived resemblance from objective relatedness, reported involvement from observed behavior, and trait scores from diagnoses. A statistical interaction does not reveal a parent's motive. (from [[Bookmarks - Health & Psychology]])
 
 Limerence is a descriptive concept, not an official diagnosis. ADHD-related hyperfocus may be one vulnerability, but reciprocal knowledge of a real person should be separated from a checking-and-rumination loop built around an imagined relationship. See [[ADHD]] and [[Mental_Health]].
 

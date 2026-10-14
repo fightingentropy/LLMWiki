@@ -7,7 +7,7 @@ related:
   - Wiki Index
   - Wiki Overview
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - log
   - operations
@@ -154,3 +154,45 @@ Added [[Developer Tool Evaluation Map]], [[Trading Evidence and Review Framework
 Captured two additional upstream revisions of [[Markets - Articles]] and [[Electrics - Resources]] through the new preview flow. Added the newly saved article, equipment and training leads to their source summaries without claiming their contents or suitability were evaluated. Original source files and images remain unchanged; the viewer and static export also resolve newly captured image versions.
 
 Final coverage check found 13 bare design URLs outside the structured bullet list. These now have individual records with explicit unannotated-link labels, including three previously unindexed X posts. The catalog covers all 776 unique X post IDs present in the current category sources.
+
+---
+
+## [2026-09-25] ingest | Hereafter paternal-investment bookmark
+
+Retained the manually supplied X post `2103150600753950923` in the canonical Brain Health & Psychology note and captured new immutable versions of that category and its index. Added the entry to [[Bookmarks - Health & Psychology]], connected its interpretation limits to [[Health Evidence]], and updated [[X-Bookmarks]], [[INDEX]], and [[Wiki Overview]]. The category now has 52 entries; the full catalog has 935 records (922 structured entries plus 13 bare links).
+
+Read the post, its quoted post and all four attachments. Matched the paper to the university abstract and publisher's indexed methods excerpt. Recorded the evidence check separately from retention; the full paper and replication evidence remain unchecked. No existing raw source was edited, and X bookmark state was neither checked nor changed.
+
+Validation: exact-ID lookup returns one catalog record containing both post IDs; all 84 existing raw files retain their original hashes. The 224-page content check found no broken references or duplicate titles, and the static build passed. Both new captures are recorded as ingested; the canonical vault and local captures are in sync.
+
+---
+
+## [2026-09-30] query | live X bookmark recommendations
+
+Used authenticated Bird to read all 70 current bookmarks for @entropyholdings. The returned inventory contains 70 unique IDs and `nextCursor: null`. Read all available post and quoted text, the Codex Web GPT and Search author threads, and selected screenshots including Jeff's HFT notes and the four-edge graphic. Videos and every attachment remain unreviewed.
+
+Compared exact saved-post IDs with all ten canonical Brain bookmark categories and their index. One saved post, the paternal-investment study, was already archived. Recorded a metadata-only immutable inventory and [[Live X Bookmark Inventory - 30 September 2026]], plus the full [[X Bookmark Review - 30 September 2026]]: 26 strong keeps, 16 research/watch leads, 13 personal or entertainment items, four to consolidate, one already archived and ten low-value references.
+
+Checked selected primary tool documentation and repositories, NIMH/NHS health guidance, and the model-collapse and enamel-repair papers. Recorded product-release drift, unsupported health conclusions and verification limits rather than adopting claims. Created a searchable local review artifact. This query did not change X bookmarks, canonical Brain notes, or a hosted deployment.
+
+Validation: all 70 saved IDs have one recommendation each; the 226-page content check found zero broken references and duplicate titles, and the static build passed. The review artifact passed TypeScript checking. Existing raw sources remain byte-for-byte unchanged; only the mutable ingest registry was updated to record the new inventory metadata source as processed.
+
+---
+
+## [2026-09-30] ingest | evergreen knowledge from live X bookmarks
+
+The human narrowed the completed 70-post review to evergreen knowledge and explicitly requested clearing all live X bookmarks after retention. Saved 14 distilled entries from 15 posts in seven canonical Brain categories: one Culture & Ideas, four Markets & Crypto, three Developer Tools, two AI & Agents, one Design & Frontend, two Reference & Utilities and one Personal & Life. The VPN and encrypted-DNS references were combined. Product releases, forecasts, gossip, humour, entertainment queues and unsupported clinical claims were omitted from this new batch. Existing archive contents were preserved.
+
+Captured eight immutable revisions: the index and seven changed categories. The design capture also preserves two bare links already present upstream, explicitly labelled unreviewed. Current catalog: 936 structured entries plus 15 bare links. Read the captures in full and reconciled the retained lines with the canonical notes. Created [[Evergreen Lessons from X - September 2026]], appended seven source registers, and connected eight topics. Updated retention-policy scope in [[Personal Knowledge Management]], [[X-Bookmarks]], [[Wiki Overview]], and [[INDEX]].
+
+Scoped evidence checks cover mortgage prepayment, WebRTC and encrypted DNS, ordinary SSH over Tailscale, colourant labels, brown sugar and the earlier model-collapse abstract check. Practical and trading methods remain heuristics. No product benchmark, strategy performance, camera physics or clinical treatment was validated. Account cleanup remains pending a fresh pre-removal inventory and post-removal empty-list check.
+
+---
+
+## [2026-09-30] cleanup | clear X after evergreen retention
+
+After the evergreen captures and wiki validation passed, fetched a fresh complete X inventory: the same 70 unique saved IDs, `nextCursor: null`. Removed all 70 bookmark markers from @entropyholdings in seven batches through Bird. Every request reported success; all batch commands exited 0. The authenticated X web interface, freshly loaded and reloaded with Bookmarks selected, displayed its empty state at 2026-09-30T21:51:47.209378+00:00. Bird after-reads could not discover current X client bundles, so UI verification was used instead.
+
+Recorded an immutable operation receipt and [[X Bookmark Cleanup - 30 September 2026]]. Appended the completed outcome to the canonical Brain index and captured a new immutable index revision. Linked the receipt into [[Evergreen Lessons from X - September 2026]], the original review, live inventory, [[X-Bookmarks]], [[Personal Knowledge Management]], [[Wiki Overview]] and [[INDEX]]. Knowledge retention remains 14 distilled entries from 15 posts; existing historical archive contents and raw sources are preserved.
+
+Validation: all 14 retained entries and 15 post IDs are represented once in the current catalog. Every canonical bookmark note matches its latest immutable capture. The 228-page content check has zero broken references and duplicate titles; the static build and review-artifact TypeScript check passed. All ten new evergreen/cleanup captures are marked processed. All 87 pre-existing immutable raw files preserve their hashes.

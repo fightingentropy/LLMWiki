@@ -3,17 +3,19 @@ title: Bookmarks - Reference & Utilities
 type: source
 domain: dev
 sources:
+  - snapshots/1790804551519-6d896f5ea773/bookmarks/Reference & Utilities.md
   - bookmarks/Reference & Utilities.md
   - clippings/bookmark-updates-2026-09-22/Reference & Utilities.md
   - snapshots/1790106580663-6c1ce06cff29/bookmarks/Reference & Utilities.md
 related:
+  - Evergreen Lessons from X - September 2026
   - X-Bookmarks
   - Digital Security
   - Developer Resources
   - Personal Knowledge Management
   - Technology Critique
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - bookmarks
   - september-2026
@@ -33,7 +35,9 @@ summary: >-
 
 # Bookmarks - Reference & Utilities
 
-September update to **56 structured entries** in the Brain category (previous wiki snapshot: 33). This page preserves all **23 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
+Latest category capture, **30 September 2026**: **58 structured entries**. The new evergreen-only section below adds 2 distilled knowledge entries; earlier September registers retain their original scope.
+
+22 September update to **56 structured entries** in the Brain category (previous wiki snapshot: 33). This page preserves all **23 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
 
 ## Key takeaways
 
@@ -107,3 +111,11 @@ The following annotations are reproduced from the curated Brain notes. Dates rec
 ## Complete source capture
 
 The linked September source record preserves the full current category, including older entries. The sections above summarize the added or revised September material. Every current saved item can also be opened individually in [Bookmarks](/bookmarks), searched by title or original post ID, and traced to its captured note. Inclusion records the curated source; it does not imply every claim has been independently verified.
+
+## Evergreen-only additions — 30 September 2026
+
+Pinned source revision: `raw/snapshots/1790804551519-6d896f5ea773/bookmarks/Reference & Utilities.md`. Selected from the 70-post live review using the human's narrower instruction to keep lasting knowledge. See [[Evergreen Lessons from X - September 2026]] for the synthesis and evidence limits.
+
+- [Recognize carmine and cochineal on ingredient labels](https://x.com/TipOfTheBanana/status/2100362346145501450) — Carmine and cochineal extract are colourants derived from cochineal insects. US rules require their specific names on food ingredient lists; FDA explains this exception partly through possible allergic reactions. Useful label literacy for dietary choices, without the post's insect-count, lobbying-history or blanket health claims. References: [21 CFR 73.100: identity and food labelling](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-73/subpart-A/section-73.100); [FDA consumer colour-additive guidance](https://www.fda.gov/food/color-additives-information-consumers/color-additives-questions-and-answers-consumers). _(@TipOfTheBanana; evergreen synthesis retained 2026-09-30)_
+
+- [Molasses is central to brown sugar's character](https://x.com/TipOfTheBanana/status/2103804906356224076) — Molasses content distinguishes brown sugar's flavour and colour. Manufacturing processes vary, so do not assume every brown sugar is simply white sugar recoloured in the same way. Keep this as cooking and ingredient knowledge; the post's fixed percentages, calorie comparison and health framing are omitted. References: [Domino: brown sugar and molasses](https://www.dominosugar.com/brown-sugar). _(@TipOfTheBanana; evergreen synthesis retained 2026-09-30)_

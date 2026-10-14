@@ -3,10 +3,13 @@ title: Bookmarks - Culture & Ideas
 type: source
 domain: culture
 sources:
+  - snapshots/1790804551519-19d4b0c03105/bookmarks/Culture & Ideas.md
   - bookmarks/Culture & Ideas.md
   - clippings/bookmark-updates-2026-09-22/Culture & Ideas.md
   - snapshots/1790106580663-11b70dff53de/bookmarks/Culture & Ideas.md
 related:
+  - Evergreen Lessons from X - September 2026
+  - Decision-Making
   - X-Bookmarks
   - Online Extremism and Evidence
   - Media Critique
@@ -15,7 +18,7 @@ related:
   - Personal Knowledge Management
   - Humor
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - bookmarks
   - september-2026
@@ -35,7 +38,9 @@ summary: >-
 
 # Bookmarks - Culture & Ideas
 
-September update to **88 structured entries** in the Brain category (previous wiki snapshot: 57). This page preserves all **32 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
+Latest category capture, **30 September 2026**: **89 structured entries**. The new evergreen-only section below adds 1 distilled knowledge entries; earlier September registers retain their original scope.
+
+22 September update to **88 structured entries** in the Brain category (previous wiki snapshot: 57). This page preserves all **32 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
 
 ## Key takeaways
 
@@ -127,3 +132,9 @@ The following annotations are reproduced from the curated Brain notes. Dates rec
 ## Complete source capture
 
 The linked September source record preserves the full current category, including older entries. The sections above summarize the added or revised September material. Every current saved item can also be opened individually in [Bookmarks](/bookmarks), searched by title or original post ID, and traced to its captured note. Inclusion records the curated source; it does not imply every claim has been independently verified.
+
+## Evergreen-only additions — 30 September 2026
+
+Pinned source revision: `raw/snapshots/1790804551519-19d4b0c03105/bookmarks/Culture & Ideas.md`. Selected from the 70-post live review using the human's narrower instruction to keep lasting knowledge. See [[Evergreen Lessons from X - September 2026]] for the synthesis and evidence limits.
+
+- [Persuasiveness is not evidence](https://x.com/ArtemisConsort/status/2104638750022402356) — A fluent argument can support incompatible positions. Ask what observation would distinguish them, what would falsify the claim, and whether contrary evidence changes the conclusion. A reasoning heuristic, not a measured claim about personality or intelligence. _(@ArtemisConsort; evergreen synthesis retained 2026-09-30)_

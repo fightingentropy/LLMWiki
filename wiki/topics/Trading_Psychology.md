@@ -3,6 +3,7 @@ title: Trading Psychology
 type: topic
 domain: markets
 sources:
+  - snapshots/1790804551519-1de9816cb631/bookmarks/Markets & Crypto.md
   - misc/Bizz & Finance.md
   - misc/Psychology.md
   - misc/Youtube.md
@@ -12,6 +13,7 @@ sources:
   - bookmarks/Markets & Crypto.md
   - clippings/bookmark-updates-2026-09-22/Markets & Crypto.md
 related:
+  - Evergreen Lessons from X - September 2026
   - Genius and Madness
   - Youtube
   - Self-Improvement
@@ -37,7 +39,7 @@ related:
   - Market Performance Measurement
   - Bookmarks - Markets & Crypto
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - trading
   - psychology
@@ -203,3 +205,9 @@ Related: [[Markets]], [[Psychology]], [[Decision-Making]], [[Behavioral_Finance]
 ## September 2026 performance narratives
 
 A public leaderboard and a convincing hindsight story can obscure what was actually measured. [[Market Performance Measurement]] asks which accounts, flows, hedges, costs, and time windows produce the displayed PnL. The saved Zcash hindsight post and trader/personal-life clip remain anecdotes rather than execution evidence. (from [[Bookmarks - Markets & Crypto]])
+
+## Edge and boredom
+
+Before a trade, identify the proposed informational, analytical, behavioural or execution advantage and the evidence that would disprove it. The categories are a journal heuristic, not proof of an edge. If the setup has not changed and only the desire for activity has, record that before changing exposure. (from [[Bookmarks - Markets & Crypto]])
+
+The complete evergreen selection is [[Evergreen Lessons from X - September 2026]].

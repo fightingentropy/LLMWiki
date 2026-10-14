@@ -3,17 +3,20 @@ title: Bookmarks - Design & Frontend
 type: source
 domain: dev
 sources:
+  - snapshots/1790804551519-8f428ba1884a/bookmarks/Design & Frontend.md
   - bookmarks/Design & Frontend.md
   - clippings/bookmark-updates-2026-09-22/Design & Frontend.md
   - snapshots/1790106580663-52486e8a0a4c/bookmarks/Design & Frontend.md
 related:
+  - Evergreen Lessons from X - September 2026
+  - Design Thinking
   - X-Bookmarks
   - Design & Aesthetics
   - Compositor
   - Developer Resources
   - Personal Knowledge Management
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - bookmarks
   - september-2026
@@ -33,7 +36,9 @@ summary: >-
 
 # Bookmarks - Design & Frontend
 
-September update to **130 structured entries** in the Brain category (previous wiki snapshot: 112). This page preserves all **18 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
+Latest category capture, **30 September 2026**: **131 structured entries**. The new evergreen-only section below adds 1 distilled knowledge entries; earlier September registers retain their original scope.
+
+22 September update to **130 structured entries** in the Brain category (previous wiki snapshot: 112). This page preserves all **18 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
 
 ## Key takeaways
 
@@ -112,3 +117,11 @@ https://loading.dev/
 The linked September source record preserves the full current category, including older entries. The sections above summarize the added or revised September material. Every current saved item can also be opened individually in [Bookmarks](/bookmarks), searched by title or original post ID, and traced to its captured note. Inclusion records the curated source; it does not imply every claim has been independently verified.
 
 The individual catalog includes the 130 structured entries plus all 13 bare URLs from this category. Bare links use their hostname or X handle as a label and do not receive an invented summary. The full source record supplies their surrounding context.
+
+## Evergreen-only additions — 30 September 2026
+
+Pinned source revision: `raw/snapshots/1790804551519-8f428ba1884a/bookmarks/Design & Frontend.md`. Selected from the 70-post live review using the human's narrower instruction to keep lasting knowledge. See [[Evergreen Lessons from X - September 2026]] for the synthesis and evidence limits.
+
+- [Teach a mechanism by letting the user change it](https://x.com/RyanSael/status/2102591147927654847) — The camera-focus lab is an interaction reference: a person changes parameters and sees the consequence. Apply the pattern to explanations by exposing inputs, assumptions and clear readouts. The educational lesson is our synthesis; the lab's physical accuracy and the post's model, cost and one-shot claims were not validated. References: [Camera-focus lab example](https://sael.net/plane-of-focus/). _(@RyanSael; evergreen synthesis retained 2026-09-30)_
+
+The complete capture also includes two bare links already present in Brain before this task: [Kobra input OTP](https://kobra.systems/components/input-otp) and [@AdamKPx's post](https://x.com/AdamKPx/status/2103953289411002578). They are preserved as existing unannotated references, not selected or verified by this evergreen review. The category now contains 15 bare links in addition to its structured entries.

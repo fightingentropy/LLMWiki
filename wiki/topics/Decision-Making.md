@@ -3,18 +3,21 @@ title: Decision-Making
 type: topic
 domain: psychology
 sources:
+  - snapshots/1790804551519-19d4b0c03105/bookmarks/Culture & Ideas.md
   - misc/Psychology.md
   - misc/Bizz & Finance.md
   - misc/CT.md
   - misc/Thoughts.md
 related:
+  - Evergreen Lessons from X - September 2026
+  - Bookmarks - Culture & Ideas
   - Trading Psychology
   - Behavioral Finance
   - Psychology & Behavior
   - Self-Improvement
   - Repeated Games
 created: 2026-04-18T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - decision-making
   - agency
@@ -50,3 +53,9 @@ Surfaces across [[Trading_Psychology]], [[Psychology]], and [[Thoughts]]. The re
 - **Optimize the repeated game.** Preserve cooperation, boundaries, and future rounds rather than maximizing one encounter. See [[Repeated Games]].
 
 Related: [[Trading_Psychology]], [[Behavioral_Finance]], [[Psychology]], [[Self_Improvement]], [[Genius_and_Madness]], [[Repeated Games]]
+
+## Test the argument against observations
+
+Persuasive language can make incompatible positions sound compelling. As a reasoning discipline, state an observation that distinguishes the positions, an explicit falsifier, and the contrary evidence that would change the conclusion. This is a practical check on argument quality, not a diagnosis of a speaker. (from [[Bookmarks - Culture & Ideas]])
+
+The complete evergreen selection is [[Evergreen Lessons from X - September 2026]].

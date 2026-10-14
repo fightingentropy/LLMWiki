@@ -3,10 +3,12 @@ title: Bookmarks - Personal & Life
 type: source
 domain: personal
 sources:
+  - snapshots/1790804551519-b4816fecf206/bookmarks/Personal & Life.md
   - bookmarks/Personal & Life.md
   - clippings/bookmark-updates-2026-09-22/Personal & Life.md
   - snapshots/1790106580663-8480ee55ddf5/bookmarks/Personal & Life.md
 related:
+  - Evergreen Lessons from X - September 2026
   - X-Bookmarks
   - Personal Knowledge Management
   - Water Filtration
@@ -14,7 +16,7 @@ related:
   - 3D Printing and Digital Fabrication
   - Self-Improvement
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - bookmarks
   - september-2026
@@ -34,7 +36,9 @@ summary: >-
 
 # Bookmarks - Personal & Life
 
-September update to **52 structured entries** in the Brain category (previous wiki snapshot: 19). This page preserves all **33 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
+Latest category capture, **30 September 2026**: **53 structured entries**. The new evergreen-only section below adds 1 distilled knowledge entries; earlier September registers retain their original scope.
+
+22 September update to **52 structured entries** in the Brain category (previous wiki snapshot: 19). This page preserves all **33 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
 
 ## Key takeaways
 
@@ -132,3 +136,9 @@ The following annotations are reproduced from the curated Brain notes. Dates rec
 ## Complete source capture
 
 The linked September source record preserves the full current category, including older entries. The sections above summarize the added or revised September material. Every current saved item can also be opened individually in [Bookmarks](/bookmarks), searched by title or original post ID, and traced to its captured note. Inclusion records the curated source; it does not imply every claim has been independently verified.
+
+## Evergreen-only additions — 30 September 2026
+
+Pinned source revision: `raw/snapshots/1790804551519-b4816fecf206/bookmarks/Personal & Life.md`. Selected from the 70-post live review using the human's narrower instruction to keep lasting knowledge. See [[Evergreen Lessons from X - September 2026]] for the synthesis and evidence limits.
+
+- [Design a night out around what makes it worthwhile](https://x.com/worldofmaart/status/2104514885673443709) — Choose music and company you enjoy, make the earlier evening worthwhile, and decide a departure time that respects the following day. A practical planning heuristic. The post's suggestion that water sobers you up and its forced early-wake advice are excluded. _(@worldofmaart; evergreen synthesis retained 2026-09-30)_

@@ -3,6 +3,7 @@ title: Digital Security
 type: topic
 domain: dev
 sources:
+  - snapshots/1790804551519-100cbe63e7fd/bookmarks/Developer Tools.md
   - bookmarks/Reference & Utilities.md
   - bookmarks/AI & Agents.md
   - bookmarks/Developer Tools.md
@@ -12,6 +13,7 @@ sources:
   - clippings/bookmark-updates-2026-09-22/Business & Startups.md
   - clippings/bookmark-updates-2026-09-22/Personal & Life.md
 related:
+  - Evergreen Lessons from X - September 2026
   - X-Bookmarks
   - Grok Bot
   - AI Agents
@@ -25,7 +27,7 @@ related:
   - Bookmarks - Business & Startups
   - Bookmarks - Personal & Life
 created: 2026-08-29T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - security
   - privacy
@@ -67,3 +69,9 @@ Related: [[AI Agents]], [[Developer_Resources]], [[Technology_Critique]], [[Grok
 - An account-console bookmark is a navigation reference. It is not evidence that a service is connected, installed, or activated.
 
 Sources: [[Bookmarks - Reference & Utilities]], [[Bookmarks - Developer Tools]], [[Bookmarks - Business & Startups]], and [[Bookmarks - Personal & Life]].
+
+## Privacy has separate layers
+
+A VPN exit address is only one signal. Account activity, browser configuration and locale can remain identifying. MDN documents possible address exposure through WebRTC ICE candidates and a relay-only application policy; the actual exposure depends on configuration. Encrypted DNS protects DNS exchanges, not every traffic or identity signal. Check the actual device and browser rather than relying on universal bypass or anonymity claims. (from [[Bookmarks - Developer Tools]])
+
+The complete evergreen selection is [[Evergreen Lessons from X - September 2026]].

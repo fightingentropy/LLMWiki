@@ -6,6 +6,7 @@ sources:
   - bookmarks/Health & Psychology.md
   - clippings/bookmark-updates-2026-09-22/Health & Psychology.md
   - snapshots/1790106580663-40c34995b4f7/bookmarks/Health & Psychology.md
+  - snapshots/1790338863036-d5f1baaac670/bookmarks/Health & Psychology.md
 related:
   - X-Bookmarks
   - Health Evidence
@@ -15,7 +16,7 @@ related:
   - Fitness
   - Body Optimization
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-25'
 tags:
   - bookmarks
   - september-2026
@@ -35,7 +36,7 @@ summary: >-
 
 # Bookmarks - Health & Psychology
 
-September update to **51 structured entries** in the Brain category (previous wiki snapshot: 29). This page preserves all **24 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
+The category contains **52 structured entries** as of **2026-09-25**. The 22 September ingest preserved **24 added or revised entries**, bringing the category to 51; one manually supplied post was added on 25 September. Earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
 
 ## Key takeaways
 
@@ -49,6 +50,14 @@ This batch is organised around evidence quality and contradictions, with the ori
 - Revised follicular-fluid and depression/cognition entries preserve the later reposts without importing their causal overstatements.
 
 See [[Health Evidence]] for the distinction between retaining a claim and adopting it.
+
+## Manually supplied post · 2026-09-25
+
+- [Perceived resemblance, psychopathic traits, and paternal investment](https://x.com/houseofhereaftr/status/2103150600753950923) — A [2020 study](https://doi.org/10.1016/j.paid.2020.109879) of 158 Romanian father–teen pairs linked perceived resemblance to reported paternal investment, with a stronger facial-resemblance association at higher psychopathy scores. Personality similarity also contributed. Survey associations do not establish causation, changes over time, clinical diagnoses, or a motive of self-love. _([quoted post](https://x.com/Psikobilim_/status/2102824105024332196); [university abstract](https://www.research.unipd.it/handle/11577/3359563); Hereafter (@houseofhereaftr); manually added 2026-09-25; abstract and screenshot review, full paper not reviewed)_
+
+**Scoped evidence check — 2026-09-25:** read the post, its quotation, and their four attachments; matched the paper against the university record and the publisher's [indexed methods excerpt](https://www.sciencedirect.com/science/article/abs/pii/S0191886920300684). The full paper, measurement details, moderation estimates, and replication evidence remain unchecked. This check applies to this entry only.
+
+The main attachment is an illustrative [photograph](https://pbs.twimg.com/media/HS_kUviWsAAdr6Z.jpg). The quotation supplies a [facial-resemblance model](https://pbs.twimg.com/media/HS66opaWUAAT8-F.jpg), a [personality-similarity model](https://pbs.twimg.com/media/HS660e4XkAA9fPR.jpg), and the [paper's first-page excerpt](https://pbs.twimg.com/media/HS67LxgWsAAhV9K.jpg). See [[Health Evidence]] for the interpretation boundary.
 
 ## Source register
 

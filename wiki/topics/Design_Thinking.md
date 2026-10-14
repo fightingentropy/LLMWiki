@@ -3,14 +3,17 @@ title: Design Thinking
 type: topic
 domain: dev
 sources:
+  - snapshots/1790804551519-8f428ba1884a/bookmarks/Design & Frontend.md
   - misc/Thoughts.md
   - misc/Design.md
 related:
+  - Evergreen Lessons from X - September 2026
+  - Bookmarks - Design & Frontend
   - Design & Aesthetics
   - Philosophy & Meaning
   - Developer Resources
 created: 2026-04-18T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - design
   - taste
@@ -38,3 +41,9 @@ Sparsely referenced. [[Thoughts]] is the main source; [[Design_and_Aesthetics]] 
 - **Narrative packaging.** "Storytelling is the ultimate compression algorithm for human attention. Get narrative wrong, idea dies. Get it right, you bend steel" — design as narrative vehicle ([[Thoughts]], [[Philosophy_and_Meaning]]).
 
 Related: [[Design_and_Aesthetics]], [[Philosophy_and_Meaning]], [[Developer_Resources]], [[Thoughts_and_Observations]]
+
+## Let the user manipulate the explanation
+
+The camera-focus lab suggests a reusable interaction pattern: expose a parameter, show its consequence, and make assumptions and readouts visible. This teaching pattern is our synthesis from an example; the lab's physical accuracy and generation story remain unverified. (from [[Bookmarks - Design & Frontend]])
+
+The complete evergreen selection is [[Evergreen Lessons from X - September 2026]].

@@ -3,6 +3,7 @@ title: Developer Resources
 type: topic
 domain: dev
 sources:
+  - snapshots/1790804551519-100cbe63e7fd/bookmarks/Developer Tools.md
   - misc/Dev.md
   - misc/Setup.md
   - misc/X-Bookmarks.md
@@ -11,6 +12,7 @@ sources:
   - clippings/bookmark-updates-2026-09-22/Developer Tools.md
   - clippings/bookmark-updates-2026-09-22/AI & Agents.md
 related:
+  - Evergreen Lessons from X - September 2026
   - X-Bookmarks
   - Setup
   - Omarchy
@@ -27,7 +29,7 @@ related:
   - Bookmarks - Developer Tools
   - Bookmarks - AI & Agents
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - development
   - tools
@@ -128,3 +130,12 @@ Related: [[Design_and_Aesthetics]], [[Setup]], [[Tools]], [[AI Agents]], [[Digit
 - [[Compositor]] extends the graphics-tool references; [[Quicker]] extends account-connected product research.
 
 All new links and revised annotations: [[Bookmarks - Developer Tools]] and [[Bookmarks - AI & Agents]].
+
+## Failure cases and remote compute
+
+- Review the failures relevant to a project: deadlock, memory growth, N+1 queries, conflicting writes, stale reads, unavailable dependencies and failed deployments. Record observable symptoms and recovery or rollback.
+- Offload heavy work to a home machine when it suits travel. Network access, SSH or desktop authentication, and recovery from connection loss are separate requirements. A source anecdote does not prove a hardware specification is necessary.
+
+Both are evergreen workflow ideas from [[Bookmarks - Developer Tools]].
+
+The complete evergreen selection is [[Evergreen Lessons from X - September 2026]].

@@ -3,10 +3,12 @@ title: Bookmarks - AI & Agents
 type: source
 domain: dev
 sources:
+  - snapshots/1790804551519-2ba369d73e43/bookmarks/AI & Agents.md
   - bookmarks/AI & Agents.md
   - clippings/bookmark-updates-2026-09-22/AI & Agents.md
   - snapshots/1790106580663-1bd4dc033acf/bookmarks/AI & Agents.md
 related:
+  - Evergreen Lessons from X - September 2026
   - X-Bookmarks
   - AI Agents
   - AI Infrastructure Economics
@@ -14,7 +16,7 @@ related:
   - Personal Knowledge Management
   - 3D Printing and Digital Fabrication
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - bookmarks
   - september-2026
@@ -34,7 +36,9 @@ summary: >-
 
 # Bookmarks - AI & Agents
 
-September update to **133 structured entries** in the Brain category (previous wiki snapshot: 96). This page preserves all **37 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
+Latest category capture, **30 September 2026**: **135 structured entries**. The new evergreen-only section below adds 2 distilled knowledge entries; earlier September registers retain their original scope.
+
+22 September update to **133 structured entries** in the Brain category (previous wiki snapshot: 96). This page preserves all **37 added or revised entries**; earlier material remains in the August source and [[X-Bookmarks]]. Counts describe note entries, not unique URLs or X posts.
 
 ## Key takeaways
 
@@ -138,3 +142,11 @@ The following annotations are reproduced from the curated Brain notes. Dates rec
 ## Complete source capture
 
 The linked September source record preserves the full current category, including older entries. The sections above summarize the added or revised September material. Every current saved item can also be opened individually in [Bookmarks](/bookmarks), searched by title or original post ID, and traced to its captured note. Inclusion records the curated source; it does not imply every claim has been independently verified.
+
+## Evergreen-only additions — 30 September 2026
+
+Pinned source revision: `raw/snapshots/1790804551519-2ba369d73e43/bookmarks/AI & Agents.md`. Selected from the 70-post live review using the human's narrower instruction to keep lasting knowledge. See [[Evergreen Lessons from X - September 2026]] for the synthesis and evidence limits.
+
+- [Preserve data provenance when using generated training data](https://x.com/thesupermannx/status/2103805052817453255) — The 2024 Nature paper studies degradation under recursive training on model-generated data. The useful practice is to preserve provenance and independent real-data evaluation, including rare cases, rather than treating successive generated outputs as fresh ground truth. The experiment does not establish that all synthetic-data use fails or that a current named model is collapsing; those claims in the social post are not retained. References: [Nature: AI models collapse when trained on recursively generated data](https://www.nature.com/articles/s41586-024-07566-y). _(@thesupermannx; evergreen synthesis retained 2026-09-30)_
+
+- [Voice works well for bounded administrative triage](https://x.com/_simonsmith/status/2102836288541913351) — Use spoken interaction for tasks such as reviewing email, discussing priorities and organizing calendar decisions while away from a screen. Capture the resulting decisions in durable text and review consequential actions before execution. Retained as a workflow idea from first-person experience; predictions that screens or apps will disappear are omitted. _(@_simonsmith; evergreen synthesis retained 2026-09-30)_

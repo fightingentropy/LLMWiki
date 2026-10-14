@@ -9,7 +9,7 @@ created: 2026-04-12T00:00:00.000Z
 tags:
   - index
   - navigation
-updated: '2026-09-22'
+updated: '2026-09-30'
 ---
 
 # Wiki Index
@@ -22,8 +22,11 @@ Master catalog of all wiki pages. Read this first to navigate the wiki.
 
 ## Sources
 
+- [[X Bookmark Cleanup - 30 September 2026]] — All 70 live X bookmark markers removed; fresh full read verified zero remaining
+
 Reference collections and curated resource lists that form the foundation of the wiki.
 
+- [[Live X Bookmark Inventory - 30 September 2026]] — Complete 70-ID live Bird inventory, recorded separately from factual verification
 - [[Bizz_and_Finance]] — Consumer spending patterns, market psychology, and economic insights
 - [[Body]] — Original body notes with supplement and training claims explicitly distinguished from evidence
 - [[CT]] — Crypto Takes: verbatim archive of crypto-twitter trader quotes on price discovery, psychology, macro, microstructure
@@ -52,13 +55,13 @@ Reference collections and curated resource lists that form the foundation of the
 - [[Thoughts]] — Personal observations, wealth dynamics, and acceptance principles
 - [[Top-Pods]] — Podcast/video bookmarks on masculinity, Huberman, Tate, and JRE
 - [[Women]] — Personal archive on women, dating, gender dynamics, and "game"; Heartiste-heavy, DrDynamis-heavy, internally contradictory
-- [[X-Bookmarks]] — X and Chrome collection updated through 2026-09-22: 921 entries across ten categories, with 303 added or revised entries ingested
+- [[X-Bookmarks]] — X and Chrome collection updated through 2026-09-30: 936 structured entries across ten categories, plus 15 bare links; latest batch retains evergreen knowledge
 - [[Bookmarks - AI & Agents]] — Review prompts, voice onboarding, local models, demonstrations, and dated product claims
 - [[Bookmarks - Design & Frontend]] — Compositor, component galleries, native motion, stationery, and bare design leads
 - [[Bookmarks - Developer Tools]] — Browser and native-app releases, Omarchy, remote access, APIs, and hardware leads
 - [[Bookmarks - Markets & Crypto]] — Hyperliquid PnL, portfolio-margin corrections, macro scenarios, and research utilities
 - [[Bookmarks - Business & Startups]] — Quicker, founder workflows, property-data products, and unverified tax claims
-- [[Bookmarks - Health & Psychology]] — Circadian ADHD perspective, opposing medication anecdotes, evidence gaps, and corrections
+- [[Bookmarks - Health & Psychology]] — Circadian ADHD perspective, opposing medication anecdotes, paternal resemblance study, and scoped evidence checks
 - [[Bookmarks - Culture & Ideas]] — Reading depth, media rhetoric, disputed history, screenshots, and cultural ephemera
 - [[Bookmarks - Media & Inspiration]] — Watch-later clips, humour, streaming references, and unresolved visual posts
 - [[Bookmarks - Reference & Utilities]] — Password managers, privacy references, utility links, and reading queues
@@ -281,6 +284,7 @@ Organized by domain. Each page provides deep dives into specific subjects.
 
 ## Analyses and evidence reviews
 
+- [[X Bookmark Review - 30 September 2026]] — All 70 live bookmarks ranked for reference value, with consolidation and primary-source evidence limits
 - [[Developer Tool Evaluation Map]] — A repeatable real-task comparison for saved tool candidates
 - [[Trading Evidence and Review Framework]] — Record claims, assumptions, corrections and measured outcomes
 - [[Electrical Study Map]] — Connect safety, standards, measurements and documentation

@@ -3,17 +3,20 @@ title: Exchange Microstructure
 type: topic
 domain: markets
 sources:
+  - snapshots/1790804551519-1de9816cb631/bookmarks/Markets & Crypto.md
   - markets/Tools.md
   - markets/Articles.md
   - misc/CT.md
 related:
+  - Evergreen Lessons from X - September 2026
+  - Bookmarks - Markets & Crypto
   - Hyperliquid
   - Trading Platforms
   - CME
   - Crypto Trading
   - Crypto Takes
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-09-30'
 tags:
   - microstructure
   - order-flow
@@ -87,3 +90,9 @@ CT archive: volume rising on rally means the market is running into sellers — 
 
 ### CryptoCred on bloat
 [[CryptoCred]]'s self-parody of microstructure analysis (from [[CT]]) captures how retail is exposed to an ever-expanding vocabulary (CVD, TWAP, nPOC, CME gap) that rarely improves edge.
+
+## Measure the hot path before adding complexity
+
+The March 2023 screenshots attributed to Jeff favour a simple in-memory order book and feed-to-strategy path. Treat language choice, shared memory and concurrency as responses to measured bottlenecks; separate network delay from computation. The source is historical implementation advice, with its attribution and venue-specific results unverified. (from [[Bookmarks - Markets & Crypto]])
+
+The complete evergreen selection is [[Evergreen Lessons from X - September 2026]].
