@@ -11,7 +11,7 @@ related:
   - Humor
   - Dating & Relationships
 created: 2026-04-18T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - humor
   - jokes
@@ -21,28 +21,19 @@ tags:
   - wordplay
   - crude
   - dark-comedy
+  - pickup-lines
 review_status: archive
-review_notes: >-
-  Source summary and attributed claims. Capture or edit dates do not establish
-  factual verification.
+summary: "Erlin's joke collection: Greek set pieces and name puns, element-symbol wordplay, English one-liners, pickup lines and dark bits, with every saved link."
 ---
 
 # Jokes
 
-A larger personal humor collection (~30KB): jokes, memes, one-liners, comebacks, Greek puns, element-table wordplay, Italian/Irish/Arab/Japanese name-puns, dating absurdities, dark bits. Overlaps with [[Pick-up-limes]] and [[Funny]] in spirit (same amusement archive) but distinct content — this one leans heavier on **Greek wordplay** and **puns built on names of nationalities/chemical elements/celebrities**, whereas [[Funny]] is link-heavy shitpost/crypto-twitter and [[Pick-up-limes]] is crude comebacks/pickup.
+A personal humor collection: jokes, memes, one-liners, comebacks, Greek puns, element-table wordplay, Italian/Irish/Arab/Japanese name-puns, dating absurdities and dark bits. What sets it apart from the other two amusement notes is the weight of **Greek wordplay** and **puns built on names of nationalities, chemical elements and celebrities**; [[Funny]] is link-heavy shitpost and crypto-twitter material, and [[Pick Up Limes]] is crude comebacks and pickup lines. The jokes are collected rather than original: the note credits two Greek bits to @thanos1625 and three pickup lines to named Reddit users, and leaves the rest unattributed. Everything is quoted verbatim. Some entries are crude, sexual or dark, and that is by design.
 
-Loosely ordered and mostly sequential in the raw file, with a few thematic clusters (name-puns run in streaks; element-table joke is a long-form set piece; a late Italian/pickup/punchline drift). Preserved verbatim, non-sanitized, per schema — personal notes, the human's voice is load-bearing. Some entries are crude, sexual, or dark; that's by design.
+## Greek set pieces
 
-Related: [[Pick-up-limes]], [[Funny]], [[Culture]], [[Humor]], [[Dating_and_Relationships]].
+### Ο Σ. και ο γρίφος
 
----
-
-## Long-form stories & set pieces
-
-### The call-girl "Johnny" bait-and-switch
-Johnny was feeling horny, so he went to a call girl on the street and asked "How much do you charge?" The call girl said "500 bucks for the evening." Johnny said "Well if I pay you 500 bucks you will have to do it under my rules." The call girl said "that's fine." So Johnny took her that they would close all the blinds and do it in the pitch dark. The call girl turned to him and said "Honey, it's your money, so whatever you want is fine." They had sex. And Johnny told her to wait 10 minutes before they were to do it again. Then 10 minutes later they did it again. After 6 times he seemed to be getting stronger and stronger. "Johnny you are the best lover I have ever had," she said. And then the man said "Lady, I am NOT Johnny, he is outside selling your ass to all his friends for 200 bucks a pop."
-
-### Αρχαία Ελλάδα — ο Σ. και ο γρίφος (θα-λύσω-μη-λύσει-ο-Σ)
 Αρχαια ελλαδα, και καθονται ο Μακης και ο Τακης στην πολη-κρατος τους και διαλογιζονται.
 
 Ξαφνικα περναει ενας
@@ -68,7 +59,10 @@ Johnny was feeling horny, so he went to a call girl on the street and asked "How
 
 ... θα λυσω, μη λυσει ο Σ.
 
-### Το πείραμα του χημικού — SiKW HORePSe KOUKLi MoU
+### Το πείραμα του χημικού
+
+The assistant confirms each element the professor calls for; read the symbols in order and they spell the punchline.
+
 Στο εργαστηριο:
 
 Καθηγητής: Πυρίτιο...
@@ -118,29 +112,14 @@ Johnny was feeling horny, so he went to a call girl on the street and asked "How
 (Ανακατεύει)
 Καθηγητης: Βάλε τσιφτετελια τωρα και
 
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
+…
 
 **SiKW HORePSe KOUKLi MoU**
 
 Φθόριο Ύττριο Πυρίτιο Ασβέστιο → **FySiCa**
 
-### Στοιχεία — ο θείος ο Ψευδάργυρος
+### SiGa Mn SAs PO και ο θείος ο Ψευδάργυρος
+
 Τι ειπε το πυριτιο το γαλιο το μαγγανιο το θειο το αρσενικο ο φωσφορος και το οξυγονο?
 
 **SiGa Mn SAs PO**
@@ -157,32 +136,20 @@ Johnny was feeling horny, so he went to a call girl on the street and asked "How
 ο Ψευδάργυρος είμαι ρε μαλακα!
 
 ### Η παλάμη που έμεινε χείρα
+
 Μια παλάμη ερωτεύτηκε κεραυνοβόλα μια άλλη παλάμη, παντρευτήκαν και κάναν παλαμάκια. Δυστυχώς όμως 1 χρόνο μετά έπαθαν ένα σοβαρό ατύχημα από το οποίο επέζησε μόνο η μια παλάμη.
 
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
+…
 
 **Έμεινε χείρα.**
 
-### Κυραφροσύνης — το πήδημα στη λίμνη Ιωαννίνων
+### Κυραφροσύνης
+
 -Κύριε Σωτηρακόπουλε, πώς σχολιάζετε την απόφαση της να πηδήξει στη λίμνη των Ιωαννίνων?
 -Εδώ είναι μια στιγμή Κυραφροσύνης.
 
-### Αρβανιτάκη και το πατσαβούρι — "Αρετή και Tommy η Ελευθερία"
+### Θέλει Αρετή και Tommy η Ελευθερία
+
 -Κυρία Αρβανιτάκη, δε θα βγείτε να τραγουδήσετε;
 -Πώς να βγω, μ'αυτόν τον σκιτζή που φέρατε να παίξει σαντούρι! Σας είπα να φέρετε την Αρετή Κετιμέ!
 -Είχε άλλες υποχρεώσεις...
@@ -194,10 +161,20 @@ Johnny was feeling horny, so he went to a call girl on the street and asked "How
 
 **Θέλει Αρετή και Tommy η Ελευθερία.**
 
-### Cornered-market jury duty (ants as rice)
+## English set pieces
+
+### Johnny and the call girl
+
+Johnny was feeling horny, so he went to a call girl on the street and asked "How much do you charge?" The call girl said "500 bucks for the evening." Johnny said "Well if I pay you 500 bucks you will have to do it under my rules." The call girl said "that's fine." So Johnny took her that they would close all the blinds and do it in the pitch dark. The call girl turned to him and said "Honey, it's your money, so whatever you want is fine." They had sex. And Johnny told her to wait 10 minutes before they were to do it again. Then 10 minutes later they did it again. After 6 times he seemed to be getting stronger and stronger. "Johnny you are the best lover I have ever had," she said. And then the man said "Lady, I am NOT Johnny, he is outside selling your ass to all his friends for 200 bucks a pop."
+
+### Jury duty: 6000 ants dressed as rice
+
 I've been called for jury duty next week. It's kind of an insane case. 6000 ants dressed up as rice went in and robbed a Chinese restaurant. I don't think they did it. I knew a few of them and they wouldn't do anything like that.
 
-### Tibidabo / the woman by the lake (long-form reverie)
+### Tibidabo: the woman by the lake
+
+A long sincere-sounding reverie with a two-line punchline.
+
 I was just outside Barcelona, hiking in the foothills of mount Tibidabo. I was at the end of this path, and I came to a clearing, and there was a lake, very secluded, and there were tall trees all around. It was dead silent. Gorgeous. And across the lake I saw, a beautiful woman, bathing herself. But she was crying...
 
 I hesitated, watching, struck by her beauty. And also by how her presence; the delicate curve of her back, the dark sweep of her hair, the graceful length of her limbs, even her tears, added to the majesty of my surroundings. I felt my own tears burning behind my eyes, not in sympathy, but in appreciation of such a perfect moment.
@@ -212,25 +189,17 @@ Stare at her vaginal area until she notices/says something.
 
 Then, look her dead in the eyes and simply ask, "Are you gonna eat that?"
 
-### Pickup-line buddy / 100% success rate
-A buddy of mine is really good with women. He does this one thing on our uni campus where he'll go up to a random girl.
+### Special Mowing Unit
 
-Him: "hey I have a question and need a woman's advice"
-Her: "sure what's up?"
-Him: "let's say I see a really cute girl, do I go up and talk to her or is that too direct?"
-Her: 99.9999% of them say: "you should totally go talk to her."
-Him: he then introduces himself.
+In the lawn maintenance system, grass and shrub based offenses are considered especially heinous. In the suburbs, the dedicated workers who investigate these vicious landscapes are members of an elite squad known as the Special Mowing Unit. These are their stories.
 
-I've done it two times and got two numbers out of it so it's clearly a 100% success rate!
+8:00am - Sherwood Court "A Pain in the Grass"
 
-sweet, only 5 numbers left and you can start dialing!
+### Giordano Pietrosono and his 12 rules to be an Italian
 
-Edit: wow, thank you for the gold! It really made my day :-)
-
-### Giordano Pietrosono — 12 rules to be an Italian
 1. Shut the fuck up
 2. Sta zitto
-3. Keep your mouth shut
+3. Keep you mouth shut
 4. Say nothing
 5. Be quiet
 6. Don't do anything
@@ -241,44 +210,9 @@ Edit: wow, thank you for the gold! It really made my day :-)
 11. Shut the fuck up
 12. Never rat on your frens
 
-### SVU — Special Mowing Unit
-In the lawn maintenance system, grass and shrub based offenses are considered especially heinous. In the suburbs, the dedicated workers who investigate these vicious landscapes are members of an elite squad known as the Special Mowing Unit. These are their stories.
+## Name puns
 
-8:00am - Sherwood Court "A Pain in the Grass"
-
-### Reddit pickup lines compendium
-
-1. Puns are fun, but never a guarantee.
-"He said, 'I wish you were my big toe so I could bang you on all of my furniture.' Didn't work, but I got a good laugh out of it." –picklep00ps
-
-2. Sweet and sincere is ideal.
-"My personal favorite: Walks up, holds out hand, 'Hi, would you mind holding this for me while I take a walk in the park?'" –shanto5269
-
-6. Sometimes you've gotta rely on the classics.
-"Him: Are you a model?
-Me: ... No.
-Him: Oh, when did you quit?
-Made me laugh!" –sausagebuttie
-
-I saw someone say on here one time (not to me, in a pick up line post) "Your bone structure gives my bone structure". That has lived in my head rent free ever since.
-
-Are you looking for a STUD? Because I already have the STD, all I need is U.
-
-Dips fingers in a glass of water and flicks a few drops towards prospective date. "I think we should go back to your place and get you out of these wet clothes."
-
-If your bank balance was the same as your phone number, how much money would you have?
-
-"Hey babe are you middle eastern? Because you look like you've got a lot of fucking problems, but as an American I wanna get involved anyway."
-
-Wanna get pizza and fuck?
-
-What? You don't like pizza?
-
----
-
-## Name-pun cluster (nationalities / celebrities)
-
-Format: *[person of X type] → [pun on their name]*.
+Format: *[person of X type] → [pun on their name]*. The question is the setup; the bold name is the answer.
 
 - Ιρλανδός που δεν κάνει χάρες; — **Bart O' Butsom**
 - Ιρλανδός που ψάχνει χαμένα πρόσωπα; — **Fost o' Τooneλ**
@@ -303,12 +237,12 @@ Format: *[person of X type] → [pun on their name]*.
 - Αρχαίος τύραννος που δεν επηρέαζε την εξέλιξη της ιστορίας: — **NPCστρατος.**
 - Ήρθα, είδα, πλήρωσα. — **Ιούλιος Κέρασας**
 
----
+## Greek one-liners
 
-## Greek wordplay / puns (one-liners)
+The note credits the first two to @thanos1625; the rest are unattributed.
 
-- Σκέψου ατομαρες αυτοί οι Σκωτζεζοι μαλακά, όταν πρωτοξεκινησαν, φτιαξανε ένα ουίσκι και σου λένε, άραξε τωρα καμία δεκαριά χρόνια, θα το πουλήσουμε μετά.
-- 'Exaoa та USB sticks you, ισως επειδη τα ειχα για δεδομενα (@thanos1625)
+- Σκέψου ατομαρες αυτοί οι Σκωτζεζοι μαλακά, όταν πρωτοξεκινησαν, φτιαξανε ένα ουίσκι και σου λένε, άραξε τωρα καμία δεκαριά χρόνια, θα το πουλήσουμε μετά. _(@thanos1625)_
+- 'Exaoa та USB sticks you, ισως επειδη τα ειχα για δεδομενα _(@thanos1625)_
 - — φίλε παίζεις φοβερό τουμπερλεκι / — ευχαριστώ / — είσαι τόσο καλός και στα ντραμς; / — όχι, μόνο στο τουμπερλεκι → **Just in Tumberlake**
 - — Τζένη θα 'ρθεις να φτιάξωμεν κεφτέδες; — θα έρθω — Τζενη φερ' ανιθον
 - — έστειλα δέμα / — που; / — στη Γαλλία / — ιιιι! ΠΟΥ; / — στο les Calla / — ααα δέμα στα les Calla
@@ -381,11 +315,9 @@ Format: *[person of X type] → [pun on their name]*.
 - Καθώς διέσχιζα την έρημο νόμιζα ότι είδα μια σειρά από κώλους. Τελικά ήταν **οφθαλμαπάτοι**.
 - Μετακόμισε Μαδαγασκάρης που οι κατσαρίδες είναι τόσο μεγάλες που κάνουν δίκη τους φορολογική δήλωση
 - Πετάγομαι μια μέχρι το μπουρδελο, θέλει κανείς να του γαμησω τίποτα;
-- Τι σε εμποδίζει να είσαι ο εαυτός σου; — Το σαβουάρ βιβρ και ο ποινικός κωδικας
+- Τι σε εμποδίζει να είσαι ο εαυτός σου; — Το σαβουάρ βιβρ και ο ποινικός κωδικας (the English twin is in the next section)
 
----
-
-## English one-liners / observational
+## English one-liners
 
 - I see a kid lying on the floor and crying at the airport and go: somebody claim this guys. Like it's luggage.
 - She's like I have a boyfriend. I got I have a math test. She's like what? Oh I'm sorry I thought we were talking about things we could cheat on.
@@ -395,69 +327,113 @@ Format: *[person of X type] → [pun on their name]*.
 - If you're cremated after you die, you can be put into an hourglass and continue to participate in family game night.
 - I would like to thank my spine, for supporting me all these years.
 - I'm not in favour of vaccine mandates but I am in favour of deodorant mandates.
-- Will smith husband hair lost
-- Bradley became a waitress
 - A FUTURE where your eyes never leave the screen is already being priced in.
 - He's taking his inhaler because he cannot seem to handle air without, assistance.
 - When life has that crtain jui ne se qua
 - Just checked my bank account and realized I can live comfortably without working for the rest of my life as long as I die on Sunday.
 - My dick is so small i went to rape some girl and she started laughing once she saw it.
-- Brutal hippo attack
+- My penis was in the Guinness book of world records. But then the librarian told me to take it out.
+- He said the girl you're obsessed with is fucking some other dude that's bored of her.
+- *"A tennis ball walks into a bar/restaurant. A bartender/waiter asks, 'Have you been served?'"*
+- In Scotland, we stop doing the accent when you guys aren't around.
+- The existance of copenhagen implies the existance of seethehagen.
+- Easy come, easy dough
+- Another one bites the crust!
+
+### Travel-documentary riffs
+
+A run of lines mocking presenter-led travel documentaries. They sit directly under the [YouTube video](https://www.youtube.com/watch?v=WjnmzljtREk) saved without a note.
+
 - There's also usually an emotional moment where they try really hard to cry and say "Sorry can we stop filming for a moment?"
 - I'd absolutely watch a series of this. Needs more condescending interactions with locals, though. Can that be arranged?
 - Not able to speak the local language? No worries, just s p e a k  s l o w e r  and RAISE YOUR VOICE.
 - You should ask the BBC to commission a series in which you dig up a bit of broken pottery from your garden and over eight one-hour episodes, you build an entire backstory for civilisation from it based purely on conjecture and hearsay.
 - "I'm on a quest to find out the answer to a question the experts knew the answer to years ago..."
-- My penis was in the Guinness book of world records. But then the librarian told me to take it out.
-- He said the girl you're obsessed with is fucking some other dude that's bored of her.
-- *"A tennis ball walks into a bar/restaurant. A bartender/waiter asks, 'Have you been served?'"*
-- In Scotland, we stop doing the accent when you guys aren't around.
-- Sound check
-- The existance of copenhagen implies the existance of seethehagen.
-- Throw limes in front of a girl and tell her "can you help me?" I'm not good at "pick up limes" (cross-ref [[Pick-up-limes]])
-- Easy come, easy dough
-- Another one bites the crust!
+
+### Terrorism-versus-daily-annoyance bit
+
 - How do you know if the terrorists haven't already won? What if their initial goal was to make air travel fucking annoying? Because if that was their initial goal they've absolutely smashed it mate. They knocked it out of the park.
 - What affects you more, on a day to day, a train blowing up or somebody stopping in front of you in the middle of a busy street for no fucking reason? A plane crashing or going in to sainbury's and find out they've moved the shit, to different isles, yet again.
 - You know what I realised? I don't give a shit about losing my life, you know what I give a shit about? Losing wifi.
 
----
+## Pickup lines
 
-## Roman-numeral meta joke
+Overlaps in spirit with [[Pick Up Limes]], whose title plays on the same pun as the limes line below.
+
+### The "I need a woman's advice" opener
+
+A buddy of mine is really good with women. He does this one thing on our uni campus where he'll go up to a random girl.
+
+Him: "hey I have a question and need a woman's advice"
+Her: "sure what's up?"
+Him: "let's say I see a really cute girl, do I go up and talk to her or is that too direct?"
+Her: 99.9999% of them say: "you should totally go talk to her."
+Him: he then introduces himself.
+
+I've done it two times and got two numbers out of it so it's clearly a 100% success rate!
+
+sweet, only 5 numbers left and you can start dialing!
+
+Edit: wow, thank you for the gold! It really made my day :-)
+
+### From the r/AskReddit thread "Girls of Reddit, what's the best pickup line?"
+
+Three answers, kept with the numbering and headings the note gives them.
+
+1. Puns are fun, but never a guarantee.
+"He said, 'I wish you were my big toe so I could bang you on all of my furniture.' Didn't work, but I got a good laugh out of it." –[picklep00ps](https://www.reddit.com/r/AskReddit/comments/95a9bb/girls_of_reddit_whats_the_best_pickup_line/e3rn803/)
+
+2. Sweet and sincere is ideal.
+"My personal favorite: Walks up, holds out hand, 'Hi, would you mind holding this for me while I take a walk in the park?'" –[shanto5269](https://www.reddit.com/user/shanto5269)
+
+6. Sometimes you've gotta rely on the classics.
+"Him: Are you a model?
+Me: ... No.
+Him: Oh, when did you quit?
+Made me laugh!" –[sausagebuttie](https://www.reddit.com/r/AskReddit/comments/95a9bb/girls_of_reddit_whats_the_best_pickup_line/e3r5nh1/)
+
+### One-line openers
+
+- I saw someone say on here one time (not to me, in a pick up line post) "Your bone structure gives my bone structure". That has lived in my head rent free ever since.
+- Are you looking for a STUD? Because I already have the STD, all I need is U.
+- Dips fingers in a glass of water and flicks a few drops towards prospective date. "I think we should go back to your place and get you out of these wet clothes."
+- If your bank balance was the same as your phone number, how much money would you have?
+- "Hey babe are you middle eastern? Because you look like you've got a lot of fucking problems, but as an American I wanna get involved anyway."
+- Wanna get pizza and fuck? What? You don't like pizza?
+- Throw limes in front of a girl and tell her "can you help me?" I'm not good at "pick up limes" (see [[Pick Up Limes]])
+
+## Roman-numeral explainer
+
+An explanation of someone else's joke, kept as written:
 
 For everyone who didn't get it 1 - I, 1000 - M, 51 - L I, 6 - VI, 500 - D
 
 The person posting said they can't remember Roman numerals this makes them angry (thus saying i am livid (I M LIVID) since Livid means angry) and write that part as Roman numeral.
 
----
+## Fragments without context
 
-## Repeats within the file (preserved as-is)
+Lines the note holds with nothing around them to explain them. Kept as-is.
 
-Several lines recur in the raw source — kept verbatim to match the original:
-- "A shark could swim faster than me..." (appears 3×)
-- "I would like to thank my spine, for supporting me all these years." (appears 2×)
-- "I had lunch with Kasparov once..." (appears 2×)
-- "She's like I have a boyfriend / math test" (appears 2×)
+- Will smith husband hair lost
+- Bradley became a waitress
+- Brutal hippo attack
+- Sound check
+- **ΔΑ**
 
----
+## Links
 
-## Links / references embedded in source
+The X, YouTube and Rumble links are saved without a note; the Reddit links credit the pickup lines above.
 
-- `@thanos1625` — twitter handle (appears twice, Greek bits)
-- `https://twitter.com/tweetsofWIZARD/status/1689735293920833536`
-- `https://twitter.com/ClubPhotos_/status/1685695478233448449`
-- `https://youtu.be/d_qiBVR3UNE?t=79`
-- `https://youtube.com/shorts/K6v6VUEjR8c?si=abQkyK39UA3gelZM`
-- `https://rumble.com/v2rmaqm-emergency-meeting-counter-attack.html` (timestamp 2:37)
-- `https://www.youtube.com/watch?v=WjnmzljtREk`
-- Reddit `r/AskReddit/comments/95a9bb/girls_of_reddit_whats_the_best_pickup_line/` (two comments quoted)
+- [X post by @tweetsofWIZARD](https://twitter.com/tweetsofWIZARD/status/1689735293920833536) — Saved without a note; sits between the Sekova vodka line and the NPCστρατος pun.
+- [X post by @ClubPhotos_](https://twitter.com/ClubPhotos_/status/1685695478233448449) — Saved without a note.
+- [YouTube video, saved at the 1:19 mark](https://youtu.be/d_qiBVR3UNE?t=79) — Saved without a note; the "Will smith husband hair lost" and "Bradley became a waitress" fragments follow it.
+- [YouTube Short](https://youtube.com/shorts/K6v6VUEjR8c?si=abQkyK39UA3gelZM) — Saved without a note.
+- [Rumble: "Emergency Meeting Counter Attack"](https://rumble.com/v2rmaqm-emergency-meeting-counter-attack.html) — Title from the URL; the note marks the 2:37 timestamp.
+- [YouTube video](https://www.youtube.com/watch?v=WjnmzljtREk) — Saved without a note, directly above the travel-documentary riffs.
+- [picklep00ps on r/AskReddit](https://www.reddit.com/r/AskReddit/comments/95a9bb/girls_of_reddit_whats_the_best_pickup_line/e3rn803/) — The "big toe" pun answer in the "best pickup line" thread.
+- [shanto5269's Reddit profile](https://www.reddit.com/user/shanto5269) — Credited for the "would you mind holding this for me while I take a walk in the park?" line in the same thread.
+- [sausagebuttie on r/AskReddit](https://www.reddit.com/r/AskReddit/comments/95a9bb/girls_of_reddit_whats_the_best_pickup_line/e3r5nh1/) — The "Are you a model? When did you quit?" answer in the same thread.
 
----
+## Related
 
-## The "ΔΑ"
-
-One isolated entry: **ΔΑ** — context-less, bolded in source. Kept as-is.
-
----
-
-Related: [[Pick-up-limes]], [[Funny]], [[Culture]], [[Humor]], [[Dating_and_Relationships]].
+[[Pick Up Limes]] · [[Funny]] · [[Culture|Culture & Observations]] · [[Humor]] · [[Dating_and_Relationships|Dating & Relationships]]

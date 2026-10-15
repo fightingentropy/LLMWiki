@@ -2,12 +2,21 @@
 title: Test Equipment Standards
 type: topic
 domain: electrics
-sources: []
+sources:
+  - clippings/evidence-review-2026-09-22/Electrics.md
 related:
   - Electrical Safety
   - GS38
+  - BS EN 61010
+  - BS EN 61557
+  - GN3 Guidance Note 3
+  - Safe Isolation
+  - In-Service Testing
+  - PAT Testing
+  - Inspection and Testing Fundamentals
+  - Continuity Testing
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - test-equipment
   - standards
@@ -15,6 +24,10 @@ tags:
   - accuracy
   - calibration
   - gs38
+  - cat-rating
+  - mft
+  - pat
+summary: "Which standards test instruments and leads must meet (BS EN 61010, BS EN 61557, GS38), how to pick a CAT rating, and how to prove a meter stays accurate."
 source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
@@ -24,234 +37,172 @@ source_gaps:
     Testing.md
 review_status: unverified
 review_notes: >-
-  Historical webinar summary. The original transcript is unavailable; detailed
-  test limits, procedures, chapter and exam references have not been
-  authenticated against current material.
+  Built from webinar summaries whose transcripts are unavailable; the test
+  limits, procedures and the GN3 table reference have not been checked against
+  current material.
 ---
 
 # Test Equipment Standards
 
-Standards and guidance for selecting, maintaining, and using electrical test equipment. Covers safety standards, accuracy requirements, lead/probe condition, and calibration practices.
+Any instrument used to verify a fixed installation or test an appliance has to answer two questions: is it safe to hold against a live circuit, and can its reading be trusted? Three documents cover that. [[BS EN 61010]] sets the safety of the instrument itself, [[BS EN 61557]] sets its accuracy, and [[GS38]] is the HSE guidance on the leads and probes in the tester's hand. This page covers those standards, the CAT ratings that decide where an instrument may be connected, the test voltages that can damage connected equipment, the calibration and accuracy-check routine that makes readings defensible, and what to look for in a multi-function tester or a PAT tester. The material comes from Access Training webinar notes on inspection and testing and on PAT; treat the limits and procedures as study notes, not checked against current editions (see Evidence status).
 
-## Purpose of Standards
+## Safety and accuracy: what each standard covers
 
-Test equipment must meet standards covering two critical areas:
+Test equipment must meet standards covering two things: the equipment is safe to use, and it gives accurate measurements.
 
-1. **Safety**: The test equipment itself is safe to use
-2. **Accuracy**: The test equipment provides accurate measurements
+| Document | What it covers | What to look for |
+| --- | --- | --- |
+| [[BS EN 61010]] (IEC 61010) | Electrical safety of the test equipment: design and construction safety, protection against hazards, compliance with safety principles | Certification markings on the instrument |
+| [[BS EN 61557]] (IEC 61557) | Accuracy: accuracy specifications, measurement reliability, test result validity, performance standards | The equipment specification should reference compliance |
+| [[GS38]] (HSE guidance) | Safe design of test leads, probes and connections; insulation and sheathing condition; connector safety | Equipment and leads marked as GS38 compliant |
 
-## Key Standards and Guidance
+### BS EN 61010: the instrument is safe
 
-### BS EN 61010: Test Equipment Safety
+- All test equipment should comply with this standard.
+- It governs the instrument body, its internal construction, user protection and the CAT rating printed at the terminals (from [[BS EN 61010]]).
+- Assurance comes from certification markings on the equipment.
 
-**Standard**: BS EN 61010 (IEC 61010)
+### BS EN 61557: the reading is accurate
 
-**Covers**:
-- Electrical safety of test equipment
-- Design and construction safety
-- Protection against hazards
-- Compliance with safety principles
+- Test equipment should provide accurate measurements per this standard.
+- It is published in parts, one per installation test; 61557-10 covers combined multi-function testers (from [[BS EN 61557]]).
+- Assurance comes from the equipment specification referencing compliance.
 
-**Requirement**: All test equipment should comply with this standard
+### GS38: the leads and probes are safe
 
-**Assurance**: Look for certification markings on equipment
+Test leads and probes are what the tester handles at potentially live points - their condition is critical to personal safety. GS38 turns that risk into design and condition requirements:
 
-### BS EN 61557: Test Equipment Accuracy
+- Leads must be properly insulated.
+- Connections must be secure and safe.
+- Probes must have protective features (shrouded tips and the like).
+- Leads must not have cuts, damage or deterioration.
+- Regular inspection is required.
 
-**Standard**: BS EN 61557 (IEC 61557)
+Equipment and leads should be marked as GS38 compliant. [[Safe Isolation]] depends on a GS38-compliant approved voltage indicator and leads; a lead set that fails GS38 undermines the whole prove-dead sequence.
 
-**Covers**:
-- Accuracy specifications
-- Measurement reliability
-- Test result validity
-- Performance standards
+### Other references sometimes cited
 
-**Requirement**: Test equipment should provide accurate measurements per this standard
+- **HSG85**: general electrical safety guidance from HSE.
+- **HSR25**: HSE guidance on the electrical regulations.
+- **BS 5458**: an older, withdrawn standard, relevant to older instruments only.
 
-**Assurance**: Equipment specification should reference compliance
+HSE's own position, from its electrical FAQs, is that maintenance and testing require appropriate competence and suitable equipment (from [[Electrical Evidence Review - September 2026]]).
 
-### GS38: Test Leads and Probes Guidance
+## Overvoltage categories (CAT ratings)
 
-**Standard**: GS38 (Health and Safety Executive guidance)
+Test equipment is categorised by the overvoltage category of the circuit it is rated to be connected to. A higher category means the instrument is rated for higher transient overvoltages, which matters for safe testing of live circuits.
 
-**Covers**:
-- Safe design of test leads
-- Safe design of probes and connections
-- Insulation and sheathing condition
-- Connector safety
+| Category | Where it applies | Example |
+| --- | --- | --- |
+| CAT II | Circuits connected to the building installation; local-level distribution | Circuits within the building |
+| CAT III | Distribution circuits within the building; fixed installation circuits | Distribution board circuits |
+| CAT IV | Supply side of the installation; meter circuits, service entrance | Main supply point |
 
-**Why important**: Test leads and probes are what the tester handles at potentially live points - their condition is critical to personal safety
+- The webinar notes point to GN3 Table 1.1 as the listing of category ratings for test equipment, used to select the right instrument for the circuit under test. The table number has not been checked against the current edition of [[GN3 Guidance Note 3]].
+- A CAT rating is always paired with a voltage, such as CAT III 600 V or CAT IV 1000 V; check both the category and the voltage before connecting (from [[BS EN 61010]]).
 
-**Key elements**:
-- Leads must be properly insulated
-- Connections must be secure and safe
-- Probes must have protective features (shrouded tips, etc.)
-- Leads must not have cuts, damage, or deterioration
-- Regular inspection required
+Match the equipment category to the circuit:
 
-**Compliance**: Equipment and leads should be marked as GS38 compliant
-
-### HSE Guidance References
-
-Additional HSE guidance sometimes referenced:
-- **HSG85**: General electrical safety guidance
-- **HSR25**: Guidance on electrical regulations
-- **BS 5458**: Older withdrawn standard (relevant to older instruments only)
-
-## Category Ratings for Test Equipment
-
-### CAT Ratings
-
-Test equipment is categorized by overvoltage category:
-
-**CAT II** (Category II):
-- Circuits connected to building installation
-- Local level distribution
-- Example: Circuits within building
-
-**CAT III** (Category III):
-- Distribution circuits within building
-- Fixed installation circuits
-- Example: Distribution board circuits
-
-**CAT IV** (Category IV):
-- Supply side of installation
-- Meter circuits, service entrance
-- Example: Main supply point
-
-### GN3 Table 1.1
-
-GN3 lists category ratings for test equipment:
-- Helps select appropriate equipment for the circuit you're testing
-- Higher category = equipment rated for higher transient overvoltages
-- Important for safe testing of live circuits
-
-### Practical Selection
-
-Match equipment category to circuit:
 - Using CAT II equipment on CAT IV circuit = potential hazard
 - Using CAT IV equipment on CAT II circuit = overkill but safe
 - Know what you're testing before selecting equipment
 
-## Test Lead and Probe Condition
+## Lead and probe condition
 
-### GS38 Requirements
+Lead condition is critical to personal safety, so leads are inspected before every use and replaced, never patched.
 
-Test leads and probes must be:
-- Properly insulated with no cuts or damage
+### What GS38 expects of leads and probes
+
+- Properly insulated, with no cuts or damage
 - Flexible and able to bend safely
-- Securely connected to equipment
-- Appropriate for intended use
+- Securely connected to the instrument
+- Appropriate for the intended use
 - Regularly inspected for wear
 
-### Common Failures
+### Why leads fail
 
-Test leads fail due to:
-- Cuts in insulation (exposure to sharp edges)
+- Cuts in the insulation from sharp edges
 - Crushing or kinking
-- Poor storage (coiling too tightly)
+- Poor storage, especially coiling too tightly
 - Age and deterioration
 - Rough handling
 
-### Inspection Points
+### Checks before use
 
-Before using test equipment:
-- Visually inspect entire length of leads
-- Check connections at both ends
-- Verify probe tips are intact
-- Check for any loose strands or damage
-- Ensure leads are not coiled excessively tight
-- Test continuity of leads if doubt exists
+- Visually inspect the entire length of the leads
+- Check the connections at both ends
+- Verify the probe tips are intact
+- Look for loose strands or damage
+- Make sure the leads are not coiled excessively tight
+- Test the continuity of the leads if there is any doubt
 
 ### Replacement
 
 - Replace damaged leads immediately
 - Do not attempt field repairs with tape
 - Use equipment-specific lead replacements
-- Ensure replacements are GS38 compliant
+- Make sure replacements are GS38 compliant
 
-## Test Equipment Voltage Considerations
+## Test voltages and vulnerable equipment
 
-### High-Voltage Tests
+Some tests apply significant voltages, and the instrument can damage what it is connected to.
 
-Some testing applies significant voltages:
+- **Insulation resistance test: 500 V DC.** The standard test voltage for in-service equipment testing. It can damage sensitive equipment (LED, RCD, computing), so confirm the equipment is suitable before testing. [[In-Service Testing]] gives the protective conductor current test as the alternative for voltage-sensitive gear.
+- **Test voltages above 50 V** carry special safety considerations: appropriate test equipment, proper training in safe application, and awareness of the hazards.
 
-**Insulation resistance test**: 500 V DC
-- Standard for in-service equipment testing
-- Can damage sensitive equipment (LED, RCD, computing)
-- Must ensure equipment suitable before testing
+Equipment that may be damaged by a test voltage:
 
-**Test voltages above 50 V**: Special safety considerations
-- Requires use of appropriate test equipment
-- Proper training in safe application
-- Awareness of hazards
-
-### Vulnerable Equipment
-
-Know what might be damaged:
-- RCDs (can trip or be damaged by test voltage)
-- LED lighting (may be damaged)
-- IT/computer equipment (sensitive electronics)
+- RCDs (can trip or be damaged; see [[RCD Protection]])
+- LED lighting
+- IT and computer equipment (sensitive electronics)
 - Sensitive control systems
 - Electronic thermostats
 
-## Calibration vs Accuracy Checking
+## Calibration versus accuracy checks
 
-### Annual Calibration
+Calibration is a point-in-time verification. [[BS EN 61557]] defines how accurate an instrument must be when in spec; it does not prove the instrument is still in spec on any given day. Two practices cover that gap.
 
-**What calibration provides**:
-- Verification that equipment was accurate on calibration date
-- Certificate showing calibration history
+### What annual calibration gives you
+
+- Verification that the equipment was accurate on the calibration date
+- A certificate showing the calibration history
 - Adjustment if required
 
-**What calibration does NOT provide**:
+### What it does not give you
+
 - Proof of ongoing accuracy between calibrations
-- Evidence that meter stayed accurate throughout the year
-- Protection if meter was damaged after calibration
+- Evidence that the meter stayed accurate throughout the year
+- Protection if the meter was damaged after calibration
 
-**Limitation**: Calibration is a point-in-time verification
+### Accuracy checks between calibrations
 
-### Regular Accuracy Checks
+Best practice is to check the meter against a known standard between calibrations.
 
-**Best practice**: Perform accuracy checks between calibrations
+- **Method**: use a calibration card or standard (0 Ω, 230 V and so on), check the meter against it regularly, record the results systematically and keep a log.
+- **How often**: before important tests (high-risk work); monthly or quarterly for regular use; after any potential shock or damage to the equipment.
+- **Documentation**: create an accuracy check record, like Form V6 in the PAT model forms (see [[In-Service Testing]]), recording the date, test point, expected value, actual value, tester name and signature, and the meter or equipment identifier.
 
-**Method**:
-- Use calibration card/standard (0 Ω, 230 V, etc.)
-- Check meter against known standard regularly
-- Record results systematically
-- Keep log of accuracy checks
+### Why it matters
 
-**How often**:
-- Before important tests (high-risk work)
-- Monthly or quarterly for regular use
-- After potential shock/damage to equipment
+Legal and defensibility:
 
-**Documentation**:
-- Create accuracy check record (like Form V6 in PAT)
-- Record date, test point, expected value, actual value
-- Tester name and signature
-- Meter/equipment identifier
-
-### Why This Matters
-
-**Legal/defensibility perspective**:
 - If test results are questioned later, you have evidence
 - Shows you were maintaining equipment to standard
 - Demonstrates professional practice
 - Supports competence if disputes arise
 
-**Practical perspective**:
+Practical:
+
 - Catches equipment drift between calibrations
-- Prevents invalid test results from undetected meter error
+- Prevents invalid test results from an undetected meter error
 - Ensures readings can be trusted
-- Early warning of equipment failure
+- Gives early warning of equipment failure
 
-## Multi-Function Test Meters (MFTs)
+## Multi-function testers (MFTs)
 
-### Types of Test Functions
+A typical MFT combines the installation tests needed to complete the schedule of test results on an [[EIC and MEIWC|EIC]] or [[EICR]]:
 
-Typical MFT includes:
-- Continuity (low-resistance ohmmeter)
+- Continuity (low-resistance ohmmeter; see [[Continuity Testing]])
 - Insulation resistance (high-voltage testing)
 - Earth fault loop impedance
 - RCD testing
@@ -259,70 +210,79 @@ Typical MFT includes:
 - Voltage measurement
 - Current measurement (clamp or in-circuit)
 
-### Instrument Category
+Instruments come in three tiers:
 
-MFTs typically come in:
-- Basic models (essential functions)
-- Mid-range models (more tests, display values)
-- High-end models (data logging, printing, analysis)
+- Basic models: essential functions
+- Mid-range models: more tests, displayed values
+- High-end models: data logging, printing, analysis
 
-### Lead Selection for Different Tests
+Choose leads for the test:
 
-- **Low-resistance (continuity)**: Heavy-duty leads with good connectivity
-- **High-voltage (insulation resistance)**: Heavily insulated leads rated for 500+ V
-- **Live testing**: Shrouded probes for safe contact
+- **Low-resistance (continuity)**: heavy-duty leads with good connectivity
+- **High-voltage (insulation resistance)**: heavily insulated leads rated for 500+ V
+- **Live testing**: shrouded probes for safe contact
 
-## PAT-Specific Test Equipment
+## PAT test equipment
 
-### PAT Tester Options
+Dedicated PAT testers also come in three tiers:
 
-Dedicated PAT testers:
-- Basic PAT testers (simple pass/fail)
-- Mid-range PAT testers (actual values displayed)
-- High-end PAT testers (data management, printing)
+- Basic PAT testers: simple pass/fail
+- Mid-range PAT testers: actual values displayed
+- High-end PAT testers: data management, printing
 
-### Alternative Approach
+A standard MFT can perform the PAT tests instead. It can do continuity, insulation resistance and functional testing, but needs manual operation and value recording, and may need a PAT adapter for the touch current test.
 
-Standard MFT can perform PAT tests:
-- Can do continuity, insulation resistance, functional testing
-- Requires manual operation and value recording
-- May need PAT adapter for touch current test
+A dedicated PAT tester is worthwhile if you:
 
-### When to Use Dedicated Tester
-
-Dedicated PAT tester worthwhile if:
-- Performing PAT work regularly/frequently
+- Perform PAT work regularly or frequently
 - Want time savings and automation
 - Need data logging and reporting
-- Do enough work to justify investment
+- Do enough work to justify the investment
 
-## Record Keeping for Test Equipment
+The test procedures, pass criteria and the IET model forms are on [[In-Service Testing]] and [[PAT Testing]].
 
-### Documentation Required
+## Records for test equipment
 
-**Calibration records**:
+Three kinds of record support the equipment and the work done with it.
+
+**Calibration records**
+
 - Date of calibration
 - Calibration service provider
 - Certificate number
 - Next calibration due date
 - Equipment model and serial number
 
-**Accuracy check records**:
+**Accuracy check records**
+
 - Date of check
-- Test point (e.g., 0 Ω, 230 V, etc.)
+- Test point (0 Ω, 230 V and so on)
 - Expected value
 - Actual reading
-- Pass/Fail status
+- Pass/fail status
 - Tester name
 
-**Maintenance records**:
+**Maintenance records**
+
 - Any repairs performed
 - Lead replacements
-- Environmental damage (water exposure, drops, etc.)
-- Any incidents affecting equipment reliability
+- Environmental damage (water exposure, drops and the like)
+- Any incident affecting equipment reliability
 
-### Retention Period
+Keep these records for the same period as electrical certificates and reports, typically 5-10 years minimum, so they can support the defensibility of work done with that equipment. HSE adds that a test label is not a guarantee that equipment remains safe (from [[Electrical Evidence Review - September 2026]]).
 
-- Keep records for same period as electrical certificates/reports
-- Typical: 5-10 years minimum
-- Support defensibility of work done with that equipment
+## Evidence status
+
+- The two Access Training webinar summaries this page draws on (Webinar 4 Inspection and Testing Demonstration; Webinar 4 PAT Testing) cannot currently be found, and the original transcripts are unavailable. The test limits, procedures and the GN3 table reference above have not been authenticated against current material.
+- Correction, 22 September 2026: [[GN3 Guidance Note 3]] is an IET publication whose current listing is the tenth edition; the earlier wiki mixed it with fifth-edition in-service equipment material, so chapter, table and form references taken from that material, including the GN3 Table 1.1 reference above, are unreliable until checked against the edition in use.
+- [[Electrical Safety]], [[GS38]], [[In-Service Testing]] and [[Inspection and Testing Fundamentals]] carry the same gap. [[Electrical Study Map]] gives a study route through the unverified checks, and [[Electrical Evidence Review - September 2026]] records what was checked.
+
+## Resources
+
+- [HSE GS38: Electrical test equipment for use on low voltage electrical systems](https://www.hse.gov.uk/pubns/books/gs38.htm) — the HSE page for the guidance note itself; the primary reference for lead and probe design and condition.
+- [HSE electrical safety FAQs](https://www.hse.gov.uk/electricity/faq.htm) — HSE's position that work should normally be done dead, checked dead, and that maintenance and testing require appropriate competence and suitable equipment.
+- [HSE portable appliance testing FAQs](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm) — risk-based maintenance intervals rather than blanket annual PAT testing; a test label is not a guarantee that equipment remains safe.
+
+## Related
+
+[[Electrical Safety]] · [[GS38]] · [[BS EN 61010]] · [[BS EN 61557]] · [[GN3 Guidance Note 3]] · [[Safe Isolation]] · [[In-Service Testing]] · [[PAT Testing]] · [[Inspection and Testing Fundamentals]] · [[Continuity Testing]] · [[RCD Protection]] · [[BS 7671]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]]

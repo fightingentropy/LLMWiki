@@ -2,12 +2,24 @@
 title: EIC and MEIWC
 type: topic
 domain: electrics
-sources: []
+sources:
+  - electrics/Resources.md
+  - clippings/evidence-review-2026-09-22/Electrics.md
 related:
   - EICR
   - Building Regulations
+  - Part P
+  - BS 7671
+  - GN3 Guidance Note 3
+  - Inspection and Testing Fundamentals
+  - Electrical Safety
+  - Continuity Testing
+  - BS EN 61557
+  - Electrical Evidence Review - September 2026
+  - Electrical Study Map
+  - Electrics - Resources
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - certification
   - documentation
@@ -15,237 +27,216 @@ tags:
   - minor-works
   - forms
   - compliance
+  - part-p
+  - competent-person-scheme
+  - exam-resource
+summary: "Which certificate covers which electrical work, who signs it, the 'add to good, not bad' rule, and how notification and CPS registration fit in."
 source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
     and Testing Demonstration.md
 review_status: unverified
 review_notes: >-
-  Historical webinar summary. The original transcript is unavailable; detailed
-  test limits, procedures, chapter and exam references have not been
-  authenticated against current material.
+  Historical webinar summary whose transcript is unavailable, so the test
+  limits, procedures, chapter and exam references have not been checked against
+  current material.
 ---
 
 # EIC and MEIWC
 
-Electrical Installation Certificate (EIC) and Minor Electrical Installation Works Certificate (MEIWC). Two key certification documents that distinguish between new circuit work and alterations to existing circuits.
+The Electrical Installation Certificate (EIC) and the Minor Electrical Installation Works Certificate (MEIWC) are the two certificates issued for electrical installation work in the UK. The EIC covers new circuits; the MEIWC covers additions and alterations to one existing circuit. This page sets out when each applies, what the EIC contains, who signs, the "don't add to bad" rule behind every alteration, and how certification differs from Building Control notification. The material comes from an inspection-and-testing webinar summary whose transcript is unavailable; [[Inspection and Testing Fundamentals]] condenses the same notes.
 
-## Key Distinction
+## Which certificate for which work
 
-The fundamental difference determines which certificate to use:
+The fundamental difference determines which certificate to use, and it is critical for correct practice and exam success:
 
-- **EIC**: Used for new circuits (new work)
-- **MEIWC**: Used for alterations/additions to existing circuits (not new circuits)
+| Document | What it certifies or reports | Scope |
+| --- | --- | --- |
+| **EIC** | New circuits and new work, including new installations | One or many circuits; all new work |
+| **MEIWC** | Additions and alterations to an existing circuit, not new circuits | One circuit only |
+| **[[EICR]]** | The condition of an existing installation in use; no new work involved | Whole installation or agreed extent |
 
-This distinction is critical for correct practice and exam success.
+If a new circuit is involved, use the EIC. If the work touches more than one circuit, the MEIWC is not the right form. The EICR is a different document again: condition reporting, not certification of work.
 
 ## Electrical Installation Certificate (EIC)
 
-### When to Use
+### When it applies
 
-EIC is required for new work, including:
+The EIC is required for new work, including:
+
 - Consumer unit replacement
-- New circuits added to existing installation
-- Rewires (partial or complete)
-- Any new circuit leaving the distribution board/consumer unit
+- New circuits added to an existing installation
+- Rewires, partial or complete
+- Any new circuit leaving the distribution board or consumer unit
 - Complete new installations
 
-### Structure
+### What the document contains
 
-The EIC document consists of:
+**Front page**
 
-**Front page**:
 - Installation details
 - Location and scope of work
 - Installation characteristics
 - Client information
 
-**Second page**:
+**Second page**
+
 - Supply characteristics and voltage
 - Earthing arrangement (TN-C-S, TN-S, TT)
 - Bonding details
 - Signatory details and qualifications
 - Inspection schedule reference
 
-**Associated schedules** (must be included for completeness):
-- Schedule of circuit details (circuit reference, type, protection, conductor sizes, route, etc.)
-- Schedule of test results (dead and live test results)
+**Associated schedules**, which must be included for the certificate to be complete:
 
-**Critical point**: The EIC is only complete when the associated schedules are included. Form alone is insufficient.
+- Schedule of circuit details: circuit reference, type, protection, conductor sizes, route, and so on
+- Schedule of test results: dead and live test results
 
-### Signatories
+The EIC is only complete when the associated schedules are attached. The form on its own is insufficient. The test results that fill the schedule come from the dead and live tests covered in [[Continuity Testing]] and [[Inspection and Testing Fundamentals]], using instruments that meet [[BS EN 61557]].
 
-Three signatories required on EIC:
+Do not treat the forms as mere templates:
 
-1. **Designer**: Person who designed the installation/modification
-2. **Constructor/Installer**: Person who installed/constructed the work
-3. **Inspector (Inspection & Testing)**: Person who carried out inspection and testing
+- The front page tells you what information is needed upfront
+- The second page covers supply and earthing characteristics
+- The schedules are integral, not optional
+- Each section is required for competent certification
 
-**Important clarification**: The client is NOT one of the three signatories.
+### Three signatories
 
-### Qualifications to Sign EIC
+The EIC carries three signatures:
 
-With relevant qualifications and genuine competence/experience:
-- An electrician can sign as Designer (if they designed it)
-- An electrician can sign as Installer (if they installed it)
-- An electrician can sign as Inspector (if they inspected/tested it)
+1. **Designer**: the person who designed the installation or modification
+2. **Constructor/Installer**: the person who installed or constructed the work
+3. **Inspector (inspection and testing)**: the person who carried out inspection and testing
 
-All three signatures may come from the same person if they performed all three roles (designer, installer, inspector).
+The client is not one of the three signatories.
+
+With relevant qualifications and genuine competence and experience, an electrician can sign as Designer (if they designed it), as Installer (if they installed it), and as Inspector (if they inspected and tested it). All three signatures may come from the same person when one person performed all three roles.
 
 ## Minor Electrical Installation Works Certificate (MEIWC)
 
-### When to Use
+### When it applies
 
-MEIWC is used for additions and alterations to existing circuits (not new circuits), such as:
+The MEIWC covers additions and alterations to existing circuits, not new circuits, such as:
+
 - Adding socket outlets to an existing circuit
 - Adding lighting points to an existing circuit
 - Relocating a switch
-- Replacement of accessories/luminaires
+- Replacement of accessories or luminaires
 
-**Important clarification**: MEIWC covers additions/alterations to existing circuits, not new circuits. If a new circuit is involved, use EIC instead.
+### One circuit only
 
-### One Circuit Only Principle
+The MEIWC covers work on one circuit only. It must not be used to cover multiple circuits. If the work involves several circuits, use an EIC for each, or, where appropriate, a single EIC covering all the new work.
 
-**Key rule**: MEIWC covers work on ONE circuit only.
+### Like-for-like replacement
 
-- Must not be used to cover multiple circuits
-- If work involves multiple circuits, use EIC for each, or if appropriate, an EIC covering all new work
+Replacing accessories or luminaires:
 
-### Like-for-Like Replacement
+- May be covered by an MEIWC if assessed as appropriate
+- Is not always mandatory to certify for a like-for-like replacement unless the contract or the client's requirements specify it
+- Still calls for judgement: is the existing circuit adequate, and is the replacement truly like-for-like?
 
-Replacement of accessories/luminaires:
-- May be covered by MEIWC if assessed as appropriate
-- Not always mandatory for like-for-like replacement unless contract/client requirements specify
-- Consider the context (is the existing circuit adequate? is the replacement truly like-for-like?)
+## "We add to good, we don't add to bad" (Regulation 132.16)
 
-## The "Don't Add to Bad" Principle (Regulation 132.16)
+Additions and alterations must not be made to an installation unless the existing part is adequate and safe. The instructor's teaching phrase: "We add to good, we don't add to bad." (from [[Inspection and Testing Fundamentals]])
 
-### Core Concept
+### Example: a lighting circuit with no CPC
 
-Additions and alterations must not be made to an installation unless the existing part is adequate and safe.
+The webinar's real-world judgement scenario is an older lighting circuit with no effective circuit protective conductor (CPC).
 
-**Teaching phrase**: "We add to good, we don't add to bad."
+- A visible CPC at one point does not prove the whole circuit is adequate. Later alterations may have been added incorrectly, and continuity may be broken elsewhere.
+- Fitting a Class 1 luminaire (metal body, earthed) requires a reliable CPC.
+- If no valid CPC is present, the options are: reinstall a Class 2 fitting instead (no earth required); advise the client of the defect; or rewire the entire circuit, which changes the certification to an EIC.
+- Older conduit systems may act as the CPC if continuity is reliable, with appropriate fly-leads used at connections where needed.
 
-### Practical Example: Lighting Circuit With No CPC
+**Correction, 22 September 2026:** [[Building Regulations]] records that this light-fitting example is too abbreviated to determine compliance from a missing or visible conductor alone. Keep it as an illustration of the judgement, and check the applicable standard ([[BS 7671]]) for the actual conditions.
 
-Real-world judgment scenario:
+### Deciding whether to proceed
 
-**Situation**: Older lighting circuit with no effective circuit protective conductor (CPC)
+Before proceeding with any alteration:
 
-**Problem**: A visible CPC at one point does not prove the whole circuit is adequate:
-- Later alterations may have been incorrectly added
-- Continuity may be broken elsewhere
+- Inspect the existing circuit carefully
+- Test continuity of the CPC if one is present
+- Judge whether the existing circuit is adequate for the intended use
+- If defects are found and cannot be remedied as part of the alteration work, either decline to proceed, advise the client of the extent of remedial work needed, or change the scope to a full circuit rewire certified on an EIC
 
-**If fitting Class 1 luminaire**: A reliable CPC is required (Class 1 = metal body, earthed)
+## Who can sign, and why insurance matters
 
-**If no valid CPC present**, options:
-1. Reinstall a Class 2 fitting instead (no earth required)
-2. Advise the client of the defect
-3. Potentially rewire the entire circuit (changes certification to EIC)
+With relevant qualifications and genuine competence and experience, a person can sign an EIC (all roles or individual roles), an MEIWC, and an EICR (from [[Inspection and Testing Fundamentals]]). [[Electrical Safety]] covers working within the limits of one's competence.
 
-**Older conduit systems**:
-- May act as the CPC if continuity is reliable
-- Appropriate fly-leads must be used at connections where needed
-
-### Defect Assessment Decision
-
-Before proceeding with alterations:
-- Inspect existing circuit carefully
-- Test continuity of CPC if present
-- Judge if existing circuit is adequate for the intended use
-- If defects found and cannot be remedied with the alteration work, either:
-  - Decline to proceed
-  - Advise client of extent of remedial work needed
-  - Change scope to full circuit rewire (EIC)
-
-## Signing Certificates
-
-### Who Can Sign
-
-With relevant qualifications and genuine competence/experience, a person can sign:
-- EIC (all or individual roles)
-- MEIWC
-- EICR (Electrical Installation Condition Report)
-
-### Insurance Requirement
-
-**Strong instructor advice**: Always have appropriate insurance
+The instructor's strong advice is to always hold appropriate insurance:
 
 - Public liability insurance
 - Professional indemnity insurance
-- Especially important for domestic work (family/friends)
+- Especially important for domestic work, including work for family and friends
 - Insurance provides protection if issues arise later
 
-## Domestic Notifiable Work and CPS
+## Notifiable domestic work and Competent Person Schemes
 
-### Notifiable Work
+Signing a certificate and notifying Building Control are separate things. A qualification, a test certificate and a building-control notification are distinct records and should not be used interchangeably. (from [[Electrical Evidence Review - September 2026]])
+
+### What is notifiable
 
 Some domestic work is notifiable to Building Control, such as:
-- Certain consumer unit replacement
+
+- Certain consumer unit replacements
 - New circuits in wet areas
-- Other specific work per Building Regulations
+- Other specific work set out in the Building Regulations
 
-### Self-Notification Requirement
+Part P applies to domestic installations where people permanently reside, and it determines when work is notifiable and what certification or notification is required. (from [[Electrics - Resources]]) [[Part P]] adds the precision for England: Part P is the statutory requirement and Approved Document P is guidance on satisfying it; the notifiable categories are new circuits, consumer-unit replacement, and additions or alterations in defined special locations; a kitchen location alone is not a blanket trigger; non-notifiable work still has to comply; and England's categories should not be applied to other UK jurisdictions without checking their rules.
 
-To self-notify notifiable work:
-- Must be registered with a Competent Person Scheme (CPS)
-- Just having the qualifications to sign EIC/MEIWC is not enough
-- Examples: NICEIC, NAPIT, other registered schemes
+### Self-notification needs CPS registration
 
-### Notification Options if Not CPS Registered
+To self-notify notifiable work you must be registered with a Competent Person Scheme (CPS). Holding the qualifications to sign an EIC or MEIWC is not enough on its own. Examples of schemes: NICEIC, NAPIT, and other registered schemes.
 
-1. **Join a CPS**: Register and then self-notify future work
-2. **Third-party notification**: Use a third-party notification service (with appropriate inspection involvement)
-3. **Notify Local Building Authority directly**: Local authority inspector verifies work
+If you are not CPS-registered, there are three routes:
 
-### CPS Membership Process
+1. **Join a CPS**: register, then self-notify future work
+2. **Third-party notification**: use a third-party notification service, with appropriate inspection involvement
+3. **Notify the Local Building Authority directly**: a local authority inspector verifies the work
 
-Becoming registered with a CPS:
-- Involves assessment beyond just qualifications
+### Becoming CPS-registered
+
+Registration with a CPS:
+
+- Involves assessment beyond qualifications alone
 - Requires demonstration of competence and processes
 - May involve inspection of previous work
-- Ongoing compliance and CPD requirements
+- Carries ongoing compliance and CPD requirements
 
-## Documentation Tips for Exam and Practice
+## Finding the forms in GN3: exam and revision tips
 
-### Finding Information Quickly
+The chapter numbers below come from the webinar summary. **Correction, 22 September 2026:** [[GN3 Guidance Note 3]] records that the current IET listing is the tenth edition and that the earlier chapter map and exam references were unreliable and withdrawn; check these pointers against the edition supplied for the course.
 
-**Common exam pitfall**: Searching Chapter 2 (GN3) for EIC signatory details and structure.
+**Common exam pitfall:** searching Chapter 2 of GN3 for EIC signatory details and structure.
 
-**Faster approach**: Go directly to GN3 Chapter 5 (model forms) and inspect the certificate itself.
+**Faster approach:** go directly to the GN3 Chapter 5 model forms and inspect the certificate itself:
+
 - The form layout shows what information is required
 - The signatory boxes show who signs
-- Much faster than reading textual explanations
+- It is much faster than reading textual explanations
 
-### Understanding the Full Document
+**Post-it note strategy** for revision:
 
-Don't treat forms as just templates:
-- Front page tells you what information is needed upfront
-- Second page covers supply and earthing characteristics
-- Schedules are integral, not optional
-- Each section is required for competent certification
-
-### Post-it Note Strategy
-
-For exam revision:
 - Mark key pages in GN3 with Post-it notes
-- Reference Chapter 5 forms frequently
+- Reference the Chapter 5 forms frequently
 - Highlight the three signatories and their roles
 - Mark the distinction between EIC and MEIWC
 
-## Related Concepts
+[[Electrical Study Map]] sets this page beside [[EICR]] as a study exercise: what work or assessment does each document describe, how are limitations and defects recorded, and which statements can the tester actually support?
 
-### [[EICR]] (Electrical Installation Condition Report)
-
-Used for condition reporting on existing installations (not new work). Different from EIC/MEIWC.
-
-### Building Regulations Part P
-
-Applies to domestic installations where people permanently reside. Determines when notifiable work applies and what certification/notification is required.
-
-### Records and Retention
+## Records and retention
 
 - Keep copies of all certificates
-- Provide client copy
-- Retain your copy for insurance/audit purposes
-- Support defensibility if issues arise later
+- Provide the client with a copy
+- Retain your own copy for insurance and audit purposes
+- Records support defensibility if issues arise later
+
+## Resources
+
+- [GOV.UK Approved Document P](https://www.gov.uk/government/publications/electrical-safety-approved-document-p) — the official guidance on meeting Part P in England; sections 2–3 cover which dwellings and installations are in scope and which work is notifiable. (from [[Electrical Evidence Review - September 2026]])
+- [IET guidance publications list](https://electrical.theiet.org/guidance-and-codes-of-practice/publications-by-category/amendment-42026-to-bs-76712018-iet-wiring-regulations/bs-7671-and-guidance/) — the IET's current list of BS 7671 guidance, including the GN3 edition in print; the place to confirm which edition the chapter pointers above should be checked against. (from [[Electrical Evidence Review - September 2026]])
+
+## Related
+
+[[EICR]] · [[Part P]] · [[Building Regulations]] · [[BS 7671]] · [[GN3 Guidance Note 3]] · [[Inspection and Testing Fundamentals]] · [[Electrical Safety]] · [[Continuity Testing]] · [[BS EN 61557]] · [[Electrical Evidence Review - September 2026]] · [[Electrical Study Map]] · [[Electrics - Resources]]

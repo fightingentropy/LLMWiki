@@ -38,6 +38,7 @@ sources:
   - misc/X-Bookmarks.md
   - snapshots/1790106580663-7f3260814dfb/bookmarks/Index.md
   - snapshots/1790338863036-34f85df55e2f/bookmarks/Index.md
+  - snapshots/1790338863036-d5f1baaac670/bookmarks/Health & Psychology.md
 related:
   - X Bookmark Cleanup - 30 September 2026
   - Evergreen Lessons from X - September 2026
@@ -55,8 +56,21 @@ related:
   - AI Agents
   - Health Evidence
   - Market Performance Measurement
+  - X Bookmark Review - 30 September 2026
+  - Live X Bookmark Inventory - 30 September 2026
+  - Digital Security
+  - AI Infrastructure Economics
+  - Developer Resources
+  - Design & Aesthetics
+  - Equities
+  - Market Cycles
+  - Business Strategy
+  - Dating & Relationships
+  - Online Extremism and Evidence
+  - Water Filtration
+  - Hyperliquid
 created: 2026-04-18T00:00:00.000Z
-updated: '2026-09-30'
+updated: '2026-10-15'
 tags:
   - bookmarks
   - x-twitter
@@ -66,110 +80,90 @@ tags:
   - ai
   - markets
   - cross-domain
+summary: "Guide to Erlin's curated X and Chrome bookmarks: the ten category pages, how the collection was built, how to read its claims, and where it feeds the wiki."
 review_status: archive
-review_notes: >-
-  Source summary and attributed claims. Capture or edit dates do not establish
-  factual verification.
 ---
 
 # X-Bookmarks
 
-The Brain bookmark collection combines X posts and Chrome references in 10 topical Markdown notes. As of **2026-09-30**, those notes contain **936 structured entries** plus **15 bare design links**. The 22 September ingest added or revised 303 entries (297 net additions and six revisions), bringing the structured total from 624 to 921; one manually supplied post was added on 25 September, and 14 evergreen knowledge entries were added on 30 September. Two bare design links were already present upstream before the latest task. Entry totals are not counts of unique URLs or X post IDs.
+Erlin's bookmark collection gathers saved X posts and selected Chrome bookmarks into ten topical notes in the Brain vault. Each note has a catalog page in this wiki that lists every entry by theme with a description of what it is and why it was kept. Start from a category below, or [browse all current bookmarks](/bookmarks) to filter by category and search by post ID.
 
-## Collection
+## Categories
 
-- [[Bookmarks - AI & Agents]] — 135 entries; 37 added or revised by 22 September; 2 evergreen additions on 30 September.
-- [[Bookmarks - Design & Frontend]] — 131 entries; 18 added or revised by 22 September; 1 evergreen additions on 30 September.
-- [[Bookmarks - Developer Tools]] — 135 entries; 32 added or revised by 22 September; 3 evergreen additions on 30 September.
-- [[Bookmarks - Markets & Crypto]] — 135 entries; 37 added or revised by 22 September; 4 evergreen additions on 30 September.
-- [[Bookmarks - Business & Startups]] — 36 entries; 7 added or revised since the August snapshot.
-- [[Bookmarks - Health & Psychology]] — 52 entries; 24 added or revised on 22 September, plus one addition on 25 September.
-- [[Bookmarks - Culture & Ideas]] — 89 entries; 32 added or revised by 22 September; 1 evergreen additions on 30 September.
-- [[Bookmarks - Media & Inspiration]] — 112 entries; 60 added or revised since the August snapshot.
-- [[Bookmarks - Reference & Utilities]] — 58 entries; 23 added or revised by 22 September; 2 evergreen additions on 30 September.
-- [[Bookmarks - Personal & Life]] — 53 entries; 33 added or revised by 22 September; 1 evergreen additions on 30 September.
+- [[Bookmarks - AI & Agents]] — Prompting and skills guidance, coding-agent workflows, personal agent runtimes, security case studies, voice interfaces, local-inference benchmarks, model research and the economics of the AI labs.
+- [[Bookmarks - Design & Frontend]] — Interface components and pattern galleries, interaction and motion details, typography, WebGL, Three.js and Rive experiments, design files for coding agents, and a run of bare design-gallery links.
+- [[Bookmarks - Developer Tools]] — Infrastructure and self-hosting patterns, browser automation, macOS and Linux utilities, local AI and speech tools, web graphics, 3D research, app-platform references and data APIs.
+- [[Bookmarks - Markets & Crypto]] — Hyperliquid margin and liquidation mechanics, exchange and screener tools, trading process and psychology, sizing and backtesting arithmetic, microstructure, and macro, credit and AI-cycle theses.
+- [[Bookmarks - Business & Startups]] — Founder principles, product taste, AI and robotics business models, venture investors, sales leads and company setup.
+- [[Bookmarks - Health & Psychology]] — ADHD and sleep timing, mood and cognition, attention and habits, training, skin and hair, screening and hormones, nutrition and peptides, each tied to the research behind the post.
+- [[Bookmarks - Culture & Ideas]] — Reasoning and evidence, status and attention, platforms, politics and institutions, and contested claims about crime, race and gender, each with what it would take to treat the claim as fact.
+- [[Bookmarks - Media & Inspiration]] — Film, series and book recommendations, creative-coding and motion references, streaming and download utilities, and memes and clips kept for amusement.
+- [[Bookmarks - Reference & Utilities]] — Account-security checklists, privacy services, web tools, dashboards and public data, interactive explainers and a reading queue.
+- [[Bookmarks - Personal & Life]] — Life experiments, attention and career frameworks, outings, home and water-filter shortlists, and account consoles.
 
-Each category page provides key takeaways, the complete September change register, and links to related topics. Earlier entries remain in the original raw category files.
+The lasting lessons from the most recent round of X bookmarks (reasoning, trading process, engineering, privacy, AI-data provenance, voice administration, interactive explanation, ingredient literacy and deliberate nights out) are collected in [[Evergreen Lessons from X - September 2026]].
 
-The 25 September addition retains Hereafter's paternal-investment post, its quoted source, and the paper link in [[Bookmarks - Health & Psychology]], with an explicit limit on the evidence check. The category and index have new immutable captures; X bookmark state was neither checked nor changed.
+## Reading the entries
 
-## Curation model
+- Keeping a source does not make it true. Topic pages separate evidence, individual reports, speculation, demonstrations and ephemera.
+- Corrections and counterexamples stay attached to the claim they correct.
+- Images, videos and unresolved links are described only as far as their text allows; their contents are never invented.
+- Entries from different rounds were kept under different rules (see below). Entries from the keep-all rounds include entertainment, disputed claims, advertisements and low-confidence leads, labelled as claims or ephemera.
+- [[Personal Knowledge Management]] explains how this bookmark record differs from a factual knowledge page: the notes preserve selected references, while the wiki pages make their claims, tools, contradictions and connections easier to retrieve.
 
-- **Current batch, 2026-09-30:** retain only evergreen knowledge worth knowing, then clear the live X list. Fourteen entries from fifteen posts are retained; releases, forecasts, gossip, humour and unsupported clinical conclusions are omitted. See [[Evergreen Lessons from X - September 2026]].
-- **Historical policy, 2026-09-05 through 2026-09-25:** retain all reviewed X bookmarks, including entertainment, disputed claims, advertisements, and low-confidence leads.
-- **Superseded policy:** the July workflow rejected some material as low-value or unsupported. That historical filtering rule differed from the earlier September keep-all policy; it does not imply that the already-filtered July collection has been reconstructed.
-- Retention preserves a source, not its truth. Topic pages distinguish evidence, individual reports, speculation, demonstrations, and ephemera.
-- Keep corrections and counterexamples attached to the original claim. Do not invent the contents of images, videos, or unresolved links.
-- The September Chrome review had its own selection rules, recorded in the source index. “Keep all X bookmarks” should not be misread as a claim that every Chrome bookmark was imported.
-- The source index records curation and cleanup history. [[Personal Knowledge Management]] explains how that record differs from a factual knowledge page.
+## How the collection was built
 
-## July recovery additions
+- **March 2026 export.** The starting point was an export of 1,091 X bookmarks from @entropyholdings, dated 19 March 2026, kept in `misc/X-Bookmarks.md`. It is a historical record, separate from the current catalog; older wiki citations that give an entry number point into it.
+- **July 2026 review.** The export and the remaining live X bookmarks were reviewed entry by entry, finishing on 25 July 2026. This review rejected material judged low-value, redundant or unsupported. The later keep-all rule did not bring that rejected material back.
+- **Chrome review, September 2026.** Chrome bookmarks went through their own selection: dead destinations, redundant deep links and one-off substitutes were left out. "Keep all X bookmarks" never meant every Chrome bookmark was imported.
+- **Keep-all rounds, 5 to 25 September 2026.** Every reviewed X bookmark was kept, including entertainment, disputed claims, advertisements and low-confidence leads, and cleared from X once its post ID was confirmed in the notes. On 25 September one post was added by hand (the Hereafter paternal-investment post under Health below).
+- **Evergreen-only round, 30 September 2026.** The rule changed to keeping only knowledge worth knowing. Of 70 saved posts, 15 became 14 entries in seven categories; the two privacy posts became one entry. Release news, product hype, forecasts, rumours, gossip, humour, entertainment queues and unsupported clinical conclusions were left out, and entries from earlier rounds stayed in place. All 70 bookmarks were then removed from X.
 
-### Developer tools
+The 30 September round has its own pages: [[X Bookmark Review - 30 September 2026]] gives the first-pass verdict on all 70 posts, [[Live X Bookmark Inventory - 30 September 2026]] lists them, [[Evergreen Lessons from X - September 2026]] holds what was kept, and [[X Bookmark Cleanup - 30 September 2026]] records the removal.
 
-- [Cloudflare Email Service migration checklist](https://x.com/levelsio/status/2053482525780008997) — Inventory every send, centralize one provider adapter, import the old suppression list, canary a low-stakes message, and leave authentication mail until delivery is proven. Recheck current API, pricing, logs, and event-subscription documentation before migrating. See [[Developer_Resources]].
-- [Lean self-hosted web stack](https://x.com/levelsio/status/2052734824541016107) — Ubuntu and Nginx, automatic updates, cron, SQLite, vanilla web code, Cloudflare Tunnel and R2, Tailscale, OpenFreeMap, Stripe, and Hetzner. The source's traffic and cost claim remains an unverified self-report. See [[Developer_Resources]].
+## What the collection feeds
+
+### AI, agents and security
+
+- Personal-operation agents, voice-agent specialisation, browser runtimes, plan-grilling skills, cross-device control and bespoke data interfaces form the [[AI Agents]] cluster.
+- Review prompts, voice onboarding, local models, remote access, browser runtimes and version-sensitive release notes extend [[AI Agents]] and [[Developer_Resources|Developer Resources]].
+- The gym-booking API incident, connected brokerage tools, account-recovery guidance and deliberately relaxed Computer Use targets sharpen the least-privilege and approval model in [[Digital Security]].
+- Adoption is measured as a distribution of verified workflow use, not account activations. Compute demand, pricing pressure and data-centre power constraints are synthesised in [[AI Infrastructure Economics]].
+
+### Developer tools and products
+
+- [Cloudflare Email Service migration checklist](https://x.com/levelsio/status/2053482525780008997) — A durable sequence: inventory every send, centralise one provider adapter, import the old provider's [suppression list](https://x.com/levelsio/status/2053489575423557653), canary a low-stakes transactional message, and leave authentication mail until delivery is proven. Recheck the [REST API](https://developers.cloudflare.com/email-service/api/send-emails/rest-api/), [pricing](https://developers.cloudflare.com/email-service/platform/pricing/), logs and product state before migrating: Cloudflare now offers [delivery-event subscriptions](https://developers.cloudflare.com/email-service/platform/event-subscriptions/) and [Activity-log previews](https://developers.cloudflare.com/changelog/product/email-service/), so parts of the post's beta warning are stale. See [[Developer_Resources|Developer Resources]]. _(@levelsio)_
+- [Lean self-hosted web stack](https://x.com/levelsio/status/2052734824541016107) — A practical checklist built on Ubuntu and Nginx, automatic updates, cron, SQLite, vanilla web code, Cloudflare Tunnel and R2, Tailscale, OpenFreeMap, Stripe and a low-cost Hetzner VPS. The quoted "about $5/month" for "about 5M unique visitors" is the author's unverified self-report, not a capacity or cost benchmark. See [[Developer_Resources|Developer Resources]]. _(@levelsio)_
+- [[Compositor]], [[Helium Browser]], [[Omarchy iCloud Photos]] and [[Quicker]] each have their own entity page.
+- Image-to-CAD, OpenTools Studio and VAULT/Gridfinity connect through [[3D Printing and Digital Fabrication]].
 
 ### Markets
 
-- [Memory equities and the capacity response](https://x.com/jukan05/status/2078462124486283755) — A watchlist scenario asking whether shares can price announced capacity three or four quarters before memory prices peak. Track capex, clean-room and wafer-start timing, product mix, utilization, contract-price revisions, and HBM wafer intensity. See [[Equities]] and [[Market Cycles]].
+- [Memory equities can discount capacity before pricing peaks](https://x.com/jukan05/status/2078462124486283755) — Jukan asks whether memory shares can peak three or four quarters before memory prices, as announced fab capacity enters the horizon. SK hynix's [Yongin investment](https://news.skhynix.com/new-facility-investment-for-yongin-semiconductor-cluster/) and [June 2026 supply explanation](https://news.skhynix.com/fact-05/) support tracking the capacity response, not the post's timing conclusion. Keep it as a watchlist scenario: follow capex, clean-room and wafer-start timing, product mix, utilisation, contract-price revisions, and whether HBM's larger wafer needs absorb nominal capacity. See [[Equities]] and [[Market Cycles]]. _(@jukan05)_
+- [[Market Performance Measurement]] separates account identity, displayed PnL and risk.
+- [[Hyperliquid]] keeps the funding-trade correction and the manual-borrows announcement.
+- Market notes cover backtest overfitting, fragile funding-rate signals, leverage as a compressed deadline, post-move trading psychology, Hyperliquid and [[TradeXYZ]] value accrual, AI capex and power pricing. See [[Crypto Trading]] and [[Trading_Psychology|Trading Psychology]].
 
 ### Business
 
-- [Series A investor outcome snapshot](https://x.com/ColeRotman/status/1928485912113037432) — A creator-compiled sourcing lead covering Doug Leone, Hemant Taneja, Keith Rabois, and Marc Andreessen. It publishes no dataset or inclusion rules, so use it as a lead list rather than a ranking. See [[Business_Strategy]].
+- [Series A investor outcome snapshot (May 2025)](https://x.com/ColeRotman/status/1928485912113037432) — A creator-compiled shortlist: Doug Leone (Nubank, Wiz, Cyera), Hemant Taneja (Livongo, Gusto, Commure), Keith Rabois (Affirm, Faire, Ramp) and Marc Andreessen (Samsara, Applied Intuition, SSI). The post publishes no dataset or inclusion rules, so use it as a deal-sourcing lead, not a ranking. See [[Business_Strategy|Business Strategy]]. _(@ColeRotman)_
 
-### Media and relationships
+### Health
 
-- [Off Campus: consent as romantic characterization](https://x.com/onfilmdiaries/status/2065829523128467634) — Restraint communicates intimacy without a speech about virtue. See [[Dating_and_Relationships]].
-- [Titanic: rejecting possession](https://x.com/QUEENP0P/status/2065472136748363795) — Rose reverses Cal's insult into a rejection of status, possession, and control. See [[Dating_and_Relationships]].
+- The health entries separate clinical evidence from before-and-after images, clips, anecdotes, ex-vivo results and overbroad causal claims. See [[Health Evidence]].
+- [[ADHD]], [[Circadian_Rhythm|Circadian Rhythm]] and [[Health Evidence]] distinguish a circadian phenotype from a universal redefinition, and keep opposing stimulant experiences as anecdotes.
+- Limerence, mobile-internet blocking, isolation loops, depression-related cognition, movement references and deliberate boredom extend [[Mental_Health|Mental Health]], [[ADHD]] and [[Fitness]].
+- Countertop filtration versus reverse osmosis is kept as a purchasing framework, not a choice. See [[Water Filtration]].
+- [Perceived resemblance, psychopathic traits, and paternal investment](https://x.com/houseofhereaftr/status/2103150600753950923) — Hereafter's post on a [2020 study](https://doi.org/10.1016/j.paid.2020.109879) of 158 Romanian father–teen pairs that linked perceived resemblance to reported paternal investment, with a stronger facial-resemblance association at higher psychopathy scores; personality similarity also contributed. It quotes [an earlier post](https://x.com/Psikobilim_/status/2102824105024332196), and the [university abstract](https://www.research.unipd.it/handle/11577/3359563) summarises the paper. Survey associations do not establish causation, change over time, clinical diagnoses or a motive of self-love; the full paper and any replication are unchecked. Filed in [[Bookmarks - Health & Psychology]]. _(@houseofhereaftr)_
 
-## Capture and ingestion state
+### Culture, media and relationships
 
-- The current Brain index was copied verbatim to `raw/clippings/bookmark-updates-2026-09-22/Index.md`.
-- Ten accompanying clippings preserve every nonblank added or revised source line, with source and baseline hashes. Existing `raw/bookmarks/` files are unchanged; the dated clippings extend them rather than replacing them.
-- The 921 structured-entry total was measured on 22 September and matches that captured Brain index. Six changed entries revise earlier annotations, so 303 changed entries produce 297 net additions. The 25 September captures record the single addition and current 922-entry total.
-- The source records 155 X bookmark markers cleared on 2026-09-17 and 30 on 2026-09-22 after exact-ID coverage checks, with zero remaining at each recorded verification. These are historical task results; this wiki ingest did not recheck or change X or Chrome.
-- Source clippings and generated pages are local wiki content. This ingest does not enable scheduled sync or publish a hosted build.
+- Demographic, racial, religious and conspiratorial posts are kept with explicit evidence boundaries in [[Online Extremism and Evidence]], not promoted as facts about groups.
+- Design and media references favour coherent systems, tactile interaction, native-feeling mobile details, historical information design, and art direction over context-free copying. See [[Design_and_Aesthetics|Design & Aesthetics]].
+- The culture, media and personal catalog pages cross-link to reading depth, authentication fatigue, household shortlists and evidence quality; image-only posts and ephemera are listed without guessing their contents.
+- [Off Campus: consent as romantic characterization](https://x.com/onfilmdiaries/status/2065829523128467634) — In season 1, episode 4, Garrett turns away while Hannah changes because seeing her is not the same as being invited to look. Restraint communicates intimacy without a speech about virtue. See [[Dating_and_Relationships|Dating & Relationships]]. _(@onfilmdiaries)_
+- [Titanic: rejecting possession](https://x.com/QUEENP0P/status/2065472136748363795) — Rose turns Cal's attempted sexual insult into a rejection of status, possession and his control; a compact, character-defining dialogue reference. See [[Dating_and_Relationships|Dating & Relationships]]. _(@QUEENP0P)_
 
-## September 2026 additions
+## Related
 
-- **AI and developer workflows:** review prompts, voice onboarding, local models, remote access, browser runtimes, and version-sensitive release notes extend [[AI Agents]] and [[Developer_Resources]].
-- **Product references:** [[Compositor]], [[Helium Browser]], [[Omarchy iCloud Photos]], and [[Quicker]] now have entity pages.
-- **Physical projects:** image-to-CAD, OpenTools Studio, and VAULT/Gridfinity connect through [[3D Printing and Digital Fabrication]].
-- **Markets:** [[Market Performance Measurement]] separates account identity, displayed PnL, and risk; [[Hyperliquid]] retains the funding-trade correction and the manual-borrows announcement.
-- **Health:** [[ADHD]], [[Circadian_Rhythm]], and [[Health Evidence]] distinguish a circadian phenotype from a universal redefinition, and preserve opposing stimulant experiences as anecdotes.
-- **Culture, media, and personal references:** source registers retain all new links, including unresolved images and ephemera, with cross-links for reading depth, authentication fatigue, household shortlists, and evidence quality.
-
-## August 2026 additions
-
-### AI, agents, and security
-
-- Personal-operation agents, voice-agent specialization, browser runtimes, plan-grilling skills, cross-device control, and bespoke data interfaces now form a coherent [[AI Agents]] cluster.
-- The gym-booking API incident, connected brokerage tools, account-recovery guidance, and deliberately relaxed Computer Use targets sharpen the least-privilege and approval model in [[Digital Security]].
-- Adoption is measured as a distribution of verified workflow use, not account activations. Compute demand, pricing pressure, and data-centre power constraints are synthesized in [[AI Infrastructure Economics]].
-
-### Health and personal decisions
-
-- The health batch consistently separates clinical evidence from before-and-after images, clips, anecdotes, ex-vivo results, and overbroad causal claims. See [[Health Evidence]].
-- Countertop filtration versus reverse osmosis is retained as a purchasing framework, not a selection. See [[Water Filtration]].
-- Limerence, mobile-internet blocking, isolation loops, depression-related cognition, movement references, and deliberate boredom extend [[Mental_Health]], [[ADHD]], and [[Fitness]].
-
-### Markets and culture
-
-- New market notes cover backtest overfitting, fragile funding-rate signals, leverage as a compressed deadline, post-move trading psychology, Hyperliquid/[[TradeXYZ]] value accrual, AI capex, and power pricing.
-- Demographic, racial, religious, and conspiratorial posts are retained with explicit evidence boundaries in [[Online Extremism and Evidence]], rather than promoted as group facts.
-- New design and media references emphasize coherent systems, tactile interaction, native-feeling mobile details, historical information design, and art direction over context-free copying.
-
-## Related pages
-
-- [[AI Agents]] · [[Digital Security]] · [[AI Infrastructure Economics]] · [[Health Evidence]]
-- [[Water Filtration]] · [[Online Extremism and Evidence]] · [[Developer_Resources]] · [[Design_and_Aesthetics]]
-- [[Equities]] · [[Market Cycles]] · [[Business_Strategy]] · [[Dating_and_Relationships]] · [[Crypto Trading]] · [[Trading_Psychology]]
-
-## Complete catalog and history
-
-[Browse all current bookmarks](/bookmarks) for individual records, category filtering and post-ID search. The complete September category captures are linked by the ten category source pages. The March export has also been restored byte-for-byte from repository history so older numbered citations remain traceable. That export is historical; its 1,091-item count is separate from the 935-record current curated catalog (922 structured entries plus 13 bare links).
-
-## Evergreen-only batch — 30 September 2026
-
-Reviewed all 70 live saved posts and retained 14 distilled entries from 15 posts in seven categories. The two privacy posts became one entry. Existing category contents were preserved. The new index and seven category revisions are pinned above; [[Evergreen Lessons from X - September 2026]] connects the lasting knowledge to the corresponding topics. All 70 live bookmark markers were removed; the freshly loaded and reloaded X Bookmarks interface confirmed an empty list. See [[X Bookmark Cleanup - 30 September 2026]].
+[[AI Agents]] · [[Digital Security]] · [[AI Infrastructure Economics]] · [[Health Evidence]] · [[Water Filtration]] · [[Online Extremism and Evidence]] · [[Developer_Resources|Developer Resources]] · [[Design_and_Aesthetics|Design & Aesthetics]] · [[Equities]] · [[Market Cycles]] · [[Business_Strategy|Business Strategy]] · [[Dating_and_Relationships|Dating & Relationships]] · [[Crypto Trading]] · [[Trading_Psychology|Trading Psychology]] · [[Personal Knowledge Management]] · [[Evergreen Lessons from X - September 2026]] · [[X Bookmark Cleanup - 30 September 2026]]

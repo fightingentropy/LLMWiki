@@ -11,74 +11,84 @@ related:
   - Dating & Relationships
   - Design & Aesthetics
   - Trading Psychology
+  - Charles Bukowski
+  - Nassim Taleb
+  - Markets
+  - Rates
+  - Economics
+  - Political Commentary
 created: 2026-04-18T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - bookmarks
   - youtube
   - videos
   - timestamps
   - quotes
+  - motivation
+  - happiness
 review_status: archive
-review_notes: >-
-  Source summary and attributed claims. Capture or edit dates do not establish
-  factual verification.
+summary: Fourteen saved YouTube moments on motivation, happiness, delusion, intimacy and inflation, each with Erlin's takeaway and the timestamp it points at.
 ---
 
 # Youtube
 
-Curated YouTube bookmark list — timestamps and links the human has saved with short commentary. Each entry is a deep-link into a specific moment; treat the commentary as the human's takeaway, not a summary of the video.
+Erlin's saved YouTube links. Most are deep links into one moment of a longer video, and the title is the thought he wanted to keep, not the video's own title. Read each entry as his takeaway from that moment. Where the note adds a comment, it is quoted as written. The time given with each entry is the moment the link opens at.
 
-## School, Rationality, Motivation
+## Happiness, meaning and doing epic shit
 
-- **[Irrational, not insane](https://youtu.be/PAWMoQNq3W0?t=611)** — human note: "he means irrational (but makes great point about school)." A correction to the speaker's word choice alongside agreement with the school critique.
-- **[How can you lack motivation?](https://youtu.be/ONs2tlD1YgE?t=2074)** — bookmarked as a reframe on motivation; see [[Self_Improvement]], [[Mental_Health]].
+Three moments from the same long conversation (video `Gk8EGWoGnEQ`), saved a few minutes apart. Together they make one argument: happiness is not the goal, action is.
 
-## Happiness, Meaning, Epic Shit
+- ["My Goal in life is not necessarily to be happy. My goal in life is to do epic shit."](https://youtu.be/Gk8EGWoGnEQ?t=8918) — At 2:28:38. The line Erlin saved verbatim. Agency and accomplishment as the orienting goal, instead of optimising for feeling good. See [[Philosophy_and_Meaning]].
+- [Views on happiness](https://youtu.be/Gk8EGWoGnEQ?t=9084) — At 2:31:24. The speaker's views on happiness. Saved without further comment.
+- [The only way is through](https://youtu.be/Gk8EGWoGnEQ?t=9136) — At 2:32:16. No shortcuts: the path runs through the difficulty, not around it.
 
-Three timestamps from the same video (`Gk8EGWoGnEQ`) cluster around the same theme — happiness is not the goal, action is:
+## Motivation, school and rationality
 
-- **[Views on happiness](https://youtu.be/Gk8EGWoGnEQ?t=9084)**
-- **[The only way is through](https://youtu.be/Gk8EGWoGnEQ?t=9136)** — no shortcuts; the path runs through the difficulty, not around it.
-- **["My goal in life is not necessarily to be happy. My goal in life is to do epic shit."](https://youtu.be/Gk8EGWoGnEQ?t=8918)** — agency and accomplishment as orienting goal, not hedonic optimization. See [[Philosophy_and_Meaning]].
+- [How can you lack motivation?](https://youtu.be/ONs2tlD1YgE?t=2074) — At 34:34. Saved as a reframe on motivation: the title's question treats lacking it as the odd case that needs explaining. See [[Self_Improvement]] and [[Mental_Health]].
+- [He means irrational, but makes a great point about school](https://youtu.be/PAWMoQNq3W0?t=611) — At 10:11. Erlin's note, verbatim: "he means irrational (but makes great point about school)". A correction of the speaker's word choice, alongside agreement with his critique of school.
 
-## Delusion & Soul in the Game
+## Delusion and soul in the game
 
-- **[Club fun facts](https://www.youtube.com/watch?v=pR86kI5aDFA&t=672s)** and **[Why delusion is important](https://www.youtube.com/watch?v=pR86kI5aDFA&t=3349s)** — same source video. Bookmarked note on the functional role of self-belief that exceeds evidence. See [[Self_Improvement]], [[Trading_Psychology]].
-- **[Soul in the game](https://youtu.be/a3YOMe4PnKE)** — [[Nassim_Taleb]]'s skin-in-the-game extended: not just risk exposure, but caring about the output beyond personal stake.
+- [Why delusion is important](https://www.youtube.com/watch?v=pR86kI5aDFA&t=3349s) — At 55:49. The functional role of self-belief that runs ahead of the evidence: delusion as a tool for getting things done, not a failure of self-assessment. See [[Self_Improvement]] and [[Trading_Psychology]].
+- [Club fun facts](https://www.youtube.com/watch?v=pR86kI5aDFA&t=672s) — At 11:12, from the same video. Saved without a note.
+- [Soul in the game](https://youtu.be/a3YOMe4PnKE) — [[Nassim_Taleb]]'s skin in the game, extended: not just having risk exposure to the outcome, but caring about the output beyond your personal stake. The [[Nassim_Taleb]] page carries the same framing: operators who care outperform operators who are merely paid.
 
-## Pragmatism Over Truth
+## Pragmatism over truth
 
-- **["What's useful is more important than what is true"](https://youtu.be/sYj0exUT_Mw?t=80)** — pragmatist frame. Echoes the psychedelics/false-insight argument in [[Mental_Health]]: usefulness > truthfulness, if aimed well.
+- ["What's useful is more important than what is true"](https://youtu.be/sYj0exUT_Mw?t=80) — At 1:20. A pragmatist frame: judge an idea by what it lets you do, not only by whether it is accurate. It echoes the psychedelics and false-insight argument in [[Mental_Health]]: a felt insight can be useful without being true, so long as it is aimed well.
 
-## Inflation
+## Life advice
 
-- **[What is inflation](https://www.youtube.com/watch?v=lO5-N5NmAtQ)** — primer bookmark, no commentary. Connects to [[Markets]], [[Rates]].
-
-## Bukowski & Life Advice
-
-- **[Bukowski's advice is funny but might work for a lot of people](https://www.youtube.com/watch?v=mpRUnavb2_0)** — human note suggests the advice is reductive-sounding but operationally effective. See [[Charles_Bukowski]].
+- [Bukowski's advice is funny but might work for a lot of people](https://www.youtube.com/watch?v=mpRUnavb2_0) — Erlin's title is his take: [[Charles_Bukowski]]'s advice sounds crude and reductive, but as a rule of thumb it is operationally effective for many people.
 
 ## Intimacy
 
-- **[True intimacy](https://youtu.be/eLj9HrKfcYE?t=525)** — on what intimacy actually requires vs. its performed versions. See [[Dating_and_Relationships]].
+- [True intimacy](https://youtu.be/eLj9HrKfcYE?t=525) — At 8:45. On what intimacy actually requires, as opposed to its performed versions. See [[Dating_and_Relationships]].
 
-## Music Video Reference
+## Inflation
 
-- **[Daisy Gray — Wicked Game](https://www.youtube.com/watch?v=L4VU-AwxzSY&lc=Ugy8WDwPpqxtPfUrth94AaABAg)** — Chris Isaak cover. The bookmark is a specific comment/PSA from the creator framing the cigarette imagery as "juxtaposition between beauty and toxicity" (90's aesthetic tribute, not smoking advocacy). Beauty-toxicity duality maps to [[Design_and_Aesthetics]].
+- [What is inflation](https://www.youtube.com/watch?v=lO5-N5NmAtQ) — A primer, saved without a note. Background for [[Markets]], [[Rates]] and [[Economics]].
+
+## Music
+
+- [Daisy Gray - Wicked Game](https://www.youtube.com/watch?v=L4VU-AwxzSY&lc=Ugy8WDwPpqxtPfUrth94AaABAg) — A cover of Chris Isaak's "Wicked Game". The link opens on a specific comment: the creator's PSA about the cigarette in the video, which Erlin kept in full:
+
+  > PSA: I do not smoke cigarettes nor do I support the promotion of smoking, the use of the cigarette was to pay tribute to the 90’s aesthetic and culture, as well as show the juxtaposition between beauty and toxicity (as in the relationship that Chris Isaak wrote about) the beauty of the ocean, mixed with the toxicity of the smoking. Smoking is not cool guys
+
+  The cigarette is a 90s aesthetic tribute and a beauty-against-toxicity contrast, not smoking advocacy. That duality is the kind of aesthetic tension collected in [[Design_and_Aesthetics]].
 
 ## Culture
 
-- **[Black Fatigue](https://youtu.be/fd7FTq40yj8)** — cultural commentary bookmark; no human note. See [[Political_Commentary]].
+- [Black Fatigue](https://youtu.be/fd7FTq40yj8) — Cultural commentary, saved without a note. See [[Political_Commentary]].
 
----
+## Threads that run through the list
 
-## Themes across the bookmarks
-
-- **Action over optimization** — happiness is downstream of doing epic shit; the only way is through.
+- **Action over optimisation** — happiness is downstream of doing epic shit; the only way is through.
 - **Delusion as a tool** — functional self-belief, not accurate self-assessment.
-- **Usefulness > truth** — pragmatism as a working epistemology.
-- **Beauty / toxicity** — aesthetic tension, not resolution.
+- **Usefulness over truth** — pragmatism as a working epistemology.
+- **Beauty and toxicity** — aesthetic tension held, not resolved.
 
----
-Related: [[Philosophy_and_Meaning]], [[Self_Improvement]], [[Mental_Health]], [[Dating_and_Relationships]], [[Trading_Psychology]], [[Charles_Bukowski]], [[Nassim_Taleb]], [[Design_and_Aesthetics]]
+## Related
+
+[[Philosophy_and_Meaning]] · [[Self_Improvement]] · [[Mental_Health]] · [[Dating_and_Relationships]] · [[Design_and_Aesthetics]] · [[Trading_Psychology]] · [[Charles_Bukowski]] · [[Nassim_Taleb]] · [[Markets]] · [[Rates]] · [[Economics]] · [[Political_Commentary]]

@@ -591,7 +591,7 @@ function PageView({
 
           {page.summary&&<p className="article-summary">{page.summary}</p>}
           {Boolean(page.reviewed||page.reviewNotes||page.sourceGaps?.length)&&<div className="reader-note"><strong>{page.reviewStatus==='verified'?'Evidence reviewed':page.reviewStatus==='archive'?'Source archive':'Review note'}</strong>{page.reviewed&&` · ${page.reviewed}`}<div>{page.reviewNotes}</div>{page.sourceGaps?.map(g=><div key={g}>Historical source unavailable: {g}</div>)}</div>}
-          <div ref={contentRef}><ArticleContent html={page.html} collapsed={page.type==='source'&&(page.wordCount||0)>2000}/></div>
+          <div ref={contentRef}><ArticleContent html={page.html} collapsed={page.type==='source'&&(page.wordCount||0)>5000}/></div>
 
           {(page.related?.length > 0 || page.sources?.length > 0) && (
             <div className="page-footer-blocks">
@@ -655,7 +655,7 @@ function Home({pages,recents}:{pages:PageSummary[];recents:string[]}) {
  const recent=recents.map(slug=>pages.find(p=>p.slug===slug)).filter((p):p is PageSummary=>!!p).slice(0,6);
  const domains=[...new Set(content.map(p=>p.domain))].sort();
  const list=(items:PageSummary[])=><div className="home-list">{items.map(p=><a key={p.slug} className="home-list-item" href={'/page/'+p.slug}><span className="sidebar-glyph">{typeGlyph(p.type)}</span><span className="home-list-title">{p.title}</span><span className="home-list-date">{p.referencedBy||0} references</span></a>)}</div>;
- return <div className="main"><div className="home-hero"><h1>Brain Wiki</h1><p>Ideas, sources and useful answers across {domains.length} subjects.</p><div className="source-actions"><a href="/bookmarks">Browse bookmarks →</a><a href="/sources">Original sources →</a><a href="/page/wiki-overview">Wiki overview →</a></div></div>
+ return <div className="main"><div className="home-hero"><h1>Brain Wiki</h1><p>Ideas, sources and useful answers across {domains.length} subjects.</p><div className="source-actions"><a href="/page/wiki-index">Start here: the index →</a><a href="/bookmarks">Browse bookmarks →</a><a href="/sources">Original sources →</a><a href="/page/wiki-overview">Wiki overview →</a></div></div>
   <div className="stats-row">{[['source','Sources'],['entity','Entities'],['topic','Topics'],['analysis','Analyses']].map(([type,label])=><div className="stat" key={type}><div className="stat-number">{pages.filter(p=>p.type===type).length}</div><div className="stat-label">{label}</div></div>)}</div>
   <div className="home-row"><section><div className="domain-title">{recent.length?'Continue reading':'Most referenced'}</div>{list(recent.length?recent:mostReferenced)}</section>
    <section><div className="domain-title">Recent activity<a className="domain-more" href="/timeline">Timeline →</a></div><div className="home-list">{timelineError&&<p role="alert">Recent activity could not load. <button onClick={retryTimeline}>Retry</button></p>}{!timelineData&&!timelineError&&<p role="status">Loading activity…</p>}{timeline.slice(0,3).map((e,i)=><a className="home-list-item activity-item" href="/timeline" key={i}><span className="home-list-title"><small>{e.date} · {e.op}</small>{e.detail}</span></a>)}</div></section></div>

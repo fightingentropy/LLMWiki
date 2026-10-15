@@ -644,6 +644,25 @@ button { font-family: inherit;
   text-decoration-color: var(--text-muted);
 }
 .page-content a[target="_blank"]:hover { text-decoration-color: var(--text); }
+/* External links (rendered with rel="noopener noreferrer"): make the link title read as a link and stand out from its description. */
+.page-content a[rel~="noopener"] {
+  color: var(--text);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--text-muted);
+  transition: text-decoration-color 0.1s;
+}
+.page-content a[rel~="noopener"]:hover { text-decoration-color: var(--text); }
+.page-content a[rel~="noopener"]::after {
+  content: "\2197";
+  font-size: 0.72em;
+  font-weight: 400;
+  margin-left: 2px;
+  color: var(--text-muted);
+  text-decoration: none;
+  display: inline-block;
+}
 .page-content hr {
   border: none;
   border-top: 1px solid var(--border);

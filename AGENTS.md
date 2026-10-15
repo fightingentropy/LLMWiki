@@ -82,14 +82,14 @@ When the human adds a new source to `raw/`:
 
 1. Read the source file completely.
 2. Discuss key takeaways with the human if they want.
-3. Create a source summary page in `wiki/sources/`.
+3. Create or extend the source page in `wiki/sources/` as a resource bank: every link with a description, organised by theme.
 4. Create or update entity pages for any people, tools, or resources mentioned.
 5. Create or update topic pages for concepts and themes.
 6. Update cross-links across all touched pages.
 7. Update `wiki/INDEX.md` with new/changed pages.
 8. Append an entry to `log.md`.
 
-A single source may touch 5-15 wiki pages. Be thorough.
+A single source may touch 5-15 wiki pages. Be thorough. Fold new material into the thematic sections of existing pages; never append a dated section.
 
 ### Query
 
@@ -124,11 +124,21 @@ These can be resolved automatically; the LLM should additionally watch for issue
 
 ## Writing Style
 
-- Factual and concise. No filler.
-- Preserve the human's voice when quoting from sources; these are personal notes, not academic papers.
-- Flag contradictions explicitly rather than silently resolving them.
+The wiki is a knowledge resource and a resource bank. A reader should be able to learn the subject from a page and open every saved link knowing what it is. Pages carry knowledge; `log.md` carries process.
+
+- Factual and concise. No filler. Short sentences, plain English.
+- Organise every page by theme. Never by ingest date or batch: no "August 2026 additions" sections, no dated change registers. A date appears only when the date is the fact (publication, event, correction).
+- No process narration on pages: nothing about captures, snapshots, retention dates, archive numbers, entry counts, what was or was not changed externally, or how a page was produced. Record that in `log.md`.
+- Every link gets a description: `- [Title](URL) — what it is and why it is worth opening.` Attribute X posts with the handle in italics at the end: `_(@handle)_`. Nothing else after the description.
+- Source pages for bookmark categories and link collections cover every entry of the latest raw capture, grouped by theme. Source pages for note archives keep every quote, take and table from the note, grouped by theme, and list every link in the note.
+- Caveats are one short clause, stated once where they change what the reader should do. Not per line. Health and electrical pages keep safety caveats once per section.
+- Never invent what a link contains. Describe from the annotation, the title, the surrounding note, or the URL itself; otherwise write "Saved without a note."
+- Preserve the owner's voice when quoting from sources; these are personal notes, not academic papers. Quote verbatim where the source is a quote, joke or take.
+- Flag contradictions explicitly rather than silently resolving them. Keep corrections, labelled "Correction:" with the date of the correction.
 - Use bullet points for lists of facts; use prose for synthesis and analysis.
 - When a claim comes from a specific source, cite it: `(from [[Source Name]])`.
+- Every page has a one-sentence `summary:` in frontmatter saying what the page gives the reader. Keep `review_status`, `reviewed`, `review_due` and `source_gaps` honest; do not add review statuses that were not earned, and do not pad `review_notes` with boilerplate.
+- Say "Erlin's notes" or "the note", not "the human".
 
 ## Domains
 

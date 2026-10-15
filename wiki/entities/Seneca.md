@@ -15,39 +15,44 @@ related:
   - Personal Knowledge Management
   - Bookmarks - Culture & Ideas
 created: 2026-04-18T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - stoic
   - philosopher
   - roman
   - wealth
   - wisdom
+  - reading
+summary: "Seneca's lines on imagined suffering and wealth, how they tie into the wiki's mental-health and money themes, and a post on depth over scattered reading."
 ---
 
 # Seneca
 
-Lucius Annaeus Seneca (c. 4 BC – 65 AD). Roman Stoic philosopher, statesman, and writer. The sister reference to [[Marcus_Aurelius]] in [[Quotes]].
+Lucius Annaeus Seneca (c. 4 BC – 65 AD), Roman Stoic philosopher, statesman and writer. In this wiki he is the sister reference to [[Marcus Aurelius]] in [[Quotes]], load-bearing for two themes: suffering that is mostly imagined, and wealth as a tool rather than a master.
 
-## Recurring lines (from [[Quotes]])
+## Key ideas
 
-- **On imagined suffering:** "We suffer more often in imagination than in reality."
-- **On wealth:** "Wealth is the slave of a wise man and a master of a fool."
+### Imagined suffering
 
-## Why he's load-bearing in the wiki
+- "We suffer more often in imagination than in reality." (from [[Quotes]])
+- A direct match for the [[Mental Health]] and [[Self-Improvement]] theme that most suffering is self-inflicted.
+- [[Quotes]] echoes the same idea in a list of short lines, with no name attached: "You suffer more in your mind than in reality."
 
-- **Imagined suffering** — direct match for the [[Mental_Health]] / [[Self_Improvement]] theme that most suffering is self-inflicted. Echoed in [[Quotes]] as "you suffer more in your mind than in reality" (same idea, anonymous in source).
-- **Wealth as tool vs. master** — sits alongside [[Alex_Hormozi]]'s "Rich people buy time. Poor people buy stuff." and the [[Philosophy_and_Meaning]] observation on Perelman ("money is ALL they have").
+### Wealth as tool, not master
 
-## Cross-links
+- "Wealth is the slave of a wise man and a master of a fool." (from [[Quotes]])
+- It sits alongside [[Alex Hormozi]]'s line in [[Quotes]]: "Rich people buy time. Poor people buy stuff. Ambitious people buy skills. Lazy people buy distraction."
+- It also sits alongside the [[Philosophy_and_Meaning|Philosophy & Meaning]] observation on Grigori [Perelman](https://www.youtube.com/watch?v=-H8pu0aA9Cs): he "may have 'looked broke'" but had his internal spine and core principles, whereas many rich people "are so broke that money is ALL they have." (from [[Quotes]])
 
-- [[Philosophy_and_Meaning]]
-- [[Marcus_Aurelius]]
-- [[Self_Improvement]]
-- [[Mental_Health]]
+### Depth over scattered reading
 
----
-Related: [[Quotes]], [[Philosophy_and_Meaning]], [[Marcus_Aurelius]], [[Self_Improvement]], [[Mental_Health]]
+A saved post by The Cultural Tutor (@oldbooksguy) connects a modern information-overload screenshot to Seneca's Letter 2 to Lucilius. The note reads it as depth over constantly switching books: moving among many books and authors can stop ideas from taking root. It should not be read as a verbatim ancient description of smartphones or feeds. The reusable connection is developed in [[Personal Knowledge Management]]. (from [[Bookmarks - Culture & Ideas]])
 
-## Reading depth reference
+## Links
 
-A September bookmark connects a modern information-overload screenshot to Seneca's Letter 2 to Lucilius. The saved note interprets it as depth over constantly switching books; the source should not be read as a verbatim ancient description of smartphones or feeds. The reusable connection is developed in [[Personal Knowledge Management]]. (from [[Bookmarks - Culture & Ideas]])
+- [Seneca on scattered reading and information abundance](https://x.com/oldbooksguy/status/2094109372410741105) — The Cultural Tutor's screenshot modernizes a theme from Letter 2 to Lucilius: constant movement among many books and authors can stop ideas from taking root. Worth opening for the depth-over-breadth argument. _(@oldbooksguy)_
+- [Grigori Perelman video](https://www.youtube.com/watch?v=-H8pu0aA9Cs) — YouTube video linked on Perelman's name in the note's passage on wealth. Saved without a note of its own.
+
+## Related
+
+[[Marcus Aurelius]] · [[Quotes]] · [[Philosophy_and_Meaning|Philosophy & Meaning]] · [[Self-Improvement]] · [[Mental Health]] · [[Alex Hormozi]] · [[Personal Knowledge Management]] · [[Bookmarks - Culture & Ideas]]

@@ -10,84 +10,102 @@ related:
   - Market Regime
   - Gold
   - Cross-Asset Analysis
+  - Markets - Brief
+  - Equities
+  - Credit
+  - Commodities
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - rates
   - real-yields
   - inflation
   - macro
   - opportunity-cost
+  - breakevens
+summary: "What real yields are, how they drive equities, gold and credit, the main real-yield regimes, and how to monitor them."
 ---
 
-## Overview
-Real yields (nominal rates minus inflation) are the foundation of all asset pricing. Rising real yields is bearish across all risk assets.
+# Real Yields
 
-## What Are Real Yields?
-- **Formula**: Nominal yield - expected inflation
-- **Example**: 4% nominal 10Y treasury - 2.5% expected inflation = 1.5% real yield
-- **Importance**: Real return to savers, cost of capital, discount rate for equities/commodities
+Real yields are nominal rates minus inflation. This wiki treats them as the foundation of all asset pricing: they set the real return to savers, the cost of capital and the discount rate for equities and commodities. Rising real yields are bearish across all risk assets; falling or negative real yields support them. The daily market brief template lists real yields as one of the items in its Rates read, alongside the front end, long end, curve and implied policy path (from [[Markets - Brief]]).
 
-## Real Yields by Asset Class
+## The definition
 
-### 10Y Real Yield (Most Important)
-- **What it measures**: Long-run real cost of capital, inflation-adjusted return
-- **Drives**: Equity multiples, commodity prices, growth asset values
-- **Rising real yields**: Bearish for equities (higher discount rate), bearish for gold (higher opportunity cost)
-- **Falling real yields**: Bullish for equities (lower discount rate), bullish for gold (lower opportunity cost)
+- **Formula**: nominal yield − expected inflation.
+- **Example**: a 4% nominal 10Y Treasury − 2.5% expected inflation = 1.5% real yield.
+- **Why it matters**: it is the real return to savers, the cost of capital, and the discount rate for equities and commodities.
 
-### Front-End Real Yields (2Y)
-- **What it measures**: Near-term real rates, Fed's real policy rate
-- **Negative real yields**: Fed below inflation = real easing = support for growth assets
-- **Positive real yields**: Fed above inflation = real tightening = headwinds for growth
+## Points on the curve
 
-### Breakeven Inflation Rates
-- **What it is**: Nominal yield - real yield = market's inflation expectation
-- **When it rises**: Market expects higher inflation
-- **When it falls**: Market expects lower inflation
-- **5Y5Y breakeven**: Long-term inflation expectation; structural inflation proxy
+### 10Y real yield (the most important)
 
-## Real Yields & Market Relationships
+- **What it measures**: the long-run real cost of capital; the inflation-adjusted return.
+- **What it drives**: equity multiples, commodity prices, growth asset values.
+- **Rising**: bearish for equities (higher discount rate) and bearish for gold (higher opportunity cost).
+- **Falling**: bullish for equities (lower discount rate) and bullish for gold (lower opportunity cost).
 
-### Equity Valuation
-- **Equity duration sensitivity**: High-growth stocks act like long-duration bonds; fall when real yields rise
-- **Multiple compression**: Rising real yields compress P/E multiples (even if earnings intact)
-- **Relationship**: For every 100bp real yield rise, equities typically fall 10-15%
+### Front-end real yields (2Y)
 
-### Commodity Prices (Especially Gold)
-- **Inverse relationship**: Higher real yields = lower gold (opportunity cost)
-- **Safety trade-off**: Gold valuable when real yields negative (no safe return)
-- **Tail risk**: Real yield spikes = gold crash despite inflation
+- **What it measures**: near-term real rates; the Fed's real policy rate.
+- **Negative**: the Fed is below inflation. That is real easing and supports growth assets.
+- **Positive**: the Fed is above inflation. That is real tightening and a headwind for growth.
 
-### Credit Spreads
-- **Real yield effect**: Real yields rising = credit spreads typically widen (default risk priced in)
-- **Opposite direction**: Real yields falling = spreads tighten
+### Breakeven inflation
 
-## Key Scenarios
+- **What it is**: nominal yield − real yield = the market's inflation expectation.
+- **Rising breakevens**: the market expects higher inflation.
+- **Falling breakevens**: the market expects lower inflation.
+- **5Y5Y breakeven**: the long-term inflation expectation; a proxy for structural inflation.
 
-### Rising Real Yields (Bearish Risk Assets)
-- **Causes**: Inflation falling faster than rates, or rates rising faster than inflation
-- **Effect**: Equities, commodities, gold all under pressure
-- **Winner**: Cash/treasuries become attractive
-- **Example**: 2022 rate shock
+## How real yields move other markets
 
-### Falling Real Yields (Bullish Risk Assets)
-- **Causes**: Rates falling faster than inflation, or inflation rising faster than rates
-- **Effect**: Equities, commodities, gold attractive
-- **Winner**: Risk assets rally
-- **Example**: 2023 disinflation
+### Equities
 
-### Negative Real Yields
-- **What it means**: Savers earn negative real return; incentivized to take risk
-- **Effect**: Massive support for growth assets, commodities, gold
-- **Duration**: Eventually unsustainable; reverts to positive
-- **Example**: 2021
+- **Duration sensitivity**: high-growth stocks behave like long-duration bonds and fall when real yields rise.
+- **Multiple compression**: rising real yields compress P/E multiples even when earnings hold up.
+- **Rule of thumb**: for every 100bp rise in real yields, equities typically fall 10–15%.
 
-## Monitoring Real Yields
-- **10Y real yield tracker**: Watch for breaks above/below recent levels
-- **Moving average**: Identify regime shift (sustained above/below level)
-- **Spread vs. Fed funds**: Difference shows financial conditions
-- **Historical context**: Compare to 30-year average
+See [[Equities]].
 
-## See Also
-[[Rates]] for nominal rate dynamics, [[Gold]] for commodity relationship, [[Macro Trading]] for regime implications.
+### Gold and commodities
+
+- **Inverse relationship**: higher real yields mean lower gold, because the opportunity cost of holding it rises.
+- **Safety trade-off**: gold is most valuable when real yields are negative and there is no safe real return.
+- **Tail risk**: a real-yield spike can crash gold even while inflation is high.
+
+See [[Gold]] and [[Commodities]].
+
+### Credit spreads
+
+- **Rising real yields**: spreads typically widen as default risk is priced in.
+- **Falling real yields**: spreads tighten.
+
+See [[Credit]].
+
+## Regimes
+
+| Regime | Causes | Effect | Winner | Example |
+|---|---|---|---|---|
+| Rising real yields (bearish risk assets) | Inflation falling faster than rates, or rates rising faster than inflation | Equities, commodities and gold all under pressure | Cash and Treasuries become attractive | 2022 rate shock |
+| Falling real yields (bullish risk assets) | Rates falling faster than inflation, or inflation rising faster than rates | Equities, commodities and gold attractive | Risk assets rally | 2023 disinflation |
+
+### Negative real yields
+
+- **What it means**: savers earn a negative real return, so they are incentivised to take risk.
+- **Effect**: massive support for growth assets, commodities and gold.
+- **Duration**: eventually unsustainable; reverts to positive.
+- **Example**: 2021.
+
+How the real-yield regime fits the wider regime call is covered in [[Market Regime]] and [[Macro Trading]].
+
+## Monitoring
+
+- **10Y real yield tracker**: watch for breaks above or below recent levels.
+- **Moving average**: identifies a regime shift, meaning a sustained move above or below a level.
+- **Spread vs. Fed funds**: the difference shows financial conditions.
+- **Historical context**: compare the current level with the 30-year average.
+
+## Related
+
+[[Rates]] for nominal rate dynamics · [[Gold]] for the commodity relationship · [[Macro Trading]] for regime implications · [[Market Regime]] · [[Cross-Asset Analysis]] · [[Equities]] · [[Credit]] · [[Commodities]] · [[Markets - Brief]]

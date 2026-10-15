@@ -7,7 +7,7 @@ related:
   - Wiki Index
   - Wiki Overview
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-30'
+updated: '2026-10-15'
 tags:
   - log
   - operations
@@ -196,3 +196,17 @@ After the evergreen captures and wiki validation passed, fetched a fresh complet
 Recorded an immutable operation receipt and [[X Bookmark Cleanup - 30 September 2026]]. Appended the completed outcome to the canonical Brain index and captured a new immutable index revision. Linked the receipt into [[Evergreen Lessons from X - September 2026]], the original review, live inventory, [[X-Bookmarks]], [[Personal Knowledge Management]], [[Wiki Overview]] and [[INDEX]]. Knowledge retention remains 14 distilled entries from 15 posts; existing historical archive contents and raw sources are preserved.
 
 Validation: all 14 retained entries and 15 post IDs are represented once in the current catalog. Every canonical bookmark note matches its latest immutable capture. The 228-page content check has zero broken references and duplicate titles; the static build and review-artifact TypeScript check passed. All ten new evergreen/cleanup captures are marked processed. All 87 pre-existing immutable raw files preserve their hashes.
+
+---
+
+## [2026-10-15] overhaul | legibility rewrite of every page as a resource bank
+
+Rewrote all 227 content and navigation pages so each one teaches its subject and describes every link it holds. Erlin asked for a real wiki archive and resource bank in place of pages dominated by process notes, and for nothing to be deleted. Process narration moved out of the pages: capture and retention dates, archive numbers, entry counts, per-line hedges, "the human", and dated sections such as "August 2026 additions". Every page is now organised by theme, opens with what the page is, carries a one-sentence summary, and ends with related pages.
+
+The ten bookmark categories now list every entry of their latest capture, grouped by theme, each with a description and the author's handle. The link collections from the notes (Dev, Design, Setup, the five Markets notes, Electrics, Youtube and Top Pods) list every link in the raw note, including bare URLs that had never been described; links with no context say "Saved without a note". Note archives keep every quote, joke, take and table, grouped by theme, with their links attached. Topic and entity pages absorbed their dated sections into thematic ones and gained the links that back their quotes, so thin stubs such as [[Hyperliquid]], [[Nassim Taleb]] and [[0xaporia]] became usable pages. Corrections and source gaps stay explicit; review statuses were not changed. Rebuilt [[Wiki Index]] by subject with a line for every page, rewrote [[Wiki Overview]], and turned [[Markets Wiki Index]] into a reading order.
+
+The retired March 2026 X export (`raw/misc/X-Bookmarks.md`) was not re-imported; its curated material already lives in the ten categories and the export stays viewable as a source. Page titles and file names are unchanged, so existing links still resolve. AGENTS.md now states the resource-bank writing rules. The reading interface underlines outbound links with a marker, collapses only very long source pages into themed sections, and links the index from the home page.
+
+Method: each page was written against a fixed contract, checked by script, then reviewed by a second agent that compared it with the old page and the raw notes and fixed overstated descriptions.
+
+Validation: every URL in every old page and every URL in each page's raw source is present in the new page, checked per page and across the whole wiki (689 unique URLs before, 1,983 after, none lost). Every old wikilink target is kept. All 224 rewritten pages passed both the script and the independent review. `bun run check` reports 228 pages, zero broken references and zero duplicate titles; 41 tests pass; the static build passes. Lint is unchanged: no orphans, no broken links, and the same 30 pages awaiting evidence review and 17 recorded source gaps. No raw source was modified.

@@ -2,438 +2,266 @@
 title: In-Service Testing
 type: topic
 domain: electrics
-sources: []
+sources:
+  - clippings/evidence-review-2026-09-22/Electrics.md
 related:
   - Electrical Safety
   - Continuity Testing
   - Inspection and Testing Fundamentals
+  - PAT Testing
+  - Test Equipment Standards
+  - GS38
+  - BS EN 61010
+  - BS EN 61557
+  - RCD Protection
+  - Safe Isolation
+  - "Ohm's Law and Electrical Calculations"
+  - Electrical Study Map
+  - Electrical Evidence Review - September 2026
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - in-service-testing
   - pat
   - appliances
   - formal-inspection
   - equipment-testing
+  - v-forms
+  - hse
 source_gaps:
-  - >-
-    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT
-    Testing.md
+  - 'raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT Testing.md'
 review_status: unverified
 review_notes: >-
-  Historical webinar summary. The original transcript is unavailable; detailed
-  test limits, procedures, chapter and exam references have not been
-  authenticated against current material.
+  The webinar transcript behind the test limits, procedures, appendix and exam
+  references is unavailable, so those remain unauthenticated; only the HSE
+  position on risk-based test intervals was checked against its FAQ.
+summary: "PAT in practice: three check levels, plug and flex fail points, the four tests and pass limits, inspect-don't-repair, test-kit standards, V1-V6 forms."
 ---
 
 # In-Service Testing
 
-Systematic inspection and testing of electrical equipment in use, commonly called PAT (Portable Appliance Testing). Focuses on competent visual inspection, correct testing procedures, and accurate documentation.
+In-service inspection and testing is the routine checking of electrical equipment while it is in use, usually called PAT (portable appliance testing). The work is mostly competent visual inspection, correct testing and accurate reporting, and it stops short of repair. This page holds the study notes from the Access Training PAT webinar summarised in [[PAT Testing]]: the three levels of check, what a formal visual inspection looks for, the four tests and their pass limits, the rules on live working and test equipment, and the IET V-forms used to record it all. HSE's own position, that test intervals follow risk rather than a blanket annual schedule, comes from [[Electrical Evidence Review - September 2026]].
 
-## Levels of In-Service Checks
+## Three levels of check
 
-Equipment undergoes different levels of verification depending on competence and requirements:
+Equipment gets a different depth of check depending on who does it and how much assurance is needed (from [[PAT Testing]]):
 
-### 1. User Check
+- **User check.** Done by unskilled users: a basic look-over and awareness of obvious damage. Low assurance.
+- **Formal visual inspection.** Done by a responsible competent person: a systematic visual examination and professional assessment of condition, covering environment, function, damage and safety concerns, with no test instruments.
+- **Combined inspection and test.** Done by a competent person: the full formal visual inspection plus complete electrical testing. Highest assurance; appropriate for higher-risk equipment or regular service.
 
-- Performed by unskilled users
-- Basic visual look-over
-- Awareness of obvious damage
-- Low level of assurance
+## Formal visual inspection
 
-### 2. Formal Visual Inspection
+Visual inspection comes first and matters most. Many equipment safety issues are visible, inspection often shows why an item would fail its electrical tests, and it stops clearly unsafe equipment being tested at all. Complete it before any testing.
 
-- Performed by responsible competent person
-- Systematic visual examination
-- Professional assessment of condition
-- Covers environment, function, damage, safety concerns
-- No testing equipment used
+### The six core checks
 
-### 3. Combined Inspection and Test
+1. **Function and operation.** Turn on if appropriate and safe; verify the controls work; look for obvious operational problems.
+2. **Environment and housekeeping.** Is the equipment suitable for its location, and the environment safe for this equipment? Look for temperature extremes, dust, moisture, vibration, overcrowding or interference.
+3. **Flex and cable.** Cuts or abrasions, crushing or kinks, deteriorated insulation, excessive wear, evidence of repair or taping.
+4. **Plug.** Physical damage or cracks; signs of burning inside or outside; flex entering properly; fuse condition; earth pin present and correct; cover secure and clean.
+5. **Socket outlet.** Scorching or burning; loose or damaged; suitable for the equipment; whether an RCD protects it.
+6. **Visible appliance damage.** Cracks in the casing, burn or scorch marks, water damage, rust or corrosion, mechanical damage.
 
-- Performed by competent person
-- Full formal visual inspection, PLUS
-- Complete electrical testing
-- Highest level of assurance
-- Appropriate for higher-risk equipment or regular service
+Equipment can be unsafe because of its environment even when the item itself looks fine. Adequate equipment in the wrong environment is unsafe, so assess both the equipment and where it is used.
 
-## Formal Visual Inspection
+### Plug failure points
 
-### Priority and Importance
+Plugs are a frequent weak point. Common fail conditions:
 
-**Visual inspection is first and most important**:
-- Many equipment safety issues are visible
-- Should be completed before any testing
-- Often reveals why equipment might fail electrical tests
-- Prevents unnecessary testing of clearly unsafe equipment
-
-### Core Inspection Checks
-
-Systematic visual examination of:
-
-1. **Equipment function/operation**
-   - Turn on if appropriate and safe
-   - Verify controls work
-   - Check for obvious operational problems
-
-2. **Environment and housekeeping**
-   - Is equipment suitable for its location?
-   - Is the environment safe for this equipment?
-   - Temperature extremes?
-   - Dust/moisture/vibration issues?
-   - Overcrowding or interference?
-
-3. **Flex/cable condition**
-   - Cuts or abrasions?
-   - Crushed or kinked?
-   - Deteriorated insulation?
-   - Excessive wear?
-   - Evidence of repair/taping?
-
-4. **Plug condition**
-   - Physical damage or cracks?
-   - Burning signs (inside or outside)?
-   - Flex entering properly?
-   - Fuse condition (below)?
-   - Earth pin present and correct?
-   - Cover secure and clean?
-
-5. **Socket outlet condition**
-   - Scorching or burning?
-   - Loose or damaged?
-   - Suitable for the equipment?
-   - Is an RCD protecting it?
-
-6. **Visible appliance damage**
-   - Cracks in casing?
-   - Burning or scorch marks?
-   - Water damage?
-   - Rust or corrosion?
-   - Mechanical damage?
-
-### Critical Principle
-
-**Equipment can be unsafe due to environment even if equipment appears fine**:
-- Adequate equipment in wrong environment = unsafe
-- Must assess both the equipment AND where it is used
-
-### Plug Failure Points
-
-Plugs are a frequent weak point for failures:
-
-**Common failure modes**:
 - Physical cracks or breaks
-- Burning/melting (inside or outside)
-- Flex sheathing not properly entered into plug
+- Burning or melting, inside or outside
+- Flex sheathing not entered properly into the plug (coloured insulation visible)
 - Loose or missing fuse
-- Incorrect fuse type (foil, screw instead of BS1362)
+- Wrong fuse arrangement: foil or a screw instead of a BS1362 fuse
 - Loose copper strands visible
 - Missing earth pin on Class 1 equipment
-- Damaged flex entering plug
+- Damaged flex entering the plug
 - Taped or heavily repaired flex
 - Two different cables forced into one plug
-- Wrong cable type (e.g., twin-and-earth instead of flex)
+- Wrong cable type, for example twin-and-earth instead of flex
 - Excessive loose copper visible
-- Plug cover insecure, damaged screws, missing
-- Cardboard insert left inside (fire hazard)
+- Plug cover insecure, screws damaged or missing
+- Cardboard insert left inside the plug (fire hazard)
 
-**Pre-1984 plugs**:
-- Unsleeved live/neutral pins: Not automatic failure, but replacement often recommended
-- If replacing, dispose of old plug (don't reuse)
+Other plug notes:
 
-**Class 2 equipment plugs**:
-- May have plastic earth pin (for opening socket shutters only)
-- Not a conductive earth pin
+- **Pre-1984 plugs** have unsleeved live and neutral pins. Not an automatic fail, but replacement is often recommended. If you replace a plug, dispose of the old one rather than keeping it for reuse.
+- **Class 2 equipment** may have a plastic earth pin, there only to open the socket shutters; it is not a conductive earth pin.
+- **Rewirable plugs** should have a solid metal earth pin. Non-rewirable Class 2 plugs may have a plastic pin.
+- **Counterfeit or non-compliant plugs** may show incorrect sleeving arrangements, for example a sleeved earth pin (from [[PAT Testing]]). Check for authenticity and compliance.
 
-**Rewirable plugs**:
-- Should have solid metal earth pin
-- Non-rewirable Class 2 may have plastic pin
+### Fuse size follows the flex
 
-**Counterfeit/non-compliant plugs**:
-- May show incorrect sleeving arrangements
-- Check for authenticity and compliance
+The old rule of thumb that sized the plug fuse from the appliance wattage is outdated. The fuse protects the cable against overcurrent, so the fuse size is set by the flex size, not the appliance rating. (from [[PAT Testing]])
 
-## Four Main Tests
+## The four tests
 
-Equipment testing involves four main test types:
+### Protective conductor continuity (Class 1 only)
 
-### 1. Protective Conductor Continuity (Class 1 Only)
+- **Purpose:** prove a continuous earth path from the plug to the exposed conductive parts.
+- **Applies to:** Class 1 only. Class 2 has no earth.
+- A simple beeper is insufficient; measure the actual resistance.
+- **Pass criterion:** maximum 0.1 Ω + R, where R is the resistance of the protective conductor in the flex.
+- **Example:** 1 m of 0.75 mm² flex at 26 mΩ/m gives R = 0.026 Ω, so the maximum reading is 0.126 Ω.
 
-**Purpose**: Prove continuous earth path from plug to exposed conductive parts
-
-**Applicable to**: Class 1 equipment only (Class 2 has no earth)
-
-**Key point**: Simple beeper is insufficient; must measure actual resistance
-
-**Pass criterion**: Maximum 0.1 Ω + R
-- Where R = flex protective conductor resistance
-- Example: 1 m of 0.75 mm² flex → R = 0.026 Ω → max = 0.126 Ω
-
-**Calculation of R**:
 ```
 R = (milliohms per meter × length in meters) / 1000 = ohms
 ```
 
-Use Appendix 5 table for flexible cable resistance values.
+Flexible cable resistance values come from Appendix 5. The same milliohm-per-metre method is worked through in [[Ohm's Law and Electrical Calculations]], and the installation-side test is covered in [[Continuity Testing]].
 
-**Engineering judgment for older equipment**:
-- May allow 0.5 Ω + R (decision based on practical safety and condition)
+- **Older equipment:** engineering judgment may allow up to 0.5 Ω + R, decided on practical safety and the item's condition.
 
-### 2. Insulation Resistance (Class 1 and Class 2)
+### Insulation resistance (Class 1 and Class 2)
 
-**Purpose**: Prove insulation is intact (no unintended contact between conductors/earth)
+- **Purpose:** prove the insulation is intact, with no unintended contact between conductors or to earth. The webinar's picture: like inflating an inner tube to reveal the punctures.
+- **Test voltage:** 500 V DC.
+- **Setup:** line and neutral joined together and tested against earth; power switches on; covers in place; the equipment must be suitable for the test voltage.
+- **Minimum results:** 1 MΩ for Class 1, 2 MΩ for Class 2.
+- 500 V can damage sensitive equipment such as computing and LED lighting. Use the protective conductor current test instead for that gear.
 
-**Method concept**: Similar to inflating inner tube to reveal punctures
+### Protective conductor current (the alternative for sensitive equipment)
 
-**Test voltage**: 500 V DC
+- **When:** voltage-sensitive equipment: computers, LED lighting, electronic equipment that will not tolerate 500 V.
+- **Method:** measures the actual leakage current to earth instead of applying a high voltage.
+- **Advantage:** less likely to damage sensitive equipment.
 
-**Setup**:
-- Line and neutral joined together
-- Test against earth
-- Power switches should be ON
-- Covers should be in place
-- Equipment must be suitable for test voltage
+### Functional test, and load testing
 
-**Minimum acceptable results**:
-- Class 1 equipment: Minimum 1 megaohm (1 MΩ)
-- Class 2 equipment: Minimum 2 megaohms (2 MΩ)
+- **Purpose:** confirm the equipment actually works.
+- **Checks:** controls operate, switches function, thermostats work, displays and feedback systems respond, fans and motors move.
+- **Load testing** is a specialist test, sometimes required for heating or cooking equipment, to verify the item delivers the correct power or heat. Not routine, but may be required for specific applications.
 
-**Sensitivity note**: 500 V can damage sensitive equipment (computing, LED lighting). Use protective conductor current test as alternative for sensitive gear.
+### RCD check
 
-### 3. Protective Conductor Current Test (Alternative)
+If the equipment plugs into an RCD-protected socket outlet, check the RCD test button and verify the RCD functions, so the protection device in front of the equipment is known to work. [[RCD Protection]] covers what an RCD does and does not prove.
 
-**When to use**: For voltage-sensitive equipment
+## Inspect, test and report; do not repair
 
-**Examples**: 
-- Computer equipment
-- LED lighting
-- Electronic equipment sensitive to 500 V
+The job during inspection and testing is to inspect (look and assess condition), test (apply the testing procedures) and report (document the findings and communicate the results). It does not include taping or repairing damaged flex, tightening loose screws, replacing damaged parts or fixing visible issues. (from [[PAT Testing]])
 
-**Method**: Measures actual leakage current to earth instead of applying high voltage
+Why the boundary matters:
 
-**Advantage**: Less likely to damage sensitive equipment
+1. **Scope clarity.** You are there to assess, not fix.
+2. **Legal protection.** You are not responsible for repairs you did not authorise.
+3. **Customer responsibility.** The equipment belongs to the customer; they decide on repairs.
+4. **Documentation.** The red label on a failed item is your responsibility; fixing it is theirs.
 
-### 4. Functional Test
+What to do with a failed item:
 
-**Purpose**: Confirm equipment actually works
+1. Mark it clearly with a red fail label.
+2. Document the failure in detail.
+3. Explain to the customer what failed and why.
+4. Remove it from service or restrict its use.
+5. Report it in your documentation.
+6. The customer decides on repair or replacement.
 
-**Checks**:
-- Controls operate
-- Switches function
-- Thermostats work
-- Display/feedback systems function
-- Movement (fans, motors) operates
+The customer may ignore your fail label. That is their choice; your responsibility is to inspect, test and report accurately.
 
-**Load testing** (specialist):
-- Sometimes required for heating/cooking equipment
-- Verifies equipment delivers correct power/heat
-- Not routine, but may be required for specific applications
+## Working on live in-service equipment
 
-## RCD Testing
+"In service" means the equipment is actively in use and may need to stay energised for functional testing, control verification and safe-operation checks. Live working is permitted only when it is unreasonable to isolate (for example, continuous operation is needed), it is reasonable to work live with proper safeguards in place, and suitable precautions are taken (safety-conscious working).
 
-If equipment is plugged into RCD-protected socket outlet:
-- RCD test button should be checked
-- RCD function verified
-- Ensures protection device is functional
+The webinar's example: you cannot verify a fan's speed controls without powering the fan, so the check is done live, with safe practices and suitable precautions: proper positioning and no contact with dangerous parts. (from [[PAT Testing]]) The procedure for everything that can be made dead is in [[Safe Isolation]].
 
-## The Inspect/Test vs Repair Distinction
+## Test equipment
 
-### Critical Professional Boundary
+### Standards
 
-Your role during inspection and testing:
-- **Inspect**: Look and assess condition
-- **Test**: Apply testing procedures
-- **Report**: Document findings and communicate results
+- **[[BS EN 61010]]:** safety of the test equipment itself.
+- **[[BS EN 61557]]:** accuracy of measurements.
+- **[[GS38]]:** HSE guidance on the safe condition of test leads and probes.
 
-Your role does NOT include:
-- Taping or repairing damaged flex
-- Tightening loose screws
-- Replacing damaged parts
-- Fixing visible issues
+[[Test Equipment Standards]] covers all three in more depth.
 
-### Why This Matters
+### Leads and probes
 
-1. **Scope clarity**: You're there to assess, not fix
-2. **Legal protection**: You're not responsible for repairs you didn't authorize
-3. **Customer responsibility**: Equipment belongs to customer; they decide on repairs
-4. **Documentation**: Red label on failed item is your responsibility; fixing is theirs
+GS38's emphasis is on lead and probe condition: insulation integrity, flexibility and strength, and safe connection methods. Test leads are what you handle at potentially live points, so their condition is critical.
 
-### What to Do With Failed Items
+### Calibration and accuracy checks
 
-1. Mark clearly with red fail label
-2. Document the failure in detail
-3. Explain to customer what failed and why
-4. Remove from service or restrict use
-5. Report in your documentation
-6. Customer decides on repair/replacement
+Annual calibration alone is not sufficient. Calibration proves the meter was accurate on the calibration date only. Best practice:
 
-**Customer may ignore your fail label** - that's their choice. Your responsibility is to inspect, test, and report accurately.
+- Run regular accuracy checks against a calibration card or standard.
+- Record those checks systematically (Form V6, below).
+- Regular checks prove ongoing accuracy, and the records defend your results against later challenges.
 
-## Safe Working With In-Service Equipment
+### Tester types and cost
 
-### "In Service" Definition
+- **Basic PAT testers:** simple pass/fail indication, lower cost, limited flexibility.
+- **Mid-range testers:** display actual test values, more test options, better for varied work.
+- **High-end and industrial testers:** memory storage, printing, multiple test modes, data management.
 
-Equipment is actively in use and may need to remain energized for:
-- Functional testing
-- Control verification
-- Safe operation checks
+A normal installation test meter can perform the PAT tests, and PAT adapters convert a standard meter to PAT use. A dedicated PAT tester is worthwhile for regular PAT work because it saves time, with a decent payback on the investment if used regularly.
 
-### Live Working Conditions
+### Commercial viability
 
-Live working is permitted when:
-- It is unreasonable to isolate (e.g., continuous operation needed)
-- It is reasonable to work with it live (proper safeguards in place)
-- Suitable precautions are taken (safety-conscious working)
+- Per-item PAT pricing is lower than in earlier years.
+- Still profitable as a day-rate service with efficient execution.
+- Low overhead: a meter and the knowledge.
+- A good employability skill and a useful add-on to an electrical services business.
 
-### Example: Fan Control Test
+## Documentation: the IET V-forms
 
-Cannot verify fan speed controls without powering the fan:
-- Must work on live equipment
-- Use safe practices
-- Suitable precautions (proper positioning, no contact with dangerous parts)
+The IET model forms for PAT documentation run V1 to V6 (from [[PAT Testing]]):
 
-## Test Equipment Requirements
+| Form | Name | Contents |
+| --- | --- | --- |
+| V1 | Equipment register / asset register | Equipment list, locations and IDs, planned inspection intervals |
+| V2 | Inspection and test record | Details of equipment tested, visual inspection findings, test results, date and tester signature |
+| V3 | Labels | Pass/fail labels for equipment, colour-coded: green pass, red fail, yellow for attention |
+| V4 | Repair register | Equipment repaired, what was done, outcome |
+| V5 | Faulty equipment register | Failed items, reason for failure, status (awaiting repair, withdrawn, etc.) |
+| V6 | Test equipment accuracy record | Meter calibration dates, accuracy check dates, results and verification, tester name and signature |
 
-### Safety Standards
+### Labels carry no "next inspection date"
 
-Test equipment must comply with:
-- **BS EN 61010**: Safety of the test equipment itself
-- **BS EN 61557**: Accuracy of measurements
-- **GS38**: Safe condition of test leads and probes
+- Do not put a next-inspection date on the label.
+- Equipment may move, and a new location changes the risk assessment and the inspection frequency. A fixed future date can be misleading or inappropriate.
+- Risk assessment drives the interval, not the label date.
 
-### Lead and Probe Safety
+HSE's FAQ says the same from the regulator's side: it does not prescribe blanket annual PAT testing; maintenance arrangements and inspection and testing intervals depend on risk, use and environment; visual checks matter and some faults need a test; and a test label is not a guarantee that the equipment remains safe. (from [[Electrical Evidence Review - September 2026]])
 
-GS38 emphasis on:
-- Lead/probe condition
-- Insulation integrity
-- Flexibility and strength
-- Safe connection methods
+### Exam tips
 
-Test leads are what you handle at potentially live points - their condition is critical.
+The webinar instructor strongly recommends:
 
-### Calibration and Accuracy
+- Make a Post-it note summary of V1 to V6 and their purposes.
+- The fifth edition book can be confusing and inconsistent about form naming, so refer to the forms directly rather than relying on the text descriptions.
+- Knowing the form purposes is exam-critical.
 
-**Not sufficient**: Annual calibration alone
+## Appendices for revision
 
-**Best practice**:
-- Regular accuracy checks using calibration card/standard
-- Record these checks systematically
-- Calibration proves accuracy on calibration date only
-- Regular checks prove ongoing accuracy
-- Accuracy records defend against later challenges
+The instructor's priority appendices:
 
-## PAT Test Equipment Types
+- **Appendix 2:** IP ratings table. Likely exam topic and important for equipment assessment.
+- **Appendix 5:** flexible cable resistance values, used for the continuity pass-criterion calculation.
+- **Appendix 6:** condition of plugs and equipment; the visual-inspection reference with detailed fail conditions.
+- **Appendix 7:** IT equipment racks; specific application guidance.
+- **Appendix 8:** basic electrical calculations, formulas and concepts.
 
-### Equipment Options Available
+Study approach: use Post-it notes where exam rules allow, review the tables and appendices repeatedly, improve recall through repetition, and develop a sense of realistic values. [[Electrical Study Map]] places this topic in the wider revision route.
 
-**Basic PAT testers**:
-- Simple pass/fail indication
-- Lower cost
-- Limited flexibility
+## Key takeaways
 
-**Mid-range testers**:
-- Displays actual test values
-- More test options
-- Better for varied work
+- PAT is mostly competent visual inspection plus correct testing plus accurate reporting.
+- Do not repair; mark and report.
+- Class 1 and Class 2 follow different test paths: continuity is Class 1 only.
+- Know the pass criteria: 0.1 Ω + R for continuity, 1 MΩ (Class 1) and 2 MΩ (Class 2) for insulation.
+- Fuse size follows cable size, not appliance wattage.
+- Test lead and probe condition (GS38) matters as much as the test procedure.
+- V-form knowledge is exam-critical.
+- PAT is a viable skill with good employability value.
 
-**High-end/industrial testers**:
-- Memory storage
-- Printing capabilities
-- Multiple test mode options
-- Data management
+## Source gap
 
-### Cost-Effectiveness
+The PAT webinar summary behind these notes (`Summary - Electrics Webinar 4 PAT Testing.md`) is missing, so the test limits, procedures, appendix numbers, form names and exam advice above are unconfirmed study notes; check them against current course material before relying on them. Only the HSE position on risk-based intervals comes from an official source. [[Electrical Safety]] and [[Inspection and Testing Fundamentals]] give the surrounding installation-side material.
 
-- Normal installation test meter can perform PAT tests
-- PAT adapters convert standard meters to PAT function
-- Dedicated PAT tester worthwhile if doing regular PAT work (saves time)
-- Decent payback for equipment investment if using regularly
+## Resources
 
-### Commercial Viability
+- [HSE portable appliance testing FAQs](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm) — the regulator's FAQ on maintaining portable equipment: intervals depend on risk, use and environment rather than a blanket annual test, and a label is not proof an item is still safe. (from [[Electrical Evidence Review - September 2026]])
 
-- PAT pricing per item lower than earlier years
-- Still profitable as day-rate service with efficient execution
-- Low overhead (meter + knowledge)
-- Good employability skill
-- Useful add-on to electrical services business
+## Related
 
-## Documentation Forms (V-Forms)
-
-### The V-Form System
-
-IET model forms for PAT documentation (V1-V6):
-
-**Form V1**: Equipment Register / Asset Register
-- Equipment list
-- Locations and IDs
-- Planned inspection intervals
-
-**Form V2**: Inspection and Test Record
-- Details of equipment tested
-- Visual inspection findings
-- Test results
-- Date and tester signature
-
-**Form V3**: Labels
-- Pass/fail labels for equipment
-- Color-coded (green pass, red fail, yellow for attention)
-
-**Form V4**: Repair Register
-- Equipment repaired
-- What was done
-- Outcome
-
-**Form V5**: Faulty Equipment Register
-- Failed items
-- Reason for failure
-- Status (awaiting repair, withdrawn, etc.)
-
-**Form V6**: Test Equipment Accuracy Record
-- Meter calibration dates
-- Accuracy check dates
-- Results/verification
-- Tester name and signature
-
-### Labeling Practices
-
-Important principle:
-- **Do NOT include "next inspection date" on label**
-- Reason: Equipment may move, changing risk assessment and inspection frequency
-- Fixed future dates can be misleading or inappropriate
-- Risk assessment drives inspection interval, not label date
-
-### Exam Tips
-
-Instructor strongly recommends:
-- Make Post-it note summary of V1-V6 and their purposes
-- Fifth edition book can be confusing/inconsistent about form naming
-- Reference forms directly rather than relying on textual descriptions
-- Knowing form purposes is exam-critical
-
-## Appendices for Revision
-
-Key appendices to emphasize in study:
-
-- **Appendix 2**: IP ratings table (likely exam topic; important for equipment assessment)
-- **Appendix 5**: Flexible cable resistance values (used for continuity pass criterion calculation)
-- **Appendix 6**: Condition of plugs and equipment (visual inspection reference; detailed fail conditions)
-- **Appendix 7**: IT equipment racks (specific application guidance)
-- **Appendix 8**: Basic electrical calculations (formulas and concepts)
-
-### Study Approach
-
-- Use Post-it notes (where exam rules allow)
-- Repeatedly review tables and appendices
-- Improve recall through repetition
-- Develop sense of realistic values
-
-## Key Takeaways
-
-- PAT is mostly competent visual inspection + correct testing + accurate reporting
-- Do not repair; mark and report
-- Class 1 and Class 2 paths are different (continuity test Class 1 only)
-- Know pass criteria: 0.1 + R for continuity, 1 MΩ (Class 1) and 2 MΩ (Class 2) for insulation
-- Fuse size follows cable size, not appliance wattage
-- Test lead/probe condition (GS38) matters as much as test procedure
-- V-forms knowledge is exam-critical
-- PAT is viable skill with good employability value
+[[PAT Testing]] · [[Electrical Safety]] · [[Continuity Testing]] · [[Inspection and Testing Fundamentals]] · [[Test Equipment Standards]] · [[GS38]] · [[BS EN 61010]] · [[BS EN 61557]] · [[RCD Protection]] · [[Safe Isolation]] · [[Ohm's Law and Electrical Calculations]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]]

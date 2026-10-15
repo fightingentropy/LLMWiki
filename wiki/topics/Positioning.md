@@ -10,70 +10,95 @@ related:
   - Liquidations
   - Sentiment
   - Market Drivers
+  - Funding Rates
+  - Leverage
+  - Flow Analysis
+  - Crypto Trading
+  - Stanley Druckenmiller
+  - Markets - Brief
+  - Markets - Trading
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - positioning
   - leverage
   - crowding
   - extremes
   - squeeze
+  - options
+summary: "How to read where the money sits (crowding, leverage, funding, flows, options), what long and short extremes set up, and where to monitor them."
 ---
 
-## Overview
-Positioning is where the money is. Understanding positioning reveals crowded trades, squeeze risk, and who will be forced to capitulate.
+# Positioning
 
-## Positioning Assessment
+Positioning is where the money is. Reading it reveals crowded trades, squeeze risk, and who will be forced to capitulate. This page covers how to assess positioning, what long and short extremes look like and set up, where to monitor them, and what extreme positioning means for risk. Forced unwinds themselves are covered in [[Liquidations]]; the money moving in and out is covered in [[Flow Analysis]].
 
-### Crowded Trades
+## Where positioning sits in Erlin's notes
+
+- The Druckenmiller-style daily brief gives positioning its own section, "Positioning & Flow", which asks for consensus positioning and crowded trades, dealer/gamma/CTA/systematic flow context if available, and sentiment extremes and squeeze risk (from [[Markets - Brief]]; see [[Stanley Druckenmiller]]).
+- The trading checklist of things to look for includes "Top traders positioning" and "options positioning", next to liquidations, stablecoin dominance, stablecoin yields and funding rates (from [[Markets - Trading]]). These drivers are expanded in [[Market Drivers]].
+
+## Assessing positioning
+
+### Crowded trades
+
 When consensus positioning is extreme:
-- **Everyone long**: No buyers left, vulnerable to sellers
-- **Everyone short**: No sellers left, vulnerable to buyers
-- **Concentration**: If a few large players are on same side, position unwinding is violent
 
-### Leverage and Funding
-- **Funding rates**: In perpetual futures, extreme funding indicates leverage build-up
-- **Borrow rates**: Stablecoin yields indicate debt seeking returns = leverage pressure
-- **Margin ratios**: Traders using increasingly thin margins = fragile positioning
-- **Liquidation maps**: Show where forced selling would occur
+- **Everyone long**: no buyers left, so the market is vulnerable to sellers.
+- **Everyone short**: no sellers left, so the market is vulnerable to buyers.
+- **Concentration**: if a few large players are on the same side, the unwind is violent.
 
-### Flow Indicators
-- **Stablecoin dominance**: Shifting to/from risk
-- **Stablecoin flows**: Inflows = buyers coming in, outflows = buyers exhausting
-- **Options positioning**: Gamma and vega exposure to moves
-- **Dealer gamma**: If dealers are short gamma, they hedge by selling rallies
+### Leverage and funding
 
-## Positioning Extremes & Implications
+- **Funding rates**: in perpetual futures, extreme funding indicates leverage build-up. See [[Funding Rates]].
+- **Borrow rates**: stablecoin yields show borrowed money seeking returns, a sign of leverage pressure.
+- **Margin ratios**: traders running increasingly thin margins means fragile positioning.
+- **Liquidation maps**: show where forced selling would occur.
 
-### Long Extremes
-- **Sign**: Everyone long, leverage high, stablecoin dominance low
-- **Risk**: Vulnerable to any bad news or profit-taking
-- **Setup**: Short rally or decline triggers cascade liquidation of longs
+See [[Leverage]] for leverage gauges and thresholds.
 
-### Short Extremes
-- **Sign**: Everyone short, shorts borrowing expensive, puts expensive
-- **Risk**: Any good news triggers short squeeze
-- **Setup**: Rally forces short covering in cascade
+### Flow indicators
 
-### No Clear Positioning
-- **Sign**: Long/short balanced, low leverage, unclear consensus
-- **Risk**: Binary event can go either way; high vol expected
-- **Setup**: Wait for confirmation; no asymmetry
+- **Stablecoin dominance**: shows money shifting into or out of risk.
+- **Stablecoin flows**: inflows mean buyers coming in; outflows mean buyers exhausting.
+- **Options positioning**: gamma and vega exposure to moves.
+- **Dealer gamma**: dealers who are short gamma hedge by buying rallies and selling dips, which amplifies moves; dealers who are long gamma sell rallies and buy dips, which dampens them.
+
+Correction, 15 October 2026: this page earlier said that short-gamma dealers hedge by selling rallies. That is the long-gamma hedge; short-gamma hedging chases the move.
+
+## Positioning extremes
+
+| State | Signs | Risk | Setup |
+|---|---|---|---|
+| Long extreme | Everyone long, leverage high, stablecoin dominance low | Vulnerable to any bad news or profit-taking | A short rally or a decline triggers cascade liquidation of longs |
+| Short extreme | Everyone short, shorts' borrowing expensive, puts expensive | Any good news triggers a short squeeze | A rally forces short covering in a cascade |
+| No clear positioning | Long/short balanced, low leverage, unclear consensus | A binary event can go either way; high vol expected | Wait for confirmation; there is no asymmetry |
+
+Sentiment often runs to the same extremes as positioning; see [[Sentiment]].
 
 ## Monitoring
-- **CoinGlass**: Liquidation map shows positioning distribution
-- **Funding rates**: Perpetual futures leverage indicator
-- **COT reports**: Commitment of Traders for commodity positioning
-- **Options data**: Put/call ratios, max pain levels
-- **Flow metrics**: Stablecoin/ETF flows
 
-## Risk Management Implication
-Extreme positioning is risk amplifier:
-- **Consensus positioning**: Your edge is betting against consensus
-- **Leverage extremes**: Liquidations will be violent when they happen
-- **Cascade risk**: One liquidation can trigger the next
+- **CoinGlass**: the [liquidation map](https://www.coinglass.com/pro/futures/LiquidationMap) shows the distribution of positioning.
+- **Funding rates**: the leverage indicator for perpetual futures.
+- **COT reports**: the Commitments of Traders reports, for positioning in commodity futures.
+- **Options data**: put/call ratios and max pain levels.
+- **Flow metrics**: stablecoin and ETF flows.
+
+## Risk management
+
+Extreme positioning is a risk amplifier:
+
+- **Consensus positioning**: your edge is betting against consensus.
+- **Leverage extremes**: liquidations will be violent when they happen.
+- **Cascade risk**: one liquidation can trigger the next.
+
+See [[Risk Analysis]] for squeeze risk from extremes and [[Liquidations]] for the mechanism by which positioning unwinds.
+
+## Resources
+
+- [CoinGlass Pro liquidation map](https://www.coinglass.com/pro/futures/LiquidationMap) — CoinGlass's futures liquidation map; shows where leveraged positions cluster and where forced selling would trigger. Listed under useful links in [[Markets - Trading]].
+- [Qwantify market flow](https://www.qwantify.io/app/analytics/market-flow) — Qwantify's market-flow analytics page, for reading flows alongside positioning. Also listed in [[Markets - Trading]].
 
 ## Related
-- [[Liquidations]] - Mechanism by which positioning unwinding happens
-- [[Risk Analysis]] - Squeeze risk from extremes
-- [[Sentiment]] - Sentiment often correlates with positioning extremes
+
+[[Liquidations]] for the mechanism by which positioning unwinds · [[Risk Analysis]] for squeeze risk from extremes · [[Sentiment]], which often correlates with positioning extremes · [[Flow Analysis]] · [[Funding Rates]] · [[Leverage]] · [[Market Drivers]] · [[Crypto Trading]] · [[Markets - Brief]] · [[Markets - Trading]]

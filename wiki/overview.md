@@ -14,9 +14,8 @@ sources:
   - clippings/evidence-review-2026-09-22/Electrics.md
   - snapshots/1790338863036-34f85df55e2f/bookmarks/Index.md
 related:
-  - X Bookmark Cleanup - 30 September 2026
-  - Evergreen Lessons from X - September 2026
   - Wiki Index
+  - Markets Wiki Index
   - X-Bookmarks
   - Personal Knowledge Management
   - AI Agents
@@ -28,54 +27,72 @@ related:
   - Electrical Study Map
   - Health Evidence Review - September 2026
   - Electrical Evidence Review - September 2026
+  - Evergreen Lessons from X - September 2026
+  - X Bookmark Cleanup - 30 September 2026
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-30'
+updated: '2026-10-15'
 tags:
   - overview
   - knowledge-base
   - themes
   - gaps
+summary: What the wiki covers, how it is organised, where it is strong and where the gaps are.
 ---
 
 # Wiki Overview
 
-A personal knowledge wiki spanning self-improvement, markets, electrics, and culture. Bootstrapped from an existing Obsidian vault on 2026-04-12.
+This is Erlin's personal knowledge wiki, built from an Obsidian vault of notes and a curated bookmark collection. It covers six subjects: markets and trading, development and design, health, UK electrics, personal psychology, and culture. Every page is written to be read on its own: topic pages teach the subject from the notes, entity pages say who or what something is and why it matters here, and the resource banks list every saved link with a description. The front door is the [[Wiki Index]].
 
-## Domains
+## How it is organised
 
-### Personal & Psychology
-The most thematically rich domain. Centres on a recurring tension between **optimization culture** (biohacking, productivity, self-improvement) and **meaning-making** (philosophy, legacy, lived experience). Key figures: [[Andrew_Huberman]], [[Nassim_Taleb]], [[Curtis_Yarvin]], [[Jeff_Bezos]]. Core themes include the lived experience of [[ADHD]], [[Philosophy_and_Meaning]] (entropy vs extropy, compounding small decisions), and [[Self_Improvement]] with a critical eye toward sterile optimization disconnected from real life.
+- **Resource banks.** Ten bookmark categories (see [[X-Bookmarks]]) and the link collections from the notes, with more than 1,400 described links in total. Each is grouped by theme so you can find a tool, a thread or a reference you once saved, and know what it is before opening it.
+- **Topics.** What the notes say about a subject, organised by sub-theme, with quotes kept in the original voice and contradictions kept visible.
+- **Entities.** People, tools, platforms and standards: traders worth reading, writers quoted in the notes, products under evaluation, British Standards.
+- **Source archives.** Erlin's original notes (quotes, jokes, crypto takes, stories, the bucket list), organised and linked but not sanitised.
+- **Analyses and records.** Reusable frameworks ([[Developer Tool Evaluation Map]], [[Trading Evidence and Review Framework]], [[Electrical Study Map]]) and the dated evidence reviews that corrected older claims.
 
-### Health & Body
-[[Health Evidence Review - September 2026]] corrects the earlier fluoride, dopamine, exercise and peptide claims. [[Supplements]], [[Body_Optimization]], [[Fitness]], [[Medical]] and [[Peptides]] preserve source context while identifying what is supported, disputed or unresolved. [[ADHD]] and [[Circadian_Rhythm]] keep subgroup research and individual medication experiences distinct.
+## The subjects
 
-### Markets & Trading
-The most structured domain. Built around a [[Trading Philosophy]] that “truth doesn't move markets — perception does.” Includes [[Macro Trading]], detailed [[Commodities]], [[Crypto Trading]] mechanics, and a [[Traders Directory]]. The latest batch adds backtest-overfitting discipline, skeptical funding-rate results, leverage as a compressed deadline, Hyperliquid/[[TradeXYZ]] diligence, and [[AI Infrastructure Economics]] across compute demand, capex, power, and value capture. [[Market Performance Measurement]] adds a framework for interpreting leaderboards and preserves the portfolio-margin source's own correction.
+### Markets and trading
+
+The most structured subject, with its own reading order in the [[Markets Wiki Index]]. It starts from a [[Trading Philosophy]] built on one idea, that perception and uncertainty transitions move markets rather than truth, and works through regime, cross-asset coherence, positioning and risk into [[Macro Trading]], [[Commodities]] and [[Crypto Trading]]. The [[Traders Directory]] and the trader entity pages carry the voices behind the crypto material. Newer pages cover [[AI Infrastructure Economics]], Hyperliquid and [[TradeXYZ]] diligence, and [[Market Performance Measurement]], which explains what a leaderboard or a PnL screenshot does and does not prove.
+
+### Dev, design and AI
+
+The largest resource banks live here: developer tools, AI and agents, design and frontend, and reference utilities, plus Erlin's own [[Developer_Resources]] and [[Design_and_Aesthetics]] collections. [[AI Agents]] organises agent workflows, voice models, browser runtimes and approval boundaries; [[Digital Security]] covers accounts, devices, phishing, connected brokerage tools and least privilege. [[Compositor]], [[Helium Browser]], [[Omarchy iCloud Photos]] and [[Quicker]] have their own pages; [[3D Printing and Digital Fabrication]] connects the maker references.
+
+### Health and body
+
+[[Supplements]], [[Body_Optimization]], [[Fitness]], [[Medical]], [[Peptides]], [[ADHD]] and [[Circadian_Rhythm]] keep the notes' claims but mark what is supported, disputed or unresolved. [[Health Evidence Review - September 2026]] corrected the fluoride, sunlight-dopamine, push-up and peptide claims against primary sources. The circadian material on ADHD is the strongest research lead and also the place the wiki had to correct itself: a substantial subgroup, not a redefinition.
 
 ### Electrics
-Study notes linked by [[Electrical Study Map]]. [[Electrical Evidence Review - September 2026]] corrects cable routing, England Part P scope and publication editions. [[BS 7671]] records the A4 transition. The two original webinar transcripts are unavailable; their remaining procedural pages carry visible source gaps rather than appearing verified.
 
-### Culture & Politics
-Observations on society, dating dynamics, aesthetics, and political commentary. [[Political_Commentary]] now distinguishes official COVID-origin positions from unresolved evidence, while [[Online Extremism and Evidence]] records how real events, studies, screenshots, and anecdotes are inflated into racial, religious, gender, or conspiratorial claims. [[Dating_and_Relationships]] and [[Gender_Dynamics]] preserve contradictions rather than treating hostile rhetoric as group fact.
+UK electrical study notes: safe isolation, continuity testing, certification, the condition report, test equipment standards and the regulations, linked in reading order by [[Electrical Study Map]]. [[Electrical Evidence Review - September 2026]] corrected cable routing, Part P scope and publication editions, and [[BS 7671]] records the A4 transition. The two original webinar transcripts are unavailable; the pages built from them say so.
 
-### Dev & Design
-The [[X-Bookmarks]] collection now spans 935 X and Chrome records (922 structured entries and 13 bare links) across ten category notes. Ten source pages expose the 303 additions or revisions ingested on 22 September, including that day's 30 retained X bookmarks; [[Bookmarks - Health & Psychology]] adds one manually supplied post on 25 September. Original links and caveats remain attached. [[AI Agents]] organizes personal operations, voice models, browser runtimes, orchestration, and approval boundaries; [[Digital Security]] covers accounts, devices, phishing, connected brokerage tools, and cross-device control. [[Developer_Resources]] and [[Design_and_Aesthetics]] retain tools as evaluation leads. [[Compositor]], [[Helium Browser]], [[Omarchy iCloud Photos]], and [[Quicker]] have dedicated pages; [[3D Printing and Digital Fabrication]] connects the maker references.
+### Personal and psychology
 
-## Retention and source history
+The most thematically rich subject. It circles a tension between optimisation (biohacking, productivity, [[Self_Improvement]]) and meaning ([[Philosophy_and_Meaning]], legacy, lived experience), with [[Andrew_Huberman]], [[Nassim_Taleb]], [[Curtis_Yarvin]] and [[Jeff_Bezos]] as recurring figures. [[Personal Knowledge Management]] explains the retention rule the wiki follows: keep the source, do not inherit its claims.
 
-[[Personal Knowledge Management]] separates preserving a bookmark from endorsing its claims. September X curation retains all reviewed items, superseding the earlier filtering rule. Existing raw files remain intact; source captures now preserve every revision. All 935 current bookmarks have individual searchable records. The March X export was recovered byte-for-byte from Git for historical citations. Source records describe prior X cleanups, not an external-state check by this ingest.
+### Culture, people and ideas
 
-## Gaps and Opportunities
+Observations on society, dating, aesthetics and politics, and the writers quoted across the notes. [[Political_Commentary]] separates official positions from unresolved evidence; [[Online Extremism and Evidence]] records how real events, studies and screenshots get inflated into group claims. [[Dating_and_Relationships]] and [[Gender_Dynamics]] keep the notes' contradictions rather than resolving hostile rhetoric into fact.
 
-- **Evidence review is scoped.** The major older health errors are corrected. Other clinical claims, anecdotes and product-specific questions remain in the prioritised review queue.
-- **Visual and unresolved sources need context.** Some image-only prompts, screenshots, essays, and media links still need identification or transcription before useful synthesis.
-- **Bare design URLs need annotation.** Several current source links have no context, licence check, accessibility review, or durable reason for retention.
-- **Apply the synthesis guides.** [[Developer Tool Evaluation Map]], [[Trading Evidence and Review Framework]] and [[Electrical Study Map]] turn collections into reusable questions; real evaluation results can be added as they occur.
-- **Tool maturity remains mostly untested.** Many dev and agent entries are watchlist items; installation, permissions, rollback, real-device behavior, and production use are not verified.
-- **Cross-domain connections are sparse.** Trading psychology connects to personal psychology; health optimization connects to trading performance. These links could be made more explicit.
+## Themes that run through everything
 
-## Evergreen bookmark curation — 30 September 2026
+- **Perception over truth.** Markets move on belief transitions; narratives follow price; the useful question is what the crowd will do next.
+- **Evidence hygiene.** A clip, an anecdote, a pilot study and a trial are different things. [[Health Evidence]] gives the ladder; the same ladder is applied to trading claims and tool benchmarks.
+- **Least privilege.** Agents, connected accounts and remote access get the minimum scope and a separate approval for anything irreversible.
+- **Action over optimisation.** Imperfect action, delusion as a tool, compounding small deltas: the self-improvement and trading pages keep arriving at the same place.
+- **Voice.** Quotes, jokes and takes stay in the original words. The wiki organises; it does not launder.
 
-[[Evergreen Lessons from X - September 2026]] distils 14 lasting lessons from 15 of 70 live X bookmarks into the Brain and wiki. The current batch uses evergreen-only retention, superseding the earlier keep-all choice for this review. The full category catalog contains 936 structured entries and 15 bare links. Release news and unsupported claims remain outside the new selection; existing historical sources remain intact.
+## Where the gaps are
 
-**All 70 bookmark markers were removed from @entropyholdings.** Every Bird operation reported success. The authenticated X web interface, freshly loaded and reloaded with Bookmarks selected, displayed its empty state at `2026-09-30T21:51:47.209378+00:00`. Bird after-reads could not refresh X client bundles, so the UI provided the independent final verification. See [[X Bookmark Cleanup - 30 September 2026]] for the pinned operation receipt.
+- Many health claims in the notes remain unverified leads: the blueberry cure, cold-shower equivalence, the magnesium stack, the tongkat-ali protocol. They are labelled, not resolved.
+- The electrics procedural pages rest on webinar summaries whose transcripts are gone; test limits and exam references still need checking against current material.
+- Most developer and agent tools are watchlist items. Installation, permissions, rollback and real use are not recorded; the [[Developer Tool Evaluation Map]] is the template for recording them.
+- Some bookmarks are image-only or carry no note. They are listed with what the URL shows and nothing more.
+- Cross-domain links are thinner than the content deserves: trading psychology to personal psychology, health to performance, design taste to product decisions.
+
+## Bookmark history
+
+The bookmark collection was curated from a March 2026 X export into ten topical notes, extended through September 2026, and finished with an evergreen-only pass: [[Evergreen Lessons from X - September 2026]] kept fourteen lasting lessons from the last seventy saved posts before the live list was cleared ([[X Bookmark Cleanup - 30 September 2026]]). [[Bookmarks - Health & Psychology]] holds the one manually added study. The original export is preserved for citation; the current catalog is the ten category pages.

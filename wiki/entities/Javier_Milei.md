@@ -8,38 +8,45 @@ related:
   - Political Commentary
   - Philosophy & Meaning
   - Macro Trading
+  - Quotes
+  - Markets
+  - Nassim Taleb
+  - Curtis Yarvin (Mencius Moldbug)
 created: 2026-04-18T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - politician
   - argentina
   - libertarian
   - economics
   - polemic
+summary: "Javier Milei, Argentine libertarian president, through three blunt lines on money printing, skin in the game and political concession."
 ---
 
 # Javier Milei
 
-Argentine economist and President (b. 1970, took office December 2023). Libertarian polemicist known for blunt debate-register. Appears in [[Quotes]] three times — the human curates him for his compressed polemical style.
+Argentine economist and President of Argentina (born 1970; took office December 2023). A libertarian polemicist known for a blunt debating register. Erlin's [[Quotes]] note keeps three of his lines, which show the compressed, polemical style he is known for.
 
-## Recurring lines (from [[Quotes]])
+## Key ideas
 
-- **On money-printing:** "If printing money would end poverty, printing diplomas would end stupidity."
-- **On commercial morality:** "Anybody can be a prostitute with other people's asses."
-- **On political concession:** "You can't give shit leftists a single millimetre. If you give them a millimetre they will use it to destroy you."
+### On money printing
 
-## Why he's in the wiki
+- "If printing money would end poverty, printing diplomas would end stupidity." (from [[Quotes]])
 
-- **Inflation as category error** — the "printing diplomas" line compresses the Austrian critique and fits the [[Macro Trading]] / [[Markets]] thread on monetary debasement.
-- **Skin-in-the-game for political debate** — the "other people's asses" line aligns with [[Nassim_Taleb]]'s skin-in-the-game framework: easy to be virtuous with someone else's downside.
-- **Zero-compromise register** — the third quote shows the rhetorical mode the human bookmarks him for; fits the [[Political_Commentary]] anti-entropy register from [[Curtis_Yarvin]].
+### On commercial morality
 
-## Cross-links
+- "Anybody can be a prostitute with other people's asses." (from [[Quotes]])
 
-- [[Political_Commentary]]
-- [[Macro Trading]]
-- [[Nassim_Taleb]]
-- [[Philosophy_and_Meaning]]
+### On political concession
 
----
-Related: [[Quotes]], [[Political_Commentary]], [[Macro Trading]], [[Nassim_Taleb]]
+- "You can't give shit leftists a single millimetre. If you give them a millimetre they will use it to destroy you." (from [[Quotes]])
+
+## Why he is in the wiki
+
+- **Inflation as category error.** The "printing diplomas" line compresses the Austrian critique and fits the [[Macro Trading]] and [[Markets]] thread on monetary debasement.
+- **Skin in the game for political debate.** The "other people's asses" line matches [[Nassim_Taleb|Nassim Taleb]]'s skin-in-the-game framework: it is easy to be virtuous with someone else's downside.
+- **Zero-compromise register.** The third quote shows the rhetorical mode he is saved for. It fits the anti-entropy register in [[Political_Commentary|Political Commentary]] from [[Curtis_Yarvin|Curtis Yarvin]], and the broader themes in [[Philosophy_and_Meaning|Philosophy & Meaning]].
+
+## Related
+
+[[Quotes]] · [[Political_Commentary|Political Commentary]] · [[Philosophy_and_Meaning|Philosophy & Meaning]] · [[Macro Trading]] · [[Markets]] · [[Nassim_Taleb|Nassim Taleb]] · [[Curtis_Yarvin|Curtis Yarvin]]

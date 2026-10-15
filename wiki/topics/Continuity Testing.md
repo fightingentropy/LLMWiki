@@ -7,8 +7,16 @@ related:
   - Safe Isolation
   - Electrical Safety
   - Ohm's Law and Electrical Calculations
+  - GN3 Guidance Note 3
+  - Inspection and Testing Fundamentals
+  - In-Service Testing
+  - PAT Testing
+  - EIC and MEIWC
+  - Test Equipment Standards
+  - Electrical Study Map
+  - BS 7671
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - continuity
   - testing
@@ -16,6 +24,9 @@ tags:
   - bonding
   - resistance
   - dead-tests
+  - gn3
+  - table-b1
+summary: "How to prove protective conductors and bonding are continuous: instrument, expected resistance from GN3 Table B1, lead compensation and pass limits."
 source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
@@ -25,58 +36,66 @@ source_gaps:
     Testing.md
 review_status: unverified
 review_notes: >-
-  Historical webinar summary. The original transcript is unavailable; detailed
-  test limits, procedures, chapter and exam references have not been
-  authenticated against current material.
+  The test limits, procedures, GN3 page numbers and exam references here come
+  from a webinar summary whose transcript cannot be found and have not been
+  checked against current material.
 ---
 
 # Continuity Testing
 
-Testing to verify continuity of protective conductors, including main bonding, supplementary bonding, and earth conductors. Essential dead test performed before any other testing.
+Continuity testing verifies that protective conductors are continuous: main bonding, supplementary bonding, circuit protective conductors (CPCs) and, for Class 1 equipment, the earth path from plug to appliance. It is the first dead test, carried out before insulation resistance and polarity. This page holds the study notes on what to test, which instrument to use, how to work out the resistance you should expect from GN3 Table B1, how to compensate for test leads and parallel paths, and what counts as a pass.
+
+The figures, procedures and page references on this page come from a webinar summary whose original transcript is no longer available. Check limits and sequence against the current [[GN3 Guidance Note 3]], [[BS 7671]] and the course material before relying on them.
 
 ## Purpose
 
-Continuity testing proves:
-- Protective conductors are intact (not broken)
+A continuity test proves:
+
+- Protective conductors are intact, not broken
 - Connections are secure and complete
-- Low resistance paths exist for fault current
+- Low-resistance paths exist for fault current
 - Cabling has not been damaged
 
-## Test Sequence Position
+## Place in the dead-testing sequence
 
-**First in dead-testing sequence**:
-1. Continuity (first - you are here)
+Continuity comes first. The dead tests run after [[Safe Isolation]] in this order:
+
+1. Continuity
 2. Insulation resistance
 3. Polarity
 
-## Instrument Selection
+See [[Inspection and Testing Fundamentals]] for the full initial verification process around these tests.
 
-**Low-resistance ohmmeter required**:
-- Multi-function tester (MFT) continuity function, OR
-- Low-resistance ohmmeter
-- Simple continuity beeper is NOT sufficient
-  - Reason: Actual resistance values must be measured and recorded
-  - Pass/fail depends on specific resistance limits
+## Instrument
 
-**Reference**: GN3 continuity section (page 56)
+A low-resistance ohmmeter is required. Either:
 
-## What to Test
+- A multi-function tester (MFT) on its continuity function, or
+- A dedicated low-resistance ohmmeter
 
-### Protective Conductors
+A simple continuity beeper is not sufficient. Actual resistance values must be measured and recorded, and pass/fail depends on specific resistance limits. Instrument requirements are covered in [[Test Equipment Standards]].
+
+Reference: GN3 continuity section (page 56).
+
+## What to test
+
+### Protective conductors
 
 - Main protective conductors (earth)
 - Circuit protective conductors (CPC)
 - Supplementary bonding conductors
-- In Class 1 equipment: Earth conductor from plug to appliance
+- In Class 1 equipment: the earth conductor from plug to appliance
 
-### Test Points
+### Test points
 
-- From plug earth pin to exposed conductive parts
+- From the plug earth pin to exposed conductive parts
 - Along main and supplementary bonding routes
 - At connections and terminations
 - Complete circuit paths
 
-## Expected Resistance Calculations
+## Expected resistance
+
+Work out the resistance you should see before you measure, so an unrealistic reading stands out. The arithmetic is in [[Ohm's Law and Electrical Calculations]].
 
 ### Formula
 
@@ -84,57 +103,53 @@ Continuity testing proves:
 R = (milliohms per meter × length in meters) / 1000 = ohms
 ```
 
-### Source Data: GN3 Table B1
+### GN3 Table B1
 
-Contains resistance values for standard conductors:
+Table B1 gives resistance values for standard conductors:
+
 - Milliohms per meter for each conductor size
 - Columns for different conductor types
-- Single conductor values and combined pair values
+- Single-conductor values and combined-pair values
 
-**Important interpretation note**: Think of columns as "conductor one" and "conductor two", not as "line" and "protective" to avoid confusion when using table.
+Interpretation note: think of the columns as "conductor one" and "conductor two", not as "line" and "protective", to avoid confusion when using the table.
 
-### Example Calculation 1: Fixed Installation CPC
+### Worked example 1: fixed-installation CPC
 
-**Scenario**: 10 mm² protective conductor, 15 m length
+Scenario: 10 mm² protective conductor, 15 m long.
 
-**Calculation**:
-- Use 1.83 mΩ/m (single conductor value from Table B1)
+- Use 1.83 mΩ/m (single-conductor value from Table B1)
 - R = (1.83 × 15) / 1000
 - R = 27.45 / 1000
 - R = 0.027 Ω
-- Rounded: ~0.03 Ω
+- Rounded: about 0.03 Ω
 
-**Sense check**: Realistic value for copper conductor of this size and length.
+Sense check: a realistic value for a copper conductor of this size and length.
 
-### Example Calculation 2: Flex Cable (Equipment)
+### Worked example 2: flex cable on equipment
 
-**Scenario**: 0.75 mm² flex cable, 1 m length
+Scenario: 0.75 mm² flex, 1 m long.
 
-**Calculation**:
 - Use 26 mΩ/m (from Appendix 5 for flex)
 - R = (26 × 1) / 1000
 - R = 0.026 Ω
 
-**Pass criteria for equipment**: 0.1 + R = 0.1 + 0.026 = 0.126 Ω maximum
+Pass criterion for equipment: 0.1 + R = 0.1 + 0.026 = 0.126 Ω maximum.
 
-### Example Calculation 3: Sense Check with Drum
+### Worked example 3: sense check with a cable drum
 
-**Scenario**: 50 m drum of 10 mm² G/Y cable
+Scenario: a 50 m drum of 10 mm² green/yellow cable.
 
-**Calculation**:
 - Use 1.83 mΩ/m
 - R = (1.83 × 50) / 1000
 - R = 91.5 / 1000
 - R = 0.0915 Ω
-- Expected: Around 0.09 Ω
+- Expected reading: around 0.09 Ω
 
-**Purpose**: Develop sense of realistic readings so you can spot errors.
+The point of this exercise is to develop a feel for realistic readings so you can spot errors.
 
-## Twin-and-Earth CPC Sizes
+## Twin-and-earth CPC sizes
 
-### Table B1 Star/Asterisk Markings
-
-Asterisks identify T&E cable CPC sizes (quick reference):
+Asterisks in Table B1 mark the CPC sizes used in twin-and-earth (T&E) cable, as a quick reference:
 
 | T&E Size | CPC Size |
 |----------|----------|
@@ -146,119 +161,131 @@ Asterisks identify T&E cable CPC sizes (quick reference):
 | 10.0 mm² | 4.0 mm² |
 | 16.0 mm² | 6.0 mm² |
 
-**Use**: Understand cable construction and expected resistance values for practical work and exam.
+Knowing these sizes helps you understand cable construction and the resistance to expect, for practical work and the exam.
 
-## Test Lead Resistance Compensation
+## Test lead compensation
 
-### The Problem
+### The problem
 
-Measured resistance = Conductor resistance + Test lead resistance
+Measured resistance = conductor resistance + test lead resistance.
 
-Test leads add significant resistance (typically 0.5-1.5 Ω depending on lead length and quality).
+Test leads add significant resistance, typically 0.5-1.5 Ω depending on lead length and quality.
 
-**Example without compensation**:
+Example without compensation:
+
 - Total measured: 1.51 Ω
 - Test leads: 1.50 Ω
-- Actual conductor: Only 0.01 Ω
-- If not compensated, appears to fail when actually passes
+- Actual conductor: only 0.01 Ω
+- Uncompensated, the conductor appears to fail when it actually passes
 
-### Method 1: Separate Lead Measurement
+### Method 1: measure the leads separately
 
-1. Short-circuit the test leads together (no cable under test)
-2. Measure resistance of leads only
+1. Short-circuit the test leads together, with no cable under test
+2. Measure the resistance of the leads alone
 3. Note this value
-4. Measure complete circuit (conductor + leads)
-5. Subtract lead resistance from total
+4. Measure the complete circuit (conductor + leads)
+5. Subtract the lead resistance from the total
 
-**Example**:
+Example:
+
 - Total reading with leads = 1.51 Ω
 - Lead resistance alone = 1.50 Ω
 - True conductor resistance = 1.51 - 1.50 = 0.01 Ω
 
-### Method 2: Zero/Null the Leads
+### Method 2: zero (null) the leads
 
-1. Use MFT function that zeros out lead resistance
+1. Use the MFT function that zeros out lead resistance
 2. Short-circuit the leads
-3. Press "zero" or "null" button
-4. MFT remembers and subtracts lead resistance from all subsequent readings
-5. Measure conductor directly
-6. Reading is already compensated
+3. Press the "zero" or "null" button
+4. The MFT remembers the lead resistance and subtracts it from all subsequent readings
+5. Measure the conductor directly
+6. The reading is already compensated
 
-**Advantage**: Faster and more convenient, especially for multiple tests.
+Advantage: faster and more convenient, especially across multiple tests.
 
-## Eliminating Parallel Paths
+## Eliminating parallel paths
 
-### Why It Matters
+### Why it matters
 
 When bonding conductors are connected at multiple points, parallel paths exist:
-- Multiple routes for current
-- Resistance readings become artificially low
-- True conductor resistance cannot be determined
 
-**Example**: Bonding conductor connected to MET at both ends
-- Current can flow through the main route AND return paths
-- Measured resistance is lower than actual conductor resistance
-- Distorts test results
+- There are multiple routes for current
+- Resistance readings become artificially low
+- The true conductor resistance cannot be determined
+
+Example: a bonding conductor connected to the main earthing terminal (MET) at both ends. Current can flow through the main route and the return paths, so the measured resistance is lower than the actual conductor resistance and the result is distorted.
 
 ### Solution
 
-Temporarily disconnect one end of bonding conductor from MET during testing:
-- Eliminates parallel paths
-- Allows true conductor resistance measurement
+Temporarily disconnect one end of the bonding conductor from the MET during testing:
+
+- This eliminates the parallel paths
+- The true conductor resistance can be measured
 - Reconnect after testing
 
-**Important**: This is temporary during testing only, not permanent.
+The disconnection is temporary, for the duration of the test only, never permanent.
 
-## Pass/Fail Criteria
+## Pass/fail criteria
 
-### Fixed Installation Protective Conductors
+### Fixed-installation protective conductors
 
-Specific pass criteria depend on application:
+The specific pass criterion depends on the application:
+
 - Typically very low resistance (under 0.1 Ω for short runs)
-- Calculated value using expected resistance (formula above)
-- Actual measured value must be reasonable for the length
+- A calculated value using the expected-resistance formula above
+- The measured value must be reasonable for the length
 
-### Equipment (Class 1)
+### Class 1 equipment
 
-**Pass criterion**: 0.1 Ω + R (where R is flex protective conductor resistance)
+Pass criterion: 0.1 Ω + R, where R is the resistance of the flex protective conductor.
 
-**Example**: For 1 m of 0.75 mm² flex
+Example, for 1 m of 0.75 mm² flex:
+
 - R = 0.026 Ω
 - Maximum = 0.1 + 0.026 = 0.126 Ω
 
-### Bonding Conductors
+The appliance side of this test is covered in [[In-Service Testing]] and [[PAT Testing]].
 
-Must show continuous path with acceptably low resistance:
+### Bonding conductors
+
+Must show a continuous path with acceptably low resistance:
+
 - No open circuits (infinite resistance = fail)
-- Resistance within expected range for conductor size and length
+- Resistance within the expected range for conductor size and length
 - No corroded or damaged connections
 
-## Test Procedure
+## Test procedure
 
-1. **Identify what to test**: Which conductor or bonding route
-2. **Calculate expected resistance**: Use Table B1 and formula
-3. **Compensate test leads**: Zero the meter or note lead resistance
-4. **Connect test leads**: Secure connection at both ends of conductor
-5. **Take reading**: Record resistance value
-6. **Compare to expected**: Is it realistic for the length?
-7. **Compare to pass criteria**: Does it meet the requirement?
-8. **Record result**: Document for certification/report
+1. Identify what to test: which conductor or bonding route
+2. Calculate the expected resistance using Table B1 and the formula
+3. Compensate the test leads: zero the meter or note the lead resistance
+4. Connect the test leads securely at both ends of the conductor
+5. Take the reading and record the resistance value
+6. Compare to expected: is it realistic for the length?
+7. Compare to the pass criteria: does it meet the requirement?
+8. Record the result for the certificate or report
 
-## Common Mistakes
+## Common mistakes
 
-- **Not using Table B1 values correctly**: Confusing conductor columns
-- **Not compensating for lead resistance**: Results appear to fail when they pass
-- **Not eliminating parallel paths**: Low readings that aren't true conductor resistance
-- **Using incorrect test instrument**: Simple beeper cannot measure values needed
-- **Testing at wrong points**: Not testing complete circuit path
-- **Not sense-checking results**: Not questioning unrealistic readings
-- **Confusing T&E CPC sizes**: Using wrong CPC value in calculations
+- Not using Table B1 values correctly: confusing the conductor columns
+- Not compensating for lead resistance: results appear to fail when they pass
+- Not eliminating parallel paths: low readings that are not the true conductor resistance
+- Using the wrong instrument: a simple beeper cannot measure the values needed
+- Testing at the wrong points: not testing the complete circuit path
+- Not sense-checking results: not questioning unrealistic readings
+- Confusing T&E CPC sizes: using the wrong CPC value in calculations
 
-## Documentation
+## Recording results
 
 Results must be recorded:
-- Conductor tested (e.g., "CPC Ring Circuit 1")
-- Measured resistance value (in Ω)
-- Pass/Fail status
+
+- Conductor tested (for example "CPC Ring Circuit 1")
+- Measured resistance value, in Ω
+- Pass/fail status
 - Any notes about test conditions
-- Result becomes part of [[EIC and MEIWC]] certificate or test schedule
+
+The result becomes part of the [[EIC and MEIWC]] certificate or test schedule.
+
+## Related
+
+[[Safe Isolation]] · [[Electrical Safety]] · [[Ohm's Law and Electrical Calculations]] · [[GN3 Guidance Note 3]] · [[Inspection and Testing Fundamentals]] · [[In-Service Testing]] · [[PAT Testing]] · [[EIC and MEIWC]] · [[Test Equipment Standards]] · [[BS 7671]] · [[Electrical Study Map]]

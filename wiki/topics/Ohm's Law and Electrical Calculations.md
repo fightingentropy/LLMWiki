@@ -6,38 +6,51 @@ sources:
   - electrics/Resources.md
 related:
   - RCD Protection
+  - Electrics - Resources
+  - Electrical Study Map
+  - Electrical Safety
+  - Continuity Testing
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - formulas
   - calculations
   - ohm-law
   - power
   - electrical-theory
+summary: "Worked formulas for Ohm's law, power, conductor resistance, voltage drop and a 230 V amps-to-watts table, with examples for installation and testing."
 ---
 
 # Ohm's Law and Electrical Calculations
 
-Quick reference for core electrical formulas and calculations used in electrical installation work and testing.
+Quick reference for the core electrical formulas used in installation work and testing. The notes behind it list three quick relationships: the Ohm's law triangle, the power triangle and the 230 V rule of thumb (from [[Electrics - Resources]]). This page works each one through, then covers conductor resistance, voltage drop and a ready-reckoner of amps against watts.
 
-## Ohm's Law
+## Key formulas
 
-Fundamental relationship between voltage, current, and resistance:
+| Quantity | Formula | Note |
+|----------|---------|------|
+| Ohm's law | V = I × R | with triangle method variants |
+| Power | P = I × V | |
+| Conductor resistance | R = (mΩ/m × length) / 1000 | from table values |
+| Rule of thumb | 1 kW ≈ 4.35 A | at 230 V |
 
-### Formula
+The source note gives these as "Ohm's law triangle: V = I x R", "Power triangle: P = I x V" and "Rule of thumb at 230 V: 1 kW is about 4.35 A" (from [[Electrics - Resources]]).
+
+## Ohm's law
+
+The relationship between voltage, current and resistance:
 
 ```
 V = I × R
 ```
 
-Where:
-- **V** = Voltage (measured in volts)
-- **I** = Current (measured in amperes or amps)
-- **R** = Resistance (measured in ohms, Ω)
+- **V** = voltage (volts)
+- **I** = current (amperes, or amps)
+- **R** = resistance (ohms, Ω)
 
-### Triangle Method
+### Triangle method
 
-Visual representation helps remember all three forms:
+A triangle helps remember all three forms:
 
 ```
       V
@@ -45,50 +58,33 @@ Visual representation helps remember all three forms:
     I | R
 ```
 
-**To find any value**:
-- Cover the value you want
-- Use the remaining formula shown
+To find any value, cover the one you want and use the remaining formula shown.
 
-**Form 1** (voltage):
-```
-V = I × R
-```
+- Voltage: `V = I × R`
+- Current: `I = V ÷ R`
+- Resistance: `R = V ÷ I`
 
-**Form 2** (current):
-```
-I = V ÷ R
-```
+### Uses
 
-**Form 3** (resistance):
-```
-R = V ÷ I
-```
-
-### Practical Application
-
-Common scenarios:
-- Determining circuit current given voltage and load resistance
+- Determining circuit current from voltage and load resistance
 - Calculating voltage drop across a conductor
-- Finding resistance of a conductor from measurements
+- Finding the resistance of a conductor from measurements
 
-## Power Calculation
+## Power
 
 Electrical power in AC circuits:
-
-### Formula
 
 ```
 P = I × V
 ```
 
-Where:
-- **P** = Power (measured in watts or kilowatts)
-- **I** = Current (measured in amperes)
-- **V** = Voltage (measured in volts)
+- **P** = power (watts or kilowatts)
+- **I** = current (amperes)
+- **V** = voltage (volts)
 
-### Relationship to Ohm's Law
+### Combining with Ohm's law
 
-Combining with Ohm's law (V = I × R):
+Substituting V = I × R:
 
 ```
 P = I × V = I × (I × R) = I² × R
@@ -100,140 +96,47 @@ Also:
 P = V² ÷ R
 ```
 
-### Practical Application
+### Uses
 
-Determining:
 - Power consumption of circuits
-- Kilowatt requirements for installation
-- Sizing of protective devices based on load
+- Kilowatt requirements for an installation
+- Sizing protective devices based on load
 - Load current given power and voltage
 
-## Rule of Thumb: Current at 230 V
+## Rule of thumb: current at 230 V
 
-Quick estimate for domestic AC circuits:
-
-### Standard Calculation
-
-At 230 V (single-phase AC supply in UK):
+A quick estimate for domestic AC circuits. At 230 V (single-phase AC supply in the UK):
 
 ```
 1 kW ≈ 4.35 A
 ```
 
-**Inverse**: 
+Inverse:
+
 ```
 230 W ≈ 1 A
 ```
 
-### Using the Rule
+**Example 1**, a 3 kW shower:
 
-**Example 1**: 3 kW shower
 ```
 3 × 4.35 = 13.05 A (approximately 13 A)
 ```
 
-**Example 2**: 6 A circuit in dwelling
+**Example 2**, a 6 A circuit in a dwelling:
+
 ```
 6 × 230 = 1,380 W ≈ 1.4 kW
 ```
 
-### Why Useful
+Why it is useful:
 
-- Quick mental calculation without calculator
-- Verify if calculated values are reasonable
-- Assess if selected circuit breaker/fuse is appropriate
+- Quick mental calculation without a calculator
+- Checks whether calculated values are reasonable
+- Shows whether a selected circuit breaker or fuse is appropriate
 - Rough load estimation for installation design
 
-## Resistance Calculations for Conductors
-
-Used in [[Continuity Testing]] and fault loop impedance calculations:
-
-### Formula
-
-```
-R = (ρ × L) / A
-```
-
-Or more commonly for standard tables:
-
-```
-R = (milliohms per meter × length in meters) / 1000
-```
-
-Where:
-- **R** = Resistance (ohms)
-- **ρ** (rho) = Resistivity of conductor material
-- **L** = Length of conductor (meters)
-- **A** = Cross-sectional area (mm²)
-- **mΩ/m** = Milliohms per meter (from tables)
-
-### Table Approach (GN3 Table B1)
-
-Most practical approach uses standard conductor resistance tables:
-
-1. Identify conductor size (mm²)
-2. Find resistance value per meter (milliohms/meter) in table
-3. Multiply by conductor length
-4. Divide by 1000 to get ohms
-
-**Example**: 10 mm² conductor, 15 m length
-```
-R = (1.83 mΩ/m × 15 m) / 1000
-R = 27.45 / 1000
-R = 0.027 Ω
-```
-
-### Factors Affecting Resistance
-
-**Conductor type**: Different materials have different resistivity
-- Copper: Standard for electrical installations
-- Aluminum: Higher resistivity, less common in domestic
-
-**Temperature**: Resistance increases with temperature
-- Table values at 20°C
-- Actual resistance higher at operating temperature
-- May be compensated in circuit design
-
-**Conductor size**: Larger cross-section = lower resistance
-- Doubling conductor area halves resistance
-- Critical for earth/protective conductors
-
-## Voltage and Current Relationships
-
-### Voltage Drop
-
-Voltage lost in conductor due to resistance:
-
-```
-Voltage drop (V) = Current (I) × Conductor resistance (R)
-V_drop = I × R
-```
-
-**Practical importance**:
-- Long cable runs can lose significant voltage
-- May need larger conductor to minimize drop
-- Building Regulations specify maximum voltage drop
-
-**Example**: 20 A current in 0.15 Ω conductor
-```
-V_drop = 20 × 0.15 = 3 V
-```
-
-### Power Loss
-
-Power dissipated as heat in conductor:
-
-```
-P_loss = I² × R
-```
-
-**Practical impact**:
-- Heating in cables
-- Efficiency loss
-- Larger conductors reduce loss exponentially
-- Important in cable design for long runs
-
-## Common Electrical Values (230 V Single-Phase UK)
+## Common values at 230 V single-phase (UK)
 
 Reference values for quick mental calculation:
 
@@ -249,17 +152,102 @@ Reference values for quick mental calculation:
 | 20 A | 4,600 W | 4.6 kW |
 | 32 A | 7,360 W | 7.36 kW |
 
-## Summary
+## Conductor resistance
 
-**Key formulas to remember**:
-- **Ohm's Law**: V = I × R (with triangle method variants)
-- **Power**: P = I × V
-- **Resistance**: R = (mΩ/m × length) / 1000
-- **Rule of thumb**: 1 kW ≈ 4.35 A at 230 V
+Used in [[Continuity Testing]] and fault loop impedance calculations. The notes describe the earth cable as providing "a low-resistance escape route for fault current if live touches metal" (from [[Electrics - Resources]]), which is why conductor resistance is critical for earth and protective conductors.
 
-**Application areas**:
+### Formula
+
+```
+R = (ρ × L) / A
+```
+
+- **R** = resistance (ohms)
+- **ρ** (rho) = resistivity of the conductor material
+- **L** = length of conductor (metres)
+- **A** = cross-sectional area (mm²)
+
+For standard tables, the more common form is:
+
+```
+R = (milliohms per metre × length in metres) / 1000
+```
+
+- **mΩ/m** = milliohms per metre (from tables)
+
+### Table approach (GN3 Table B1)
+
+The most practical method uses standard conductor resistance tables:
+
+1. Identify the conductor size (mm²).
+2. Find the resistance per metre (milliohms/metre) in the table.
+3. Multiply by the conductor length.
+4. Divide by 1000 to get ohms.
+
+**Example**, 10 mm² conductor, 15 m length:
+
+```
+R = (1.83 mΩ/m × 15 m) / 1000
+R = 27.45 / 1000
+R = 0.027 Ω
+```
+
+### What affects resistance
+
+- **Conductor type:** different materials have different resistivity.
+  - Copper is the standard for electrical installations.
+  - Aluminium has higher resistivity and is less common in domestic work.
+- **Temperature:** resistance increases with temperature.
+  - Table values are at 20°C.
+  - Actual resistance is higher at operating temperature.
+  - This may be compensated for in circuit design.
+- **Conductor size:** a larger cross-section means lower resistance.
+  - Doubling the conductor area halves the resistance.
+  - Critical for earth and protective conductors.
+
+## Voltage drop and power loss
+
+### Voltage drop
+
+Voltage lost in a conductor because of its resistance:
+
+```
+V_drop = I × R
+```
+
+That is, voltage drop (V) = current (I) × conductor resistance (R).
+
+- Long cable runs can lose significant voltage.
+- A larger conductor may be needed to minimise the drop.
+- Building Regulations specify a maximum voltage drop.
+
+**Example**, 20 A through a 0.15 Ω conductor:
+
+```
+V_drop = 20 × 0.15 = 3 V
+```
+
+### Power loss
+
+Power dissipated as heat in the conductor:
+
+```
+P_loss = I² × R
+```
+
+- Causes heating in cables
+- Causes efficiency loss
+- Larger conductors reduce the loss
+- Matters in cable design for long runs
+
+## Where the calculations apply
+
 - Circuit design and protection device selection
 - Conductor sizing and voltage drop
 - Fault current calculations
 - Continuity testing expected values
 - Installation load assessment
+
+## Related
+
+[[Electrics - Resources]] · [[Electrical Study Map]] · [[Electrical Safety]] · [[Continuity Testing]] · [[RCD Protection]]

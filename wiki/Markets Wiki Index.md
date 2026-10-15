@@ -8,126 +8,92 @@ sources:
   - markets/Handbook.md
   - markets/Tools.md
   - markets/Trading.md
-related: []
+related:
+  - Wiki Index
+  - Markets
+  - Trading Philosophy
+  - Market Regime
+  - Traders Directory
+  - Crypto Takes
+  - Bookmarks - Markets & Crypto
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - index
   - navigation
   - wiki-index
+  - markets
+summary: A reading order for the markets pages, from the core framework through asset classes, crypto market structure, psychology, people and tools.
 ---
 
-## About This Wiki
-A comprehensive knowledge base for markets analysis, trading strategy, and macro-economic framework. Synthesized from 5 source documents:
-- [[Markets - Articles]] - Curated research and thought leadership
-- [[Markets - Brief]] - Daily market overview template (Druckenmiller-style)
-- [[Markets - Handbook]] - Reference data and exchange hours
-- [[Markets - Tools]] - Analytics platforms and monitoring
-- [[Markets - Trading]] - Trading principles and trader directory
+# Markets Wiki Index
 
-## Core Concepts
+The markets wiki grew out of five notes ([[Markets - Trading]], [[Markets - Brief]], [[Markets - Handbook]], [[Markets - Tools]], [[Markets - Articles]]), the [[Crypto Takes]] archive of trader posts, and the [[Bookmarks - Markets & Crypto]] resource bank. This page is the reading order. [[Markets]] is the one-page summary of how the pieces fit.
 
-### Market Analysis Framework
-- [[Market Regime]] - Growth/inflation/liquidity/volatility assessment
-- [[Cross-Asset Analysis]] - Integrating rates, FX, equities, credit, commodities
-- [[Macro Trading]] - Regime-based, high-conviction analysis
-- [[Trading Philosophy]] - Principles and mindset
+## The framework
 
-### Market Drivers
-- [[Market Drivers]] - What moves prices in different regimes
-- [[Sentiment]] - Collective psychology and extremes
-- [[Positioning]] - Where money is, crowding, leverage
-- [[Liquidations]] - Mechanical flows and cascade risk
+Read in this order. Each page builds on the one before it.
 
-### Asset Classes
+1. [[Trading Philosophy]] — The principles: "truth doesn't move markets, perception does", regime first, signal over narrative, positioning extremes create squeezes.
+2. [[Market Regime]] — Growth, inflation, liquidity and volatility regimes, and how to tell which one you are in.
+3. [[Cross-Asset Analysis]] — Rates, FX, equities, credit and commodities should tell one coherent story; when they don't, something is about to move.
+4. [[Market Drivers]] — What moves prices in each regime: sentiment, flow, fundamentals and technicals.
+5. [[Positioning]], [[Sentiment]] and [[Flow Analysis]] — Where the money already is, what the crowd believes, and how flows push price.
+6. [[Liquidations]], [[Leverage]] and [[Funding Rates]] — The mechanical side: forced flows, compressed deadlines and the cost of carrying a position.
+7. [[Risk Analysis]] and [[Repeated Games]] — What breaks the idea, and why preserving the next round matters more than repairing the last one.
+8. [[Macro Trading]] — The whole method applied, in the [[Stanley Druckenmiller]] style.
 
-#### Fixed Income & Rates
-- [[Rates]] - Treasury yields, curve, real rates, policy path
-- [[Credit]] - Spreads, default risk, refinancing stress
+## Asset classes
 
-#### Foreign Exchange
-- [[FX]] - Dollar, key crosses, EM stress, carry trades
-- [[DXY]] - US Dollar Index
+- **Rates and credit:** [[Rates]] → [[Real Yields]] → [[Credit]]
+- **FX:** [[FX]] → [[DXY]]
+- **Equities:** [[Equities]] → [[Sector Rotation]] → [[AI Infrastructure Economics]]
+- **Commodities:** [[Commodities]] → [[Oil]], [[Natural Gas]], [[Gold]], [[Silver]]
+- **Reference data:** [[Exchange Hours]], [[CME]], [[Markets - Handbook]]
 
-#### Equities
-- [[Equities]] - Index, breadth, leadership, rotation, valuation
-- [[Sector Rotation]] - Cyclicals vs. defensives dynamics
+## Crypto and market structure
 
-#### Commodities
-- [[Commodities]] - Boom-bust cycles, supply-demand
-- [[Oil]] - Geopolitical, OPEC, energy policy
-- [[Natural Gas]] - Seasonal, storage, LNG, weather
-- [[Gold]] - Safe-haven, real rates, USD
-- [[Silver]] - Industrial + safe-haven hybrid, mean reversion
+- [[Crypto Trading]] — Momentum, flow, leverage and liquidation dynamics specific to crypto.
+- [[Exchange Microstructure]] — Order flow, latency and liquidity; where edge and slippage actually live.
+- [[Hyperliquid]], [[Trading Platforms]], [[HIP-3 Silver Microstructure]], [[TradeXYZ]] — The venues and the questions to ask about them.
+- [[Robinhood HYPE]] — A tracked wallet, read as a flow signal.
+- [[Market Cycles]] and [[Market Performance Measurement]] — Cycle structure, and what a leaderboard or a PnL screenshot does and does not prove.
+- [[Crypto Takes]] — The raw archive of trader posts the crypto pages draw on.
 
-### Crypto & Specialized
-- [[Crypto Trading]] - Momentum, flow, leverage, liquidations
-- [[Exchange Microstructure]] - Order flow, latency, liquidity
-- [[Exchange Hours]] - Global session coverage
+## Psychology and process
 
-## Traders & Entities
+- [[Trading Psychology]] — Why traders lose, variance and losing streaks, mental capital, taking money off the table, the cycle psychology of first-timers and veterans.
+- [[Behavioral Finance]], [[Decision-Making]], [[Capital Allocation Timing]] — Biases, decision quality under uncertainty, and the grow-fast-protect-slow asymmetry.
+- [[Trading Evidence and Review Framework]] — How to record a claim, an assumption, a correction and a measured outcome so the journal compounds.
+- [[Economics]] and [[Business & Finance]] — The macro backdrop and the business-side notes.
 
-### Traders to Watch
-- [[Traders Directory]] - Complete list of 17+ notable traders
-- [[fejau_inc]] - Featured trader
-- [[cobie]] - Featured trader
-- [[TheFlowHorse]] - Featured trader
+## People
 
-### Platforms & Tools
-- [[Hyperliquid]] - DEX, perpetual futures, microstructure
-- [[Robinhood HYPE]] - Tracked institutional wallet
-- [[Citrini Research]] - Macro research
-- [[Citadel Securities]] - Market maker research
+[[Traders Directory]] lists everyone with a short line each. The pages with the most material:
 
-### Key Figures
-- [[Stanley Druckenmiller]] - Macro philosophy and methodology
-- [[Toto Wolff]] - Resilience through adversity
+- Macro and method: [[Stanley Druckenmiller]], [[Citrini Research]], [[goodalexander]], [[fejau_inc]], [[RJ Killmex]], [[OxHamz]]
+- Crypto process and psychology: [[CryptoCred]], [[Pentosh1]], [[0xaporia]], [[cobie]], [[Rewkang]], [[LomahCrypto]], [[trading_axe]], [[jimtalbot]], [[TheFlowHorse]]
+- Voices and characters: [[GCRClassic]], [[GiganticRebirth]], [[HsakaTrades]], [[ImperatorXBT]], [[insiliconot]], [[DegenSpartan]], [[thiccythot]], [[Zhu Su]], [[Satoshi Nakamoto]]
+- Institutions and outsiders: [[Citadel Securities]], [[Toto Wolff]] (resilience through adversity)
 
-## Risk Management
-- [[Risk Analysis]] - Upside/downside risk framework
-- [[Positioning]] - Crowding, squeeze, leverage assessment
-- [[Liquidations]] - Mechanical failure modes
+## Tools
 
-## How to Use This Wiki
+The quick list. [[Markets - Tools]] and [[Bookmarks - Markets & Crypto]] hold the full set with descriptions.
 
-### For Daily Market Analysis
-1. Start with [[Market Regime]] - What regime are we in?
-2. Read [[Cross-Asset Analysis]] - Are all markets coherent with regime?
-3. Check [[Market Drivers]] - What's moving markets today?
-4. Use [[Markets - Brief]] template for structure
+- [Loris liquidations](https://loris.tools/liquidations) — Real-time liquidation feed across venues.
+- [Hyperliquid latency map](https://hyperlatency.glassnode.com/) — Glassnode's network latency and microstructure monitor for Hyperliquid.
+- [Qwantify market flow](https://www.qwantify.io/app/analytics/market-flow) — Market-flow analytics dashboard.
+- [CoinGlass liquidation map](https://www.coinglass.com/pro/futures/LiquidationMap) — Where leveraged positions sit, and where cascades would start.
+- [unbias.fyi](https://unbias.fyi/) — On-chain metrics.
 
-### For Trade Idea Evaluation
-1. Assess [[Positioning]] - Is this crowded?
-2. Check [[Sentiment]] - What's the consensus?
-3. Review [[Risk Analysis]] - What breaks the idea?
-4. Monitor [[Liquidations]] - Where's the tail risk?
+## How to use these pages
 
-### For Asset-Specific Deep Dives
-- **Rates**: [[Rates]] → [[Real Yields]]
-- **FX**: [[FX]] → [[DXY]]
-- **Equities**: [[Equities]] → [[Sector Rotation]]
-- **Credit**: [[Credit]]
-- **Commodities**: [[Commodities]] → specific commodity page
-- **Crypto**: [[Crypto Trading]] → [[Exchange Microstructure]]
+**For a daily read:** [[Market Regime]] (what regime are we in?) → [[Cross-Asset Analysis]] (are all markets telling the same story?) → [[Market Drivers]] (what is moving today?) → write it up in the [[Markets - Brief]] template.
 
-## Quick Reference
+**For a trade idea:** [[Positioning]] (is it crowded?) → [[Sentiment]] (what is consensus?) → [[Risk Analysis]] (what breaks it?) → [[Liquidations]] (where is the tail risk?) → [[Trading Psychology]] (is this the setup, or the itch to do something?).
 
-### Tools & Resources
-- Real-time liquidations: https://loris.tools/liquidations
-- Hyperliquid latency: https://hyperlatency.glassnode.com/
-- Market flow analysis: https://www.qwantify.io/app/analytics/market-flow
-- CoinGlass liquidations: https://www.coinglass.com/pro/futures/LiquidationMap
-- On-chain metrics: https://unbias.fyi/
+**For reading:** [[Markets - Articles]] is the curated essay list, from Citrini's macro series to the pieces on career decisions and problem selection.
 
-### Key Concepts
-- **Truth vs. Perception**: Perception & certainty transitions move markets
-- **Regime First**: Let regime drive strategy, not individual ideas
-- **Signal Over Narrative**: Observable confirmations > storytelling
-- **Positioning Extremes**: Crowding creates squeeze risk
-- **Cross-Asset Coherence**: All markets should tell same story in given regime
+## Related
 
----
-
-**Last Updated**: 2026-04-12
-**Page Count**: 40+ pages across sources, entities, topics
-**Source Files**: 5 markdown files, ~400 lines of raw content
+[[Wiki Index]] · [[Markets]] · [[Crypto Takes]] · [[Bookmarks - Markets & Crypto]] · [[Markets - Trading]]

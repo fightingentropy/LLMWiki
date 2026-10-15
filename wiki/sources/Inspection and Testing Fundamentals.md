@@ -9,8 +9,19 @@ related:
   - Building Regulations
   - PAT Testing
   - EIC and MEIWC
+  - GN3 Guidance Note 3
+  - BS 7671
+  - EICR
+  - Part P
+  - GS38
+  - BS EN 61010
+  - Test Equipment Standards
+  - RCD Protection
+  - Ohm's Law and Electrical Calculations
+  - Electrical Study Map
+  - Electrical Evidence Review - September 2026
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - inspection
   - testing
@@ -19,319 +30,337 @@ tags:
   - documentation
   - safe-isolation
   - continuity
+  - initial-verification
+  - certification
+summary: "Webinar notes on initial verification: certificates, the order of tests, safe isolation step by step and continuity calculations with GN3 Table B1."
 source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
     and Testing Demonstration.md
 review_status: unverified
 review_notes: >-
-  Historical webinar summary. The original transcript is unavailable; detailed
-  test limits, procedures, chapter and exam references have not been
-  authenticated against current material.
+  The original webinar transcript is unavailable, so the test limits,
+  procedures, chapter references and exam details have not been checked
+  against current material.
 ---
 
 # Inspection and Testing Fundamentals
 
-Core webinar on inspection and testing fundamentals for the Level 2/Level 3 qualification pathway. Covers the practical process of initial verification, documentation, safe isolation procedure, and the dead-testing sequence.
+Notes from *Electrics Webinar 4 - Inspection and Testing Demonstration* by Access Training, the first inspection-and-testing fundamentals session on the Level 2/Level 3 qualification pathway. It sets out how the subject is taught across the later webinars and practical training, the documents and forms used for initial verification and condition reporting, the dead-testing sequence, a detailed safe isolation walkthrough and an introductory continuity lesson. The instructor's theme throughout: learn inspection and testing as a practical, technical discipline, not just to pass the exam.
 
-Source: Electrics Webinar 4 - Inspection and Testing Demonstration by Access Training
+The original transcript is missing, so treat the limits, page numbers and procedures here as study notes and check them against current [[GN3 Guidance Note 3]], [[BS 7671]] and your training.
 
-## Session Overview
+## Competence and how to learn the subject
 
-This is the first inspection-and-testing fundamentals webinar for the Level 2/Level 3 pathway. Key focus:
-- How inspection and testing is taught across upcoming webinars and practical training
-- Core documents and forms used in initial verification and condition reporting
-- Introduction to the dead-testing sequence
-- Detailed safe isolation walkthrough
-- Introductory continuity testing lesson
+### Understanding over exam success
 
-The session emphasizes learning the subject as a practical/technical discipline, not just for exam success.
+- Learn inspection and testing as a practical, technical subject, not just an exam exercise.
+- Use several resources: [[GN3 Guidance Note 3]] for the exam, [[BS 7671]] for the requirements, the On-Site Guide, and the training portal's demos.
+- Better technical understanding improves both exam performance and real-world safety.
+- "Every day is a school day."
 
-## Key Competence Themes
+### Dangerous if done incorrectly
 
-### Understanding Over Exam Success
-- Learn inspection and testing as a practical/technical subject, not just exam exercise
-- Use multiple resources: [[GN3 Guidance Note 3]] (exam), [[BS 7671]] (requirements), On-Site Guide, portal demos
-- Better technical understanding improves both exam performance and real-world safety
-- "Every day is a school day" mindset
+- Qualifications alone are not the whole picture; practical skill and understanding are required.
+- Real competence means understanding:
+  - the installation itself
+  - the equipment connected to it
+  - the instruments being used
+  - the requirements of BS 7671 and other relevant standards
+- Do not be embarrassed about not knowing something.
 
-### Inspection and Testing is Dangerous if Done Incorrectly
-- Qualifications alone are not the whole picture; practical skill and understanding are required
-- Real competence requires understanding:
-  - The installation itself
-  - The equipment connected to it
-  - The instruments being used
-  - The requirements of BS 7671 and other relevant standards
-- Avoid embarrassment about not knowing something
+## Statutory and non-statutory documents
 
-## Statutory vs Non-Statutory Documentation
+| Status | Documents |
+|---|---|
+| Statutory | Health and Safety at Work Act; Management of Health and Safety at Work Regulations; Electricity at Work Regulations; PUWER; Building Regulations |
+| Non-statutory guidance | Approved Documents (Part P, Part M, Part A, Part L); [[BS 7671]]; [[GN3 Guidance Note 3]]; On-Site Guide |
 
-Key regulations and guidance:
-- **Statutory**: Health and Safety at Work Act, Management of Health and Safety at Work Regulations, Electricity at Work Regulations, PUWER, Building Regulations
-- **Non-statutory guidance**: Approved Documents (Part P, Part M, Part A, Part L), [[BS 7671]], [[GN3 Guidance Note 3]], On-Site Guide
+Approved Documents are guidance; they are not themselves statutory law. More in [[Building Regulations]] and [[Part P]].
 
-Important clarification: Approved Documents are guidance, not themselves statutory law.
+## GN3: structure and how to use it
 
-## GN3 Structure and How to Use It
+### Chapters
 
-### Chapter Organization
-- **Chapter 1**: General requirements, safety, competence - relevant to all exams
-- **Chapter 2**: Initial verification
-- **Chapter 3**: Periodic inspection/testing
-- **Chapter 4**: Test instruments (important and often underused)
-- **Chapter 5**: Model forms (major exam/practical resource)
+- **Chapter 1**: general requirements, safety and competence; relevant to all exams.
+- **Chapter 2**: initial verification.
+- **Chapter 3**: periodic inspection and testing.
+- **Chapter 4**: test instruments; important and often underused.
+- **Chapter 5**: model forms; a major exam and practical resource.
 
-### Key Appendices
-- **Appendix A**: Maximum permissible measured earth fault loop impedance values (max measured = 80% of tabulated values)
-- **Appendix B**: Resistance calculations and conductor values (used for continuity calculations)
-- **Appendices C & D**: More linked to periodic inspection/testing
+### Appendices
 
-### Table References
-- **Table B1**: Conductor resistance values (milliohms per meter) for continuity calculations
-- **Table 1.1**: Category ratings (CAT II, CAT III, CAT IV) for test equipment
+- **Appendix A**: maximum permissible measured earth fault loop impedance values (maximum measured = 80% of tabulated values).
+- **Appendix B**: resistance calculations and conductor values, used for continuity calculations.
+- **Appendices C and D**: more linked to periodic inspection and testing.
 
-## Test Equipment Standards and Safety
+### Tables
 
-- **GS38**: HSE guidance on test leads and probes (critical for safety)
-- **HSG85**: General guidance
-- **HSR25**: Guidance on regulations
-- **BS EN 61010**: Test instrument safety requirements
-- **BS 5458**: Older withdrawn standard relevant to older instruments
+- **Table B1**: conductor resistance values (milliohms per metre) for continuity calculations.
+- **Table 1.1**: category ratings (CAT II, CAT III, CAT IV) for test equipment.
 
-Safety consideration: Some dead tests apply significant voltage (e.g., insulation resistance testing).
+## Test equipment standards and safety
 
-## Documentation and Certification
+- **[[GS38]]**: HSE guidance on test leads and probes; critical for safety.
+- **HSG85**: general guidance.
+- **HSR25**: guidance on regulations.
+- **[[BS EN 61010]]**: safety requirements for test instruments.
+- **BS 5458**: older, withdrawn standard relevant to older instruments.
 
-### Client Definition
-The "client" is the person ordering the work and receiving the certificate/report.
+Some dead tests apply significant voltage, insulation resistance testing for example. More on instruments in [[Test Equipment Standards]].
 
-### Initial Verification vs Condition Reporting
-- **Initial verification**: Certification of new work (or work treated as new) being safe and compliant with BS 7671
-- **Condition reporting/EICR**: Reporting on existing installations in use (like MOT analogy)
+## Certificates and reports
+
+### Who the client is
+
+The client is the person ordering the work and receiving the certificate or report.
+
+### Initial verification and condition reporting
+
+- **Initial verification**: certifies that new work, or work treated as new, is safe and complies with BS 7671.
+- **Condition reporting ([[EICR]])**: reports on existing installations in use; the webinar likens it to an MOT.
 
 ### Electrical Installation Certificate (EIC)
 
-**Used for**: New work including consumer unit replacement, new circuits, rewires/partial rewires, any new circuit leaving the DB/consumer unit
+Used for new work: consumer unit replacement, new circuits, rewires and partial rewires, and any new circuit leaving the distribution board or consumer unit.
 
-**Structure**:
-- Front page: Installation details and scope
-- Second page: Supply characteristics, earthing, bonding, signatory details, inspection schedule
-- Schedule of circuit details
-- Schedule of test results
+Structure:
 
-**Three EIC signatories** (from Chapter 5 model forms):
+- Front page: installation details and scope.
+- Second page: supply characteristics, earthing, bonding, signatory details, inspection schedule.
+- Schedule of circuit details.
+- Schedule of test results.
+
+The three EIC signatories, from the Chapter 5 model forms:
+
 1. Designer
-2. Constructor/Installer
-3. Inspector (inspection & testing)
-- Note: Client is NOT one of the EIC signatories
+2. Constructor/installer
+3. Inspector (inspection and testing)
+
+The client is not one of the EIC signatories.
 
 ### Minor Electrical Installation Works Certificate (MEIWC)
 
-**Used for**: Additions/alterations to existing circuits (not new circuits)
-- Adding socket(s) to an existing circuit
-- Adding lighting points to an existing circuit
-- Relocating a switch
-- Replacement of accessories/luminaires (may not always be mandatory for like-for-like replacement unless contract requires)
+Used for additions and alterations to existing circuits, not new circuits:
 
-**Key principle**: Covers work on one circuit only; must not cover multiple circuits.
+- adding sockets to an existing circuit
+- adding lighting points to an existing circuit
+- relocating a switch
+- replacing accessories or luminaires (not always mandatory for like-for-like replacement unless the contract requires it)
 
-### "Don't Add to Bad" (Regulation 132.16)
+An MEIWC covers work on one circuit only; it must not cover multiple circuits. More in [[EIC and MEIWC]].
 
-- Additions/alterations must not be made to an installation unless the existing part is adequate/safe
-- Teaching phrase: "We add to good, we don't add to bad"
-- Example: Lighting circuit with no CPC cannot have Class 1 luminaire fitted without addressing the CPC issue first
-- Options if defect found: Reinstall Class 2 fitting, advise client, or rewire circuit (changes to EIC)
+### "Don't add to bad" (Regulation 132.16)
 
-### Signing Certificates
+- Additions and alterations must not be made to an installation unless the existing part is adequate and safe.
+- Teaching phrase: "We add to good, we don't add to bad."
+- Example: a lighting circuit with no CPC cannot have a Class 1 luminaire fitted without first addressing the missing CPC.
+- Options if a defect is found: reinstall a Class 2 fitting, advise the client, or rewire the circuit (the work then moves to an EIC).
 
-With relevant qualifications and genuine competence/experience, a person can sign:
-- EIC
-- MEIWC
-- EICR
+### Signing certificates
 
-**Strong advice**: Always have appropriate insurance (including for family/friends work).
+With the relevant qualifications and genuine competence and experience, a person can sign:
 
-### Domestic Notifiable Work and CPS
+- an EIC
+- an MEIWC
+- an EICR
 
-- Certain domestic work is notifiable (e.g., consumer unit changes)
-- Qualifications allow issuing electrical documentation, but not direct self-notification unless registered with a Competent Person Scheme
+Strong advice from the webinar: always have appropriate insurance, including for work done for family and friends.
+
+### Notifiable domestic work and Competent Person Schemes
+
+- Certain domestic work is notifiable, consumer unit changes for example.
+- Qualifications allow you to issue electrical documentation, but not to self-notify unless you are registered with a Competent Person Scheme (CPS).
 - Options:
-  - Join a CPS (NICEIC, NAPIT) and self-notify
-  - Use third-party notification with appropriate inspection
-  - Notify Local Building Authority directly
+  - join a CPS (NICEIC, NAPIT) and self-notify
+  - use third-party notification with appropriate inspection
+  - notify the Local Building Authority directly
 
-## Initial Verification: Required Information
+Notification rules are not uniform across the UK; see [[Part P]] and [[Electrical Evidence Review - September 2026]].
+
+## Before testing
+
+### Supply information for initial verification
 
 Before starting testing, obtain:
-- Maximum demand (must not overload installation)
-- Number/type of live conductors (single-phase two-wire, three-phase four-wire, etc.)
-- Earthing arrangement (TN-C-S, TN-S, TT)
-- Nominal voltage (U / Uo concept)
-- Nature of current and frequency (50 Hz)
-- Prospective short-circuit current at origin
-- External earth fault loop impedance
-- Type/rating of overcurrent device at origin (typically DNO fuse)
 
-**Safety reminder**: Do not withdraw the DNO fuse (not authorized).
+- maximum demand (the work must not overload the installation)
+- number and type of live conductors (single-phase two-wire, three-phase four-wire, etc.)
+- earthing arrangement (TN-C-S, TN-S, TT)
+- nominal voltage (the U / Uo concept)
+- nature of current and frequency (50 Hz)
+- prospective short-circuit current at the origin
+- external earth fault loop impedance
+- type and rating of the overcurrent device at the origin (typically the DNO fuse)
 
-## Information Needed Before Testing
+Safety: do not withdraw the DNO fuse; you are not authorised to.
 
-Know what is connected and what might be damaged by testing:
+### What testing might damage
 
-**Items vulnerable to test voltages** (especially insulation resistance):
+Know what is connected and what might be damaged by test voltages, especially insulation resistance testing:
+
 - RCDs
 - LED lighting
-- IT/computer equipment
-- Sensitive electronic equipment
+- IT and computer equipment
+- sensitive electronic equipment
 
-**Broader point**: Understand the installation before applying test voltages.
+The broader point: understand the installation before applying test voltages.
 
-## Test Order Matters: Dead-Test Sequence
+## Inspection comes first
 
-Tests for initial verification must be carried out in correct order:
+Inspection genuinely comes before testing, not just in the phrase "inspection and testing". Many installation issues, especially in condition reporting, are found by looking rather than from test results.
 
-**Dead tests** (before supply connected):
+Checklists to use:
+
+- **BS 7671** example checklist: Appendix 6, page 515.
+- **GN3** inspection checklist: page 46.
+
+The high-level schedule items take real knowledge to understand:
+
+- **Basic protection**: insulation of live parts, barriers or enclosures, obstacles, placing out of reach.
+- **Additional protection**: RCD ≤ 30 mA and/or supplementary bonding, depending on context. See [[RCD Protection]].
+
+## Order of tests
+
+Tests for initial verification must be carried out in the correct order.
+
+**Dead tests**, before the supply is connected:
+
 1. Continuity
 2. Insulation resistance
-3. Polarity (by continuity method / visual checks)
+3. Polarity (by the continuity method and visual checks)
 
-**Live tests** (after supply connected):
+**Live tests**, after the supply is connected:
+
 1. Supply polarity
 2. Earth fault loop impedance
 3. Prospective fault current
 4. RCD testing
 
-References: GN3 (sequence of tests), On-Site Guide (before supply connected / after supply connected lists)
+References: GN3 (sequence of tests); On-Site Guide ("before supply connected" and "after supply connected" lists).
 
-## Testing During Construction
+### Testing during construction
 
-Practical workflow for refurb/extension:
-- After first fix and cable installation: carry out dead testing before leaving site and record results
-- When returning for second fix: re-test and compare with previous readings
-- Purpose: Site damage may occur after first fix (screws, nails, cable damage by other trades)
-- Benefit: Earlier readings give evidence and protect the electrician if damage occurs later
+Practical workflow for a refurb or extension:
 
-## Inspection Before Testing
+- After first fix and cable installation, carry out dead testing before leaving site and record the results.
+- At second fix, re-test and compare with the earlier readings.
+- Why: the site may be damaged after first fix (screws, nails, cables damaged by other trades).
+- Benefit: the earlier readings are evidence and protect the electrician if damage happens later.
 
-**Key principle**: Inspection genuinely comes first, not just in phrase.
+## Safe isolation
 
-Many installation issues (especially in condition reporting) are identified visually rather than by test results.
+Really important, and critical for the exam and the practical. The procedure is not clearly highlighted in GN3. References:
 
-### Inspection Checklists
+- Electrician's Guide to the Building Regulations, Chapter 7 (7.5)
+- Best Practice Guide 2 (in the course materials)
 
-Use checklists in both [[BS 7671]] and [[GN3 Guidance Note 3]]:
-- **BS 7671** example checklist: Appendix 6 / page 515
-- **GN3** inspection checklist: page 46
+The full topic is on [[Safe Isolation]].
 
-Understanding high-level schedule items requires real knowledge:
-- **Basic protection**: Insulation of live parts, barriers/enclosures, obstacles, placing out of reach
-- **Additional protection**: RCD ≤ 30 mA and/or supplementary bonding (depending on context)
+### Procedure
 
-## Safe Isolation
+1. Identify what is to be isolated (a circuit or the whole installation).
+2. Inform and agree with the client or occupants before turning the power off.
+3. Use an approved voltage indicator (AVI) compliant with GS38.
+4. Prove the voltage indicator works (proving unit or known live source).
+5. Isolate at the best point (prefer an external isolator for whole-DB isolation).
+6. Lock off the isolator or main switch.
+7. Remove fuses if necessary.
+8. Retain the key personally.
+9. Apply a warning label or sign.
+10. Prove dead on the correct side (load side), in a consistent sequence.
+11. Re-prove the voltage indicator.
+12. Replace covers before leaving (incoming tails may still be live).
 
-**Importance**: Really important and exam/practical critical. Procedure is not clearly highlighted in GN3.
+### Practical notes
 
-**References**:
-- Electrician's Guide to the Building Regulations (Chapter 7 / 7.5)
-- Best Practice Guide 2 (in course materials)
+- The main switch is an on-load switch; turning the outgoing circuits off first is better practice.
+- Incoming tails stay live unless isolated upstream.
+- Prove dead at the load side of the main switch.
+- Use a consistent proving sequence: earth-to-line, earth-to-neutral, line-to-neutral.
+- Start from the least dangerous point first (e.g. the MET).
+- Prove dead at the point of work, not just at the DB.
+- Use the correct lock-off device and fit it correctly; incorrect fitting is a common error.
 
-### Safe Isolation Procedure
+## Continuity testing
 
-1. Identify what is to be isolated (circuit or whole installation)
-2. Inform/agree with client/occupants before turning power off
-3. Use an approved voltage indicator (AVI) compliant with GS38
-4. Prove the voltage indicator works (proving unit or known live source)
-5. Isolate at the best point (prefer external isolator for whole-DB isolation)
-6. Lock off the isolator/main switch
-7. Remove fuses if necessary
-8. Retain the key personally
-9. Apply warning label/signage
-10. Prove dead on the correct side (load side) in consistent sequence
-11. Re-prove the voltage indicator
-12. Replace covers before leaving (incoming tails may still be live)
-
-### Practical Safe Isolation Notes
-
-- Main switch is an on-load switch; turning outgoing circuits off first is better practice
-- Incoming tails remain live unless isolated upstream
-- Prove dead at load side of main switch
-- Use consistent proving sequence: earth-to-line, earth-to-neutral, line-to-neutral
-- Start from least dangerous point first (e.g., MET)
-- Prove dead at point of work, not just at DB
-- Use correct lock-off device and fit it correctly (incorrect fitting is common error)
-
-## Continuity Testing (Start of Dead Tests)
+Continuity is the first of the dead tests. The full topic is on [[Continuity Testing]].
 
 ### Purpose
-- Test continuity of protective conductors (including main/supplementary bonding)
 
-### Instrument Selection
-- Low-resistance ohmmeter or MFT continuity function needed for low-value resistance readings
-- Reference: GN3 continuity section (page 56)
+Test the continuity of protective conductors, including main and supplementary bonding.
 
-### Resistance Calculations Using GN3 Table B1
+### Instrument
 
-Formula for expected resistance:
+A low-resistance ohmmeter or the MFT continuity function, needed for low-value resistance readings. Reference: GN3 continuity section (page 56).
+
+### Expected resistance from GN3 Table B1
+
 ```
 R = (milliohms per meter × length in meters) / 1000
 ```
 
-Example calculation:
-- 10 mm² protective conductor, 15 m length
-- Use 1.83 mΩ/m (single conductor value, not combined)
-- Result: 0.027 Ω (rounded to ~0.03 Ω)
+Worked examples:
 
-Second example:
-- 50 m drum of 10 mm² G/Y cable
-- Expected total resistance around 0.09 Ω
-- Helps develop sense-check for realistic readings
+- 10 mm² protective conductor, 15 m long: use 1.83 mΩ/m (the single-conductor value, not the combined one). Result: 0.027 Ω, rounded to about 0.03 Ω.
+- A 50 m drum of 10 mm² green/yellow cable: expected total resistance around 0.09 Ω. Working these out builds a sense of what a realistic reading looks like.
 
-### Important Table B1 Interpretation
+### Reading Table B1
 
-**Common trap**: Misreading "line conductor" and "protective conductor" columns
-- Think of them as "conductor one" and "conductor two" when using values
-- For single protective conductor, don't accidentally use combined pair value
-- If combined value used, divide appropriately
+Common trap: misreading the "line conductor" and "protective conductor" columns.
 
-### Twin-and-Earth CPC Sizes
+- Think of them as "conductor one" and "conductor two" when using the values.
+- For a single protective conductor, do not use the combined pair value by mistake.
+- If the combined value is used, divide appropriately.
 
-Asterisk/star markings identify T&E CPC sizes:
-- 1.0 T&E → 1.0 CPC
-- 1.5 T&E → 1.0 CPC
-- 2.5 T&E → 1.5 CPC
-- 4.0 T&E → 1.5 CPC
-- 6.0 T&E → 2.5 CPC
-- 10.0 T&E → 4.0 CPC
-- 16.0 T&E → 6.0 CPC
+### Twin-and-earth CPC sizes
 
-### Lead Resistance Compensation
+Asterisk (star) markings identify the CPC size in twin-and-earth cable:
 
-**Critical for continuity tests**: Continuity readings include test lead resistance unless compensated.
+| T&E size (mm²) | CPC size (mm²) |
+|---|---|
+| 1.0 | 1.0 |
+| 1.5 | 1.0 |
+| 2.5 | 1.5 |
+| 4.0 | 1.5 |
+| 6.0 | 2.5 |
+| 10.0 | 4.0 |
+| 16.0 | 6.0 |
 
-Two methods:
-1. Measure lead resistance separately and subtract from total reading
-2. Zero/null the leads using the MFT function
+### Lead resistance compensation
 
-Example:
-- Total reading = 1.51 Ω
-- Lead resistance = 1.50 Ω
-- True conductor resistance = 0.01 Ω
+Critical for continuity tests: the reading includes the test lead resistance unless it is compensated. Two methods:
 
-### Eliminating Parallel Paths
+1. Measure the lead resistance separately and subtract it from the total reading.
+2. Zero (null) the leads using the MFT function.
 
-When testing bonding conductors, disconnect from MET to eliminate parallel paths that could distort readings.
+Example: total reading 1.51 Ω, lead resistance 1.50 Ω, so the true conductor resistance is 0.01 Ω.
 
-## Practical Career and Training Points
+### Parallel paths
 
-### Training Structure
-- Multiple theory exams before booking practical training
-- Practical training: 10 days (weekday block or weekends)
-- Practical assessment: Real competence assessment, not automatic pass for attending
-- Additional training days worthwhile if needed, especially for testing confidence
-- Level 2 fundamental inspection/testing exam: 60-minute open-book multiple-choice (30 questions) using GN3 only
+When testing bonding conductors, disconnect them from the MET to eliminate parallel paths that could distort the readings.
 
-### Advice from Instructor
-- Ask questions and don't be embarrassed about what you don't know
-- Practical skill and understanding matter more than qualifications alone
-- Getting into the industry: Be honest with employers, persist in seeking first opportunity
-- Many testing resources available: Portal demos/masterclass clips, Google Drive materials
+## Training pathway and instructor advice
+
+### Training structure
+
+- Several theory exams come before booking practical training.
+- Practical training: 10 days, as a weekday block or over weekends.
+- The practical assessment is a real competence assessment, not an automatic pass for attending.
+- Extra training days are worthwhile if needed, especially for confidence in testing.
+- Level 2 fundamental inspection and testing exam: 60 minutes, open book, multiple choice (30 questions), using GN3 only.
+
+### Advice
+
+- Ask questions; do not be embarrassed about what you don't know.
+- Practical skill and understanding matter more than qualifications alone.
+- Getting into the industry: be honest with employers and keep pushing for the first opportunity.
+- Plenty of testing resources are available: portal demos and masterclass clips, and Google Drive materials.
+
+## Source gap
+
+The webinar summary behind this page, `electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection and Testing Demonstration.md`, cannot be found, and neither can the original transcript.
+
+## Related
+
+[[Safe Isolation]] · [[Continuity Testing]] · [[EIC and MEIWC]] · [[EICR]] · [[Building Regulations]] · [[Part P]] · [[GN3 Guidance Note 3]] · [[BS 7671]] · [[GS38]] · [[BS EN 61010]] · [[Test Equipment Standards]] · [[RCD Protection]] · [[Ohm's Law and Electrical Calculations]] · [[PAT Testing]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]]

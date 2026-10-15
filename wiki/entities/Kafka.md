@@ -7,29 +7,37 @@ sources:
 related:
   - Quotes
   - Philosophy & Meaning
+  - Jack Kornfield
+  - Steve Jobs
 created: 2026-04-18T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - writer
   - literature
   - czech
   - existential
   - aphorism
+summary: "Czech writer (1883-1924) with two lines in Quotes, one on scarce time and a noisy life to wriggle through, one on impatience as the only cardinal sin."
 ---
 
 # Franz Kafka
 
-Czech German-language writer (1883–1924). Author of *The Trial*, *The Metamorphosis*, *The Castle*. Appears in the wiki as a voice for impatience, time-scarcity, and the quiet horror of ordinary life.
+Czech German-language writer (1883–1924). Author of *The Trial*, *The Metamorphosis* and *The Castle*. He appears in the wiki as a voice for impatience, time-scarcity and the quiet horror of ordinary life. [[Quotes]] holds two of his lines.
 
-## Referenced in
+## Key ideas
 
-- [[Quotes]] — two Kafka lines the human preserved
-- [[Philosophy_and_Meaning]] — cited on impatience as the cardinal sin
+- **Time is short, so wriggle through.** A line about a life squeezed by work and noise, where the way out is subtle manoeuvring rather than a clean break (from [[Quotes]]):
 
-## Lines in the source
+  > "Time is short, my strength is limited, the office is a horror, the apartment is noisy, and if a pleasant straightforward life is not possible then one must try to wriggle through by subtle manoeuvres."
 
-> "Time is short, my strength is limited, the office is a horror, the apartment is noisy, and if a pleasant, straightforward life is not possible then one must try wriggle through by subtle manoeuvres." (from [[Quotes]])
+- **Impatience is the cardinal sin.** Cited in [[Philosophy_and_Meaning|Philosophy & Meaning]] (from [[Quotes]]):
 
-> "Perhaps there is only one cardinal sin: impatience. Because of impatience we were driven out of Paradise; because of impatience we cannot return." (from [[Quotes]], cited in [[Philosophy_and_Meaning]])
+  > "Perhaps there is only one cardinal sin: impatience. Because of impatience we were driven out of Paradise; because of impatience we cannot return."
 
-Both lines sit in the same cluster as [[Kornfield]] ("you think you have time") and [[Steve_Jobs]]'s mortality passage — the time-as-scarce-resource theme flagged at the bottom of [[Quotes]].
+## Where he sits in the notes
+
+Both lines belong to the time-as-scarce-resource cluster flagged at the bottom of [[Quotes]], next to [[Kornfield|Jack Kornfield]]: "The trouble is that you think you have time." The same cluster holds [[Steve_Jobs|Steve Jobs]]'s mortality passage.
+
+## Related
+
+[[Quotes]] · [[Philosophy_and_Meaning|Philosophy & Meaning]] · [[Kornfield|Jack Kornfield]] · [[Steve_Jobs|Steve Jobs]]

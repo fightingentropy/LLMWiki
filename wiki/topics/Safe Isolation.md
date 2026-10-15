@@ -6,8 +6,12 @@ sources: []
 related:
   - Electrical Safety
   - GS38
+  - Continuity Testing
+  - Test Equipment Standards
+  - Inspection and Testing Fundamentals
+  - Electrical Study Map
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - safe-isolation
   - procedure
@@ -15,195 +19,203 @@ tags:
   - lock-off
   - proving-dead
   - dead-testing
+  - exam
+summary: "The 13-step procedure for safely isolating a circuit or installation, with the prove, test, re-prove indicator routine, live-tail warnings and common errors."
 source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
     and Testing Demonstration.md
 review_status: unverified
 review_notes: >-
-  Historical webinar summary. The original transcript is unavailable; detailed
-  test limits, procedures, chapter and exam references have not been
-  authenticated against current material.
+  Taken from a historical webinar summary whose transcript is unavailable; test limits, procedures, and chapter and exam references have not been checked against current material.
 ---
 
 # Safe Isolation
 
-Detailed procedure for safe isolation of electrical installations and circuits. This is a critical practical procedure not clearly highlighted in GN3 but essential for all electrical work.
+Safe isolation is the procedure for making an installation, circuit, area or piece of equipment dead, keeping it dead while you work, and proving it. The notes call it really important, critical for exams and practicals, and not clearly highlighted in GN3. It has to be done correctly every time. This page holds the full 13-step sequence, the voltage indicator routine that underpins it, the points where people get caught out, and the common errors.
 
-## Importance
+The procedure comes from a webinar summary whose transcript can no longer be found. It does not cover every supply arrangement, and it does not prove that every source has been isolated. Check it against current guidance before relying on it at work.
 
-Safe isolation is:
-- Really important
-- Exam and practical critical
-- Not clearly highlighted in GN3
-- Must be performed correctly every time
+References named in the notes:
 
-**References**:
 - Electrician's Guide to the Building Regulations (Chapter 7 / 7.5)
 - Best Practice Guide 2
 
-## Safe Isolation Step-by-Step Procedure
+## Before you touch anything
 
-### 1. Identify What is to be Isolated
+### 1. Identify what is to be isolated
 
-Determine scope:
+Determine the scope:
+
 - Entire installation?
 - Specific circuit?
 - Particular area?
 - Specific equipment?
 
-### 2. Inform and Agree with Client/Occupants
+### 2. Inform and agree with the client or occupants
 
 Before turning power off:
-- Explain what you are doing
-- Get permission/agreement
-- Discuss impact on occupants
 
-### 3. Use Approved Voltage Indicator (AVI)
+- Explain what you are doing.
+- Get permission or agreement.
+- Discuss the impact on occupants.
 
-Requirements for the voltage indicator:
-- Must be approved/compliant with [[GS38]]
-- Must be appropriate for the voltage/frequency involved
-- Must be in good condition (test leads intact, not damaged)
+## The voltage indicator
 
-### 4. Prove the Voltage Indicator Works
+The indicator is what lets you prove dead, so it has to be right before and after the test. The routine is prove, test, re-prove: steps 3 and 4 here, then step 12 after proving dead.
 
-Before isolation:
-- Test on a known live source, OR
-- Use a proving unit
+### 3. Use an approved voltage indicator (AVI)
 
-**Critical reason**: If indicator doesn't work, you won't be able to prove dead safely
+Requirements:
 
-### 5. Isolate at the Best Point
+- Approved and compliant with [[GS38]], the HSE guidance on test leads and probes.
+- Appropriate for the voltage and frequency involved.
+- In good condition: safe design, proper lead and probe condition, test leads intact and undamaged, and appropriate for the work.
+
+### 4. Prove the voltage indicator works
+
+Before isolation, either:
+
+- test it on a known live source, or
+- use a proving unit.
+
+Critical reason: if the indicator does not work, you cannot prove dead safely.
+
+## Isolating and securing
+
+### 5. Isolate at the best point
 
 Preferred approach:
-- Use external isolator if available (for whole-DB isolation)
-- Otherwise use main switch
-- Turn off outgoing circuits first (better practice, even though main switch is on-load)
 
-**Important note**: Main switch is an on-load switch; better practice to turn circuits off first before operating main switch.
+- Use an external isolator if one is available (for whole-DB isolation).
+- Otherwise use the main switch.
+- Turn off outgoing circuits first, then operate the main switch. The main switch is an on-load switch, but switching the circuits off first is better practice.
 
-### 6. Lock Off the Isolator/Main Switch
+### 6. Lock off the isolator or main switch
 
-- Use correct lock-off device
-- Fit it correctly (incorrect fitting is common error)
-- This prevents accidental re-energization
+- Use the correct lock-off device.
+- Fit it correctly. Incorrect fitting is a common error.
+- This prevents accidental re-energisation.
 
-### 7. Remove Fuses if Necessary
+### 7. Remove fuses if necessary
 
 Where relevant:
-- Remove fuses as additional precaution
-- Keep them with you or in controlled location
 
-### 8. Retain the Key Personally
+- Remove fuses as an additional precaution.
+- Keep them with you or in a controlled location.
 
-- Keep isolation key with you at all times
-- Do not hand to anyone else
-- Prevents unauthorized re-energization
+### 8. Retain the key personally
 
-### 9. Apply Warning Label/Signage
+- Keep the isolation key with you at all times.
+- Do not hand it to anyone else.
+- This prevents unauthorised re-energisation.
 
-- Use appropriate warning labels
-- Make visible that work is in progress
-- Indicates isolation is in effect
+### 9. Apply warning labels and signage
 
-### 10. Prove Dead on Load Side
+- Use appropriate warning labels.
+- Make it visible that work is in progress.
+- Show that isolation is in effect.
+
+## Proving dead and re-proving the indicator
+
+### 10. Prove dead on the load side
 
 Prove dead at the correct location:
-- Prove on the load side of the isolator/main switch (not the supply side)
-- Incoming tails remain live unless isolated upstream
-- Proof must be at point of work, not just at distribution board
 
-### 11. Use Consistent Proving Sequence
+- Prove on the load side of the isolator or main switch, not the supply side.
+- Incoming tails remain live unless isolated upstream.
+- Proof must be at the point of work, not just at the distribution board.
+
+### 11. Use a consistent proving sequence
 
 Standard sequence recommended:
+
 1. Earth to line
 2. Earth to neutral
 3. Line to neutral
 
-**Reasoning**: Start from least dangerous point first (e.g., main earth terminal) to most dangerous
+Reasoning: start from the least dangerous point first (for example the main earth terminal) and work towards the most dangerous.
 
-### 12. Re-Prove the Voltage Indicator
+### 12. Re-prove the voltage indicator
 
-After proving dead:
-- Test the voltage indicator again on a known live source
-- Confirms the indicator still works
-- Proves it was actually functioning when you tested the circuit
+After proving dead, test the indicator again on a known live source. This confirms the indicator still works and that it was functioning when you tested the circuit.
 
-**Critical**: If indicator doesn't re-prove on known live source, the initial test result is questionable.
+Critical: if the indicator does not re-prove on a known live source, the initial test result is questionable.
 
-### 13. Replace Covers Before Leaving DB
+### Prove, test, re-prove
 
-Before leaving distribution board:
-- Replace covers properly
-- Remember: Incoming tails may still be live
-- Covers protect against accidental contact
+1. Prove the indicator works on a known live source before isolation.
+2. Use the indicator to prove the circuit dead.
+3. Prove the indicator works again on a known live source after testing.
 
-## Critical Safety Points
+This confirms three things:
 
-### Incoming Tails Remain Live
+- The indicator was working when you used it.
+- The circuit is actually dead.
+- The indicator is still working (it did not fail during use).
 
-Unless isolated upstream of your working point, incoming supply tails (from meter/DNO) remain live:
-- Never assume whole DB is dead
-- Always work safely below the point of isolation
-- Replace covers to protect others
+## Finishing at the board
 
-### Do Not Withdraw DNO Fuses
+### 13. Replace covers before leaving the DB
 
-- DNO (Distribution Network Operator) fuses are not to be withdrawn without authorization
-- These protect the utility side
-- Improper removal is dangerous and potentially illegal
+Before leaving the distribution board:
 
-### Test at Point of Work
+- Replace the covers properly.
+- Remember that incoming tails may still be live.
+- Covers protect against accidental contact.
 
-- Do not just test at distribution board
-- Prove dead at actual location of work
-- Confirms safety for your specific work area
+## Critical safety points
 
-### Elimination of Parallel Paths
+### Incoming tails remain live
 
-When testing bonding conductors:
-- May need to disconnect from main earth terminal (MET)
-- Purpose: Eliminate parallel paths that distort readings
-- This is a temporary measure during testing only
+Unless isolated upstream of your working point, the incoming supply tails (from the meter or DNO) remain live:
 
-## Approved Voltage Indicators
+- Never assume the whole DB is dead.
+- Always work safely below the point of isolation.
+- Replace covers to protect others.
 
-### Requirements
+### Do not withdraw DNO fuses
 
-Must comply with [[GS38]] (HSE guidance on test leads and probes):
-- Safe design
-- Good condition
-- Proper lead/probe condition
-- Appropriate for the work
+- DNO (Distribution Network Operator) fuses are not to be withdrawn without authorisation.
+- They protect the utility side.
+- Improper removal is dangerous and potentially illegal.
 
-### Test Before and After
+### Test at the point of work
 
-**Critical testing requirement**:
-1. Prove indicator works on known live source BEFORE isolation
-2. Use indicator to prove dead on circuit
-3. Prove indicator works again on known live source AFTER testing
+- Do not just test at the distribution board.
+- Prove dead at the actual location of the work.
+- This confirms safety for your specific work area.
 
-This three-step approach confirms:
-- Indicator was working when you used it
-- The circuit is actually dead
-- Indicator is still working (didn't fail during use)
+### Elimination of parallel paths
 
-## Common Errors to Avoid
+When testing bonding conductors (see [[Continuity Testing]]):
 
-- **Not proving the indicator first**: Can't trust the dead proof
-- **Incorrect lock-off fitting**: Doesn't prevent re-energization
-- **Testing at DB instead of work point**: Doesn't prove work area is safe
-- **Assuming incoming tails are dead**: They are live
-- **Not re-proving voltage indicator**: Can't confirm it still works
-- **Leaving DB covers off**: Exposes live tails
-- **Withdrawing DNO fuses**: Not authorized, dangerous
+- You may need to disconnect from the main earth terminal (MET).
+- The purpose is to eliminate parallel paths that distort readings.
+- This is a temporary measure during testing only.
 
-## Best Practice Summary
+## Common errors
+
+| Error | Why it matters |
+| --- | --- |
+| Not proving the indicator first | You can't trust the dead proof. |
+| Incorrect lock-off fitting | It doesn't prevent re-energisation. |
+| Testing at the DB instead of the work point | It doesn't prove the work area is safe. |
+| Assuming incoming tails are dead | They are live. |
+| Not re-proving the voltage indicator | You can't confirm it still works. |
+| Leaving DB covers off | It exposes live tails. |
+| Withdrawing DNO fuses | Not authorised, and dangerous. |
+
+## In practice
 
 Safe isolation is:
-- A deliberate, methodical process
-- Performed the same way every time
-- Critical for personal safety and site safety
-- A professional responsibility
-- Not a shortcut or variable procedure
+
+- A deliberate, methodical process.
+- Performed the same way every time.
+- Critical for personal safety and site safety.
+- A professional responsibility.
+- Not a shortcut or a variable procedure.
+
+## Related
+
+[[Electrical Safety]] · [[GS38]] · [[Continuity Testing]] · [[Test Equipment Standards]] · [[Inspection and Testing Fundamentals]] · [[Electrical Study Map]]

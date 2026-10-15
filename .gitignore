@@ -7,3 +7,4 @@ raw/.capture-manifest.json
 raw/.capture-manifest.json.tmp
 raw/.refresh.out.log
 raw/.refresh.err.log
+.claude/

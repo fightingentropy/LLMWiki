@@ -11,7 +11,7 @@ related:
   - Crypto Trading
   - OxHamz
 created: 2026-04-18T00:00:00.000Z
-updated: '2026-09-22'
+updated: '2026-10-15'
 tags:
   - trader
   - twitter
@@ -19,20 +19,31 @@ tags:
   - macro
   - decorrelation
   - rates
+summary: Crypto and macro poster @RJ_Killmex, who reads crypto's decorrelation from equities and rates as a forward-looking signal, set against OxHamz's flow-based counter-view.
 ---
 
 # RJ Killmex
 
-Twitter: @RJ_Killmex. Crypto/macro commentator quoted in [[CT]]. In the archive, Killmex's framing (Hayes-adjacent) treats crypto decorrelation from equities/rates as a forward-looking signal — crypto prices in information ahead of regulated markets.
+Crypto and macro commentator on X (@RJ_Killmex), quoted in [[CT|Crypto Takes]], Erlin's archive of crypto-twitter posts. His post is labelled "Quote Hayes ish" in the note, and the framing is Hayes-adjacent: crypto's decorrelation from equities and rates is a forward-looking signal, because crypto prices in information ahead of regulated markets.
 
-## Referenced in
+## Key ideas
 
-- [[CT]] — crypto decorrelation passage, flagged under Contradictions against [[OxHamz]]
-- [[Macro Trading]] — cited directly
-- [[Traders Directory]]
+### Crypto prices information first
 
-## Line in the source
+The least regulated market gives the most accurate picture, so when crypto moves against equities and rates, it may be pricing something those markets have not yet reflected.
 
 > "Crypto is the least regulated/controlled market and gives the most accurate reflection of what's really going on. This would mean the neg. decorrelation is actually crypto pricing in something that has not (yet) taken its effect in equities and rates." (from [[CT]])
 
-Contradicts [[OxHamz]]'s flow-framework view (decorrelation as artifact of rebalancing inflows vs new-entrant dependence). Both can be true in different regimes — flagged in [[CT]] Contradictions.
+### Disagreement with OxHamz
+
+[[OxHamz]] reads the same decorrelation as a flow artifact: equities get bid by rebalancing inflows while crypto depends on new entrants, so the gap carries no forward-looking information. Both views can be true in different regimes. [[CT]] flags the pair under Contradictions.
+
+## Where he is cited
+
+- [[CT]] — the crypto decorrelation passage, set against [[OxHamz]] under Contradictions.
+- [[Macro Trading]] — cites him directly under "Crypto decorrelation as forward-looking".
+- [[Traders Directory]] — listed among the traders whose posts are quoted.
+
+## Related
+
+[[CT|Crypto Takes]] · [[OxHamz]] · [[Macro Trading]] · [[Crypto Trading]] · [[Traders Directory]]
