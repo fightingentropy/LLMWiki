@@ -5,6 +5,7 @@ domain: health
 sources:
   - misc/Peptides.md
   - clippings/evidence-review-2026-09-22/Health.md
+  - clippings/evidence-review-2026-10-16/Health.md
 related:
   - Peptides
   - Retatrutide
@@ -12,6 +13,7 @@ related:
   - Health Evidence
   - Health Evidence Review - September 2026
   - Supplements & Biohacking
+  - Health Evidence Review - October 2026
 created: 2026-06-24T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -22,13 +24,10 @@ tags:
   - storage
   - subcutaneous
 summary: "What reconstituting a peptide means, what the bacteriostatic water label supports, and why storage and dosing figures need product-specific evidence."
-reviewed: '2026-09-22'
-review_status: partial
-review_notes: >-
-  The bacteriostatic water label and retatrutide's US regulatory status were
-  checked against primary sources; the saved guide's potency-loss, shelf-life
-  and titration figures have no supporting study and were not verified.
-review_due: '2026-12-21'
+reviewed: '2026-10-16'
+review_status: reviewed
+review_notes: "The label, US status, concentration and U-100 arithmetic and the guide's storage and potency claims were checked against the DailyMed BAC water label, the FDA GLP-1 statement, an FDA U-100 insulin label, the CDC's account of USP <797> and the stability sources on Bacteriostatic Water; the storage figures are corrected, and the formula's use of water added rather than final volume is a small approximation."
+review_due: '2027-01-14'
 ---
 
 # Peptide Reconstitution
@@ -70,6 +69,8 @@ The [FDA states](https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-conce
 
 **Correction, 22 September 2026:** an earlier version of this page generalised the saved [[Retatrutide]] guide to injectable research peptides in general. It repeated the guide's exact potency-loss percentages (for shaking, freezing and room-temperature storage), a blanket 28-day shelf life and a titration schedule without formulation-specific evidence. No supporting stability study is attached to those figures, and they should not be treated as established facts. The original text remains on [[Peptides]]. (from [[Health Evidence Review - September 2026]])
 
+Correction, 16 October 2026, on the guide's 28-day (BAC water) and 24-hour (sterile water) storage figures: the [Bacteriostatic Water label](https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ccadcf46-6a6f-436b-9bbc-17e2983a335f&type=display) says to use a reconstituted drug promptly and not to store it unless the drug's own manufacturer directs otherwise. The 28-day figure is the USP <797> in-use limit for an opened manufactured multiple-dose vial, [as described by the CDC](https://www.cdc.gov/injection-safety/hcp/clinical-safety/index.html), not a shelf life for a peptide mixed in it. The stability studies and approved tirzepatide label cited on [[Bacteriostatic Water]] do not support the guide's shaking, freezing and room-temperature percentages.
+
 ## Evidence required before trusting a protocol
 
 1. Identify the regulated product and its formulation.
@@ -82,7 +83,8 @@ A research seller's label and a numerical concentration calculation do not suppl
 
 - [DailyMed: Bacteriostatic Water for Injection prescribing label](https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ccadcf46-6a6f-436b-9bbc-17e2983a335f&type=display) — The official label: 0.9% benzyl alcohol, use per the drug manufacturer's instructions, compatibility varies.
 - [FDA: concerns with unapproved GLP-1 drugs used for weight loss](https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss) — The FDA statement that retatrutide is not a component of an FDA-approved drug and has not been found safe and effective for any condition.
+- [CDC: Preventing Unsafe Injection Practices](https://www.cdc.gov/injection-safety/hcp/clinical-safety/index.html) — CDC guidance on single-dose and multiple-dose vials, including the USP <797> rule to discard an opened multiple-dose vial within 28 days unless its manufacturer states another date.
 
 ## Related
 
-[[Peptides]] · [[Retatrutide]] · [[Bacteriostatic Water]] · [[Health Evidence]] · [[Health Evidence Review - September 2026]] · [[Supplements|Supplements & Biohacking]]
+[[Peptides]] · [[Retatrutide]] · [[Bacteriostatic Water]] · [[Health Evidence]] · [[Health Evidence Review - September 2026]] · [[Supplements|Supplements & Biohacking]] · [[Health Evidence Review - October 2026]]

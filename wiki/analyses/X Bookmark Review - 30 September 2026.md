@@ -32,9 +32,9 @@ created: '2026-09-30'
 updated: '2026-10-15'
 tags: [bookmarks, curation, developer-tools, markets, evidence, september-2026, x]
 summary: "Verdicts on all 70 X bookmarks held on 30 September 2026, grouped by theme, with the primary-source checks behind each call and what was finally kept."
-reviewed: '2026-09-30'
-review_status: partial
-review_notes: Post and quoted text, selected screenshots, author threads and selected primary sources were checked and post IDs compared with existing Brain categories; most videos, attachments, clinical claims and product-performance claims were not verified.
+reviewed: '2026-10-16'
+review_status: reviewed
+review_notes: "All 70 entries match the live inventory by number, handle and post ID, the verdict counts add up, and the product, release, paper and health claims stated in the page's own voice were checked against official docs, release pages, repositories, Crossref and PMC records, NHS, NIMH and NIAAA, with four time-sensitive corrections added; X posts, videos and attachments could not be opened, so the posts' own performance and anecdote claims stay unverified and are labelled as attributed or unchecked on the page."
 ---
 
 # X Bookmark Review - 30 September 2026
@@ -174,6 +174,10 @@ None of these posts is diagnostic or treatment evidence, including the personal 
 - OpenMarket's website could not be read by the web retrieval tool, so its free-tier terms, data coverage and competitor price comparison rest on the creator's posts alone.
 - The odour-to-infidelity inference (item 1) and the ADHD hunter-gatherer claim (item 64) are unsupported by the NHS and NIMH sources checked.
 - The enamel gel post overstates the paper: the research is laboratory work on extracted teeth, not a patient treatment with a release date.
+- Correction, 16 October 2026 (item 59, Search WebKit browser): the current [Search site](https://officecommun.com/search) lists version 1.0.5 at 6.8 MB, not 6.1 MB, free, for macOS 14 or later; Chrome Web Store extensions need macOS 15.4 or later, passwords sit in the macOS Keychain, and the page does not mention iCloud passwords.
+- Correction, 16 October 2026 (item 58, Spotifast): [v0.11.0](https://github.com/crmne/spotifast/releases/tag/v0.11.0) was published on 26 September 2026, two days after the saved v0.10 post, and the project has since reached v0.13.3 on 15 October 2026 (see the [release list](https://github.com/crmne/spotifast/releases)).
+- Correction, 16 October 2026 (item 11, Compositor v1.4): the [release list](https://github.com/robbietilton/Compositor/releases) now shows Compositor 1.5.3 (15 October 2026), after 1.4.10 on 11 October and 1.5 on 12 October. The repository README gives no benchmark, so the 10x performance and size figures remain the author's post alone.
+- Correction, 16 October 2026 (item 23, OpenMarket): the website can now be read. [openmarket.xyz](https://openmarket.xyz) says charts, indicators and drawings are free to use in the browser, covers crypto, US stocks, CME futures, options, forex, prediction markets and economic series, and lists order-book heatmaps, footprints, cumulative volume delta and liquidation maps. It names no paid plans or prices, so free-tier permanence and the TradingView price comparison are still untested.
 
 ## Overlap with existing notes
 

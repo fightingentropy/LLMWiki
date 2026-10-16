@@ -4,6 +4,7 @@ type: topic
 domain: electrics
 sources:
   - clippings/evidence-review-2026-09-22/Electrics.md
+  - clippings/evidence-review-2026-10-16/Electrics.md
 related:
   - Electrical Safety
   - Continuity Testing
@@ -18,6 +19,7 @@ related:
   - "Ohm's Law and Electrical Calculations"
   - Electrical Study Map
   - Electrical Evidence Review - September 2026
+  - Electrical Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -30,11 +32,9 @@ tags:
   - hse
 source_gaps:
   - 'raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT Testing.md'
-review_status: unverified
-review_notes: >-
-  The webinar transcript behind the test limits, procedures, appendix and exam
-  references is unavailable, so those remain unauthenticated; only the HSE
-  position on risk-based test intervals was checked against its FAQ.
+reviewed: '2026-10-16'
+review_status: partial
+review_notes: "The check levels, visual-inspection points, label and interval rules, Class I/II definitions, live-working conditions, V1-V6 forms, 500 V test voltage and test-kit standards were checked against HSE HSG107, INDG236, the PAT FAQ, GS38, Electricity at Work Regulation 14 and the IET's published forms and 5th-edition articles; the pass limits (0.1 Ω + R, 0.5 Ω + R, 1 MΩ, 2 MΩ), the test hierarchy, appendix numbers and exam advice have only industry-guide support or none, because the Code of Practice text and the webinar transcript are unavailable."
 summary: "PAT in practice: three check levels, plug and flex fail points, the four tests and pass limits, inspect-don't-repair, test-kit standards, V1-V6 forms."
 ---
 
@@ -93,7 +93,7 @@ Other plug notes:
 
 ### Fuse size follows the flex
 
-The old rule of thumb that sized the plug fuse from the appliance wattage is outdated. The fuse protects the cable against overcurrent, so the fuse size is set by the flex size, not the appliance rating. (from [[PAT Testing]])
+The old rule of thumb that sized the plug fuse from the appliance wattage is outdated. The fuse protects the cable against overcurrent, so the fuse size is set by the flex size, not the appliance rating. (from [[PAT Testing]]) This conflicts with current consumer guidance: [Greater Manchester Fire and Rescue Service](https://www.manchesterfire.gov.uk/your-safety/fire-safety/electrical/sockets) still sizes the plug fuse by appliance wattage (3 A up to about 700 W, 13 A from about 700 W to 3,000 W), and [HSG107](https://www.hse.gov.uk/pubns/priced/hsg107.pdf) asks only that the correct fuse is fitted.
 
 ## The four tests
 
@@ -118,6 +118,7 @@ Flexible cable resistance values come from Appendix 5. The same milliohm-per-met
 - **Purpose:** prove the insulation is intact, with no unintended contact between conductors or to earth. The webinar's picture: like inflating an inner tube to reveal the punctures.
 - **Test voltage:** 500 V DC.
 - **Setup:** line and neutral joined together and tested against earth; power switches on; covers in place; the equipment must be suitable for the test voltage.
+- Correction, 16 October 2026: Class II equipment has no earth connection ([HSG107](https://www.hse.gov.uk/pubns/priced/hsg107.pdf), paragraph 14), so on Class II the joined line and neutral are tested against the accessible conductive parts of the enclosure with a probe, as test-instrument maker [Seaward's Class I and Class II test sheets](https://seaward.com/gb/support/download/770) describe; "against earth" applies to Class I only.
 - **Minimum results:** 1 MΩ for Class 1, 2 MΩ for Class 2.
 - 500 V can damage sensitive equipment such as computing and LED lighting. Use the protective conductor current test instead for that gear.
 
@@ -215,6 +216,10 @@ The IET model forms for PAT documentation run V1 to V6 (from [[PAT Testing]]):
 | V5 | Faulty equipment register | Failed items, reason for failure, status (awaiting repair, withdrawn, etc.) |
 | V6 | Test equipment accuracy record | Meter calibration dates, accuracy check dates, results and verification, tester name and signature |
 
+Correction, 16 October 2026: the IET's published [model forms for in-service inspection and testing](https://electrical.theiet.org/courses-resources-career/forms-and-downloads/) give Form V.3 only two labels, a green PASS and a red FAIL ("DANGER DO NOT USE"), each with date of check, initials and appliance number; there is no yellow "attention" label.
+
+Correction, 16 October 2026: the IET titles Form V.6 "Test instrument record", not "test equipment accuracy record"; it logs check readings at fixed low-resistance points (0.5, 1.0 and 10.0 Ω) and high-resistance points (0.5, 1.0 and 10.0 MΩ) with the deviation in per cent, and the date of last calibration ([IET model forms](https://electrical.theiet.org/courses-resources-career/forms-and-downloads/)).
+
 ### Labels carry no "next inspection date"
 
 - Do not put a next-inspection date on the label.
@@ -222,6 +227,8 @@ The IET model forms for PAT documentation run V1 to V6 (from [[PAT Testing]]):
 - Risk assessment drives the interval, not the label date.
 
 HSE's FAQ says the same from the regulator's side: it does not prescribe blanket annual PAT testing; maintenance arrangements and inspection and testing intervals depend on risk, use and environment; visual checks matter and some faults need a test; and a test label is not a guarantee that the equipment remains safe. (from [[Electrical Evidence Review - September 2026]])
+
+Correction, 16 October 2026: the source for this point is HSE's [INDG236](https://www.hse.gov.uk/pubns/indg236.pdf) leaflet, not the [PAT FAQ](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm). INDG236 says a test indicates an appliance's safety only at the time of the test and does not imply it will stay safe, so user checks must continue; the FAQ says labels and records are not legally required but are a useful management tool.
 
 ### Exam tips
 
@@ -256,12 +263,17 @@ Study approach: use Post-it notes where exam rules allow, review the tables and 
 
 ## Source gap
 
-The PAT webinar summary behind these notes (`Summary - Electrics Webinar 4 PAT Testing.md`) is missing, so the test limits, procedures, appendix numbers, form names and exam advice above are unconfirmed study notes; check them against current course material before relying on them. Only the HSE position on risk-based intervals comes from an official source. [[Electrical Safety]] and [[Inspection and Testing Fundamentals]] give the surrounding installation-side material.
+The PAT webinar summary behind these notes (`Summary - Electrics Webinar 4 PAT Testing.md`) is missing. The check levels, visual-inspection points, label and interval rules, equipment classes and V-form names above match HSE and IET sources, with the corrections shown; the pass limits, test order, appendix numbers and exam advice remain unconfirmed study notes, so check them against current course material before relying on them. [[Electrical Evidence Review - October 2026]] records what the official sources confirm. [[Electrical Safety]] and [[Inspection and Testing Fundamentals]] give the surrounding installation-side material.
 
 ## Resources
 
-- [HSE portable appliance testing FAQs](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm) — the regulator's FAQ on maintaining portable equipment: intervals depend on risk, use and environment rather than a blanket annual test, and a label is not proof an item is still safe. (from [[Electrical Evidence Review - September 2026]])
+- [HSE portable appliance testing FAQs](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm) — the regulator's FAQ on maintaining portable equipment: intervals depend on risk, use and environment rather than a blanket annual test; labels and records are not legally required but help manage the scheme, and testing alone cannot find every defect. (from [[Electrical Evidence Review - September 2026]])
+- [HSE INDG236: Maintaining portable electric equipment in low-risk environments](https://www.hse.gov.uk/pubns/indg236.pdf) — HSE's short leaflet on user checks, visual inspection and risk-based testing; says a test shows an appliance's safety only at the time of the test.
+- [HSE HSG107: Maintaining portable electrical equipment](https://www.hse.gov.uk/pubns/priced/hsg107.pdf) — HSE's free guidance (third edition, 2013) on user checks, formal visual inspection and combined inspection and test, Class I and Class II construction, suggested initial intervals, and why a label should carry no next-test date.
+- [IET model forms for in-service inspection and testing](https://electrical.theiet.org/courses-resources-career/forms-and-downloads/) — free downloads of Forms V.1 to V.6 from the IET Code of Practice, plus the user-checks poster; the source for the form names and label designs.
+- [Seaward: testing Class I and Class II appliances](https://seaward.com/gb/support/download/770) — two-page manufacturer sheet on the order of tests and the probe connections, quoting pass limits from an earlier edition of the Code of Practice; industry guidance, not the Code itself.
+- [Greater Manchester Fire and Rescue Service: sockets, plugs and fuses](https://www.manchesterfire.gov.uk/your-safety/fire-safety/electrical/sockets) — consumer fire-safety page that sizes plug fuses by appliance wattage; the counterpoint to the flex-based fuse rule.
 
 ## Related
 
-[[PAT Testing]] · [[Electrical Safety]] · [[Continuity Testing]] · [[Inspection and Testing Fundamentals]] · [[Test Equipment Standards]] · [[GS38]] · [[BS EN 61010]] · [[BS EN 61557]] · [[RCD Protection]] · [[Safe Isolation]] · [[Ohm's Law and Electrical Calculations]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]]
+[[PAT Testing]] · [[Electrical Safety]] · [[Continuity Testing]] · [[Inspection and Testing Fundamentals]] · [[Test Equipment Standards]] · [[GS38]] · [[BS EN 61010]] · [[BS EN 61557]] · [[RCD Protection]] · [[Safe Isolation]] · [[Ohm's Law and Electrical Calculations]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]] · [[Electrical Evidence Review - October 2026]]

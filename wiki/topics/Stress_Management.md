@@ -8,6 +8,7 @@ sources:
   - misc/Quotes.md
   - clippings/bookmark-updates-2026-09-22/Health & Psychology.md
   - clippings/evidence-review-2026-09-22/Health.md
+  - clippings/evidence-review-2026-10-16/Health.md
 related:
   - Body Optimization
   - Mental Health
@@ -20,6 +21,7 @@ related:
   - Nassim Taleb
   - Health Evidence Review - September 2026
   - Bookmarks - Health & Psychology
+  - Health Evidence Review - October 2026
 created: 2026-04-18T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -31,6 +33,9 @@ tags:
   - antifragility
   - cold-exposure
 summary: "How Erlin's notes treat stress: acute stress as fuel and chronic stress as poison, plus antifragility, breathing, cold-shower and movement practices."
+reviewed: '2026-10-16'
+review_status: reviewed
+review_notes: "Checked the swimming-rat figures against Richter's 1957 paper (corrected: they apply to whisker-trimmed rats), the antifragility attribution against Taleb's publisher page, and every quoted post against its source; the breathing, cold-shower and depression lines are attributed takes with no physiological claims made in the page's own voice."
 ---
 
 # Stress Management
@@ -68,6 +73,8 @@ A take saved in the quotes note extends the same idea (from [[Quotes]]):
 "Antifragile" is [[Nassim Taleb]]'s term; the note's take does not name him.
 
 The psychology note's [swimming rats story](https://www.shawnmaust.com/2016/12/swimming-rats-power-hope/#:~:text=A%20few%20weeks%20ago%2C%20I40%2D60%20hours%20on%20average.) sits close to this. In Curt Richter's 1957 experiments, wild rats dropped into water died within 15 minutes, while domesticated rats swam 40–60 hours. Wild rats that had been put in and pulled out a few times beforehand lasted about as long as the domesticated group. As the note retells it, the researchers postulated that the deaths were more psychological than physiological: "the real issue was one of hopelessness." Rats that had been pulled out before knew escape was possible, so they kept swimming. (from [[Psychology|Psychology & Behavior]])
+
+Correction, 16 October 2026: in [Richter's paper](https://doi.org/10.1097/00006842-195705000-00004), the 15-minute and 40–60-hour figures are for rats whose whiskers had been trimmed. All 34 clipped wild rats died within 1–15 minutes, and 9 of 12 clipped domesticated rats swam 40–60 hours; intact domesticated rats swam 60 to 80 hours in 95 °F water. Wild rats conditioned by repeated brief holding and brief immersions swam as long as domestic rats or longer.
 
 ## Breathing and arousal
 
@@ -115,8 +122,9 @@ The premise and the list are a take, not a clinical account; depression has many
 - [Adrenaline on command](https://x.com/sporadicalia/status/1891306234147659905) — First-person account of a breathing-and-music walk used to trigger an adrenaline rush. _(@sporadicalia)_
 - [Cold-shower "unbracing" exercise](https://x.com/jonnym1ller/status/1958345432410845515) — Noticing and releasing tension before cold water; an anecdotal mindfulness prompt. _(@jonnym1ller)_
 - [Swimming Rats and the Power of Hope](https://www.shawnmaust.com/2016/12/swimming-rats-power-hope/#:~:text=A%20few%20weeks%20ago%2C%20I40%2D60%20hours%20on%20average.) — Shawn Maust's blog post retelling Curt Richter's 1957 rat-endurance experiments as a lesson about hope.
+- [Richter, On the phenomenon of sudden death in animals and man (Psychosomatic Medicine, 1957)](https://doi.org/10.1097/00006842-195705000-00004) — The original swimming-rat paper, with the whisker-trimming conditions, swim times and the hopelessness interpretation; paywalled.
 - [Put all devices away for 24 hours](https://x.com/divya_venn/status/1928822020789145912) — Post behind the note's line about solitude, walks and clarity. _(@divya_venn)_
 
 ## Related
 
-[[Body_Optimization|Body Optimization]] · [[Mental_Health|Mental Health]] · [[Fitness]] · [[ADHD]] · [[Circadian_Rhythm|Circadian Rhythm]] · [[Quotes]] · [[Body]] · [[Psychology|Psychology & Behavior]] · [[Nassim Taleb]] · [[Health Evidence Review - September 2026]] · [[Bookmarks - Health & Psychology]]
+[[Body_Optimization|Body Optimization]] · [[Mental_Health|Mental Health]] · [[Fitness]] · [[ADHD]] · [[Circadian_Rhythm|Circadian Rhythm]] · [[Quotes]] · [[Body]] · [[Psychology|Psychology & Behavior]] · [[Nassim Taleb]] · [[Health Evidence Review - September 2026]] · [[Bookmarks - Health & Psychology]] · [[Health Evidence Review - October 2026]]

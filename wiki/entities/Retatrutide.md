@@ -5,12 +5,14 @@ domain: health
 sources:
   - misc/Peptides.md
   - clippings/evidence-review-2026-09-22/Health.md
+  - clippings/evidence-review-2026-10-16/Health.md
 related:
   - Peptides
   - Peptide Reconstitution
   - Bacteriostatic Water
   - Health Evidence
   - Health Evidence Review - September 2026
+  - Health Evidence Review - October 2026
 created: '2026-06-24'
 updated: '2026-10-15'
 tags:
@@ -22,10 +24,10 @@ tags:
   - weight-loss
   - investigational
 summary: "The US regulatory status of retatrutide and what the saved reconstitution guide does not establish about vials, dosing, storage and stability."
-reviewed: '2026-09-22'
-review_status: partial
-review_notes: The regulatory and preparation corrections were checked against the FDA statement and the DailyMed label; the guide's other claims remain unresolved.
-review_due: '2026-12-21'
+reviewed: '2026-10-16'
+review_status: verified
+review_notes: "US status checked against the FDA unapproved-GLP-1 statement (current as of 1 October 2026), the compound code, route and phase status against the NEJM phase 2 paper, ClinicalTrials.gov, Lilly's September 2026 FAQ and 2026 releases (still investigational, FDA filing planned for Q1 2027), the label claims against DailyMed and the guide quotes against the raw note; all supported."
+review_due: '2027-01-14'
 ---
 
 # Retatrutide
@@ -59,4 +61,4 @@ Follow [[Peptide Reconstitution]] and [[Bacteriostatic Water]] for the limits of
 
 ## Related
 
-[[Peptides]] · [[Peptide Reconstitution]] · [[Bacteriostatic Water]] · [[Health Evidence]] · [[Health Evidence Review - September 2026]]
+[[Peptides]] · [[Peptide Reconstitution]] · [[Bacteriostatic Water]] · [[Health Evidence]] · [[Health Evidence Review - September 2026]] · [[Health Evidence Review - October 2026]]

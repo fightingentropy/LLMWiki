@@ -5,12 +5,14 @@ domain: health
 sources:
   - bookmarks/Personal & Life.md
   - clippings/bookmark-updates-2026-09-22/Personal & Life.md
+  - clippings/evidence-review-2026-10-16/Health.md
 related:
   - X-Bookmarks
   - Health Evidence
   - Body Optimization
   - Bookmarks - Personal & Life
   - Supplements & Biohacking
+  - Health Evidence Review - October 2026
 created: 2026-08-29T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -21,6 +23,9 @@ tags:
   - evidence
   - fluoride
 summary: "How to compare home water filters, with Erlin's shortlist of reverse-osmosis units, a countertop filter, a shower filter and what to check for each."
+reviewed: '2026-10-16'
+review_status: reviewed
+review_notes: "Checked the comparison method against DWI and CDC filter guidance, the HydraSense certifications against its performance data sheet, the Hommix and Klense product pages, NHS toothpaste advice and both X posts; HydraSense's certifying body could not be confirmed in NSF's own listings."
 ---
 
 # Water Filtration
@@ -38,8 +43,9 @@ Erlin's notes hold a shortlist of home water-treatment products, not a chosen on
 ## Countertop filter versus reverse osmosis
 
 - A [post comparing under-sink RO with a countertop filter](https://x.com/itsactuallytad/status/2092637354150510953) is worth keeping for the purchasing question, not its dismissal of the gadget. It predicts the countertop unit's screen will fail and that a fully installed RO setup costs the same; neither claim is established. (from [[X-Bookmarks]])
+- Correction, 16 October 2026: the [post](https://x.com/itsactuallytad/status/2092637354150510953) says an RO system with its own countertop faucet costs "almost the same price"; it says nothing about installation costs.
 - [Ninja's HydraSense launch material](https://newsroom.sharkninja.com/ninja-raises-the-standard-for-home-water-with-the-launch-of-ninja-hydrasense/) describes a no-plumbing countertop filter certified to NSF/ANSI 42, 53 and 401. That does not make it equivalent to reverse osmosis, even at a similar price. (from [[X-Bookmarks]])
-- The Hommix countertop RO units ([SanitRO](https://www.hommix.co.uk/products/hommix-sanitro-3-in-1-luxury-countertop-reverse-osmosis-filtration-system-space-grey?variant=46684755329256&country=GB&currency=GBP), [Sparo](https://www.hommix.co.uk/products/hommix-sparo-black-5-in-1-countertop-reverse-osmosis-filtration-system-uv?variant=56307986301307&country=GB&currency=GBP), [EspressRO](https://www.hommix.co.uk/products/hommix-espressro-5-in-1-countertop-reverse-osmosis-filtration-system?variant=44065246609640&country=GB&currency=GBP)) are countertop reverse-osmosis systems, so they belong in the RO comparison rather than alongside simple countertop filters. Compare them on certification, wastewater, filter cost, cleaning and price. (from [[Bookmarks - Personal & Life]])
+- The Hommix countertop RO units ([SanitRO](https://www.hommix.co.uk/products/hommix-sanitro-3-in-1-luxury-countertop-reverse-osmosis-filtration-system-space-grey?variant=46684755329256&country=GB&currency=GBP), [Sparo](https://www.hommix.co.uk/products/hommix-sparo-black-5-in-1-countertop-reverse-osmosis-filtration-system-uv?variant=56307986301307&country=GB&currency=GBP), [EspressRO](https://www.hommix.co.uk/products/hommix-espressro-5-in-1-countertop-reverse-osmosis-filtration-system?variant=44065246609640&country=GB&currency=GBP)) are countertop reverse-osmosis systems, so they belong in the RO comparison rather than alongside simple countertop filters. Compare them on certification, wastewater, filter cost, cleaning and price. (from [[Bookmarks - Personal & Life]]) All three connect to the mains. The [Drinking Water Inspectorate](https://www.dwi.gov.uk/consumers/learn-more-about-your-water/domestic-water-filters-and-softeners/) says reverse-osmosis water is not generally considered suitable for drinking and cooking, that RO suits specialist domestic uses, and that the water company must by law be notified before an RO unit is installed.
 
 ## Fluoride removal
 
@@ -60,8 +66,9 @@ The [Klense filtered showerhead](https://tryklense.com/en-gb/products/klense-fil
 - [Hommix SanitRO](https://www.hommix.co.uk/products/hommix-sanitro-3-in-1-luxury-countertop-reverse-osmosis-filtration-system-space-grey?variant=46684755329256&country=GB&currency=GBP) — Hommix 3-in-1 countertop reverse-osmosis system, space grey.
 - [Hommix Sparo](https://www.hommix.co.uk/products/hommix-sparo-black-5-in-1-countertop-reverse-osmosis-filtration-system-uv?variant=56307986301307&country=GB&currency=GBP) — Hommix 5-in-1 countertop reverse-osmosis system with UV, black.
 - [Hommix EspressRO](https://www.hommix.co.uk/products/hommix-espressro-5-in-1-countertop-reverse-osmosis-filtration-system?variant=44065246609640&country=GB&currency=GBP) — Hommix 5-in-1 countertop reverse-osmosis system.
+- [DWI: domestic water filters and softeners](https://www.dwi.gov.uk/consumers/learn-more-about-your-water/domestic-water-filters-and-softeners/) — The UK drinking-water regulator's consumer guidance: check your water company's quality report before buying, change cartridges on time, RO wastes 20–30% of the water, and RO units must be notified before installation.
 - [Klense Filter Showerhead](https://tryklense.com/en-gb/products/klense-filter-showerhead?shpxid=0c00fffe-5556-498c-bf5b-2ed1974e3631) — Filtered showerhead; limescale, chlorine, skin and hair claims are the vendor's.
 
 ## Related
 
-[[Health Evidence]] · [[Body Optimization]] · [[Supplements & Biohacking]] · [[Bookmarks - Personal & Life]] · [[X-Bookmarks]]
+[[Health Evidence]] · [[Body Optimization]] · [[Supplements & Biohacking]] · [[Bookmarks - Personal & Life]] · [[X-Bookmarks]] · [[Health Evidence Review - October 2026]]

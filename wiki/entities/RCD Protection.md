@@ -5,6 +5,7 @@ domain: electrics
 sources:
   - electrics/Resources.md
   - clippings/evidence-review-2026-09-22/Electrics.md
+  - clippings/evidence-review-2026-10-16/Electrics.md
 related:
   - Building Regulations
   - BS 7671
@@ -14,6 +15,7 @@ related:
   - Electrics - Resources
   - Safe Isolation
   - GS38
+  - Electrical Evidence Review - October 2026
 created: '2026-04-12'
 updated: '2026-10-15'
 tags:
@@ -24,10 +26,10 @@ tags:
   - electrical-safety
   - concealed-cables
 summary: "What an RCD does and does not protect against, with corrections to earlier notes on 30 mA protection, trip times, selectivity and concealed cables."
-reviewed: '2026-09-22'
+reviewed: '2026-10-16'
 review_status: partial
-review_notes: Edition, scope and the stated corrections were checked against official references; historical procedures and page numbers were not, and need the applicable standard and course materials.
-review_due: '2026-10-15'
+review_notes: "RCD limits, test button, rated versus trip current, trip times and selectivity were checked against HSE's electrical FAQs, IEC 61008-1:2024 and BEAMA's RCD bulletin, and the concealed-cable claims against IET's 2015 Wiring Matters article; current BS 7671:2018+A4:2026 wording of Regulations 522.6.202 to 522.6.204 is paywalled and unchecked."
+review_due: '2027-01-14'
 source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
@@ -70,6 +72,7 @@ Corrections made 22 September 2026 against HSE and IET sources.
 - **Trip times.** Trip-time requirements depend on device type, test conditions and the applicable rules. The earlier blanket "100–300 ms" statement was incomplete.
 - **Selectivity.** A higher-rated device is not automatically selective. The earlier claim that a 300 mA device lets upstream 30 mA devices operate first was misleading; coordination needs an actual design.
 - **The metal-covering exception.** The note's generic "metal covering means no RCD" exception omitted conditions and other reasons an RCD may be required. Plastic conduit alone is not equivalent to an earthed metallic or other specifically permitted protective method.
+- Correction, 16 October 2026, to the note's Reg 522.6.203 line ("a stud wall made mainly of metal"): [IET's 2015 Wiring Matters article](https://electrical.theiet.org/media/1445/cables-in-walls.pdf) states the requirement applies, irrespective of depth, to a partition with any metallic parts other than fixings such as nails or screws, not only one that is mainly metal. It is seventeenth-edition guidance, so confirm the current A4 wording.
 
 ## Source gaps
 
@@ -83,4 +86,4 @@ The Electrics Webinar 4 summaries on inspection and testing demonstration and on
 
 ## Related
 
-[[Building Regulations]] · [[BS 7671]] · [[GN3 Guidance Note 3]] · [[Electrical Safety]] · [[Electrical Evidence Review - September 2026]] · [[Electrics - Resources]] · [[Safe Isolation]] · [[GS38]]
+[[Building Regulations]] · [[BS 7671]] · [[GN3 Guidance Note 3]] · [[Electrical Safety]] · [[Electrical Evidence Review - September 2026]] · [[Electrics - Resources]] · [[Safe Isolation]] · [[GS38]] · [[Electrical Evidence Review - October 2026]]

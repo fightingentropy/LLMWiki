@@ -8,7 +8,7 @@ related:
   - Wiki Log
   - Markets Wiki Index
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-10-15'
+updated: '2026-10-16'
 tags:
   - index
   - navigation
@@ -236,7 +236,7 @@ UK electrical study notes: safety, testing, certification, standards and the reg
 
 ### Standards and devices
 
-- [[BS 7671]] — BS 7671 edition status (2018+A4:2026, Amendment 3 valid to 15 October 2026) and how far to trust study notes that cite its clauses.
+- [[BS 7671]] — BS 7671 edition status (2018+A4:2026, the only current edition since Amendment 3 was withdrawn on 15 October 2026) and how far to trust study notes that cite its clauses.
 - [[GN3 Guidance Note 3]] — The IET's tenth-edition inspection and testing guide to BS 7671, with the edition correction, a study workflow, and the details withdrawn as unreliable.
 - [[RCD Protection]] — What an RCD does and does not protect against, with corrections to earlier notes on 30 mA protection, trip times, selectivity and concealed cables.
 
@@ -350,7 +350,9 @@ Society, dating and gender, politics, media, philosophy and humour, plus the wri
 
 Dated checks and operation records. They explain why older claims were corrected and what was done to the live bookmark list.
 
+- [[Electrical Evidence Review - October 2026]] — What IET, BSI, HSE, GOV.UK, legislation and IEC sources say on BS 7671 editions, test equipment, isolation, testing, certificates, landlord rules, Part P and PAT, with every correction they force.
 - [[Electrical Evidence Review - September 2026]] — What official IET, GOV.UK and HSE references say on BS 7671 editions, Part P, concealed cables, safe work and PAT, with the corrections they force.
+- [[Health Evidence Review - October 2026]] — ADHD, sleep, stress, water-filter, supplement, exercise, retatrutide and bacteriostatic-water claims from the health pages, checked against regulators, drug labels and primary studies, with every correction they led to.
 - [[Health Evidence Review - September 2026]] — Fluoride, dopamine, push-up, vitamin D, retatrutide and BAC water claims from the health notes, checked against NHS, FDA and primary sources.
 - [[Live X Bookmark Inventory - 30 September 2026]] — All 70 posts bookmarked on X at @entropyholdings on 30 September 2026, by theme, with author, publication date and what each post is.
 - [[X Bookmark Cleanup - 30 September 2026]] — Record of clearing all seventy X bookmarks on 30 September 2026: what was kept first, the removal timings, and how the empty list was verified.

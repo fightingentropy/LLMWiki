@@ -2,7 +2,8 @@
 title: Safe Isolation
 type: topic
 domain: electrics
-sources: []
+sources:
+  - clippings/evidence-review-2026-10-16/Electrics.md
 related:
   - Electrical Safety
   - GS38
@@ -10,6 +11,7 @@ related:
   - Test Equipment Standards
   - Inspection and Testing Fundamentals
   - Electrical Study Map
+  - Electrical Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -25,9 +27,9 @@ source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
     and Testing Demonstration.md
-review_status: unverified
-review_notes: >-
-  Taken from a historical webinar summary whose transcript is unavailable; test limits, procedures, and chapter and exam references have not been checked against current material.
+reviewed: '2026-10-16'
+review_status: partial
+review_notes: "Isolation, locking-off, notice, proving-dead and indicator-proving steps were checked against HSE HSG85 and GS38, with Electrical Safety First's Best Practice Guide 2 and IET Wiring Matters for service-fuse withdrawal; the Electrician's Guide chapter reference, the on-load main-switch point and the GN3 bonding-disconnection practice need paid texts and remain unchecked."
 ---
 
 # Safe Isolation
@@ -136,6 +138,8 @@ Standard sequence recommended:
 
 Reasoning: start from the least dangerous point first (for example the main earth terminal) and work towards the most dangerous.
 
+Correction, 16 October 2026: HSE's [GS38](https://www.hse.gov.uk/pubns/priced/gs38.pdf) and [HSG85](https://www.hse.gov.uk/pubns/priced/hsg85.pdf) set no conductor-pair order. HSG85 (para 53) asks that all supply conductors be proved dead on three-phase or multi-supply equipment, and Electrical Safety First's [Best Practice Guide 2](https://select.org.uk/common/Uploaded%20files/Technical/FreeDownloads/Best_Practice_Guide_2.pdf), an industry guide, asks that all line, neutral and protective conductors be proved dead.
+
 ### 12. Re-prove the voltage indicator
 
 After proving dead, test the indicator again on a known live source. This confirms the indicator still works and that it was functioning when you tested the circuit.
@@ -180,6 +184,8 @@ Unless isolated upstream of your working point, the incoming supply tails (from 
 - They protect the utility side.
 - Improper removal is dangerous and potentially illegal.
 
+Correction, 16 October 2026: authorised routes exist. IET's [Wiring Matters, July 2025](https://electrical.theiet.org/wiring-matters/years/2025/106-july-2025/removing-the-distributors-cut-out-fuse/) says the DNO, the supplier's meter operator, Safe Isolation Providers under the Retail Energy Code, and anyone the DNO expressly permits may withdraw the cut-out fuse, and some DNOs let trade-association electricians do it under their own procedure. Check the local DNO's rules first.
+
 ### Test at the point of work
 
 - Do not just test at the distribution board.
@@ -216,6 +222,13 @@ Safe isolation is:
 - A professional responsibility.
 - Not a shortcut or a variable procedure.
 
+## Links
+
+- [HSE HSG85 (PDF)](https://www.hse.gov.uk/pubns/priced/hsg85.pdf) — HSE's safe working practices guidance; paras 46–55 set out identification, disconnection, locking off, notices and proving dead.
+- [HSE GS38, fourth edition (PDF)](https://www.hse.gov.uk/pubns/priced/gs38.pdf) — HSE guidance on test probes, leads and voltage detectors; para 20 says to prove a detector before and after use, preferably on a proving unit.
+- [Electrical Safety First — Best Practice Guide 2, Issue 4.2 (PDF)](https://select.org.uk/common/Uploaded%20files/Technical/FreeDownloads/Best_Practice_Guide_2.pdf) — industry guide to safe isolation on low voltage installations: isolation methods, lock-off kit, prohibition signs, proving dead and service-fuse withdrawal; copy hosted by SELECT.
+- [IET Wiring Matters — Removing the distributor's cut-out fuse (July 2025)](https://electrical.theiet.org/wiring-matters/years/2025/106-july-2025/removing-the-distributors-cut-out-fuse/) — who may withdraw a DNO cut-out fuse, the Safe Isolation Provider route, and hazards of old cut-outs.
+
 ## Related
 
-[[Electrical Safety]] · [[GS38]] · [[Continuity Testing]] · [[Test Equipment Standards]] · [[Inspection and Testing Fundamentals]] · [[Electrical Study Map]]
+[[Electrical Safety]] · [[GS38]] · [[Continuity Testing]] · [[Test Equipment Standards]] · [[Inspection and Testing Fundamentals]] · [[Electrical Study Map]] · [[Electrical Evidence Review - October 2026]]

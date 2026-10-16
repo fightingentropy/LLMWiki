@@ -5,6 +5,7 @@ domain: electrics
 sources:
   - electrics/Resources.md
   - clippings/evidence-review-2026-09-22/Electrics.md
+  - clippings/evidence-review-2026-10-16/Electrics.md
 related:
   - EICR
   - Building Regulations
@@ -18,6 +19,7 @@ related:
   - Electrical Evidence Review - September 2026
   - Electrical Study Map
   - Electrics - Resources
+  - Electrical Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -35,11 +37,9 @@ source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
     and Testing Demonstration.md
-review_status: unverified
-review_notes: >-
-  Historical webinar summary whose transcript is unavailable, so the test
-  limits, procedures, chapter and exam references have not been checked against
-  current material.
+reviewed: '2026-10-16'
+review_status: partial
+review_notes: "Form scope, layout and signatories were checked against the IET BS 7671:2018+A4:2026 model EIC and MEIWC, and Part P scope, notifiable work and certification routes against Approved Document P 2013, Building Regulations regulation 12(6A) and GOV.UK scheme guidance; GN3 chapter and exam pointers, BS 7671 regulation wording and the webinar's CPC and conduit details remain unchecked."
 ---
 
 # EIC and MEIWC
@@ -57,6 +57,8 @@ The fundamental difference determines which certificate to use, and it is critic
 | **[[EICR]]** | The condition of an existing installation in use; no new work involved | Whole installation or agreed extent |
 
 If a new circuit is involved, use the EIC. If the work touches more than one circuit, the MEIWC is not the right form. The EICR is a different document again: condition reporting, not certification of work.
+
+Correction, 16 October 2026: the IET's A4:2026 model forms say a separate [MEIWC](https://electrical.theiet.org/media/f0hlqxq1/bs7671_meiwc_a4.pdf) should be issued for each existing circuit worked on, so work on several existing circuits can be covered by several MEIWCs; the [EIC](https://electrical.theiet.org/media/tqxkkscw/bs7671_eic_a4.pdf) notes allow one EIC instead of multiple MEIWCs for additions, alterations or remedial works that add no new circuit.
 
 ## Electrical Installation Certificate (EIC)
 
@@ -87,6 +89,8 @@ The EIC is required for new work, including:
 - Signatory details and qualifications
 - Inspection schedule reference
 
+Correction, 16 October 2026: the A4:2026 model EIC has no qualifications field; the signatories' particulars are name, organisation, address, postcode and phone. The declarations and signatures sit on the first page, and a 14-item schedule of inspections is part of the certificate itself.
+
 **Associated schedules**, which must be included for the certificate to be complete:
 
 - Schedule of circuit details: circuit reference, type, protection, conductor sizes, route, and so on
@@ -111,6 +115,8 @@ The EIC carries three signatures:
 
 The client is not one of the three signatories.
 
+Correction, 16 October 2026: the A4:2026 model EIC also has a second designer signature where design responsibility is shared, and its notes allow a single-signature EIC signed by one person authorised for design, construction, and inspection and testing.
+
 With relevant qualifications and genuine competence and experience, an electrician can sign as Designer (if they designed it), as Installer (if they installed it), and as Inspector (if they inspected and tested it). All three signatures may come from the same person when one person performed all three roles.
 
 ## Minor Electrical Installation Works Certificate (MEIWC)
@@ -128,6 +134,8 @@ The MEIWC covers additions and alterations to existing circuits, not new circuit
 
 The MEIWC covers work on one circuit only. It must not be used to cover multiple circuits. If the work involves several circuits, use an EIC for each, or, where appropriate, a single EIC covering all the new work.
 
+Correction, 16 October 2026: the A4:2026 model forms call for a separate MEIWC for each existing circuit worked on, or one EIC in place of several MEIWCs; they do not call for an EIC for each circuit. An EIC is needed once a new circuit is introduced.
+
 ### Like-for-like replacement
 
 Replacing accessories or luminaires:
@@ -135,6 +143,8 @@ Replacing accessories or luminaires:
 - May be covered by an MEIWC if assessed as appropriate
 - Is not always mandatory to certify for a like-for-like replacement unless the contract or the client's requirements specify it
 - Still calls for judgement: is the existing circuit adequate, and is the replacement truly like-for-like?
+
+Correction, 16 October 2026: [Approved Document P](https://assets.publishing.service.gov.uk/media/5a802da7ed915d74e622ceed/BR_PDF_AD_P_2013.pdf) (England, paragraph 3.13) says non-notifiable work, which includes replacements, should still be inspected, tested and certificated in accordance with BS 7671, and the A4:2026 model MEIWC says appropriate inspection and testing should always be carried out whatever the extent of the work.
 
 ## "We add to good, we don't add to bad" (Regulation 132.16)
 
@@ -183,7 +193,11 @@ Some domestic work is notifiable to Building Control, such as:
 - New circuits in wet areas
 - Other specific work set out in the Building Regulations
 
+Correction, 16 October 2026: under [regulation 12(6A)](https://www.legislation.gov.uk/uksi/2010/2214/regulation/12) of the Building Regulations 2010 (England), every new circuit and every consumer unit replacement is notifiable wherever it is; location matters only for additions or alterations to existing circuits, which are notifiable inside a special location (the defined space around a bath or shower, or a room with a swimming pool or sauna heater).
+
 Part P applies to domestic installations where people permanently reside, and it determines when work is notifiable and what certification or notification is required. (from [[Electrics - Resources]]) [[Part P]] adds the precision for England: Part P is the statutory requirement and Approved Document P is guidance on satisfying it; the notifiable categories are new circuits, consumer-unit replacement, and additions or alterations in defined special locations; a kitchen location alone is not a blanket trigger; non-notifiable work still has to comply; and England's categories should not be applied to other UK jurisdictions without checking their rules.
+
+Correction, 16 October 2026: [Approved Document P](https://assets.publishing.service.gov.uk/media/5a802da7ed915d74e622ceed/BR_PDF_AD_P_2013.pdf) paragraph 2.2 also applies Part P to installations outside the dwelling and in outbuildings, to common areas and shared amenities of blocks of flats, and to business premises on the same meter as a dwelling, so its scope is wider than homes where people live.
 
 ### Self-notification needs CPS registration
 
@@ -236,7 +250,13 @@ The chapter numbers below come from the webinar summary. **Correction, 22 Septem
 
 - [GOV.UK Approved Document P](https://www.gov.uk/government/publications/electrical-safety-approved-document-p) — the official guidance on meeting Part P in England; sections 2–3 cover which dwellings and installations are in scope and which work is notifiable. (from [[Electrical Evidence Review - September 2026]])
 - [IET guidance publications list](https://electrical.theiet.org/guidance-and-codes-of-practice/publications-by-category/amendment-42026-to-bs-76712018-iet-wiring-regulations/bs-7671-and-guidance/) — the IET's current list of BS 7671 guidance, including the GN3 edition in print; the place to confirm which edition the chapter pointers above should be checked against. (from [[Electrical Evidence Review - September 2026]])
+- [IET model forms for BS 7671](https://electrical.theiet.org/bs-7671/model-forms/) — the IET's free blank EIC, MEIWC and EICR downloads for A4:2026 and earlier editions.
+- [IET model EIC, BS 7671:2018+A4:2026](https://electrical.theiet.org/media/tqxkkscw/bs7671_eic_a4.pdf) — the current Electrical Installation Certificate with its schedules; its notes say when an EIC is used and who signs it.
+- [IET model MEIWC, BS 7671:2018+A4:2026](https://electrical.theiet.org/media/f0hlqxq1/bs7671_meiwc_a4.pdf) — the current minor works certificate; for additions and alterations that add no new circuit, one certificate per circuit.
+- [Approved Document P, 2013 edition (PDF)](https://assets.publishing.service.gov.uk/media/5a802da7ed915d74e622ceed/BR_PDF_AD_P_2013.pdf) — the guidance text itself: Part P scope (2.2), notifiable work (2.5–2.7) and the three certification routes (section 3).
+- [Building Regulations 2010, regulation 12](https://www.legislation.gov.uk/uksi/2010/2214/regulation/12) — the legal list of notifiable electrical work in England, paragraph (6A), with the special-location definition.
+- [GOV.UK: Competent person scheme, current schemes](https://www.gov.uk/guidance/competent-person-scheme-current-schemes-and-how-schemes-are-authorised) — the schemes authorised for electrical work in dwellings (BESCA, Blue Flame Certification, Certsure, NAPIT, OFTEC) and the competence requirements for registering.
 
 ## Related
 
-[[EICR]] · [[Part P]] · [[Building Regulations]] · [[BS 7671]] · [[GN3 Guidance Note 3]] · [[Inspection and Testing Fundamentals]] · [[Electrical Safety]] · [[Continuity Testing]] · [[BS EN 61557]] · [[Electrical Evidence Review - September 2026]] · [[Electrical Study Map]] · [[Electrics - Resources]]
+[[EICR]] · [[Part P]] · [[Building Regulations]] · [[BS 7671]] · [[GN3 Guidance Note 3]] · [[Inspection and Testing Fundamentals]] · [[Electrical Safety]] · [[Continuity Testing]] · [[BS EN 61557]] · [[Electrical Evidence Review - September 2026]] · [[Electrical Study Map]] · [[Electrics - Resources]] · [[Electrical Evidence Review - October 2026]]

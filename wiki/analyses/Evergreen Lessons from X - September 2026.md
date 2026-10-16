@@ -41,9 +41,9 @@ created: '2026-09-30'
 updated: '2026-10-15'
 tags: [bookmarks, evergreen, curation, reasoning, engineering, privacy, trading, cooking, ai]
 summary: "Fourteen lessons worth keeping from seventy X bookmarks, each with its source post, the primary references behind it, and what was not verified."
-reviewed: '2026-09-30'
-review_status: partial
-review_notes: Mortgage prepayment, encrypted-DNS scope, WebRTC exposure, SSH over Tailscale, colourant labelling and molasses in brown sugar were checked against primary or official sources; the trading and practical principles remain heuristics, and the Jeff screenshot attribution, trading-system performance and the camera lab's physics were not verified.
+reviewed: '2026-10-16'
+review_status: reviewed
+review_notes: "The synthesis matches its cited category notes and inventory, and the factual claims were checked against Federal Reserve, CFPB, MDN, Tailscale, RFC 7858, the full Nature paper, 21 CFR 73.100, FDA, the Sugar Association and NIAAA; X posts could not be loaded, so the Jeff screenshot attribution, trading-system performance and the camera lab's rendering stay unverified and are labelled as attributed on the page."
 ---
 
 # Evergreen Lessons from X - September 2026
@@ -80,7 +80,7 @@ Three practical rules for engineers. See also [[Developer Resources]] and [[Digi
 
 See also [[AI Agents]].
 
-- **[Preserve data provenance when using generated training data](https://x.com/thesupermannx/status/2103805052817453255)** — The 2024 Nature paper studies degradation under recursive training on model-generated data. The useful practice is to preserve provenance and keep independent real-data evaluation, including rare cases, rather than treating successive generated outputs as fresh ground truth. The experiment does not establish that all synthetic-data use fails or that a current named model is collapsing; those claims in the post are not kept. Reference: [Nature: AI models collapse when trained on recursively generated data](https://www.nature.com/articles/s41586-024-07566-y). _(@thesupermannx)_ (from [[Bookmarks - AI & Agents]])
+- **[Preserve data provenance when using generated training data](https://x.com/thesupermannx/status/2103805052817453255)** — The 2024 Nature paper studies degradation under recursive training on model-generated data. The useful practice is to preserve provenance and keep independent real-data evaluation, including rare cases, rather than treating successive generated outputs as fresh ground truth. The experiment does not establish that all synthetic-data use fails or that a current named model is collapsing; those claims in the post are not kept. The full paper finds that keeping a share of the original human data reduced the degradation without removing it, and calls tracking model-generated content at scale an open problem. Reference: [Nature: AI models collapse when trained on recursively generated data](https://www.nature.com/articles/s41586-024-07566-y); Nature published an [author correction](https://doi.org/10.1038/s41586-025-08905-3) to the paper in March 2025. _(@thesupermannx)_ (from [[Bookmarks - AI & Agents]])
 - **[Voice works well for bounded administrative triage](https://x.com/_simonsmith/status/2102836288541913351)** — Use spoken interaction for tasks such as reviewing email, discussing priorities and organising calendar decisions while away from a screen. Capture the resulting decisions in durable text and review consequential actions before execution. A workflow idea from first-person experience; the post's predictions that screens or apps will disappear are omitted. _(@_simonsmith)_ (from [[Bookmarks - AI & Agents]])
 
 ## Explaining things
@@ -98,7 +98,7 @@ See also [[AI Agents]].
 
 ## What was checked and what was not
 
-- **Checked facts.** US mortgage prepayment conditions, the scope of encrypted DNS, WebRTC candidate-address exposure, ordinary SSH over a Tailscale network, colourant labelling rules, and molasses in brown sugar were checked against the linked primary or official sources. For the 2024 model-collapse paper only the abstract was checked; the experiment was not replicated.
+- **Checked facts.** US mortgage prepayment conditions, the scope of encrypted DNS, WebRTC candidate-address exposure, ordinary SSH over a Tailscale network, colourant labelling rules, and molasses in brown sugar were checked against the linked primary or official sources. The 2024 model-collapse paper was read in full; the experiment was not replicated.
 - **Our synthesis.** Testing competing arguments, failure-oriented software review, the boundaries of voice tasks, and interactive teaching are practical methods distilled from the source posts, not claims the posts made in those words.
 - **Attributed heuristics.** The four-edge taxonomy, the boredom rule, the historical trading-engineering messages and the deliberate-night-out framing keep their limits. No trading performance, medical treatment, product benchmark or camera simulation was validated.
 

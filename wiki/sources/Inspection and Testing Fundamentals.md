@@ -2,7 +2,8 @@
 title: Inspection and Testing Fundamentals
 type: source
 domain: electrics
-sources: []
+sources:
+  - clippings/evidence-review-2026-10-16/Electrics.md
 related:
   - Safe Isolation
   - Continuity Testing
@@ -20,6 +21,7 @@ related:
   - Ohm's Law and Electrical Calculations
   - Electrical Study Map
   - Electrical Evidence Review - September 2026
+  - Electrical Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -37,11 +39,9 @@ source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
     and Testing Demonstration.md
-review_status: unverified
-review_notes: >-
-  The original webinar transcript is unavailable, so the test limits,
-  procedures, chapter references and exam details have not been checked
-  against current material.
+reviewed: '2026-10-16'
+review_status: partial
+review_notes: "Document status, certificate scope and signatories, supply details, safe isolation steps, the test order, Appendix A's 80% rule, conductor figures and notification routes were checked against the A4 model forms, IET Wiring Matters, HSE HSG85 and HSR25, Approved Document P and City & Guilds; GN3 chapter, table and page references, course details and the lost transcript remain unchecked."
 ---
 
 # Inspection and Testing Fundamentals
@@ -195,6 +195,8 @@ Before starting testing, obtain:
 
 Safety: do not withdraw the DNO fuse; you are not authorised to.
 
+Correction, 16 October 2026: whether an electrician may withdraw the cut-out fuse depends on the DNO. Some DNOs, such as SSEN, let electricians who belong to trade associations withdraw and reinstate it; others do not, and the IET advises checking the DNO's procedure or using a Safe Isolation Provider ([IET Wiring Matters — Removing the distributor's cut-out fuse](https://electrical.theiet.org/wiring-matters/years/2025/106-july-2025/removing-the-distributors-cut-out-fuse/)).
+
 ### What testing might damage
 
 Know what is connected and what might be damaged by test voltages, especially insulation resistance testing:
@@ -340,6 +342,8 @@ Example: total reading 1.51 Ω, lead resistance 1.50 Ω, so the true conductor r
 
 When testing bonding conductors, disconnect them from the MET to eliminate parallel paths that could distort the readings.
 
+Correction, 16 October 2026: the IET warns that removing an earthing or protective bonding conductor can put hazardous touch voltages on exposed- and extraneous-conductive-parts where an open PEN fault exists, and that diverted neutral current can come from neighbouring installations; it describes a clamp-meter check for current in the earthing and bonding conductors before and after isolating the installation ([IET Wiring Matters — Neutral current diversion (NCD) industry research update](https://electrical.theiet.org/wiring-matters/years/2025/105-may-2025/neutral-current-diversion-ncd-industry-research-update/)).
+
 ## Training pathway and instructor advice
 
 ### Training structure
@@ -349,6 +353,8 @@ When testing bonding conductors, disconnect them from the MET to eliminate paral
 - The practical assessment is a real competence assessment, not an automatic pass for attending.
 - Extra training days are worthwhile if needed, especially for confidence in testing.
 - Level 2 fundamental inspection and testing exam: 60 minutes, open book, multiple choice (30 questions), using GN3 only.
+
+This conflicts with at least one current format. The webinar does not name the awarding body, and City & Guilds' Level 2 Certificate in Fundamental Inspection, Testing and Initial Verification (2392-10) uses a closed-book online multiple-choice test of 50 questions in 100 minutes ([City & Guilds 2392-10 qualification handbook](https://www.cityandguilds.com/-/media/productdocuments/building_services_engineering/electrical_installation/2392/2392_level_2/centre_documents/2392-10-l2-qhb-fundamental-inspection-initial-testing-ventilation-v1,-d-,6-pdf.pdf)); confirm the format with your own awarding body.
 
 ### Advice
 
@@ -361,6 +367,12 @@ When testing bonding conductors, disconnect them from the MET to eliminate paral
 
 The webinar summary behind this page, `electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection and Testing Demonstration.md`, cannot be found, and neither can the original transcript.
 
+## Links
+
+- [IET Wiring Matters — Removing the distributor's cut-out fuse](https://electrical.theiet.org/wiring-matters/years/2025/106-july-2025/removing-the-distributors-cut-out-fuse/) — IET article (July 2025) on who may withdraw the DNO cut-out fuse, DNO permission schemes and Safe Isolation Providers.
+- [IET Wiring Matters — Neutral current diversion (NCD) industry research update](https://electrical.theiet.org/wiring-matters/years/2025/105-may-2025/neutral-current-diversion-ncd-industry-research-update/) — IET survey article (May 2025) on diverted neutral current; warns about disconnecting earthing and bonding conductors and describes clamp-meter checks.
+- [City & Guilds 2392-10 qualification handbook](https://www.cityandguilds.com/-/media/productdocuments/building_services_engineering/electrical_installation/2392/2392_level_2/centre_documents/2392-10-l2-qhb-fundamental-inspection-initial-testing-ventilation-v1,-d-,6-pdf.pdf) — Handbook (version 1.6, April 2026) for the Level 2 fundamental inspection and testing certificate; sets out the multiple-choice test and practical assessment.
+
 ## Related
 
-[[Safe Isolation]] · [[Continuity Testing]] · [[EIC and MEIWC]] · [[EICR]] · [[Building Regulations]] · [[Part P]] · [[GN3 Guidance Note 3]] · [[BS 7671]] · [[GS38]] · [[BS EN 61010]] · [[Test Equipment Standards]] · [[RCD Protection]] · [[Ohm's Law and Electrical Calculations]] · [[PAT Testing]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]]
+[[Safe Isolation]] · [[Continuity Testing]] · [[EIC and MEIWC]] · [[EICR]] · [[Building Regulations]] · [[Part P]] · [[GN3 Guidance Note 3]] · [[BS 7671]] · [[GS38]] · [[BS EN 61010]] · [[Test Equipment Standards]] · [[RCD Protection]] · [[Ohm's Law and Electrical Calculations]] · [[PAT Testing]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]] · [[Electrical Evidence Review - October 2026]]

@@ -5,6 +5,7 @@ domain: electrics
 sources:
   - electrics/Resources.md
   - clippings/evidence-review-2026-09-22/Electrics.md
+  - clippings/evidence-review-2026-10-16/Electrics.md
 related:
   - BS 7671
   - Inspection and Testing Fundamentals
@@ -15,6 +16,7 @@ related:
   - PAT Testing
   - Electrical Study Map
   - Electrical Evidence Review - September 2026
+  - Electrical Evidence Review - October 2026
 created: '2026-04-12'
 updated: '2026-10-15'
 tags:
@@ -24,10 +26,10 @@ tags:
   - inspection-testing
   - standards
 summary: "The IET's tenth-edition inspection and testing guide to BS 7671, with the edition correction, a study workflow, and the details withdrawn as unreliable."
-reviewed: '2026-09-22'
-review_status: partial
-review_notes: Edition, scope and the stated corrections were checked against official references; historical procedures and page numbers were not, and need the applicable standard and course materials.
-review_due: '2026-10-15'
+reviewed: '2026-10-16'
+review_status: verified
+review_notes: "Publisher, tenth edition, A4 alignment and the On-Site Guide ninth edition were checked against the IET A4 guidance list and IET shop listing, and the fifth-edition mix-up against the IET in-service Code of Practice; the book's own chapters and page numbers are paywalled and the page makes no claims about them."
+review_due: '2027-01-14'
 source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
@@ -64,4 +66,4 @@ For appliance maintenance, follow [[In-Service Testing]] and [[PAT Testing]] as 
 
 ## Related
 
-[[BS 7671]] · [[Inspection and Testing Fundamentals]] · [[Continuity Testing]] · [[Safe Isolation]] · [[Test Equipment Standards]] · [[In-Service Testing]] · [[PAT Testing]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]]
+[[BS 7671]] · [[Inspection and Testing Fundamentals]] · [[Continuity Testing]] · [[Safe Isolation]] · [[Test Equipment Standards]] · [[In-Service Testing]] · [[PAT Testing]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]] · [[Electrical Evidence Review - October 2026]]

@@ -27,10 +27,12 @@ related:
   - Electrical Study Map
   - Health Evidence Review - September 2026
   - Electrical Evidence Review - September 2026
+  - Health Evidence Review - October 2026
+  - Electrical Evidence Review - October 2026
   - Evergreen Lessons from X - September 2026
   - X Bookmark Cleanup - 30 September 2026
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-10-15'
+updated: '2026-10-16'
 tags:
   - overview
   - knowledge-base
@@ -63,11 +65,11 @@ The largest resource banks live here: developer tools, AI and agents, design and
 
 ### Health and body
 
-[[Supplements]], [[Body_Optimization]], [[Fitness]], [[Medical]], [[Peptides]], [[ADHD]] and [[Circadian_Rhythm]] keep the notes' claims but mark what is supported, disputed or unresolved. [[Health Evidence Review - September 2026]] corrected the fluoride, sunlight-dopamine, push-up and peptide claims against primary sources. The circadian material on ADHD is the strongest research lead and also the place the wiki had to correct itself: a substantial subgroup, not a redefinition.
+[[Supplements]], [[Body_Optimization]], [[Fitness]], [[Medical]], [[Peptides]], [[ADHD]] and [[Circadian_Rhythm]] keep the notes' claims but mark what is supported, disputed or unresolved. [[Health Evidence Review - September 2026]] corrected the fluoride, sunlight-dopamine, push-up and peptide claims against primary sources, and [[Health Evidence Review - October 2026]] checked the rest against trials, drug labels and regulators: blueberries, cold exposure, magnesium, tongkat ali, creatine, rep ranges, peptide storage and retatrutide's status. The circadian material on ADHD is the strongest research lead and also the place the wiki had to correct itself: a substantial subgroup, not a redefinition.
 
 ### Electrics
 
-UK electrical study notes: safe isolation, continuity testing, certification, the condition report, test equipment standards and the regulations, linked in reading order by [[Electrical Study Map]]. [[Electrical Evidence Review - September 2026]] corrected cable routing, Part P scope and publication editions, and [[BS 7671]] records the A4 transition. The two original webinar transcripts are unavailable; the pages built from them say so.
+UK electrical study notes: safe isolation, continuity testing, certification, the condition report, test equipment standards and the regulations, linked in reading order by [[Electrical Study Map]]. [[Electrical Evidence Review - September 2026]] corrected cable routing, Part P scope and publication editions, and [[BS 7671]] records the A4 transition. [[Electrical Evidence Review - October 2026]] checked the procedural pages against HSE, IET and legislation: A4 is now the only current edition, an FI code no longer makes an EICR unsatisfactory, and the pages' GS38 probe and lead figures were corrected against the guidance itself. The two original webinar transcripts are unavailable; the pages built from them say so.
 
 ### Personal and psychology
 
@@ -87,8 +89,8 @@ Observations on society, dating, aesthetics and politics, and the writers quoted
 
 ## Where the gaps are
 
-- Many health claims in the notes remain unverified leads: the blueberry cure, cold-shower equivalence, the magnesium stack, the tongkat-ali protocol. They are labelled, not resolved.
-- The electrics procedural pages rest on webinar summaries whose transcripts are gone; test limits and exam references still need checking against current material.
+- The blueberry cure, cold-shower equivalence, the magnesium stack and the tongkat-ali protocol have now been checked against trials: the first two are not supported as stated, and the magnesium and tongkat-ali evidence is narrower than the notes claim. Personal anecdotes stay labelled as anecdotes.
+- The electrics procedural pages rest on webinar summaries whose transcripts are gone. HSE, IET and legislation now back most procedures, but pass limits, GN3 and BS 7671 clause and page references, and exam formats still need the paid texts or course material.
 - Most developer and agent tools are watchlist items. Installation, permissions, rollback and real use are not recorded; the [[Developer Tool Evaluation Map]] is the template for recording them.
 - Some bookmarks are image-only or carry no note. They are listed with what the URL shows and nothing more.
 - Cross-domain links are thinner than the content deserves: trading psychology to personal psychology, health to performance, design taste to product decisions.

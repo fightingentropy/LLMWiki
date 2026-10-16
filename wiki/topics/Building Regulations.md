@@ -5,6 +5,7 @@ domain: electrics
 sources:
   - electrics/Resources.md
   - clippings/evidence-review-2026-09-22/Electrics.md
+  - clippings/evidence-review-2026-10-16/Electrics.md
 related:
   - Part P
   - BS 7671
@@ -15,6 +16,7 @@ related:
   - Electrical Evidence Review - September 2026
   - GN3 Guidance Note 3
   - Electrical Study Map
+  - Electrical Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -26,10 +28,10 @@ tags:
   - cable-protection
   - safe-zones
 summary: "How building law, BS 7671 and Part P notification apply to electrical work, with the corrected concealed-cable rule and the note's structural limits."
-reviewed: '2026-09-22'
+reviewed: '2026-10-16'
 review_status: partial
-review_notes: "Edition status, Part P scope and the stated corrections were checked against IET, GOV.UK and HSE references; detailed historical procedures and page numbers were not, as they need the applicable standard and course materials."
-review_due: '2026-10-15'
+review_notes: "Edition status, Part P scope and notification, the concealed-cable claims and the chase limits were checked against IET, BSI, GOV.UK Approved Documents P and A, legislation.gov.uk and HSE; current A4 clause wording, the 0.125 joist-notch figure, the plaster and one-brick shortcuts and the unnamed guide's page numbers remain unchecked."
+review_due: '2027-01-14'
 source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
@@ -82,6 +84,7 @@ The note's regulation summaries, as written; they are study shorthand, not verif
 - Reg 522.6.202: cables less than 50 mm deep in safe zones must be 30 mA RCD protected.
 - Reg 522.5.204: if cables are in earthed metallic covering, conduit, or trunking, an RCD can be avoided.
 - Reg 522.6.203: if a circuit is in a stud wall made mainly of metal, 30 mA RCD is required unless Reg 522.6.204 is followed.
+- Correction, 16 October 2026, to the 522.6.203 line: [IET's 2015 Wiring Matters article](https://electrical.theiet.org/media/1445/cables-in-walls.pdf) states the requirement applies, irrespective of depth, to a partition with any metallic parts other than fixings such as nails or screws, not only one that is mainly metal. It is seventeenth-edition guidance, so confirm the current A4 wording.
 
 Correction, 22 September 2026: this page once said a cable outside the prescribed zones could be made acceptable simply by adding a 30 mA RCD. That was wrong. An RCD gives additional protection but does not stop a screw or drill from damaging a cable. Routing and permitted protective construction must both satisfy the applicable standard.
 
@@ -99,6 +102,7 @@ The note lists limits for notches and chases (from [[Electrics - Resources]]):
 - Wall chases: vertical up to 1/3 of wall thickness; horizontal up to 1/6 of wall thickness.
 - If wall thickness is unknown, approximate with one brick (about 100 mm of brick depth).
 - Exclude plaster thickness because it is not structural.
+- Correction, 16 October 2026: [Approved Document A](https://www.gov.uk/government/publications/structure-approved-document-a), paragraph 2C30, limits vertical chases to 1/3 of the wall thickness, or of the leaf in a cavity wall, and horizontal chases to 1/6 of the thickness of the leaf, not of the whole wall; chases must not impair the wall's stability. It gives no joist-notch depth rule.
 
 These fractions come without the conditions, locations and construction types that make them valid, so treat them as a prompt to look up the real rule, not as universal limits. Guessing wall thickness from one brick is not a reliable design basis. Use the relevant structural guidance and the actual construction details.
 
@@ -122,7 +126,8 @@ The next study references are [[EIC and MEIWC]], [[Electrical Safety]] and the a
 - [IET — BS 7671 edition checker](https://electrical.theiet.org/bs-7671-18th-edition-wiring-regulations/ensure-you-are-up-to-date-with-bs-7671/) — Which edition and amendment of the Wiring Regulations is current.
 - [IET — BS 7671 and guidance publications](https://electrical.theiet.org/guidance-and-codes-of-practice/publications-by-category/amendment-42026-to-bs-76712018-iet-wiring-regulations/bs-7671-and-guidance/) — IET's list of A4-aligned publications, including GN3 and the On-Site Guide.
 - [HSE — Electrical safety FAQs](https://www.hse.gov.uk/electricity/faq.htm) — HSE on working dead and the limits of RCD protection.
+- [GOV.UK — Approved Document A: structure](https://www.gov.uk/government/publications/structure-approved-document-a) — England's structural guidance (2004 edition incorporating 2004, 2010 and 2013 amendments); paragraph 2C30 sets the chase-depth limits for walls in small buildings.
 
 ## Related
 
-[[Part P]] · [[BS 7671]] · [[Electrical Safety]] · [[RCD Protection]] · [[EIC and MEIWC]] · [[Electrics - Resources]] · [[Electrical Evidence Review - September 2026]] · [[GN3 Guidance Note 3]] · [[Electrical Study Map]]
+[[Part P]] · [[BS 7671]] · [[Electrical Safety]] · [[RCD Protection]] · [[EIC and MEIWC]] · [[Electrics - Resources]] · [[Electrical Evidence Review - September 2026]] · [[GN3 Guidance Note 3]] · [[Electrical Study Map]] · [[Electrical Evidence Review - October 2026]]

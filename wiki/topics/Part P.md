@@ -5,6 +5,7 @@ domain: electrics
 sources:
   - electrics/Resources.md
   - clippings/evidence-review-2026-09-22/Electrics.md
+  - clippings/evidence-review-2026-10-16/Electrics.md
 related:
   - Building Regulations
   - EIC and MEIWC
@@ -14,6 +15,7 @@ related:
   - Electrical Safety
   - Electrics - Resources
   - Electrical Study Map
+  - Electrical Evidence Review - October 2026
 created: 2026-04-18T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -26,10 +28,10 @@ tags:
   - competent-person-scheme
   - england
 summary: "What Part P covers in England, which electrical work is notifiable, and how the law, Approved Document P, certificates and scheme registration differ."
-reviewed: '2026-09-22'
-review_status: partial
-review_notes: "Scope, notification categories and the statutory status of Part P were checked against GOV.UK's Approved Document P; detailed historical procedures and page numbers were not, because they need the applicable standard and course materials."
-review_due: '2026-10-15'
+reviewed: '2026-10-16'
+review_status: verified
+review_notes: "Edition, scope, notifiable and non-notifiable work, certification routes and the England-only extent were checked against the GOV.UK Approved Document P (2013, still the current edition) and regulation 12 of the Building Regulations 2010 on legislation.gov.uk; the page makes no procedural or page-number claims."
+review_due: '2027-01-14'
 source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
@@ -77,4 +79,4 @@ This page concerns **England**. Part P of the Building Regulations is a statutor
 
 ## Related
 
-[[Building Regulations]] · [[BS 7671]] · [[EIC and MEIWC]] · [[EICR]] · [[Electrical Safety]] · [[Electrics - Resources]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]]
+[[Building Regulations]] · [[BS 7671]] · [[EIC and MEIWC]] · [[EICR]] · [[Electrical Safety]] · [[Electrics - Resources]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]] · [[Electrical Evidence Review - October 2026]]
