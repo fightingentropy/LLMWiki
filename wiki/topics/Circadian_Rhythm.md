@@ -8,6 +8,7 @@ sources:
   - clippings/bookmark-updates-2026-09-22/Health & Psychology.md
   - clippings/evidence-review-2026-09-22/Health.md
   - bookmarks/Health & Psychology.md
+  - clippings/evidence-review-2026-10-16/Health.md
 related:
   - ADHD
   - Body Optimization
@@ -21,6 +22,7 @@ related:
   - Stress Management
   - Fitness
   - Andrew Huberman
+  - Health Evidence Review - October 2026
 created: 2026-04-18T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -32,6 +34,9 @@ tags:
   - melatonin
   - light
 summary: "Body-clock timing in Erlin's notes: the ADHD delayed-clock paper and its limits, lines on sleep, light and bedtime habits, and which claims lack evidence."
+reviewed: '2026-10-16'
+review_status: reviewed
+review_notes: "Checked the definition and light-as-timing-cue framing against the NIGMS circadian fact sheet, the Luu and Fabiano figures against the Frontiers paper, the sleep-duration line against NHLBI and NICHD guidance, and the saved posts, video and quotes against their sources; the magnesium, tongkat ali and cold-shower lines remain attributed and were not tested."
 ---
 
 # Circadian Rhythm
@@ -100,4 +105,4 @@ Sleep timing, light exposure, medication effects and symptoms are separate quest
 
 ## Related
 
-[[ADHD]] · [[Body_Optimization|Body Optimization]] · [[Mental_Health|Mental Health]] · [[Supplements|Supplements & Biohacking]] · [[Health Evidence]] · [[Health Evidence Review - September 2026]] · [[Bookmarks - Health & Psychology]] · [[Medical|Medical & Health]] · [[Body]] · [[Stress Management]] · [[Fitness]]
+[[ADHD]] · [[Body_Optimization|Body Optimization]] · [[Mental_Health|Mental Health]] · [[Supplements|Supplements & Biohacking]] · [[Health Evidence]] · [[Health Evidence Review - September 2026]] · [[Bookmarks - Health & Psychology]] · [[Medical|Medical & Health]] · [[Body]] · [[Stress Management]] · [[Fitness]] · [[Health Evidence Review - October 2026]]

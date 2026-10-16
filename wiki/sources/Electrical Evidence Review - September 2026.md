@@ -19,6 +19,7 @@ related:
   - Safe Isolation
   - In-Service Testing
   - Test Equipment Standards
+  - Electrical Evidence Review - October 2026
 created: '2026-09-22'
 updated: '2026-10-15'
 tags:
@@ -83,6 +84,7 @@ Sources: [HSE electrical FAQs](https://www.hse.gov.uk/electricity/faq.htm); [HSE
 - Maintenance arrangements and inspection and testing intervals depend on risk, use and environment.
 - Visual checks matter; some faults need testing.
 - A test label is not a guarantee that equipment remains safe.
+- Correction, 16 October 2026: the source for this point is HSE's [INDG236](https://www.hse.gov.uk/pubns/indg236.pdf) leaflet, not the [PAT FAQ](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm). INDG236 says a test indicates an appliance's safety only at the time of the test and does not imply it will stay safe, so user checks must continue; the FAQ says labels and records are not legally required but are a useful management tool.
 
 See [[PAT Testing]] and [[In-Service Testing]]. Source: [HSE portable appliance testing FAQs](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm).
 
@@ -106,7 +108,8 @@ The original inspection and testing and PAT webinar transcripts cannot be found.
 - [HSE electrical FAQs](https://www.hse.gov.uk/electricity/faq.htm) — HSE electricity FAQs, cited with GS38 for working dead, RCD limits and competence for maintenance and testing.
 - [HSE GS38](https://www.hse.gov.uk/pubns/books/gs38.htm) — HSE's GS38 publication page, cited for the point that testing needs suitable equipment.
 - [HSE portable appliance testing FAQs](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm) — HSE answers on PAT: no blanket annual requirement, risk-based intervals, visual checks.
+- [HSE INDG236: Maintaining portable electric equipment in low-risk environments](https://www.hse.gov.uk/pubns/indg236.pdf) — HSE's short leaflet on user checks, visual inspection and risk-based testing; says a test shows an appliance's safety only at the time of the test.
 
 ## Related
 
-[[Building Regulations]] · [[Part P]] · [[Electrical Safety]] · [[RCD Protection]] · [[BS 7671]] · [[GN3 Guidance Note 3]] · [[Electrical Study Map]] · [[Electrics - Resources]] · [[Inspection and Testing Fundamentals]] · [[PAT Testing]] · [[Safe Isolation]] · [[In-Service Testing]] · [[Test Equipment Standards]]
+[[Building Regulations]] · [[Part P]] · [[Electrical Safety]] · [[RCD Protection]] · [[BS 7671]] · [[GN3 Guidance Note 3]] · [[Electrical Study Map]] · [[Electrics - Resources]] · [[Inspection and Testing Fundamentals]] · [[PAT Testing]] · [[Safe Isolation]] · [[In-Service Testing]] · [[Test Equipment Standards]] · [[Electrical Evidence Review - October 2026]]

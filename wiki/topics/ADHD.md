@@ -7,6 +7,7 @@ sources:
   - misc/Psychology.md
   - bookmarks/Health & Psychology.md
   - clippings/bookmark-updates-2026-09-22/Health & Psychology.md
+  - clippings/evidence-review-2026-10-16/Health.md
 related:
   - Bookmarks - Health & Psychology
   - Psychology & Behavior
@@ -15,6 +16,7 @@ related:
   - Health Evidence
   - Circadian Rhythm
   - Medical & Health
+  - Health Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -26,6 +28,9 @@ tags:
   - stimulants
   - limerence
 summary: "ADHD in Erlin's notes: the circadian-timing paper and its correction, how stimulants work, two opposing treatment accounts, unverified fixes, and limerence."
+reviewed: '2026-10-16'
+review_status: reviewed
+review_notes: "Checked the Luu and Fabiano figures, design and conclusions against the Frontiers paper and its PubMed record, the NIH stimulant summary against the Kay et al. Cell study release, Vyvanse against its DailyMed label, the Cleveland Clinic limerence page and the saved posts; the original limerence post is no longer available."
 ---
 
 # ADHD
@@ -98,4 +103,4 @@ A useful distinction: reciprocal knowledge of a real person versus a relationshi
 
 ## Related
 
-[[Circadian Rhythm]] · [[Neurodiversity]] · [[Mental Health]] · [[Health Evidence]] · [[Bookmarks - Health & Psychology]] · [[Psychology & Behavior]] · [[Medical & Health]]
+[[Circadian Rhythm]] · [[Neurodiversity]] · [[Mental Health]] · [[Health Evidence]] · [[Bookmarks - Health & Psychology]] · [[Psychology & Behavior]] · [[Medical & Health]] · [[Health Evidence Review - October 2026]]

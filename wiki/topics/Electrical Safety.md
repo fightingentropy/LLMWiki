@@ -5,6 +5,7 @@ domain: electrics
 sources:
   - electrics/Resources.md
   - clippings/evidence-review-2026-09-22/Electrics.md
+  - clippings/evidence-review-2026-10-16/Electrics.md
 related:
   - Safe Isolation
   - Test Equipment Standards
@@ -18,6 +19,7 @@ related:
   - PAT Testing
   - Part P
   - BS 7671
+  - Electrical Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -29,10 +31,10 @@ tags:
   - hse
   - working-dead
 summary: "How to work dead, why RCDs, earthing and circuit breakers do different jobs, and how inspection and PAT fit in, with the HSE and IET references."
-reviewed: '2026-09-22'
-review_status: partial
-review_notes: "Edition status, scope and the stated corrections were checked against official IET, HSE and GOV.UK references; detailed historical procedures and page numbers were not, because they need the applicable standard and course materials."
-review_due: '2026-10-15'
+reviewed: '2026-10-16'
+review_status: reviewed
+review_notes: "Working dead, competence, RCD limits, GS38 scope and PAT frequency were checked against HSE's electrical and PAT FAQs, GS38 (fourth edition) and Electricity at Work Regulations 1989 regulations 13 and 14, and the conductive-part definitions against IET Wiring Matters and IEC 60050; the point that some tests can damage connected equipment rests on industry guidance because the BS 7671 text is paywalled."
+review_due: '2027-01-14'
 source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
@@ -95,6 +97,7 @@ Measurements alone do not make equipment safe.
 - Maintenance arrangements and inspection and testing intervals depend on risk, use and environment.
 - Visual checks matter; some faults require testing.
 - A test label is not a guarantee that the equipment remains safe.
+- Correction, 16 October 2026: the source for this point is HSE's [INDG236](https://www.hse.gov.uk/pubns/indg236.pdf) leaflet, not the [PAT FAQ](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm). INDG236 says a test indicates an appliance's safety only at the time of the test and does not imply it will stay safe, so user checks must continue; the FAQ says labels and records are not legally required but are a useful management tool.
 - See [[In-Service Testing]] and [[PAT Testing]].
 
 ## Evidence status
@@ -106,10 +109,11 @@ Measurements alone do not make equipment safe.
 ## Resources
 
 - [HSE — electrical safety FAQs](https://www.hse.gov.uk/electricity/faq.htm) — HSE's answers on electricity at work, the basis for the rule that work is normally done dead, isolated, secured and checked dead.
-- [HSE — portable appliance testing FAQs](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm) — why portable equipment needs risk-based maintenance, not blanket annual testing, and why a test label is not a guarantee.
+- [HSE — portable appliance testing FAQs](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm) — why portable equipment needs risk-based maintenance, not blanket annual testing, and why labels and records are a management tool rather than a legal requirement.
+- [HSE INDG236: Maintaining portable electric equipment in low-risk environments](https://www.hse.gov.uk/pubns/indg236.pdf) — HSE's short leaflet on user checks, visual inspection and risk-based testing; says a test shows an appliance's safety only at the time of the test.
 - [HSE — GS38](https://www.hse.gov.uk/pubns/books/gs38.htm) — HSE's guidance on electrical test equipment for low-voltage systems: leads, probes and voltage indicators.
 - [IET — Cables in walls (2015)](https://electrical.theiet.org/media/1445/cables-in-walls.pdf) — IET article on safe zones, additional RCD protection and the permitted alternative methods for concealed cables. Seventeenth-edition guidance, so use the current BS 7671 text for design decisions.
 
 ## Related
 
-[[Safe Isolation]] · [[Test Equipment Standards]] · [[GS38]] · [[RCD Protection]] · [[Building Regulations]] · [[In-Service Testing]] · [[PAT Testing]] · [[Part P]] · [[BS 7671]] · [[Electrics - Resources]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]]
+[[Safe Isolation]] · [[Test Equipment Standards]] · [[GS38]] · [[RCD Protection]] · [[Building Regulations]] · [[In-Service Testing]] · [[PAT Testing]] · [[Part P]] · [[BS 7671]] · [[Electrics - Resources]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]] · [[Electrical Evidence Review - October 2026]]

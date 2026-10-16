@@ -6,6 +6,7 @@ sources:
   - misc/Body.md
   - misc/Medical.md
   - clippings/evidence-review-2026-09-22/Health.md
+  - clippings/evidence-review-2026-10-16/Health.md
 related:
   - Fitness
   - Circadian Rhythm
@@ -21,6 +22,7 @@ related:
   - Stress Management
   - Lee Kuan Yew
   - Health Evidence Review - September 2026
+  - Health Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -32,10 +34,10 @@ tags:
   - consistency
   - evidence
 summary: "The consistency framework in Erlin's body notes, where to find practical guidance, and which dopamine, stress, cold and diet claims are corrected."
-reviewed: '2026-09-22'
-review_status: partial
-review_notes: "The corrections were checked against the sources cited in the September 2026 health evidence review; the note's other protocols and anecdotes remain unresolved."
-review_due: '2026-12-21'
+reviewed: '2026-10-16'
+review_status: reviewed
+review_notes: "The blueberry, cold-shower, magnesium and tongkat-ali/pomegranate claims were checked against PubMed trials, systematic reviews and the AAN/AHS migraine guideline, and the NHS activity and vitamin D figures and the dopamine correction were re-checked; the NIH ODS magnesium fact sheet was blocked, no completed Cochrane review covers these claims (the magnesium-for-migraine review is still a protocol), and the Lee Kuan Yew quote was not checked."
+review_due: '2027-01-14'
 ---
 
 # Body Optimization
@@ -82,8 +84,8 @@ These are personal priorities, not a universal medical stack.
 Corrected on 22 September 2026 against the sources in [[Health Evidence Review - September 2026]].
 
 - **Sunlight and dopamine.** The [[Medical & Health]] note says: "Dopamine is synthesized from the amino acid Tyrosine, The first and crucial step is made by the enzyme Tyrosine Hydroxylase, Sunlight is needed for this step." Correction: the earlier "requires sunlight" statement was incorrect. The tyrosine-hydroxylase reaction uses tyrosine, oxygen and tetrahydrobiopterin; sunlight is not a reagent ([PubChem pathway](https://pubchem.ncbi.nlm.nih.gov/pathway/BioCyc%3AHUMAN_PWY66-301); [enzyme kinetics study](https://pubmed.ncbi.nlm.nih.gov/6117320/)). The enzyme reaction and circadian responses to light are different mechanisms.
-- **Blueberries.** A saved [post](https://x.com/DejaRu22/status/1884529318564708759) claims a "Near-instant cure for brain fog: Eat 500g+ of blueberries in one sitting", crediting flavonoids that "specifically and powerfully lower inflammation in the brain." Correction: the instant-cure claim remains an anecdote, not an established intervention. The notes supply no controlled clinical evidence for it.
-- **Cold showers.** A saved thread says deliberate cold exposure "facilitates fairly high levels of dopamine release"; a reply says a five-minute cold shower when anxious turned the day around and "almost feels like taking a pill or something." Correction: the source describes personal mood changes. It does not show a predictable dopamine effect lasting all day or equivalence to medication.
+- **Blueberries.** A saved [post](https://x.com/DejaRu22/status/1884529318564708759) claims a "Near-instant cure for brain fog: Eat 500g+ of blueberries in one sitting", crediting flavonoids that "specifically and powerfully lower inflammation in the brain." Correction: the instant-cure claim remains an anecdote, not an established intervention. The notes supply no controlled clinical evidence for it. Correction, 16 October 2026: a [2026 meta-analysis of 14 randomised trials](https://pubmed.ncbi.nlm.nih.gov/41974068/) in healthy people found blueberries improved a measure of blood-vessel function but had no significant effect on executive function or mood, and an [earlier review of 12 trials](https://pubmed.ncbi.nlm.nih.gov/30999017/) found some memory gains across varied doses and products. Neither review reports brain-fog or brain-inflammation outcomes.
+- **Cold showers.** A saved thread says deliberate cold exposure "facilitates fairly high levels of dopamine release"; a reply says a five-minute cold shower when anxious turned the day around and "almost feels like taking a pill or something." Correction: the source describes personal mood changes. It does not show a predictable dopamine effect lasting all day or equivalence to medication. Correction, 16 October 2026: a controlled study found plasma dopamine 250% higher during one hour of head-out immersion in 14°C water ([Šrámek et al., 2000](https://pubmed.ncbi.nlm.nih.gov/10751106/)), a much larger exposure than a five-minute shower and a blood level rather than a brain measurement. A [2025 meta-analysis of cold-water immersion trials](https://pubmed.ncbi.nlm.nih.gov/39879231/) found lower stress 12 hours afterwards and better sleep quality and quality of life, but no effect on mood; the [largest cold-shower trial](https://pubmed.ncbi.nlm.nih.gov/27631616/) found 29% less self-reported sickness absence but no fewer illness days.
 - **Stress.** "Acute stress is good. It makes you better, stronger, more adaptive. Chronic stress is bad." and "Eliminate chronic stressors & replace with acute stressors." — linked to a [post](https://x.com/NoahRyanCo/status/1928925779699839308) _(@NoahRyanCo)_. Correction: the "acute good, chronic bad" slogan omits severity, recovery and individual context; a brief stressor can also be harmful.
 - **Temperature and intelligence.** A saved [post](https://x.com/levelsio/status/1919475601574183307) is labelled "Temperature is DIRECTLY related to intelligence", next to [[Lee Kuan Yew]]'s line that "Air conditioning was a most important invention for us, perhaps one of the signal inventions of history." Correction: the air-conditioning quotation and the cold-exposure anecdotes do not establish that lower temperature increases intelligence.
 - **Push-ups and heart disease.** A saved claim: "Men who can do 40 push-ups or more have a 96 percent reduced risk of heart disease compared with men who could do less than 10 push-ups." The next line: "Push-ups are a better predictor of whether a man will get heart disease than an aerobic treadmill test." The [2019 study](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2724778) followed 1,104 active male firefighters and found greater baseline push-up capacity associated with fewer cardiovascular events. The 96% figure compares groups in an observational cohort; it is not a reduction caused by doing forty push-ups and not a universal cardiac screening test.
@@ -91,6 +93,10 @@ Corrected on 22 September 2026 against the sources in [[Health Evidence Review -
 ## Protocols that stay attributed claims
 
 The note's training, hormone, breathing and peptide protocols stay in [[Body]] as attributed claims, not current advice. The saved notes supply no controlled clinical evidence for a universal magnesium sleep, hearing and migraine stack, or for a tongkat ali and pomegranate hormone-balancing protocol. [[Peptides]] and [[Retatrutide]] are pharmacological research references with separate evidence requirements; see [[Health Evidence]] for how to weigh a study, a product and a personal decision.
+
+Correction, 16 October 2026: the magnesium claims are uneven. The American Academy of Neurology and American Headache Society rated magnesium "probably effective" for preventing episodic migraine ([Holland et al., 2012](https://pubmed.ncbi.nlm.nih.gov/22529203/)); a [2026 systematic review of 12 trials](https://pubmed.ncbi.nlm.nih.gov/42661485/) found inconsistent, low- to very-low-certainty evidence for sleep and did not support magnesium as routine insomnia treatment; and the hearing claim rests on a few trials, such as a [1994 placebo-controlled study of 300 noise-exposed military recruits](https://pubmed.ncbi.nlm.nih.gov/8135325/) with fewer permanent hearing-threshold shifts.
+
+Correction, 16 October 2026: a [2022 meta-analysis of five trials](https://pubmed.ncbi.nlm.nih.gov/36013514/) found tongkat ali (*Eurycoma longifolia*) raised total testosterone, most clearly in men with low testosterone, and called for more research. No primary source supports pomegranate juice offsetting an oestrogen effect of tongkat ali.
 
 ## Resources
 
@@ -105,7 +111,16 @@ The note's training, hormone, breathing and peptide protocols stay in [[Body]] a
 - [NHS — physical activity guidelines for adults aged 19 to 64](https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/) — the weekly activity and strength targets.
 - [Yang et al., JAMA Network Open, 2019](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2724778) — the push-up capacity and cardiovascular events cohort study of male firefighters.
 - [NHS — vitamin D](https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/) — the 10-microgram autumn and winter recommendation and who needs it year-round.
+- [He et al., blueberries, vascular function and cognition (Nutrition Research, 2026)](https://pubmed.ncbi.nlm.nih.gov/41974068/) — Meta-analysis of 14 trials in healthy people: better blood-vessel function, no significant effect on executive function or mood.
+- [Travica et al., blueberries, cognition and mood (Brain, Behavior, and Immunity, 2020)](https://pubmed.ncbi.nlm.nih.gov/30999017/) — Systematic review of 12 trials reporting some memory gains, with doses and products too varied to compare.
+- [Šrámek et al., immersion in water of different temperatures (Eur J Appl Physiol, 2000)](https://pubmed.ncbi.nlm.nih.gov/10751106/) — Study of hormone responses during an hour in water at 32°C, 20°C and 14°C; at 14°C plasma dopamine rose 250% and noradrenaline 530%.
+- [Cain et al., cold-water immersion and wellbeing (PLoS One, 2025)](https://pubmed.ncbi.nlm.nih.gov/39879231/) — Meta-analysis of 11 trials: lower stress at 12 hours, better sleep quality and quality of life, no effect on mood, an acute rise in inflammation.
+- [Buijze et al., cold showering and health (PLoS One, 2016)](https://pubmed.ncbi.nlm.nih.gov/27631616/) — Randomised trial of 3,018 adults: less self-reported sickness absence with a cold finish to the shower, no change in illness days.
+- [Holland et al., AAN/AHS migraine prevention guideline (Neurology, 2012)](https://pubmed.ncbi.nlm.nih.gov/22529203/) — US neurology guideline rating magnesium, riboflavin and other complementary treatments for episodic migraine prevention.
+- [Lopresti et al., magnesium for sleep (J Diet Suppl, 2026)](https://pubmed.ncbi.nlm.nih.gov/42661485/) — Systematic review of 12 trials: inconsistent, low-certainty evidence; not a routine insomnia treatment.
+- [Attias et al., magnesium and noise-induced hearing loss (Am J Otolaryngol, 1994)](https://pubmed.ncbi.nlm.nih.gov/8135325/) — Placebo-controlled trial in 300 military recruits exposed to impulse noise; the magnesium group had fewer permanent hearing-threshold shifts.
+- [Leisegang et al., tongkat ali and testosterone (Medicina, 2022)](https://pubmed.ncbi.nlm.nih.gov/36013514/) — Meta-analysis of five trials finding higher total testosterone with *Eurycoma longifolia*, most clearly in men with low testosterone.
 
 ## Related
 
-[[Body]] · [[Medical & Health]] · [[Fitness]] · [[Circadian_Rhythm|Circadian Rhythm]] · [[Mental Health]] · [[Supplements|Supplements & Biohacking]] · [[Stress Management]] · [[Self-Improvement]] · [[Decision-Making]] · [[Health Evidence]] · [[Peptides]] · [[Retatrutide]] · [[Lee Kuan Yew]] · [[Health Evidence Review - September 2026]]
+[[Body]] · [[Medical & Health]] · [[Fitness]] · [[Circadian_Rhythm|Circadian Rhythm]] · [[Mental Health]] · [[Supplements|Supplements & Biohacking]] · [[Stress Management]] · [[Self-Improvement]] · [[Decision-Making]] · [[Health Evidence]] · [[Peptides]] · [[Retatrutide]] · [[Lee Kuan Yew]] · [[Health Evidence Review - September 2026]] · [[Health Evidence Review - October 2026]]

@@ -7,6 +7,7 @@ sources:
   - clippings/bookmark-updates-2026-09-22/Health & Psychology.md
   - clippings/evidence-review-2026-09-22/Health.md
   - bookmarks/Health & Psychology.md
+  - clippings/evidence-review-2026-10-16/Health.md
 related:
   - Body Optimization
   - Stress Management
@@ -17,6 +18,7 @@ related:
   - Circadian Rhythm
   - Supplements & Biohacking
   - DrDynamis
+  - Health Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -28,18 +30,15 @@ tags:
   - push-ups
   - mobility
 summary: "Exercise in Erlin's notes: the NHS activity baseline, what the push-up study really found, a bodyweight plan, mobility clips, and the claims still unchecked."
-reviewed: '2026-09-22'
-review_status: partial
-review_notes: >-
-  The NHS activity guidance and the scope of the push-up study were checked
-  against primary sources; the leg-rep, neck, cold-shower, hormone and physique
-  claims were not.
-review_due: '2026-12-21'
+reviewed: '2026-10-16'
+review_status: reviewed
+review_notes: "NHS guidance, the push-up study, and the leg-rep, testosterone, vitamin C, neck and cold-shower claims were checked against the NHS page and PubMed records (Yang 2019, Schoenfeld 2017, Leproult 2011, West 2010, Parikh 2021, Johnston 2006, Buijze 2016, Cain 2025); the rep and testosterone lines are corrected, no study was found for neck bridges or neck blood flow, and the face-structure and waist lines are personal takes."
+review_due: '2027-01-14'
 ---
 
 # Fitness
 
-Fitness in Erlin's notes is mostly bodyweight training: a plan that covers the body with push-ups, pull-ups, squats and a few accessory moves, plus saved clips on core work, posture and lower-leg mobility. Two claims have primary sources behind them: the NHS weekly activity baseline, and the push-up study behind the widely shared "96 percent" heart-disease line. The rest are ideas, takes and anecdotes from [[Body]] and the health bookmarks.
+Fitness in Erlin's notes is mostly bodyweight training: a plan that covers the body with push-ups, pull-ups, squats and a few accessory moves, plus saved clips on core work, posture and lower-leg mobility. The NHS weekly activity baseline and the push-up study behind the widely shared "96 percent" heart-disease line have primary sources behind them, and the rep-range and testosterone claims carry corrections from trials below. The rest are ideas, takes and anecdotes from [[Body]] and the health bookmarks.
 
 ## Activity baseline
 
@@ -76,6 +75,7 @@ Fit any of this to your own health, ability and injury history. The body note's 
 | Neck | Neck bridges and neck raises |
 
 - **Legs without bulk.** "The key to strengthening the legs without bulking up is to keep the reps high (at least 15 reps per set). Perform three rounds of each exercise with minimal rest between each movement."
+- Correction, 16 October 2026: a [meta-analysis of 21 trials](https://pubmed.ncbi.nlm.nih.gov/28834797/) found that light-load, high-rep training and heavy-load training built similar muscle size when sets were taken to failure, while heavy loads gave more maximal strength. High reps on their own do not prevent muscle growth.
 - **Core.** [Core exercises](https://www.youtube.com/shorts/UNAlhoqVKLQ), a YouTube Short saved under that label.
 - **Muscle-building mistakes.** A [thread saved with the hook](https://twitter.com/TheJackBly/status/1564953697465016322) "If you want to build more muscle than 93% of men, avoid these 13 mistakes." _(@TheJackBly)_
 - **The pump.** "Lifting weights but never looking at the pump as it is impermanent."
@@ -103,6 +103,7 @@ These are attributed lines from notes and posts; none comes with evidence attach
 - [Keep a small waist](https://www.youtube.com/shorts/yF7LXLeK-js) — a YouTube Short saved under that line. (from [[Body]])
 - "One of the best parts of losing weight is getting your face structure [back](https://twitter.com/hxdleyo/status/1764968381898260587)." (from [[Body]])
 - "Testosterone is secreted when you sleep, you train legs, and spend time in the sun." (from [[Body]])
+- Correction, 16 October 2026: most of men's daily testosterone release happens during sleep, and a week of five-hour nights lowered young men's daytime levels by 10–15% ([Leproult & Van Cauter, 2011](https://pubmed.ncbi.nlm.nih.gov/21632481/)). A high-volume leg session raised testosterone only briefly after exercise and added no arm muscle or strength over 15 weeks ([West et al., 2010](https://pubmed.ncbi.nlm.nih.gov/19910330/)). Sun exposure has only an observational link with testosterone in humans ([Parikh et al., 2021](https://pubmed.ncbi.nlm.nih.gov/34433056/)).
 - Under the handle "@Dr Dynamis" (see [[DrDynamis]]): "People with marginal vitamin C status burned 25% less fat during exercise. After vitamin C supplementation? Fat burning increased 4-fold." See [[Supplements|Supplements & Biohacking]]. (from [[Body]])
 
 ## Cold showers
@@ -136,7 +137,11 @@ The body note keeps a post by @olivesagan on cold exposure and dopamine, followe
 - [Imagined muscle contractions and strength](https://x.com/JIMMYEDGAR/status/2101074736600011033) — Reaction to a claim that mental rehearsal alone increased strength; find the underlying study before relying on it. _(@JIMMYEDGAR)_
 - [Keep a small waist](https://www.youtube.com/shorts/yF7LXLeK-js) — YouTube Short saved under that line.
 - [Face structure after weight loss](https://twitter.com/hxdleyo/status/1764968381898260587) — Post behind the line about getting your face structure back. _(@hxdleyo)_
+- [Schoenfeld et al., low- vs high-load resistance training (J Strength Cond Res, 2017)](https://pubmed.ncbi.nlm.nih.gov/28834797/) — Meta-analysis showing muscle growth is similar across light and heavy loads taken to failure; the evidence on "high reps without bulk".
+- [Leproult & Van Cauter, sleep restriction and testosterone (JAMA, 2011)](https://pubmed.ncbi.nlm.nih.gov/21632481/) — Small lab study: a week of five-hour nights cut young men's daytime testosterone by 10–15%.
+- [West et al., exercise-induced hormones and muscle growth (J Appl Physiol, 2010)](https://pubmed.ncbi.nlm.nih.gov/19910330/) — Trial where adding heavy leg work raised hormones briefly after each session but did not increase arm muscle or strength gains.
+- [Parikh et al., UVB light and sex hormones (Cell Reports, 2021)](https://pubmed.ncbi.nlm.nih.gov/34433056/) — Mostly mouse work; in people it reports questionnaire findings and a positive correlation between sun exposure and testosterone, not a trial.
 
 ## Related
 
-[[Body_Optimization|Body Optimization]] · [[Stress_Management|Stress Management]] · [[Health Evidence]] · [[Health Evidence Review - September 2026]] · [[Body]] · [[Bookmarks - Health & Psychology]] · [[Circadian Rhythm]] · [[Supplements|Supplements & Biohacking]] · [[DrDynamis]]
+[[Body_Optimization|Body Optimization]] · [[Stress_Management|Stress Management]] · [[Health Evidence]] · [[Health Evidence Review - September 2026]] · [[Body]] · [[Bookmarks - Health & Psychology]] · [[Circadian Rhythm]] · [[Supplements|Supplements & Biohacking]] · [[DrDynamis]] · [[Health Evidence Review - October 2026]]

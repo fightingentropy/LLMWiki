@@ -4,6 +4,7 @@ type: topic
 domain: electrics
 sources:
   - clippings/evidence-review-2026-09-22/Electrics.md
+  - clippings/evidence-review-2026-10-16/Electrics.md
 related:
   - Electrical Safety
   - GS38
@@ -15,6 +16,7 @@ related:
   - PAT Testing
   - Inspection and Testing Fundamentals
   - Continuity Testing
+  - Electrical Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -35,11 +37,9 @@ source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT
     Testing.md
-review_status: unverified
-review_notes: >-
-  Built from webinar summaries whose transcripts are unavailable; the test
-  limits, procedures and the GN3 table reference have not been checked against
-  current material.
+reviewed: '2026-10-16'
+review_status: partial
+review_notes: "Standard scopes, CAT definitions, lead and probe requirements, the ELV threshold and the other cited references were checked against HSE GS38, INDG354, HSG85 and HSR25, IEC webstore abstracts for IEC 61010 and 61557, the IET edition listing and a standards-shop status record for BS 5458; the 500 V in-service test voltage, GN3 Table 1.1, Form V6 and the calibration routine need paid IET texts and remain unchecked."
 ---
 
 # Test Equipment Standards
@@ -80,6 +80,8 @@ Test leads and probes are what the tester handles at potentially live points - t
 
 Equipment and leads should be marked as GS38 compliant. [[Safe Isolation]] depends on a GS38-compliant approved voltage indicator and leads; a lead set that fails GS38 undermines the whole prove-dead sequence.
 
+Correction, 16 October 2026: GS38 defines no "GS38 compliant" marking, here or in the table above. It asks that probes, clips and leads conform to BS EN 61010-031 (or BS EN 61243-3 for two-pole voltage detectors) and be marked with their CAT II, III or IV rating and the maker's name or mark ([GS38](https://www.hse.gov.uk/pubns/priced/gs38.pdf), para 9).
+
 ### Other references sometimes cited
 
 - **HSG85**: general electrical safety guidance from HSE.
@@ -97,6 +99,8 @@ Test equipment is categorised by the overvoltage category of the circuit it is r
 | CAT II | Circuits connected to the building installation; local-level distribution | Circuits within the building |
 | CAT III | Distribution circuits within the building; fixed installation circuits | Distribution board circuits |
 | CAT IV | Supply side of the installation; meter circuits, service entrance | Main supply point |
+
+Correction, 16 October 2026: GS38, citing BS EN 61010, calls these measurement categories and defines CAT II as measurements on circuits directly connected to the low voltage installation, such as appliances and portable tools, not circuits within the building. CAT III is the building installation (distribution boards, socket outlets, permanently connected equipment) and CAT IV the source of the installation (meters, primary overcurrent devices) ([GS38](https://www.hse.gov.uk/pubns/priced/gs38.pdf), footnote to para 8).
 
 - The webinar notes point to GN3 Table 1.1 as the listing of category ratings for test equipment, used to select the right instrument for the circuit under test. The table number has not been checked against the current edition of [[GN3 Guidance Note 3]].
 - A CAT rating is always paired with a voltage, such as CAT III 600 V or CAT IV 1000 V; check both the category and the voltage before connecting (from [[BS EN 61010]]).
@@ -149,6 +153,7 @@ Some tests apply significant voltages, and the instrument can damage what it is 
 
 - **Insulation resistance test: 500 V DC.** The standard test voltage for in-service equipment testing. It can damage sensitive equipment (LED, RCD, computing), so confirm the equipment is suitable before testing. [[In-Service Testing]] gives the protective conductor current test as the alternative for voltage-sensitive gear.
 - **Test voltages above 50 V** carry special safety considerations: appropriate test equipment, proper training in safe application, and awareness of the hazards.
+  Correction, 16 October 2026: HSE gives the rough shock-hazard threshold as 50 V ac or 120 V ripple-free dc in dry conditions, lower in wet, confined or conductive locations ([INDG354](https://www.hse.gov.uk/pubns/indg354.pdf); [GS38](https://www.hse.gov.uk/pubns/priced/gs38.pdf), para 5).
 
 Equipment that may be damaged by a test voltage:
 
@@ -271,6 +276,10 @@ Three kinds of record support the equipment and the work done with it.
 
 Keep these records for the same period as electrical certificates and reports, typically 5-10 years minimum, so they can support the defensibility of work done with that equipment. HSE adds that a test label is not a guarantee that equipment remains safe (from [[Electrical Evidence Review - September 2026]]).
 
+Correction, 16 October 2026: GS38 sets no retention period. It asks that records of inspection and testing of test equipment be kept, particularly where faults are found, to help decide how often equipment is inspected ([GS38](https://www.hse.gov.uk/pubns/priced/gs38.pdf), para 30).
+
+Correction, 16 October 2026: the source for this point is HSE's [INDG236](https://www.hse.gov.uk/pubns/indg236.pdf) leaflet, not the [PAT FAQ](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm). INDG236 says a test indicates an appliance's safety only at the time of the test and does not imply it will stay safe, so user checks must continue; the FAQ says labels and records are not legally required but are a useful management tool.
+
 ## Evidence status
 
 - The two Access Training webinar summaries this page draws on (Webinar 4 Inspection and Testing Demonstration; Webinar 4 PAT Testing) cannot currently be found, and the original transcripts are unavailable. The test limits, procedures and the GN3 table reference above have not been authenticated against current material.
@@ -281,8 +290,11 @@ Keep these records for the same period as electrical certificates and reports, t
 
 - [HSE GS38: Electrical test equipment for use on low voltage electrical systems](https://www.hse.gov.uk/pubns/books/gs38.htm) — the HSE page for the guidance note itself; the primary reference for lead and probe design and condition.
 - [HSE electrical safety FAQs](https://www.hse.gov.uk/electricity/faq.htm) — HSE's position that work should normally be done dead, checked dead, and that maintenance and testing require appropriate competence and suitable equipment.
-- [HSE portable appliance testing FAQs](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm) — risk-based maintenance intervals rather than blanket annual PAT testing; a test label is not a guarantee that equipment remains safe.
+- [HSE portable appliance testing FAQs](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm) — risk-based maintenance intervals rather than blanket annual PAT testing; labels and records are not legally required but are a useful management tool.
+- [HSE INDG236: Maintaining portable electric equipment in low-risk environments](https://www.hse.gov.uk/pubns/indg236.pdf) — HSE's short leaflet on user checks, visual inspection and risk-based testing; says a test shows an appliance's safety only at the time of the test.
+- [HSE GS38, fourth edition (PDF)](https://www.hse.gov.uk/pubns/priced/gs38.pdf) — the 2015 guidance itself: probe, lead and fuse requirements, CAT definitions, and keeping inspection records for test equipment.
+- [HSE INDG354 (PDF)](https://www.hse.gov.uk/pubns/indg354.pdf) — HSE leaflet on safety in electrical testing at work; gives the 50 V ac / 120 V dc hazard threshold and covers test areas and risk assessment.
 
 ## Related
 
-[[Electrical Safety]] · [[GS38]] · [[BS EN 61010]] · [[BS EN 61557]] · [[GN3 Guidance Note 3]] · [[Safe Isolation]] · [[In-Service Testing]] · [[PAT Testing]] · [[Inspection and Testing Fundamentals]] · [[Continuity Testing]] · [[RCD Protection]] · [[BS 7671]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]]
+[[Electrical Safety]] · [[GS38]] · [[BS EN 61010]] · [[BS EN 61557]] · [[GN3 Guidance Note 3]] · [[Safe Isolation]] · [[In-Service Testing]] · [[PAT Testing]] · [[Inspection and Testing Fundamentals]] · [[Continuity Testing]] · [[RCD Protection]] · [[BS 7671]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]] · [[Electrical Evidence Review - October 2026]]

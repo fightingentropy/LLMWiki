@@ -2,7 +2,8 @@
 title: Continuity Testing
 type: topic
 domain: electrics
-sources: []
+sources:
+  - clippings/evidence-review-2026-10-16/Electrics.md
 related:
   - Safe Isolation
   - Electrical Safety
@@ -15,6 +16,7 @@ related:
   - Test Equipment Standards
   - Electrical Study Map
   - BS 7671
+  - Electrical Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -34,11 +36,9 @@ source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT
     Testing.md
-review_status: unverified
-review_notes: >-
-  The test limits, procedures, GN3 page numbers and exam references here come
-  from a webinar summary whose transcript cannot be found and have not been
-  checked against current material.
+reviewed: '2026-10-16'
+review_status: partial
+review_notes: "Test order, the (0.1 + R) appliance limit, conductor resistances, twin-and-earth CPC sizes and every worked sum were checked against IET Wiring Matters, the BS 7671 A4 model forms, HSE GS38 and a BS 6004 cable datasheet; GN3 page and Table B1 references need the paid book and remain unchecked."
 ---
 
 # Continuity Testing
@@ -225,6 +225,8 @@ Temporarily disconnect one end of the bonding conductor from the MET during test
 
 The disconnection is temporary, for the duration of the test only, never permanent.
 
+Correction, 16 October 2026: the IET warns that removing an earthing or protective bonding conductor can put hazardous touch voltages on exposed- and extraneous-conductive-parts where an open PEN fault exists, and that diverted neutral current can come from neighbouring installations; it describes a clamp-meter check for current in the earthing and bonding conductors before and after isolating the installation ([IET Wiring Matters — Neutral current diversion (NCD) industry research update](https://electrical.theiet.org/wiring-matters/years/2025/105-may-2025/neutral-current-diversion-ncd-industry-research-update/)).
+
 ## Pass/fail criteria
 
 ### Fixed-installation protective conductors
@@ -234,6 +236,8 @@ The specific pass criterion depends on the application:
 - Typically very low resistance (under 0.1 Ω for short runs)
 - A calculated value using the expected-resistance formula above
 - The measured value must be reasonable for the length
+
+Correction, 16 October 2026: there is no general 0.1 Ω pass limit for circuit protective conductors. The measured (R1 + R2) is added to Ze, and the resulting Zs is compared with the maximum for the protective device from BS 7671 Chapter 41 or the maker's data, reduced for conductor temperature (×0.8 in the IET's worked example) ([IET Wiring Matters — Minimizing unnecessary live testing for initial verification](https://electrical.theiet.org/wiring-matters/years/2025/105-may-2025/minimizing-unnecessary-live-testing-for-initial-verification/); [IET Wiring Matters — Why are the values of maximum earth fault loop impedance different](https://electrical.theiet.org/wiring-matters/years/2024/100-may-2024/why-are-the-values-of-maximum-earth-fault-loop-impedance-different/)). A 1.5 mm² CPC alone is about 0.12 Ω over 10 m at 12.1 mΩ/m ([Prysmian 6242Y datasheet](https://datasheet.prysmian.com/pdf/datasheet/en-GB/312416/GB00_6242Y)).
 
 ### Class 1 equipment
 
@@ -286,6 +290,13 @@ Results must be recorded:
 
 The result becomes part of the [[EIC and MEIWC]] certificate or test schedule.
 
+## Links
+
+- [IET Wiring Matters — Neutral current diversion (NCD) industry research update](https://electrical.theiet.org/wiring-matters/years/2025/105-may-2025/neutral-current-diversion-ncd-industry-research-update/) — IET survey article (May 2025) on diverted neutral current; warns about disconnecting earthing and bonding conductors and describes clamp-meter checks.
+- [IET Wiring Matters — Minimizing unnecessary live testing for initial verification](https://electrical.theiet.org/wiring-matters/years/2025/105-may-2025/minimizing-unnecessary-live-testing-for-initial-verification/) — IET article (May 2025) on the test sequence, working out Zs as Ze + (R1 + R2), and the minimum live testing needed.
+- [IET Wiring Matters — Why are the values of maximum earth fault loop impedance different](https://electrical.theiet.org/wiring-matters/years/2024/100-may-2024/why-are-the-values-of-maximum-earth-fault-loop-impedance-different/) — IET article (May 2024) explaining the 0.8 temperature factor and the GN3 and On-Site Guide maximum Zs tables.
+- [Prysmian 6242Y datasheet](https://datasheet.prysmian.com/pdf/datasheet/en-GB/312416/GB00_6242Y) — Manufacturer data for twin-and-earth to BS 6004: CPC size and conductor resistance at 20 °C for each size from 1 to 16 mm².
+
 ## Related
 
-[[Safe Isolation]] · [[Electrical Safety]] · [[Ohm's Law and Electrical Calculations]] · [[GN3 Guidance Note 3]] · [[Inspection and Testing Fundamentals]] · [[In-Service Testing]] · [[PAT Testing]] · [[EIC and MEIWC]] · [[Test Equipment Standards]] · [[BS 7671]] · [[Electrical Study Map]]
+[[Safe Isolation]] · [[Electrical Safety]] · [[Ohm's Law and Electrical Calculations]] · [[GN3 Guidance Note 3]] · [[Inspection and Testing Fundamentals]] · [[In-Service Testing]] · [[PAT Testing]] · [[EIC and MEIWC]] · [[Test Equipment Standards]] · [[BS 7671]] · [[Electrical Study Map]] · [[Electrical Evidence Review - October 2026]]

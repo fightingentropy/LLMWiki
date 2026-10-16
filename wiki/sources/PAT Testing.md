@@ -2,7 +2,8 @@
 title: PAT Testing
 type: source
 domain: electrics
-sources: []
+sources:
+  - clippings/evidence-review-2026-10-16/Electrics.md
 related:
   - Electrical Safety
   - In-Service Testing
@@ -17,6 +18,7 @@ related:
   - Ohm's Law and Electrical Calculations
   - Electrical Study Map
   - Electrical Evidence Review - September 2026
+  - Electrical Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -34,8 +36,9 @@ source_gaps:
   - >-
     raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT
     Testing.md
-review_status: unverified
-review_notes: "Summary of a webinar whose original transcript is missing; its test limits, procedures, appendix, chapter and exam references have not been checked against current material."
+reviewed: '2026-10-16'
+review_status: partial
+review_notes: "The check levels, visual-inspection and plug points, label rule, Class I/II definitions, live-working conditions, V1-V6 forms, 500 V test voltage and test-kit standards were checked against HSE HSG107, INDG236, GS38, Electricity at Work Regulation 14 and the IET's published forms and 5th-edition pages; the pass limits, test hierarchy, appendix numbers, course and exam references have only industry-guide support or none, as the webinar transcript is lost and the Code of Practice is paywalled."
 ---
 
 # PAT Testing
@@ -101,7 +104,7 @@ Other plug points:
 
 ### Fuse sizing
 
-The webinar flags this as an important correction to older teaching: the rule of thumb that sizes the plug fuse from the appliance's wattage is outdated. The plug fuse is now sized to the flex, not the appliance wattage, because the fuse gives overcurrent protection to the cable, so the cable's rating is what matters.
+The webinar flags this as an important correction to older teaching: the rule of thumb that sizes the plug fuse from the appliance's wattage is outdated. The plug fuse is now sized to the flex, not the appliance wattage, because the fuse gives overcurrent protection to the cable, so the cable's rating is what matters. This conflicts with current consumer guidance: [Greater Manchester Fire and Rescue Service](https://www.manchesterfire.gov.uk/your-safety/fire-safety/electrical/sockets) still sizes the plug fuse by appliance wattage (3 A up to about 700 W, 13 A from about 700 W to 3,000 W), and [HSG107](https://www.hse.gov.uk/pubns/priced/hsg107.pdf) asks only that the correct fuse is fitted.
 
 ## Inspect, test and report: not repair
 
@@ -158,6 +161,7 @@ The test proves the insulation is intact, so conductors are not unintentionally 
 
 - **Test voltage**: 500 V DC.
 - **Set-up**: line and neutral joined together and tested to earth.
+- Correction, 16 October 2026: Class II equipment has no earth connection ([HSG107](https://www.hse.gov.uk/pubns/priced/hsg107.pdf), paragraph 14), so on Class II the joined line and neutral are tested against the accessible conductive parts of the enclosure with a probe, as test-instrument maker [Seaward's Class I and Class II test sheets](https://seaward.com/gb/support/download/770) describe; "to earth" applies to Class I only.
 - **Power switches**: on.
 - **Covers**: in place.
 - **Compatibility**: make sure the equipment can take the applied test voltage.
@@ -233,6 +237,8 @@ The instructor stresses memorising the V-forms; the current (fifth edition) book
 | V5 | Faulty equipment register | Faulty equipment |
 | V6 | Test equipment accuracy record | The regular accuracy checks on your meter; critical to keep |
 
+Correction, 16 October 2026: the IET titles Form V.6 "Test instrument record", not "test equipment accuracy record"; it logs check readings at fixed low-resistance points (0.5, 1.0 and 10.0 Ω) and high-resistance points (0.5, 1.0 and 10.0 MΩ) with the deviation in per cent, and the date of last calibration ([IET model forms](https://electrical.theiet.org/courses-resources-career/forms-and-downloads/)).
+
 **Exam tip**: make a Post-it note mapping V1 to V6 to their functions.
 
 ### Labels carry no "next inspection" date
@@ -271,8 +277,15 @@ The [[Electrical Study Map]] places this material alongside the rest of the elec
 
 ## Source gap
 
-The original webinar transcript is missing. The test limits, procedures, appendix, chapter and exam references above have not been authenticated against current material; [[Electrical Evidence Review - September 2026]] records the gap.
+The original webinar transcript is missing. The check levels, visual-inspection points, label rule, equipment classes and V-forms above match HSE and IET sources, with the corrections shown; the pass limits, test order, appendix, chapter and exam references have no primary-source confirmation. [[Electrical Evidence Review - September 2026]] records the gap and [[Electrical Evidence Review - October 2026]] what the official sources confirm.
+
+## Resources
+
+- [HSE HSG107: Maintaining portable electrical equipment](https://www.hse.gov.uk/pubns/priced/hsg107.pdf) — HSE's free guidance (third edition, 2013) on user checks, formal visual inspection and combined inspection and test, Class I and Class II construction, suggested initial intervals, and why a label should carry no next-test date.
+- [IET model forms for in-service inspection and testing](https://electrical.theiet.org/courses-resources-career/forms-and-downloads/) — free downloads of Forms V.1 to V.6 from the IET Code of Practice, plus the user-checks poster; the source for the form names and label designs.
+- [Seaward: testing Class I and Class II appliances](https://seaward.com/gb/support/download/770) — two-page manufacturer sheet on the order of tests and the probe connections, quoting pass limits from an earlier edition of the Code of Practice; industry guidance, not the Code itself.
+- [Greater Manchester Fire and Rescue Service: sockets, plugs and fuses](https://www.manchesterfire.gov.uk/your-safety/fire-safety/electrical/sockets) — consumer fire-safety page that sizes plug fuses by appliance wattage; the counterpoint to the flex-based fuse rule.
 
 ## Related
 
-[[In-Service Testing]] · [[Inspection and Testing Fundamentals]] · [[Electrical Safety]] · [[Continuity Testing]] · [[Test Equipment Standards]] · [[GS38]] · [[BS EN 61010]] · [[BS EN 61557]] · [[RCD Protection]] · [[Safe Isolation]] · [[Ohm's Law and Electrical Calculations]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]]
+[[In-Service Testing]] · [[Inspection and Testing Fundamentals]] · [[Electrical Safety]] · [[Continuity Testing]] · [[Test Equipment Standards]] · [[GS38]] · [[BS EN 61010]] · [[BS EN 61557]] · [[RCD Protection]] · [[Safe Isolation]] · [[Ohm's Law and Electrical Calculations]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]] · [[Electrical Evidence Review - October 2026]]

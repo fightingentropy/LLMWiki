@@ -9,6 +9,7 @@ sources:
   - clippings/bookmark-updates-2026-09-22/Health & Psychology.md
   - clippings/evidence-review-2026-09-22/Health.md
   - snapshots/1790338863036-d5f1baaac670/bookmarks/Health & Psychology.md
+  - clippings/evidence-review-2026-10-16/Health.md
 related:
   - ADHD
   - Mental Health
@@ -25,6 +26,7 @@ related:
   - Retatrutide
   - Bacteriostatic Water
   - Peptide Reconstitution
+  - Health Evidence Review - October 2026
 created: 2026-08-29T00:00:00.000Z
 updated: '2026-10-15'
 tags:
@@ -35,6 +37,9 @@ tags:
   - risk
   - corrections
 summary: "How to weigh a health claim: an evidence ladder, saved claims checked against the research, open questions, and corrections to earlier notes."
+reviewed: '2026-10-16'
+review_status: partial
+review_notes: "Checked the cited studies against their PubMed, PMC or journal records and the guidance lines against NHS, FDA, CDC, WHO, AAD, UK NSC, Endocrine Society, NIMH and the other cited pages; the mind-wandering summary needed a correction, the push-up, dopamine and bacteriostatic-water lines rest on the September check, and the paternal-investment study's Romanian sample and perceived-resemblance measure could not be confirmed."
 ---
 
 # Health Evidence
@@ -120,6 +125,7 @@ A [randomized mobile-internet blocking study](https://academic.oup.com/pnasnexus
 - **Vitamin D.** [NHS guidance](https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/) says adults should consider 10 micrograms daily in autumn and winter, and some groups need it year-round. That is a specific public-health recommendation, not support for the note's whole supplement stack.
 - **Retatrutide.** The [FDA](https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss) states retatrutide is not a component of an FDA-approved drug and has not been found safe and effective for any condition. That is a US regulatory statement, not a finding about every country. Research-vendor products and a saved injection guide do not establish clinical suitability, identity, purity or stability. See [[Retatrutide]].
 - **Bacteriostatic water and reconstitution.** The [DailyMed label](https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ccadcf46-6a6f-436b-9bbc-17e2983a335f&type=display) describes 0.9% benzyl alcohol and directs use according to the drug manufacturer's instructions; compatibility varies. A preservative does not validate a universal 28-day shelf life for every reconstituted drug, and the note's shaking, freezing and room-temperature potency-loss percentages have no supporting stability study. See [[Bacteriostatic Water]] and [[Peptide Reconstitution]].
+- **Mind-wandering and happiness.** Correction, 16 October 2026: the summary under Association is not causation says happiness was lower even when minds wandered to pleasant topics. In the [Science paper](https://www.science.org/doi/10.1126/science.1192439), mind-wandering to pleasant topics made no significant difference to happiness compared with staying on task; only neutral and unpleasant topics were linked to lower happiness, the unpleasant ones most strongly.
 
 ## Resources
 
@@ -217,4 +223,4 @@ These posts are kept for the claims they make; the sections above say what the e
 
 ## Related
 
-[[Bookmarks - Health & Psychology]] · [[Health Evidence Review - September 2026]] · [[Medical & Health]] · [[Body]] · [[Supplements & Biohacking]] · [[Peptides]] · [[ADHD]] · [[Mental Health]] · [[Circadian Rhythm]] · [[Body Optimization]] · [[Fitness]] · [[Water Filtration]] · [[Retatrutide]] · [[Bacteriostatic Water]] · [[Peptide Reconstitution]]
+[[Bookmarks - Health & Psychology]] · [[Health Evidence Review - September 2026]] · [[Medical & Health]] · [[Body]] · [[Supplements & Biohacking]] · [[Peptides]] · [[ADHD]] · [[Mental Health]] · [[Circadian Rhythm]] · [[Body Optimization]] · [[Fitness]] · [[Water Filtration]] · [[Retatrutide]] · [[Bacteriostatic Water]] · [[Peptide Reconstitution]] · [[Health Evidence Review - October 2026]]
