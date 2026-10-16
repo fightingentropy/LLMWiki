@@ -15,7 +15,7 @@ related:
   - Supplements & Biohacking
   - Health Evidence Review - October 2026
 created: 2026-06-24T00:00:00.000Z
-updated: '2026-10-15'
+updated: '2026-10-16'
 tags:
   - peptides
   - reconstitution
@@ -65,9 +65,9 @@ See [[Bacteriostatic Water]].
 
 The [FDA states](https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss) that retatrutide is not a component of an FDA-approved drug and has not been found safe and effective for any condition. That statement is about US regulatory status, not every country's approvals. Research-vendor products and a saved injection guide do not establish clinical suitability, identity, purity or formulation stability. (from [[Health Evidence Review - September 2026]])
 
-## Correction to the earlier guide
+## Corrections to the guide
 
-**Correction, 22 September 2026:** an earlier version of this page generalised the saved [[Retatrutide]] guide to injectable research peptides in general. It repeated the guide's exact potency-loss percentages (for shaking, freezing and room-temperature storage), a blanket 28-day shelf life and a titration schedule without formulation-specific evidence. No supporting stability study is attached to those figures, and they should not be treated as established facts. The original text remains on [[Peptides]]. (from [[Health Evidence Review - September 2026]])
+**Correction, 22 September 2026:** the saved [[Retatrutide]] guide does not generalise to injectable research peptides in general. Its exact potency-loss percentages (for shaking, freezing and room-temperature storage), its blanket 28-day shelf life and its titration schedule have no formulation-specific evidence. No supporting stability study is attached to those figures, and they should not be treated as established facts. The original text remains on [[Peptides]]. (from [[Health Evidence Review - September 2026]])
 
 Correction, 16 October 2026, on the guide's 28-day (BAC water) and 24-hour (sterile water) storage figures: the [Bacteriostatic Water label](https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ccadcf46-6a6f-436b-9bbc-17e2983a335f&type=display) says to use a reconstituted drug promptly and not to store it unless the drug's own manufacturer directs otherwise. The 28-day figure is the USP <797> in-use limit for an opened manufactured multiple-dose vial, [as described by the CDC](https://www.cdc.gov/injection-safety/hcp/clinical-safety/index.html), not a shelf life for a peptide mixed in it. The stability studies and approved tirzepatide label cited on [[Bacteriostatic Water]] do not support the guide's shaking, freezing and room-temperature percentages.
 

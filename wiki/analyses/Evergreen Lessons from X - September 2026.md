@@ -38,7 +38,7 @@ related:
   - Trading Psychology
   - jimtalbot
 created: '2026-09-30'
-updated: '2026-10-15'
+updated: '2026-10-16'
 tags: [bookmarks, evergreen, curation, reasoning, engineering, privacy, trading, cooking, ai]
 summary: "Fourteen lessons worth keeping from seventy X bookmarks, each with its source post, the primary references behind it, and what was not verified."
 reviewed: '2026-10-16'
@@ -50,7 +50,7 @@ review_notes: "The synthesis matches its cited category notes and inventory, and
 
 Of the seventy posts saved to @entropyholdings by 30 September 2026, fifteen carried something lasting. They became the fourteen lessons below (two privacy posts merged into one) and the account's bookmarks were then cleared. What survived: a test for persuasive arguments, two trading-discipline rules and one note on trading-system engineering, how mortgage prepayment works, a failure-case checklist for reviewing software, a travel-laptop setup, the separate layers of online privacy, provenance for AI training data, voice for administrative triage, teaching by interaction, two ingredient facts, and how to plan a night out.
 
-The selection rule was strict. Erlin asked to keep only evergreen things and clear everything else, so product releases, forecasts, gossip, humour, entertainment queues and unsupported clinical conclusions were dropped. This verdict replaces the broader first-pass recommendations in [[X Bookmark Review - 30 September 2026]] for those seventy posts. The older bookmark archive lives in [[X-Bookmarks]]; each lesson here also sits in its category page with the same post link and references. Keeping a practical principle does not establish a measured effect or a profitable strategy, and the section on evidence says what was checked.
+The selection rule was strict. Erlin asked to keep only evergreen things and clear everything else, so product releases, forecasts, gossip, humour, entertainment queues and unsupported clinical conclusions were dropped. This verdict replaces the broader first-pass recommendations in [[X Bookmark Review - 30 September 2026]] for those seventy posts. The older bookmark archive lives in [[X-Bookmarks]]; each lesson here also sits in its category page with the same post link and references. Keeping a practical principle does not establish a measured effect or a profitable strategy, and the evidence section sets out what each lesson rests on.
 
 ## Thinking and evidence
 
@@ -96,9 +96,9 @@ See also [[AI Agents]].
 
 - **[Design a night out around what makes it worthwhile](https://x.com/worldofmaart/status/2104514885673443709)** — Choose music and company you enjoy, make the earlier evening worthwhile, and decide a departure time that respects the following day. A practical planning heuristic. The post's suggestion that water sobers you up and its forced early-wake advice are excluded. _(@worldofmaart)_ (from [[Bookmarks - Personal & Life]])
 
-## What was checked and what was not
+## Evidence behind the lessons
 
-- **Checked facts.** US mortgage prepayment conditions, the scope of encrypted DNS, WebRTC candidate-address exposure, ordinary SSH over a Tailscale network, colourant labelling rules, and molasses in brown sugar were checked against the linked primary or official sources. The 2024 model-collapse paper was read in full; the experiment was not replicated.
+- **Backed by official sources.** US mortgage prepayment conditions, the scope of encrypted DNS, WebRTC candidate-address exposure, ordinary SSH over a Tailscale network, colourant labelling rules and molasses in brown sugar rest on the primary or official sources linked in each lesson. The data-provenance lesson rests on the full text of the 2024 Nature paper.
 - **Our synthesis.** Testing competing arguments, failure-oriented software review, the boundaries of voice tasks, and interactive teaching are practical methods distilled from the source posts, not claims the posts made in those words.
 - **Attributed heuristics.** The four-edge taxonomy, the boredom rule, the historical trading-engineering messages and the deliberate-night-out framing keep their limits. No trading performance, medical treatment, product benchmark or camera simulation was validated.
 

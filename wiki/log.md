@@ -7,7 +7,7 @@ related:
   - Wiki Index
   - Wiki Overview
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-10-15'
+updated: '2026-10-16'
 tags:
   - log
   - operations
@@ -224,3 +224,19 @@ Outcome: 17 pages left the queue. [[Part P]], [[GN3 Guidance Note 3]] and [[Reta
 Recorded the dated research notes as `raw/clippings/evidence-review-2026-10-16/Electrics.md` and `Health.md`, summarised in [[Electrical Evidence Review - October 2026]] and [[Health Evidence Review - October 2026]], with every source link described. Linked both from every page they cover, from the September reviews, [[Wiki Index]] and [[Wiki Overview]]. Left for later, not changed: process narration on a few pages ("As checked on 22 September 2026" on Retatrutide and BS 7671), the peptide guide's dilution and titration tables on [[Peptides]], missing IEC 61557 parts in the BS EN 61557 table, and GOV.UK's July 2026 renaming of competent person schemes as self-certification schemes.
 
 Validation: `bun run check` reports 230 pages, zero broken references and zero duplicate titles; `bun test` passes; lint shows 13 pages awaiting review (down from 30), 17 recorded source gaps, no orphans and no broken links. No existing raw source was modified.
+
+---
+
+## [2026-10-16] review | follow-ups from the evidence review
+
+Closed the items the evidence review left unchanged on purpose.
+
+Peptide guide: [[Peptides]] gained three dated corrections beside the tables they correct. The dilution chart lists a 12 mg dose from a 10 mg vial, which holds only 100 or 200 units of solution at the listed strengths; six cells of the doses-per-vial table (5 to 30 weeks) run past the guide's own 28-day use-by date; and Lilly's TRIUMPH-1, -2 and -3 releases (21 May and 23 July 2026) say phase 3 participants started at 2 mg once weekly, not the guide's 1 mg. The dilution and doses-per-vial arithmetic was recomputed. No dosing advice was added, and the page stays an archive.
+
+Process narration: dropped "As checked on 22 September 2026" from [[Retatrutide]] and [[BS 7671]], the "Corrected on 22 September 2026" line from [[Body Optimization]] (its undated September corrections now carry the date), and the "earlier version of this page" wording from the September corrections on [[Peptide Reconstitution]], [[Peptides]] and [[Part P]], keeping each correction's substance. On [[Evergreen Lessons from X - September 2026]] the "Checked facts" bullet now says which lessons rest on official sources, and its section is titled "Evidence behind the lessons".
+
+Standards: [[BS EN 61557]] now lists parts 11 (residual current monitors), 14 (machinery), 15 (functional safety of IT-system monitoring), 16 (IEC 62353 equipment testers) and 17 (non-contact voltage indicators, not for proving dead), each from its IEC webstore abstract with a described link.
+
+Scheme name: GOV.UK guidance published 1 July 2026 by the Building Safety Regulator and MHCLG calls these "self-certification schemes", previously known as competent person schemes. GOV.UK's list of current schemes, last updated 17 September 2026, still uses the old name, and no GOV.UK page gives a date for the change, so the pages say what the July guidance calls them rather than giving a renaming date. [[Part P]] and [[EIC and MEIWC]] carry the one-clause note and a described link; [[Building Regulations]] does not name the schemes, so it was not changed.
+
+Still open: the CAT voltage-rating definition on [[BS EN 61010]]; whether "only IEC 61557 instruments are suitable" on [[BS EN 61557]] overstates BS 7671; HydraSense's certifier on [[Water Filtration]]; ISO-timestamp `created:` values; the [[BS 7671]] summary's out-of-date Amendment 3 line; and "earlier version of this page" corrections on [[Fitness]], [[ADHD]], [[Circadian Rhythm]], [[Mental Health]] and [[Humor]].
