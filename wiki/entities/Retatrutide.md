@@ -14,7 +14,7 @@ related:
   - Health Evidence Review - September 2026
   - Health Evidence Review - October 2026
 created: '2026-06-24'
-updated: '2026-10-15'
+updated: '2026-10-16'
 tags:
   - peptide
   - retatrutide
@@ -36,7 +36,7 @@ Retatrutide (LY3437943) is the investigational compound discussed in the saved [
 
 ## Key ideas
 
-- **Regulatory status.** As checked on 22 September 2026, the FDA says retatrutide is not a component of an FDA-approved drug and has not been found safe and effective for any condition. This is a US regulatory statement; no UK approval conclusion is inferred from it, and it is not a finding about every country's approvals. (from [[Health Evidence Review - September 2026]])
+- **Regulatory status.** The FDA says retatrutide is not a component of an FDA-approved drug and has not been found safe and effective for any condition. This is a US regulatory statement; no UK approval conclusion is inferred from it, and it is not a finding about every country's approvals. (from [[Health Evidence Review - September 2026]])
 - **What the guide says about itself.** Its own disclaimer calls retatrutide "an investigational compound still in Phase 3 clinical trials", says it is "not FDA-approved", and describes the content as "for educational and research reference purposes only". (from [[Peptides]])
 - **What the guide covers.** A reconstitution guide, "From Powder to Injection": supplies, dilution charts, reconstitution steps, storage, injection technique, a titration schedule and common mistakes. It describes subcutaneous, once-weekly injection.
 - **Products and guides are not clinical evidence.** Research-vendor products and a saved injection guide do not establish clinical suitability, identity, purity or formulation stability. (from [[Health Evidence Review - September 2026]])

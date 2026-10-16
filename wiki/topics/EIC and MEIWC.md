@@ -21,7 +21,7 @@ related:
   - Electrics - Resources
   - Electrical Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-10-15'
+updated: '2026-10-16'
 tags:
   - certification
   - documentation
@@ -201,7 +201,7 @@ Correction, 16 October 2026: [Approved Document P](https://assets.publishing.ser
 
 ### Self-notification needs CPS registration
 
-To self-notify notifiable work you must be registered with a Competent Person Scheme (CPS). Holding the qualifications to sign an EIC or MEIWC is not enough on its own. Examples of schemes: NICEIC, NAPIT, and other registered schemes.
+To self-notify notifiable work you must be registered with a Competent Person Scheme (CPS), which [GOV.UK guidance of 1 July 2026](https://www.gov.uk/government/publications/self-certification-schemes-mandatory-technical-competence-requirements) calls a self-certification scheme. Holding the qualifications to sign an EIC or MEIWC is not enough on its own. Examples of schemes: NICEIC, NAPIT, and other registered schemes.
 
 If you are not CPS-registered, there are three routes:
 
@@ -256,6 +256,7 @@ The chapter numbers below come from the webinar summary. **Correction, 22 Septem
 - [Approved Document P, 2013 edition (PDF)](https://assets.publishing.service.gov.uk/media/5a802da7ed915d74e622ceed/BR_PDF_AD_P_2013.pdf) — the guidance text itself: Part P scope (2.2), notifiable work (2.5–2.7) and the three certification routes (section 3).
 - [Building Regulations 2010, regulation 12](https://www.legislation.gov.uk/uksi/2010/2214/regulation/12) — the legal list of notifiable electrical work in England, paragraph (6A), with the special-location definition.
 - [GOV.UK: Competent person scheme, current schemes](https://www.gov.uk/guidance/competent-person-scheme-current-schemes-and-how-schemes-are-authorised) — the schemes authorised for electrical work in dwellings (BESCA, Blue Flame Certification, Certsure, NAPIT, OFTEC) and the competence requirements for registering.
+- [GOV.UK — Self-certification schemes: mandatory technical competence requirements](https://www.gov.uk/government/publications/self-certification-schemes-mandatory-technical-competence-requirements) — Building Safety Regulator and MHCLG guidance for England and Wales, published 1 July 2026, setting the technical competence framework for self-certification schemes, previously known as competent person schemes.
 
 ## Related
 

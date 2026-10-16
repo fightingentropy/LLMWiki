@@ -14,7 +14,7 @@ related:
   - Health Evidence
   - Health Evidence Review - September 2026
 created: 2026-06-24T00:00:00.000Z
-updated: '2026-10-15'
+updated: '2026-10-16'
 tags:
   - peptides
   - retatrutide
@@ -24,10 +24,10 @@ tags:
   - injection
   - evidence-review
 summary: "A saved retatrutide guide covering dilution math, storage, injection and titration tables, with the claims the evidence does not support marked."
-reviewed: '2026-09-22'
+reviewed: '2026-10-16'
 review_status: archive
 review_notes: >-
-  Retatrutide's US regulatory status was checked against the FDA statement and bacteriostatic water against its DailyMed label; the guide's stability, potency-loss and dosing figures have no supporting study and were not verified.
+  Retatrutide's US regulatory status was checked against the FDA statement and bacteriostatic water against its DailyMed label; the dilution and doses-per-vial arithmetic was recomputed and the titration's starting dose checked against Lilly's phase 3 releases; the guide's stability, potency-loss and dosing figures have no supporting study.
 review_due: '2026-12-21'
 ---
 
@@ -67,6 +67,8 @@ The guide calls 10 mg vial + 2 mL BAC water = 5 mg/mL its "Most Popular Setup". 
 
 \*Doses over 100 units need splitting into several injections or a larger syringe.
 
+Correction, 16 October 2026: the 12 mg column lists a dose from a 10 mg vial (120 units at 10 mg/mL, 240 units at 5 mg/mL), but a 10 mg vial holds only 100 units of solution at 10 mg/mL, or 200 units at 5 mg/mL. One 10 mg vial cannot supply 12 mg; the guide marks the equivalent cells for the 5 mg vial "N/A".
+
 The formula, as the guide gives it:
 
 ```text
@@ -84,7 +86,9 @@ Worked example from the guide: a 10,000 mcg vial + 2 mL water = 5,000 mcg/mL. Fo
 | 10 mg | 10 weeks | 5 weeks | 2.5 weeks | 1.25 weeks | <1 week |
 | 30 mg | 30 weeks | 15 weeks | 7.5 weeks | 3.75 weeks | 2.5 weeks |
 
-The guide's tip: "Keep unreconstituted vials in the freezer and only reconstitute what you'll use within 3–4 weeks." Several cells in this table run past the guide's own 28-day use-by limit for a reconstituted vial, which is what the tip is working around.
+The guide's tip: "Keep unreconstituted vials in the freezer and only reconstitute what you'll use within 3–4 weeks."
+
+Correction, 16 October 2026: six cells, from 5 to 30 weeks, run past the 28-day use-by date the guide itself puts on a reconstituted vial (step 7 and the storage table). The tip works around this; the table does not. [[Bacteriostatic Water]] explains why even 28 days is not established for a reconstituted peptide.
 
 ## Reconstitution steps
 
@@ -145,6 +149,8 @@ The guide labels this a "Clinical Titration Schedule". It is not an approved pre
 
 The guide's warning: "Do NOT skip titration." It says starting high causes severe GI side effects (nausea, vomiting, diarrhoea), and that if side effects are significant at any step, stay at the current dose for an extra 2–4 weeks.
 
+Correction, 16 October 2026: Lilly's phase 3 obesity trials (TRIUMPH-1, -2 and -3) started participants on 2 mg once weekly, not 1 mg ([Lilly, 21 May 2026](https://www.biospace.com/press-releases/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss-in-pivotal-phase-3-obesity-trial); [Lilly, 23 July 2026](https://www.biospace.com/press-releases/lillys-triple-agonist-retatrutide-successful-in-two-additional-phase-3-obesity-trials-delivering-significant-improvements-in-weight-and-a1c)).
+
 ## Common mistakes
 
 The guide's list of mistakes "That Ruin Your Peptide". The percentage losses have no supporting study attached.
@@ -170,12 +176,14 @@ The guide's list of mistakes "That Ruin Your Peptide". The percentage losses hav
 
 ## Corrections
 
-- Correction, 22 September 2026: an earlier version of this page generalised the guide to other research peptides. No formulation evidence supports that; the guide applies only to the retatrutide product it describes, and only as the guide's own claims.
+- Correction, 22 September 2026: the guide does not generalise to other research peptides. No formulation evidence supports that; it applies only to the retatrutide product it describes, and only as the guide's own claims.
 
 ## Links
 
 - [FDA — concerns with unapproved GLP-1 drugs used for weight loss](https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss) — The FDA statement that retatrutide is not part of any approved drug and has not been found safe and effective.
 - [DailyMed — Bacteriostatic Water prescribing label](https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=ccadcf46-6a6f-436b-9bbc-17e2983a335f&type=display) — The official label for bacteriostatic water: 0.9% benzyl alcohol, use per the drug manufacturer's instructions.
+- [Lilly — TRIUMPH-1 phase 3 results (21 May 2026, via BioSpace)](https://www.biospace.com/press-releases/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss-in-pivotal-phase-3-obesity-trial) — Lilly's release on its 80-week obesity trial in 2,339 adults: trial design, the 2 mg starting dose and weight loss at each target dose.
+- [Lilly — TRIUMPH-2 and TRIUMPH-3 results (23 July 2026, via BioSpace)](https://www.biospace.com/press-releases/lillys-triple-agonist-retatrutide-successful-in-two-additional-phase-3-obesity-trials-delivering-significant-improvements-in-weight-and-a1c) — Lilly's release on two more phase 3 obesity trials, with the same 2 mg start, and its plan to file with the FDA in the first quarter of 2027.
 
 ## Related
 
