@@ -51,20 +51,18 @@ async function build() {
   const jsFilename = jsOutput ? jsOutput.path.split("/").pop() : "app.js";
   const cssFilename = cssOutput ? cssOutput.path.split("/").pop() : null;
 
-  // 2. Generate index.html — Inter font + SVG favicon inline, no CDN
+  // 2. Generate index.html — Inter font and site icons (copied in step 10b), no CDN
   const cssTag = cssFilename ? `<link rel="stylesheet" href="/${cssFilename}">` : "";
-  const favicon =
-    "data:image/svg+xml," +
-    encodeURIComponent(
-      `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#0d0d0d"/><text x="16" y="22" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="500" fill="#fafafa" text-anchor="middle">B</text></svg>`
-    );
   const indexHtml = `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Brain Wiki</title>
-<link rel="icon" type="image/svg+xml" href="${favicon}">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
@@ -112,6 +110,11 @@ ${cssTag}
 
   // 10. Meta (build timestamp, domains, counts)
   await writeFile(join(DIST_DIR, "data", "meta.json"), JSON.stringify({...buildMeta(pages), canEditSources: false}));
+
+  // 10b. Site icons and web manifest (sources live in ui/ so the dev server serves them too)
+  for (const name of ["favicon.ico", "favicon.svg", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "site.webmanifest"]) {
+    await copyFile(join(UI_DIR, name), join(DIST_DIR, name));
+  }
 
   // 11. Export the latest captured assets, including nested images.
   let assetCount = 0;
