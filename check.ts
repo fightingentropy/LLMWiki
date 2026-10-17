@@ -3,6 +3,7 @@ import { loadRawSources } from "./sources";
 // Duplicate-title slug collisions are reported as a warning (not fatal) so they
 // surface without blocking deploys. Run with: bun run check.ts
 import { loadWikiPages, computeBacklinks, computeLint } from "./lib";
+import { checkShape } from "./shape";
 
 const pages = await loadWikiPages();
 const backlinks = computeBacklinks(pages);
@@ -26,3 +27,15 @@ if (broken.length > 0) {
 }
 
 console.log("OK — all body links, related pages and source paths resolve.");
+
+// Size and style limits (see AGENTS.md, Writing Style).
+const shape = checkShape(pages);
+const shapeErrors = shape.filter((i) => i.level === "error");
+const shapeWarnings = shape.filter((i) => i.level === "warning");
+if (shapeWarnings.length) console.warn(`\n${shapeWarnings.length} warning(s) — a link should be described on one page only:\n` + shapeWarnings.slice(0, 20).map((w) => `  ${w.slug}: ${w.detail}`).join("\n"));
+if (shapeErrors.length) {
+  console.error(`\nPages over the size or style limits:\n` + shapeErrors.map((e) => `  ${e.slug}: ${e.detail}`).join("\n"));
+  console.error(`\n${shapeErrors.length} size/style error(s) — failing.`);
+  process.exit(1);
+}
+console.log("OK — pages are within the size and style limits.");

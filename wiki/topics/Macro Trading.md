@@ -2,196 +2,110 @@
 title: Macro Trading
 type: topic
 domain: markets
+summary: "How to call the macro regime and read markets together, the daily brief's method, crypto-Twitter macro framings, and Citrini Research's scenarios and calls."
+tags: [macro, markets, trading]
+related:
+  - Markets
+  - Markets - Brief
+  - Rates and Credit
+  - Positioning and Sentiment
+  - Stanley Druckenmiller
+aliases:
+  - Market Regime
+  - Market Drivers
+  - Cross-Asset Analysis
+  - Citrini Research
 sources:
   - markets/Articles.md
   - markets/Brief.md
   - markets/Trading.md
   - misc/CT.md
   - misc/X-Bookmarks.md
-related:
-  - Market Regime
-  - Cross-Asset Analysis
-  - Risk Analysis
-  - Trading Philosophy
-  - Stanley Druckenmiller
-  - Crypto Takes
-  - Markets - Brief
-  - Markets - Articles
-  - Markets - Trading
-  - Citrini Research
-  - Citadel Securities
-  - Rates
-  - FX
-  - Equities
-  - Credit
-  - Commodities
-  - Crypto Trading
-  - Positioning
-  - Flow Analysis
-  - Sentiment
-  - fejau_inc
-  - goodalexander
-  - RJ Killmex
-  - OxHamz
-  - GCRClassic
-  - insiliconot
-  - HsakaTrades
-  - Political Commentary
-  - X-Bookmarks
+  - misc/Bizz & Finance.md
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-10-15'
-tags:
-  - macro
-  - trading-strategy
-  - methodology
-  - analysis
-  - m2
-  - debt-default
-  - regime-analysis
-  - cross-asset
-summary: "A Druckenmiller-style macro process (regime call, cross-asset read, positioning and flow) plus crypto-Twitter framings on M2, debt, the dollar and decorrelation."
+updated: '2026-10-17'
 ---
 
 # Macro Trading
 
-Global macro trading reads the market regime, the relationships across asset classes, and the inflection points where they change. In this wiki it rests on four things: a daily brief template written in [[Stanley Druckenmiller]]'s style ([[Markets - Brief]]), the line that opens Erlin's trading note ([[Markets - Trading]]), macro essays and scenarios saved in [[Markets - Articles]], and macro framings from crypto Twitter collected in [[CT|Crypto Takes]].
-
-## Core approach
-
-The daily brief is titled "Daily Market Overview (Stanley Druckenmiller Style)" and asks for a "direct, high-conviction, PM-ready" write-up with signal over narrative (from [[Markets - Brief]]). Its structure follows these principles:
-
-- **Market regime assessment** is primary.
-- **Cross-asset integration** reveals hidden dynamics.
-- **Positioning and flow** context drives returns.
-- **High-conviction, signal-driven** decision-making.
-- **Risk-centric**, with specific, observable triggers.
+Global macro trading calls the market regime, checks that every asset class tells the same story, and watches for the moment perception shifts. The method is the daily brief template written in [[Stanley Druckenmiller]]'s style ([[Markets - Brief]]): "direct, high-conviction, PM-ready". The research side is Citrini Research and the essays in [[Markets - Articles]].
 
 ## Perception moves markets
 
-The trading note opens with the principle behind the whole approach (from [[Markets - Trading]]):
+[[Markets - Trading]] opens with the principle behind the approach:
 
 > "Truth doesn't necessarily move markets. Perception & Uncertainty/Certainty transition does."
 
-The word "markets" links to a [YouTube video at 31:16](https://youtu.be/rZ9rUh9WhwU?t=1876); the note does not name the speaker. What matters is not objective reality but how market participants interpret it. Transitions from uncertainty to certainty, or the reverse, create the inflection points.
+The inflection is the move from uncertainty to certainty, not the fact itself, and price usually gets there first: "Markets are typically 6-8 months ahead of the news. Price moves first, and the "why" follows." (from [[Business & Finance]]). HsakaTrades says the same with a mock attribution to Marcus Aurelius: "The orderflow frontruns the newsflow".
 
-[[HsakaTrades]] makes the same point about order flow, with a mock attribution (from [[CT|Crypto Takes]]):
+## Regime first
 
-> "The orderflow frontruns the newsflow"
-> — Marcus Aurelius
+The brief opens with a regime call and a High, Medium or Low confidence level.
 
-## Analysis framework
+- **Growth and inflation:** disinflationary slowdown, reacceleration, or stagflation risk.
+- **Liquidity:** Fed path, Treasury issuance, QT/QE, dollar liquidity.
+- **Volatility:** suppressed (complacency risk), transitioning, or unstable.
 
-### Market regime
+The regime decides which drivers matter: momentum and flow in trends, technicals and dealer gamma in chop, positioning extremes at transitions, catalysts around macro events. The edge is seeing a shift before consensus: curve moves, DXY breaks, credit spreads, equity breadth, commodity spikes and volatility regime changes.
 
-- **Growth and inflation regime**: disinflationary slowdown, reacceleration, or stag risk.
-- **Liquidity backdrop**: Fed policy, Treasury issuance, QT/QE flows, dollar liquidity.
-- **Volatility regime**: suppressed, transitioning, or unstable.
-- **Confidence**: the brief asks for a High, Medium or Low confidence level on the call.
+Each style has a built-in cost: false starts, late entries, or getting run over by an outsized move. Summarising [[CryptoCred]]: "A recurring failure mode is abandoning a valid system because its unavoidable cost is mistaken for evidence that the system is broken."
 
-See [[Market Regime]].
+## The cross-asset read
 
-### Cross-asset integration
+Each market gets two to five bullets, and every call must fit the regime call. When markets disagree, something is at an inflection or positioning is stretched.
 
-- [[Rates]]: front-end, long-end, curve, real yields, implied policy path.
-- [[FX]]: USD broad, key crosses, EM stress.
-- [[Equities]]: breadth, leadership, cyclicals versus defensives.
-- [[Credit]]: spreads, refinancing stress, defaults.
-- [[Commodities]]: oil, gas, metals and their macro implications.
-- Crypto: as a macro and liquidity proxy, especially BTC. See [[Crypto Trading]].
+| Market | What to read | Page |
+| --- | --- | --- |
+| Rates | Front end, long end, curve, real yields, implied policy path | [[Rates and Credit]] |
+| FX | USD broad, key crosses, EM stress | [[FX]] |
+| Equities | Breadth, leadership, cyclicals vs defensives | [[Equities]] |
+| Credit | IG/HY spreads, refinancing stress, defaults | [[Rates and Credit]] |
+| Commodities | Oil, gas, metals | [[Commodities]] |
+| Crypto | Only if macro-relevant; BTC as a liquidity proxy | [[Crypto Trading]] |
 
-See [[Cross-Asset Analysis]].
+- **Risk-on:** equities up, credit tight, commodities up, dollar weak.
+- **Risk-off:** equities down, credit wide, dollar strong, gold bid. Gold also moves inverse to the dollar, so the two can pull against each other.
+- New regimes often show first in carry and currency markets.
+- Dislocations flag tail risk: equities up while spreads widen; EM currencies and commodities collapsing together; real yields spiking into an equity selloff.
 
-### Positioning and flow
-
-- Consensus positioning and crowded trades.
-- Dealer, gamma, CTA and systematic flow context.
-- Sentiment extremes and squeeze opportunities.
-
-See [[Positioning]], [[Flow Analysis]] and [[Sentiment]].
-
-[[goodalexander]]'s 11-factor checklist is a way to tell whether something is contrarian "without reading any tweets": raw and relative valuation, sell-side ratings, borrow cost and perp funding, earnings revisions against price, macro consensus (balance-sheet expansion, rate cuts, employment and inflation for currencies; consensus supply and demand for commodities) and options and CDS pricing. He calls it "a much more reliable guide to positioning than what people say publicly" (from [[X-Bookmarks]]).
-
-### Inflections and risks
-
-The brief closes with 5–10 regime shifts to watch, each with what is changing, why it matters and an observable confirmation signal; a risk radar of the top five upside and top five downside risks, with trigger levels or events where possible; and a required Polymarket signal check of the top markets by 24-hour volume (from [[Markets - Brief]]). See [[Risk Analysis]].
-
-### Macro in the crypto checklist
-
-The trading note lists "Macro" among the things to look for in crypto, next to CT sentiment, momentum ("Crypto is momentum driven"), mechanical movements, liquidations, top traders' positioning, catalysts, stablecoin dominance, stablecoin yields, funding rates and options positioning (from [[Markets - Trading]]). See [[Trading Philosophy]].
+The brief then covers positioning and flow ([[Positioning and Sentiment]]), 5–10 regime shifts with confirmation signals, the top five upside and downside risks with triggers, and a Polymarket check. Its style rules: "No fluff", "Prioritize signal over narrative", "Separate facts, interpretation, and positioning implications".
 
 ## Framings from crypto Twitter
 
-These are takes collected in [[CT|Crypto Takes]], not tested theses.
+From [[Crypto Takes]]; priors, not triggers.
 
-### M2 overlay
+- **M2.** fejau: overlay M2 on any chart, go long when it rises, and you "can outperform the smartest pod shop hedge funds filled with phd traders".
+- **Silent default.** [[goodalexander]]: "At some point you'll need to sleep at night knowing the elites just used cryptocurrency as a silent debt default mechanism".
+- **Decorrelation.** RJ Killmex reads crypto falling while equities hold as crypto "pricing in something that has not (yet) taken its effect in equities and rates". OxHamz: "Correlation discussion needs a flow framework": equities get bond-rebalancing inflows, crypto needs new entrants. [[GCRClassic]]: "more often than not, we are simply witnessing a laggard effect."
 
-[[fejau_inc]]: overlaying M2 on any chart and going long when it rises reportedly outperforms PhD-staffed pod shops, and the market "will not frontrun that ever and let you in":
+Bessent's tariffs read as "white hat hacking" the dollar are on [[FX]].
 
-> "It’s crazy how you can just overlay M2 on any chart and if it goes up you long and can outperform the smartest pod shop hedge funds filled with phd traders and the market will not frontrun that ever and let you in" ([original post](https://x.com/fejau_inc/status/1916270321533128797))
+## Citrini Research
 
-Useful as a regime prior more than a trade trigger.
+Citrini Research (@Citrini7) is the most-bookmarked macro voice in [[X-Bookmarks]]: the "Global Macro Trading for Idiots" series and themed baskets across AI, compute and ags.
 
-### Crypto as a silent debt default
+- **JUNE 2028.** The scenario opens: "The S&P is down 38% from its highs. Unemployment just printed 10.2%. Private credit is unraveling." Its twist: "AI didn't disappoint. It exceeded every expectation." A Citadel Securities piece sits under it as "Citadel rebuttal to above". Read the pair as a stress test of any regime call.
+- **Hype cycles.** "Investors are always either discounting the promise of the future or the reality of the present. And they are never equally weighting them." At the peak "the present is not considered at all"; the fall is "stairs up, elevator down".
+- **Geopolitics.** Markets treat geopolitical risk "as background noise right up until the moment it's not".
+- **March 2026.** "I can't really see the scenario where stocks don't go lower in the near term." The Fed's cutting cycle "is on its way to being completely priced out". Firms cutting roles under pressure may "find out they don't need to hire that role back".
+- **AI trades.** Indices will be forced to buy an Anthropic IPO. An "agentic utility basket" (AKAM, FSLY, CIEN, DOCN, EQIX, VRSN) may be the first non-data-centre AI basket to lead since 2023.
+- **Prediction markets.** "I actually like the Polymarket insider trading": a leak that once reached a few macro funds now shows up for everyone.
 
-[[goodalexander]]: elites may use crypto as a silent debt-default mechanism, a zero-sum game against the uneducated masses:
-
-> "At some point you’ll need to sleep at night knowing the elites just used cryptocurrency as a silent debt default mechanism
->
-> And you won a zero sum game vs the uneducated and willfully ignorant masses
->
-> So at least do your best to build something interesting that helps people"
-
-Read alongside [[Political_Commentary|Political Commentary]].
-
-### Bessent "white hat hacking" the dollar
-
-A long passage in the note, linked to [a post by @SuitablePolitic](https://x.com/SuitablePolitic/status/1909094334349337081), reads Bessent's tariff volatility as a controlled detonation. It is an explicit framing of policy as adversarial game theory. The argument runs:
-
-1. Bessent "was hired to strengthen the dollar by doing the opposite of all the warning signs he saw in the British Pound". Inflated housing and Treasury yields "pointed to the big short that the Soros fund pulled off".
-2. His focus on home prices and Treasury rates "isn't just rank populism"; it strengthens "the leading indicators of a currency". "This is what I mean by "white hat hacking" the dollar."
-3. "Wall Street was on a sugar high" and hedge funds were "leveraged to the gills". "The tariff roll out... volatility and all... was a way of creating controlled detonation." Wall Street deleveraged.
-4. Bessent "sees a recession or depression happening in China", and boxing in its exports recreates "the same conditions that led to the big short of the British Pound". "If the Chinese Yuan collapses, then it'll cause a global flight into US Treasury bonds", driving rates lower "for when they go to refinance the $9T of expiring debt."
-
-See [[FX]] for currency mechanics.
-
-### Is crypto's decorrelation a signal?
-
-The note holds opposing readings, and the [[CT|Crypto Takes]] page flags them under Contradictions:
-
-- [[RJ_Killmex|RJ Killmex]], labelled "Quote Hayes ish": "Crypto is the least regulated/ controlled market and gives the most accurate reflection of what's really going on. This would mean the neg. decorrelation is actually crypto pricing in something that has not (yet) taken its effect in equities and rates."
-- [[OxHamz]]: "Correlation discussion needs a flow framework." Equities can get bid from rebalancing inflows out of bonds (for example month-end pension rebalancing), while crypto relies on new entrants. "Therefore equities can go up while crypto is flat/down / It's not the de-correlation you wanted".
-- A third view, filed under [[GCRClassic]]: "Traders will often reach out to me, inquiring as to why crypto is showing relative strength or weakness relative to equities. I will usually tell them to wait before drawing conclusions; more often than not, we are simply witnessing a laggard effect."
-
-Both of the first two can be true in different regimes.
-
-### The tide goes out
-
-[[GCRClassic]]: "celsius, terraform, etc are just inevitable blowups of a macro unwinding, long prophesied by a handful of augurs". He recalls the boomer meme, "when the tide goes out, you see who is swimming naked", and adds "many such cases you will survive". [[insiliconot]] replied: "I always swim naked."
-
-### Listen to the bond market
-
-[[insiliconot]]: "My long dead father spoke to me in a dream yesterday, he said to listen on what bond market is telling".
-
-## Macro research and scenarios
-
-- [[Citrini Research]] publishes the "Global Macro Trading for Idiots" series; Part Three is saved in [[Markets - Articles]].
-- Citrini's JUNE 2028 scenario opens: "JUNE 2028. The S&P is down 38% from its highs. Unemployment just printed 10.2%. Private credit is unraveling. Prime mortgages are cracking. AI didn’t disappoint. It exceeded every expectation. What happened?" The articles note sets a [[Citadel Securities]] piece directly under it, labelled "Citadel rebuttal to above".
-- Melt_Dem's "From “Adoption” to Annexation: The End State of Institutional Adoption" is saved alongside them.
+His other saved posts are in [[Bookmarks - Markets & Crypto]].
 
 ## Resources
 
-In this wiki: [[Markets - Brief]] is the daily overview template, [[Markets - Articles]] the curated macro research, and [[Citrini Research]] the macro analysis and research outfit.
+- [Why stocks go lower near term](https://x.com/Citrini7/status/2034510641243787391) — The March 2026 call: Fed cuts priced out, NFP a lose-lose, AI-driven job cuts that stick. _(@Citrini7)_
+- [Follow Josh Linville on fertilizer](https://x.com/Citrini7/status/2032870130502254940) — Citrini endorses Linville's ags insight, quoting [his post](https://x.com/JLinvilleFert/status/2032562200695492838). _(@Citrini7)_
+- ["The capex was worth it."](https://x.com/Citrini7/status/2032875390163701865) — One-liner quoting [a post](https://x.com/IterIntellectus/status/2032858964858228817) on a tech worker designing an mRNA cancer vaccine for his dog. _(@Citrini7)_
+- [Anthropic IPO and forced index buying](https://x.com/TheBenSchmark/status/2018014595911237784) — Agrees with Citrini that indices will be forced to buy an Anthropic IPO; quotes [this Citrini post](https://x.com/Citrini7/status/2013734569397068268). _(@TheBenSchmark)_
+- [Midterms and the "have nots"](https://x.com/Citrini7/status/2017717962199781485) — Suggests re-reading [an earlier Citrini post](https://x.com/Citrini7/status/1908968285003223293) as the midterms approach. _(@Citrini7)_
+- [Pronoiac meme-broker quotation](https://x.com/Citrini7/status/2017351925822378106) — A quoted line on a meme-broker absorbing gigabytes of content daily to stay current. _(@Citrini7)_
+- [Doomer takes after "the citrini article"](https://x.com/rasmr_eth/status/2032517846555673065) — Mocks war-doomer takes replacing AI-doomer takes, and people who called "black swan". _(@rasmr_eth)_
+- [The war and the bull market](https://x.com/d_gilz/status/2033262991253147888) — Argues the war only hurts because markets sit at the tail of a generational bull run; quotes [a Citrini post](https://x.com/Citrini7/status/2032997332900262388). _(@d_gilz)_
 
-- [Truth doesn't necessarily move markets](https://youtu.be/rZ9rUh9WhwU?t=1876) — YouTube video at 31:16, linked from the opening line of the trading note; the note does not name the speaker.
-- [Global Macro Trading for Idiots: Part Three](https://www.citriniresearch.com/p/global-macro-trading-for-idiots-part-611) — Third part of Citrini Research's series on global macro trading.
-- [JUNE 2028](https://x.com/Citrini7/status/2025653614430023864) — Citrini's scenario of a 2028 downturn in which AI exceeds expectations: S&P down 38%, unemployment at 10.2%, private credit unravelling. _(@Citrini7)_
-- [Citadel Securities: 2026 Global Intelligence Crisis](https://www.citadelsecurities.com/news-and-insights/2026-global-intelligence-crisis/) — Citadel Securities piece the note labels "Citadel rebuttal to above", answering the JUNE 2028 scenario.
-- [From “Adoption” to Annexation: The End State of Institutional Adoption](https://x.com/Melt_Dem/status/2025776665603772459) — Post on the end state of institutional adoption, saved by its title. _(@Melt_Dem)_
-- [M2 overlay](https://x.com/fejau_inc/status/1916270321533128797) — fejau's post on overlaying M2 on any chart as a long signal. _(@fejau_inc)_
-- [Bessent and "white hat hacking" the dollar](https://x.com/SuitablePolitic/status/1909094334349337081) — Post reading tariff volatility and pressure on China as a plan to strengthen the dollar and refinance US debt at lower rates. _(@SuitablePolitic)_
-- [How to tell if something is contrarian](https://x.com/goodalexander/status/2032143213344276528) — 11-factor checklist for finding hated assets across stocks, crypto, currencies and commodities. _(@goodalexander)_
-- [Polymarket Gamma API: active events by volume](https://gamma-api.polymarket.com/events?active=true&closed=false&limit=200&offset=0&order=volume&ascending=false) — Polymarket's public events endpoint, filtered to active, open events and sorted by volume; the data source for the brief's required Polymarket signal check.
+## Other saved links
 
-## Related
-
-[[Market Regime]] · [[Cross-Asset Analysis]] · [[Risk Analysis]] · [[Trading Philosophy]] · [[Stanley Druckenmiller]] · [[Markets - Brief]] · [[Markets - Articles]] · [[Markets - Trading]] · [[Citrini Research]] · [[Citadel Securities]] · [[Rates]] · [[FX]] · [[Equities]] · [[Credit]] · [[Commodities]] · [[Crypto Trading]] · [[Positioning]] · [[Flow Analysis]] · [[Sentiment]] · [[CT|Crypto Takes]] · [[fejau_inc]] · [[goodalexander]] · [[RJ_Killmex|RJ Killmex]] · [[OxHamz]] · [[GCRClassic]] · [[insiliconot]] · [[HsakaTrades]] · [[Political_Commentary|Political Commentary]] · [[X-Bookmarks]]
+- [Citrini link-only post](https://x.com/Citrini7/status/2017346872466186625)
+- [Earlier Citrini post it quotes](https://x.com/Citrini7/status/2005322563044753644)
+- [cryptobyrde post quoted in the agentic-utility article](https://x.com/cryptobyrde/status/2039748279106486440)

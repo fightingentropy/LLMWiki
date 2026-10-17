@@ -2,73 +2,47 @@
 title: Water Filtration
 type: topic
 domain: health
+summary: "How to compare home water filters, and what the shortlisted countertop filter, reverse-osmosis units and shower filter do and do not show."
+tags: [health]
+related:
+  - Bookmarks - Personal & Life
+  - X-Bookmarks
+  - Health Evidence
+  - Body Optimization
 sources:
   - bookmarks/Personal & Life.md
   - clippings/bookmark-updates-2026-09-22/Personal & Life.md
   - clippings/evidence-review-2026-10-16/Health.md
-related:
-  - X-Bookmarks
-  - Health Evidence
-  - Body Optimization
-  - Bookmarks - Personal & Life
-  - Supplements & Biohacking
-  - Health Evidence Review - October 2026
 created: 2026-08-29T00:00:00.000Z
-updated: '2026-10-15'
-tags:
-  - water
-  - filtration
-  - reverse-osmosis
-  - purchasing
-  - evidence
-  - fluoride
-summary: "How to compare home water filters, with Erlin's shortlist of reverse-osmosis units, a countertop filter, a shower filter and what to check for each."
+updated: '2026-10-17'
 reviewed: '2026-10-16'
 review_status: reviewed
-review_notes: "Checked the comparison method against DWI and CDC filter guidance, the HydraSense certifications against its performance data sheet, the Hommix and Klense product pages, NHS toothpaste advice and both X posts; HydraSense's certifying body could not be confirmed in NSF's own listings."
 ---
 
 # Water Filtration
 
-Erlin's notes hold a shortlist of home water-treatment products, not a chosen one: an Oasis Health fluoride-removal comparison, an under-sink reverse osmosis (RO) versus countertop-filter question, the Ninja HydraSense countertop filter, three Hommix countertop RO units and a Klense filtered showerhead. No product has been selected or bought. The useful part is the method for comparing them.
+A shortlist of home water-treatment products, none bought yet: a fluoride-removal comparison, an under-sink reverse osmosis (RO) versus countertop question, the Ninja HydraSense countertop filter, three Hommix countertop RO units and a Klense filtered showerhead. The useful part is how to compare them. The product links are in [[Bookmarks - Personal & Life]].
 
 ## How to compare filters
 
-- Start with the contaminants and concentrations that matter for the local water supply.
-- Match those needs to current independent certification or model-specific laboratory data. A category label or an unexplained score is not enough.
-- Compare influent concentration, flow rate, filter age, rated capacity and the exact model, not brand-level marketing.
-- Count installation, counter space, replacement filters, cleaning, wastewater, power, noise and failure modes in the total cost.
-- Treat countertop filtration and reverse osmosis as different treatment approaches, even when purchase prices overlap.
+- Start with your water. The [Drinking Water Inspectorate](https://www.dwi.gov.uk/consumers/learn-more-about-your-water/domestic-water-filters-and-softeners/) (DWI) says to read the water company's free quality report first, and to change cartridges on time.
+- Match each concern to a certification. The [CDC](https://www.cdc.gov/drinking-water/prevention/about-choosing-home-water-filters.html) maps NSF/ANSI 42 to taste and odour, 53 to cysts, 58 to reverse osmosis and 62 to distillation.
+- Compare exact models on certification or lab data, flow rate, filter age and capacity, not brand marketing or an unexplained score.
+- Count the running costs: installation, counter space, filters, cleaning, wastewater, power and noise.
+- Countertop filtration and RO are different treatments, even at similar prices.
 
-## Countertop filter versus reverse osmosis
+## Countertop filter or reverse osmosis
 
-- A [post comparing under-sink RO with a countertop filter](https://x.com/itsactuallytad/status/2092637354150510953) is worth keeping for the purchasing question, not its dismissal of the gadget. It predicts the countertop unit's screen will fail and that a fully installed RO setup costs the same; neither claim is established. (from [[X-Bookmarks]])
-- Correction, 16 October 2026: the [post](https://x.com/itsactuallytad/status/2092637354150510953) says an RO system with its own countertop faucet costs "almost the same price"; it says nothing about installation costs.
-- [Ninja's HydraSense launch material](https://newsroom.sharkninja.com/ninja-raises-the-standard-for-home-water-with-the-launch-of-ninja-hydrasense/) describes a no-plumbing countertop filter certified to NSF/ANSI 42, 53 and 401. That does not make it equivalent to reverse osmosis, even at a similar price. (from [[X-Bookmarks]])
-- The Hommix countertop RO units ([SanitRO](https://www.hommix.co.uk/products/hommix-sanitro-3-in-1-luxury-countertop-reverse-osmosis-filtration-system-space-grey?variant=46684755329256&country=GB&currency=GBP), [Sparo](https://www.hommix.co.uk/products/hommix-sparo-black-5-in-1-countertop-reverse-osmosis-filtration-system-uv?variant=56307986301307&country=GB&currency=GBP), [EspressRO](https://www.hommix.co.uk/products/hommix-espressro-5-in-1-countertop-reverse-osmosis-filtration-system?variant=44065246609640&country=GB&currency=GBP)) are countertop reverse-osmosis systems, so they belong in the RO comparison rather than alongside simple countertop filters. Compare them on certification, wastewater, filter cost, cleaning and price. (from [[Bookmarks - Personal & Life]]) All three connect to the mains. The [Drinking Water Inspectorate](https://www.dwi.gov.uk/consumers/learn-more-about-your-water/domestic-water-filters-and-softeners/) says reverse-osmosis water is not generally considered suitable for drinking and cooking, that RO suits specialist domestic uses, and that the water company must by law be notified before an RO unit is installed.
+- **Ninja HydraSense.** SharkNinja's [launch release](https://newsroom.sharkninja.com/ninja-raises-the-standard-for-home-water-with-the-launch-of-ninja-hydrasense/) claims NSF/ANSI 42, 53 and 401 certification. Its [data sheet](https://qcg-media.scanova.io/media/uploads/118513/2026/06/20260630_300252_Final120GSharkNinjaHydraSensePDS6.pdf) lists lead, PFAS and microplastics but not fluoride, and claims no NSF/ANSI 58. NSF's own listings show no SharkNinja products.
+- **Hommix SanitRO, Sparo and EspressRO.** Mains-connected countertop RO systems that claim fluoride removal. None shows a product-specific NSF/ANSI 58 certification.
+- **The DWI on RO.** It wastes 20–30% of incoming water. RO water is not generally considered suitable for drinking and cooking, and RO suits specialist domestic uses. By law, the water company must be told before an RO unit is installed.
+- **@itsactuallytad's comparison.** The post weighs an RO system against a countertop unit and predicts the countertop screen will fail.
+- Correction (16 October 2026): the post says an RO system with its own countertop faucet costs "almost the same price"; it says nothing about installation costs.
 
-## Fluoride removal
+## Fluoride
 
-The [Oasis Health comparison](https://x.com/oasishealthapp/status/2093501078465904775) lists dozens of countertop, under-sink, whole-house, bottle and RO products with claimed fluoride-removal percentages and unexplained scores. It is a shopping lead, not a verified ranking: it gives no accessible methodology, laboratory reports, influent concentration, flow rate, filter age, capacity or common scoring rubric. Check each exact model's current certification or performance data before relying on its number. (from [[X-Bookmarks]])
-
-For the separate fluoride-and-thyroid claim in Erlin's notes, and the NHS advice that contradicts it, see [[Supplements & Biohacking]].
+Oasis Health scores about 80 products for fluoride removal with no methodology, lab reports or influent figures. It is a shopping lead, not a ranking. The separate claim that fluoride toothpaste harms the thyroid is corrected on [[Health Evidence]].
 
 ## Shower filters
 
-The [Klense filtered showerhead](https://tryklense.com/en-gb/products/klense-filter-showerhead?shpxid=0c00fffe-5556-498c-bf5b-2ed1974e3631) is on the home-equipment shortlist. Its claims about reducing limescale, chlorine, metals and water use, and about skin and hair, are vendor claims. Keep shower equipment and drinking-water treatment separate: different products, different evidence, different running costs. (from [[Bookmarks - Personal & Life]])
-
-## Resources
-
-- [Fluoride-removal filter comparison](https://x.com/oasishealthapp/status/2093501078465904775) — Oasis Health's list of filters with claimed fluoride-removal percentages and scores; no published methodology. _(@oasishealthapp)_
-- [Under-sink RO versus a countertop filter](https://x.com/itsactuallytad/status/2092637354150510953) — Post weighing an installed RO system against a countertop unit; its cost and failure predictions are unproven. _(@itsactuallytad)_
-- [Ninja HydraSense launch announcement](https://newsroom.sharkninja.com/ninja-raises-the-standard-for-home-water-with-the-launch-of-ninja-hydrasense/) — SharkNinja newsroom page on the countertop filter and its NSF/ANSI 42, 53 and 401 certifications.
-- [Ninja HydraSense retailer listing](https://bargainshopuk.co.uk/ninja-hydrasense-countertop-water-filtration-system-in-black/) — UK retailer page for the black HydraSense; use the manufacturer's evidence when judging it.
-- [Hommix SanitRO](https://www.hommix.co.uk/products/hommix-sanitro-3-in-1-luxury-countertop-reverse-osmosis-filtration-system-space-grey?variant=46684755329256&country=GB&currency=GBP) — Hommix 3-in-1 countertop reverse-osmosis system, space grey.
-- [Hommix Sparo](https://www.hommix.co.uk/products/hommix-sparo-black-5-in-1-countertop-reverse-osmosis-filtration-system-uv?variant=56307986301307&country=GB&currency=GBP) — Hommix 5-in-1 countertop reverse-osmosis system with UV, black.
-- [Hommix EspressRO](https://www.hommix.co.uk/products/hommix-espressro-5-in-1-countertop-reverse-osmosis-filtration-system?variant=44065246609640&country=GB&currency=GBP) — Hommix 5-in-1 countertop reverse-osmosis system.
-- [DWI: domestic water filters and softeners](https://www.dwi.gov.uk/consumers/learn-more-about-your-water/domestic-water-filters-and-softeners/) — The UK drinking-water regulator's consumer guidance: check your water company's quality report before buying, change cartridges on time, RO wastes 20–30% of the water, and RO units must be notified before installation.
-- [Klense Filter Showerhead](https://tryklense.com/en-gb/products/klense-filter-showerhead?shpxid=0c00fffe-5556-498c-bf5b-2ed1974e3631) — Filtered showerhead; limescale, chlorine, skin and hair claims are the vendor's.
-
-## Related
-
-[[Health Evidence]] · [[Body Optimization]] · [[Supplements & Biohacking]] · [[Bookmarks - Personal & Life]] · [[X-Bookmarks]] · [[Health Evidence Review - October 2026]]
+The [Klense showerhead](https://tryklense.com/en-gb/products/klense-filter-showerhead) claims to cut limescale, chlorine and metals and to help skin and hair, citing no independent certification. Shower and drinking water are separate products with separate evidence and running costs.

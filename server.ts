@@ -193,7 +193,7 @@ const server = Bun.serve({
       const slug = path.startsWith("/api/")
         ? path.slice("/api/pages/".length)
         : path.slice("/data/pages/".length, -".json".length);
-      const page = pages.get(slug);
+      const page = pages.get(slug) ?? pages.get(derived.fileAliases.get(slug) || "");
       if (!page) return Response.json({ error: "Not found" }, { status: 404 });
       return Response.json(pageDetail(page, pages, backlinks, derived.fileAliases, derived.catalog.raw));
     }

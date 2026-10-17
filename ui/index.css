@@ -1924,3 +1924,31 @@ button:disabled { cursor: default; opacity: 0.5; }
 }
 
 .pending-list:empty { display: none; }
+
+/* Simplified navigation: primary tabs plus one "More" menu */
+.nav-more { position: relative; }
+.nav-more > summary { list-style: none; cursor: pointer; }
+.nav-more > summary::-webkit-details-marker { display: none; }
+.nav-more[open] > summary { color: var(--text); }
+.nav-more-menu { position: absolute; right: 0; top: calc(100% + 6px); z-index: 40; min-width: 170px; padding: 6px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.35); display: flex; flex-direction: column; }
+.nav-more-menu a { padding: 7px 10px; border-radius: 6px; font-size: 13px; color: var(--text-secondary); text-decoration: none; }
+.nav-more-menu a:hover { background: var(--bg-muted); color: var(--text); }
+
+/* Home: a map of subjects instead of stats and activity */
+.subject-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 28px 36px; margin-top: 32px; }
+.subject .domain-title { margin-bottom: 8px; }
+.subject-list { list-style: none; padding: 0; margin: 0; }
+.subject-list li a { display: block; padding: 4px 0; font-size: 14px; color: var(--text-secondary); text-decoration: none; }
+.subject-list li a:hover { color: var(--text); }
+.continue-reading { margin-top: 28px; }
+.continue-reading .subject-list { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+
+/* Internal non-wikilink links, e.g. "Read the original note" links into the source viewer */
+.page-content a[href^="/"]:not(.wikilink) {
+  color: var(--text);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--text-muted);
+}
+.page-content a[href^="/"]:not(.wikilink):hover { text-decoration-color: var(--text); }

@@ -7,7 +7,7 @@ related:
   - Wiki Index
   - Wiki Overview
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-10-16'
+updated: '2026-10-17'
 tags:
   - log
   - operations
@@ -240,3 +240,21 @@ Standards: [[BS EN 61557]] now lists parts 11 (residual current monitors), 14 (m
 Scheme name: GOV.UK guidance published 1 July 2026 by the Building Safety Regulator and MHCLG calls these "self-certification schemes", previously known as competent person schemes. GOV.UK's list of current schemes, last updated 17 September 2026, still uses the old name, and no GOV.UK page gives a date for the change, so the pages say what the July guidance calls them rather than giving a renaming date. [[Part P]] and [[EIC and MEIWC]] carry the one-clause note and a described link; [[Building Regulations]] does not name the schemes, so it was not changed.
 
 Still open: the CAT voltage-rating definition on [[BS EN 61010]]; whether "only IEC 61557 instruments are suitable" on [[BS EN 61557]] overstates BS 7671; HydraSense's certifier on [[Water Filtration]]; ISO-timestamp `created:` values; the [[BS 7671]] summary's out-of-date Amendment 3 line; and "earlier version of this page" corrections on [[Fitness]], [[ADHD]], [[Circadian Rhythm]], [[Mental Health]] and [[Humor]].
+
+---
+
+## [2026-10-17] simplify | cut the wiki from 229 pages to 97 and about a quarter of the words
+
+Erlin asked to deslopify the wiki: fewer words, no repetition, every link kept, and the large note archives turned into short digests that link to the original notes.
+
+What changed:
+- Merged 135 pages into others, leaving 94 content pages plus the index, overview and log. Sixteen narrow macro pages became five, twenty-one electrics pages became eleven, the trader and writer stubs became [[Traders Directory]], [[People Quoted]] and [[Podcast Hosts]], and the dated evidence reviews and X bookmark records folded into [[Health Evidence]], [[Electrical Study Map]] and [[Evergreen Lessons from X]]. Each merged page lists its former titles as `aliases`, so old wikilinks and `/page/<old-slug>` addresses still resolve.
+- Each link is now described once, on a home page: its bookmark category, its link collection or the one page it belongs to. Descriptions are one line of at most 25 words; per-line hedges became one sentence per page.
+- Note archives (Women, Quotes, Crypto Takes, Humor, X Takes and the others) are digests of at most about 900 words that link to the full original in the source viewer.
+- Topic pages are short summaries; dated sections, body Related sections, note-attribution phrasing and 777 ad-hoc tags are gone (now 22 fixed tags, at most 3 per page, at most 5 related pages).
+- The top bar is Home, Index and Bookmarks plus a More menu; the home page is a map of subjects; the index lists titles only.
+- `bun run check` now enforces the size and style limits in `shape.ts`; AGENTS.md describes them.
+
+Review statuses: merged pages keep the weaker status of their parts. Mental Health, Electrical Safety and the Electrical Study Map are now `partial`, because they absorbed material that was only partly checked.
+
+Validation: words on pages 340,746 to 77,793 (log excluded). Every one of the 2,086 URLs in the previous wiki is on its home page (1,652 unique URLs on pages) or in an original note linked from its home page; none lost. `bun run check` reports 97 pages, zero broken references and no pages over the limits; 45 tests pass; the static build passes; no orphan pages. Pages awaiting evidence review: 11; recorded source gaps: 9 pages. No raw source was modified.

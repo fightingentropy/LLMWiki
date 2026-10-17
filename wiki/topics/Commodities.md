@@ -2,136 +2,97 @@
 title: Commodities
 type: topic
 domain: markets
-sources:
-  - markets/Handbook.md
-  - markets/Articles.md
+summary: "What moves oil, natural gas, gold, silver and orange juice, how the commodity boom-bust cycle runs, and how each trades across macro regimes."
+tags: [macro, markets, trading]
 related:
-  - Market Regime
   - Macro Trading
-  - Cross-Asset Analysis
+  - FX
+  - Rates and Credit
+  - Exchange Microstructure
+  - Markets - Handbook
+aliases:
   - Oil
   - Natural Gas
   - Gold
   - Silver
-  - DXY
-  - Rates
-  - Market Cycles
-  - HIP-3 Silver Microstructure
-  - CME
-  - Hyperliquid
-  - Markets - Handbook
-  - Markets - Articles
+sources:
+  - markets/Handbook.md
+  - markets/Articles.md
+  - markets/Brief.md
+  - misc/X-Bookmarks.md
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-10-15'
-tags:
-  - commodities
-  - raw-materials
-  - supply-demand
-  - trading
-  - futures
-summary: "What moves oil, natural gas, gold, silver and orange juice futures, and how the commodity boom-bust cycle works."
+updated: '2026-10-17'
 ---
 
 # Commodities
 
-Commodities are raw materials traded mostly through futures. The markets handbook note frames the whole asset class in one line: "Boom & bust cycles, cyclical, depend on supply & demand" (from [[Markets - Handbook]]). This page lists the price drivers the note gives for five markets (oil, natural gas, gold, silver and orange juice) and what each means for trading. Each market with its own page links out to it.
+Commodities are raw materials traded mostly through futures. [[Markets - Handbook]] sums up the asset class in one line: "Boom & bust cycles, cyclical, depend on supply & demand". It lists drivers for five markets: oil, natural gas, gold, silver and orange juice. The daily brief reads them as "oil, gas, metals; macro implications" ([[Markets - Brief]]).
 
-## The commodity cycle
+## The boom-bust cycle
 
-All commodities move in boom-bust cycles driven by supply and demand:
+1. High prices pull in exploration and new production.
+2. Supply arrives late, overshoots, and prices crash.
+3. Low prices kill investment.
+4. Underinvestment creates a shortage.
+5. Prices spike, ration demand, and the cycle restarts.
 
-1. **Supply lag**: it takes time to bring new production online.
-2. **Oversupply**: excess supply drives prices down and kills exploration.
-3. **Scarcity**: underinvestment eventually creates a shortage.
-4. **Price spike**: high prices ration demand and pull in new supply.
-5. **Repeat**: the cycle starts again.
-
-Knowing where each commodity sits in its cycle is key to directional conviction. For cycles in other assets, see [[Market Cycles]]; for how commodities fit the wider macro picture, see [[Macro Trading]], [[Market Regime]] and [[Cross-Asset Analysis]].
-
-## Drivers at a glance
+Knowing where a commodity sits in this cycle is the basis for directional conviction.
 
 | Market | Main drivers | Character |
 | --- | --- | --- |
 | Oil | OPEC, geopolitics, GDP growth, energy policy | Cyclical and geopolitical |
-| Natural gas | Production, storage, big producers, weather, LNG exports, energy policy | Highly seasonal |
+| Natural gas | Production, storage, big producers, weather, LNG exports, policy | Highly seasonal |
 | Gold | Sentiment, uncertainty, rates, dollar, central banks, jewellery, mining | Safe haven; inverse to real rates |
-| Silver | Industrial demand, ETF flows, rates, dollar, gold-silver ratio, supply, positioning | Hybrid industrial and precious metal; more volatile than gold |
-| Orange juice | Weather, crop disease, supply shifts, trade policy | Weather-driven, highly volatile |
+| Silver | Industrial demand, ETF flows, rates, dollar, gold-silver ratio, supply, positioning | Industrial and precious hybrid; more volatile than gold |
+| Orange juice | Weather, crop disease, supply shifts, trade policy | Weather-driven, very volatile |
 
-## Energy
+## Oil
 
-### Oil futures
+> "factors: OPEC decisions, Geopolitical events, GDP, policy changes (renewable energy etc)"
 
-Key factors (from [[Markets - Handbook]]):
+Oil is cyclical: it rallies with growth and risk-on and falls in risk-off. It is also geopolitical: a supply shock (the Strait of Hormuz, a pipeline, sanctions) can spike it 50% or more in days, whatever the fundamentals. Supply comes from OPEC quotas, US shale, Russia and others; the shale revolution changed the structure. Energy policy and EV adoption are slow but lasting pressure on demand. Watch OPEC statements, rig counts and production data.
 
-- **OPEC decisions**: production levels and quotas.
-- **Geopolitical events**: supply disruptions and conflict.
-- **GDP growth**: economic activity drives energy demand.
-- **Policy changes**: renewable energy adoption and energy policy.
+## Natural gas
 
-Oil is both cyclical (it correlates with growth) and geopolitical (it is exposed to supply shocks). Monitor OPEC statements, rig counts and production data. See [[Oil]].
+> "factors: how much production from major gas fields, how much in storage, decisions by big producers, weather (colder months = more demand), liquified nat gas exports, energy policies, competition from renewables."
 
-### Natural gas
+Gas is the seasonal energy market. Storage builds from April to September and draws from October to March, so the storage level going into winter is the number to watch. An early cold winter drains storage early and hits like a supply shock; a warm one is a demand shock. Industrial demand (fertiliser, chemicals, power) and LNG exports compete with heating. Russian sanctions showed how geopolitics can cut supply, and the renewable buildout is a long-term headwind.
 
-Key factors (from [[Markets - Handbook]]):
+## Gold
 
-- **Production**: output and capacity of the major gas fields.
-- **Storage levels**: strategic and commercial inventory.
-- **Producer decisions**: policy of the big exporters (Russia, Qatar and others).
-- **Weather**: colder months drive heating demand.
-- **LNG exports**: liquefied natural gas exports and capacity.
-- **Energy policy**: support for renewables versus natural gas, and competition from renewables.
+> "factors: investor sentiment, safe haven in economic uncertainty, interest rates, DXY (rates low or dollar weaker = gold more attractive), central banks buying, jewellery demand, mining supply."
 
-Natural gas is highly seasonal, with demand spiking in winter. Storage levels act as the price governor. LNG exports compete with domestic consumption. Weather forecasting is critical. See [[Natural Gas]].
+Gold yields nothing, so rising real rates raise the cost of holding it and push it down. A weak dollar makes it cheaper abroad and pushes it up ([[FX]], [[Rates and Credit]]). It usually rallies when equities fall. Those last two can clash: a risk-off move that also lifts the dollar sets the safe-haven bid against the dollar headwind. Under the macro drivers sit central-bank buying, jewellery, mine supply, ETF flows and futures positioning.
 
-## Precious metals
+## Silver
 
-### Gold
+> "industrial demand (electronics + solar), investor/ETF flows (safe-haven + speculation), interest rates/real yields + DXY, relative value vs gold (gold–silver ratio), mining + recycling supply (often by-product of base metals), futures positioning/volatility."
 
-Key factors (from [[Markets - Handbook]]):
+Silver has industrial demand like copper and safe-haven demand like gold. Its market is smaller, so the same flows move it more. Most silver is a by-product of copper, zinc and lead mining, so supply barely responds to price. The gold-silver ratio (gold price over silver price) is the relative-value gauge: a high ratio says silver is cheap, and extremes tend to revert. Futures positioning drives sharp reversals. Silver also trades on [[Hyperliquid]]'s HIP-3 markets as well as CME; [[Exchange Microstructure]] compares the venues.
 
-- **Investor sentiment**: safe-haven demand in risk-off periods.
-- **Economic uncertainty**: raises gold's value as portfolio insurance.
-- **Interest rates**: higher real rates make gold less attractive by comparison.
-- **DXY (US Dollar Index)**: a weaker dollar means higher gold, because gold gets cheaper in foreign currencies. The note puts it as "rates low or dollar weaker = gold more attractive".
-- **Central bank buying**: official-sector demand.
-- **Jewellery demand**: physical consumption for adornment.
-- **Mining supply**: physical production and recycling.
+## Metals across regimes
 
-Gold moves inverse to real rates and with dollar weakness. A weaker dollar pushes gold up; rising real rates push it down. Safe-haven flows arrive in a crisis. See [[Gold]], [[DXY]] and [[Rates]].
+| Scenario | Gold | Silver |
+| --- | --- | --- |
+| Recession or risk-off | Rallies | Rallies, less than gold |
+| Stagflation | Rallies despite inflation | — |
+| Deflation, real rates spiking | Vulnerable | Falls harder than gold |
+| Growth surge | Under pressure | Outperforms gold on industrial demand |
 
-### Silver
+## Orange juice
 
-Key factors (from [[Markets - Handbook]]):
+Frost threatens crops and heat hurts quality; citrus greening and other diseases can impair supply for years. Brazil is the largest producer, so its harvest matters as much as Florida's. Tariffs and trade deals shape US exports. Frost scares drive the spikes.
 
-- **Industrial demand**: electronics manufacturing and solar panels.
-- **Investor and ETF flows**: speculative buying and safe-haven demand.
-- **Interest rates and real yields**: affect carrying cost and safe-haven value.
-- **DXY**: as with gold, a weaker dollar means higher silver.
-- **Gold-silver ratio**: relative value; a high ratio suggests silver is cheap against gold.
-- **Mining and recycling supply**: primary mining, and silver as a by-product of base-metals mining.
-- **Futures positioning**: leverage, speculative flows and volatility.
+## Contrarian tests
 
-Silver is a hybrid. It has industrial demand like copper but also trades like gold as a safe haven. It is more volatile than gold because the market is smaller. Watch the gold-silver ratio for relative-value and mean-reversion trades. Positioning extremes in futures drive sharp reversals. See [[Silver]], and [[HIP-3 Silver Microstructure]] for how silver trades on [[Hyperliquid]] against [[CME]].
+[[goodalexander]]'s checklist for spotting hated assets has commodity tests: "For commodities compare to production cost"; "if it is insanely expensive to store something chances are ppl don't want to be long"; and "if consensus is that oil inventories are low being long oil is consensus".
 
-## Agriculture
+## Safe haven or casino
 
-### Orange juice futures
-
-Key factors (from [[Markets - Handbook]]):
-
-- **Weather conditions**: frost threatens crops; heat affects yield quality.
-- **Crop diseases**: citrus greening and other plant diseases.
-- **Supply and demand shifts**: Florida production and global citrus supplies.
-- **Trade policies**: tariffs and trade agreements affecting US citrus exports.
-
-Orange juice is weather-driven and highly volatile. Brazilian production is key, as Brazil is the world's largest producer. Frost scares drive spikes. Disease can impair supply structurally.
+On 30 January 2026, a day of heavy selling in silver, two posts questioned the safe-haven label. 0xRacist: "Safe haven asset owners are beginning to realize everything is a casino". Avi Felman saw rare earths and uranium, with "strong fundamental drivers", being "unfairly dragged around by the metals frenzy". MONK imagined gold on crypto rails: "I just opened a long gold, short nasdaq trade on Hyperliquid, using my spot HYPE as collateral."
 
 ## Resources
 
-- [HIP-3 Silver Microstructure: Hyperliquid vs. CME](https://x.com/shaundadevens/status/2019782009267085656) — Compares silver market microstructure on Hyperliquid's HIP-3 markets and on CME; summarised in [[HIP-3 Silver Microstructure]]. _(@shaundadevens)_
-- [10 Silver days of Christmas](https://x.com/abcampbell/status/2005124506130477500) — X post titled after silver; saved without a note. _(@abcampbell)_
-
-## Related
-
-[[Oil]] · [[Natural Gas]] · [[Gold]] · [[Silver]] · [[DXY]] · [[Rates]] · [[Market Cycles]] · [[Market Regime]] · [[Macro Trading]] · [[Cross-Asset Analysis]] · [[HIP-3 Silver Microstructure]] · [[CME]] · [[Hyperliquid]] · [[Markets - Handbook]] · [[Markets - Articles]]
+- [Everything is a casino](https://x.com/0xRacist/status/2017313451761348838) — One-liner from the 30 January 2026 metals sell-off on safe-haven owners discovering it is all a casino. _(@0xRacist)_
+- [Metals mania and rare earths](https://x.com/AviFelman/status/2017310810184282274) — Argues the metals frenzy unfairly drags rare earths and uranium, making them a buying opportunity. _(@AviFelman)_
+- [It's 2032](https://x.com/defi_monk/status/2018529674872197468) — Vignette of a 2032 trading day on Hyperliquid: long gold, short Nasdaq, prediction-market hedges, an agent's vault. _(@defi_monk)_

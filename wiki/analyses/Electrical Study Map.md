@@ -2,107 +2,90 @@
 title: Electrical Study Map
 type: analysis
 domain: electrics
+summary: "A reading order through the UK electrical study pages, with self-check questions, the course exam format and every correction from the 2026 source checks."
+tags: [electrics]
+related: ["BS 7671 and GN3", "Safe Isolation", "Continuity Testing", "Electrical Certificates", "In-Service Testing"]
+aliases: ["Inspection and Testing Fundamentals", "Electrical Evidence Review - September 2026", "Electrical Evidence Review - October 2026"]
 sources:
   - electrics/Resources.md
   - clippings/evidence-review-2026-09-22/Electrics.md
   - clippings/evidence-review-2026-10-16/Electrics.md
-related:
-  - Electrical Safety
-  - BS 7671
-  - GN3 Guidance Note 3
-  - Part P
-  - Building Regulations
-  - Safe Isolation
-  - Test Equipment Standards
-  - Continuity Testing
-  - EIC and MEIWC
-  - EICR
-  - In-Service Testing
-  - Electrical Evidence Review - September 2026
-  - GS38
-  - RCD Protection
-  - Ohm's Law and Electrical Calculations
-  - PAT Testing
-  - Electrics - Resources
-  - Electrical Evidence Review - October 2026
 created: '2026-09-22'
-updated: '2026-10-15'
-tags:
-  - electrics
-  - synthesis
-  - study
-  - inspection-and-testing
-summary: "A five-stage route from standards and safe isolation through testing and certificates to appliance maintenance, with self-checks and official sources."
+updated: '2026-10-17'
 reviewed: '2026-10-16'
-review_status: reviewed
-review_notes: "Editions, publishers and document roles were re-checked against the IET edition checker, IET A4 guidance list and model forms, BSI's A4 notice, GOV.UK Approved Document P, HSE FAQs and GS38; the map names no course or exam requirements, and numerical limits are left to the course book."
+review_status: partial
+review_notes: "Editions and document roles were checked against IET, BSI, GOV.UK, HSE and City & Guilds sources; the merged webinar material rests on a lost transcript."
 review_due: '2027-01-14'
+source_gaps:
+  - "raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection and Testing Demonstration.md"
 ---
 
 # Electrical Study Map
 
-Study in this order: the standards and statutory scope first, then the safe-working state, then what each measurement answers, then which record to issue, with appliance maintenance kept as a separate subject. Each stage below lists the pages to read, the questions to be able to answer, and, where one applies, the official source behind it.
+A route through the UK electrical study pages: standards and law first, then working safely, then measurement, then the records, with appliance testing kept separate. Corrections from official sources are listed at the end and on the pages they affect. Full detail: [Read the September 2026 note](/source/d3b60ee79d0f4ac5c6f9) · [Read the October 2026 note](/source/10938ecc2d52d67f52da).
 
-Study with the applicable standards and supervised course material. The original webinar transcripts are missing, so the detailed legacy procedures remain questions to check, not a substitute for practical training. The dated corrections are in [[Electrical Evidence Review - September 2026]].
+Official references: [IET edition checker](https://electrical.theiet.org/bs-7671-18th-edition-wiring-regulations/ensure-you-are-up-to-date-with-bs-7671/), [Approved Document P](https://www.gov.uk/government/publications/electrical-safety-approved-document-p), [HSE electrical FAQs](https://www.hse.gov.uk/electricity/faq.htm), [HSE GS38](https://www.hse.gov.uk/pubns/books/gs38.htm), [HSE INDG236](https://www.hse.gov.uk/pubns/indg236.pdf).
 
-## 1. Establish the references
+## Reading order
 
-Start with [[BS 7671]] and [[GN3 Guidance Note 3]]. Record the edition used and check current errata.
+1. [[BS 7671 and GN3]] — current editions and how to use them.
+2. [[Building Regulations]] — law versus guidance, Part P, cable zones, chases.
+3. [[Electrical Safety]] — working dead; what RCDs and other devices can and cannot do.
+4. [[Safe Isolation]] — the 13 steps and prove, test, re-prove.
+5. [[Test Equipment Standards]] — BS EN 61010, BS EN 61557, GS38 and CAT ratings.
+6. [[Ohm's Law and Electrical Calculations]] — formulas, 230 V figures, voltage drop.
+7. [[Continuity Testing]] — test order, Table B1 sums, lead nulling, pass criteria.
+8. [[Electrical Certificates]] — EIC, MEIWC, EICR codes, landlords, notification.
+9. [[In-Service Testing]] — PAT checks, four tests, pass limits, V-forms.
 
-Correction, 22 September 2026: GN3 Inspection & Testing is the tenth edition. An earlier description of it as the fifth edition was wrong and confused it with in-service equipment material.
+[[Electrics - Resources]] holds the quick-reference note and tool links.
 
-Keep the statutory question in [[Part P]] (see also [[Building Regulations]]) separate from the technical verification question. Be able to explain why an installation certificate and a building-control notification are different records.
-
-Sources:
-
-- [IET edition checker](https://electrical.theiet.org/bs-7671-18th-edition-wiring-regulations/ensure-you-are-up-to-date-with-bs-7671/) — Edition status. IET states BS 7671:2018+A4:2026 is published. The Brown Book with Amendment 3 remains valid until 15 October 2026, and either edition may be used during the transition.
-- Correction, 16 October 2026: the transition has ended. [BSI](https://knowledge.bsigroup.com/articles/bs-7671-2018-a4-2026-get-the-latest-amendment-to-the-uks-wiring-regulations) set 15 October 2026 as the withdrawal date for BS 7671:2018+A2:2022+A3:2024, so BS 7671:2018+A4:2026 is now the only current edition. The IET edition checker still carries the transition wording.
-- [BSI — BS 7671:2018+A4:2026, the latest amendment](https://knowledge.bsigroup.com/articles/bs-7671-2018-a4-2026-get-the-latest-amendment-to-the-uks-wiring-regulations) — BSI article on Amendment 4: the withdrawal of the A3 version on 15 October 2026 and the main new content (batteries, ICT bonding, Power over Ethernet, medical locations).
-- [IET guidance publications](https://electrical.theiet.org/guidance-and-codes-of-practice/publications-by-category/amendment-42026-to-bs-76712018-iet-wiring-regulations/bs-7671-and-guidance/) — IET lists Guidance Note 3: Inspection & Testing, tenth edition, and the On-Site Guide, ninth edition, aligned with A4.
-- [GOV.UK Approved Document P](https://www.gov.uk/government/publications/electrical-safety-approved-document-p) — England only. The statutory Part P requirement and the Approved Document are different: the document is guidance. The 2013 guidance covers dwellings and specified associated installations, including some business premises sharing the dwelling's electricity meter. Notifiable categories include new circuits, consumer-unit replacement and additions or alterations in defined special locations; a kitchen alone is not a blanket trigger. Non-notifiable work still has to comply. Do not apply England's categories to other UK jurisdictions without checking their rules.
-
-## 2. Understand the safety state
-
-Read [[Electrical Safety]], [[Safe Isolation]], [[GS38]] and [[Test Equipment Standards]]. Practise explaining what must be known before testing and why a simple reading cannot prove every supply is isolated. Identify the limits of an RCD using [[RCD Protection]].
-
-Sources:
-
-- [HSE electrical FAQs](https://www.hse.gov.uk/electricity/faq.htm) — HSE says work should normally be done with equipment dead, secured against re-energisation and checked dead. An RCD cannot protect against every shock. Pressing an RCD test button does not establish every aspect of installation safety.
-- [HSE GS38](https://www.hse.gov.uk/pubns/books/gs38.htm) — HSE guidance on electrical test equipment, leads and probes. Maintenance and testing need appropriate competence and suitable equipment.
-- [IET: Cables in walls (2015)](https://electrical.theiet.org/media/1445/cables-in-walls.pdf) — Backs the RCD self-check below. A 30 mA RCD alone does not permit arbitrary concealed cable routes outside the prescribed zones; the article explains how zones, additional protection and permitted alternative construction methods combine. Plastic conduit alone is not equivalent to an earthed metallic or other specifically permitted protective method. It is historical guidance under the seventeenth edition and cannot establish all current A4 clause details, so use the applicable current BS 7671 text for design decisions.
-
-Correction, 22 September 2026: the regulation number 522.5.204 in the Resources note is a source error. Do not cite it as a verified current clause.
-
-## 3. Connect purpose to measurement
-
-Use [[Ohm's Law and Electrical Calculations]] for units and assumptions; the quick formulas are also in [[Electrics - Resources]]. For [[Continuity Testing]], identify the question a test answers, what could distort the measurement and where its acceptance criteria come from. Check numerical limits and sequence against the actual book and instructor.
-
-## 4. Choose the right record
-
-Compare [[EIC and MEIWC]] with [[EICR]]. What work or assessment does each document describe? How are limitations and defects recorded? Which statements can the tester actually support?
-
-## 5. Keep appliance maintenance distinct
-
-Read [[In-Service Testing]] and [[PAT Testing]] alongside the official HSE guidance. Be able to explain why a blanket annual test schedule is not the same as a maintenance plan based on use and risk.
-
-Sources:
-
-- [HSE portable appliance testing FAQs](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm) — HSE does not prescribe blanket annual PAT testing. Maintenance arrangements and inspection and testing intervals depend on risk, use and environment. Visual checks matter, some faults need testing, and a test label is not a guarantee that equipment remains safe.
-- [HSE INDG236: Maintaining portable electric equipment in low-risk environments](https://www.hse.gov.uk/pubns/indg236.pdf) — HSE's short leaflet on user checks, visual inspection and risk-based testing; says a test shows an appliance's safety only at the time of the test.
-- Correction, 16 October 2026: the source for this point is HSE's [INDG236](https://www.hse.gov.uk/pubns/indg236.pdf) leaflet, not the [PAT FAQ](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm). INDG236 says a test indicates an appliance's safety only at the time of the test and does not imply it will stay safe, so user checks must continue; the FAQ says labels and records are not legally required but are a useful management tool.
-
-## Self-check prompts
+## Self-check
 
 - Why does adding an RCD not make any concealed cable route acceptable?
-- Which jurisdiction and edition does a rule concern?
-- What is the difference between guidance, a statutory requirement and a manufacturer's instruction?
-- Which source supports a numerical limit in the notes?
-- What information is missing before a practical decision can be made?
+- Which jurisdiction and edition does this rule belong to?
+- Is it guidance, a statutory requirement or a manufacturer's instruction?
+- Which source backs this numerical limit?
+- Why is a blanket annual PAT schedule not a maintenance plan?
 
-## Open items
+## Course and exam
 
-File unresolved questions beside the relevant page. Restore the original webinar material if it becomes available and review the affected procedures against it.
+Access Training's route: theory exams, then 10 days of practical training and a real competence assessment. The webinar gave the Level 2 fundamental inspection and testing exam as 60 minutes, open book (GN3 only), 30 multiple-choice questions. City & Guilds' [2392-10 handbook](https://www.cityandguilds.com/-/media/productdocuments/building_services_engineering/electrical_installation/2392/2392_level_2/centre_documents/2392-10-l2-qhb-fundamental-inspection-initial-testing-ventilation-v1,-d-,6-pdf.pdf) gives a closed-book online test of 50 questions in 100 minutes. Confirm with your awarding body.
 
-## Related
+## Corrections
 
-[[Electrical Evidence Review - September 2026]] · [[Electrical Safety]] · [[BS 7671]] · [[GN3 Guidance Note 3]] · [[Part P]] · [[Building Regulations]] · [[Safe Isolation]] · [[GS38]] · [[Test Equipment Standards]] · [[RCD Protection]] · [[Ohm's Law and Electrical Calculations]] · [[Continuity Testing]] · [[EIC and MEIWC]] · [[EICR]] · [[In-Service Testing]] · [[PAT Testing]] · [[Electrics - Resources]] · [[Electrical Evidence Review - October 2026]]
+**22 September 2026**
+
+- [[BS 7671 and GN3]]: GN3 is tenth edition, not fifth.
+- [[Building Regulations]]: Part P is law, Approved Document P guidance; neither is UK-wide.
+- [[Building Regulations]]: a 30 mA RCD alone does not permit routes outside the safe zones.
+- [[Building Regulations]]: "Reg 522.5.204" is a misnumbering.
+- [[Electrical Safety]]: RCD trip times, selectivity and the metal-covering exception were overstated.
+- [[Electrical Certificates]]: the no-CPC light-fitting example is too brief to decide compliance.
+- [[In-Service Testing]]: HSE requires no blanket annual PAT test.
+
+**16 October 2026**
+
+- [[BS 7671 and GN3]]: the A3 transition ended; A4 is the only current edition.
+- [[Building Regulations]]: every new circuit and consumer unit change is notifiable.
+- [[Building Regulations]]: Part P reaches outbuildings, common areas and shared-meter premises.
+- [[Building Regulations]]: 522.6.203 covers any partition with metallic parts.
+- [[Building Regulations]]: horizontal chases are 1/6 of the leaf; no joist-notch rule.
+- [[Safe Isolation]]: no set conductor-pair order for proving dead.
+- [[Safe Isolation]]: the DNO cut-out fuse has authorised withdrawal routes.
+- [[Test Equipment Standards]]: probe tips 4 mm maximum; no 19 mm figure, plug size or "GS38 compliant" mark.
+- [[Test Equipment Standards]]: GS38 sets no pre-use lead check or record-retention period.
+- [[Test Equipment Standards]]: CAT II definition; no CAT I; distances are Fluke's.
+- [[Test Equipment Standards]]: 61010 covers leads; 61557-12 is power metering; 61557-1 excludes functional safety.
+- [[Ohm's Law and Electrical Calculations]]: V × I is VA; watts only at unity power factor.
+- [[Ohm's Law and Electrical Calculations]]: voltage drop limits come from BS 7671.
+- [[Continuity Testing]]: no general 0.1 Ω CPC limit; Zs decides.
+- [[Continuity Testing]]: disconnecting bonding risks touch voltages from an open PEN.
+- [[Electrical Certificates]]: one MEIWC per existing circuit, or one EIC.
+- [[Electrical Certificates]]: A4 EIC has no qualifications field.
+- [[Electrical Certificates]]: replacements are still inspected, tested and certificated.
+- [[Electrical Certificates]]: A4 EICR treats C3 and FI as advisory.
+- [[Electrical Certificates]]: HMOs and social landlords fall under the England regulations.
+- [[In-Service Testing]]: Class II insulation tests go to accessible conductive parts.
+- [[In-Service Testing]]: V.3 has only PASS and FAIL labels; V.6 is the test instrument record.
+- [[In-Service Testing]]: the test-label point is from INDG236, not the PAT FAQ.

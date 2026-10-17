@@ -1,118 +1,82 @@
 ---
-title: Rates
+title: Rates and Credit
 type: topic
 domain: markets
+summary: "How to read the yield curve, real yields and credit spreads, and how moves in rates and credit ripple into every other market."
+tags: [macro, markets]
+related:
+  - Macro Trading
+  - FX
+  - Equities
+  - Commodities
+  - Markets - Brief
+aliases:
+  - Real Yields
+  - Credit
+  - Rates
 sources:
   - markets/Brief.md
   - markets/Handbook.md
-related:
-  - Cross-Asset Analysis
-  - Market Regime
-  - Macro Trading
-  - Real Yields
-  - Markets - Brief
-  - Markets - Handbook
-  - Equities
-  - Credit
-  - Gold
-  - Silver
-  - DXY
+  - snapshots/1790804551519-1de9816cb631/bookmarks/Markets & Crypto.md
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-10-15'
-tags:
-  - rates
-  - bonds
-  - treasury
-  - yield-curve
-  - monetary-policy
-  - real-yields
-summary: "How to read the front end, long end, curve shape, real yields and implied policy path, and how rate moves ripple into every other market."
+updated: '2026-10-17'
 ---
 
-# Rates
+# Rates and Credit
 
-Interest rates are the foundation of all asset pricing, and rate moves ripple through every market. The daily brief template opens its cross-asset read with rates and asks for five things: "front-end, long-end, curve, real yields, implied policy path" (from [[Markets - Brief]]). This page follows that list, then covers how the curve moves, why rates matter for other assets, and how surprises land. For the rest of the cross-asset read, see [[Cross-Asset Analysis]].
+Interest rates are the price of money and the discount rate for every asset, so their moves ripple through every market. Credit is debt that carries default risk: corporate bonds, loans, mortgages and private credit. The daily brief reads rates as "front-end, long-end, curve, real yields, implied policy path" and credit as IG/HY spreads, refinancing stress and defaults ([[Markets - Brief]]).
 
-## Points on the curve
+## The curve
 
-### Front end (2Y, 3Y)
+- **Front end (2Y, 3Y):** near-term Fed policy expectations, driven by guidance, inflation and jobs data.
+- **Long end (10Y, 30Y):** long-run growth and inflation expectations plus term premium.
+- **Implied policy path:** the market's Fed path. Its gap to Fed guidance is repricing risk.
 
-- **What it measures**: near-term Fed policy expectations.
-- **Drivers**: Fed rate guidance, inflation data, employment.
-- **Reading it**: a higher 2Y means higher near-term rates are expected; a lower 2Y means lower rates are expected.
-
-### Long end (10Y, 30Y)
-
-- **What it measures**: long-term growth and inflation expectations.
-- **Drivers**: structural growth, long-run inflation, term premium.
-- **Reading it**: a higher 10Y means higher growth or inflation is expected; a lower 10Y means lower expectations.
-
-### Real yields
-
-- **What it is**: the nominal yield minus expected inflation.
-- **Why it matters**: it is the real return to savers and the real cost of borrowing.
-- **Relationship to macro**: higher real yields make bonds more attractive relative to risk assets.
-
-See [[Real Yields]] for the full treatment.
-
-### Implied policy path
-
-- **What it is**: the market's expectation for the Fed's rate path.
-- **Drivers**: data, Fed guidance, market repricing.
-- **Significance**: the gap between the market path and Fed guidance reveals repricing risk.
-
-The brief's regime section adds the liquidity backdrop alongside these: Fed, Treasury issuance, QT/QE proxies and dollar liquidity (from [[Markets - Brief]]). See [[Market Regime]].
-
-## The yield curve
-
-| Shape | Definition | What it signals |
-|---|---|---|
+| Shape | Definition | Signal |
+| --- | --- | --- |
 | Steep | 10Y far above 2Y | Growth and inflation expected |
-| Flat | 10Y ≈ 2Y | Transition period, uncertainty |
-| Inverted | 10Y below 2Y | Recession expected |
+| Flat | 10Y ≈ 2Y | Transition, uncertainty |
+| Inverted | 10Y below 2Y | Recession expected, often 6–18 months ahead |
 
-### Steepening
+A steepener (long 2Y, short 10Y) gains when the Fed cuts and the front end falls, usually early in a recession. A flattener (long 10Y, short 2Y) gains when policy tightens and recession risk rises. An inverted curve tends to stay inverted until the Fed cuts.
 
-- Front-end rates fall (the Fed cutting) while the long end holds, so the curve steepens.
-- Usually happens early in a recession, before the long end reprices lower.
-- **Trade**: long 2Y / short 10Y in bond terms (long the 2s10s spread) benefits from steepening.
+Correction (15 October 2026): the steepener and flattener trades were once written the wrong way round.
 
-### Flattening
+## Real yields
 
-- Front-end rates rise (higher near-term policy) while the long end falls, so the curve flattens.
-- Usually happens as inflation falls and recession risk rises.
-- **Trade**: long 10Y / short 2Y in bond terms benefits from flattening.
+A real yield is the nominal yield minus expected inflation: a 4% 10Y with 2.5% expected inflation gives 1.5%. The 10Y real yield is the long-run real cost of capital and the discount rate for equities and commodities. Breakevens (nominal minus real) are the market's inflation expectation; the 5Y5Y breakeven is the long-term one.
 
-Correction, 15 October 2026: this page earlier gave the steepener as "Long 10Y / short 2Y" and the flattener as "Short 10Y / long 2Y". In bond terms those are reversed: a steepener buys the front end and sells the long end, and a flattener does the opposite.
+- **Rising real yields** hit everything: growth stocks behave like long-duration bonds, multiples compress even when earnings hold (a rule of thumb is 10–15% off equities per 100bp), gold loses because holding it costs more, and credit spreads widen.
+- **Falling or negative real yields** push savers into risk and support equities, commodities and gold. A negative front-end real rate is real easing.
+- **Examples:** the 2022 rate shock (rising), the 2023 disinflation (falling), 2021 (negative).
 
-### Inversion
+Surprises matter more than levels. An expected move is already priced; rates surprising higher are a shock, from growth or from inflation out of control; rates surprising lower are either a growth scare or relief.
 
-- 10Y below 2Y; the market expects a recession.
-- Once inverted, the curve stays inverted until the Fed cuts rates.
-- Inversion often precedes a recession by 6–18 months.
+## Credit spreads
 
-## Why rates move every market
+A spread is the extra yield over Treasuries, the market's price for default risk.
 
-- **Discount rate effect**: higher rates lower the present value of future cash flows, which lowers equity values. See [[Equities]].
-- **Opportunity cost**: higher rates make bonds more attractive than equities.
-- **Growth sensitivity**: the rate path reflects growth expectations.
-- **Financial system cost**: higher rates raise financing costs and pressure corporate profitability. See [[Credit]].
+| Measure | Normal | Stress |
+| --- | --- | --- |
+| IG spreads | 100–200bp | Above 200bp is an early warning |
+| HY spreads | 400–600bp | Above 600bp means defaults are likely |
 
-### Rates in the metals drivers
+Widening is risk-off; tightening is complacency. Watch CDS pricing and bank lending standards too: banks tightening credit means the economy is weakening. Credit events escalate from refinancing stress to covenant breaches, downgrades and default.
 
-Erlin's handbook note names rates as a driver of both precious metals (from [[Markets - Handbook]]):
+## The credit cycle
 
-- **Gold**: "interest rates, DXY (rates low or dollar weaker = gold more attractive)". See [[Gold]] and [[DXY]].
-- **Silver**: "interest rates/real yields + DXY". See [[Silver]].
+- **Boom:** low spreads, easy refinancing, buyouts; leverage builds unnoticed.
+- **Peak:** spreads at their lows, valuations highest, earnings growth slowing; fragile.
+- **Bust:** earnings miss, refinancing gets hard, spreads widen into a credit crunch.
+- **Trough:** spreads wide, defaults happening, fear at extremes; the opportunity.
 
-## Expected moves and surprises
+Credit is often where tail risk shows first. When equities hold up while spreads widen, credit is repricing default risk that equities have not caught up with, and an equity correction is likely. Private credit is less liquid and less transparent, so it can surprise on the downside.
 
-- **Expected rate move**: already built into prices; a move that happens as expected is no shock.
-- **Surprise higher**: rates higher than expected are a shock down, from either growth concerns or inflation out of control.
-- **Surprise lower**: rates lower than expected are either a shock up (growth collapse) or relief (inflation solved).
+## Mortgages and collateral
 
-How these surprises change the regime call is covered in [[Market Regime]] and [[Macro Trading]].
+- **Prepayment is an option.** Repaying a mortgage early lets a borrower refinance after rates fall and gives the lender prepayment risk; fees, penalties and requalifying limit its value.
+- **Banks do not lend reserves.** A viral post said a bank borrowed a 2021 mortgage from the Bank of England and now charges more. Wrong: bank lending creates a deposit, and mortgage pricing reflects rate expectations, funding, hedging, capital and margin.
+- **Cheese as collateral.** Italian lenders take ageing Parmigiano Reggiano wheels as collateral, matching the loan to an asset that matures before sale.
+- **Private-credit defaults.** The MFS and Atlas case involves warehouse financing, alleged double pledging and litigation.
 
-## Related
-
-[[Cross-Asset Analysis]] for rate relationships to other assets · [[Market Regime]] for regime implications · [[Real Yields]] · [[Macro Trading]] · [[Equities]] · [[Credit]] · [[Gold]] · [[Silver]] · [[DXY]] · [[Markets - Brief]] · [[Markets - Handbook]]
+The sources for these cases are in [[Bookmarks - Markets & Crypto]].

@@ -40,6 +40,7 @@ function mkPage(p: Partial<WikiPage> & { slug: string; title: string }): WikiPag
     wordCount: p.wordCount ?? 10,
     readingTime: p.readingTime ?? 1,
     headings: p.headings ?? [],
+    aliases: p.aliases ?? [],
     mtime: p.mtime ?? 1_750_000_000_000,
   };
 }
@@ -161,6 +162,13 @@ describe("resolveLink + buildFileAliases", () => {
     expect(aliases.get("philosophy-and-meaning")).toBe("philosophy-meaning");
     expect(resolveLink("Philosophy_and_Meaning", pages, aliases)?.slug).toBe("philosophy-meaning");
   });
+  test("resolves former titles listed in frontmatter aliases", () => {
+    const merged = mapOf(mkPage({ slug: "macro-trading", title: "Macro Trading", path: "topics/Macro Trading.md", aliases: ["Market Regime", "Cross-Asset Analysis"] }));
+    const aliases = buildFileAliases(merged);
+    expect(resolveLink("Market Regime", merged, aliases)?.slug).toBe("macro-trading");
+    expect(resolveLink("Cross-Asset Analysis", merged, aliases)?.slug).toBe("macro-trading");
+  });
+
   test("returns undefined for unknown links", () => {
     expect(resolveLink("No Such Page", pages)).toBeUndefined();
   });

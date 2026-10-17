@@ -360,7 +360,9 @@ function updatedTime(p: PageSummary): number {
   return p.mtime || 0;
 }
 
-const NAV: {label:string; href:string}[] = [{label:"Home",href:"/"},{label:"Bookmarks",href:"/bookmarks"},{label:"Sources",href:"/sources"},{label:"Graph",href:"/graph"},{label:"Tags",href:"/tags"},{label:"Timeline",href:"/timeline"},{label:"Review",href:"/lint"}];
+const NAV: {label:string; href:string}[] = [{label:"Home",href:"/"},{label:"Index",href:"/page/wiki-index"},{label:"Bookmarks",href:"/bookmarks"}];
+// Maintenance and exploration views live behind one menu so the reading path stays simple.
+const NAV_MORE: {label:string; href:string}[] = [{label:"Original sources",href:"/sources"},{label:"Graph",href:"/graph"},{label:"Tags",href:"/tags"},{label:"Timeline",href:"/timeline"},{label:"Review queue",href:"/lint"}];
 function useStored<T>(key:string, initial:T) {
   const [value,setValue]=useState<T>(()=>{try {const raw=localStorage.getItem(key);if(!raw)return initial;const parsed=JSON.parse(raw);if(Array.isArray(initial))return (Array.isArray(parsed)&&parsed.every(v=>typeof v==='string')?parsed:initial) as T;return parsed&&typeof parsed==='object'&&!Array.isArray(parsed)?{...initial,...parsed}:initial;}catch{return initial;}});
   useEffect(()=>{try{localStorage.setItem(key,JSON.stringify(value));}catch{}},[key,value]);
@@ -647,19 +649,21 @@ function PageView({
 }
 
 // --- Home ---
+const SUBJECTS: [string, string][] = [["markets","Markets and trading"],["dev","Dev, design and AI"],["health","Health"],["electrics","Electrics"],["psychology","Psychology"],["personal","Personal"],["culture","Culture and ideas"]];
 function Home({pages,recents}:{pages:PageSummary[];recents:string[]}) {
- const {data:timelineData,error:timelineError,retry:retryTimeline}=useJson<TimelineEntry[]>('/data/timeline.json');
- const timeline=timelineData||[];
  const content=pages.filter(p=>!['index','log','overview'].includes(p.type));
- const mostReferenced=[...content].sort((a,b)=>(b.referencedBy||0)-(a.referencedBy||0)||a.title.localeCompare(b.title)).slice(0,6);
- const recent=recents.map(slug=>pages.find(p=>p.slug===slug)).filter((p):p is PageSummary=>!!p).slice(0,6);
- const domains=[...new Set(content.map(p=>p.domain))].sort();
- const list=(items:PageSummary[])=><div className="home-list">{items.map(p=><a key={p.slug} className="home-list-item" href={'/page/'+p.slug}><span className="sidebar-glyph">{typeGlyph(p.type)}</span><span className="home-list-title">{p.title}</span><span className="home-list-date">{p.referencedBy||0} references</span></a>)}</div>;
- return <div className="main"><div className="home-hero"><h1>Brain Wiki</h1><p>Ideas, sources and useful answers across {domains.length} subjects.</p><div className="source-actions"><a href="/page/wiki-index">Start here: the index →</a><a href="/bookmarks">Browse bookmarks →</a><a href="/sources">Original sources →</a><a href="/page/wiki-overview">Wiki overview →</a></div></div>
-  <div className="stats-row">{[['source','Sources'],['entity','Entities'],['topic','Topics'],['analysis','Analyses']].map(([type,label])=><div className="stat" key={type}><div className="stat-number">{pages.filter(p=>p.type===type).length}</div><div className="stat-label">{label}</div></div>)}</div>
-  <div className="home-row"><section><div className="domain-title">{recent.length?'Continue reading':'Most referenced'}</div>{list(recent.length?recent:mostReferenced)}</section>
-   <section><div className="domain-title">Recent activity<a className="domain-more" href="/timeline">Timeline →</a></div><div className="home-list">{timelineError&&<p role="alert">Recent activity could not load. <button onClick={retryTimeline}>Retry</button></p>}{!timelineData&&!timelineError&&<p role="status">Loading activity…</p>}{timeline.slice(0,3).map((e,i)=><a className="home-list-item activity-item" href="/timeline" key={i}><span className="home-list-title"><small>{e.date} · {e.op}</small>{e.detail}</span></a>)}</div></section></div>
-  <div className="domain-title">Explore by subject</div><div className="domain-directory">{domains.map(domain=><details key={domain} className="domain-disclosure"><summary><span>{domain}</span><span>{content.filter(p=>p.domain===domain).length} pages</span></summary><div className="home-list">{content.filter(p=>p.domain===domain).sort((a,b)=>a.title.localeCompare(b.title)).map(p=><a className="home-list-item" key={p.slug} href={'/page/'+p.slug}><span className="home-list-title">{p.title}</span><span className="home-list-date">{p.type}</span></a>)}</div></details>)}</div>
+ const recent=recents.map(slug=>pages.find(p=>p.slug===slug)).filter((p):p is PageSummary=>!!p).slice(0,5);
+ const isBank=(p:PageSummary)=>p.title.startsWith('Bookmarks - ');
+ const byTitle=(a:PageSummary,b:PageSummary)=>a.title.localeCompare(b.title);
+ const known=new Set(SUBJECTS.map(([d])=>d));
+ const subjects:[string,string][]=[...SUBJECTS,...[...new Set(content.map(p=>p.domain))].filter(d=>!known.has(d)).map(d=>[d,d] as [string,string])];
+ const list=(items:PageSummary[])=><ul className="subject-list">{items.map(p=><li key={p.slug}><a href={'/page/'+p.slug} title={p.summary||undefined}>{p.title}</a></li>)}</ul>;
+ return <div className="main"><div className="home-hero"><h1>Brain Wiki</h1><p>Notes and saved links, organised by subject.</p><div className="source-actions"><a href="/page/wiki-index">Index →</a><a href="/bookmarks">All bookmarks →</a></div></div>
+  {recent.length>0&&<section className="subject continue-reading"><h2 className="domain-title">Continue reading</h2>{list(recent)}</section>}
+  <div className="subject-grid">
+   <section className="subject"><h2 className="domain-title">Bookmarks</h2>{list(content.filter(isBank).sort(byTitle).map(p=>({...p,title:p.title.replace(/^Bookmarks - /,'')})))}</section>
+   {subjects.map(([d,label])=>{const items=content.filter(p=>p.domain===d&&!isBank(p)).sort(byTitle);return items.length?<section className="subject" key={d}><h2 className="domain-title">{label}</h2>{list(items)}</section>:null;})}
+  </div>
  </div>;
 }
 
@@ -1442,6 +1446,15 @@ function App() {
   },[navigateHref]);
   useEffect(()=>{if(route.view==='page'&&pages.some(p=>p.slug===route.slug))setRecents(old=>[route.slug,...old.filter(s=>s!==route.slug)].slice(0,20));},[route.view,route.view==='page'?route.slug:'',pages.length]);
   useEffect(()=>{setSidebarOpen(false);document.querySelector('.main')?.scrollTo(0,0);},[route.view]);
+  // Close the "More" menu on navigation, an outside click or Escape.
+  useEffect(()=>{document.querySelectorAll('details.nav-more[open]').forEach(d=>d.removeAttribute('open'));},[route]);
+  useEffect(()=>{
+    const closeAll=(keep?:EventTarget|null)=>document.querySelectorAll('details.nav-more[open]').forEach(d=>{if(!(keep instanceof Node&&d.contains(keep)))d.removeAttribute('open');});
+    const onClick=(e:MouseEvent)=>closeAll(e.target);
+    const onKey=(e:KeyboardEvent)=>{if(e.key==='Escape')closeAll();};
+    document.addEventListener('click',onClick);document.addEventListener('keydown',onKey);
+    return ()=>{document.removeEventListener('click',onClick);document.removeEventListener('keydown',onKey);};
+  },[]);
 
   // Handle the /random pseudo-route by redirecting to a real page
   useEffect(() => {
@@ -1519,7 +1532,11 @@ function App() {
           <span className="brand-mark">{typeGlyph("overview")}</span><span className="brand-name">Brain <span>Wiki</span></span>
         </a>
         <Search version={meta?.builtAt} onNavigate={navigateHref} />
-        <nav className="nav-tabs" aria-label="Main navigation">{NAV.map(n=><a key={n.href} href={n.href} className={`nav-tab ${routeToPath(route).split('?')[0].split('#')[0]===n.href?'active':''}`}>{n.label}</a>)}</nav>
+        <nav className="nav-tabs" aria-label="Main navigation">{NAV.map(n=><a key={n.href} href={n.href} className={`nav-tab ${routeToPath(route).split('?')[0].split('#')[0]===n.href?'active':''}`}>{n.label}</a>)}
+          <details className="nav-more"><summary className={`nav-tab ${NAV_MORE.some(n=>routeToPath(route).split('?')[0].split('#')[0]===n.href)?'active':''}`}>More</summary>
+            <div className="nav-more-menu">{NAV_MORE.map(n=><a key={n.href} href={n.href} onClick={e=>e.currentTarget.closest('details')?.removeAttribute('open')}>{n.label}</a>)}</div>
+          </details>
+        </nav>
         <button
           className="icon-btn"
           onClick={() => navigate({ view: "random" })}

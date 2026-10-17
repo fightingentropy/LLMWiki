@@ -9,6 +9,7 @@ import {
   computeLint,
   loadTimeline,
   buildMeta,
+  buildFileAliases,
   pageSummary,
   pageDetail,
   searchIndexEntry,
@@ -87,9 +88,15 @@ ${cssTag}
   await writeFile(join(DIST_DIR, "data", "pages.json"), JSON.stringify(pagesList));
 
   // 4. Individual page files (with resolved related, backlinks, headings)
+  const pageAliases = buildFileAliases(pages);
   for (const [slug, page] of pages) {
-    const pageData = pageDetail(page, pages, backlinks, undefined, catalog.raw);
+    const pageData = pageDetail(page, pages, backlinks, pageAliases, catalog.raw);
     await writeFile(join(DIST_DIR, "data", "pages", `${slug}.json`), JSON.stringify(pageData));
+  }
+  // Merged pages: serve the surviving page at each former slug.
+  for (const [aliasSlug, slug] of pageAliases) {
+    const page = pages.get(slug);
+    if (page) await writeFile(join(DIST_DIR, "data", "pages", `${aliasSlug}.json`), JSON.stringify(pageDetail(page, pages, backlinks, pageAliases, catalog.raw)));
   }
 
   // 5. Graph

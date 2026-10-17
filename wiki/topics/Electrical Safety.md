@@ -2,118 +2,69 @@
 title: Electrical Safety
 type: topic
 domain: electrics
+summary: "Working dead, what RCDs, circuit breakers and earthing each do, where RCD protection stops, and what inspection and testing can show."
+tags: [electrics]
+related: ["Safe Isolation", "Test Equipment Standards", "Building Regulations", "In-Service Testing", "Electrics - Resources"]
+aliases: ["RCD Protection"]
 sources:
   - electrics/Resources.md
   - clippings/evidence-review-2026-09-22/Electrics.md
   - clippings/evidence-review-2026-10-16/Electrics.md
-related:
-  - Safe Isolation
-  - Test Equipment Standards
-  - GS38
-  - RCD Protection
-  - Building Regulations
-  - In-Service Testing
-  - Electrical Study Map
-  - Electrical Evidence Review - September 2026
-  - Electrics - Resources
-  - PAT Testing
-  - Part P
-  - BS 7671
-  - Electrical Evidence Review - October 2026
 created: 2026-04-12T00:00:00.000Z
-updated: '2026-10-15'
-tags:
-  - safety
-  - electrical-safety
-  - hazard-protection
-  - risk-assessment
-  - competence
-  - hse
-  - working-dead
-summary: "How to work dead, why RCDs, earthing and circuit breakers do different jobs, and how inspection and PAT fit in, with the HSE and IET references."
+updated: '2026-10-17'
 reviewed: '2026-10-16'
-review_status: reviewed
-review_notes: "Working dead, competence, RCD limits, GS38 scope and PAT frequency were checked against HSE's electrical and PAT FAQs, GS38 (fourth edition) and Electricity at Work Regulations 1989 regulations 13 and 14, and the conductive-part definitions against IET Wiring Matters and IEC 60050; the point that some tests can damage connected equipment rests on industry guidance because the BS 7671 text is paywalled."
+review_status: partial
+review_notes: "Working dead, competence and RCD limits were checked against HSE's electrical FAQs, IEC 61008-1 and EAWR 13 and 14; the rest of the merged RCD material is unchecked."
 review_due: '2027-01-14'
 source_gaps:
-  - >-
-    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection
-    and Testing Demonstration.md
-  - >-
-    raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT
-    Testing.md
+  - "raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 Inspection and Testing Demonstration.md"
+  - "raw/electrics/transcripts/summaries/Summary - Electrics Webinar 4 PAT Testing.md"
 ---
 
 # Electrical Safety
 
-Electrical safety starts with understanding the installation, the work and the limits of one's competence. This page covers working dead, how the protective measures fit together, and what inspection and testing can and cannot show. [[Safe Isolation]], [[Test Equipment Standards]] and supervised practical training belong together. These are study notes: for real work, follow the current standard, the official guidance below and supervised training.
+Electrical safety starts with knowing the installation, the work and the limits of your competence. No single device makes an installation safe: isolation, cable routing, earthing, overcurrent protection and RCDs each do a different job. This page covers working dead, what each protective measure is for, where an RCD's protection stops, and what inspection and testing can show.
 
 ## Working dead
 
-- [HSE](https://www.hse.gov.uk/electricity/faq.htm) says work should normally be performed dead: equipment securely isolated, secured against re-energisation and checked dead. (from [[Electrical Evidence Review - September 2026]])
-- Maintenance and testing need appropriate competence and suitable equipment.
-- [[GS38]] is HSE guidance on suitable test equipment: the leads, probes and voltage indicators used to prove dead.
-- A written isolation sequence in an old webinar summary does not cover every supply arrangement, and following it does not prove that all sources have been isolated. See [[Safe Isolation]] for the procedure and its limits.
+- [HSE](https://www.hse.gov.uk/electricity/faq.htm) says work should normally be done dead: isolated, secured against re-energisation and checked dead. The procedure is on [[Safe Isolation]].
+- Maintenance and testing need appropriate competence and suitable equipment. Leads, probes and instruments are on [[Test Equipment Standards]].
+- A written isolation sequence does not cover every supply arrangement, and following it does not prove every source is isolated.
 
-## Protection measures are complementary
+## What each measure does
 
-No single device makes an installation safe. RCD protection does not replace isolation, correct cable routing, earthing or the other required measures. An RCD cannot protect against every shock, and pressing its test button does not establish every aspect of installation safety. (from [[Electrical Evidence Review - September 2026]])
+- **RCD:** detects residual current to earth and disconnects, reducing the risk of shock from earth faults.
+- **Circuit breaker or fuse:** disconnects on overcurrent and short circuit.
+- **Earth (protective) conductor:** gives fault current a low-resistance path if a live part touches metal, so the protective device operates.
 
-- [[RCD Protection]] corrects the old trip-time and selectivity statements.
-- Correction, 22 September 2026: a 30 mA RCD alone does not permit arbitrary concealed cable routes outside the prescribed zones. [[Building Regulations]] covers the zones, additional protection and the permitted alternative construction methods.
+The one-line definitions are in [[Electrics - Resources]]. A protective conductor and an overcurrent device do different jobs. Do not reduce every piece of exposed metal to "must be earthed": the protective measure in use and the equipment class decide.
 
-### What each device is for
+Exposed-conductive-parts belong to equipment and can become live under fault. Extraneous-conductive-parts are not part of the installation but can introduce a potential, usually earth. Whether bonding is needed depends on whether a part really is extraneous.
 
-The Resources note gives one line per device (from [[Electrics - Resources]]):
+On the inspection schedule:
 
-- **RCD:** "protects against earth faults and electric shock."
-- **Circuit breaker:** "protects against overcurrent and short circuit."
-- **Earth cable:** "provides a low-resistance escape route for fault current if live touches metal."
+- **Basic protection:** insulation of live parts, barriers or enclosures, obstacles, placing out of reach.
+- **Additional protection:** an RCD of 30 mA or less, supplementary bonding, or both, depending on the location.
 
-The RCD line needs the HSE limit attached: an RCD cannot protect against every shock.
+## Where RCD protection stops
 
-A protective conductor and an overcurrent device perform different roles. Avoid reducing all exposed metal to "must be earthed": the protective measure in use and the equipment class matter.
+- An RCD rated 30 mA or less can reduce harm from some shocks, but it cannot protect against every shock. It never replaces isolation.
+- The test button is a functional check. Pressing it does not establish that the installation is safe.
+- Rated residual current is not an exact trip point in every condition.
+- Trip-time requirements depend on device type, test conditions and the applicable rules.
+- A higher-rated upstream RCD is not automatically selective; coordination needs a design.
+- An RCD does not make any concealed cable route acceptable. Zones, additional protection and permitted construction methods all apply; see [[Building Regulations]].
 
-### Exposed and extraneous parts
-
-The Resources note defines the two kinds of conductive part that can become hazardous under fault conditions (from [[Electrics - Resources]]):
-
-- **Exposed-conductive-part:** "a conductive part of equipment that can be touched and is not normally live, but can become live under fault conditions."
-- **Extraneous-conductive-part:** "a conductive part that can introduce a potential (generally earth potential) and is not part of the electrical installation."
-
-Bonding requirements depend on whether a part is actually extraneous and on the applicable installation rules.
+Correction, 22 September 2026: earlier notes gave a blanket 100–300 ms trip time, said a 300 mA device lets the 30 mA devices operate first, and treated "metal covering means no RCD" as unconditional. All three were incomplete or misleading.
 
 ## Inspection and testing
 
-Measurements alone do not make equipment safe.
+- Inspection comes first. Many defects, especially on condition reports, are found by looking, not from test results. BS 7671 Appendix 6 and GN3 both give inspection checklists.
+- Measurements alone do not make equipment safe; condition, environment and use matter too.
+- Some tests can damage what is connected. Insulation resistance testing can harm RCDs, LED lighting and IT equipment, so know what is on the circuit before applying test voltages.
+- Record defects and the extent of what was verified. A single reading or a sticker does not prove safety.
+- Portable equipment follows a risk-based regime; see [[In-Service Testing]].
 
-- The condition of equipment, the environment and the intended use matter alongside measurements.
-- Some tests can damage connected equipment. The procedure and limits must match the actual installation and instruments.
-- Record defects and the scope of verification. Do not treat a single reading or a sticker as proof of safety.
+## Competence
 
-### Portable equipment
-
-- [HSE's PAT FAQ](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm) explains risk-based maintenance rather than blanket annual testing.
-- Maintenance arrangements and inspection and testing intervals depend on risk, use and environment.
-- Visual checks matter; some faults require testing.
-- A test label is not a guarantee that the equipment remains safe.
-- Correction, 16 October 2026: the source for this point is HSE's [INDG236](https://www.hse.gov.uk/pubns/indg236.pdf) leaflet, not the [PAT FAQ](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm). INDG236 says a test indicates an appliance's safety only at the time of the test and does not imply it will stay safe, so user checks must continue; the FAQ says labels and records are not legally required but are a useful management tool.
-- See [[In-Service Testing]] and [[PAT Testing]].
-
-## Evidence status
-
-- Source gap: the summaries of Electrics Webinar 4 (the inspection and testing demonstration, and PAT testing) cannot currently be found, and the original webinar transcripts are unavailable.
-- Detailed legacy test procedures elsewhere in the wiki remain study notes until compared with the course material and the current standard. [[Electrical Study Map]] gives a focused route through those checks.
-- The official references behind this page's corrections are set out in [[Electrical Evidence Review - September 2026]].
-
-## Resources
-
-- [HSE — electrical safety FAQs](https://www.hse.gov.uk/electricity/faq.htm) — HSE's answers on electricity at work, the basis for the rule that work is normally done dead, isolated, secured and checked dead.
-- [HSE — portable appliance testing FAQs](https://www.hse.gov.uk/electricity/faq-portable-appliance-testing.htm) — why portable equipment needs risk-based maintenance, not blanket annual testing, and why labels and records are a management tool rather than a legal requirement.
-- [HSE INDG236: Maintaining portable electric equipment in low-risk environments](https://www.hse.gov.uk/pubns/indg236.pdf) — HSE's short leaflet on user checks, visual inspection and risk-based testing; says a test shows an appliance's safety only at the time of the test.
-- [HSE — GS38](https://www.hse.gov.uk/pubns/books/gs38.htm) — HSE's guidance on electrical test equipment for low-voltage systems: leads, probes and voltage indicators.
-- [IET — Cables in walls (2015)](https://electrical.theiet.org/media/1445/cables-in-walls.pdf) — IET article on safe zones, additional RCD protection and the permitted alternative methods for concealed cables. Seventeenth-edition guidance, so use the current BS 7671 text for design decisions.
-
-## Related
-
-[[Safe Isolation]] · [[Test Equipment Standards]] · [[GS38]] · [[RCD Protection]] · [[Building Regulations]] · [[In-Service Testing]] · [[PAT Testing]] · [[Part P]] · [[BS 7671]] · [[Electrics - Resources]] · [[Electrical Study Map]] · [[Electrical Evidence Review - September 2026]] · [[Electrical Evidence Review - October 2026]]
+Qualifications are not the whole picture. Competence means understanding the installation, the equipment connected to it, the instruments, and the requirements of [[BS 7671 and GN3|BS 7671]] and other standards. The Access Training instructor's line: "Every day is a school day." Ask questions, and do not be embarrassed about what you don't know.

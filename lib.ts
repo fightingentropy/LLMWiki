@@ -36,6 +36,7 @@ export interface WikiPage {
   reviewDue?: string;
   sourceGaps?: string[];
   summary?: string;
+  aliases?: string[]; // former titles of pages merged into this one
   mtime: number; // ms since epoch — filesystem modification time, used as fallback for updated
 }
 
@@ -103,6 +104,16 @@ export function buildFileAliases(pages: Map<string, WikiPage>): Map<string, stri
     const fileSlug = slugify(base);
     if (fileSlug && fileSlug !== slug && !pages.has(fileSlug)) {
       aliases.set(fileSlug, slug);
+    }
+  }
+  // Former titles of merged pages (frontmatter `aliases`) keep old wikilinks
+  // and /page/<old-slug> URLs working. A real page or filename alias wins.
+  for (const [slug, page] of pages) {
+    for (const name of page.aliases || []) {
+      const aliasSlug = slugify(name);
+      if (aliasSlug && aliasSlug !== slug && !pages.has(aliasSlug) && !aliases.has(aliasSlug)) {
+        aliases.set(aliasSlug, slug);
+      }
     }
   }
   return aliases;
@@ -456,6 +467,7 @@ async function parsePage(fullPath: string, relPath: string): Promise<WikiPage | 
       reviewNotes: String(data.review_notes || ""),
       reviewDue: normalizeDate(data.review_due),
       sourceGaps: toStringArray(data.source_gaps),
+      aliases: toStringArray(data.aliases),
       summary: String(data.summary || ""),
       content,
       html: "",
