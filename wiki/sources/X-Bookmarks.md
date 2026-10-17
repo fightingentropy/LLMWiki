@@ -6,6 +6,7 @@ summary: "Map of the saved X and Chrome bookmarks: the ten category pages and th
 tags: [bookmarks]
 related: [Evergreen Lessons from X, Personal Knowledge Management, Bookmarks - AI & Agents, Bookmarks - Markets & Crypto, Bookmarks - Health & Psychology]
 sources:
+  - snapshots/1792255578171-3af2abebd3f5/bookmarks/Index.md
   - snapshots/2026-09-30-x-evergreen-cleanup/receipt.md
   - snapshots/1790805107293-1d59d21b8449/bookmarks/Index.md
   - snapshots/1790804551519-8f428ba1884a/bookmarks/Design & Frontend.md
@@ -69,3 +70,10 @@ Saved X posts and selected Chrome bookmarks, filed into ten category pages. Each
 Since 30 September 2026, only posts worth knowing long after the timeline moves on are kept: principles, mechanisms, reference tools and well-argued theses. Release news, product hype, forecasts, rumours, gossip and entertainment are dropped, though earlier saves of that kind stay where they were filed. Keeping a post does not make it true; each page describes it as its author framed it.
 
 The lasting lessons drawn from these bookmarks are in [[Evergreen Lessons from X]]. [[Personal Knowledge Management]] covers how the bookmarks fit the wider note system.
+
+## Worth trying next
+
+- [[REA]] for tracing how an app feature works, starting with one companion-app command.
+- Companion-app capture, ipatool and xtool in [[Bookmarks - Developer Tools]].
+- Unlimited-OCR and paper-first tutoring in [[Bookmarks - AI & Agents]].
+- Navigation, search and graph reading panes in [[Bookmarks - Design & Frontend]].

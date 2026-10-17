@@ -6,6 +6,7 @@ summary: "Design link bank: tools, component kits, animation, type, colour, 3D a
 tags: [design, dev, bookmarks]
 related: [Design & Aesthetics, Bookmarks - Design & Frontend, Bookmarks - Media & Inspiration, Dev Resources, Developer Resources]
 sources:
+  - snapshots/1792255578171-84dd972f2331/misc/Design.md
   - misc/Design.md
 created: 2026-04-12T00:00:00.000Z
 updated: '2026-10-17'
@@ -272,3 +273,4 @@ Objects, buildings, maps and print pieces saved for their look.
 - [@imdevPU23 post](https://x.com/imdevPU23/status/2079909963489591794)
 - [@mayvencraft post](https://x.com/mayvencraft/status/2081907737907114326)
 - [@trpfsu post](https://x.com/trpfsu/status/2082534124531687602)
+- [Recent Design: websites](https://recent.design/websites)

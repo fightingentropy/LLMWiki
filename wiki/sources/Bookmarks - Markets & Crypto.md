@@ -6,6 +6,7 @@ summary: "Saved markets and crypto links by theme: Hyperliquid mechanics, tradin
 tags: [bookmarks, markets, crypto]
 related: [X-Bookmarks, Hyperliquid, Trading Psychology, Leverage and Liquidations, Macro Trading]
 sources:
+  - snapshots/1792255578171-5cc0ab0dbdd1/bookmarks/Markets & Crypto.md
   - snapshots/1790804551519-1de9816cb631/bookmarks/Markets & Crypto.md
   - bookmarks/Markets & Crypto.md
   - clippings/bookmark-updates-2026-09-22/Markets & Crypto.md
@@ -87,6 +88,7 @@ See [[Trading Psychology]] and [[Trading Philosophy]].
 - [Ex-Goldman trader on trading and life](https://x.com/lyemcfly/status/2098904929599467823) — Clip relating trading behaviour to personal behaviour. _(@lyemcfly)_
 - [The wrong lesson from The Big Short](https://x.com/Evan_ss6/status/2067033343216984194) — Wealth comes from surviving drawdowns and joining recoveries, not from romantic crash bets. _(@Evan_ss6)_
 - [Druckenmiller's 60 million Frenchmen](https://x.com/MacroOps/status/1276205912013840384) — [[Stanley Druckenmiller]]'s rule for when to respect or fade price action. _(@MacroOps)_
+- [Build skill, not one lucky month](https://x.com/follis_/status/2108450863673213432) — A Cobie passage: study, retry and build a process that works over years instead of needing a quick win. _(@follis_)_
 
 ## Risk, sizing, statistics and backtesting
 
@@ -102,6 +104,7 @@ See [[Trading Philosophy]] and [[Leverage and Liquidations]].
 - [Funding-rate signals are weak](https://x.com/OctopusTakopi/status/2085776377366864050) — Raw funding barely predicts daily price; conditioning, composites and carry added no robust alpha. _(@OctopusTakopi)_
 - [Prediction-market arbitrage maths](https://x.com/RohOnChain/status/2018041418573623617) — Links arbitrage bots to Frank-Wolfe and Bregman projection. _(@RohOnChain)_
 - [Stanford Bayes lecture for prediction markets](https://x.com/polydao/status/2037928641384894577) — Connects a free university lecture to Bayesian trading formulas. _(@polydao)_
+- [Keep risk vetoes outside the model](https://x.com/RohOnChain/status/2101311813908652069) — Code computes state and limits, a model gives a bounded judgement, independent gates decide; test after fees against a simple baseline. _(@RohOnChain)_
 
 ## Flows, liquidity and microstructure
 

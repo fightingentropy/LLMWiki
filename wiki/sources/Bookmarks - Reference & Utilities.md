@@ -6,6 +6,7 @@ summary: "Saved reference links and small utilities: account security, privacy s
 tags: [bookmarks, security, dev]
 related: [X-Bookmarks, Digital Security, Personal Knowledge Management, Developer Resources, Bookmarks - Developer Tools]
 sources:
+  - snapshots/1792255578171-12bea6b6cdbd/bookmarks/Reference & Utilities.md
   - snapshots/1790804551519-6d896f5ea773/bookmarks/Reference & Utilities.md
   - bookmarks/Reference & Utilities.md
   - clippings/bookmark-updates-2026-09-22/Reference & Utilities.md
@@ -41,6 +42,7 @@ See [[Digital Security]].
 - [Temp Number](https://temp-number.com/) — Disposable phone numbers; never use one for an account whose recovery matters.
 - [KYC identity-misuse post](https://x.com/ImmortalXelf/status/2098383180646523065) — Offers identity details and images for bypassing KYC; kept only as a fraud-risk example. _(@ImmortalXelf)_
 - [Reverse-image-search story](https://x.com/zoomerfemales/status/2097459473136664865) — A viral image whose subject stayed unidentified; provenance tools are not licence to identify private people. _(@zoomerfemales)_
+- [ICO: right of access](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/what-is-the-right-of-access/) — A UK subject access request after an interview gets existing notes and scores, not new feedback; see the [employment SAR guide](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/subject-access-request-q-and-as-for-employers/). Found via a [post](https://x.com/Shattubatu/status/2105956963993669855).
 
 ## Bookmarks and personal data
 

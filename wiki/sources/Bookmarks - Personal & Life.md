@@ -11,6 +11,7 @@ related:
   - Dating & Relationships
   - Evergreen Lessons from X
 sources:
+  - snapshots/1792255578171-ff4e82be7624/bookmarks/Personal & Life.md
   - snapshots/1790804551519-b4816fecf206/bookmarks/Personal & Life.md
   - bookmarks/Personal & Life.md
   - clippings/bookmark-updates-2026-09-22/Personal & Life.md
@@ -54,6 +55,7 @@ Decision frameworks are in [[Decision-Making]].
 - [Leaving a safe career as a repeated game](https://x.com/moneyfetishist/status/2039528758936207757) — Diminishing learning, golden handcuffs, status-quo bias and asymmetric regret. _(@moneyfetishist)_
 - [Recession-readiness checklist](https://x.com/blknoiz06/status/1910372160012771395) — Ansem: keep the CV current, maintain contacts, hold three to six months of cash, plan backup income. _(@blknoiz06)_
 - [Revolut balance-based transfers](https://x.com/ownsomeshares/status/2097765302599647728) — Move money automatically when an account crosses a set balance. _(@ownsomeshares)_
+- [Anthropic Fellows Program](https://job-boards.greenhouse.io/anthropic/jobs/5183044008) — The page lists 18 October 2026 for January-cohort consideration; UK stipend £2,310 a week; Python fluency and full-time availability required.
 
 ## Outings, travel and places
 
@@ -71,6 +73,7 @@ Decision frameworks are in [[Decision-Making]].
 - [Espresso-soaked dates with yoghurt](https://x.com/SUNTRESKA/status/2062051658142560444) — Soak dates in espresso overnight, then serve over yoghurt with salt or honey. _(@SUNTRESKA)_
 - [Our Place Titanium Pro Cookware](https://fromourplace.co.uk/collections/titanium-cookware) — Titanium-interior and stainless cookware on the kitchen shortlist.
 - [Reusable food covers](https://x.com/Sumilees/status/2089903347826393329) — Advert for stretchy reusable food-storage covers. _(@Sumilees)_
+- [Water and coffee acidity](https://sca.coffee/sca-news/25/issue-9/english/water-and-coffee-acidity-how-to-adapt-your-water-for-different-extraction-methods-25-magazine-issue-9-pxjby) — Specialty Coffee Association on matching water minerals to the brew; one TDS number does not describe water. Found via a [post](https://x.com/levelsio/status/2106052962476798448).
 
 ## Water filtration and air quality
 

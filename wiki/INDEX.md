@@ -35,7 +35,7 @@ Every page, grouped by subject. Hover a title on the home page for its one-line 
 ## Dev, design and AI
 
 **Topics:** [[3D Printing and Digital Fabrication]] · [[AI Agents]] · [[Design & Aesthetics]] · [[Developer Resources]] · [[Digital Security]]
-**People and tools:** [[Omarchy]]
+**People and tools:** [[Omarchy]] · [[REA]]
 
 ## Health
 

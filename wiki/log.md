@@ -258,3 +258,17 @@ What changed:
 Review statuses: merged pages keep the weaker status of their parts. Mental Health, Electrical Safety and the Electrical Study Map are now `partial`, because they absorbed material that was only partly checked.
 
 Validation: words on pages 340,746 to 77,793 (log excluded). Every one of the 2,086 URLs in the previous wiki is on its home page (1,652 unique URLs on pages) or in an original note linked from its home page; none lost. `bun run check` reports 97 pages, zero broken references and no pages over the limits; 45 tests pass; the static build passes; no orphan pages. Pages awaiting evidence review: 11; recorded source gaps: 9 pages. No raw source was modified.
+
+---
+
+## [2026-10-17] ingest | October vault changes: 29 new links, REA, vault path and ingest limits
+
+The vault moved to iCloud Drive `Obsidian/Brain`; capture now defaults to that folder. Ingest now rejects any staged page over the size or style limits in `shape.ts` and accepts links to former titles listed in `aliases`.
+
+Captured 11 revised or new vault notes as new immutable versions: nine bookmark categories and their index, `misc/Design.md`, and the new `misc/REA.md`. Filed the 29 new bookmark entries (from the 11 and 16 October X reviews) one line each under the matching themes in [[Bookmarks - Developer Tools]], [[Bookmarks - AI & Agents]], [[Bookmarks - Design & Frontend]], [[Bookmarks - Health & Psychology]], [[Bookmarks - Markets & Crypto]], [[Bookmarks - Reference & Utilities]], [[Bookmarks - Business & Startups]] and [[Bookmarks - Personal & Life]], plus three bare design links. Created [[REA]] from the new project note and added a short "Worth trying next" list to [[X-Bookmarks]]. The index's Anthropic Fellows lead went to [[Bookmarks - Personal & Life]].
+
+Two entries were deleted upstream and removed from their pages to match: the PS5 hardware-jailbreak post (Developer Tools) and the GPT-generated GTA demo (AI & Agents). Both remain in earlier captures.
+
+The source index also records the 11 October review (142 bookmarks, 29 entries from 33 posts, 143 bookmarks then removed from X) and the 16 October review (57 bookmarks, 12 posts filed, all 57 then removed). Those records stay in the captured index, not on wiki pages.
+
+Validation: all 91 new URLs are on their home pages; `bun run check` reports 98 pages, zero broken references and no pages over the limits; 46 tests pass; nothing pending ingest.

@@ -12,6 +12,7 @@ related:
   - Digital Security
 aliases: [Quicker]
 sources:
+  - snapshots/1792255578171-2c487a39dedd/bookmarks/Business & Startups.md
   - bookmarks/Business & Startups.md
   - clippings/bookmark-updates-2026-09-22/Business & Startups.md
   - snapshots/1790106580663-a89aec13108a/bookmarks/Business & Startups.md
@@ -55,6 +56,7 @@ The design side is in [[Design & Aesthetics]].
 - [Consumer information-market thesis](https://x.com/gabri3l/status/2026034684514431019) — Narrative charts, domain expertise and changing trader identity. _(@gabri3l)_
 - [Hybrid stationery, café, plant, music and book shop](https://x.com/ben8128/status/2069236362470199582) — Ben Eidelson on a proposed all-in-one shop with mid-century and wabi-sabi styling. _(@ben8128)_
 - [Instagram-advertised products turn out good](https://x.com/gametheorizing/status/2042121890467344789) — Heavily advertised products worked well; maybe recommendation algorithms changed seller incentives. _(@gametheorizing)_
+- [Make the product legible to its buyer](https://x.com/rdominguezibar/status/2105946900855701825) — Enterprise buyers judge by perception: show their problem, credible evidence and the outcome. _(@rdominguezibar)_
 
 ## AI and robotics business models
 

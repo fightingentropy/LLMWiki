@@ -2,7 +2,7 @@ import { join, dirname } from "node:path";
 import { readdir, mkdir, readFile, writeFile, stat, rename } from "node:fs/promises";
 import { digest, RAW_ROOT } from "./sources";
 
-const BRAIN_PATH = process.env.BRAIN_PATH || "/Users/erlinhoxha/Library/Mobile Documents/com~apple~CloudDocs/Markdown/Brain";
+const BRAIN_PATH = process.env.BRAIN_PATH || "/Users/erlinhoxha/Library/Mobile Documents/com~apple~CloudDocs/Obsidian/Brain";
 const SYNC_MAP: Record<string, string> = { misc: "misc", markets: "markets", bookmarks: "bookmarks", electrics: "electrics", img: "assets" };
 export interface CaptureChange { source: string; destination: string; kind: "new" | "revision"; sha256: string; }
 export interface CaptureStatus { lastCapturedAt: string | null; files: Record<string, { path: string; sha256: string; capturedAt: string }>; }

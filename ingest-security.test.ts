@@ -161,8 +161,9 @@ describe("staged validation and publication", () => {
       "title: Input",
       "type: source",
       "domain: dev",
+      'summary: "A short safe summary."',
       "sources: [misc/input.md]",
-      "tags: [test]",
+      "tags: [dev]",
       "---",
       "",
       "A safe summary linking to [[Base]].",
@@ -203,12 +204,26 @@ test('staged publication rejects broken metadata even when body links are valid'
  const {workspace,validated}=await stagedFixture();
  await mkdir(join(workspace.wikiDir,'sources'),{recursive:true});
  const file=join(workspace.wikiDir,'sources','Input.md');
- const source=(refs:string,sources:string)=>`---\ntitle: Input\ntype: source\ndomain: dev\nsources: [${sources}]\nrelated: [${refs}]\ntags: [test]\n---\n\n[[Base]]\n`;
+ const source=(refs:string,sources:string)=>`---\ntitle: Input\ntype: source\ndomain: dev\nsummary: "A short summary."\nsources: [${sources}]\nrelated: [${refs}]\ntags: [dev]\n---\n\n[[Base]]\n`;
  await writeFile(file,source('Missing','misc/input.md'));
  await expect(validateStagedWiki(workspace,validated)).rejects.toThrow('broken related page');
  await writeFile(file,source('Base','misc/input.md, misc/missing.md'));
  await expect(validateStagedWiki(workspace,validated)).rejects.toThrow('missing source');
  await writeFile(file,source('Base','misc/input.md'));
+ expect((await validateStagedWiki(workspace,validated)).changedFiles).toContain('sources/Input.md');
+ await removeIngestWorkspace(workspace);
+});
+
+test('staged publication enforces size and style limits and accepts alias links',async()=>{
+ const {workspace,validated}=await stagedFixture();
+ await mkdir(join(workspace.wikiDir,'sources'),{recursive:true});
+ const file=join(workspace.wikiDir,'sources','Input.md');
+ await writeFile(join(workspace.wikiDir,'topics','Base.md'),'---\ntitle: Base\ntype: topic\nsummary: "Base."\ntags: [dev]\naliases: [Old Base]\nsources: []\n---\n\nBase.\n');
+ const page=(body:string)=>`---\ntitle: Input\ntype: source\ndomain: dev\nsummary: "A short summary."\nsources: [misc/input.md]\ntags: [dev]\n---\n\n${body}\n`;
+ const long=Array.from({length:40},(_,i)=>`word${i}`).join(' ');
+ await writeFile(file,page(`[[Old Base]]\n\n- [Tool](https://example.com/tool) — ${long}`));
+ await expect(validateStagedWiki(workspace,validated)).rejects.toThrow('size or style limits');
+ await writeFile(file,page('[[Old Base]]\n\n- [Tool](https://example.com/tool) — A small tool for one job.'));
  expect((await validateStagedWiki(workspace,validated)).changedFiles).toContain('sources/Input.md');
  await removeIngestWorkspace(workspace);
 });

@@ -6,6 +6,7 @@ summary: "Saved health and psychology posts, grouped by subject, each paired wit
 tags: [bookmarks, health, psychology]
 related: [X-Bookmarks, Health Evidence, ADHD, Mental Health, Body Optimization]
 sources:
+  - snapshots/1792255578171-fd845515af75/bookmarks/Health & Psychology.md
   - bookmarks/Health & Psychology.md
   - clippings/bookmark-updates-2026-09-22/Health & Psychology.md
   - snapshots/1790106580663-40c34995b4f7/bookmarks/Health & Psychology.md
@@ -47,6 +48,7 @@ Saved posts and studies, described from their notes; the claims are the authors'
 - [A wandering mind is an unhappy mind](https://www.science.org/doi/10.1126/science.1192439) — Killingsworth and Gilbert, 2010: people felt less happy while mind-wandering, even to pleasant topics. Found via [Nicholas Fabiano](https://x.com/NTFabiano/status/2086444739805532641). _(@NTFabiano)_
 - [Negative thinking and Alzheimer's](https://x.com/dhh/status/2101644926094373128) — DHH jokes about a study linking repetitive negative thinking to Alzheimer's-related protein build-up. _(@dhh)_
 - [Gut microbiota from depressed people, in rats](https://doi.org/10.1016/j.jpsychires.2016.07.019) — 2016 study: microbiota from three depressed donors produced anhedonia- and anxiety-like behaviour and altered tryptophan metabolism in rats. _(via @NTFabiano)_
+- [Cyclic sighing study](https://doi.org/10.1016/j.xcrm.2022.100895) — Month-long randomised study of five-minute daily breathing versus mindfulness; mood and breathing-rate benefits were strongest with cyclic sighing. Found via a [post](https://x.com/SahilBloom/status/2107476951908966700).
 
 ## Attention, habits and sleep
 
@@ -104,6 +106,7 @@ Saved posts and studies, described from their notes; the claims are the authors'
 - [Water preloading post](https://x.com/SmartNotHard1/status/2083606184594919582) — Presents water before meals as a standalone fat-loss method with a 24–30% metabolism boost. _(@SmartNotHard1)_
 - [Peptides versus supplements](https://x.com/minordissent/status/2094564810554052961) — Several peptides felt noticeable and most supplements placebo-like, though peptides are overhyped. See [[Peptide Reconstitution]]. _(@minordissent)_
 - [Peptides Lab UK](https://peptideslabuk.com/) — UK peptide vendor.
+- [Magnesium L-threonate trial](https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1729164/full) — Six weeks, 100 adults, 2 g/day compound: some cognitive gains, no objective sleep change; industry-funded. Found via a [post](https://x.com/oasishealthapp/status/2109312645098615190).
 
 ## Alcohol, tobacco and COVID
 

@@ -16,7 +16,8 @@ import { createHash, randomUUID } from "crypto";
 import { basename, dirname, extname, isAbsolute, join, relative, resolve, sep } from "path";
 import { tmpdir } from "os";
 import matter from "gray-matter";
-import { extractWikilinks, markdownToHtml, slugify } from "./lib";
+import { extractWikilinks, markdownToHtml, slugify, type WikiPage } from "./lib";
+import { checkShape } from "./shape";
 import { loadRawSources, resolveSource } from "./sources";
 
 export const DEFAULT_INGEST_LIMITS = {
@@ -287,6 +288,9 @@ export async function validateStagedWiki(
     const title = String(parsed.data.title || basename(rel, ".md"));
     titleSlugs.add(slugify(title));
     fileSlugs.add(slugify(basename(rel, ".md")));
+    // Former titles of merged pages still resolve (see `aliases` in lib.ts).
+    const aliases = Array.isArray(parsed.data.aliases) ? parsed.data.aliases : parsed.data.aliases ? [parsed.data.aliases] : [];
+    for (const alias of aliases) fileSlugs.add(slugify(String(alias)));
     parsedPages.push({ rel, content: parsed.content, data: parsed.data });
 
     const html = markdownToHtml(parsed.content, new Set());
@@ -341,6 +345,23 @@ export async function validateStagedWiki(
     for (const reference of sources) {
       if (!resolveSource(String(reference), rawSources)) throw new Error(`Staged wiki has a missing source in ${page.rel}: ${reference}`);
     }
+  }
+
+  // Size and style limits (shape.ts) apply to the pages this ingest changed, so an
+  // ingest that bloats a page is rejected here instead of failing the deploy later.
+  const list = (v: any): string[] => Array.isArray(v) ? v.map(String) : v == null || v === "" ? [] : [String(v)];
+  const shapePages = new Map<string, WikiPage>();
+  for (const page of parsedPages) {
+    shapePages.set(page.rel, {
+      slug: page.rel, title: String(page.data.title || basename(page.rel, ".md")), type: String(page.data.type || "unknown"),
+      domain: String(page.data.domain || ""), tags: list(page.data.tags), sources: list(page.data.sources), related: list(page.data.related),
+      summary: page.data.summary ? String(page.data.summary) : "", content: page.content, created: "", updated: "", html: "", links: [],
+      category: page.rel.split("/")[0], path: page.rel, wordCount: 0, readingTime: 0, headings: [], mtime: 0,
+    });
+  }
+  const shapeErrors = checkShape(shapePages).filter((issue) => issue.level === "error" && changedFiles.includes(issue.slug));
+  if (shapeErrors.length) {
+    throw new Error(`Staged wiki breaks the size or style limits: ${shapeErrors.slice(0, 5).map((e) => `${e.slug}: ${e.detail}`).join("; ")}${shapeErrors.length > 5 ? ` (and ${shapeErrors.length - 5} more)` : ""}`);
   }
 
   return { files, changedFiles, totalBytes };

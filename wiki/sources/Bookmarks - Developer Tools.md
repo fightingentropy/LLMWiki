@@ -11,6 +11,7 @@ related:
   - Omarchy
   - AI Agents
 sources:
+  - snapshots/1792255578171-0534857bf5c6/bookmarks/Developer Tools.md
   - snapshots/1790804551519-100cbe63e7fd/bookmarks/Developer Tools.md
   - bookmarks/Developer Tools.md
   - clippings/bookmark-updates-2026-09-22/Developer Tools.md
@@ -61,7 +62,6 @@ Security background lives in [[Digital Security]].
 - [MDN: RTCIceCandidate address](https://developer.mozilla.org/en-US/docs/Web/API/RTCIceCandidate/address) — How WebRTC candidates expose addresses; relay-only ICE is the application-side fix.
 - [Cloudflare: DNS over TLS](https://www.cloudflare.com/learning/dns/dns-over-tls/) — Encrypted DNS hides lookups in transit, not all traffic or identity signals.
 - [Mullvad exit-IP fingerprinting](https://tmctmt.com/posts/mullvad-exit-ips-as-a-fingerprinting-vector/) — Deterministic exit IPs collapsed 3,650 WireGuard keys into 284 combinations; Mullvad has since scrambled them.
-- [PS5 hardware jailbreak](https://x.com/GodSon83/status/2095675020270022974) — Post about a hardware-level PS5 exploit said to rip games and run emulators. _(@GodSon83)_
 - [Removing Claude content-credential metadata](https://x.com/guillaumemeyer/status/2095207287392501986) — Tool that strips content credentials from Claude files; provenance metadata does not survive ordinary transforms. _(@guillaumemeyer)_
 - [Instagram private-graph analyser](https://x.com/akaclandestine/status/2096556432908791953) — Project that infers interactions with private Instagram accounts; kept as a privacy-risk reference. _(@akaclandestine)_
 - [Magika](https://github.com/google/magika) — Google's open-source tool that detects file type from bytes rather than extensions, with CLI and language bindings.
@@ -91,6 +91,7 @@ Background in [[Omarchy]].
 - [Omarchy Pods](https://github.com/thisisgm/omarchy-pods) — AirPods controls on Linux; [announcement](https://x.com/stevenharms/status/2089539284508561623) and [repository post](https://x.com/stevenharms/status/2089539319908495584). _(@stevenharms)_
 - [Touch ID on Linux through t1bridge](https://x.com/niconistal/status/2097906524559384816) — User report of fingerprint login on Linux after removing macOS. _(@niconistal)_
 - [LibrePods](https://x.com/HowToPrompt__/status/2068685081900875926) — Open-source AirPods features on Android and Linux: noise control, ear detection, battery and gestures. _(@HowToPrompt__)_
+- [omdrop-owl](https://github.com/t4t5/omdrop-owl) — AirDrop from Linux through an AWDL radio backend; tested MediaTek chips keep Wi-Fi, Intel ones drop it. Found via a [post](https://x.com/jaywcjlove/status/2108866487473885591).
 
 ## macOS utilities and virtualization
 
@@ -127,6 +128,7 @@ Broader agent material is in [[AI Agents]].
 - [DDTree-MLX](https://github.com/humanrouter/ddtree-mlx) — Tree-based speculative decoding for MLX; about 1.5× faster on code, no gain on creative prose.
 - [LiteParse v2](https://github.com/run-llama/liteparse) — Rust PDF parser with Python, Node and WASM packages.
 - [Reverse-engineered Apple Neural Engine](https://x.com/ronaldmannak/status/2028560995875168292) — Research on ANE efficiency and CoreML overhead. _(@ronaldmannak)_
+- [DigUp](https://github.com/ARahim3/DigUp) — On-device search by meaning across documents, images, audio and video; Apple Silicon, 865 MB model, skips cloud-only iCloud files. Found via a [post](https://x.com/googlegemma/status/2110044337849692644).
 
 ## Audio, voice and media
 
@@ -182,6 +184,10 @@ Broader agent material is in [[AI Agents]].
 - [iOS-remote](https://x.com/HowToPrompt__/status/2068945092115898827) — Controls a USB-connected iPhone from a browser, built on WebDriverAgent. _(@HowToPrompt__)_
 - [SMS Gateway for Android](https://x.com/HowToPrompt__/status/2069816991943401633) — Exposes a phone's SIM through REST APIs and webhooks. _(@HowToPrompt__)_
 - [YouTube Plus for iOS](https://x.com/senumy_ipa/status/2099730938662154664) — Unofficial sideloaded YouTube build with downloads and Picture in Picture. _(@senumy_ipa)_
+- [ipatool](https://github.com/majd/ipatool) — App Store search, version metadata, owned-app lists and package downloads, now with a stdio MCP server. Found via a [post](https://x.com/dev_majd/status/2108675420426031455).
+- [xtool](https://github.com/xtool-org/xtool) — Builds, signs and installs SwiftPM-based iOS apps from Linux, WSL or macOS; not full Xcode parity. Found via a [post](https://x.com/RoundtableSpace/status/2109105454328742233).
+- [omarchy-apple-dev v0.4.0](https://github.com/joshuaswarren/omarchy-apple-dev/releases/tag/v0.4.0) — Checks requested signing entitlements against the profile; device callbacks still unconfirmed. Posts: [one](https://x.com/RoundtableSpace/status/2110328513504985508), [two](https://x.com/JoshuaSWarren/status/2110479554951491656).
+- [scrcpy 5.0](https://github.com/Genymobile/scrcpy/releases/tag/v5.0) — Mirror and control Android devices from a computer; 5.0 adds hardware decoding. Found via a [post](https://x.com/scrcpy_app/status/2107230944612815155).
 
 ## Data, scraping and APIs
 
@@ -198,6 +204,7 @@ Broader agent material is in [[AI Agents]].
 - [Optimizing Hyperliquid order signing](https://www.research.hangukquant.com/p/optimising-the-hyperliquid-python) — Cached typed-data hashes and C-backed secp256k1 cut signing from about 2.5 ms to 0.09 ms. Exchange: [[Hyperliquid]].
 - [Machine Payments Protocol services](https://mpp.dev/services) — Directory of services on the machine-payments protocol.
 - [WalletConnect React App](https://react-app.walletconnect.com/) — WalletConnect's React integration test app.
+- [terminal-rs](https://github.com/michaelshimeles/terminal-rs) — Rust market terminal with GPU charts, dockable panes and congressional-disclosure ingestion; some feeds fall back to sample data. Found via a [post](https://x.com/Rasmic/status/2109723177865596945).
 
 ## Hardware, research and simulation
 
@@ -208,6 +215,16 @@ Broader agent material is in [[AI Agents]].
 - [Kame quadruped robot](https://x.com/sciencegirl/status/2039953915207200928) — Small open-source, 3D-printable robot with animal-like walking. _(@sciencegirl)_
 - [OpenTools Studio printer](https://x.com/rafaelcaricio/status/2102031482566955116) — Enthusiastic post about the [OpenTools Studio](https://www.opentools.studio/) printer; see [[3D Printing and Digital Fabrication]]. _(@rafaelcaricio)_
 - [Oxide 3D Explorer](https://explorer.oxide.computer/) — Oxide Computer's interactive 3D explorer of its hardware.
+- [Hacking smart photo frames](https://wesbos.com/hacking-smart-photo-frames) — Wes Bos turns a cheap touchscreen frame into a browser dashboard; needs a rootable model. Found via a [post](https://x.com/wesbos/status/2108550413599265045).
+- [ESP32 iPhone Agent](https://github.com/onehumanbeing/esp32-iphone-agent) — An ESP32-S3 acts as AirPlay receiver and USB keyboard-mouse so an agent can drive an iPhone. Found via a [post](https://x.com/RoundtableSpace/status/2109905727737459188).
+- [SiriMote](https://eternalstorms.at/sirimote/) — Control Mac media, slides, volume and sleep with an Apple TV Siri Remote. Found via a [post](https://x.com/peduarte/status/2109577984365539829).
+
+## Reverse engineering and device APIs
+
+- [REA](https://github.com/morluto/rea) — Connects agents to analysis tools so an app feature traces to code or captured traffic; notes on [[REA]]. Found via a [post](https://x.com/RoundtableSpace/status/2109165852578992582).
+- [REA 6.5.0](https://github.com/morluto/rea/releases/tag/rea-agents-6.5.0) — Release with wider capture and offline inspection; see also [our fork](https://github.com/fightingentropy/rea) and posts by [@morluto](https://x.com/morluto/status/2110351327343841393) and [@yuhasbeentaken](https://x.com/yuhasbeentaken/status/2109235513102057828).
+- [Companion-app API capture](https://docs.mitmproxy.org/stable/howto/install-system-trusted-ca-android/) — Capture one device action at a time from its companion app with mitmproxy; certificate pinning can block it. Posts: [one](https://x.com/grok/status/2109134853769671093), [two](https://x.com/icanberk/status/2109053667039236113), [three](https://x.com/icanberk/status/2109031477484937571).
+- [Blue Star AC as an MCP server](https://x.com/the_mcnaveen/status/2109599383717335207) — Worked example: companion-app research turned into an MCP interface and a menu-bar app. _(@the_mcnaveen)_
 
 ## Other saved links
 

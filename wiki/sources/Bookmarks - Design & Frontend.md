@@ -11,6 +11,7 @@ related:
   - Bookmarks - AI & Agents
   - Bookmarks - Media & Inspiration
 sources:
+  - snapshots/1792255578171-33b700905a72/bookmarks/Design & Frontend.md
   - snapshots/1790804551519-8f428ba1884a/bookmarks/Design & Frontend.md
   - bookmarks/Design & Frontend.md
   - clippings/bookmark-updates-2026-09-22/Design & Frontend.md
@@ -35,6 +36,7 @@ A design and frontend reference library: interface polish, motion, components, t
 - [Flutter streak indicator polish](https://x.com/pomis172/status/2031438309201731642) — Microinteraction for a habit-streak indicator, built in Flutter. _(@pomis172)_
 - [Toggle-pill component](https://x.com/zzzzshawn/status/2031640056696582500) — Component and motion reference for a toggle pill. _(@zzzzshawn)_
 - [Receipt Printer interaction](https://x.com/insporadesign/status/2087475430865383598) — dqnamo's receipt-inspired interface with tactile motion and skeuomorphic feedback, shared by Inspora. _(@insporadesign)_
+- [EasyUI](https://easyui.site) — Gallery whose compact payment-complete state shows outcome, object and next action in little space. Found via a [post](https://x.com/surajmaurya_m/status/2106620926351814709).
 
 ## Interaction patterns and UX ideas
 
@@ -46,6 +48,8 @@ A design and frontend reference library: interface polish, motion, components, t
 - [Ink: a Chinese calligraphy art and learning interface](https://x.com/benlaudesign/status/2082434477536530619) — Ben Lau's prototype for free writing and tracing, with stroke-order teaching and ink controls. _(@benlaudesign)_
 - [Writer Markdown editor diagram presentation](https://writer.computer/) — Joel's Markdown editor shows Mermaid diagrams and charts without them feeling bolted on. _(@joelbqz)_
 - [Research-grade medical AI workflow](https://x.com/ivanboroja/status/2032084946823573787) — Context-aware research interface with section-level statistical guidance. _(@ivanboroja)_
+- [Context-preserving navigation](https://x.com/eliakuratli/status/2108248320699498919) — Active-tab pill, group-creation control and expanding search that keep spatial context; more from [@sucodeee](https://x.com/sucodeee/status/2107788162982695007) and [here](https://x.com/sucodeee/status/2106690154429841524). _(@eliakuratli)_
+- [Flint graph with a reading pane](https://x.com/mutableos/status/2107092284571517268) — Selecting a graph node opens its note, context and neighbours in a side panel. _(@mutableos)_
 
 ## Motion and animation
 
@@ -73,6 +77,7 @@ A design and frontend reference library: interface polish, motion, components, t
 - [CSS squircle components](https://x.com/AliGrids/status/2032008241446801840) — CSS technique for squircle-shaped components. _(@AliGrids)_
 - [Neumorphic UI components](https://x.com/AliGrids/status/2031959590041239696) — Neumorphic component and material style reference. _(@AliGrids)_
 - [Custom dials with ChromaDial](https://x.com/sinasamaki/status/2032921770437538033) — Tutorial on building custom dial controls with ChromaDial. _(@sinasamaki)_
+- [Rare UI](https://www.rareui.com/) — Free open-source animated React components, installable through shadcn or MCP. Found via a [post](https://x.com/SwamiMalode/status/2105790304838406277).
 
 ## Typography
 
@@ -89,6 +94,7 @@ A design and frontend reference library: interface polish, motion, components, t
 - [ASCII web section](https://x.com/praveenisomer/status/2032418900298887633) — An ASCII typographic treatment for a web section. _(@praveenisomer)_
 - [Interactive p5.js vortex typography](https://x.com/vamsibatchuk/status/2031192210037751990) — Vamsi Batchu's p5.js piece with controls for font, speed, text and vortex. _(@vamsibatchuk)_
 - [Fluid-to-structured WebGL typography](https://x.com/Sirokos/status/1813690513704583491) — Fluid shader forms resolve into readable Three.js text. _(@Sirokos)_
+- [Cal Sans](https://cal.com/font) — Cal.com's typeface; compare weights, language coverage and licence before adopting. Found via a [post](https://x.com/peer_rich/status/2105690480017027401).
 
 ## AI-assisted design
 
@@ -155,6 +161,7 @@ A design and frontend reference library: interface polish, motion, components, t
 - [Paper visuals for Stripe annual letter](https://x.com/paper/status/2032199109206274243) — Stripe annual-letter visuals made in Paper with filters and a CMYK halftone shader. _(@paper)_
 - [Tile-pattern branding effect](https://x.com/arlanoska/status/2085028305364037816) — Arlan turns a small brand mark into a repeating, dimensional tile background, with code. _(@arlanoska)_
 - [Choosing Keeping](https://choosingkeeping.com/) — Covent Garden stationery shop; a reference for paper, writing tools and considered retail.
+- [Ferroprint blueprint diagrams](https://x.com/iamdothash/status/2107527224362729825) — Node-and-edge diagrams on a grid in an engineering-drawing style, for architecture explanations. _(@iamdothash)_
 
 ## Data visualisation and dashboards
 
@@ -164,6 +171,8 @@ A design and frontend reference library: interface polish, motion, components, t
 - [USGS river-flow WebGL visualization](https://x.com/AhmedShahnab/status/2031346836577898885) — Shahnab Ahmed turns live river-flow data into a shader-driven display. _(@AhmedShahnab)_
 - [Interactive Morse-code binary tree](https://x.com/AhmedShahnab/status/2032790596729938286) — Morse-code tree built with React Three Fiber and Web Audio. _(@AhmedShahnab)_
 - [StonkRider: ride a stock chart](https://stonkrider.com/) — Browser game that turns a stock or crypto price chart into motocross terrain. _(via @hrdktwt)_
+- [Warehouse spatial overview](https://x.com/DilumSanjaya/status/2106426962738880879) — Central spatial view with status summaries and a detail panel; worth it only when location matters. _(@DilumSanjaya)_
+- [Dashboard with one dominant view](https://x.com/adeebrq/status/2109079189236400244) — A central map, narrow navigation rail and compact supporting charts below. _(@adeebrq)_
 
 ## 3D, WebGL and shaders
 
@@ -177,6 +186,7 @@ A design and frontend reference library: interface polish, motion, components, t
 - [WebGPU particle-life demo](https://x.com/EIiasNajarro/status/2039008288252019164) — Interactive particle-life simulation in WebGPU and WGSL. _(@EIiasNajarro)_
 - [Interactive texture and refraction study](https://x.com/muhammadepoju/status/2031061180869914744) — Material experiment in texture and refraction. _(@muhammadepoju)_
 - [Interactive bending light rays](https://x.com/hiunicornstudio/status/2031832987000553890) — Unicorn Studio material and motion effect. _(@hiunicornstudio)_
+- [Clothing-rack browser](https://motionary.dev/builds/clothing-rack) — A tangible 3D rack for browsing garments; a specialist pattern, not general navigation. Found via a [post](https://x.com/mehdi_made/status/2106715509450493993).
 
 ## Spatial interfaces, AR and Gaussian splats
 
@@ -212,3 +222,6 @@ A design and frontend reference library: interface polish, motion, components, t
 - [@cmnijhof post](https://x.com/cmnijhof/status/2084271925119906241)
 - [@raul_dronca post](https://x.com/raul_dronca/status/2084572141815509009)
 - [@AdamKPx post](https://x.com/AdamKPx/status/2103953289411002578)
+- [HorizonX Reel Flux](https://horizonx.so/tools/reel-flux)
+- [Paper Mono](https://paper.design/mono)
+- [Recent Design: websites](https://recent.design/websites)

@@ -11,6 +11,7 @@ related:
   - Digital Security
   - Personal Knowledge Management
 sources:
+  - snapshots/1792255578171-a33ad7d01e77/bookmarks/AI & Agents.md
   - snapshots/1790804551519-2ba369d73e43/bookmarks/AI & Agents.md
   - bookmarks/AI & Agents.md
   - clippings/bookmark-updates-2026-09-22/AI & Agents.md
@@ -38,6 +39,10 @@ Saved links on AI models and agents: prompting, coding-agent workflows, personal
 - [Grill-me skill for stress-testing plans](https://github.com/matt-riley/agent-skills/blob/main/skills/grill-me/SKILL.md) — Questions a plan one open branch at a time, suggesting answers and checking the codebase; via [Theo](https://x.com/theo/status/2088057260807532867). _(@theo)_
 - [Autoresearch loop for improving agent skills](https://x.com/Hesamation/status/2034220679671714283) — Define tests, mutate a skill, and keep only the measured improvements. _(@Hesamation)_
 - [Trail of Bits agent skills repository](https://x.com/cryps1s/status/2028919544006492448) — Points to Trail of Bits' public repository of high-quality agent skills. _(@cryps1s)_
+- [Paper-first tutoring](https://x.com/IterIntellectus/status/2108956765153075200) — Work on paper, photograph it, and ask the model for the first wrong step and a hint before any solution. _(@IterIntellectus)_
+- [Choose the explanation format](https://x.com/karpathy/status/2105819303471976479) — Controlled language for sequences, diagrams for relationships, small interactive examples for mechanisms; ASD-STE100 is on [[Dev Resources]]. _(@karpathy)_
+- [How to be more ambitious with models](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/) — Brief the outcome, supply raw evidence and tools, define an outside check. Posts: [@felixrieseberg](https://x.com/felixrieseberg/status/2110023283169247623), [@karpathy](https://x.com/karpathy/status/2109361546505966046).
+- [Anatomy](https://github.com/wheresryan22/anatomy) — Open-source illustration skill for SVG and WebGL technical figures; check the geometry and labels. Found via a [post](https://x.com/wheresryan22/status/2108948624004526516).
 
 ## Coding-agent workflows and orchestration
 
@@ -54,6 +59,7 @@ Saved links on AI models and agents: prompting, coding-agent workflows, personal
 - [Claude Code builds a personal DICOM viewer](https://x.com/redp314/status/2088206627954405400) — A user builds a viewer for about 800 dental CT files in two prompts; a viewer, not a diagnostic tool. _(@redp314)_
 - [DeepSWE long-horizon coding-agent benchmark](https://deepswe.datacurve.ai/) — 113 original tasks across 91 repositories with hand-written behavioural verifiers, built to resist training-data contamination. _(via @serenaa_ge)_
 - [Reliability cannot be reduced to recovery speed](https://x.com/mitchellh/status/2055380239711457578) — Mitchell Hashimoto: agent-heavy teams can improve recovery metrics while losing understanding of their own systems. _(@mitchellh)_
+- [Give agents a stopping condition](https://x.com/Lon/status/2107616818726838545) — State the change, scope, evidence of completion and what should trigger a pause, so autonomous work does not drift. _(@Lon)_
 
 ## Personal agents and autonomous runtimes
 
@@ -75,6 +81,7 @@ Mostly OpenClaw-style runtimes and the hardware, isolation and integrations arou
 - [Open-source CashClaw work agent](https://x.com/moltlaunch/status/2032517428949733755) — Autonomous loop covering task selection, delivery, payment and learning. _(@moltlaunch)_
 - [Agentic USDC wallet to Visa purchase](https://x.com/mansipraks/status/2034451124288143385) — End-to-end example of an agent spending through x402 and card rails. _(@mansipraks)_
 - [AI-assisted "luck surface area" through a personal relationship graph](https://x.com/edleonklinger/status/2090106932916883750) — Mining transcripts, email, LinkedIn and Slack to suggest introductions and resurface commitments; heavy on private data. _(@edleonklinger)_
+- [Agents for admin chores](https://x.com/tylerpalmer/status/2106071721589817744) — Start from recurring chores like inbox triage, returns and billing, with a clear finished state and approval for sends. _(@tylerpalmer)_
 
 ## Browser automation and web reading
 
@@ -132,13 +139,13 @@ The common lesson: least privilege, explicit authorisation, and untrusted conten
 - [Qwen Image 2.1 GGUF](https://x.com/toyxyz3/status/2101933242098331690) — Points to a third-party [Qwen-Image-2.1-GGUF model page](https://huggingface.co/abenzerps/Qwen-Image-2.1-GGUF). _(@toyxyz3)_
 - [Local FLUX LoRA and Qwen model leads](https://x.com/0x0SojalSec/status/2099628910883557858) — Leads for an uncensored FLUX adapter and a multimodal Qwen build. _(@0x0SojalSec)_
 - [Hugging Bay](https://huggingbay.xyz/) — Discovery site for open models.
+- [Unlimited-OCR](https://github.com/baidu/Unlimited-OCR) — Baidu's open model, [paper](https://arxiv.org/abs/2606.23050) and code for long multi-page OCR; examples use CUDA. Found via a [post](https://x.com/BrooksWhaleX/status/2109080341642363349).
 
 ## Image, video and 3D generation
 
 - [Astra as a visual-design benchmark](https://x.com/uiwithjay/status/2095606711453429966) — A polished interface image posed as the bar for whether Astra can match high-end product design. _(@uiwithjay)_
 - [Astra spreadsheet and dashboard examples](https://x.com/keviduk/status/2095863477805953431) — Examples of Astra's spreadsheet and analytical-interface output. _(@keviduk)_
 - [Astra-generated 3D walkthrough pipeline](https://x.com/Dimillian/status/2095596700815516004) — Demo going from Blender work to an Unreal Engine 5 walkthrough. _(@Dimillian)_
-- [GPT-generated GTA-style demo](https://x.com/ChrisGPT/status/2097569429567471841) — Short GTA-style game demo said to be built with GPT-6 over 90 hours. _(@ChrisGPT)_
 - [Image-to-CAD personalized doorstop](https://x.com/dkundel/status/2097419372960890983) — Photograph a gap with a tape measure, generate a model, 3D-print a doorstop; see [[3D Printing and Digital Fabrication]]. _(@dkundel)_
 - [Danji image-generation prompt](https://x.com/DanjiTosaka/status/2102103173712240874) — Four-image prompt showcase; the prompt text is inside the images, not the caption. _(@DanjiTosaka)_
 - [GPT-4o native image-generation system card](https://openai.com/index/gpt-4o-image-generation-system-card-addendum/) — OpenAI's March 2025 addendum: 4o image generation is autoregressive and native to ChatGPT, unlike diffusion-based DALL·E. _(via @Yampeleg)_
@@ -186,6 +193,7 @@ The synthesis is in [[AI Infrastructure Economics]].
 - [Korean Claude Max refund and chargeback claims](https://x.com/jun_song/status/2094964462168293551) — Thread saying some Korean subscribers won refunds or chargebacks over vague usage caps. _(@jun_song)_
 - [ChatGPT for Financial Services launch](https://x.com/OpenAI/status/2098118191029624911) — OpenAI launch for financial data, research, modelling and client-material workflows. _(@OpenAI)_
 - [Anthropic Financial Services repository](https://x.com/scaling01/status/2026292501296857564) — Anthropic's code repository for applying agents to financial-services workflows. _(@scaling01)_
+- [Clef decision models](https://blog.cloudflare.com/clef-decision-models/) — Cloudflare models that return schema-bounded choices or scores, for routing and classification. Found via a [post](https://x.com/michellechen/status/2105684868550045751).
 
 ## Work, enterprise and policy
 

@@ -92,7 +92,7 @@ It runs daily at 09:00 by default (editable in the plist) and logs to
 
 | Env var | Default | Purpose |
 |---------|---------|---------|
-| `BRAIN_PATH` | iCloud Markdown `Brain/` path | Markdown vault to capture from |
+| `BRAIN_PATH` | iCloud Drive `Obsidian/Brain/` | Obsidian vault to capture from |
 | `PORT` | `3000` | Local server port; for example `PORT=3001 bun server.ts` |
 
 ## Deploy
