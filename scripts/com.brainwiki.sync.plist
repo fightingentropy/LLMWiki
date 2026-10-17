@@ -10,7 +10,7 @@
     2. Edit the COPY: replace the three __PLACEHOLDER__ values below with absolute
        paths for your machine (no env expansion happens in a plist):
          __BUN_BIN__       -> output of `which bun`        (e.g. /Users/you/.bun/bin/bun)
-         __REPO_DIR__      -> this repo's absolute path    (e.g. /Users/you/Developer/LLMWiki)
+         __REPO_DIR__      -> this repo's absolute path    (e.g. /Users/you/Developer/wiki)
          __BRAIN_PATH__    -> your Obsidian vault path, OR delete the whole
                               EnvironmentVariables block to use sync.ts's default.
 
